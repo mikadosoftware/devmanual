@@ -23,10 +23,11 @@ So I intend to update and release my todo-inator idea.
 There are two parts - the rating of the code, by the author.  this will be a simple
 five star system ::
 
-   #code-rate:: * * * * *
+   # rate: * * * * *
+   # lifecycle: <prototype/PoC>, <pre-release>, maturing, mature, retiring 
+   # TODO: 
 
 And we can then see this rating in a specialised `ls`. 
-
 
 specialised ls - walk over a package source and tell me ::
 
@@ -38,9 +39,48 @@ I think I will have a second system that correlates to a map of my todos and
 some external systems
 And some way of recording success / failures
 
+Design
+------
+
+walk a source tree, and build a dict of file: {markers...}
+return that 
+
 '''
 
+# rate: **
+# life: prototype
+# TODO: build basic walk and parse and report features
 
+import os
+
+
+def walk_tree(rootpath):
+    ignoredirs = ['.git',]
+    for dirpath, dirs, files in os.walk(rootpath):
+        #change dirs to remove unwanted dirs to descend into
+        #rememer we need to use .remove as dirs seems to just point at
+        #underlying implementation, so substitution has no effect
+        for d in ignoredirs:
+            if d in dirs:
+                dirs.remove(d)
+                            
+        for file in files:
+            thisfile = os.path.join(dirpath, file)
+            yield thisfile
+
+def parse_file(txt):
+    res = {}
+    for line in txt.split('\n'):
+        if line.strip().startswith('#'):
+            #valid possible
+            for token in ['rate:', 'todo:', 'life:']:
+                if line.lower().find(token) >-1:
+                    res[token] = line
+    return res
+            
+if __name__ == '__main__':
+    for filepath in walk_tree('/root/projects/devmanual'):
+        print filepath, parse_file(open(filepath).read())
 
 
 
