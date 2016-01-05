@@ -12,6 +12,9 @@ Automated provisioning
   and then use fabirc once we have managed the state of PKI / servers up and pinabgle.
   This may be too complex but it is at least clear.
   
+  Use fabric to build basic modules that ansible runs
+  http://bsdploy.readthedocs.org/en/latest/usage/ansible-with-fabric.html
+  
   
   
 
