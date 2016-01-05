@@ -1,3 +1,16 @@
+List of topics to cover
+=======================
+
+Security
+--------
+
+- Personal Password management 
+  Use Password Safe, on iOS and on linux.  
+  Keep the safe file in sync via dropbox
+
+
+
+
 - unikernels and cloud deployments
   The obvious end point of docker and immutable servers
    http://erlangonxen.org/blog/rediscovering-cloud
