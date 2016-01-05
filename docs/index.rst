@@ -4,7 +4,8 @@ List of topics to cover
 Security
 --------
 
-- Personal Password management 
+- Personal Password management
+
   Use Password Safe, on iOS and on linux.  
   Keep the safe file in sync via dropbox
 
