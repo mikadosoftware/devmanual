@@ -1,16 +1,37 @@
 List of topics to cover
 =======================
 
-Security
---------
+Personal Security
+-----------------
+
+- QubeOS
+
 
 - Personal Password management
 
   Use Password Safe, on iOS and on linux.  
   Keep the safe file in sync via dropbox
+  I need to : install pwsafe, dropbox on laptop and iOS, configure synching
+  
+  
+- Run own CA
+
+  Use client and server certificates to ensure comms secure.
+  
+
+PKIs
+----
+
+The oprginasiuation needs to use PKI
+
+It can use SSH public keys to allow comms between a user and servers over SSH
+It needs to use SSL client certificates to allow commms between user and web servers (apps)
+It can also use SAML to intermediate beween those 
+It will need another solution for server-server comms
 
 
-
+Server Security
+---------------
 
 - unikernels and cloud deployments
   The obvious end point of docker and immutable servers
