@@ -30,7 +30,16 @@ Automated provisioning
   Use fabric to build basic modules that ansible runs
   http://bsdploy.readthedocs.org/en/latest/usage/ansible-with-fabric.html
   
+  in a venv...
+  ::
   
+     pip install ansible
+  
+  /etc/ansible/hosts::
+  
+     # /etc/ansible/hosts
+     localhost ansible_connection=local
+     
   
 
 
@@ -45,6 +54,8 @@ Personal Security
   Use Password Safe, on iOS and on linux.  
   Keep the safe file in sync via dropbox
   I need to : install pwsafe, dropbox on laptop and iOS, configure synching
+  https://github.com/ronys/pypwsafe
+  
   
 - ssh-agent
   how toconfigure
