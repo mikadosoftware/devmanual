@@ -48,6 +48,10 @@ Personal Security
 
 - QubeOS
 
+- iOS - libimobiledevice
+
+http://2014.zeronights.org/assets/files/slides/belenko.pdf
+
 
 - Personal Password management
 
