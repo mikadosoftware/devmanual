@@ -41,6 +41,8 @@ Automated provisioning
      localhost ansible_connection=local
      
   
+- pyholodeck
+- holoconfig
 
 
 Personal Security
@@ -171,3 +173,15 @@ My project control will be
 * lightweight
 * easilyexpansible
 * easy to publish information about them
+
+
+BOS Projects
+------------
+
+Business Operating System Projects - what features / capabilities do I want that are simple, expansiable, unix-like and much more business orientated?
+
+1. Report-setting 
+2. Purchase Orider mgtm
+3. contact mgmt
+4. address book
+5. 
