@@ -13,6 +13,12 @@ Next steps
 * plotting
 * firefox
 
+Base OS
+-------
+
+- apt-get install
+make 
+  
 Installing X windows
 --------------------
 
@@ -34,9 +40,58 @@ Then we simply reboot - XDM will ask for our login and then run .xinitrc
 
 We are good to go.
 
+
+.Xresources
+-----------
+
+in our ~/.Xresources file we configure the xterm settings for our needs.
+
+Firstly we get a half decent and free font ::
+
+  apt-get install xfonts-terminus
+  xset fp rehash
+
+then use xlsfonts to see what fonts are available
+
+    xlsfonts
+    xlsfonts | cut -b -20 | uniq | less
+
+Then we alter out xterm settings in .Xresources as::
+    
+  xterm*font:    *-terminus-*-*-*-24-*
+
+Then we set the database for xterm and update it::
+    
+  xrdb -merge ~./Xresources    
+  
+
+
+
+
+emacs
+=====
+
+
 Web services
 ============
 
 Mozilla cos its more free than Chrome, Chrome cos its got better developer
  tools for now
 
+Installing Python utilities
+---------------------------
+
+Sphinx
+~~~~~~
+
+We install into a venv
+
+
+Prince XML
+----------
+
+Download from http://www.princexml.com/download/
+Its a free non-commerical,pay for commercial license (500 USD for single user desktop)
+We will need to also install
+
+   apt-get install libcurl3

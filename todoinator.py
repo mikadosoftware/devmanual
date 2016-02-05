@@ -45,6 +45,12 @@ Design
 walk a source tree, and build a dict of file: {markers...}
 return that 
 
+
+TODO: build a test framework / runner
+TODO: build a lifecycle todo listing
+TODO: build a ticketing system??? at least a list of todos
+TODO: linting etc - a pre-commit check system ala phabricator
+
 '''
 
 # rate: **
