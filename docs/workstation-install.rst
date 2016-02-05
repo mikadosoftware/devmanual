@@ -1,6 +1,13 @@
 Workstation
 ===========
 
+Bootstrap Python
+----------------
+
+sudo apt-get install python python-dev python-pip
+pip install mkvirtualenv
+
+
 
 Describe initial seetup and reasons
 
