@@ -1,54 +1,29 @@
 Dev Manual
 ----------
 
-We don't have to sprint if we are making Seven-league boots.
+This is the source point for a book / info-product titled "FullOnFullStack".
 
-So what capabilities should a Dev and Dev team have?
+The goal is three-fold
 
-- Ansible and build from scratch
-- container based builds and promotions
-- graphite like monitoring
-- reporting 
-- memory and other perfromance metrics
-- 
+* to create a repository for all my knowledge of development best practises,
+  managing software teams and the "how-to" for a full-stack developer.
 
-Project mgmt
-------------
+* to create a book / info-product that reflects the same repository
 
-We all work on projects of some form or other.  Tools will help us.
-Working for an enterprise, they want different reporting approaches.
-So the simplest answer is to have a buffer - write and read to and from
+* to create the marketing around selling such a book.
 
-Tickets in a parent child chain
-A child can have many parents (?)
-Git based bugs?
-Functional specs that map easily to tickets (spec2ticket)
-Unless you write down explicitly what you are trying to achieve, and discuss it with the developers and business owners, you end up with three things - some people who don't understand most of it and just go along hoping to pick it up later, some people who think they understand it but have forgotten some vital and really hard parts and think this is going to be easy, and some people who think they are building something not quite the same shape as everyone else.
+There are three expected benefits:
 
-The mark of a high functioning team is how quickly new hires get up to speed - you don't need Einstein to come in if you kept it simple and well tested and well API'd.
+* In my work as a contract developer, "keeping up" is hard, and this provides
+   a focus for doing so *and* demonstrating.
 
-Discover, write up and do OSS projects on
-Scale up to 1000 cloud instances with full deployment and development and monitoring process
+* It also provides a simple means to demonstrate my chops to prospective employers,
+  either making it easier to get a job, or easier to get a better package.
 
-Server to server authentication 
+* It *may* also provide an income, although this is a secondary issue.
 
 
-"Full on Full Stack"
+Outline
+-------
 
-What does it really take to be a full stack developer?
-
-- 
-
-
-Intelligence gathering :
-- economy model etc
-
-Security as a baked in goal
-
-We are aiming for a level of security that is good but not awesome.
-
-This is where the internal threat is minimal  and external threat is high - we protect against threats with high external component and lower internal.
-
-Internal is best to use a lot lot of audit
-
-- server to server authentication
+The outline for the book can be found in outline.rst
