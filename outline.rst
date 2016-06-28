@@ -95,6 +95,8 @@ Why full stack matters, and why you cant do it all
   So services have Interface Points and lifecycles.
 
 * OS installation and Hardening
+  http://blog.scottlowe.org/2015/05/26/bootstrap-servers-ansible/
+  I am focusing on CentOS now - the much better hardeing options and the integration of ansible.
 
 * Kerberos and Authentication
 
