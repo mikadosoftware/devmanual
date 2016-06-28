@@ -2,37 +2,211 @@
 Full On Full Stack
 ==================
 
-Individual vs team
-==================
 
-Mostly the same capabilities - but teamwork, transfer of trust.
-Read that book quoted by Clinton Roshenm
+Highlights
+==========
+
+Systems Infrastructure
+----------------------
+
+Storage
+-------
+
+Front end
+---------
+
+Middleware
+----------
+
+Storage
+-------
+
+Disaster Recovery
+-----------------
+
+Distributed computing vs redundant
+----------------------------------
+
+SOA and API design
+------------------
+
+Project management
+------------------
+
+Debugging
+---------
+
+KISS
+----
+
+Slow Development, manageable infrastructure
+-------------------------------------------
+
+
+NOSQL
+-----
+
+Statistics
+----------
+
+Seven league Boots
+------------------
+
+Statistics
+ML
+NLP
+CV
+
+
+Why full stack matters, and why you cant do it all
+---------------------------------------------------
+
+
+
 
 * Project Management
   history of Agile and scrum
   Critique of Agile / SCrum
+     " You dont have to sprint if you are making seven-league boots"
   Essential project management
+  Tight co-ordination with team members
+  Mostly the same capabilities - but teamwork, transfer of trust.
+  Read that book quoted by Clinton Roshenm
 
 * Specfication discovery
+  Working with users
+  See service lifecycle - whats the User Need?
 
 * build everything as a service
   Gov.uk service manaual
   SOA
   history of SOA in Amazon
 
-Necessary Capabilities
-----------------------
+* Managing tickets and commits
+  Use of source cntrol
+  Use of ticketing system
 
-We don't have to sprint if we are making Seven-league boots.
+* specifications, design and tickets
+  Must do upfront design.
+  Design / discussion documents are vital and allow clarification
+  Call this Architecture if you like, but dont assume people understand
 
-So what capabilities should a Dev and Dev team have?
+* Everything is a service
+  So services have Interface Points and lifecycles.
 
-- Ansible and build from scratch
-- container based builds and promotions
-- graphite like monitoring
-- reporting
-- memory and other perfromance metrics
--
+* OS installation and Hardening
+
+* Kerberos and Authentication
+
+* Web of trust
+  Likely changes to "master password/account" - gmail will ask postoffice to approve password changes.
+  Use the gov.uk auithentication (verify.gov.uk) scheme to change passwords?
+
+* Sign up with verify.gov.uk providers
+
+* Ansible based build scripts
+
+* Build promotion and use of containers
+
+* COntainer scalability and tipping points
+
+* performance monitoring
+
+* unit testing, integration testing
+
+* user acceptanbce tests and UI tests
+
+* Reporting
+
+* SOPs and checklists
+
+* Measuring metrics
+
+* documentation
+
+* Dev Ops
+
+* statistics
+
+* distributed data and computation
+  Use of Apache spark, Hadoop etc
+
+* Javascript
+
+* Angular vs Jquery
+
+* Programmable Corporation
+
+* functional programming and scalability
+  Elixr and OTP
+
+* bug tracking, code analysis,
+
+* git and git workflow
+
+* Linux and workstations
+
+* security considerations
+
+* Mobile development
+
+* Big Data
+
+* Maturity and keeping on a single course
+
+* Work harder on fewer projects and polish them to be CV-worthy
+  shipping working software
+
+* Message Queue
+
+* Business Intelligence reporting
+
+* Software KPIs, buisness KPIs
+
+* Simple Marketing (Twilio approach), SEO
+
+* Debugging tools
+  CHarles proxy
+  Chrome debugger
+
+* Web technologies (html 5)
+  Bootstrap, HTML 5, cimples CSS
+
+* Rekational Databases
+
+* NOSQL databases
+
+* Storage systems
+
+* Backup and recovery
+  Business Disaster recovery and assurance
+  Multiple data centres
+
+* Time, Unicode, basic data types
+
+* serialisation
+  pickle, json etc
+
+* Cacheing
+
+* Configuration basics
+
+* command line is all
+
+* Publishing own work
+
+* contact management
+
+* email management
+
+* Practise on smaller complete projects
+
+* jenkins
+
+* chatbots and IRC
+
+
+
 
 Project mgmt
 ------------
