@@ -250,7 +250,7 @@ This is where the internal threat is minimal  and external threat is high - we p
 Internal is best to use a lot lot of audit
 
 - server to server authentication
-
+ 
 
 Skills required (bold=essential)
 ·         FreeIPA/LDAP
