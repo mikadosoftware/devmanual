@@ -1,7 +1,16 @@
 Dev Manual
 ----------
 
-This is the source point for a book / info-product titled "FullOnFullStack".
+This is the source point for a book / info-product titled "CTO CookBook"
+
+It has three main parts
+
+- Tides
+  A survey of the tidal forces driving tech in organisations and society.
+  
+- Implementation 
+
+- Discussion of implementation 
 
 The goal is three-fold
 
@@ -15,7 +24,7 @@ The goal is three-fold
 There are three expected benefits:
 
 * In my work as a contract developer, "keeping up" is hard, and this provides
-   a focus for doing so *and* demonstrating.
+   a focus for doing so *and* 
 
 * It also provides a simple means to demonstrate my chops to prospective employers,
   either making it easier to get a job, or easier to get a better package.
