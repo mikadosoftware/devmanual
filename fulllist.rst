@@ -1,6 +1,58 @@
+Introduction 
+------------
+
+This book tries to cover a lot of ground.  Ostensibly, we are simply laying out the *best practises* for a modern software team.  I have been working in, leading and hiring such teams for twenty years (and yes I do feel old thank you for asking!).  But the interweb is full of humblebragging lists like  "you should do X, I did, ain't it cool" - but I find them actively unhelpful. Without knowing *why* a certain practise is "best" then it is hard to resist the siren call of the latest fashion fad (of which the software industry has so many we can laugh at the Milanese fashion houses.  "Oh, you have a new colour to deal with this *season*.  Well apparently this sprint I have to re-implement a ten year testing regieme").
+
+So we do cover modern best practises.  But with added Why.
+
+I use building a dashboard for a new CTO of a hypothetical company as the core of this book.  The dashboard is a good way for a new CTO to gather the data needed and project it back out.  It is by no means easy to gather the right data by the way.  Which is kind of the point.
+
+There are real working code examples, an actual dashboard you can run in your own organisation or team.
+
+And there is the why. The history of software development is short and yet we forget many of its lessons. Why are some of these practises desirable, how did we get here. 
+
+This book is partly a history lesson then. But one I (sadly) have got a personal view on a large chunk of the history.  I hope we can draw out the right lessons.
+
+
 Modern Capabilities 
 -------------------
-This is the set of *capabilities* a modern Software team should have. Few need to be core competencies, but all need to be capable.
+
+
+Modern trends
+-------------
+
+
+Not so modern people
+--------------------
+
+
+Why is software so diverse ?
+
+Not age, sex or race. That's a whole 'nother problem.  But the practises are diverse. 
+The US Presidential election of 1896 was a turning point in US politics. (** Relate to modern elections) But it marked the end of a hugely turbulent period of change in Western world and business practises. Electricity is a great example. Factories were redesigning - took another twenty years. Best practises emerged and final result was ford.
+
+Google is not ford. Ford is the programmable company.
+
+This book is a walk around the software factories of today, and an attempt to understand what the first programmable company will look like.
+
+Ford's not ideal (1937 battle of the overpass). In many ways the battles of UK in 19C were reflected in early 20th, culminating in business coup referenced by Gen Smedley X
+
+The goal here is the programmable company. Like ford it is an inflection point. One. It reached yet.
+
+But it is worth exploring 
+Most software teams develop and release software in their own way.  Like factories that have not yet settled on best practise.
+Agile is not it. Trust me
+
+
+
+Why - because we are re-inventing our factories
+We could have industry standard operating procedures for vast majority of companies. We could - but we don't.
+
+But most of problems of software in house I have seen is not developers with timenonntheir hands still unable to meet business needs, mostly it is two things
+
+- inability to articulate what is needed for business to succeed
+- the whole other crap that swamps is all 
+
 
 esprit de corps
 ---------------
@@ -16,13 +68,46 @@ Social organisation, commit bits, licenses and future income and reputation.
 -----
 
 
+Major trends
+------------
+
+- distributed by default. This works for data, and processing.  But for organisations too - conways law.
+
+- chips everywhere (inverse mores law), privacy pollution problem
+
+- Agility vs Architecture.
+You can't plan out each step in your journey
+You can't change your destination in between each step
+
+- Science is measurement. Engineering is applied science. Metrics everywhere.
+
+- the world at large (politics gets everywhere, and as software programs the world, politics and software will meet. New forms of governance (Debian)
+
 Start with the Dashboard
 ------------------------
 This gives us a simple means to always show we have a feedback loop and always remain in control.  It is also the simplest means to show what is provided for the end user.
 
 
-The CTO Dashboard
------------------
+The New CTO Dashboard
+---------------------
+
+Every software team (whether one person or a hundred) has multiple streams of work they must do to keep their software
+
+I am including "operations" as part of this as most software teams do this - either directly ala Facebook / Amazon or indirectly ala third line support.
+
+These streams are 
+
+- producing new features
+- maintaining high code quality
+- operational performance and metrics
+- bug fixing
+- tech debt 
+- marketing
+- servicing users
+
+
+
+
 
 For every software organisation we can define a set of capabilities, and for each capability we can define best practise and then rate our own organisation against the best practise.  This can give a clear idea where to focus improvement efforts.
 
@@ -69,6 +154,8 @@ Capabilities
 
 * micro services architecture
   This is a major issue. Includes security, service discovery messaging logging and pr nose to only go through front door. See stevey blog post.
+  https://news.ycombinator.com/item?id=12133670
+  
 
 * OS installation and Hardening
   Choice of OS, location
