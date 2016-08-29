@@ -1,1 +1,0 @@
-Corporations as machines: we build machines to benefit us - we tend to them.
