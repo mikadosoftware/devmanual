@@ -47,6 +47,11 @@ Corporations as machines: we build machines to benefit us - we tend to them.
 Not so modern people
 --------------------
 
+Disfluency
+----------
+- nee time to learn as well as data.
+- need to do it by hand 
+- need to learn 
 
 Why is software so diverse ?
 
@@ -197,9 +202,37 @@ Business capabilities
 - disaster recovery / option pricing
 - learning and training and teamwork
 - stakeholder engagement
+- project management: new agile
 
-Capabilities
-------------
+New agile 
+https://medium.com/@gabrielgambetta/how-i-wrote-my-first-novel-during-my-daily-commute-e1d02c9447b9#.248qy79fb
+
+Good description of process - 80 "scenes" - we must must have a storyboard - think the sticky notes
+Always have storyboard
+Always have interactions between stories
+Stories are states??? 
+
+But always always - must be clear must be shared
+
+Technical Capabilities
+----------------------
+
+* Measure Lines Spent 
+  Edgar Djyskstra quote - tech debt
+  The more code written the more there is to understand
+  Writing lots of code, writing it quickly, is often the contractor curse - too much too soon. There is no such thing as hitting the ground running.
+  
+* measure Onboarding times
+
+* measure code quality not feature velocity
+
+* measure effort to deploy
+
+* measure inter dependancy
+
+* measure metrics - is code well
+Measured in production
+
 
 * Deployment can deploy code through promotion of fixed "builds" into
   production using totally automated means.
@@ -208,7 +241,8 @@ Capabilities
   security, service discovery messaging logging and pr nose to only go
   through front door. See stevey blog post.
   https://news.ycombinator.com/item?id=12133670
-  
+  Use fluentd logging 
+https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-in-the-container-era/
 
 * OS installation and Hardening Choice of OS, location Ansible or
   similar automation scripts
@@ -365,6 +399,8 @@ Project management
 
 Debugging
 ---------
+
+https://en.m.wikipedia.org/wiki/American_fuzzy_lop_(fuzzer)
 
 KISS
 ----
