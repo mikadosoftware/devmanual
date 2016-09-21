@@ -1,6 +1,17 @@
 Introduction 
 ------------
 
+This book tries to cover a lot of ground.  Ostensibly, we are simply laying out the *best practises* for a modern software team.  I have been working in, leading and hiring such teams for twenty years (and yes I do feel old thank you for asking!).  But the interweb is full of humblebragging lists like  "you should do X, I did, ain't it cool" - but I find them actively unhelpful, for two major reasons 
+
+Firstly, Without knowing *why* a certain practise is "best" then it is hard to resist the siren call of the latest fashion fad (of which the software industry has so many we can laugh at the Milanese fashion houses.  "Oh, you have a new colour to deal with this *season*.  Well apparently this sprint I have to re-implement a ten year testing regieme").
+
+Secondly, they don't cover the whole field. Reading about one startups marvellous new medicine for log management does not give you a sense of how well they are doing with the thirty other vital areas like CI, project management etc.  And it does not give you an idea for how much effort is left over after logging is tied up and ready to be left well alone.
+
+So I wanted to get my own best practises out of my head and onto both scripts and paper.
+
+I have been tempted to make this book a form of literate programming, but it seems a lot simpler to make a literal working small company, with a small product, with the code that produced it available to read.
+
+This is possible because of DevOps - that is there exists a set of scripts that will produce a fully working company - it is not something locked up in the brains of talented people.  (What is locked up is the understanding needed to recreate or adjust the scripts - that is never abstracted away)
 This book tries to cover a lot of ground.  Ostensibly, we are simply
 laying out the *best practises* for a modern software team.  I have
 been working in, leading and hiring such teams for twenty years (and
@@ -43,6 +54,9 @@ new corporation
 Corporations as machines: we build machines to benefit us - we tend to them.
 
 
+
+Privacy issues
+https://news.ycombinator.com/item?id=12388370
 
 Not so modern people
 --------------------
@@ -369,6 +383,9 @@ https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-i
 
 * rethinkdb
  
+* training and just reading and exploring
+if you do not explicitly make time to learn but sprint all the time all you will have is people who have learnt what they wrote
+
 
 Systems Infrastructure
 ----------------------
@@ -534,6 +551,53 @@ Skills required (bold=essential)
 ·         DNS/DHCP
 
 
+
+the inevitable:
+digital hygiene 
+tco of digital life
+
+perosnal to business
+- less stuff (dvds to cloud)
+
+climate chnage
+
+http://worrydream.com/ClimateChange/
+
+
+Underpinning philosophy 
+- Equality
+- Empiricism
+- Extrrnalities
+
+Economics is important but it's use of energy for human benefit.
+
+Avoiding the google bubble - digital gated communities
+
+
+- Airbnb has a race issue - people more likely to refuse a blackmsoundingnname. But the solution to this is simple - renters must offer a room to whomever applies - just as hotels cannot turn people away.  But because these new efficient services are ignoring existing regulation and so will need new (smarter regulating if we can - see below)
+
+AirBNb and other "regulation challenging" unicorns are quite simply breaking the law in almost every country in which they operate.  They are, incidentally, raising matters of public policy that are long overdue 
+
+How is airbnb the same as European Commission - both trying to harmonise regulation across a globalised world.
+
+Car Charing versus taxi : here is my regulatory change - the car sharing service must advertise its start and leave positions and make the subsequent journey of 
+
+
+What happens when a regulated hotel tries to discriminate (gay bo'nb issue) - they get their ass sued.
+
+- European court tries ban hyoerlinks
+http://searchengineland.com/european-court-says-linking-illegal-content-copyright-infringement-258442
+
+- eefragmentation - http://www.paulgraham.com/re.html
+
+The new labour contract: superstars and payment.
+http://www.totalsportek.com/money/manchester-united-player-salaries/
+
+So for 2015 Manchester United made 450M, of which it spent 250M on player salaries (holy cow). If we take 20% corporation tax (yeah right) then we see around 80/20 for labour to capital
+
+Does this hold true for other superstar driven areas - finance? Oh yes - here is traders that took all the revenue in a year.
+
+Is Pikkety wrong? Will global remote working make this kind of impact? Not clear. 
 ----------------------------------------
 incoorpoate
 ----------------------------------------
