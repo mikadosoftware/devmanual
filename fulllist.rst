@@ -12,14 +12,35 @@ So I wanted to get my own best practises out of my head and onto both scripts an
 I have been tempted to make this book a form of literate programming, but it seems a lot simpler to make a literal working small company, with a small product, with the code that produced it available to read.
 
 This is possible because of DevOps - that is there exists a set of scripts that will produce a fully working company - it is not something locked up in the brains of talented people.  (What is locked up is the understanding needed to recreate or adjust the scripts - that is never abstracted away)
+This book tries to cover a lot of ground.  Ostensibly, we are simply
+laying out the *best practises* for a modern software team.  I have
+been working in, leading and hiring such teams for twenty years (and
+yes I do feel old thank you for asking!).  But the interweb is full of
+humblebragging lists like "you should do X, I did, ain't it cool" -
+but I find them actively unhelpful. Without knowing *why* a certain
+practise is "best" then it is hard to resist the siren call of the
+latest fashion fad (of which the software industry has so many we can
+laugh at the Milanese fashion houses.  "Oh, you have a new colour to
+deal with this *season*.  Well apparently this sprint I have to
+re-implement a ten year testing regieme").
 
-I use building a dashboard for a new CTO of a hypothetical company as the core of this book.  The dashboard is a good way for a new CTO to gather the data needed and project it back out.  It is by no means easy to gather the right data by the way.  Which is kind of the point.
+So we do cover modern best practises.  But with added *Why*.
 
-There are real working code examples, an actual dashboard you can run in your own organisation or team.
+I use building a dashboard for a new CTO of a hypothetical company as
+the core of this book.  The dashboard is a good way for a new CTO to
+gather the data needed and project it back out.  It is by no means
+easy to gather the right data by the way.  Which is kind of the point.
 
-And there is the why. The history of software development is short and yet we forget many of its lessons. Why are some of these practises desirable, how did we get here. 
+There are real working code examples, an actual dashboard you can run
+in your own organisation or team.
 
-This book is partly a history lesson then. But one I (sadly) have got a personal view on a large chunk of the history.  I hope we can draw out the right lessons.
+And there is the why. The history of software development is short and
+yet we forget many of its lessons. Why are some of these practises
+desirable, how did we get here.
+
+This book is partly a history lesson then. But one I (sadly) have got
+a personal view on a large chunk of the history.  I hope we can draw
+out the right lessons.
 
 
 Modern Capabilities 
@@ -28,6 +49,10 @@ Modern Capabilities
 
 Modern trends
 -------------
+
+new corporation
+Corporations as machines: we build machines to benefit us - we tend to them.
+
 
 
 Privacy issues
@@ -44,27 +69,40 @@ Disfluency
 
 Why is software so diverse ?
 
-Not age, sex or race. That's a whole 'nother problem.  But the practises are diverse. 
-The US Presidential election of 1896 was a turning point in US politics. (** Relate to modern elections) But it marked the end of a hugely turbulent period of change in Western world and business practises. Electricity is a great example. Factories were redesigning - took another twenty years. Best practises emerged and final result was ford.
+Not age, sex or race. That's a whole 'nother problem.  But the
+practises are diverse.  The US Presidential election of 1896 was a
+turning point in US politics. (** Relate to modern elections) But it
+marked the end of a hugely turbulent period of change in Western world
+and business practises. Electricity is a great example. Factories were
+redesigning - took another twenty years. Best practises emerged and
+final result was ford.
 
 Google is not ford. Ford is the programmable company.
 
-This book is a walk around the software factories of today, and an attempt to understand what the first programmable company will look like.
+This book is a walk around the software factories of today, and an
+attempt to understand what the first programmable company will look
+like.
 
-Ford's not ideal (1937 battle of the overpass). In many ways the battles of UK in 19C were reflected in early 20th, culminating in business coup referenced by Gen Smedley X
+Ford's not ideal (1937 battle of the overpass). In many ways the
+battles of UK in 19C were reflected in early 20th, culminating in
+business coup referenced by Gen Smedley X
 
-The goal here is the programmable company. Like ford it is an inflection point. One. It reached yet.
+The goal here is the programmable company. Like ford it is an
+inflection point. One. It reached yet.
 
-But it is worth exploring 
-Most software teams develop and release software in their own way.  Like factories that have not yet settled on best practise.
-Agile is not it. Trust me
+But it is worth exploring Most software teams develop and release
+software in their own way.  Like factories that have not yet settled
+on best practise.  Agile is not it. Trust me
 
 
 
-Why - because we are re-inventing our factories
-We could have industry standard operating procedures for vast majority of companies. We could - but we don't.
+Why - because we are re-inventing our factories We could have industry
+standard operating procedures for vast majority of companies. We
+could - but we don't.
 
-But most of problems of software in house I have seen is not developers with timenonntheir hands still unable to meet business needs, mostly it is two things
+But most of problems of software in house I have seen is not
+developers with timenonntheir hands still unable to meet business
+needs, mostly it is two things
 
 - inability to articulate what is needed for business to succeed
 - the whole other crap that swamps is all 
@@ -74,42 +112,55 @@ esprit de corps
 ---------------
 Teams matter waaaay more than individual contributors
 
-No one likes being told what to do.  So let developers contribute their next best step.
+No one likes being told what to do.  So let developers contribute
+their next best step.
 
-Discuss planning carefully, have wide open discussions on next step.  Lieutenants own chunks of code. Use Linux development model 
+Discuss planning carefully, have wide open discussions on next step.
+Lieutenants own chunks of code. Use Linux development model
 
-At the beginning of greenfield almost any code laid down is 10x. Don't believe in 10x myth.  Iceland and Wales versus England.  Esprit de corp
+At the beginning of greenfield almost any code laid down is 10x. Don't
+believe in 10x myth.  Iceland and Wales versus England.  Esprit de
+corp
 
-Social organisation, commit bits, licenses and future income and reputation.
------
+Social organisation, commit bits, licenses and future income and
+reputation.
 
 
 Major trends
 ------------
 
-- distributed by default. This works for data, and processing.  But for organisations too - conways law.
+- distributed by default. This works for data, and processing.  But
+  for organisations too - conways law.
 
 - chips everywhere (inverse mores law), privacy pollution problem
 
-- Agility vs Architecture.
-You can't plan out each step in your journey
-You can't change your destination in between each step
+- Agility vs Architecture.  You can't plan out each step in your
+journey You can't change your destination in between each step
 
-- Science is measurement. Engineering is applied science. Metrics everywhere.
+- Science is measurement. Engineering is applied science. Metrics
+  everywhere.
 
-- the world at large (politics gets everywhere, and as software programs the world, politics and software will meet. New forms of governance (Debian)
+- the world at large (politics gets everywhere, and as software
+  programs the world, politics and software will meet. New forms of
+  governance (Debian)
 
 Start with the Dashboard
 ------------------------
-This gives us a simple means to always show we have a feedback loop and always remain in control.  It is also the simplest means to show what is provided for the end user.
+
+This gives us a simple means to always show we have a feedback loop
+and always remain in control.  It is also the simplest means to show
+what is provided for the end user.
 
 
 The New CTO Dashboard
 ---------------------
 
-Every software team (whether one person or a hundred) has multiple streams of work they must do to keep their software
+Every software team (whether one person or a hundred) has multiple
+streams of work they must do to keep their software
 
-I am including "operations" as part of this as most software teams do this - either directly ala Facebook / Amazon or indirectly ala third line support.
+I am including "operations" as part of this as most software teams do
+this - either directly ala Facebook / Amazon or indirectly ala third
+line support.
 
 These streams are 
 
@@ -125,7 +176,10 @@ These streams are
 
 
 
-For every software organisation we can define a set of capabilities, and for each capability we can define best practise and then rate our own organisation against the best practise.  This can give a clear idea where to focus improvement efforts.
+For every software organisation we can define a set of capabilities,
+and for each capability we can define best practise and then rate our
+own organisation against the best practise.  This can give a clear
+idea where to focus improvement efforts.
 
 Team capabilities
 -----------------
@@ -194,39 +248,41 @@ Technical Capabilities
 Measured in production
 
 
-* Deployment can deploy code through promotion of fixed "builds" into production using totally automated means.
+* Deployment can deploy code through promotion of fixed "builds" into
+  production using totally automated means.
 
-* micro services architecture
-  This is a major issue. Includes security, service discovery messaging logging and pr nose to only go through front door. See stevey blog post.
+* micro services architecture This is a major issue. Includes
+  security, service discovery messaging logging and pr nose to only go
+  through front door. See stevey blog post.
   https://news.ycombinator.com/item?id=12133670
   Use fluentd logging 
 https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-in-the-container-era/
 
-* OS installation and Hardening
-  Choice of OS, location
-  Ansible or similar automation scripts
+* OS installation and Hardening Choice of OS, location Ansible or
+  similar automation scripts
 
-* Kerberos and Authentication
-  Authentication and Authorisation are vital capabilities and federated, distributed security have so many advantages (think uUId as primary key )
+* Kerberos and Authentication Authentication and Authorisation are
+  vital capabilities and federated, distributed security have so many
+  advantages (think uUId as primary key )
   
-* Build promotion and use of containers
-  PyHolodeck 
+* Build promotion and use of containers PyHolodeck
 
-* message queues and worker pools
-  Messaging
-  Job scheduling based on events and then queues
-  Is a resource problem always
+* message queues and worker pools Messaging Job scheduling based on
+  events and then queues Is a resource problem always
 
-* performance monitoring
-  metrics gathering with graphite
+* performance monitoring metrics gathering with graphite
 
 * unit testing, integration testing, perfromance testing
 
-* user acceptanbce tests and UI tests
-  Automated testing is vital and we must put huge amounts of effort into it simply to make the next release
+* user acceptanbce tests and UI tests Automated testing is vital and
+  we must put huge amounts of effort into it simply to make the next
+  release
   
-* continuous integrations and delivery
-  There is no point batching up changes to go on a time based schedule. Code is ready as it is written and the decision to release should be based on automated tests. Only marketing or other business decisions should delay - so always push to pre-prod 
+* continuous integrations and delivery There is no point batching up
+  changes to go on a time based schedule. Code is ready as it is
+  written and the decision to release should be based on automated
+  tests. Only marketing or other business decisions should delay - so
+  always push to pre-prod
   
 * pre-prod is live-clone
 
@@ -430,18 +486,25 @@ Project mgmt
 
 We all work on projects of some form or other.  Tools will help us.
 Working for an enterprise, they want different reporting approaches.
-So the simplest answer is to have a buffer - write and read to and from
+So the simplest answer is to have a buffer - write and read to and
+from
 
-Tickets in a parent child chain
-A child can have many parents (?)
-Git based bugs?
-Functional specs that map easily to tickets (spec2ticket)
-Unless you write down explicitly what you are trying to achieve, and discuss it with the developers and business owners, you end up with three things - some people who don't understand most of it and just go along hoping to pick it up later, some people who think they understand it but have forgotten some vital and really hard parts and think this is going to be easy, and some people who think they are building something not quite the same shape as everyone else.
+Tickets in a parent child chain A child can have many parents (?)  Git
+based bugs?  Functional specs that map easily to tickets (spec2ticket)
+Unless you write down explicitly what you are trying to achieve, and
+discuss it with the developers and business owners, you end up with
+three things - some people who don't understand most of it and just go
+along hoping to pick it up later, some people who think they
+understand it but have forgotten some vital and really hard parts and
+think this is going to be easy, and some people who think they are
+building something not quite the same shape as everyone else.
 
-The mark of a high functioning team is how quickly new hires get up to speed - you don't need Einstein to come in if you kept it simple and well tested and well API'd.
+The mark of a high functioning team is how quickly new hires get up to
+speed - you don't need Einstein to come in if you kept it simple and
+well tested and well API'd.
 
-Discover, write up and do OSS projects on
-Scale up to 1000 cloud instances with full deployment and development and monitoring process
+Discover, write up and do OSS projects on Scale up to 1000 cloud
+instances with full deployment and development and monitoring process
 
 Server to server authentication
 
@@ -460,7 +523,9 @@ Security as a baked in goal
 
 We are aiming for a level of security that is good but not awesome.
 
-This is where the internal threat is minimal  and external threat is high - we protect against threats with high external component and lower internal.
+This is where the internal threat is minimal and external threat is
+high - we protect against threats with high external component and
+lower internal.
 
 Internal is best to use a lot lot of audit
 
@@ -533,3 +598,363 @@ So for 2015 Manchester United made 450M, of which it spent 250M on player salari
 Does this hold true for other superstar driven areas - finance? Oh yes - here is traders that took all the revenue in a year.
 
 Is Pikkety wrong? Will global remote working make this kind of impact? Not clear. 
+----------------------------------------
+incoorpoate
+----------------------------------------
+
+Best Practises, Open Source
+---------------------------
+My best practises Open Source Project
+
+Guest blogs in Rackspace etc
+Focus on open stack deployment
+
+
+So like many others Inhave a sprinkling of Open Source projects,
+ranging from fairly full featured to a good idea and two hours typing.
+But OSS is not simply the place to practise ones actual coding
+skills - but it could be a place to home the skills and approaches
+needed around the actual work.
+- death of middle management
+
+So this is my *exemplar* project - how I would run a commercial providing-food-for-the-kids project if I had the managerial space - and perhaps with my own company I shall
+
+1. source control
+2. tech debt and tech assets - code and tests
+3. requirements lifecycle (PEP)
+4. automated build and deployment (dogfood)
+5. Documentation and Marketing
+6. openness and reviews
+7. Progress Not Perfection (YouTube clip)
+8. static and other analysis
+9. performance mgmt and measuring everything (and making reports on everything)
+10. Automatic project mgmt
+11. Risk management
+12. have fun, try new things, don't be afraid
+
+Sustainable Open Source
+I am by no means a prolific OSS contributor, and my contributions are sometimes of poorer quality than I wish.  This is the conflict between the inner project manager and the inner software developer.
+
+Let's look at a discussion in clean Coder by uncle Bob - (ref)
+Here there is an ideal professional developer and an ideal professional PM who when one says they cannot the other accepts.  My problem is that for a lot of jobs and times, one is expected to act as the projects PM and the lead Dev. In which case you have two personalities inside you - and the PM one is socially seen as the professional correct one (hit this arbitrary deadline) but the Dev is crippled by social pressure we all have inside ourselves - the idea that maybe perhaps we could do that deadline
+
+- need to please
+
+
+Instead we could have red lines:
+
+Automated testing and coverage
+Strategic decisions - well they are strategic (cannot be hedged away by tactical work like automated tests)
+
+Can we see tests as risk hedging.  So is this about risk mgmt?
+
+Software risk mgmt :
+
+Hedging and option pricing
+
+Of course - retainers are option premiums !
+So how should they be priced ?
+
+
+Because the values of option contracts depend on a number of different variables in addition to the value of the underlying asset, they are complex to value. There are many pricing models in use, although all essentially incorporate the concepts of rational pricing, moneyness, option time value and put-call parity.
+https://en.m.wikipedia.org/wiki/Binomial_options_pricing_model#Method
+
+
+Source Control
+seriously, just use git but githubfkow
+rewrite as much as you like until you publish
+commit public ally with a description in the commit, bugid is not enough.  explain why to the reviewer - put the detail in the commit message (see no project management)
+
+tech debt - writing code introduces more complexity and bugs.  it is debt. even well written code is debt.  Responsibly lent mortgage debt but still debt.  badly written poorly tested code is payday lender style debt.
+
+assets are the opposite of debt - tests are the opposite of code.  tests tell you code is like well invested debts, debts you know went on sensible things.
+
+Contract testing - like testing the type of parameters and returns - aka Eiffel
+
+3. Requirements lifecycle.  oh yes. oh yes. seriously the amount of money major enterprises throw into projects with poorly formed, badly if at all written requirements that are promptly not read by anyone involved is - well it's a lot let me tell you sonny Jim.
+
+so part of the no project mama gents process is to actually have requirements, you know, written down, discussed, thought about and tried out.
+
+these are of course miniature projects in themselves.
+
+Trust in people to challenge why others are doing something.
+
+
+4. automated build and deployment
+for an automated build and deployment project this is pretty obvious
+
+5. docs and marketing
+docs are vital.  screencasts it seems are just as vital.
+however marketing is begun there but not ends there. forums.
+being an all round good egg
+
+6. openness and reviews
+
+7. progress not perfection
+I have a massive discuss next between what is reasonably possible for a average to good developer (me) to be able to achieve in two or three days at work (with interruptions) and what I *could* do if I had got plenty of rest, drunk my Orange Juice, refactored code on this area just last week and ... well, I think I *could* do more than I have.  but this leads me to think I should have done more - and that tends to lead to outrageously negative defensiveness, including rushing and cutting corners to get it done in the arbitrary self imposed deadline, or perhaps worse, lying about how far I have got and saying "just another day" (often lying to myself first)
+
+8. static analysis
+
+9. Performance analysis
+
+10. Automatic project mgmt.  not tasks. milestones.  not manually approved milestones, automated tests that validate milestone.  and requirements analysis
+
+
+11. Waltzing with bears
+
+12. have fun.
+
+
+On 24 Jun 2015, at 19:48, Paul Brian <paul@mikadosoftware.com> wrote:
+
+Info products:
+
+- PyHolodeck, saltstack and python deployment for the cloud
+
+eBook
+eBook and screencast
+eBook and 4 hours consultancy
+
+Py2to3 consultancy
+work with EMagine
+develop own eBook, identify potential python developers
+
+
+Future of Software
+mobi - release in Amazon etc
+
+SaaS products and enterprise products
+- MyTestVideo - selenium recordings of new bug fixes
+- Standard Operating Procedures - especially for DevOps
+- Blockchain : share ownership registration, split out by pension fund holders
+
+knock on head:
+kickstarter at kids school? no do that but kill off code club
+
+
+
+Sent from my iPhone
+
+On 24 Jun 2015, at 11:20, Paul Brian <paul@mikadosoftware.com> wrote:
+
+useful business services to automate / OSS /  SaaS
+
+project mgmt
+Standard Operating Procedures
+laptop builds
+
+options:
+moonshot - video of selenium
+sops
+blockchain - licensing options
+
+
+
+Sent from my iPhone
+=======
+List of topics to cover
+=======================
+
+Simple to complex roadmaps
+--------------------------
+
+One of the important things in software, perhaps the most important, is to keep things simple.
+As the needs of an organisation grow, the complexity of the systems it uses increases.
+I show here, in each section, a roadmap of complexity.  The base simplicity levels are
+expected to give the fundamental understanding of the problems, but give way fgracefully to
+new, (ope source) solutions that do the same thing as the simple system, but have extra more useful features.
+
+FOr example, in configuration and co-ordination, we start with just a init file style API that reads from a text file
+telling us what config data exists for our systems.  This is *fine* but it really quickly hits limits.
+SOmething like APache Zookeeper is the next logical step, but that is waay more complicated to set up.
+So we start witht he simplest possible, and point to where to take the next steps.
+
+
+Automated provisioning
+----------------------
+
+- Ansible vs salt vs bash
+  Look, bash is just *fine*
+  We could use fabric for everything if we wanted.
+  Now fabric supports parallel execution, there is limited need for other solutions
+  I will use salt for basic infrastructure buildouts, its integreation with AWS etc.
+  and then use fabirc once we have managed the state of PKI / servers up and pinabgle.
+  This may be too complex but it is at least clear.
+
+  Use fabric to build basic modules that ansible runs
+  http://bsdploy.readthedocs.org/en/latest/usage/ansible-with-fabric.html
+
+  in a venv...
+  ::
+
+     pip install ansible
+
+  /etc/ansible/hosts::
+
+     # /etc/ansible/hosts
+     localhost ansible_connection=local
+
+
+- pyholodeck
+- holoconfig
+
+
+Personal Security
+-----------------
+
+- QubeOS
+
+- iOS - libimobiledevice
+
+http://2014.zeronights.org/assets/files/slides/belenko.pdf
+
+
+- Personal Password management
+
+  Use Password Safe, on iOS and on linux.
+  Keep the safe file in sync via dropbox
+  I need to : install pwsafe, dropbox on laptop and iOS, configure synching
+  https://github.com/ronys/pypwsafe
+
+
+- ssh-agent
+  how toconfigure
+
+- Run own CA
+
+  Use client and server certificates to ensure comms secure.
+
+-  eCryptfs
+
+
+PKIs
+----
+
+The oprginasiuation needs to use PKI
+
+It can use SSH public keys to allow comms between a user and servers over SSH
+It needs to use SSL client certificates to allow commms between user and web servers (apps)
+It can also use SAML to intermediate beween those
+It will need another solution for server-server comms
+
+
+Server Security
+---------------
+
+- unikernels and cloud deployments
+  The obvious end point of docker and immutable servers
+   http://erlangonxen.org/blog/rediscovering-cloud
+   Can we rely on the library is?
+
+- qubeos
+
+- security models and PKI
+
+- saml and single sign on multiple providers
+  A sensible approach is client certs
+  That won't happen with passwords so ...
+
+- ssh
+
+
+Standard Operating procedures are of course neccessary
+They make up a user manula for my company, Mikado software.
+
+Using GitHub / ssh
+------------------
+
+::
+
+    $ ssh-keygen
+    choose no passphrase,
+    save in home/pbrian/.ssh/github
+
+    Your identification has been saved in /home/pbrian/.ssh/github.
+    Your public key has been saved in /home/pbrian/.ssh/github.pub.
+    The key fingerprint is:
+    a8:81:d2:77:ef:5e:36:e0:8d:74:8e:3e:bd:38:33:7d pbrian@HPCube
+
+
+Lets test to see if we have github access (ie they got our *public* key)
+
+::
+
+    $ ~/projects$ ssh -T -i ~/.ssh/github git@github.com
+    Hi lifeisstillgood! You've successfully authenticated, but GitHub does not provide shell access.
+
+But thats a mouthful to run each time
+
+
+
+Now we update our .ssh/config
+
+::
+
+
+    $ cat ~/.ssh/config
+    Host github
+        HostName github.com
+        IdentityFile ~/.ssh/github
+        User git
+
+::
+
+    pbrian@HPCube:~/projects$ ssh -T github
+Hi lifeisstillgood! You've successfully authenticated, but GitHub does not provide shell access.
+
+
+We want to upload github.pub to github and then start up and down loading code
+
+::
+
+    $ git clone git@github.com:lifeisstillgood/myhomedir.git
+    Cloning into 'myhomedir'...
+Meta Projects
+=============
+
+I have lots, perhaps too many, ideas. And I hate to let go of any of them.
+This means most are unfinished and thus the really high potential ones do not get as much attention as they should.
+
+I know I will benefit from more focus, but i also benefit from "a change is as good as a rest".  So I want a means to keep my projects in control, without overwhlming my ability to remeber what they are all.
+
+I need a kind of software "Getting Things Done".
+
+
+My project control will be
+
+* stored in individual repos remotely (ie on github)
+* secure enough
+* lightweight
+* easilyexpansible
+* easy to publish information about them
+
+
+BOS Projects
+------------
+
+Business Operating System Projects - what features / capabilities do I want that are simple, expansiable, unix-like and much more business orientated?
+
+1. Report-setting
+2. Purchase Orider mgtm
+3. contact mgmt
+4. address book
+5.
+
+
+Business Administration
+=======================
+
+If you are responsible for a team of one or more (!)
+you should do these, even if it's not a legal entity
+you are leading.  However if it's your own company -
+You definitely need to do these
+
+*. Data room
+   Storage of all legal and administrative contracts
+   I have simple email system, drop box also work
+
+*. Monthly Board pack
+   You need this - writing is natures way of showing us how poor our thinking is.
+
+*. Accounts
+
