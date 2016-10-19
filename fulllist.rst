@@ -54,6 +54,16 @@ new corporation
 Corporations as machines: we build machines to benefit us - we tend to them.
 
 
+- programmable company 
+  Implies understanding of fundamentals of computer algorithms as applied to real life
+  
+- scalable company
+  What this book offers - categories of work that can be done by more people if you hire then 
+
+ 
+- 
+
+
 
 Privacy issues
 https://news.ycombinator.com/item?id=12388370
@@ -306,6 +316,8 @@ https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-i
 
 * Javascript
 
+http://stateofjs.com/2016/statemanagement/
+
 * Angular vs Jquery
 
 * Programmable Corporation
@@ -345,6 +357,8 @@ https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-i
 
 * Web technologies (html 5)
   Bootstrap, HTML 5, cimples CSS
+  http://mdbootstrap.com/live/_MDB/index/docs/presentation-free/lp-components.html
+  Also my article on customising it
 
 * Rekational Databases
 
@@ -386,6 +400,10 @@ https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-i
 * training and just reading and exploring
 if you do not explicitly make time to learn but sprint all the time all you will have is people who have learnt what they wrote
 
+Agile
+-----
+Better estimation with aimd sawtooth
+And Bayesian estimation of likelihood of hitting targets based on prior ??
 
 Systems Infrastructure
 ----------------------
@@ -413,6 +431,28 @@ SOA and API design
 
 Project management
 ------------------
+
+
+Marketing
+---------
+
+* Press and Media
+Networking as much as anything
+
+* SEO
+Content strategy
+
+* consistent UX
+
+* user focused stories 
+
+* publishing and blogs 
+
+* something interesting and unique to say
+
+* editorial calendar
+
+
 
 Debugging
 ---------
@@ -957,4 +997,80 @@ You definitely need to do these
    You need this - writing is natures way of showing us how poor our thinking is.
 
 *. Accounts
+
+Universal basic income - the basic argument
+-------------------------------------------
+
+We do not charge for access to air, but we do for access to water and to food
+Why? 
+
+DevOps has a cost 
+-----------------
+Infrastructure costs to maintain
+Releasing fifty times a day is great, as long as people are there making sure the servers are working
+You cannot be super productive developer and maintain your servers
+
+Pay the cost - it's not free
+Churn of developers will hurt
+Keep it documented and clean 
+
+
+
+choices.
+
+
+The emerging politics
+---------------------
+An understanding of politics of technology 
+Icelands pirate party
+http://uk.mobile.reuters.com/article/idUKKCN11Z1RV
+Tom Watson 
+Calling out footballer 
+
+
+The emerging secure computing platform
+--------------------------------------
+
+	
+tmzt 32 minutes ago | parent | on: South Korea military cyber command was hacked
+
+RiscV, TCP+crypto offload, hardware switchports with luajit or nf rules. Reactive UI with hardware rendering and compositing.
+Hardware keystore with physical switch to generate and enroll keys, user/owner controlled secrets, one-time programmable as an option, hardwired SAK and OS personality switching key.
+Real-time security isolation kernel, hardware-enforced containerization with MMU-protected GPU passthrough.
+
+https://news.ycombinator.com/reply?id=12623911&goto=threads%3Fid%3Dlifeisstillgood%2312623911
+
+
+Deep learning and AI
+--------------------
+
+Google chief economist Hal Varian calls this “computer kaizen.” For “just as mass production changed the way products were assembled and continuous improvement changed how manufacturing was done,” he says, “so continuous [and often automatic] experimentation will improve the way we optimize business processes in our organizations.”4
+
+
+Hope and optimism
+-----------------
+
+Computer algorithms offer us hope - in a world where 190 countries are unlikely to agree on water being wet, distributed algorithms (paxos?) can teach us how to conorsinatr chnage.  What we will learn in organising our companies in democratic lines will feed into our societies.  War is always bad for business, 
+
+Money creation in modern economy boe 
+
+
+Fractional lending - banks create money
+Idea is they de create it when loan repaid
+But when market crashes and defaults occur, the value is gone but the cash ... still exists
+
+So we are each crash increaibgnmoney supply
+And what where synthetic CDOs creates to do - to absorb the excess cash that people wanted to invest
+
+Shadow courts: global trade is being redefined and software (IP) is at heart of it
+iPhone is one global standard and no one is going to challenge it
+
+
+Wider world
+- potential for an egalitarian and networked future, with common standards and common interests driving our societies and economies forward towards a golden future
+
+Of course it can all fail to be that.  But this ideal (referred to as 45 degree politics, incorporating the bottom up horizontal community politics alongside the state and party infrastructure that can sustain politics beyond the passion of Election Day) is worth looking for in our work organisations as well
+
+Democracy in the enterprise 
+
 
