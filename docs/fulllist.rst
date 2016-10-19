@@ -1,39 +1,82 @@
-Introduction 
+Introduction
+============
+
+.. epigraph:: Something profound
+
+	      
+I have been building software professionally for almost
+20 years, (it only *feels* longer !) and recently was asked by a
+young, up-and-coming start-up to act as their *technical advisory board*.  They
+had their vision for the company, they had the drive and the gumption,
+but they had no technical *understanding*, and it is a complicated
+world out there with every other blog giving their must-have-advice on their
+pet corner of the technology world.
+
+These guys wanted someone to make sense of all the conflicting advice
+and draw a convincing map from where they are now, to where modern
+technology can contribute meaningfully to their business.
+
+I hope I did (and continue to do) a good job.  But it was surprisingly
+difficult.  Oh saying "You need to build an automated CI process", was
+easy.  Explaining what Continuous Intergration was was less easy, and
+then actually showing someone how to build one, that's fairly hard.
+
+But the hardest part was not *what* or *how*.  The hardest part was *why*.
+
+Why should you use the current best practise technique?  Err, because
+its best practise is kind of an answer, but quite unsatisfactory.  Why
+demands, context, it demands history and understanding.
+
+But why is vital to being free to make your own *next* choice.  Unless
+you are to be wedded to your technical advisor, you need to see the
+world the way I see it.  And then you can make your own choice, but
+with the point of view of a 20 year software veteran.
+
+And so this book was born.  It is both an attempt to clearly show the
+state of the art in building software in the 21 Century, but it is
+also an attempt to understand why the art looks the way it does.
+
+This book is partly history lesson, partly diatribe on how the world's most successful ape
+organises the working world, and mostly an attempt to show how to build
+
+I am trying very hard to show my workings.  I am creating a whole
+running company in this bok - a real life example.com, that is partly
+there to explain all the moving parts, and partly to keep me honest.
+In theory you can take the build-scripts from this book and just build
+a working high tech company.  But that will take all the fun out of
+it.
+
+Major themes
+============
+
+* programmable corporation, prgrammable lives
+* end of privacy
+* software literacy
+* stoneage minds
+
+Major trends
 ------------
 
-This book tries to cover a lot of ground.  Ostensibly, we are simply
-laying out the *best practises* for a modern software team.  I have
-been working in, leading and hiring such teams for twenty years (and
-yes I do feel old thank you for asking!).  But the interweb is full of
-humblebragging lists like "you should do X, I did, ain't it cool" -
-but I find them actively unhelpful. Without knowing *why* a certain
-practise is "best" then it is hard to resist the siren call of the
-latest fashion fad (of which the software industry has so many we can
-laugh at the Milanese fashion houses.  "Oh, you have a new colour to
-deal with this *season*.  Well apparently this sprint I have to
-re-implement a ten year testing regieme").
+- distributed by default. This works for data, and processing.  But
+  for organisations too - conways law.
 
-So we do cover modern best practises.  But with added *Why*.
+- chips everywhere (inverse mores law), privacy pollution problem
 
-I use building a dashboard for a new CTO of a hypothetical company as
-the core of this book.  The dashboard is a good way for a new CTO to
-gather the data needed and project it back out.  It is by no means
-easy to gather the right data by the way.  Which is kind of the point.
+- Software Estimation
+  You can't plan out each step in your
+  journey You can't change your destination in between each step
 
-There are real working code examples, an actual dashboard you can run
-in your own organisation or team.
+- Science is measurement. Engineering is applied science. Metrics
+  everywhere.
 
-And there is the why. The history of software development is short and
-yet we forget many of its lessons. Why are some of these practises
-desirable, how did we get here.
-
-This book is partly a history lesson then. But one I (sadly) have got
-a personal view on a large chunk of the history.  I hope we can draw
-out the right lessons.
+- the world at large (politics gets everywhere, and as software
+  programs the world, politics and software will meet. New forms of
+  governance (Debian)
 
 
-Modern Capabilities 
--------------------
+
+{{stoneageminds.rst}}
+    
 
 
 Modern trends
@@ -43,6 +86,9 @@ new corporation
 Corporations as machines: we build machines to benefit us - we tend to them.
 
 
+
+Privacy issues
+https://news.ycombinator.com/item?id=12388370
 
 Not so modern people
 --------------------
@@ -112,23 +158,6 @@ Social organisation, commit bits, licenses and future income and
 reputation.
 
 
-Major trends
-------------
-
-- distributed by default. This works for data, and processing.  But
-  for organisations too - conways law.
-
-- chips everywhere (inverse mores law), privacy pollution problem
-
-- Agility vs Architecture.  You can't plan out each step in your
-journey You can't change your destination in between each step
-
-- Science is measurement. Engineering is applied science. Metrics
-  everywhere.
-
-- the world at large (politics gets everywhere, and as software
-  programs the world, politics and software will meet. New forms of
-  governance (Debian)
 
 Start with the Dashboard
 ------------------------
@@ -369,6 +398,9 @@ https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-i
 
 * rethinkdb
  
+* training and just reading and exploring
+if you do not explicitly make time to learn but sprint all the time all you will have is people who have learnt what they wrote
+
 
 Systems Infrastructure
 ----------------------
@@ -534,6 +566,53 @@ Skills required (bold=essential)
 ·         DNS/DHCP
 
 
+
+the inevitable:
+digital hygiene 
+tco of digital life
+
+perosnal to business
+- less stuff (dvds to cloud)
+
+climate chnage
+
+http://worrydream.com/ClimateChange/
+
+
+Underpinning philosophy 
+- Equality
+- Empiricism
+- Extrrnalities
+
+Economics is important but it's use of energy for human benefit.
+
+Avoiding the google bubble - digital gated communities
+
+
+- Airbnb has a race issue - people more likely to refuse a blackmsoundingnname. But the solution to this is simple - renters must offer a room to whomever applies - just as hotels cannot turn people away.  But because these new efficient services are ignoring existing regulation and so will need new (smarter regulating if we can - see below)
+
+AirBNb and other "regulation challenging" unicorns are quite simply breaking the law in almost every country in which they operate.  They are, incidentally, raising matters of public policy that are long overdue 
+
+How is airbnb the same as European Commission - both trying to harmonise regulation across a globalised world.
+
+Car Charing versus taxi : here is my regulatory change - the car sharing service must advertise its start and leave positions and make the subsequent journey of 
+
+
+What happens when a regulated hotel tries to discriminate (gay bo'nb issue) - they get their ass sued.
+
+- European court tries ban hyoerlinks
+http://searchengineland.com/european-court-says-linking-illegal-content-copyright-infringement-258442
+
+- eefragmentation - http://www.paulgraham.com/re.html
+
+The new labour contract: superstars and payment.
+http://www.totalsportek.com/money/manchester-united-player-salaries/
+
+So for 2015 Manchester United made 450M, of which it spent 250M on player salaries (holy cow). If we take 20% corporation tax (yeah right) then we see around 80/20 for labour to capital
+
+Does this hold true for other superstar driven areas - finance? Oh yes - here is traders that took all the revenue in a year.
+
+Is Pikkety wrong? Will global remote working make this kind of impact? Not clear. 
 ----------------------------------------
 incoorpoate
 ----------------------------------------
