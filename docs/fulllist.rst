@@ -1,73 +1,89 @@
-Introduction 
+Introduction
+============
+
+.. epigraph:: Something profound
+
+	      
+I have been building software professionally for almost
+20 years, (it only *feels* longer !) and recently was asked by a
+young, up-and-coming start-up to act as their *technical advisory board*.  They
+had their vision for the company, they had the drive and the gumption,
+but they had no technical *understanding*, and it is a complicated
+world out there with every other blog giving their must-have-advice on their
+pet corner of the technology world.
+
+These guys wanted someone to make sense of all the conflicting advice
+and draw a convincing map from where they are now, to where modern
+technology can contribute meaningfully to their business.
+
+I hope I did (and continue to do) a good job.  But it was surprisingly
+difficult.  Oh saying "You need to build an automated CI process", was
+easy.  Explaining what Continuous Intergration was was less easy, and
+then actually showing someone how to build one, that's fairly hard.
+
+But the hardest part was not *what* or *how*.  The hardest part was *why*.
+
+Why should you use the current best practise technique?  Err, because
+its best practise is kind of an answer, but quite unsatisfactory.  Why
+demands, context, it demands history and understanding.
+
+But why is vital to being free to make your own *next* choice.  Unless
+you are to be wedded to your technical advisor, you need to see the
+world the way I see it.  And then you can make your own choice, but
+with the point of view of a 20 year software veteran.
+
+And so this book was born.  It is both an attempt to clearly show the
+state of the art in building software in the 21 Century, but it is
+also an attempt to understand why the art looks the way it does.
+
+This book is partly history lesson, partly diatribe on how the world's most successful ape
+organises the working world, and mostly an attempt to show how to build
+
+I am trying very hard to show my workings.  I am creating a whole
+running company in this bok - a real life example.com, that is partly
+there to explain all the moving parts, and partly to keep me honest.
+In theory you can take the build-scripts from this book and just build
+a working high tech company.  But that will take all the fun out of
+it.
+
+Major themes
+============
+
+* programmable corporation, prgrammable lives
+* end of privacy
+* software literacy
+* stoneage minds
+
+Major trends
 ------------
 
-This book tries to cover a lot of ground.  Ostensibly, we are simply
-laying out the *best practises* for a modern software team.  I have
-been working in, leading and hiring such teams for twenty years (and
-yes, I do feel old thank you for asking!).
+- distributed by default. This works for data, and processing.  But
+  for organisations too - conways law.
 
-I do not want this to be another humblebragging list of the form "you
-should do X, I did, ain't it cool" - because I find them actively
-unhelpful, for two major reasons.
+- chips everywhere (inverse mores law), privacy pollution problem
 
-Firstly, Without knowing *why* a certain practise is "best" then it is
-hard to resist the siren call of the latest fashion fad (of which the
-software industry has so many we can laugh at the Milanese fashion
-houses.  "Oh, you have a new colour to deal with this *season*.  Let
-me show you how often a client can change their minds in a two week
-sprint."
+- Software Estimation
+  You can't plan out each step in your
+  journey You can't change your destination in between each step
 
-Secondly, they don't cover the whole field. Reading about one startups
-marvellous new medicine for log management does not give you a sense
-of how well they are doing with the thirty other vital areas like CI,
-project management etc.  And it does not give you an idea for how much
-effort is left over after logging is tied up and ready to be left well
-alone.
+- Science is measurement. Engineering is applied science. Metrics
+  everywhere.
 
-So I wanted to get my own best practises out of my head and onto both
-scripts and paper.
+- the world at large (politics gets everywhere, and as software
+  programs the world, politics and software will meet. New forms of
+  governance (Debian)
 
-I have tried to do two closely entwined things here - to write
-the "how to set up a new company from scratch", and to write the how to
-as a form of literate programming.  To show my workings, from the start.
-
-This is possible because of DevOps - that is there exists a set of
-scripts that will produce a fully working company - it is not
-something locked up in the brains of talented people.  (What is locked
-up is the understanding needed to recreate or adjust the scripts -
-that is never abstracted away) 
-
-I use building a dashboard for a new CTO of a hypothetical company as
-the core of this book.  The dashboard is a good way for a new CTO to
-gather the data needed and project it back out.  It is by no means
-easy to gather the right data by the way.  Which is kind of the point.
-
-And there is the why. The history of software development is short and
-yet we forget many of its lessons. Why are some of these practises
-desirable, how did we get here.
-
-This book is partly a history lesson then. But one I (sadly) have got
-a personal view on a large chunk of the history.  I hope we can draw
-out the right lessons.
 
 
 {{stoneageminds.rst}}
+    
+
 
 Modern trends
 -------------
 
 new corporation
 Corporations as machines: we build machines to benefit us - we tend to them.
-
-
-- programmable company 
-  Implies understanding of fundamentals of computer algorithms as applied to real life
-  
-- scalable company
-  What this book offers - categories of work that can be done by more people if you hire then 
-
- 
-- 
 
 
 
@@ -142,23 +158,6 @@ Social organisation, commit bits, licenses and future income and
 reputation.
 
 
-Major trends
-------------
-
-- distributed by default. This works for data, and processing.  But
-  for organisations too - conways law.
-
-- chips everywhere (inverse mores law), privacy pollution problem
-
-- Agility vs Architecture.  You can't plan out each step in your
-journey You can't change your destination in between each step
-
-- Science is measurement. Engineering is applied science. Metrics
-  everywhere.
-
-- the world at large (politics gets everywhere, and as software
-  programs the world, politics and software will meet. New forms of
-  governance (Debian)
 
 Start with the Dashboard
 ------------------------
@@ -322,8 +321,6 @@ https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-i
 
 * Javascript
 
-http://stateofjs.com/2016/statemanagement/
-
 * Angular vs Jquery
 
 * Programmable Corporation
@@ -363,8 +360,6 @@ http://stateofjs.com/2016/statemanagement/
 
 * Web technologies (html 5)
   Bootstrap, HTML 5, cimples CSS
-  http://mdbootstrap.com/live/_MDB/index/docs/presentation-free/lp-components.html
-  Also my article on customising it
 
 * Rekational Databases
 
@@ -406,10 +401,6 @@ http://stateofjs.com/2016/statemanagement/
 * training and just reading and exploring
 if you do not explicitly make time to learn but sprint all the time all you will have is people who have learnt what they wrote
 
-Agile
------
-Better estimation with aimd sawtooth
-And Bayesian estimation of likelihood of hitting targets based on prior ??
 
 Systems Infrastructure
 ----------------------
@@ -437,28 +428,6 @@ SOA and API design
 
 Project management
 ------------------
-
-
-Marketing
----------
-
-* Press and Media
-Networking as much as anything
-
-* SEO
-Content strategy
-
-* consistent UX
-
-* user focused stories 
-
-* publishing and blogs 
-
-* something interesting and unique to say
-
-* editorial calendar
-
-
 
 Debugging
 ---------
@@ -1003,80 +972,4 @@ You definitely need to do these
    You need this - writing is natures way of showing us how poor our thinking is.
 
 *. Accounts
-
-Universal basic income - the basic argument
--------------------------------------------
-
-We do not charge for access to air, but we do for access to water and to food
-Why? 
-
-DevOps has a cost 
------------------
-Infrastructure costs to maintain
-Releasing fifty times a day is great, as long as people are there making sure the servers are working
-You cannot be super productive developer and maintain your servers
-
-Pay the cost - it's not free
-Churn of developers will hurt
-Keep it documented and clean 
-
-
-
-choices.
-
-
-The emerging politics
----------------------
-An understanding of politics of technology 
-Icelands pirate party
-http://uk.mobile.reuters.com/article/idUKKCN11Z1RV
-Tom Watson 
-Calling out footballer 
-
-
-The emerging secure computing platform
---------------------------------------
-
-	
-tmzt 32 minutes ago | parent | on: South Korea military cyber command was hacked
-
-RiscV, TCP+crypto offload, hardware switchports with luajit or nf rules. Reactive UI with hardware rendering and compositing.
-Hardware keystore with physical switch to generate and enroll keys, user/owner controlled secrets, one-time programmable as an option, hardwired SAK and OS personality switching key.
-Real-time security isolation kernel, hardware-enforced containerization with MMU-protected GPU passthrough.
-
-https://news.ycombinator.com/reply?id=12623911&goto=threads%3Fid%3Dlifeisstillgood%2312623911
-
-
-Deep learning and AI
---------------------
-
-Google chief economist Hal Varian calls this “computer kaizen.” For “just as mass production changed the way products were assembled and continuous improvement changed how manufacturing was done,” he says, “so continuous [and often automatic] experimentation will improve the way we optimize business processes in our organizations.”4
-
-
-Hope and optimism
------------------
-
-Computer algorithms offer us hope - in a world where 190 countries are unlikely to agree on water being wet, distributed algorithms (paxos?) can teach us how to conorsinatr chnage.  What we will learn in organising our companies in democratic lines will feed into our societies.  War is always bad for business, 
-
-Money creation in modern economy boe 
-
-
-Fractional lending - banks create money
-Idea is they de create it when loan repaid
-But when market crashes and defaults occur, the value is gone but the cash ... still exists
-
-So we are each crash increaibgnmoney supply
-And what where synthetic CDOs creates to do - to absorb the excess cash that people wanted to invest
-
-Shadow courts: global trade is being redefined and software (IP) is at heart of it
-iPhone is one global standard and no one is going to challenge it
-
-
-Wider world
-- potential for an egalitarian and networked future, with common standards and common interests driving our societies and economies forward towards a golden future
-
-Of course it can all fail to be that.  But this ideal (referred to as 45 degree politics, incorporating the bottom up horizontal community politics alongside the state and party infrastructure that can sustain politics beyond the passion of Election Day) is worth looking for in our work organisations as well
-
-Democracy in the enterprise 
-
 
