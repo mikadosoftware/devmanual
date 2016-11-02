@@ -17,9 +17,7 @@ and draw a convincing map from where they are now, to where modern
 technology can contribute meaningfully to their business.
 
 I hope I did (and continue to do) a good job.  But it was surprisingly
-difficult.  Oh saying "You need to build an automated CI process", was
-easy.  Explaining what Continuous Intergration was was less easy, and
-then actually showing someone how to build one, that's fairly hard.
+difficult.  Oh saying "You need to build an automated CI process", was easy. How to put one together from any number of excellent packages is quick.
 
 But the hardest part was not *what* or *how*.  The hardest part was *why*.
 
@@ -36,8 +34,7 @@ And so this book was born.  It is both an attempt to clearly show the
 state of the art in building software in the 21 Century, but it is
 also an attempt to understand why the art looks the way it does.
 
-This book is partly history lesson, partly diatribe on how the world's most successful ape
-organises the working world, and mostly an attempt to show how to build
+This book is partly history lesson, partly diatribe on the software industry and mostly an attempt to download my point of view into your head.  Don't worry I have very little in my brain these days so it won't hurt.
 
 I am trying very hard to show my workings.  I am creating a whole
 running company in this bok - a real life example.com, that is partly
@@ -49,10 +46,41 @@ it.
 Major themes
 ============
 
-* programmable corporation, prgrammable lives
+Ever since humans walked out of their caves and looked up at the night sky and thought "what the fuck is all that up there " we have been trying to understand the world, and fijdnsome advabtage in that understanding.
+
+Science is to all intents and purposes the culmination of that process
+
+Science is struggling with crowd behaviour
+Organising ourselves is of paramount importance
+Democracy is a fairly new thing (about forty years)
+Globalisation is huge force - like having your iPhone work in different countries?
+Uber is a form of regulatory harmonisation
+
+So how will we organise companies 
+
+Programmatic company leads to roald chase shrinking size which leads to more manageable org sizes which leads to more ability absorb change which leads to more radical change which has been problem for thirty years and issue around brexit
+
+* programmable corporation, prgrammable live
+Programmatic company - transparent processes, transparent metrics available to all and 
+
+Sompreviously the metrics were only available as you went up hierarchy 
+Now it's a matter of policy
+
+
 * end of privacy
+
+Privacy as a matter of policy
+Hard to enforce
+Secrecy is gone too
+
+
 * software literacy
-* stoneage minds
+Fundamental force
+
+
+* stoneage minds, science and rationality and economic behaviour
+
+
 * estimation, prediction, relaxing and reviewing
   Summerhill school
 
@@ -1060,5 +1088,9 @@ Wider world
 Of course it can all fail to be that.  But this ideal (referred to as 45 degree politics, incorporating the bottom up horizontal community politics alongside the state and party infrastructure that can sustain politics beyond the passion of Election Day) is worth looking for in our work organisations as well
 
 Democracy in the enterprise 
+
+
+
+- 
 
 
