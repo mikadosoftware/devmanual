@@ -1,3 +1,9 @@
+=================
+The Software Mind
+=================
+
+.. :: philosophy and best practises in software development
+
 Introduction
 ============
 
@@ -103,7 +109,8 @@ Major trends
   programs the world, politics and software will meet. New forms of
   governance (Debian)
 
-
+- containers, IOT needs updates and ntp servers
+   http://www.morethanseven.net/2016/11/05/the-end-of-the-general-purpose-operating-system-as-it-happens/
 
 {{stoneageminds.rst}}
     
@@ -393,6 +400,8 @@ https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-i
 * Software KPIs, buisness KPIs
 
 * Simple Marketing (Twilio approach), SEO
+https://www.ducttapemarketing.com/blog/guide-to-small-business-keyword-research/
+
 
 * Debugging tools
   CHarles proxy
