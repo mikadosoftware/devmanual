@@ -69,6 +69,11 @@ Programmatic company leads to roald chase shrinking size which leads to more man
 * programmable corporation, prgrammable live
 Programmatic company - transparent processes, transparent metrics available to all and 
 
+
+Perhaps another way to look at it - if you can read the precise instructions on how to build a company, or a house, you can make changes to the house - if you can automrebuild it you can easily improve it
+
+If not you are just left with sticking stuff on the sides.  A near perfect metaphor for a bureaucratic only able to metastasise not evolve or improve
+
 Sompreviously the metrics were only available as you went up hierarchy 
 Now it's a matter of policy
 
