@@ -77,6 +77,18 @@ If not you are just left with sticking stuff on the sides.  A near perfect metap
 Sompreviously the metrics were only available as you went up hierarchy 
 Now it's a matter of policy
 
+* productivity
+  There are several counter headwinds to western economic growth (https://www.amazon.co.uk/Rise-Fall-American-Growth-Princeton/dp/0691147728)
+  
+  - productivity as the engine of growth held back by
+  - demographics
+  - inequality
+  - debt (1/4 of Debt is student debt in USA)
+  - dropping education 
+  
+  Producity should be high - look at Kasparov and AI / centaur
+  But lack of software literacy is holding individuals back and lack of coaseian-optimal organisation sizes hold back organisational productivity
+  
 
 * end of privacy
 
