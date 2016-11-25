@@ -2,7 +2,7 @@
 The Software Mind
 =================
 
-.. :: philosophy and best practises in software development
+philosophy and best practises in software development
 
 Introduction
 ============
@@ -11,16 +11,15 @@ Introduction
 
 	      
 I have been building software professionally for almost
-20 years, (it only *feels* longer !) and recently was asked by a
+20 years, (it only *feels* longer) and recently was asked by a
 young, up-and-coming start-up to act as their *technical advisory board*.  They
 had their vision for the company, they had the drive and the gumption,
-but lacked technical *understanding*, and it is a complicated
+but lacked technical *understanding*; it is a complicated
 world out there with every other blog giving their must-have-advice on their
 pet corner of the technology world.
 
 These guys wanted someone to make sense of all the conflicting advice
-and draw a convincing map from where they are now, to where modern
-technology can contribute meaningfully to their business.
+and draw a convincing map from where they are now, to where technology can contribute meaningfully to their business.
 
 I hope I did (and continue to do) a good job.  But it was surprisingly
 difficult.  Oh saying "You need to build an automated CI process", was easy. How to put one together from any number of excellent packages is quick.
@@ -28,7 +27,7 @@ difficult.  Oh saying "You need to build an automated CI process", was easy. How
 But the hardest part was not *what* or *how*.  The hardest part was *why*.
 
 Why should you use the current best practise technique?  Err, because
-its best practise is kind of an answer, but quite unsatisfactory.  Why
+it is the best practise is kind of an answer, but quite unsatisfactory.  Why
 demands, context, it demands history and understanding.
 
 But why is vital to being free to make your own *next* choice.  Unless
@@ -40,21 +39,14 @@ And so this book was born.  It is both an attempt to clearly show the
 state of the art in building software in the 21 Century, but it is
 also an attempt to understand why the art looks the way it does.
 
-This book is partly history lesson, partly diatribe on the software industry and mostly an attempt to download my point of view into your head.  Don't worry I have very little in my brain these days so it won't hurt.
-
-I am trying very hard to show my workings.  I am creating a whole
-running company in this bok - a real life example.com, that is partly
-there to explain all the moving parts, and partly to keep me honest.
-In theory you can take the build-scripts from this book and just build
-a working high tech company.  But that will take all the fun out of
-it.
+This book is partly history lesson, partly diatribe on the software industry and mostly an attempt to download my point of view into your head.  Don't worry - I have very little in my brain these days so it won't hurt.  Ready? 
 
 Major themes
 ============
 
-Ever since humans walked out of their caves and looked up at the night sky and thought "what the fuck is all that up there " we have been trying to understand the world, and fijdnsome advabtage in that understanding.
+For some reason about 100,000 years ago, a smallish ape living in Kenya, Africa started to spread North and East, working together in family groups or small tribes against the cold and the night.
 
-Science is to all intents and purposes the culmination of that process
+Science is to all intents and purposes the culmination of that process.
 
 Science is struggling with crowd behaviour
 Organising ourselves is of paramount importance
