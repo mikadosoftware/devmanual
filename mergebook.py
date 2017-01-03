@@ -1,3 +1,6 @@
+"""
+
+"""
 
 import re
 
@@ -25,19 +28,19 @@ def getTextFromFile(filename):
 def mergebook(bookpath):
     txtnew = ''
     txt = open(bookpath).read()
-    
+
     for line in txt.split('\n'):
-        
+
         m = matchline(line)
         if m:
            txtnew += "\n" + getTextFromFile(m) + "\n"
         else:
            txtnew += line + '\n'
-           
-           
+
+
     open("newbook.rst",'w').write( txtnew)
-    
-    
+
+
 
 
 if __name__ == '__main__':
