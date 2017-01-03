@@ -4,6 +4,27 @@ The Software Mind
 
 philosophy and best practises in software development
 
+The transition from pre-SoftwareLiteracy organisations to post software literacy 
+
+
+- software is political now
+  Weapons math destruction
+  The nervous system and soul of enterprises
+  
+  The choices we make (open v closed) will trammel our companies, our societies and our success
+  
+  I choose open. There are other options 
+  Just with less chance of success as I hope you will glimpse 
+
+
+But software organisations are political
+And software is hard (maintenance, testing refactoring high quality, all of which is not new feature so isnusually put behind the curve.  I can write a detective story set in Victorian London but as it won't be as good as Conan Doyle's it won't be the same.
+
+And that's quality
+
+Wodehouse?
+
+And that's politics - https://danluu.com/hn-comments/
 Introduction
 ============
 
@@ -199,6 +220,15 @@ Lieutenants own chunks of code. Use Linux development model
 At the beginning of greenfield almost any code laid down is 10x. Don't
 believe in 10x myth.  Iceland and Wales versus England.  Esprit de
 corp
+
+"""The what-to-build skill trumps the how-to-build-it skill every time!"""
+
+So the essence of software org is loads of discussion on what to build - discussion is good example of open source approach? 
+
+The corollary to thisnis you can't hire a 10x developer and then tell them what to do. Which is a revelation for allmiddle management. And the design of lost organisations 
+Basically you are hiring intraprenuers 
+
+
 
 Social organisation, commit bits, licenses and future income and
 reputation.
@@ -1108,7 +1138,71 @@ Of course it can all fail to be that.  But this ideal (referred to as 45 degree 
 Democracy in the enterprise 
 
 
+Do page rank on spark / storming
 
-- 
+
+Build tools
+See bazel/ maven / make
+See depenadncy 
+See danluu for similar thoughts
+"having a strong engineering culture is much larger force multiplier" 
+
+ People write a lot about how things like using fancier languages or techniques like TDD or agile will make your teams more productive, but having a strong engineering culture is much larger force multiplier
+ 
+ https://danluu.com/wat/
+ 
+ Fundamental problem: 
+ How to reward the person who arrives a day late because they steered around the storm
+ And not reward the fool who risked his ship sailing through the storm
+ 
+ Land how to reward the person who achieved the goal with a tenth of the effort 
+ And not reward the person who did the same thing but at ten times the cost - because big pr he te with  it budgets get high cosibility
+ 
+ 
+
+
+Danluu as competition validating market 
+
+Pre and post literate enterprises
+
+Management coding
+-----------------
+
+I stepped away from manabgemt (pull me back in)
+But as an example, a grid has been hardcoded, all over the place and is now getting retired. And we left it late.
+
+Some teams did sensible CONSTANT use and have ten minutes testing. Others not so much.
+
+It's a pretty trivial problem but it needs co-ordination and chasing and guess what that's a management job
+
+So I write something - basically grep over the source tree. And then put it on a website and I need to assign the fixes for each team to the right team (who have to test it themselves) and basically chase and cajole
+
+It's all automateable - effectively it's a set of todos that are outsourced.
+
+It's a programmable company ??? Or over management? Icing from 
+
+The grain of the Internet
+=========================
+Public policy issues: 
+Weapons of math destruction is actively harmful algorithms
+Internet of shit is the passively harmful technology - where open devices or crap software (see my car)
+
+We need to find a path between interventionism and free market
+
+This is a fundamental dividing line something about order and chaos and is very evident in American politics 
+
+It's hard to discern the dividing lines of Chinese and Indian politics today (look up?)
+
+
+
+Washington post illiteracy 
+Plus 
+All those choices made badly - and that's just in getting software out, let alone choosing against the grain of the Internet 
+
+It ha sa grain 
+
+Open
+Transparent 
+Root owns it
 
 
