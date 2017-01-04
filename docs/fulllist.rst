@@ -2,47 +2,10 @@
 The Software Mind
 =================
 
-philosophy and best practises in software development
-
 The transition from pre-SoftwareLiteracy organisations to post software literacy
 
 
-- software is political now
-  Weapons math destruction
-  The nervous system and soul of enterprises
-
-  The choices we make (open v closed) will trammel our companies, our societies
-  and our success
-
-  I choose open. There are other options
-  Just with less chance of success as I hope you will glimpse
-
-
-But software organisations are political And software is hard (maintenance,
-testing refactoring high quality, all of which is not new feature so isnusually
-put behind the curve.  I can write a detective story set in Victorian London but
-as it won't be as good as Conan Doyle's it won't be the same.
-
-And that's quality
-
-Wodehouse?
-
-And that's politics - https://danluu.com/hn-comments/
-
-Global politics - whilst the big shocks recently have been towards
-anti-immigration and protectionist (brexi, trump etc) but this year the heads of
-50 african governments agreed a free labour movement area, as did asia.  So 2
-billion people are movong in the direction of global free trades.
-
-as I will argue the benefits of global trade in goods is generally well
-established and people are reluctant to give it up.  Thats not a complete given
-but ...
-
-And the hidden nature of "harmonistation" makes it harder to see beenfots but it
-is in technology that harmonisation is most natural and most difficult to get
-around.
-
-
+- 
 
 
 Introduction
@@ -86,8 +49,45 @@ This book is partly history lesson, partly diatribe on the software industry and
 mostly an attempt to download my point of view into your head.  Don't worry - I
 have very little in my brain these days so it won't hurt.  Ready?
 
-Major themes
-============
+Software literacy 
+=================
+
+
+Pre- and Post-literate society 
+==============================
+
+
+Programmatic company
+====================
+
+Quality is hard - needs a strong engineering culture
+A post literate culture
+
+Politics is software, software is law
+======================================
+Harmonisation, immigration, globalisation
+Like lawyers
+Policy is imprinted in software. Just as in law
+Weapons of math destruction and public policy Pre-literacy
+
+What choices do we need to make as society in public policy - open accountable transparent flexible / configurable
+
+
+Global politics - whilst the big shocks recently have been towards
+anti-immigration and protectionist (brexi, trump etc) but this year the heads of
+50 african governments agreed a free labour movement area, as did asia.  So 2
+billion people are movong in the direction of global free trades.
+
+as I will argue the benefits of global trade in goods is generally well
+established and people are reluctant to give it up.  Thats not a complete given
+but ...
+
+And the hidden nature of "harmonistation" makes it harder to see beenfots but it
+is in technology that harmonisation is most natural and most difficult to get
+around.
+
+
+
 
 For some reason about 100,000 years ago, a smallish ape living in Kenya, Africa
 started to spread North and East, working together in family groups or small
