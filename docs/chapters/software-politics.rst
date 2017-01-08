@@ -10,3 +10,5 @@
   
   China's social Credit Scoring - digital social control
   So much corruption and lack of faith in institutions a new one was created - but it's an experiment 
+  
+  Siri personality choices (female vs passive) and oak ridge Tennessee 

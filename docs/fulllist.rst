@@ -5,13 +5,11 @@ The Software Mind
 The transition from pre-SoftwareLiteracy organisations to post software literacy
 
 
-- 
-
 
 Introduction
 ============
 
-.. epigraph:: Something profound
+.. epigraph:: Pages he (P.G. Wodehouse) felt were working well would be pinned up high, and those that still needed work would be lower down the wall. His aim was to get the entire manuscript up to the picture rail before he handed it in
 
 
 I have been building software professionally for almost
@@ -40,6 +38,10 @@ But why is vital to being free to make your own *next* choice.  Unless
 you are to be wedded to your technical advisor, you need to see the
 world the way I see it.  And then you can make your own choice, but
 with the point of view of a 20 year software veteran.
+
+
+So it's the two kinds of why - why this move instead of all the other moves possible. That means you need an understanding of all the possible moves and their future implications - why means a map. (See swardley)
+
 
 And so this book was born.  It is both an attempt to clearly show the
 state of the art in building software in the 21 Century, but it is
@@ -87,8 +89,7 @@ is in technology that harmonisation is most natural and most difficult to get
 around.
 
 
-
-
+The 
 For some reason about 100,000 years ago, a smallish ape living in Kenya, Africa
 started to spread North and East, working together in family groups or small
 tribes against the cold and the night.
@@ -821,6 +822,8 @@ being an all round good egg
 
 7. progress not perfection
 I have a massive discuss next between what is reasonably possible for a average to good developer (me) to be able to achieve in two or three days at work (with interruptions) and what I *could* do if I had got plenty of rest, drunk my Orange Juice, refactored code on this area just last week and ... well, I think I *could* do more than I have.  but this leads me to think I should have done more - and that tends to lead to outrageously negative defensiveness, including rushing and cutting corners to get it done in the arbitrary self imposed deadline, or perhaps worse, lying about how far I have got and saying "just another day" (often lying to myself first)
+
+https://basildoncoder.com/blog/pg-wodehouse-method-of-refactoring.html
 
 8. static analysis
 
