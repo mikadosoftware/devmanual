@@ -1,17 +1,13 @@
-======
-Part I
-======
-
-
+=================
 Software Literacy
 =================
 
 I'm standing in a cavernous room underneath a bustling, noisy pub in
-London's Covent Garden.  It was a fine Summers day and the evening is sharply cooking.  
+London's Covent Garden.  It was a fine Summers day and the evening is sharply cooking.
 
 I look around at the 90 odd developers, graduates and
-entrepreneurs in the room, and, as I have been persuaded to sponsor this meeting, now all 
-I have to do a quick speech. 
+entrepreneurs in the room, and, as I have been persuaded to sponsor this meeting, now all
+I have to do a quick speech.
 
 I never quite know what to do for these sort of speeches - do I decide to give a history lesson. Yes. A history
 lesson. Gripping stuff, some were even rolling their eyes in
@@ -22,8 +18,8 @@ the first of his Bibles using movable type - and ushered in a new era
 of literacy and communication. Printing books was now orders of
 magnitude cheaper, and there was an explosion of publishing. The
 number of published books leapt from an estimated 30,000 books *in all
-of Europe in 1450* to 12 million books by 1500.  Think about that.  
-A decent sized library today, in many large towns in England will have 
+of Europe in 1450* to 12 million books by 1500.  Think about that.
+A decent sized library today, in many large towns in England will have
 30,000 books.  More than were in the whole of Europe before the printing press. [#]_
 
 Within a generation literacy in Western Europe had leapt from under 2%
@@ -39,7 +35,7 @@ corner EurAsia some huge advantages the effects of which are only just
 wearing off five centuries later.
 
 Before people wandered off to the bar I decided to let them know why
-they were getting my best Simon Scharma impression - why history mattered. 
+they were getting my best Simon Scharma impression - why history mattered.
 
 Because, in my view, and remember they were eating my
 sausage rolls, so that counts, in my view we are entering the age of a
@@ -73,7 +69,7 @@ with "beat 'em so they listen harder".
 
 However, deep in our bones we *know* that literacy changes everything.
 Its so built into us and into everyone we know that we cannot imagine a world where we cannot
-read or write.  
+read or write.
 
 .
 
@@ -112,13 +108,13 @@ unavoidable in the future.
 
 .. figure:: _static/robards2.jpeg
    :width: 75%
-	
+
    When I speak of a literate company, please keep this film in mind.
 
 'All the President's Men' is one of my favourite films, engrossing and suspenseful.  And it also portrays life in a deeply literate company.
-   
+
 I will take a leap and argue that the Washington Post under Ben
-Bradlee was the epitome of a (non-software) literate company.  It had well trained professionals, 
+Bradlee was the epitome of a (non-software) literate company.  It had well trained professionals,
 clear ethical standards, clear business processes and clear processes
 for ensuring that its literate output met their standards. Editors and copy-sub-editors and so on.  And cashflow. That helped a lot.
 
@@ -259,10 +255,10 @@ The programmable company
 ------------------------
 
 One theme I shall return to is the idea that companies and organisations
-are simply means to organise humans - and that has lower cost and friction 
+are simply means to organise humans - and that has lower cost and friction
 than it used to with software intermediation.
 
-To put it simply, almost everything that is done in a normal company now 
+To put it simply, almost everything that is done in a normal company now
 can be automated, and the co-ordination of functions is an email away.
 
 For almost everything a company or organisation does a second time, that can be automated
@@ -273,7 +269,7 @@ The rare, right way
 -------------------
 
 The failures above are all very varied. Amount them no obvious solutions.
-This is the point - we simply do not know what the Washington post of often years 
+This is the point - we simply do not know what the Washington post of often years
 Hence will look and behave like.  But like the team at healthcare, we don't need to
 We need to follow "best practise".  Sadly there is no written how to on that - it is more
 the gross difference between a Washington post set up and run by a literate editor and that setup and run by an illiterate - charlelemn
@@ -291,7 +287,7 @@ We need a software literate civil service as urgently as we need more start ups.
 GDS is a marvellous step in the right direction
 
 Weapons of math destruction and the hidden hand
-- Asimov ? 
+- Asimov ?
 
 
 The revolution has not happened yet
@@ -302,7 +298,7 @@ https://medium.com/absurdist/the-computer-revolution-has-yet-to-happen-f1dbf983d
 Devices are curated not owned by us
 The APIs do not exist because vast majority of users could not use them - would need to buy another app
 
-Pen and paper ? 
+Pen and paper ?
 
 
 
@@ -329,7 +325,7 @@ it should run", because they were illiterate too.
 
 
 .. #: http://www.hrc.utexas.edu/educator/modules/gutenberg/books/legacy/
-      
+
 
 The incremental improvement - constant little bit better till it is out of sight
 This is a fundamental part - daily, hourly improvements just sent out.
@@ -436,7 +432,7 @@ Why write a book?
 
   Writing is nature’s way of showing us how sloppy our thinking is.
 
- 
+
  Leslie Lam-port
 
 
@@ -456,13 +452,13 @@ vast growth his first invention had spawned
 
 Shakespeare and Company
 Left bank of seine
-What does a software bookshop look like? What events does it engender? 
+What does a software bookshop look like? What events does it engender?
 
-When does data become proprietary 
+When does data become proprietary
 --------------------////////------
 
 
-Google encrypts the referrer header 
+Google encrypts the referrer header
 But that is what a person types in as search term
 
 Why is that private not public?
@@ -470,22 +466,22 @@ Why is that private not public?
 European courts missing the point
 https://itunes.apple.com/gb/podcast/the-economist-radio-all-audio/id151230264?mt=2&i=361720969
 
-Possible free trade battle 
-But the battle is over the wrong thing 
+Possible free trade battle
+But the battle is over the wrong thing
 Data is public - it just is on vastly larger scales than we realise (pea souper fallacy)
 
-Not only that but free trade areas in data will be needed to avoid 
-Balkanisation of the Internet 
+Not only that but free trade areas in data will be needed to avoid
+Balkanisation of the Internet
 
 It's not unavoidable - it should be a free vs unfree world
 The new capitalism - free data
 
 Private data is private, unless published
-There was a huge backlash against this for the first and other amendments 
+There was a huge backlash against this for the first and other amendments
 See the uk government under fox / Pitt
 
 But the principal has held well
-And we need to refresh it - and redefine publish in light of pea souper 
+And we need to refresh it - and redefine publish in light of pea souper
 
 http://uk.businessinsider.com/jobs-that-are-quickly-disappearing-thanks-to-robots-2016-2?r=US&IR=T
 
@@ -505,12 +501,12 @@ Exporting democracy
 Where does half the world look to for inspiration?
 Western democracy or Chinese capitalism without representation?
 
-Democracy is exported - nation to nation, generation to generation 
+Democracy is exported - nation to nation, generation to generation
 We need to define the new society with new parameters
 
 European democracy is under threat, even building a wall around Mexico
 
-Who wants that ? 
+Who wants that ?
 
 Solutions
 
@@ -525,7 +521,7 @@ Totally open
 Candour
 Democracy ?
 Meritocracy
-Evidence led 
+Evidence led
 
 
 
@@ -533,12 +529,12 @@ The shape of companies and countries to come
 --------------------------------------------
 
 So my hypothesis is that software literacy is a real thing,
-that it will create programmable companies, and that companies that 
+that it will create programmable companies, and that companies that
 have a nervous system, that can be controlled with smaller numbers of humans
-instead of having to have humans in place of automation, we shall see 
+instead of having to have humans in place of automation, we shall see
 smaller companies due to Ronald Coase theory of the firm
 
-As such these smaller firms can negotiate better deals but what will be the environment 
+As such these smaller firms can negotiate better deals but what will be the environment
 in which they do that
 
 - free trade areas - a perfect market
@@ -563,7 +559,7 @@ CIA and job protection
 ----------------------
 
 America is 50x richer than the rest of the world, but
-Let's face it, that's historical accident and some luck of 
+Let's face it, that's historical accident and some luck of
 Democratic capitalism culture
 
 Now the world is consensus - we all know democratic capitalism of some form is the way to go
@@ -586,9 +582,9 @@ But this is part of wider discussion around meaning of privacy
 
 It's a privative
 
-It's based in secure in ones home - constitution 
+It's based in secure in ones home - constitution
 
-But let's look at ambient computing.  
+But let's look at ambient computing.
 Intelligent context aware programming
 
 Scenario: I walk from my kitchen to the living room, and the music I had playing dims in kitchen
@@ -598,10 +594,10 @@ Now to do this I must have computer monitoring me and my voice
 It must stream music, electric usage will dip.
 
 
-How can I defend my privacy? 
+How can I defend my privacy?
 Do I really care ?
-Prevention of annoyance? 
-My music tastes probably say only a little politically 
+Prevention of annoyance?
+My music tastes probably say only a little politically
 but what films I watch, what documentaries? Fox News or CNN ?
 
 
@@ -612,10 +608,10 @@ For example conways law - social organisation of contributors reflects the softw
 http://hintjens.com/blog:112
 
 More clearly is need for individual rights
-This is a politically accepted thing in real world - but as we move to situation where whole world is a contributor what happens? Much more planning and modelling? 
+This is a politically accepted thing in real world - but as we move to situation where whole world is a contributor what happens? Much more planning and modelling?
 
 
-Productivity : 
+Productivity :
 
 The second biggest issue of our time
 Basically the low hanging fruit of mechanisation has gone.
@@ -624,32 +620,32 @@ Productivity as measure of energy used to output
 
 The future is more complex solutions to drive smaller increments in productivity until energy becomes orders magnitude cheaper or our usage orders more sophisticated
 
-This should be the big win for electronics 
+This should be the big win for electronics
 
 What we are missing is organisational change to cope with it.
 
 Most organisations hold back productivity- and fixing that will be hard
 
-- also remote working and competition across the globe 
+- also remote working and competition across the globe
 
-Privacy: 
+Privacy:
 
 The biggest issue of our time
-The modern day pollution 
+The modern day pollution
 The issue is who sets the laws
 The issue is we must be regulated (murder)
-The issue is we shall see Google become a utility in need of regulation - but under whose jurisdiction? 
+The issue is we shall see Google become a utility in need of regulation - but under whose jurisdiction?
 
 How in Europe do we set this? How in USA? What about China (monitoring all )
 
 Privacy shield - max schremms
 
-Audio visual media services directive - tv regulation. Country of origin country of destination 
+Audio visual media services directive - tv regulation. Country of origin country of destination
 
-Unregulated is impossible 
-Light regulation means skills and information to deal with 
+Unregulated is impossible
+Light regulation means skills and information to deal with
 
-The less regulation, the more transparency and individual tools to compensate 
+The less regulation, the more transparency and individual tools to compensate
 
 My view: it is harmful to insist on country of destination style solutions to regulation as these allow dictatorships to censor
 
@@ -658,17 +654,17 @@ We should have global agreements on base regulation (child pornogrpahy, hate spe
 
 The emerging politics
 ---------------------
-An understanding of politics of technology 
+An understanding of politics of technology
 Icelands pirate party
 http://uk.mobile.reuters.com/article/idUKKCN11Z1RV
-Tom Watson 
-Calling out footballer 
+Tom Watson
+Calling out footballer
 
 
 The emerging secure computing platform
 --------------------------------------
 
-	
+
 tmzt 32 minutes ago | parent | on: South Korea military cyber command was hacked
 
 RiscV, TCP+crypto offload, hardware switchports with luajit or nf rules. Reactive UI with hardware rendering and compositing.
@@ -676,4 +672,3 @@ Hardware keystore with physical switch to generate and enroll keys, user/owner c
 Real-time security isolation kernel, hardware-enforced containerization with MMU-protected GPU passthrough.
 
 https://news.ycombinator.com/reply?id=12623911&goto=threads%3Fid%3Dlifeisstillgood%2312623911
-

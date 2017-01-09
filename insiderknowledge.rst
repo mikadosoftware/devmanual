@@ -1,1 +1,0 @@
-When creating a distributable package you must have packages=[xxx] in setup.py else the darn thing makes invalid wheel names (the wheel name is Linux specific) and suddenly you canning pip install and have Python find it (ie in site packages you get the PKGINFO but no actual package) 

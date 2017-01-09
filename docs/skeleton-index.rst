@@ -1,61 +1,140 @@
-Introduction 
+=================
+The Software Mind
+=================
+
+The transition from pre-SoftwareLiteracy organisations to post software literacy
+
+
+.. toctree::
+
+   chapters/introduction.rst
+   
+
+
+.. epigraph:: Pages he (P.G. Wodehouse) felt were working well would be pinned up high, and those that still needed work would be lower down the wall. His aim was to get the entire manuscript up to the picture rail before he handed it in
+
+
+
+Software literacy
+=================
+
+
+Pre- and Post-literate society
+==============================
+
+
+Programmatic company
+====================
+
+Quality is hard - needs a strong engineering culture
+A post literate culture
+
+Politics is software, software is law
+======================================
+Harmonisation, immigration, globalisation
+Like lawyers
+Policy is imprinted in software. Just as in law
+Weapons of math destruction and public policy Pre-literacy
+
+What choices do we need to make as society in public policy - open accountable transparent flexible / configurable
+
+
+Global politics - whilst the big shocks recently have been towards
+anti-immigration and protectionist (brexi, trump etc) but this year the heads of
+50 african governments agreed a free labour movement area, as did asia.  So 2
+billion people are movong in the direction of global free trades.
+
+as I will argue the benefits of global trade in goods is generally well
+established and people are reluctant to give it up.  Thats not a complete given
+but ...
+
+And the hidden nature of "harmonistation" makes it harder to see beenfots but it
+is in technology that harmonisation is most natural and most difficult to get
+around.
+
+
+The
+For some reason about 100,000 years ago, a smallish ape living in Kenya, Africa
+started to spread North and East, working together in family groups or small
+tribes against the cold and the night.
+
+Science is to all intents and purposes the culmination of that process.
+
+Science is struggling with crowd behaviour
+Organising ourselves is of paramount importance
+Democracy is a fairly new thing (about forty years)
+Globalisation is huge force - like having your iPhone work in different countries?
+Uber is a form of regulatory harmonisation
+
+So how will we organise companies
+
+Programmatic company leads to roald chase shrinking size which leads to more manageable org sizes which leads to more ability absorb change which leads to more radical change which has been problem for thirty years and issue around brexit
+
+* programmable corporation, prgrammable live
+Programmatic company - transparent processes, transparent metrics available to all and
+
+
+Perhaps another way to look at it - if you can read the precise instructions on how to build a company, or a house, you can make changes to the house - if you can automrebuild it you can easily improve it
+
+If not you are just left with sticking stuff on the sides.  A near perfect metaphor for a bureaucratic only able to metastasise not evolve or improve
+
+Sompreviously the metrics were only available as you went up hierarchy
+Now it's a matter of policy
+
+* productivity
+  There are several counter headwinds to western economic growth (https://www.amazon.co.uk/Rise-Fall-American-Growth-Princeton/dp/0691147728)
+
+  - productivity as the engine of growth held back by
+  - demographics
+  - inequality
+  - debt (1/4 of Debt is student debt in USA)
+  - dropping education
+
+  Producity should be high - look at Kasparov and AI / centaur
+  But lack of software literacy is holding individuals back and lack of coaseian-optimal organisation sizes hold back organisational productivity
+
+
+* end of privacy
+
+Privacy as a matter of policy
+Hard to enforce
+Secrecy is gone too
+
+
+* software literacy
+Fundamental force
+
+
+* stoneage minds, science and rationality and economic behaviour
+
+
+* estimation, prediction, relaxing and reviewing
+  Summerhill school
+
+Major trends
 ------------
 
-This book tries to cover a lot of ground.  Ostensibly, we are simply
-laying out the *best practises* for a modern software team.  I have
-been working in, leading and hiring such teams for twenty years (and
-yes, I do feel old thank you for asking!).
+- distributed by default. This works for data, and processing.  But
+  for organisations too - conways law.
 
-I do not want this to be another humblebragging list of the form "you
-should do X, I did, ain't it cool" - because I find them actively
-unhelpful, for two major reasons.
+- chips everywhere (inverse mores law), privacy pollution problem
 
-Firstly, Without knowing *why* a certain practise is "best" then it is
-hard to resist the siren call of the latest fashion fad (of which the
-software industry has so many we can laugh at the Milanese fashion
-houses.  "Oh, you have a new colour to deal with this *season*.  Let
-me show you how often a client can change their minds in a two week
-sprint."
+- Software Estimation
+  You can't plan out each step in your
+  journey You can't change your destination in between each step
 
-Secondly, they don't cover the whole field. Reading about one startups
-marvellous new medicine for log management does not give you a sense
-of how well they are doing with the thirty other vital areas like CI,
-project management etc.  And it does not give you an idea for how much
-effort is left over after logging is tied up and ready to be left well
-alone.
+- Science is measurement. Engineering is applied science. Metrics
+  everywhere.
 
-So I wanted to get my own best practises out of my head and onto both
-scripts and paper.
+- the world at large (politics gets everywhere, and as software
+  programs the world, politics and software will meet. New forms of
+  governance (Debian)
 
-I have tried to do two closely entwined things here - to write
-the "how to set up a new company from scratch", and to write the how to
-as a form of literate programming.  To show my workings, from the start.
+- containers, IOT needs updates and ntp servers
+   http://www.morethanseven.net/2016/11/05/the-end-of-the-general-purpose-operating-system-as-it-happens/
 
-This is possible because of DevOps - that is there exists a set of
-scripts that will produce a fully working company - it is not
-something locked up in the brains of talented people.  (What is locked
-up is the understanding needed to recreate or adjust the scripts -
-that is never abstracted away) 
+{{stoneageminds.rst}}
 
-I use building a dashboard for a new CTO of a hypothetical company as
-the core of this book.  The dashboard is a good way for a new CTO to
-gather the data needed and project it back out.  It is by no means
-easy to gather the right data by the way.  Which is kind of the point.
-
-And there is the why. The history of software development is short and
-yet we forget many of its lessons. Why are some of these practises
-desirable, how did we get here.
-
-This book is partly a history lesson then. But one I (sadly) have got
-a personal view on a large chunk of the history.  I hope we can draw
-out the right lessons.
-
-
-
-Modern Tech, Victorian Companies and Stone Age minds
-====================================================
-
-blurb
 
 
 Modern trends
@@ -75,8 +154,8 @@ Not so modern people
 Disfluency
 ----------
 - nee time to learn as well as data.
-- need to do it by hand 
-- need to learn 
+- need to do it by hand
+- need to learn
 
 Why is software so diverse ?
 
@@ -116,7 +195,7 @@ developers with timenonntheir hands still unable to meet business
 needs, mostly it is two things
 
 - inability to articulate what is needed for business to succeed
-- the whole other crap that swamps is all 
+- the whole other crap that swamps is all
 
 
 esprit de corps
@@ -133,27 +212,19 @@ At the beginning of greenfield almost any code laid down is 10x. Don't
 believe in 10x myth.  Iceland and Wales versus England.  Esprit de
 corp
 
+"""The what-to-build skill trumps the how-to-build-it skill every time!"""
+
+So the essence of software org is loads of discussion on what to build - discussion is good example of open source approach?
+
+The corollary to thisnis you can't hire a 10x developer and then tell them what to do. Which is a revelation for allmiddle management. And the design of lost organisations
+Basically you are hiring intraprenuers
+
+
+
 Social organisation, commit bits, licenses and future income and
 reputation.
 
 
-Major trends
-------------
-
-- distributed by default. This works for data, and processing.  But
-  for organisations too - conways law.
-
-- chips everywhere (inverse mores law), privacy pollution problem
-
-- Agility vs Architecture.  You can't plan out each step in your
-journey You can't change your destination in between each step
-
-- Science is measurement. Engineering is applied science. Metrics
-  everywhere.
-
-- the world at large (politics gets everywhere, and as software
-  programs the world, politics and software will meet. New forms of
-  governance (Debian)
 
 Start with the Dashboard
 ------------------------
@@ -173,13 +244,13 @@ I am including "operations" as part of this as most software teams do
 this - either directly ala Facebook / Amazon or indirectly ala third
 line support.
 
-These streams are 
+These streams are
 
 - producing new features
 - maintaining high code quality
 - operational performance and metrics
 - bug fixing
-- tech debt 
+- tech debt
 - marketing
 - servicing users
 
@@ -195,7 +266,7 @@ idea where to focus improvement efforts.
 Team capabilities
 -----------------
 
-- 
+-
 
 - micro-services architecture
 
@@ -214,14 +285,14 @@ Business capabilities
 
 - Deploy
 - Develop
-- Release 
+- Release
 - monitor
 - operations (SOP)
 - security
 - service levels (SLA)
 - ticket requests
 - architecture / distributed data
-- programmable corporation 
+- programmable corporation
 - adjusting business model
 - marketing
 - disaster recovery / option pricing
@@ -229,24 +300,24 @@ Business capabilities
 - stakeholder engagement
 - project management: new agile
 
-New agile 
+New agile
 https://medium.com/@gabrielgambetta/how-i-wrote-my-first-novel-during-my-daily-commute-e1d02c9447b9#.248qy79fb
 
 Good description of process - 80 "scenes" - we must must have a storyboard - think the sticky notes
 Always have storyboard
 Always have interactions between stories
-Stories are states??? 
+Stories are states???
 
 But always always - must be clear must be shared
 
 Technical Capabilities
 ----------------------
 
-* Measure Lines Spent 
+* Measure Lines Spent
   Edgar Djyskstra quote - tech debt
   The more code written the more there is to understand
   Writing lots of code, writing it quickly, is often the contractor curse - too much too soon. There is no such thing as hitting the ground running.
-  
+
 * measure Onboarding times
 
 * measure code quality not feature velocity
@@ -258,6 +329,16 @@ Technical Capabilities
 * measure metrics - is code well
 Measured in production
 
+* web logging good enough practise
+
+- generate a unique ID per request, pass it through all stages
+
+amatix 2 hours ago [-]
+
+For us, a `X-Request-ID` header is generated by any app if it doesn't receive it from upstream -- but normally nginx or the CDN will generate it. There's a few nginx modules to do it, we use https://github.com/newobj/nginx-x-rid-header
+Most languages/logging frameworks have some sort of per-thread context (eg. Filters in Python, MDC in log4j, etc) to be able to tag log messages with. If you're using postgresql, you can call `SET application_name='{requestID}';` and that can be output as part of logs too.
+reply
+
 
 * Deployment can deploy code through promotion of fixed "builds" into
   production using totally automated means.
@@ -266,7 +347,7 @@ Measured in production
   security, service discovery messaging logging and pr nose to only go
   through front door. See stevey blog post.
   https://news.ycombinator.com/item?id=12133670
-  Use fluentd logging 
+  Use fluentd logging
 https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-in-the-container-era/
 
 * OS installation and Hardening Choice of OS, location Ansible or
@@ -275,7 +356,7 @@ https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-i
 * Kerberos and Authentication Authentication and Authorisation are
   vital capabilities and federated, distributed security have so many
   advantages (think uUId as primary key )
-  
+
 * Build promotion and use of containers PyHolodeck
 
 * message queues and worker pools Messaging Job scheduling based on
@@ -288,17 +369,17 @@ https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-i
 * user acceptanbce tests and UI tests Automated testing is vital and
   we must put huge amounts of effort into it simply to make the next
   release
-  
+
 * continuous integrations and delivery There is no point batching up
   changes to go on a time based schedule. Code is ready as it is
   written and the decision to release should be based on automated
   tests. Only marketing or other business decisions should delay - so
   always push to pre-prod
-  
+
 * pre-prod is live-clone
 
 * replaying actual traffic
-  
+
 * Reporting
   Simple reports
 
@@ -338,7 +419,7 @@ https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-i
 
 * seven league boots
 
-* earthquake-let theory of software development. Building blocks not planned features 
+* earthquake-let theory of software development. Building blocks not planned features
 
 * Work harder on fewer projects and polish them to be CV-worthy shipping working software
 
@@ -349,6 +430,8 @@ https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-i
 * Software KPIs, buisness KPIs
 
 * Simple Marketing (Twilio approach), SEO
+https://www.ducttapemarketing.com/blog/guide-to-small-business-keyword-research/
+
 
 * Debugging tools
   CHarles proxy
@@ -388,12 +471,12 @@ https://blog.treasuredata.com/blog/2016/08/03/distributed-logging-architecture-i
 
 * jenkins
 
-* chatbots and IRC. Team comms. Choose one one o said one!! 
+* chatbots and IRC. Team comms. Choose one one o said one!!
 
 * erlang
 
 * rethinkdb
- 
+
 * training and just reading and exploring
 if you do not explicitly make time to learn but sprint all the time all you will have is people who have learnt what they wrote
 
@@ -488,7 +571,7 @@ Why full stack matters, and why you cant do it all
 * Everything is a service
   So services have Interface Points and lifecycles.
 
-* 
+*
 
 
 
@@ -541,7 +624,7 @@ lower internal.
 Internal is best to use a lot lot of audit
 
 - server to server authentication
- 
+
 
 Skills required (bold=essential)
 ·         FreeIPA/LDAP
@@ -564,7 +647,7 @@ Skills required (bold=essential)
 
 
 the inevitable:
-digital hygiene 
+digital hygiene
 tco of digital life
 
 perosnal to business
@@ -575,7 +658,7 @@ climate chnage
 http://worrydream.com/ClimateChange/
 
 
-Underpinning philosophy 
+Underpinning philosophy
 - Equality
 - Empiricism
 - Extrrnalities
@@ -587,11 +670,11 @@ Avoiding the google bubble - digital gated communities
 
 - Airbnb has a race issue - people more likely to refuse a blackmsoundingnname. But the solution to this is simple - renters must offer a room to whomever applies - just as hotels cannot turn people away.  But because these new efficient services are ignoring existing regulation and so will need new (smarter regulating if we can - see below)
 
-AirBNb and other "regulation challenging" unicorns are quite simply breaking the law in almost every country in which they operate.  They are, incidentally, raising matters of public policy that are long overdue 
+AirBNb and other "regulation challenging" unicorns are quite simply breaking the law in almost every country in which they operate.  They are, incidentally, raising matters of public policy that are long overdue
 
 How is airbnb the same as European Commission - both trying to harmonise regulation across a globalised world.
 
-Car Charing versus taxi : here is my regulatory change - the car sharing service must advertise its start and leave positions and make the subsequent journey of 
+Car Charing versus taxi : here is my regulatory change - the car sharing service must advertise its start and leave positions and make the subsequent journey of
 
 
 What happens when a regulated hotel tries to discriminate (gay bo'nb issue) - they get their ass sued.
@@ -608,7 +691,7 @@ So for 2015 Manchester United made 450M, of which it spent 250M on player salari
 
 Does this hold true for other superstar driven areas - finance? Oh yes - here is traders that took all the revenue in a year.
 
-Is Pikkety wrong? Will global remote working make this kind of impact? Not clear. 
+Is Pikkety wrong? Will global remote working make this kind of impact? Not clear.
 ----------------------------------------
 incoorpoate
 ----------------------------------------
@@ -703,6 +786,8 @@ being an all round good egg
 
 7. progress not perfection
 I have a massive discuss next between what is reasonably possible for a average to good developer (me) to be able to achieve in two or three days at work (with interruptions) and what I *could* do if I had got plenty of rest, drunk my Orange Juice, refactored code on this area just last week and ... well, I think I *could* do more than I have.  but this leads me to think I should have done more - and that tends to lead to outrageously negative defensiveness, including rushing and cutting corners to get it done in the arbitrary self imposed deadline, or perhaps worse, lying about how far I have got and saying "just another day" (often lying to myself first)
+
+https://basildoncoder.com/blog/pg-wodehouse-method-of-refactoring.html
 
 8. static analysis
 
@@ -970,3 +1055,145 @@ You definitely need to do these
 *. Accounts
 
 
+Universal basic income - the basic argument
+-------------------------------------------
+
+We do not charge for access to air, but we do for access to water and to food
+Why?
+
+DevOps has a cost
+-----------------
+Infrastructure costs to maintain
+Releasing fifty times a day is great, as long as people are there making sure the servers are working
+You cannot be super productive developer and maintain your servers
+
+Pay the cost - it's not free
+Churn of developers will hurt
+Keep it documented and clean
+
+
+
+choices.
+
+
+The emerging politics
+---------------------
+An understanding of politics of technology
+Icelands pirate party
+http://uk.mobile.reuters.com/article/idUKKCN11Z1RV
+Tom Watson
+Calling out footballer
+
+
+The emerging secure computing platform
+--------------------------------------
+
+
+tmzt 32 minutes ago | parent | on: South Korea military cyber command was hacked
+
+RiscV, TCP+crypto offload, hardware switchports with luajit or nf rules. Reactive UI with hardware rendering and compositing.
+Hardware keystore with physical switch to generate and enroll keys, user/owner controlled secrets, one-time programmable as an option, hardwired SAK and OS personality switching key.
+Real-time security isolation kernel, hardware-enforced containerization with MMU-protected GPU passthrough.
+
+https://news.ycombinator.com/reply?id=12623911&goto=threads%3Fid%3Dlifeisstillgood%2312623911
+
+
+Deep learning and AI
+--------------------
+
+Google chief economist Hal Varian calls this “computer kaizen.” For “just as mass production changed the way products were assembled and continuous improvement changed how manufacturing was done,” he says, “so continuous [and often automatic] experimentation will improve the way we optimize business processes in our organizations.”4
+
+
+Hope and optimism
+-----------------
+
+Computer algorithms offer us hope - in a world where 190 countries are unlikely to agree on water being wet, distributed algorithms (paxos?) can teach us how to conorsinatr chnage.  What we will learn in organising our companies in democratic lines will feed into our societies.  War is always bad for business,
+
+Money creation in modern economy boe
+
+
+Fractional lending - banks create money
+Idea is they de create it when loan repaid
+But when market crashes and defaults occur, the value is gone but the cash ... still exists
+
+So we are each crash increaibgnmoney supply
+And what where synthetic CDOs creates to do - to absorb the excess cash that people wanted to invest
+
+Shadow courts: global trade is being redefined and software (IP) is at heart of it
+iPhone is one global standard and no one is going to challenge it
+
+
+Wider world
+- potential for an egalitarian and networked future, with common standards and common interests driving our societies and economies forward towards a golden future
+
+Of course it can all fail to be that.  But this ideal (referred to as 45 degree politics, incorporating the bottom up horizontal community politics alongside the state and party infrastructure that can sustain politics beyond the passion of Election Day) is worth looking for in our work organisations as well
+
+Democracy in the enterprise
+
+
+Do page rank on spark / storming
+
+
+Build tools
+See bazel/ maven / make
+See depenadncy
+See danluu for similar thoughts
+"having a strong engineering culture is much larger force multiplier"
+
+ People write a lot about how things like using fancier languages or techniques like TDD or agile will make your teams more productive, but having a strong engineering culture is much larger force multiplier
+
+ https://danluu.com/wat/
+
+ Fundamental problem:
+ How to reward the person who arrives a day late because they steered around the storm
+ And not reward the fool who risked his ship sailing through the storm
+
+ Land how to reward the person who achieved the goal with a tenth of the effort
+ And not reward the person who did the same thing but at ten times the cost - because big pr he te with  it budgets get high cosibility
+
+
+
+
+Danluu as competition validating market
+
+Pre and post literate enterprises
+
+Management coding
+-----------------
+
+I stepped away from manabgemt (pull me back in)
+But as an example, a grid has been hardcoded, all over the place and is now getting retired. And we left it late.
+
+Some teams did sensible CONSTANT use and have ten minutes testing. Others not so much.
+
+It's a pretty trivial problem but it needs co-ordination and chasing and guess what that's a management job
+
+So I write something - basically grep over the source tree. And then put it on a website and I need to assign the fixes for each team to the right team (who have to test it themselves) and basically chase and cajole
+
+It's all automateable - effectively it's a set of todos that are outsourced.
+
+It's a programmable company ??? Or over management? Icing from
+
+The grain of the Internet
+=========================
+Public policy issues:
+Weapons of math destruction is actively harmful algorithms
+Internet of shit is the passively harmful technology - where open devices or crap software (see my car)
+
+We need to find a path between interventionism and free market
+
+This is a fundamental dividing line something about order and chaos and is very evident in American politics
+
+It's hard to discern the dividing lines of Chinese and Indian politics today (look up?)
+
+
+
+Washington post illiteracy
+Plus
+All those choices made badly - and that's just in getting software out, let alone choosing against the grain of the Internet
+
+It ha sa grain
+
+Open
+Transparent
+Root owns it

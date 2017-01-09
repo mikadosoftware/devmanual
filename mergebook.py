@@ -1,8 +1,17 @@
 """
+This is a simple script to take an original text `fulllist.rst`
+which holds many ``{{links}}``.  The links reference other rst files
+in the directory, and we replace/merge the text from those files into the
+{{link}} and hey presto a chapter based book
 
 """
-
 import re
+import os
+
+#: constants
+TGTFILENAME = 'docs/index.rst'
+SRCFILENAME = 'docs/skeleton-index.rst'
+CHAPTERDIR  = 'docs/chapters'
 
 def matchline(line):
    """
@@ -22,7 +31,8 @@ def matchline(line):
 def getTextFromFile(filename):
    """
    """
-   txt = open(filename).read()
+   filepath = os.path.join(CHAPTERDIR, filename)
+   txt = open(filepath).read()
    return txt
 
 def mergebook(bookpath):
@@ -38,12 +48,16 @@ def mergebook(bookpath):
            txtnew += line + '\n'
 
 
-    open("newbook.rst",'w').write( txtnew)
+    open(TGTFILENAME,'w').write( txtnew)
 
-
-
+def getchapters():
+    """walk dir and output as toctree
+    """
+    for file in os.listdir(CHAPTERDIR):
+        print file
 
 if __name__ == '__main__':
 #   import doctest
 #   doctest.testmod()
-    mergebook('fulllist.rst')
+    #mergebook(SRCFILENAME)
+    getchapters()
