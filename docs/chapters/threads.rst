@@ -1,4 +1,35 @@
-- enigma and Bletchley park changing to "collect everything". This is the baby that grew into PRISM
+History of British spies and surveillance
+
+Excellent book "The Black Door"
+Starting in 1909, Britain started a government department to manage counter espionage and intelligence gathering.
+
+The focus was on domestic terrorism (from the suffragettes) but as war approached turned to hunt German spies (which withblurid novelists and newspapers pumping up the public seemed to have a spy under every bush)
+
+Asquith was uninterested in intelligence and ignored warnings of the Orish Easter uprising. even after Lloyd George took over in late 1916 intelligence was badly used (Lloyd George boasted to the US ambassador he need not have come, Lloyd George already knew what Wilson had told him to say).  However after the undoubted success of the decoding of the Zimmerman letter (Germany encouraged Mexico to invade the USA guaranteeing it would recognise the annexing of three southern states) intelligence gathering became recognised as important - and under Winston Churchill's Home Secretary of the 1920s were organised under one code breaking roof.
+
+However it took another twenty years before Churchill could give full prime ministerial support to a code breaking machine at the heart of Westminster policy - it was his support for Bletchley park, and the use of Ultra intelligence across all war departments that made. Churchill's indiscretions were as bad as LG, and only slowly did Westminster learn to use context - that is a model filled in by, and validated by intelligence
+
+The jic joint intelligence committee was the brain that fed strategy (why there not t here) and operations
+
+But intelligence input far far outstripped ability to use it - as we see in PRISM. And we are seeing a transformation of military we shall see transform of public policy and society to intelligence 
+
+But it was an approach that Bletchley brought - the use of and gathering of all data, no matter how inconsequential that marked the new Uktra landscape
+
+And this landscape taught the other English speaking nations.
+
+The five eyes nations have for almost a century shared intelligence in open ish ways - and lead to PRISM
+
+The logical flaw - all intelligence must feed policy else it's valueless. And at regular intervals that policy is so high level that all other considerations including protecting sources fails
+
+This leading to loss of sources
+
+Sommale the sources open? What where not possible (see china manufacturing figures).  But they don't have them either? 
+
+
+Additionally churchills passion for action and secret action informed British policy and use of intelligence for decades - the use of bribes blackmail and direct secret action is still with us in kill lists.
+
+
+enigma and Bletchley park changing to "collect everything". This is the baby that grew into PRISM
 
 - intelligence and desire to see a map and a secret map. The focus on secrets is likely the downfall - openness is such a landscape changing winning approach that sevret assassination plots are steamrollered by history
 
