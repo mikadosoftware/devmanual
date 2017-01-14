@@ -29,13 +29,12 @@ you are to be wedded to your technical advisor, you need to see the
 world the way I see it.  And then you can make your own choice, but
 with the point of view of a 20 year software veteran.
 
-
-So it's the two kinds of why - why this move instead of all the other moves possible. That means you need an understanding of all the possible moves and their future implications - why means a map. (See swardley)
-
-
-And so this book was born.  It is both an attempt to clearly show the
-state of the art in building software in the 21 Century, but it is
-also an attempt to understand why the art looks the way it does.
+And so this book was born.  It is both an attempt to clearly show the state of
+the art in building software in the 21 Century, but it is also an attempt to
+understand why the art looks the way it does. I have divided the book into two -
+the Software Mind, trying to get the right point of view. And  the Software
+Skills - from estimation to handling time and dates, there are issues of
+professionalism and organisation that will shape the new culture.
 
 This book is partly history lesson, partly diatribe on the software industry and
 mostly an attempt to download my point of view into your head.  Don't worry - I

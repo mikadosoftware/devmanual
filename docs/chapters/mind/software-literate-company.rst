@@ -2,92 +2,85 @@
 Software Literacy
 =================
 
-I'm standing in a cavernous room underneath a bustling, noisy pub in
-London's Covent Garden.  It was a fine Summers day and the evening is sharply cooking.
+I'm standing in a cavernous room underneath a bustling, noisy pub in London's
+Covent Garden.  It was a fine Summers day and the evening is sharply cooking.
 
-I look around at the 90 odd developers, graduates and
-entrepreneurs in the room, and, as I have been persuaded to sponsor this meeting, now all
-I have to do a quick speech.
+I look around at the 90 odd developers, graduates and entrepreneurs in the room,
+and, as I have been persuaded to sponsor this meeting, now all I have to do a
+quick speech.
 
-I never quite know what to do for these sort of speeches - do I decide to give a history lesson. Yes. A history
-lesson. Gripping stuff, some were even rolling their eyes in
-excitement.
+I never quite know what to do for these sort of speeches - do I decide to give a
+history lesson. Yes. A history lesson. Gripping stuff, some were even rolling
+their eyes in excitement.
 
-It's a good one though. You see, in 1454, Johannes Gutenberg printed
-the first of his Bibles using movable type - and ushered in a new era
-of literacy and communication. Printing books was now orders of
-magnitude cheaper, and there was an explosion of publishing. The
-number of published books leapt from an estimated 30,000 books *in all
-of Europe in 1450* to 12 million books by 1500.  Think about that.
-A decent sized library today, in many large towns in England will have
-30,000 books.  More than were in the whole of Europe before the printing press. [#]_
+It's a good one though. You see, in 1454, Johannes Gutenberg printed the first
+of his Bibles using movable type - and ushered in a new era of literacy and
+communication. Printing books was now orders of magnitude cheaper, and there was
+an explosion of publishing. The number of published books leapt from an
+estimated 30,000 books *in all of Europe in 1450* to 12 million books by 1500.
+Think about that. A decent sized library today, in many large towns in England
+will have 30,000 books.  More than were in the whole of Europe before the
+printing press. [#]_
 
-Within a generation literacy in Western Europe had leapt from under 2%
-to well over 20% - and it changed everything. Martin Luther was able
-to nail a piece of paper to a church door and expect most members of
-the middle-class congregation to simply read it, not have it read to
-them by clergy. Books on mathematics and navigation enabled the
-training of middle-class merchantmen who would then dare, only 40
-years later, to cross the Atlantic.
+Within a generation literacy in Western Europe had leapt from under 2% to well
+over 20% - and it changed everything. Martin Luther was able to nail a piece of
+paper to a church door and expect most members of the middle-class congregation
+to simply read it, not have it read to them by clergy. Books on mathematics and
+navigation enabled the training of middle-class merchantmen who would then dare,
+only 40 years later, to cross the Atlantic.
 
-Literacy en mass changed the course of human history and gave a tiny
-corner EurAsia some huge advantages the effects of which are only just
-wearing off five centuries later.
+Literacy en mass changed the course of human history and gave a tiny corner
+EurAsia some huge advantages the effects of which are only just wearing off five
+centuries later.
 
-Before people wandered off to the bar I decided to let them know why
-they were getting my best Simon Scharma impression - why history mattered.
+Before people wandered off to the bar I decided to let them know why they were
+getting my best Simon Scharma impression - why history mattered.
 
-Because, in my view, and remember they were eating my
-sausage rolls, so that counts, in my view we are entering the age of a
-new form of literacy - *software literacy.*
+Because, in my view, and remember they were eating my sausage rolls, so that
+counts, in my view we are entering the age of a new form of literacy - *software
+literacy.*
 
-Even in the 15th century, nations, companies and guilds and
-churches competed, and ran international concerns. But somewhere
-between Gutenberg's Bible and Luther's 95 Theses these companies
-changed. Not with business process reengineering, or total quality
-circles - but changed like leaving the water and walking on land
-changed. I have no idea how to quantify the advantages a company whose
-staff can all read and write will have over a company whose staff are
-illiterate. It's not one of lower labour cost, or better marketing,
-it's something else...
+Even in the 15th century, nations, companies and guilds and churches competed,
+and ran international concerns. But somewhere between Gutenberg's Bible and
+Luther's 95 Theses these companies changed. Not with business process
+reengineering, or total quality circles - but changed like leaving the water and
+walking on land changed. I have no idea how to quantify the advantages a company
+whose staff can all read and write will have over a company whose staff are
+illiterate. It's not one of lower labour cost, or better marketing, it's
+something else...
 
-Lets take a little mental exercise.  Imagine I whip out my TARDIS and transport you back
-to 1454.  And put you in front of the senior members of the French
-Guild of Merchants and Weavers.  And they say "Our competitor, the
-Spanish Guild, are thinking of buying lots of books, and teaching the
-children in their orphanages to read and write, so when they grow up
-and join the Guild, they will be "literate".  Why should we spend
-similar amounts our selves - what will the benefits of a literate
-workforce be? Surely they can just do as their fathers did and listen
-to their elders?"
+Lets take a little mental exercise.  Imagine I whip out my TARDIS and transport
+you back to 1454.  And put you in front of the senior members of the French
+Guild of Merchants and Weavers.  And they say "Our competitor, the Spanish
+Guild, are thinking of buying lots of books, and teaching the children in their
+orphanages to read and write, so when they grow up and join the Guild, they will
+be "literate".  Why should we spend similar amounts our selves - what will the
+benefits of a literate workforce be? Surely they can just do as their fathers
+did and listen to their elders?"
 
-What is your answer? Why is literacy better for a company ?  Every
-answer that springs easily to mind, clearer communication, greater
-dissent and discussion, devolving power downwards, every answer is
-either a threat to the current power structure, or frankly replacable
-with "beat 'em so they listen harder".
+What is your answer? Why is literacy better for a company ?  Every answer that
+springs easily to mind, clearer communication, greater dissent and discussion,
+devolving power downwards, every answer is either a threat to the current power
+structure, or frankly replacable with "beat 'em so they listen harder".
 
-However, deep in our bones we *know* that literacy changes everything.
-Its so built into us and into everyone we know that we cannot imagine a world where we cannot
-read or write.
+However, deep in our bones we *know* that literacy changes everything. Its so
+built into us and into everyone we know that we cannot imagine a world where we
+cannot read or write.
 
-.
+Anyway, you, like the poor people wanting to get to the bar, can see where I am
+taking this. The ability to marshall knowledge, to code and compile and compute,
+the natural inclination to arrange the world so it can be iterated over, the
+ability to turn a business from a medieval scriptorium into an operating system
+is software literacy.
 
-Anyway, you, like the poor people wanting to get to the bar, can see
-where I am taking this. The ability to marshall knowledge, to code and
-compile and compute, the natural inclination to arrange the world so
-it can be iterated over, the ability to turn a business from a
-medieval scriptorium into an operating system is software literacy.
+The final shape of a software literate company is probably unguessable to us, in
+the same way that an airports departures board was unguessable to Pope Pius II,
+or that a major newspaper run by illiterate editors will look and work nothing
+like the Washington Post. But we can be sure they are coming. And we can make
+sensible predictions about what they will and won't be.
 
-The final shape of a software literate company is probably unguessable
-to us, in the same way that an airports departures board was
-unguessable to Pope Pius II, or that a major newspaper run by
-illiterate editors will look and work nothing like the Washington
-Post. But we can be sure they are coming. And we can make sensible
-predictions about what they will and won't be.
-
-And so, as the Meetup wanders back to the bar slightly shocked, we
-wander back to our theme.
+And so, as the Meetup wanders back to the bar slightly shocked, we wander back
+to our theme.
 
 The software literate company, and the programmable company
 -----------------------------------------------------------
@@ -111,52 +104,63 @@ unavoidable in the future.
 
    When I speak of a literate company, please keep this film in mind.
 
-'All the President's Men' is one of my favourite films, engrossing and suspenseful.  And it also portrays life in a deeply literate company.
+'All the President's Men' is one of my favourite films, engrossing and
+suspenseful.  And it also portrays life in a deeply literate company.
 
-I will take a leap and argue that the Washington Post under Ben
-Bradlee was the epitome of a (non-software) literate company.  It had well trained professionals,
-clear ethical standards, clear business processes and clear processes
-for ensuring that its literate output met their standards. Editors and copy-sub-editors and so on.  And cashflow. That helped a lot.
+I will take a leap and argue that the Washington Post under Ben Bradlee was the
+epitome of a (non-software) literate company.  It had well trained
+professionals, clear ethical standards, clear business processes and clear
+processes for ensuring that its literate output met their standards. Editors and
+copy-sub-editors and so on.  And cashflow. That helped a lot.
 
 Whatever form a software literate company takes, there will be similar
-foundational skills the company will need - the basics of journalism if you wish, and we can see
-some of the issues with how that has failed in the recent past.
+foundational skills the company will need - the basics of journalism if you
+wish, and we can see some of the issues with how that has failed in the recent
+past.
 
 
 Knight Capital
 --------------
 
-Knight Capital should have been software literate.  It was a new
-company, built to operate in the high-frequency trading world of US
-equities, and had invested heavily in programmers and computers
+Knight Capital should have been software literate.  It was a new company, built
+to operate in the high-frequency trading world of US equities, and had invested
+heavily in programmers and computers
 
-Their business model was *market making* - buying shares from someone
-who wanted to sell, and selling them to someone who wanted to buy.
-Market making is a valued part of all exchanges, and way back when the exchange
-gave a priviledged few the right to be market makers (for a fee of
-course) it was a very profitable exercise.  However as new market
-makers were granted access, such as Knight Capital, the profits
-dropped (good for buyers and sellers, such as our pension funds) and the competition sped up -
-slow market makers did not get to trade with anyone.
+Their business model was *market making* - buying shares from someone who wanted
+to sell, and selling them to someone who wanted to buy. Market making is a
+valued part of all exchanges, and way back when the exchange gave a priviledged
+few the right to be market makers (for a fee of course) it was a very profitable
+exercise.  However as new market makers were granted access, such as Knight
+Capital, the profits dropped (good for buyers and sellers, such as our pension
+funds) and the competition sped up - slow market makers did not get to trade
+with anyone.
 
-On August 1, 2012, Knight Capital released a new version of their
-software. And did so in a partly-manual manner.  Those words, 'not automated' make those who are software literate shudder.  Imagine having a book as a loose sheaf of papers, unbound.  You know its just missing something.  Surely things will eventually get all muddled up.  And sure enough, at Knight Capital, they
-had left an old, debug version of the code on one of their servers.
-Which now merrily started placing *test* orders onto the *real*
-market.
+On August 1, 2012, Knight Capital released a new version of their software. And
+did so in a partly-manual manner.  Those words, 'not automated' make those who
+are software literate shudder.  Imagine having a book as a loose sheaf of
+papers, unbound.  You know its just missing something.  Surely things will
+eventually get all muddled up.  And sure enough, at Knight Capital, they had
+left an old, debug version of the code on one of their servers. Which now
+merrily started placing *test* orders onto the *real* market.
 
-Test orders, such as Buy high and sell at a loss, and repeat 10,000 times in a few seconds.
+Test orders, such as Buy high and sell at a loss, and repeat 10,000 times in a
+few seconds.
 
-Knight capital tried to turn off their mistakes, but 45 minutes later
-(an age in HFT) they had mistakenly executed 4 million orders for 100+
-stocks, and lost 440 million dollars, effectively bankrupting the
-company.  Other players in the market had of course realised something was wrong, and initially expected the orders to be turned off within seconds. When it was not, they merrily took the winning side on all Knight Capitals traded and pocketed the cash. No point turning down free money is there?
+Knight capital tried to turn off their mistakes, but 45 minutes later (an age in
+HFT) they had mistakenly executed 4 million orders for 100+ stocks, and lost 440
+million dollars, effectively bankrupting the company.  Other players in the
+market had of course realised something was wrong, and initially expected the
+orders to be turned off within seconds. When it was not, they merrily took the
+winning side on all Knight Capitals traded and pocketed the cash. No point
+turning down free money is there?
 
 Knight Capital's process of getting software that had been written correctly out
-and into the hands of users (ie the equivalent of publishing) was broken.  A newspaper that could write brilliant articles but struggled with the whole delivering bundles to street vendors would not last long.
+and into the hands of users (ie the equivalent of publishing) was broken.  A
+newspaper that could write brilliant articles but struggled with the whole
+delivering bundles to street vendors would not last long.
 
-In software, this publishing is called a release, but its as vital
-as the process of publishing and delivering paper was to the Post.
+In software, this publishing is called a release, but its as vital as the
+process of publishing and delivering paper was to the Post.
 
 Target
 ------
@@ -166,55 +170,63 @@ TBD
 Yahoo
 -----
 
+It is hard to claim Yahoo do not have technical skills.
+But 1 billion addresses and details.  This is failure to encrypt on the scale
+of OPM.
+
+But it is a lesson to learn - at rest all data needs to be encrypted by defaukt
+and systems built around it. Security, too oftgen an afterthought.
+cf Schneier solution to security - what does it take to get the job done and so secure my paypacket.
 
 Office Of Personnel Management
 ------------------------------
 
-In June 2015, the US government agency "Office of Personnel
-Management" announced it had suffered a data breach.  Starting in
-March 2014, external hackers had breached the firewalls around the
-agency and were able to access the personnel records of millions of
-current and former government workers.  The agency collected many
-things, like pay records, but also, held background checks on
-employees who needed higher levels of security clearance - in short
-they had the records that said you used to be a drug addict or
-depressed. All the stuff they want to know about you in case it is
-used to balckmail you.
+In June 2015, the US government agency "Office of Personnel Management"
+announced it had suffered a data breach.  Starting in March 2014, external
+hackers had breached the firewalls around the agency and were able to access the
+personnel records of millions of current and former government workers.  The
+agency collected many things, like pay records, but also, held background checks
+on employees who needed higher levels of security clearance - in short they had
+the records that said you used to be a drug addict or depressed. All the stuff
+they want to know about you in case it is used to balckmail you.
 
-This was it seems all stored on mainframes running COBOL.  And the
-thing about storing data is that you must at minimum, encrypt it at
-rest on disk.  This is like, using ink or folders or filing cabinets.
-Its something you dont even think about.  Not for stuff that foreign
-governments can use to blackmail your Embassy staff with.
+This was it seems all stored on mainframes running COBOL.  And the thing about
+storing data is that you must at minimum, encrypt it at rest on disk.  This is
+like, using ink or folders or filing cabinets. Its something you dont even think
+about.  Not for stuff that foreign governments can use to blackmail your Embassy
+staff with.
 
-So lets get this clear.  Vital security information and pay records,
-stored unencrypted on mainframes that are so old they cannot spell
-encryption, and then the Chinese hackers get in.
+So lets get this clear.  Vital security information and pay records, stored
+unencrypted on mainframes that are so old they cannot spell encryption, and then
+the Chinese hackers get in.
 
-This breach, discovered seemingly by accident when a computer
-forensics firm was asked to preapre a demo, is not something solvable
-by replacing credit cards.  It is probably America's deepest national
-security problem for the next few decades.
+This breach, discovered seemingly by accident when a computer forensics firm was
+asked to preapre a demo, is not something solvable by replacing credit cards.
+It is probably America's deepest national security problem for the next few
+decades.
 
-This is a defining moment in software professionalism.  The right move
-for a professional and so the right move for a software literate
-organisation, was to shutdown the impossible-to-secure mainframes and
-announce a budget request and a migration plan.
+This is a defining moment in software professionalism.  The right move for a
+professional and so the right move for a software literate organisation, was to
+shutdown the impossible-to-secure mainframes and announce a budget request and a
+migration plan.
 
-Things like intrusion detection programs would have been good, but
-thats just "normal best practise" not "professional ethics".
+Things like intrusion detection programs would have been good, but thats just
+"normal best practise" not "professional ethics".
 
-Now, why did the woman at the top (an Obama confidant, and not likely
-a malicious actor) why did she not take this action? Because of the
-degree of obfuscation? Possibly.  But the one thing that leaps out of
-OPM is the inabiliy to enmcrypt on COBOL mainframes.
+Now, why did the woman at the top (an Obama confidant, and not likely a
+malicious actor) why did she not take this action? Because of the degree of
+obfuscation? Possibly.  But the one thing that leaps out of OPM is the inabiliy
+to enmcrypt on COBOL mainframes.
 
-Perhasp Everything else is justifiable in the hindsight race.  But
-when you simply cannot do the job ethics dictates you dont pretend and
-carry on.
+Perhasp Everything else is justifiable in the hindsight race.  But when you
+simply cannot do the job ethics dictates you dont pretend and carry on.
 
-OPM shows us that one defining quality of software literacy will be professional ethics.
-to quote Spiderman, "with great power comes great responsibility".  For the next generation at least, software literacy will be unevenly spread throughout the world.  And the importance of software to the world at large is so great that we should ensure those who wield that importance are not just expected to be trustworthy, but are monitored by their peers.
+OPM shows us that one defining quality of software literacy will be professional
+ethics. to quote Spiderman, "with great power comes great responsibility".  For
+the next generation at least, software literacy will be unevenly spread
+throughout the world.  And the importance of software to the world at large is
+so great that we should ensure those who wield that importance are not just
+expected to be trustworthy, but are monitored by their peers.
 
 Professional Ethics still matters
 
@@ -226,14 +238,15 @@ Healthcare.gov
 What have we learnt
 -------------------
 
-A software literate company will not necessarily have these issues fixed and working perfectly,
-but they will be top of mind, and everyone in the company will know, not "something is wrong"
-but "this thing right here is not happening"
+A software literate company will not necessarily have these issues fixed and
+working perfectly, but they will be top of mind, and everyone in the company
+will know, not "something is wrong" but "this thing right here is not happening"
 
-Look at the famous "New Relic Punch".  There was not "we do not know what is going on" but a clear
-"if i do this I will know what is going on".
+Look at the famous "New Relic Punch".  There was not "we do not know what is
+going on" but a clear "if i do this I will know what is going on".
 
-OPM shows us the new scope of ethics, and Healthcare.gov shows us "normal best pracise"
+OPM shows us the new scope of ethics, and Healthcare.gov shows us "normal best
+pracise"
 
 
 There is hope
@@ -242,13 +255,6 @@ There is hope
 Government Digital Services
 
 
-security literacy
-=================
-
-Some of these instances are much more security orientated than others (Target etc).
-It is important to recognise that security is in many ways indicative of ones *attitude*.
-Security is a trade off - if one thinks that the threats around you are the fabrications
-of the movie industry, the amount of money and organisational effort dedicated to stopping them will be low
 
 
 The programmable company
@@ -274,13 +280,37 @@ Hence will look and behave like.  But like the team at healthcare, we don't need
 We need to follow "best practise".  Sadly there is no written how to on that - it is more
 the gross difference between a Washington post set up and run by a literate editor and that setup and run by an illiterate - charlelemn
 
+
+
+* software poliktics and snowden and Cathy
+  gatekeepers of new news.
+  Not news but models
+
+* conway and coase - structure of organisations and markets
+* Who owns you? devices, data, profit from data, externalities compensation
+* professionalism - growing up - Cracked, its what you can do for others
+  reliability. Its like an API for a software dev - and same for a software team
+  See the API
+* culture and software
+  literate companies, esp those with literate output, had a new culture.
+  a more open culture in europe. It just came with reading.
+  I cannot imagine working on a code base I cannot roam around in
+  Add in pixar and candour, and its a new culture.
+*
+
+
+
 Software is politics now
 ========================
 
 http://blog.memespring.co.uk/2015/09/14/product-land-part-3/
 ::
 
-    """Politics in the 21st century will, in part, be about control over the digital services we now rely on, and which hold an ever         growing concentration of our personal and household data, from how often we move (fitbit, jawbone), where to (Google Play             Services), what we tell people (WhatsApp, Facebook) and to how often we burn our toast (Nest)."""
+    """Politics in the 21st century will, in part, be about control over the
+    digital services we now rely on, and which hold an ever         growing
+    concentration of our personal and household data, from how often we move
+    (fitbit, jawbone), where to (Google Play             Services), what we tell
+    people (WhatsApp, Facebook) and to how often we burn our toast (Nest)."""
 
 The types of organisations that *can* exist are likelyt to have ot expand
 We need a software literate civil service as urgently as we need more start ups.
