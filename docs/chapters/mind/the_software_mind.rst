@@ -4,7 +4,7 @@ The Software Mind
 
 The transition from pre-SoftwareLiteracy organisations to post software literacy
 
-
+Without open we will be in a world where only powerful are allowed to read and write
 
 .. toctree::
    :maxdepth: 1

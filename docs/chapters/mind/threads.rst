@@ -23,4 +23,10 @@ Additionally the end of secrecy
 Facebook and Portland down 
 
 Does it matter?
-Syria - trace the success of government (evil) against rebels (hmmmm) down to Russian military air support which traces to Obama not enforcing redline which traces back to Cameron not getting parliamentary support which traces back to Snowden revelations and mistrust of government revealed secrets and dodgy dossier 45 mins - which is mistrust of closed not opennintelligence 
+Syria - trace the success of government (evil) against rebels (hmmmm) down to Russian military air support which traces to Obama not enforcing redline which traces back to Cameron not getting parliamentary support which traces back to Snowden revelations and mistrust of government revealed secrets and dodgy dossier 45 mins - which is mistrust of closed not opennintelligence
+
+
+- U.K. Has used secret action and intelligence (bribery and other symbols of outward power to compensate for sudden and drastic loss of empire - and winston was centre of this. We can view Brexit as in someways a backlash - outward trappings on the global stage do not make up for shortcomings at home economy.  And perhaps as good arbiter for future - intelligence is gathering all knowledge to centre to enable good decision making and resource allocation
+
+New company structures may do away with centralised decision top down and may be able to return intelligence from all senrory to all areas equally well - iPhones at Boston bombing
+
