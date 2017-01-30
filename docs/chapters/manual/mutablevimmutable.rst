@@ -1,0 +1,2 @@
+:mind
+https://news.ycombinator.com/item?id=9145197

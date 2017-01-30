@@ -1,3 +1,4 @@
+:manual
 Laptop From Scratch
 ===================
 
@@ -8,4 +9,4 @@ How to build and why to choose laptops from scratch in OSS world
 - iPhone and downloading images
 - securing the laptop
 - Makign my own CA
-- 
+-
