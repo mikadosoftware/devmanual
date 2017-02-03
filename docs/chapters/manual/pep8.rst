@@ -1,3 +1,4 @@
+:manual
 ============
 Style guides
 ============
@@ -12,5 +13,5 @@ $ flake8 myfile.py
 
 
 $ flake8 myfile.py --show-pep8
-  ## Will show the text of what you are doing wrong 
+  ## Will show the text of what you are doing wrong
   ## so you can actually fix it.

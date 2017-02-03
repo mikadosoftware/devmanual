@@ -1,4 +1,4 @@
-
+:manual
 Project mgmt
 ============
 

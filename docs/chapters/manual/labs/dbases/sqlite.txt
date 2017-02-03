@@ -1,0 +1,32 @@
+Building pysqlite in virtualenv 
+===============================
+
+This seems to be a painful issue, for which one day I will try finding a patch
+to pip.  However the problem is simple::
+
+   (myvenv)$ pip install pysqlite
+
+will fail to install sqlite with a `cc` error.  
+
+The problem and solution is described `here
+<http://unix.stackexchange.com/questions/53336/pysqlite-install-error-on-freebsd-in-virtual>`_
+by Susan Wright.
+
+Other approaches which seem less "prod till it works" are in
+http://stackoverflow.com/questions/14541869/how-to-upgrade-sqlite3-in-python-2-7-3-inside-a-virtualenv
+
+
+fails::
+
+    cc -fno-strict-aliasing -O2 -pipe -fno-strict-aliasing -DNDEBUG -O2 -pipe -fno-strict-aliasing -fPIC -DMODULE_NAME="pysqlite2.dbapi2" -DSQLITE_OMIT_LOAD_EXTENSION=1 -I/usr/local/include/python2.7 -c src/module.c -o build/temp.freebsd-9.1-RC2-amd64-2.7/src/module.o
+
+pip error::
+
+        error: command 'cc' failed with exit status 1
+    Complete output from command /usr/home/pbrian/venvs/vimap/bin/python2.7 -c "import setuptools;__file__='/usr/home/pbrian/venvs/vimap/build/pysqlite/setup.py';exec(compile(open(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-Qzwr9I-record/install-record.txt --single-version-externally-managed --install-headers /usr/home/pbrian/venvs/vimap/include/site/python2.7:
+
+
+succeeds::
+
+       cc -fno-strict-aliasing -O2 -pipe -fno-strict-aliasing -DNDEBUG -O2 -pipe -fno-strict-aliasing -fPIC -DMODULE_NAME="pysqlite2.dbapi2" -DSQLITE_OMIT_LOAD_EXTENSION=1 -I/usr/local/include -I/usr/local/include/python2.7 -c src/module.c -o build/temp.freebsd-9.1-RC2-amd64-2.7/src/module.o
+   

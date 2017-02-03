@@ -1,0 +1,43 @@
+Myu problems with WSGI and franeworks
+
+http://www.python.org/dev/peps/pep-0333/#rationale-and-goals ::
+
+  (Note: although we refer to it as an "application" object, this should not be construed to mean that application developers will use WSGI as a web programming API! It is assumed that application developers will continue to use existing, high-level framework services to develop their applications. WSGI is a tool for framework and server developers, and is not intended to directly support application developers.)
+
+
+Actually I think we should have...
+
+http://blog.ianbicking.org/a-wsgi-stack.html
+
+Ian bicking proposed it.
+
+Can we go back to it - I dont want to use frameworks for very much other than 
+thin RESTful responses.
+
+http://lucumr.pocoo.org/2011/7/27/the-pluggable-pipedream/
+
+
+http://ivory.idyll.org/articles/wsgi-intro/what-is-wsgi.html
+
+
+
+Don't use generators with WSGI - why?
+
+http://stackoverflow.com/questions/10868580/can-wsgi-load-several-flask-application?rq=1
+
+WSGI side issues:
+
+start_response has some interesting bits.
+- sys.exc_info is one of parameters - so you can pass up a failed tracxeback, but only useful if you have not yet sent back any non empty string.
+
+
+
+http://archimedeanco.com/wsgi-tutorial/
+
+Server Side Sessions in Flask
+http://flask.pocoo.org/snippets/75/
+
+
+http://www.rfk.id.au/blog/entry/painless-auth-pyramid-browserid/
+http://docs.webob.org/en/latest/do-it-yourself.html#another-do-it-yourself-framework
+

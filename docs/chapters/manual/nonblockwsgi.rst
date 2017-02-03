@@ -1,10 +1,11 @@
+:manual
 Non blocking
 ============
 
 How can we simply improve the performance (concurrent requests)
 of a WSGI server?
 
-The simplest issue is - threads.  OS level threads are realtively speaking, 
+The simplest issue is - threads.  OS level threads are realtively speaking,
 cumbersome and high process.  Our Python interpreter already sits in one
 happily churning away, and to create another is an "expensive" process.
 
@@ -13,7 +14,7 @@ Pseudo-threads, like greenlets, can provide an answer.
 installing gevent (FreeBSD)
 ---------------------------
 
-Firstly install system-wide libevent2 - I find simplest to 
+Firstly install system-wide libevent2 - I find simplest to
 install /devel/py-gevent and ensure all compile well outisde pip.
 
 Then - pip does not look for the libevent system files so we tell it where to look.
@@ -28,15 +29,15 @@ Now pip install inside the venv and all should be well.
 Start simple
 ------------
 
-Simplest app we can 
+Simplest app we can
 
-.. literalinclude:: simpleapp.py 
+.. literalinclude:: simpleapp.py
    :linenos:
    :lines: 7-25
 
 We run it using wsgiref
 
-.. literalinclude:: run.py 
+.. literalinclude:: run.py
    :linenos:
 
 
@@ -47,7 +48,7 @@ Bench - concurrent users
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
   fl-run-bench <unittestfile> <ClassinFile>.<testmethodinclass>
-  
+
   fl-run-bench testcase.py MyWSGITest.test_simple
 
 
@@ -71,7 +72,7 @@ lets add in greenlets to the application...
 And, nothing much changes in the bench tests...
 
 This is because the thread that decides to sleep is able to be a greenlet,
-the server is still creating OS threads, becasue the server does not know 
+the server is still creating OS threads, becasue the server does not know
 about greenlets.  Lets fix that/
 
 .. literalinclude:: greenrun.py

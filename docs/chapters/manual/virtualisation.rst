@@ -1,10 +1,11 @@
+:manual
 ==============
 Virtualisation
 ==============
 
 .. figure:: ../img/virtualisation.png
    :class: screenshot
-   
+
    Windows and Ubunutu running inside a FreeBSD Host.  Cool Huh?
 
 There are two major types of virtualisation possible these days `Jails
@@ -104,7 +105,7 @@ or put this into /etc/fstab.  Probably best to do this... ::
 
 so you see::
 
-  pbrian_laptop# cat /etc/fstab 
+  pbrian_laptop# cat /etc/fstab
   # Device    Mountpoint FStype	Options	Dump	Pass#
   /dev/ad4s1b none	swap	sw	0	0
   ...
@@ -244,14 +245,14 @@ Booting from a downloaded iso is nice.
 However I have Windows Disk and wanted to load from CD.
 
 This seems ok, but hald slowed my host machine down to a crawl - so I used a .iso of a windows disk
-This .iso approach is a *lot* simpler. 
+This .iso approach is a *lot* simpler.
 
 ::
 
   from the wiki
   # atapicam kernel module needs to be loaded
   # HAL has to run at the moment
-  # Permissions to access /dev/xpt0, /dev/cdN and /dev/passN 
+  # Permissions to access /dev/xpt0, /dev/cdN and /dev/passN
 
   $ kldload atapicam
   $ echo atapicam_load="YES" >> /boot/loader.conf
@@ -325,17 +326,17 @@ Install it the normal way ::
 At this point the file image is just like a HDD that has been installed with Ubuntu
 But to start the image normally::
 
- qemu -hda /usr/local/DATA/ubuntu.disk -m 192 
+ qemu -hda /usr/local/DATA/ubuntu.disk -m 192
 
 
 
 Ripping XP CD
 -------------
-Its much easier with a .iso file than pass-through 
+Its much easier with a .iso file than pass-through
 
   # dd if=/dev/acd0t01 of=/home/pbrian/downloads/xp.iso bs=2048
 
-Really it was awful to get this far.  Had to read the man page to the 
+Really it was awful to get this far.  Had to read the man page to the
 bottom - adding bs=2048 solved a lot.
 
 # dd if=/dev/acd0t01 of=/home/pbrian/downloads/xp.iso
@@ -350,7 +351,7 @@ Actually it seems to be the bs=2048 - CD's transfer at that rate and dd fails
 presumably after the first 512Bytes come and 513th is not buffered and a CRC
 fails somewhere.
 
-Anyway, 
+Anyway,
 
   dd if=/dev/acd0 of=/home/pbrian/downloads/xp.iso bs=2048
 
@@ -368,7 +369,7 @@ First guest
 
 The first one to create is Unbuntu.  Its simple and free.
 Download the latest version (www.ubuntu.com), and keep somewhere safe.
-Create a harddisk - there is a simple wizard on VirtualBox, I recommend 
+Create a harddisk - there is a simple wizard on VirtualBox, I recommend
 512MB RAM and min 8GB disk space, 5 years ago that was a damn good spec.!
 
 Then open File > Virtual Media Manager, which will allow us to make the ISO
@@ -402,8 +403,8 @@ Its a bit like this::
      \  /
       --  Netgraph
       |
-      NIC 
-      
+      NIC
+
 But not really.
 
 

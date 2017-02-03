@@ -1,3 +1,4 @@
+:manual
 ============================================
 Running a Small Office / Home Office Network
 ============================================
@@ -8,14 +9,14 @@ and DHCP, and phones, oh dear phones !
 
 These days... barely any of it.  Most of us have GMail on the web browser and on
 our phones, share files via dropbox and skype or video chat.   Pretty much all
-that is left is the firewall and our own personal workstations. 
+that is left is the firewall and our own personal workstations.
 
-:doc:`/labs/automated-builds/workstation` 
+:doc:`/labs/automated-builds/workstation`
 
 Firewalls, routers and analytics
 ================================
 
-What is important now, and possibly more than ever, is the *analytics*.  This 
+What is important now, and possibly more than ever, is the *analytics*.  This
 article is about the ways to monitor your SoHo office.
 
 It's useful to look back on these articles - but this is by far the biggest

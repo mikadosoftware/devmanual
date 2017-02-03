@@ -1,3 +1,4 @@
+:manual
 Modern(ish) Web Development
 ===========================
 

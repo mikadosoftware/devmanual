@@ -1,7 +1,8 @@
+:manual
 Installing Sqlite in a venv
 ===========================
 
-Seems to be painful - best answer so far seems to be 
+Seems to be painful - best answer so far seems to be
 to link or mv.
 
 So we build sqlite database as usual in local.
@@ -12,5 +13,3 @@ into venv site-packages.
 $ ln -s /usr/local/lib/python2.7/site-packages/_sqlite3.so .
 
 >> import sqlite3
-
-

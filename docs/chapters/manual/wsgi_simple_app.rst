@@ -1,3 +1,4 @@
+:manual
 Writing a simple WSGI app
 =========================
 
@@ -32,7 +33,7 @@ I think this "officially configured" app is also the source of much confusion.::
     ...     """ """
     ...     #do something with environ
     ...     resp_headers = {'Content-Type': 'text/html'}
-    ...     start_response("200 OK", 
+    ...     start_response("200 OK",
     ...     return "Hello World"
 
 
@@ -65,9 +66,8 @@ Secure cookies
 ~~~~~~~~~~~~~~
 
 Some people think that secure cookies is about encrypting the text on the
-cookie so bad guys cannot read it.  Frankly, this is nonsense.  You will 
+cookie so bad guys cannot read it.  Frankly, this is nonsense.  You will
 make a mistake, and they will read it.  So we have an issue - which is faster
 an in-memory redis lookup or a decryption of a *really secure* piece of text.
 
 This looks like an interesting test...
-

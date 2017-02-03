@@ -1,3 +1,4 @@
+:manual
 =================================
 Basics of routing on your own LAN
 =================================
@@ -24,5 +25,3 @@ so force it ::
 then force a default route to the router that this connects too ::
 
   net add default 192.168.1.1
-
-

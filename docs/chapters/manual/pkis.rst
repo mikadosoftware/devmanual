@@ -1,4 +1,4 @@
-
+:manual
 PKIs
 ====
 

@@ -1,3 +1,4 @@
+:manual
 ================================
 The unusual behaviour of urljoin
 ================================

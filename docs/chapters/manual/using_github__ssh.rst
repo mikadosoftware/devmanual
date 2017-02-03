@@ -1,4 +1,4 @@
-
+:manual
 Using GitHub / ssh
 ==================
 

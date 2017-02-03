@@ -1,3 +1,4 @@
+:manual
 =====================
 VirtualBox on FreeBSD
 =====================
@@ -10,7 +11,7 @@ VirtualBox on FreeBSD
 .. figure:: ../img/virtualisation.png
    :class: screenshot
 
-   
+
    Windows and Ubunutu running inside a FreeBSD Host.
 
 Introduction
@@ -61,7 +62,7 @@ Until recently virtualised machines were noticeably slow - because the
 "interpretation layer" was implemented solely in software.  However as
 virtualisation has grown in popularity, the major chip vendors have
 worked to develop hardware extensions to improve speed.
- 
+
 There have been two major innovations in hardware-based
 virtualisation.  VMX extensions and nested paging.  The first has been
 around for a couple of years, and in essence performs the marking of
@@ -105,7 +106,7 @@ Installing VirtualBox
 
 NB. These instructions deal with port at or after OSE 3.1.2/
 
-To build VirtualBox use the port found at 
+To build VirtualBox use the port found at
 
 ::
 
@@ -168,12 +169,12 @@ ubuntu.
 Obtain ISO
 ~~~~~~~~~~
 
-You can just download the latest Ubuntu ISO, or you can extract your 
+You can just download the latest Ubuntu ISO, or you can extract your
 *licensed* copy of XP by placing the CD in your CD drive and ::
 
    # dd if=/dev/acd0 of=/home/pbrian/downloads/xp.iso bs=2048
 
-(NB the block size setting is *very* important - without it you will not 
+(NB the block size setting is *very* important - without it you will not
 copy anything from a CD drive)
 
 Now visit the CD tab in the VMM GUI.  tick the 'Mount CD Drive' and
@@ -181,7 +182,7 @@ then tick 'Mount from ISO'.  Simply find the iso image on your HDD,
 and now the Virtual Machine you selected will be able to "see" the CD
 as if it was in a normal CD drive.
 
-Install From ISO 
+Install From ISO
 ~~~~~~~~~~~~~~~~
 
 Start up the VM instance, now you will be able to install the chosen
@@ -223,8 +224,8 @@ Its a bit like this::
      \  /
       --  Netgraph
       |
-      NIC 
-      
+      NIC
+
 You will need to re-compile your kernel (see Handbook for instructions).
 The following can be used as a kernel configuration file::
 
@@ -235,8 +236,8 @@ The following can be used as a kernel configuration file::
     options NETGRAPH
 
 
-You will then need to switch the current virtual NIC over to Bridged mode 
-in the VMM GUI and select the appropriate driver - PCNet III works well the 
+You will then need to switch the current virtual NIC over to Bridged mode
+in the VMM GUI and select the appropriate driver - PCNet III works well the
 Netgraph driver.
 
 

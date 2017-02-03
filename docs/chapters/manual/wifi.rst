@@ -1,3 +1,4 @@
+:manual
 ====
 wifi
 ====
@@ -47,8 +48,8 @@ Firstly look at dmesg for anything resembling an Ethernet driver or setup.
   mskc0: <Marvell Yukon 88E8055 Gigabit Ethernet> mem 0xf5000000-0xf5003fff irq 19 at device 0.0 on pci6
   msk0: Ethernet address: 00:13:77:6f:93:ed
 
-Well, thats my wired Ethernet.  
-Now, if we want we can look for similar information in *sysctl -a* 
+Well, thats my wired Ethernet.
+Now, if we want we can look for similar information in *sysctl -a*
 
 ::
 
@@ -136,12 +137,12 @@ I do recommend reading the ifconfig man pages.  It is really useful.
 
 
 
-Scan for AP's 
+Scan for AP's
 -------------
 
 The first thing to do is see if the adaptor can find the AP ::
 
-  $ ifconfig wlan0 up 
+  $ ifconfig wlan0 up
   $ ifconfig wlan0 list scan
 
 
@@ -149,7 +150,7 @@ In a NY hotel room I get ::
 
   pbrian_laptop# ifconfig rum0 list scan
   SSID            BSSID              CHAN RATE   S:N     INT CAPS
-  Buckingham_...  00:c0:02:0f:ac:67    8   54M -89:-95  100 ES  
+  Buckingham_...  00:c0:02:0f:ac:67    8   54M -89:-95  100 ES
 
              ^^^
 
@@ -157,7 +158,7 @@ Err, why the ... try -v option to view SSID's that are longer than usual.::
 
   pbrian_laptop# ifconfig -v rum0 list scan
   SSID                              BSSID              CHAN RATE   S:N     INT CAPS
-  Buckingham_Hotel                  00:c0:02:0f:ac:67    8   54M -89:-95  100 ES  
+  Buckingham_Hotel                  00:c0:02:0f:ac:67    8   54M -89:-95  100 ES
 
 
 
@@ -186,7 +187,7 @@ WEP needs a shared key - one that is known to the client and the AP.  Unfortunat
 
   ifconfig_rum0="ssid HOME channel 6 authmode open wepmode on weptxkey 1 wepkey 0xyyyyyyyyyyyyyyyyyyyyyyyyy DHCP"
 
-WEP key is a 26 digit hex (0x prefix tells us that.  If you get "String too long" errors, put 0x in to explain this is a hex string).  Now "weptxkey 1" - there are several "slots" to use in the shared key - basically the AP has several shared keys it could use, you need to tell it which slot you are thinking of.  Weptkey is the means.  Ifconfig man suggests that using 
+WEP key is a 26 digit hex (0x prefix tells us that.  If you get "String too long" errors, put 0x in to explain this is a hex string).  Now "weptxkey 1" - there are several "slots" to use in the shared key - basically the AP has several shared keys it could use, you need to tell it which slot you are thinking of.  Weptkey is the means.  Ifconfig man suggests that using
 
 ::
 
@@ -201,8 +202,8 @@ Note on DHCP and ifconfig
 
 usually I can easily transliterate the following::
 
-  ifconfig_rum0="ssid HOME channel 6 authmode open wepmode on weptxkey 1 wepkey 0xyyyyyyyyyyyyyyyyyyyyyyyyyy inet 192.16.1.10 netmask 255.255.255.0" 
- 
+  ifconfig_rum0="ssid HOME channel 6 authmode open wepmode on weptxkey 1 wepkey 0xyyyyyyyyyyyyyyyyyyyyyyyyyy inet 192.16.1.10 netmask 255.255.255.0"
+
   in /etc/rc.conf can also be set up during run time
 
   ifconfig rum0 ssid HOME channel 6 authmode open wepmode on weptxkey 1 wepkey 0xyyyyyyyyyyyyyyyyyyyyyyyyyy inet 192.16.1.10\
@@ -214,9 +215,9 @@ however, the following raises an error ::
 
 while this, in /etc/rc.conf is fine ::
 
-  ifconfig_rum0="ssid HOME channel 6 authmode open wepmode on weptxkey 1 wepkey 0xyyyyyyyyyyyyyyyyyyyyyyyyyy DHCP"	   
-  
-  
+  ifconfig_rum0="ssid HOME channel 6 authmode open wepmode on weptxkey 1 wepkey 0xyyyyyyyyyyyyyyyyyyyyyyyyyy DHCP"
+
+
 testing /etc settings
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -252,7 +253,7 @@ We tell this that we want to use the rum0 driver, and refer to it as wlan0.
 using WPA security
 ------------------
 
-As noted above, WEP security was essentially broken, and advice from respected security advisors such as Bruce Schneier was to run open wifi.[*]_  
+As noted above, WEP security was essentially broken, and advice from respected security advisors such as Bruce Schneier was to run open wifi.[*]_
 
 
 
@@ -261,12 +262,12 @@ As noted above, WEP security was essentially broken, and advice from respected s
 discussion of settings
 ----------------------
 
-SSID 
+SSID
   Here we state the SSID of the base station we want to connect to.  (SSID
   *can* refer to more than one base station (usually if a company wants to give
   a seamless experiece in a wide area - in this case we can use BSSID which is a
   sort of mac address for base stations)
- 
+
 channel
   We can set the channel to use.  Not always necessary but can be found from the
   data in "ifconfig rum0 list scan"
@@ -286,7 +287,7 @@ weptxkey
 
 ::
 
-  ifconfig 
+  ifconfig
   	status: associated
 	ssid HOME channel 6 (2437 Mhz 11g) bssid 00:14:6c:d4:e4:e4
 	authmode OPEN privacy ON *deftxkey 1* wepkey 1:104-bit txpower 50
@@ -302,7 +303,7 @@ DHCP
 
 NB
  - if usng ifconfig on comamnd line put DHCP in early not at end of string.
- 
+
 
 Well, thats about it for now folks.  This will be an oft-revisited entry I
 think.

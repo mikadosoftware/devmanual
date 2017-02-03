@@ -1,9 +1,10 @@
+:manual
 webtest
 =======
 
 Writing a WSGI app
 Writing a WSGI *server*
-Testing a WSGI server - 
+Testing a WSGI server -
 http://wsgi.readthedocs.org/en/latest/learn.html
 Writing WSGI Middleware
 
@@ -25,7 +26,7 @@ We want to test that the "hello world" actually returns hello world.::
     >>> from flask import Flask
     >>> app = Flask("myapp")
     >>> wapp = app.wsgi_app
-    
+
 ::
 
 
@@ -65,4 +66,3 @@ We want to test that the "hello world" actually returns hello world.::
         d.update(wsgi_specific_headers)
         d.update(HTTP_HEADERS)
         return d
-

@@ -1,0 +1,144 @@
+{{Colort/Color|r=240|g=248|b=255|h=208|s=6|v=100|name=[[Alice blue|Alice Blue]]}}
+{{Colort/Color|r=250|g=235|b=215|h=34|s=14|v=98|name=[[Antique white|Antique White]]}}
+{{Colort/Color|r=0|g=255|b=255|h=180|s=100|v=100|name=[[Aqua (color)|Aqua]]|html_name=Cyan}}
+{{Colort/Color|r=127|g=255|b=212|h=160|s=50|v=100|name=[[Aquamarine (color)|Aquamarine]]}}
+{{Colort/Color|r=240|g=255|b=255|h=180|s=6|v=100|name=[[Azure (color)|Azure]]}}
+{{Colort/Color|r=245|g=245|b=220|h=60|s=10|v=96|name=[[Beige]]}}
+{{Colort/Color|r=255|g=228|b=196|h=33|s=23|v=100|name=Bisque}}
+{{Colort/Color|r=0|g=0|b=0|h=0|s=0|v=0|name=[[Black]]}}
+{{Colort/Color|r=255|g=235|b=205|h=36|s=20|v=100|name=Blanched Almond}}
+{{Colort/Color|r=0|g=0|b=255|h=240|s=100|v=100|name=[[Blue]]}}
+{{Colort/Color|r=138|g=43|b=226|h=271|s=81|v=89|name=[[Indigo|Blue Violet]]}}
+{{Colort/Color|r=165|g=42|b=42|h=0|s=75|v=65|name=[[Brown#Red-brown|Brown]]}}
+{{Colort/Color|r=222|g=184|b=135|h=34|s=39|v=87|name=Burlywood}}
+{{Colort/Color|r=95|g=158|b=160|h=182|s=41|v=63|name=[[Cadet grey#Cadet blue|Cadet Blue]]}}
+{{Colort/Color|r=127|g=255|b=0|h=90|s=100|v=100|name=[[Chartreuse (color)|Chartreuse]]}}
+{{Colort/Color|r=210|g=105|b=30|h=25|s=86|v=82|name=[[Chocolate (color)#Cocoa brown|Chocolate]]}}
+{{Colort/Color|r=255|g=127|b=80|h=16|s=69|v=100|name=[[Coral (color)|Coral]]}}
+{{Colort/Color|r=100|g=149|b=237|h=219|s=58|v=93|name=[[Cornflower blue|Cornflower]]}}
+{{Colort/Color|r=255|g=248|b=220|h=48|s=14|v=100|name=Cornsilk}}
+{{Colort/Color|r=220|g=20|b=60|h=348|s=91|v=86|name=[[Crimson]]}}
+{{Colort/Color|r=0|g=255|b=255|h=180|s=100|v=100|name=[[Cyan]]|html_name=Aqua}}
+{{Colort/Color|r=0|g=0|b=139|h=240|s=100|v=55|name=[[Variations of blue#Dark blue|Dark Blue]]}}
+{{Colort/Color|r=0|g=139|b=139|h=180|s=100|v=55|name=[[Cyan#Dark cyan|Dark Cyan]]}}
+{{Colort/Color|r=184|g=134|b=11|h=43|s=94|v=72|name=[[Dark goldenrod|Dark Goldenrod]]}}
+{{Colort/Color|r=169|g=169|b=169|h=0|s=0|v=66|name=[[Grey#Web colors|Dark Gray]]|html_name=Dark Grey}}
+{{Colort/Color|r=0|g=100|b=0|h=120|s=100|v=39|name=[[Variations of green#Dark green|Dark Green]]}}
+{{Colort/Color|r=189|g=183|b=107|h=56|s=43|v=74|name=[[Khaki (color)#Web color dark khaki|Dark Khaki]]}}
+{{Colort/Color|r=139|g=0|b=139|h=300|s=100|v=55|name=[[Variations of magenta#Dark magenta|Dark Magenta]]}}
+{{Colort/Color|r=85|g=107|b=47|h=82|s=56|v=42|name=[[Olive (color)#Dark olive green|Dark Olive Green]]}}
+{{Colort/Color|r=255|g=140|b=0|h=33|s=100|v=100|name=[[Dark orange (colour)|Dark Orange]]}}
+{{Colort/Color|r=153|g=50|b=204|h=280|s=75|v=80|name=[[Orchid (color)#Dark Orchid|Dark Orchid]]}}
+{{Colort/Color|r=139|g=0|b=0|h=0|s=100|v=55|name=[[Maroon (color)#Dark red|Dark Red]]}}
+{{Colort/Color|r=233|g=150|b=122|h=15|s=48|v=91|name=[[Dark salmon|Dark Salmon]]}}
+{{Colort/Color|r=143|g=188|b=143|h=120|s=24|v=74|name=Dark Sea Green}}
+{{Colort/Color|r=72|g=61|b=139|h=248|s=56|v=55|name=Dark Slate Blue}}
+{{Colort/Color|r=47|g=79|b=79|h=180|s=41|v=31|name=[[Slate gray#Dark slate gray|Dark Slate Gray]]|html_name=Dark Slate Grey}}
+{{Colort/Color|r=0|g=206|b=209|h=181|s=100|v=82|name=[[Turquoise (color)#Dark Turquoise|Dark Turquoise]]}}
+{{Colort/Color|r=148|g=0|b=211|h=282|s=100|v=83|name=[[Violet (color)|Dark Violet]]}}
+{{Colort/Color|r=255|g=20|b=147|h=328|s=92|v=100|name=[[Variations of pink#Deep pink|Deep Pink]]}}
+{{Colort/Color|r=0|g=191|b=255|h=195|s=100|v=100|name=[[Deep sky blue|Deep Sky Blue]]}}
+{{Colort/Color|r=105|g=105|b=105|h=0|s=0|v=41|name=[[Variations of gray#Dim gray|Dim Gray]]|html_name=Dim Grey}}
+{{Colort/Color|r=30|g=144|b=255|h=210|s=88|v=100|name=[[Dodger blue|Dodger Blue]]}}
+{{Colort/Color|r=178|g=34|b=34|h=0|s=81|v=70|name=[[Scarlet (color)#Fire brick|Firebrick]]}}
+{{Colort/Color|r=255|g=250|b=240|h=40|s=6|v=100|name=Floral White}}
+{{Colort/Color|r=34|g=139|b=34|h=120|s=76|v=55|name=[[Variations of green#Forest green|Forest Green]]}}
+{{Colort/Color|r=255|g=0|b=255|h=300|s=100|v=100|name=[[Fuchsia (color)|Fuchsia]]|html_name=Magenta}}
+{{Colort/Color|r=220|g=220|b=220|h=0|s=0|v=86|name=[[Variations of gray#Gainsboro|Gainsboro]]}}
+{{Colort/Color|r=248|g=248|b=255|h=240|s=3|v=100|name=[[Ghost white|Ghost White]]}}
+{{Colort/Color|r=255|g=215|b=0|h=51|s=100|v=100|name=[[Gold (color)|Gold]]}}
+{{Colort/Color|r=218|g=165|b=32|h=43|s=85|v=85|name=[[Goldenrod (color)|Goldenrod]]}}
+{{Colort/Color|r=190|g=190|b=190|h=0|s=0|v=75|name=[[Grey|Gray (X11)]]}}
+{{Colort/Color|r=128|g=128|b=128|h=0|s=0|v=50|name=[[Grey|Gray]] (W3C)|html_name=Grey}}
+{{Colort/Color|r=0|g=255|b=0|h=120|s=100|v=100|name=[[Variations of green#Computer web color greens|Green (X11)]]}}
+{{Colort/Color|r=0|g=128|b=0|h=120|s=100|v=50|name=[[Variations of green#Computer web color greens|Green (W3C)]]}}
+{{Colort/Color|r=173|g=255|b=47|h=84|s=82|v=100|name=[[Chartreuse (color)#Green-yellow|Green Yellow]]}}
+{{Colort/Color|r=240|g=255|b=240|h=120|s=6|v=100|name=[[Spring green (color)#Honeydew|Honeydew]]}}
+{{Colort/Color|r=255|g=105|b=180|h=330|s=59|v=100|name=[[Hot pink|Hot Pink]]}}
+{{Colort/Color|r=205|g=92|b=92|h=0|s=55|v=80|name=[[Indian red (color)|Indian Red]]}}
+{{Colort/Color|r=75|g=0|b=130|h=275|s=100|v=51|name=[[Indigo]]}}
+{{Colort/Color|r=255|g=255|b=240|h=60|s=6|v=100|name=[[Ivory (color)|Ivory]]}}
+{{Colort/Color|r=240|g=230|b=140|h=54|s=42|v=94|name=[[Khaki (color)|Khaki]]}}
+{{Colort/Color|r=230|g=230|b=250|h=240|s=8|v=98|name=[[Lavender (color)|Lavender]]}}
+{{Colort/Color|r=255|g=240|b=245|h=340|s=6|v=100|name=[[Lavender (color)#Lavender blush|Lavender Blush]]}}
+{{Colort/Color|r=124|g=252|b=0|h=90|s=100|v=99|name=[[Chartreuse (color)#Lawn green|Lawn Green]]}}
+{{Colort/Color|r=255|g=250|b=205|h=54|s=20|v=100|name=[[Lemon (color)#Lemon chiffon|Lemon Chiffon]]}}
+{{Colort/Color|r=173|g=216|b=230|h=195|s=25|v=90|name=[[Variations of blue#Light blue|Light Blue]]}}
+{{Colort/Color|r=240|g=128|b=128|h=0|s=47|v=94|name=[[Light Coral]]}}
+{{Colort/Color|r=224|g=255|b=255|h=180|s=12|v=100|name=[[Cyan#Light cyan|Light Cyan]]}}
+{{Colort/Color|r=250|g=250|b=210|h=60|s=16|v=98|name=[[Goldenrod (color)#Light goldenrod|Light Goldenrod]]}}
+{{Colort/Color|r=211|g=211|b=211|h=0|s=0|v=83|name=[[Grey#Web colors|Light Gray]]|html_name=Light Grey}}
+{{Colort/Color|r=144|g=238|b=144|h=120|s=39|v=93|name=[[Variations of green#Light green|Light Green]]}}
+{{Colort/Color|r=255|g=182|b=193|h=351|s=29|v=100|name=[[Light pink|Light Pink]]}}
+{{Colort/Color|r=255|g=160|b=122|h=17|s=52|v=100|name=[[Salmon (color)#Light salmon|Light Salmon]]}}
+{{Colort/Color|r=32|g=178|b=170|h=177|s=82|v=70|name=[[Cyan#Light sea green|Light Sea Green]]}}
+{{Colort/Color|r=135|g=206|b=250|h=203|s=46|v=98|name=[[Sky blue#Light sky blue|Light Sky Blue]]}}
+{{Colort/Color|r=119|g=136|b=153|h=210|s=22|v=60|name=[[Slate gray#Light slate gray|Light Slate Gray]]|html_name=Light Slate Grey}}
+{{Colort/Color|r=176|g=196|b=222|h=214|s=21|v=87|name=[[Steel blue#Light steel blue|Light Steel Blue]]}}
+{{Colort/Color|r=255|g=255|b=224|h=60|s=12|v=100|name=[[Variations of yellow#Light yellow|Light Yellow]]}}
+{{Colort/Color|r=0|g=255|b=0|h=120|s=100|v=100|name=[[Lime (color)|Lime (W3C)]]}}
+{{Colort/Color|r=50|g=205|b=50|h=120|s=76|v=80|name=[[Lime (color)#Lime green|Lime Green]]}}
+{{Colort/Color|r=250|g=240|b=230|h=30|s=8|v=98|name=Linen}}
+{{Colort/Color|r=255|g=0|b=255|h=300|s=100|v=100|name=[[Magenta]]|html_name=Fuchsia}}
+{{Colort/Color|r=176|g=48|b=96|h=338|s=73|v=69|name=[[Maroon (color)#Rich maroon (maroon (X11))|Maroon (X11)]]}}
+{{Colort/Color|r=127|g=0|b=0|h=0|s=100|v=50|name=[[Maroon (color)|Maroon (W3C)]]}}
+{{Colort/Color|r=102|g=205|b=170|h=160|s=50|v=80|name=[[Aquamarine (color)#Medium aquamarine|Medium Aquamarine]]}}
+{{Colort/Color|r=0|g=0|b=205|h=240|s=100|v=80|name=[[Variations of blue#Medium blue|Medium Blue]]}}
+{{Colort/Color|r=186|g=85|b=211|h=288|s=60|v=83|name=[[Orchid (color)#Medium orchid|Medium Orchid]]}}
+{{Colort/Color|r=147|g=112|b=219|h=260|s=49|v=86|name=[[Purple#Computer web color purples|Medium Purple]]}}
+{{Colort/Color|r=60|g=179|b=113|h=147|s=66|v=70|name=[[Spring green (color)#Medium sea green|Medium Sea Green]]}}
+{{Colort/Color|r=123|g=104|b=238|h=249|s=56|v=93|name=Medium Slate Blue}}
+{{Colort/Color|r=0|g=250|b=154|h=157|s=100|v=98|name=[[Spring green (color)#Medium spring green|Medium Spring Green]]}}
+{{Colort/Color|r=72|g=209|b=204|h=178|s=66|v=82|name=[[Turquoise (color)#Medium Turquoise|Medium Turquoise]]}}
+{{Colort/Color|r=199|g=21|b=133|h=322|s=89|v=78|name=[[Red-violet|Medium Violet Red]]}}
+{{Colort/Color|r=25|g=25|b=112|h=240|s=78|v=44|name=[[Midnight blue|Midnight Blue]]}}
+{{Colort/Color|r=245|g=255|b=250|h=150|s=4|v=100|name=[[Spring green (color)#Mint cream|Mint Cream]]}}
+{{Colort/Color|r=255|g=228|b=225|h=6|s=12|v=100|name=[[Rose (color)#Misty Rose|Misty Rose]]}}
+{{Colort/Color|r=255|g=228|b=181|h=38|s=29|v=100|name=Moccasin}}
+{{Colort/Color|r=255|g=222|b=173|h=36|s=32|v=100|name=[[Navajo white|Navajo White]]}}
+{{Colort/Color|r=0|g=0|b=128|h=240|s=100|v=50|name=[[Navy blue (color)|Navy]]}}
+{{Colort/Color|r=253|g=245|b=230|h=39|s=9|v=99|name=[[Old Lace (color)|Old Lace]]}}
+{{Colort/Color|r=128|g=128|b=0|h=60|s=100|v=50|name=[[Olive (color)|Olive]]}}
+{{Colort/Color|r=107|g=142|b=35|h=80|s=75|v=56|name=[[Olive drab|Olive Drab]]}}
+{{Colort/Color|r=255|g=165|b=0|h=39|s=100|v=100|name=[[Orange (colour)#Orange (web colour)|Orange]]}}
+{{Colort/Color|r=255|g=69|b=0|h=16|s=100|v=100|name=[[Vermilion (color)#Orange-red|Orange Red]]}}
+{{Colort/Color|r=218|g=112|b=214|h=302|s=49|v=85|name=[[Orchid (color)|Orchid]]}}
+{{Colort/Color|r=238|g=232|b=170|h=55|s=29|v=93|name=[[Goldenrod (color)#Pale goldenrod|Pale Goldenrod]]}}
+{{Colort/Color|r=152|g=251|b=152|h=120|s=39|v=98|name=[[Variations of green#Pale green|Pale Green]]}}
+{{Colort/Color|r=175|g=238|b=238|h=180|s=26|v=93|name=[[Turquoise (color)#Pale Turquoise|Pale Turquoise]]}}
+{{Colort/Color|r=219|g=112|b=147|h=340|s=49|v=86|name=[[Pale red-violet|Pale Violet Red]]}}
+{{Colort/Color|r=255|g=239|b=213|h=37|s=16|v=100|name=[[Variations of orange#Papaya whip|Papaya Whip]]}}
+{{Colort/Color|r=255|g=218|b=185|h=28|s=27|v=100|name=[[Peach (color)#Peach puff|Peach Puff]]}}
+{{Colort/Color|r=205|g=133|b=63|h=30|s=69|v=80|name=[[Brown#Peru|Peru]]}}
+{{Colort/Color|r=255|g=192|b=203|h=350|s=25|v=100|name=[[Pink]]}}
+{{Colort/Color|r=221|g=160|b=221|h=300|s=28|v=87|name=[[Plum (color)#Pale plum|Plum]]}}
+{{Colort/Color|r=176|g=224|b=230|h=187|s=23|v=90|name=[[Powder blue|Powder Blue]]}}
+{{Colort/Color|r=160|g=32|b=240|h=277|s=87|v=94|name=[[Purple]] (X11)}}
+{{Colort/Color|r=127|g=0|b=127|h=300|s=100|v=50|name=[[Purple]] (W3C)}}
+{{Colort/Color|r=255|g=0|b=0|h=0|s=100|v=100|name=[[Red]]}}
+{{Colort/Color|r=188|g=143|b=143|h=0|s=24|v=74|name=[[Rose (color)#Rosy Brown|Rosy Brown]]}}
+{{Colort/Color|r=65|g=105|b=225|h=225|s=71|v=88|name=[[Royal Blue]]}}
+{{Colort/Color|r=139|g=69|b=19|h=25|s=86|v=55|name=Saddle Brown}}
+{{Colort/Color|r=250|g=128|b=114|h=6|s=54|v=98|name=[[Salmon (color)|Salmon]]}}
+{{Colort/Color|r=244|g=164|b=96|h=28|s=61|v=96|name=[[Sandy brown|Sandy Brown]]}}
+{{Colort/Color|r=46|g=139|b=87|h=146|s=67|v=55|name=[[Sea green|Sea Green]]}}
+{{Colort/Color|r=255|g=245|b=238|h=25|s=7|v=100|name=[[Seashell (color)|Seashell]]}}
+{{Colort/Color|r=160|g=82|b=45|h=19|s=72|v=63|name=[[Sienna]]}}
+{{Colort/Color|r=192|g=192|b=192|h=0|s=0|v=75|name=[[Silver (color)|Silver (W3C)]]}}
+{{Colort/Color|r=135|g=206|b=235|h=197|s=43|v=92|name=[[Sky blue|Sky Blue]]}}
+{{Colort/Color|r=106|g=90|b=205|h=248|s=56|v=80|name=Slate Blue}}
+{{Colort/Color|r=112|g=128|b=144|h=210|s=22|v=56|name=[[Slate grey|Slate Gray]]|html_name=Slate Grey}}
+{{Colort/Color|r=255|g=250|b=250|h=0|s=2|v=100|name=[[Shades of white#Snow|Snow]]}}
+{{Colort/Color|r=0|g=255|b=127|h=150|s=100|v=100|name=[[Spring green (color)|Spring Green]]}}
+{{Colort/Color|r=70|g=130|b=180|h=207|s=61|v=71|name=[[Steel blue|Steel Blue]]}}
+{{Colort/Color|r=210|g=180|b=140|h=34|s=33|v=82|name=[[Tan (color)|Tan]]}}
+{{Colort/Color|r=0|g=128|b=128|h=180|s=100|v=50|name=[[Teal (color)|Teal]]}}
+{{Colort/Color|r=216|g=191|b=216|h=300|s=12|v=85|name=[[Thistle (color)|Thistle]]}}
+{{Colort/Color|r=255|g=99|b=71|h=9|s=72|v=100|name=[[Tomato (color)|Tomato]]}}
+{{Colort/Color|r=64|g=224|b=208|h=174|s=71|v=88|name=[[Turquoise (color)|Turquoise]]}}
+{{Colort/Color|r=238|g=130|b=238|h=300|s=45|v=93|name=[[Violet (color)|Violet]]}}
+{{Colort/Color|r=245|g=222|b=179|h=39|s=27|v=96|name=[[Wheat (color)|Wheat]]}}
+{{Colort/Color|r=255|g=255|b=255|h=0|s=0|v=100|name=[[White]]}}
+{{Colort/Color|r=245|g=245|b=245|h=0|s=0|v=96|name=White Smoke}}
+{{Colort/Color|r=255|g=255|b=0|h=60|s=100|v=100|name=[[Yellow]]}}
+{{Colort/Color|r=154|g=205|b=50|h=80|s=76|v=80|name=[[Yellow-green|Yellow Green]]}}

@@ -1,3 +1,4 @@
+:manual
 ======================================================
 Building a FreeBSD laptop from scratch with Salt-stack
 ======================================================
@@ -16,7 +17,7 @@ So as well as `installing servers using salt-stack
 DevOps quality scripts to keep your workstation rebuildable at a moments notice,
 and keep the day-to-day maintenance spruced up and ship shape!
 
-The idea is to install the laptop with FreeBSD 10, 
+The idea is to install the laptop with FreeBSD 10,
 point it at the new packaging system, run the miniuon bootstrap,
 download my own set of salt states, and ... presto.
 
@@ -28,7 +29,7 @@ Luckily this is easy - just download the latest `.img` file from FreeBSD.org,
 and copy it over to a USB.
 
 Visit::
-   
+
   ftp://ftp.freebsd.org/pub/FreeBSD/snapshots/ISO-IMAGES/10.0/
 
 and pull back the latest `*memstick.img` file such as ::
@@ -53,7 +54,7 @@ Download and run bootstrap installer
 The salt stack bootstrap script essentially downloads salt onto your local
 machine (OK, a number of potential issues there), and will do various OS
 specific setups (in FreeBSD's case, prepare the `pkg` environment, point at the
-right URLs etc.) 
+right URLs etc.)
 
 Unfortunately fetch is a bit rubbish compared to wget, and barfs on SSL
 certificates like the dodgy ones at github.  I should look into it.
@@ -68,18 +69,18 @@ certificates like the dodgy ones at github.  I should look into it.
   https://github.com/saltstack/salt-bootstrap/issues/290
 
 This will migrate me to using the `pkgng` (FreeBSD's own apt-get setup)
-convert the laptop to a minion, and then all I need to do is set the 
+convert the laptop to a minion, and then all I need to do is set the
 right values in /env/salt and call local highstate
 
-.. todo:: 
+.. todo::
 
    More about pkgng
    [expand on pkgng]
 
 
-1. Download the appropriate salt-states 
+1. Download the appropriate salt-states
 2. apply to /usr/local/etc/salt
-3. run  `salt-call --local state.highstate` 
+3. run  `salt-call --local state.highstate`
 
 
 This way I have now applied a set of states I want on the laptop to a local
@@ -108,9 +109,9 @@ How does salt-call work (brief)?
 ================================
 
 1. Process the base environment top.sls file.  This is by default
-   `/srv/salt/top.sls` but can be changed (see file_roots) 
+   `/srv/salt/top.sls` but can be changed (see file_roots)
 
-2. 
+2.
 
 
 What do I actually want on my workstation?
@@ -139,10 +140,10 @@ An article per pkg, ala NTP plus the init.sls and assoc state files.
 * aspell
 * bash
 * bsdstats
-* security 
+* security
   port scanner
   gnupg
-  keychain 
+  keychain
   ssh
 
 * sysadmin
@@ -159,7 +160,7 @@ An article per pkg, ala NTP plus the init.sls and assoc state files.
 
 * video
 
-  
+
 
 * curl
 * wget
@@ -174,7 +175,7 @@ An article per pkg, ala NTP plus the init.sls and assoc state files.
 * python eco-system
 * ZFS (TBD)
 * web browsers
-* 
+*
 * ImageMagick
 * gimp
 

@@ -1,8 +1,9 @@
+:manual
 =======
 webtest
 =======
 
-Testing a WSGI server - 
+Testing a WSGI server -
   http://wsgi.readthedocs.org/en/latest/learn.html
 
 
@@ -23,7 +24,7 @@ We want to test that the "hello world" actually returns hello world.
     >>> from flask import Flask
     >>> app = Flask("myapp")
     >>> wapp = app.wsgi_app
-    
+
 
 
 ::

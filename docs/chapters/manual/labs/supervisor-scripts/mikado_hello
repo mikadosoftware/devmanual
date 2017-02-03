@@ -1,0 +1,27 @@
+#!/bin/sh
+###
+# PROVIDE: mikado_hello
+# REQUIRE: LOGIN
+# KEYWORD: shutdown
+
+# We always require LOGIN unless we know what we are doing.
+# shutdown is there to kill us off in case of system shutdown.
+
+. /etc/rc.subr
+
+name="mikado_hello"
+rcvar=mikado_hello_enable
+pidfile=/tmp/${name}.pid
+command=/usr/home/pbrian/venvs/test-rc/bin/gunicorn
+procname=/usr/home/pbrian/venvs/test-rc/bin/python2.7
+load_rc_config $name
+
+###########
+
+mikado_hello_flags="--daemon --pid=${pidfile} "
+command_args="hellorun:app"
+
+#########
+
+run_rc_command "$1"
+

@@ -1,4 +1,4 @@
-;manual
+:manual
 
 Free Wi-Fi
 ==========

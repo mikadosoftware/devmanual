@@ -1,3 +1,4 @@
+:manual
 Adding a new disk
 =================
 
@@ -28,7 +29,7 @@ However if I then plug in my USB enclosed external hard drive I see on Dmesg
 
   umass0: <Maxtor OneTouch, class 0/0, rev 2.00/1.22, addr 2> on uhub2
   da0 at umass-sim0 bus 0 target 0 lun 0
-  da0: <Maxtor OneTouch 0122> Fixed Direct Access SCSI-4 device 
+  da0: <Maxtor OneTouch 0122> Fixed Direct Access SCSI-4 device
   da0: 40.000MB/s transfers
   da0: 114473MB (234441648 512 byte sectors: 255H 63S/T 14593C)
 
@@ -37,7 +38,7 @@ storage driver and it has found something on the USB Bus Then the driver is able
 to recognise the actual model, and so I have now got a device driver lined up
 and a 'file' sitting in /dev/da0
 
-I can now use this as normal and proceed to the next step.  
+I can now use this as normal and proceed to the next step.
 
 If umass discovers the disk but there is no device listed, frankly its
 tough. The drivers are not there and unless its vital, go buy another supported
@@ -66,7 +67,7 @@ This is straightforward dd from /dev/zero to your disk.  I find that as a rough
 rule of thumb you can zero an entire 40GB disk in 20 minutes. [#]_
 
 ::
-  
+
    #this overwrites the first 1024 bytes, effectviely killing the boot partition.
    #leave off count to do the whole disk, make count 1000 to do first 1MB etc etc
 
@@ -108,7 +109,7 @@ Look at what is there
        1:          63   117210177 0xa5 0x80
 
 
-    # fdisk /dev/ad4  
+    # fdisk /dev/ad4
     ******* Working on device /dev/ad4 *******
     parameters extracted from in-core disklabel are:
     cylinders=116280 heads=16 sectors/track=63 (1008 blks/cyl)
@@ -144,7 +145,7 @@ way
 ::
 
   fdisk -BI /dev/da0
-  #this will 
+  #this will
   # -I Initialize sector 0 slice table for one FreeBSD slice covering the entire disk.
   # -B Reinitialize the boot code contained in sector 0 of the disk
 
@@ -207,7 +208,7 @@ for you.  Second, the bsdlabel is good for calculating human-sized amounts
 so when I freshly create the bsdlabel and use -e I get to see a label like this
 
 ::
- 
+
     # /dev/da0s1:
     8 partitions:
     #        size   offset    fstype   [fsize bsize bps/cpg]
@@ -225,7 +226,7 @@ I simply edit it using vi as follows
     8 partitions:
     #        size   offset    fstype   [fsize bsize bps/cpg]
       c: 234436482        0    unused        0     0         # "raw" part, don't edit
-      e: *                *    4.2BSD        0     0    
+      e: *                *    4.2BSD        0     0
 
 I have told it to create a e:  partition of 'the whole remainder of the disk' and it does the hard part for me.
 
@@ -264,7 +265,7 @@ however with the second where it is looking a bit like a system disk
    newfs -L ROOT /dev/da0s1a
    #swap needs no filesystem
    newfs -L USR /dev/da0s1e
-  
+
 
 
 Mount
@@ -300,7 +301,7 @@ Actual results
 
 ::
 
-    [root@paullaptop ~]# dd if=/dev/zero of=/dev/da0 bs=1024 count=10 
+    [root@paullaptop ~]# dd if=/dev/zero of=/dev/da0 bs=1024 count=10
     10+0 records in
     10+0 records out
     10240 bytes transferred in 0.208999 secs (48995 bytes/sec)

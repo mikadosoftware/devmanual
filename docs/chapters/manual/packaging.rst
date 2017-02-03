@@ -1,3 +1,4 @@
+:manual
 ===============================
 Python Packaging Best Practises
 ===============================

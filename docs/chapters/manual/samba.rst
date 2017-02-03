@@ -1,11 +1,12 @@
+:manual
 ===========================
 Samba File and Print Server
 ===========================
 
 
 .. sidebar:: historical note
-   
-   This is an interesting sliver of history - but I am amazed there are 
+
+   This is an interesting sliver of history - but I am amazed there are
    still people doing this.  I thought DropBox ruled the world!
 
 
@@ -19,7 +20,7 @@ http://www.samba.org/samba/docs/man/Samba-HOWTO-Collection/
 
 
 Example::
-    
+
     [global]
         workgroup = PIRC
         server string = NAGIOS SMB Server
@@ -63,11 +64,10 @@ uncomment inetd.conf line to run swat
 
 #smbclient  -U paul.brian -L \\ADC
 
-### mounting samba  
+### mounting samba
 mount_smbfs //nobody@samba/FILES /mnt/samba/FILES
 mount_smbfs //nobody@samba/PDOXDATA0 /mnt/samba/PDOXDATA0
 mount_smbfs //nobody@samba/PDOXDATA1 /mnt/samba/PDOXDATA1
 mount_smbfs //nobody@samba/IT /mnt/samba/IT
 
 mount_smbfs //paul.brian@ADC/Managers /mnt/ADC/Managers
-

@@ -1,8 +1,9 @@
+:manual
 ======================
 Nginx - load balancing
 ======================
 
-Almost out of nowehre in 2007/8 nginx came on the scene and started to 
+Almost out of nowehre in 2007/8 nginx came on the scene and started to
 beat out the competition of the Open Apache and the closed Zeus.
 
 It is now pretty much the defacto web server going, easy to install,
@@ -101,5 +102,3 @@ This configuration will send 50% of the requests for www.yoursite.com to
 yoursite1.yoursite.com and the other 50% to yoursite2.yoursite.com.  If
 yoursite1.yoursite.com and yoursite2.yoursite.com both fails 3 times the
 requests will be send to yoursite3.yoursite.com.
-
-

@@ -1,7 +1,8 @@
+:manual
 Burp Suite
 ==========
 
-A java based, advanced proxy / intercept / wiretapping tool for watching your 
+A java based, advanced proxy / intercept / wiretapping tool for watching your
 REST API talk and debug.
 
 Its less user-friendly than charles, but it runs on FreeBSD...

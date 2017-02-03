@@ -1,0 +1,33 @@
+name: foo
+version: 1.0
+origin: category/foo
+comment: this is foo package
+www: http://www.foo.org
+maintainer: foo@bar.org
+prefix: /home/pbrian
+licenselogic: or
+licenses: [MIT, MPL]
+flatsize: 4821
+users: [pbrian]
+groups: [pbrian, wheel]
+options: { OPT1: off, OPT2: on }
+desc: |-
+  This is the description
+  Of foo
+
+  A component of bar
+categories: [bar, plop]
+deps:
+
+files:
+  /home/pbrian/foo/foo/foo.py : 'f03763857492c0624e97df940ba0f45fc3799839daa7c21b8e53d936993d086c'
+  /home/pbrian/foo/foo/foo.txt: '41ae84877dd3ce346a7d97fc7f493c8e9dcacfa67ce6974ace56baecee9a8411'
+dirs:
+- /usr/local/share/foo
+scripts:
+  post-install: |-
+    #!/bin/sh
+    echo post-install
+  pre-install: |-
+    #!/bin/sh
+    echo pre-install

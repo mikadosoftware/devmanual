@@ -1,3 +1,4 @@
+:manual
 Text Mining
 ===========
 

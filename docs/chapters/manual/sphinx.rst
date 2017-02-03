@@ -1,10 +1,11 @@
+:manual
 ====================================
 Documenting Your project with Sphinx
 ====================================
 
-Documentation matters.  
+Documentation matters.
 
-And documentation that visually helps people find their way through 
+And documentation that visually helps people find their way through
 the data, affords people the navigation they need, will help poor overworked
 slobs like you and I get to the info we need quicker and less stressed.
 

@@ -1,3 +1,4 @@
+:manual
 =============================
 Useful command line utilities
 =============================
@@ -5,7 +6,7 @@ Useful command line utilities
 learn the command line
 ======================
 ::
-  # echo day | sed s/day/night/ 
+  # echo day | sed s/day/night/
   night
   # echo daylight | sed s/day/night/
   nightlight

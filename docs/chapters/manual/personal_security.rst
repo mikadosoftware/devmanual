@@ -1,4 +1,4 @@
-
+:manual
 Personal Security
 =================
 
@@ -26,4 +26,3 @@ http://2014.zeronights.org/assets/files/slides/belenko.pdf
   Use client and server certificates to ensure comms secure.
 
 -  eCryptfs
-

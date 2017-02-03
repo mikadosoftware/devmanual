@@ -1,8 +1,9 @@
+:manual
 =====================
 User Interface Design
 =====================
 
-.. epigraph:: Start with the User Need 
+.. epigraph:: Start with the User Need
 
 User Interface Design, at least at the levels of "I want my small Enterprise App
 to be useful", is pretty simple.
@@ -16,13 +17,13 @@ It needs four components
 
 We have three levels, style-core, style-pkg, style-xp
 This way we have manageable paths for different discussions to grow.
-eXPerimental styles, or interactions, the CSS and the JS for them 
+eXPerimental styles, or interactions, the CSS and the JS for them
 go into these packages.
 
-If after a tryout the XP stuff works, it 
+If after a tryout the XP stuff works, it
 
-I have several different bits in different levels.  My core is used 
-everywhere, for each client.  pkgs usually get pulled in, but are there to 
+I have several different bits in different levels.  My core is used
+everywhere, for each client.  pkgs usually get pulled in, but are there to
 overwrite things like bootstrap date pickers.
 
 

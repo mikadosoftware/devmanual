@@ -1,0 +1,139 @@
+{"modules":
+[
+    {
+        "content": "<h1>In CONGRESS, July 4, 1776.<h1>\n<p>The unanimous Declaration of the thirteen united States of America,</p>\n\n<p>When in the Course of human events, it becomes necessary for one\npeople to dissolve the political bands which have connected them with\nanother, and to assume among the powers of the earth, the separate and\nequal station to which the Laws of Nature and of Nature's God entitle\nthem, a decent respect to the opinions of mankind requires that they\nshould declare the causes which impel them to the separation.</p>\n",
+        "id": "org.cnx.sect:d3911c28-2a9e-4153-9546-f71d83e41126",
+        "roles": {
+            "Authors": [
+                "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ],
+            "Copyright Holders": [
+                "org.cnx.user.f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ],
+            "Maintainers": [
+                "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ]
+        },
+        "title": "Introduction",
+        "version": "ad0d6c247e0f1347364d890ec2e9fb53",
+        "versioning": {
+            "ad0d6c247e0f1347364d890ec2e9fb53": {
+                "roles": {
+                    "Authors": [
+                        "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+                    ],
+                    "Copyright Holders": [
+                        "org.cnx.user.f9647df6-cc6e-4885-9b53-254aa55a3383"
+                    ],
+                    "Maintainers": [
+                        "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+                    ]
+                }
+            },
+            "e5df9b39e5b428a84341c100bfe260df": {
+                "roles": {
+                    "Authors": [
+                        "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+                    ],
+                    "Copyright Holders": [
+                        "org.cnx.user.f9647df6-cc6e-4885-9b53-254aa55a3383"
+                    ],
+                    "Maintainers": [
+                        "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "content": "\n<p>We hold these truths to be self-evident, that all men are created\nequal, that they are endowed by their Creator with certain unalienable\nRights, that among these are Life, Liberty and the pursuit of\nHappiness.</p>\n\n<p>That to secure these rights, Governments are instituted among Men,\nderiving their just powers from the consent of the governed, That\nwhenever any Form of Government becomes destructive of these ends, it\nis the Right of the People to alter or to abolish it, and to institute\nnew Government, laying its foundation on such principles and\norganizing its powers in such form, as to them shall seem most likely\nto effect their Safety and Happiness. Prudence, indeed, will dictate\nthat Governments long established should not be changed for light and\ntransient causes; and accordingly all experience hath shewn, that\nmankind are more disposed to suffer, while evils are sufferable, than\nto right themselves by abolishing the forms to which they are\naccustomed. But when a long train of abuses and usurpations, pursuing\ninvariably the same Object evinces a design to reduce them under\nabsolute Despotism, it is their right, it is their duty, to throw off\nsuch Government, and to provide new Guards for their future\nsecurity.</p>\n",
+        "id": "org.cnx.sect:350f7859-e6e7-11e1-928f-2c768ae4951b",
+        "roles": {
+            "Authors": [
+                "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ],
+            "Copyright Holders": [
+                "org.cnx.user.f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ],
+            "Maintainers": [
+                "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ]
+        },
+        "title": "Preamble",
+        "version": "bfb5d4845d23deb98027e3a21eac131e",
+        "versioning": {}
+    },
+    {
+        "content": "\n<p>Such has been the patient sufferance of these Colonies; and such is\nnow the necessity which constrains them to alter their former Systems\nof Government. The history of the present King of Great Britain is a\nhistory of repeated injuries and usurpations, all having in direct\nobject the establishment of an absolute Tyranny over these States. To\nprove this, let Facts be submitted to a candid world.</p>\n\nHe has refused his Assent to Laws, the most wholesome and necessary\nfor the public good.\n\nHe has forbidden his Governors to pass Laws of immediate and pressing\nimportance, unless suspended in their operation till his Assent should\nbe obtained; and when so suspended, he has utterly neglected to attend\nto them.\n\nHe has refused to pass other Laws for the accommodation of large\ndistricts of people, unless those people would relinquish the right of\nRepresentation in the Legislature, a right inestimable to them and\nformidable to tyrants only.\n\nHe has called together legislative bodies at places unusual,\nuncomfortable, and distant from the depository of their Public\nRecords, for the sole purpose of fatiguing them into compliance with\nhis measures.\n\nHe has dissolved Representative Houses repeatedly, for opposing with\nmanly firmness of his invasions on the rights of the people.\n\nHe has refused for a long time, after such dissolutions, to cause\nothers to be elected, whereby the Legislative Powers, incapable of\nAnnihilation, have returned to the People at large for their exercise;\nthe State remaining in the mean time exposed to all the dangers of\ninvasion from without, and convulsions within.\n\nHe has endeavoured to prevent the population of these States; for that\npurpose obstructing the Laws for Naturalization of Foreigners;\nrefusing to pass others to encourage their migrations hither, and\nraising the conditions of new Appropriations of Lands.\n\nHe has obstructed the Administration of Justice by refusing his Assent\nto Laws for establishing Judiciary Powers.\n\nHe has made Judges dependent on his Will alone for the tenure of their\noffices, and the amount and payment of their salaries.\n\nHe has erected a multitude of New Offices, and sent hither swarms of\nOfficers to harass our people and eat out their substance.\n\nHe has kept among us, in times of peace, Standing Armies without the\nConsent of our legislatures.\n\nHe has affected to render the Military independent of and superior to\nthe Civil Power.\n\nHe has combined with others to subject us to a jurisdiction foreign to\nour constitution, and unacknowledged by our laws; giving his Assent to\ntheir Acts of pretended Legislation:\n\nFor quartering large bodies of armed troops among us:\n\nFor protecting them, by a mock Trial from punishment for any Murders\nwhich they should commit on the Inhabitants of these States:\n\nFor cutting off our Trade with all parts of the world:\n\nFor imposing Taxes on us without our Consent:\n\nFor depriving us in many cases, of the benefit of Trial by Jury:\n\nFor transporting us beyond Seas to be tried for pretended offences:\n\nFor abolishing the free System of English Laws in a neighbouring\nProvince, establishing therein an Arbitrary government, and enlarging\nits Boundaries so as to render it at once an example and fit\ninstrument for introducing the same absolute rule into these Colonies\n\nFor taking away our Charters, abolishing our most valuable Laws and\naltering fundamentally the Forms of our Governments:\n\nFor suspending our own Legislatures, and declaring themselves invested\nwith power to legislate for us in all cases whatsoever.\n\nHe has abdicated Government here, by declaring us out of his\nProtection and waging War against us.\n\nHe has plundered our seas, ravaged our coasts, burnt our towns, and\ndestroyed the lives of our people.\n\nHe is at this time transporting large Armies of foreign Mercenaries to\ncompleat the works of death, desolation, and tyranny, already begun\nwith circumstances of Cruelty & Perfidy scarcely paralleled in the\nmost barbarous ages, and totally unworthy the Head of a civilized\nnation.\n\nHe has constrained our fellow Citizens taken Captive on the high Seas\nto bear Arms against their Country, to become the executioners of\ntheir friends and Brethren, or to fall themselves by their Hands.\n\nHe has excited domestic insurrections amongst us, and has endeavoured\nto bring on the inhabitants of our frontiers, the merciless Indian\nSavages whose known rule of warfare, is an undistinguished destruction\nof all ages, sexes and conditions.\n\nIn every stage of these Oppressions We have Petitioned for Redress in\nthe most humble terms: Our repeated Petitions have been answered only\nby repeated injury. A Prince, whose character is thus marked by every\nact which may define a Tyrant, is unfit to be the ruler of a free\npeople.\n",
+        "id": "org.cnx.sect:4ba18842-1bf8-485b-a6c3-f6e15dd762f6",
+        "roles": {
+            "Authors": [
+                "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ],
+            "Copyright Holders": [
+                "org.cnx.user.f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ],
+            "Maintainers": [
+                "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ]
+        },
+        "title": "Indictment",
+        "version": "7a37ce9da61f0806ee284a132bcda343",
+        "versioning": {}
+    },
+    {
+        "content": "\n<p>Nor have We been wanting in attentions to our British brethren. We\nhave warned them from time to time of attempts by their legislature to\nextend an unwarrantable jurisdiction over us. We have reminded them of\nthe circumstances of our emigration and settlement here. We have\nappealed to their native justice and magnanimity, and we have conjured\nthem by the ties of our common kindred to disavow these usurpations,\nwhich, would inevitably interrupt our connections and\ncorrespondence. They too have been deaf to the voice of justice and of\nconsanguinity. We must, therefore, acquiesce in the necessity, which\ndenounces our Separation, and hold them, as we hold the rest of\nmankind, Enemies in War, in Peace Friends.</p>\n\n",
+        "id": "org.cnx.sect:77a45e48-6e91-4814-9cca-0f28348a4aae",
+        "roles": {
+            "Authors": [
+                "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ],
+            "Copyright Holders": [
+                "org.cnx.user.f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ],
+            "Maintainers": [
+                "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ]
+        },
+        "title": "Denunciation",
+        "version": "f50b14ff67c6fe9b39ca8b94b12c01f8",
+        "versioning": {}
+    },
+    {
+        "content": "\n<p>We, therefore, the Representatives of the united States of America,\nin General Congress, Assembled, appealing to the Supreme Judge of the\nworld for the rectitude of our intentions, do, in the Name, and by\nAuthority of the good People of these Colonies, solemnly publish and\ndeclare, That these united Colonies are, and of Right ought to be Free\nand Independent States; that they are Absolved from all Allegiance to\nthe British Crown, and that all political connection between them and\nthe State of Great Britain, is and ought to be totally dissolved; and\nthat as Free and Independent States, they have full Power to levy War,\nconclude Peace, contract Alliances, establish Commerce, and to do all\nother Acts and Things which Independent States may of right do. And\nfor the support of this Declaration, with a firm reliance on the\nprotection of divine Providence, we mutually pledge to each other our\nLives, our Fortunes and our sacred Honor.</p>\n\n",
+        "id": "org.cnx.sect:e0c3cfeb-f2f2-41a0-8c3b-665d79b09389",
+        "roles": {
+            "Authors": [
+                "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ],
+            "Copyright Holders": [
+                "org.cnx.user.f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ],
+            "Maintainers": [
+                "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ]
+        },
+        "title": "Conclusion",
+        "version": "48ccdd03edc18c120f33222dd1f8b7e8",
+        "versioning": {}
+    },
+    {
+        "content": "\n    New Hampshire: Josiah Bartlett, William Whipple, Matthew Thornton\n    Massachusetts: Samuel Adams, John Adams, John Hancock, Robert Treat Paine, Elbridge Gerry\n    Rhode Island: Stephen Hopkins, William Ellery\n    Connecticut: Roger Sherman, Samuel Huntington, William Williams, Oliver Wolcott\n    New York: William Floyd, Philip Livingston, Francis Lewis, Lewis Morris\n    New Jersey: Richard Stockton, John Witherspoon, Francis Hopkinson, John Hart, Abraham Clark\n    Pennsylvania: Robert Morris, Benjamin Rush, Benjamin Franklin, John Morton, George Clymer, James Smith, George Taylor, James Wilson, George Ross\n    Delaware: George Read, Caesar Rodney, Thomas McKean\n    Maryland: Samuel Chase, William Paca, Thomas Stone, Charles Carroll of Carrollton\n    Virginia: George Wythe, Richard Henry Lee, Thomas Jefferson, Benjamin Harrison, Thomas Nelson, Jr., Francis Lightfoot Lee, Carter Braxton\n    North Carolina: William Hooper, Joseph Hewes, John Penn\n    South Carolina: Edward Rutledge, Thomas Heyward, Jr., Thomas Lynch, Jr., Arthur Middleton\n    Georgia: Button Gwinnett, Lyman Hall, George Walton\n",
+        "id": "org.cnx.sect:c0b149ec-8dd3-4978-9913-ac87c2770de8",
+        "roles": {
+            "Authors": [
+                "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ],
+            "Copyright Holders": [
+                "org.cnx.user.f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ],
+            "Maintainers": [
+                "org.cnx.user:f9647df6-cc6e-4885-9b53-254aa55a3383"
+            ]
+        },
+        "title": "Signatures",
+        "version": "b3bf5ad94dc160da68274b3735ab8c46",
+        "versioning": {}
+    }
+]
+}

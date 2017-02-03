@@ -1,3 +1,4 @@
+:manual
 ==========================================================
 Keeping micro-web services alive, supervised and restarted
 ==========================================================
@@ -15,7 +16,7 @@ view a great way to arrange our business applications.  By splitting the work
 done into smaller components, and having the work done by seperate webservers
 running just a small piece of code, we find several benefits
 
-* our code is better structured, because we cannot rely on the big framework to 
+* our code is better structured, because we cannot rely on the big framework to
   pass bits around for us
 
 * Testing the service is easier
@@ -24,7 +25,7 @@ running just a small piece of code, we find several benefits
   fix to one tiny piece of independantly running code will hardly ever affect
   the others.  In a monolithic application that is rarely true.  Change the font
   size for Page X, ooops that just killed half the CSS on site.
- 
+
 * naturally robust / redundant.
 
 
@@ -49,7 +50,7 @@ We also want to keep things simple.
 The simplest way possible to keep a service running
 ===================================================
 
-It would be lovely to write a web service, set it running and 
+It would be lovely to write a web service, set it running and
 know that if it fell over, divided by zero, or otherwise went wrong
 it would immediately be picked up, dusted down and restarted.
 
@@ -83,11 +84,11 @@ Python and WSGI
 ---------------
 
 Web micro-services will consist mostly of well, web servers.  And in the Python
-world that means WSGI.  
+world that means WSGI.
 
 Now, a WSGI app is a curious beast, essentially it cares nothing for web servers
 and threads and so on, it simply takes an `environment` (like CGI env) and a
-`start_response` callable.  
+`start_response` callable.
 
 A WSGI enabled server will wrap the core application (returns "hello world")
 in a chain of python functions, each one taking an env and a callable, each one
@@ -110,7 +111,7 @@ I want to have *the simplest possible way to run a micro web service*.  For me
 this is to make use of the well thought out, well tested and well, simple,
 `init` services built into all Unix distributions.
 
-I shall create two dummy web services, `hello.py` that is simply a Flask 
+I shall create two dummy web services, `hello.py` that is simply a Flask
 service returning "hello World", and this shall be started and stopped
 with an `rc.d` script.
 
@@ -118,17 +119,17 @@ A second more complex script shall follow, dealing with some config issues etc.
 
 .. literalinclude:: hello.py
 
-This is about as simple as it gets (ripped, liberally, from the frontpage of 
+This is about as simple as it gets (ripped, liberally, from the frontpage of
 flask.org.).  However run in the terminal it will respond correctly to the
 various signals thrown at it.
 
 ::
 
 
-    $ python hello.py 
+    $ python hello.py
      * Running on http://127.0.0.1:5003/
     ^C
-    
+
     We set the web server running, then can kill it with ctl-C
 
 However we want to *prove* that if the app dies by itself, `rc` will restart it.
@@ -139,7 +140,7 @@ However we want to *prove* that if the app dies by itself, `rc` will restart it.
 ::
 
    if we run this and then visit localhost:5003/kill,
-   the process will exit.  
+   the process will exit.
 
    (errr... really?)
 
@@ -157,7 +158,7 @@ Using the BSD rc.d init approach
 --------------------------------
 
 The short approach is we put a simple .sh script in `/usr/local/etc/rc.d`. This
-is called during system init, and it will run a command - that command will be 
+is called during system init, and it will run a command - that command will be
 a WSGI server (like uwsgi / gunicorn / waitress) which will bring up a wsgi app.
 
 This app will serve HTTP happily, but if it falls over, rc.d will restart it.
@@ -199,11 +200,11 @@ Have to create a wsgi.py in the readthedocs "app dir"
 
 /home/pbrian/venvs/docserver/bin/gunicorn          --pythonpath
 /usr/home/pbrian/venvs/docserver/checkouts/readthedocs.org/readthedocs
-wsgi:application  
+wsgi:application
 
 ::
 
-    rc.d$ cat readthedocs 
+    rc.d$ cat readthedocs
     #!/bin/sh
     ###
     # PROVIDE: readthedocs
@@ -251,7 +252,7 @@ Ubuntu and Debian
 -----------------
 
 Well, I used to use `upstart`.  That has been replaced with `systemd` now,
-and I ... well, keep using upstart.  
+and I ... well, keep using upstart.
 
 [TBD - insert code from ubuntu setup in Bamboo]
 

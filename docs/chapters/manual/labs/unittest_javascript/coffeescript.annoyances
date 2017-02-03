@@ -1,0 +1,81 @@
+Coffeescript annoyances
+=======================
+
+There is probably a blog post here
+
+
+1. mostly the annoynaces are not clearly knowing what the compiler will do - it seems inconsistent or magic at times - very dangerous things for a compiler.
+
+
+use of commas in parameters ::
+
+    I get an illegal character error if I put , after return []
+    below, so its not using comma consistently to indicate end of parameter.
+    I guess the return doews so.
+
+    get_workspace = ->
+      $.ajax "http://localhost:5001/workspace",
+             type: "GET",
+             dataType: "json",
+             error: (jqXHR, textStatus, errorThrown) ->
+                 console.log errorThrown
+                 return [] 
+                     
+             success: (data, textStatus, jqXHR) ->
+                      console.log data
+                      return []
+
+             xhrFields: {withCredentials: true}
+
+
+      get_workspace = function() {
+        return $.ajax("http://localhost:5001/workspace", {
+          type: "GET",
+          dataType: "json",
+          error: function(jqXHR, textStatus, errorThrown) {
+            console.log(errorThrown);
+            return [];
+          },
+          success: function(data, textStatus, jqXHR) {
+            console.log(data);
+            return [];
+          },
+          xhrFields: {
+            withCredentials: true
+          }
+        });
+      };
+
+
+Calling syntax
+--------------
+
+Paratheses are optional, but it does weird things if you trust that.
+
+$.mockjax (url: ...) <- bad
+$.mockjax(url: ...) <- good
+
+
+parameters - again
+------------------
+
+::
+
+  spyOn $ foo
+  
+  spyOn($("foo"))
+    nope
+
+
+::
+
+  spyOn $, foo
+
+  spyOn($,foo)   YES
+
+  Correct - but why?
+
+
+General notes
+
+http://addyosmani.com/writing-modular-js/

@@ -7,12 +7,18 @@ list of work or notes on what makes a developers manual for 21C
 
 "How are things developed around here, and why."
 
+Big fundamentals
+
+* GPG, PKIs and security
+
+
+
 * Source control
 * prmotoing code up
 * having a robot promite code after meeting automatic criteria
 * having automatic testing
 * build servers
-* 
+*
 
 
 

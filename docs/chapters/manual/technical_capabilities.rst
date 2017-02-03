@@ -1,4 +1,4 @@
-
+mind
 Technical Capabilities
 ======================
 
@@ -169,4 +169,3 @@ https://www.ducttapemarketing.com/blog/guide-to-small-business-keyword-research/
 
 * training and just reading and exploring
 if you do not explicitly make time to learn but sprint all the time all you will have is people who have learnt what they wrote
-

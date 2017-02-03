@@ -1,3 +1,4 @@
+:manual
 Workstation
 ===========
 
@@ -24,8 +25,8 @@ Base OS
 -------
 
 - apt-get install
-make 
-  
+make
+
 Installing X windows
 --------------------
 
@@ -64,13 +65,13 @@ then use xlsfonts to see what fonts are available
     xlsfonts | cut -b -20 | uniq | less
 
 Then we alter out xterm settings in .Xresources as::
-    
+
   xterm*font:    *-terminus-*-*-*-24-*
 
 Then we set the database for xterm and update it::
-    
-  xrdb -merge ~./Xresources    
-  
+
+  xrdb -merge ~./Xresources
+
 
 
 
