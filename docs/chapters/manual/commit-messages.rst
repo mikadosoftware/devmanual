@@ -1,4 +1,3 @@
-:manual
 
 ===================
 Git Commit messages

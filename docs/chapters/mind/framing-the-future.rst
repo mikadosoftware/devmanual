@@ -1,4 +1,3 @@
-:mind
 The unanswered questions
 ========================
 

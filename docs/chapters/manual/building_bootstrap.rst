@@ -1,4 +1,3 @@
-:manual
 =================================
 Compiling and modifying bootstrap
 =================================

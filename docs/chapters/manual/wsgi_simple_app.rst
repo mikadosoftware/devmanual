@@ -1,4 +1,3 @@
-:manual
 Writing a simple WSGI app
 =========================
 

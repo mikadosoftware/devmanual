@@ -1,4 +1,3 @@
-:mind
 
 Discovering the company mission
 -------------------------------

@@ -1,4 +1,3 @@
-:mind
 The Journey of Mikado Software
 ==============================
 

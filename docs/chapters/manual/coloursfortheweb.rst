@@ -1,4 +1,3 @@
-:manual
 
 ==========================
 Valid Colour Names for Web

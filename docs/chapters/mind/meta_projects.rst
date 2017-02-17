@@ -1,4 +1,3 @@
-:mind
 Meta Projects
 =============
 

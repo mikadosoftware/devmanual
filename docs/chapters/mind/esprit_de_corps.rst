@@ -1,4 +1,3 @@
-:mind
 esprit de corps
 ===============
 

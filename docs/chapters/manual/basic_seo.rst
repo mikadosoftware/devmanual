@@ -1,4 +1,3 @@
-:manual
 
 Basic SEO for the independent worker
 ====================================

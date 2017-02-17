@@ -1,4 +1,3 @@
-:manual
 An interesting PythonWart with generators
 =========================================
 

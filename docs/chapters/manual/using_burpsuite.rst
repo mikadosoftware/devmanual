@@ -1,4 +1,3 @@
-:manual
 Burp Suite
 ==========
 

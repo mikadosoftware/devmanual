@@ -1,4 +1,3 @@
-:mind
 =================
 Software Literacy
 =================
@@ -7,10 +6,10 @@ I'm standing in a cavernous room underneath a bustling, noisy pub in London's
 Covent Garden.  It was a fine Summers day and the evening is sharply cooking.
 
 I look around at the 90 odd developers, graduates and entrepreneurs in the room,
-and, as I have been persuaded to sponsor this meeting, now all I have to do a
-quick speech.
+and, as I have been persuaded to sponsor this meeting, now all I have to do is
+give a quick speech.
 
-I never quite know what to do for these sort of speeches - do I decide to give a
+I never quite know what to do for these sort of speeches - so I decide to give a
 history lesson. Yes. A history lesson. Gripping stuff, some were even rolling
 their eyes in excitement.
 
@@ -35,7 +34,7 @@ EurAsia some huge advantages the effects of which are only just wearing off five
 centuries later.
 
 Before people wandered off to the bar I decided to let them know why they were
-getting my best Simon Scharma impression - why history mattered.
+getting my best Simon Scharma impression.
 
 Because, in my view, and remember they were eating my sausage rolls, so that
 counts, in my view we are entering the age of a new form of literacy - *software
@@ -48,25 +47,9 @@ reengineering, or total quality circles - but changed like leaving the water and
 walking on land changed. I have no idea how to quantify the advantages a company
 whose staff can all read and write will have over a company whose staff are
 illiterate. It's not one of lower labour cost, or better marketing, it's
-something else...
-
-Lets take a little mental exercise.  Imagine I whip out my TARDIS and transport
-you back to 1454.  And put you in front of the senior members of the French
-Guild of Merchants and Weavers.  And they say "Our competitor, the Spanish
-Guild, are thinking of buying lots of books, and teaching the children in their
-orphanages to read and write, so when they grow up and join the Guild, they will
-be "literate".  Why should we spend similar amounts our selves - what will the
-benefits of a literate workforce be? Surely they can just do as their fathers
-did and listen to their elders?"
-
-What is your answer? Why is literacy better for a company ?  Every answer that
-springs easily to mind, clearer communication, greater dissent and discussion,
-devolving power downwards, every answer is either a threat to the current power
-structure, or frankly replacable with "beat 'em so they listen harder".
-
-However, deep in our bones we *know* that literacy changes everything. Its so
-built into us and into everyone we know that we cannot imagine a world where we
-cannot read or write.
+something else...Deep in our bones we *know* that literacy changes everything.
+Its so built into us and into everyone we know that we cannot imagine a world
+where we cannot read or write.
 
 Anyway, you, like the poor people wanting to get to the bar, can see where I am
 taking this. The ability to marshall knowledge, to code and compile and compute,
@@ -112,12 +95,22 @@ I will take a leap and argue that the Washington Post under Ben Bradlee was the
 epitome of a (non-software) literate company.  It had well trained
 professionals, clear ethical standards, clear business processes and clear
 processes for ensuring that its literate output met their standards. Editors and
-copy-sub-editors and so on.  And cashflow. That helped a lot.
+copy-sub-editors and so on.  Oh, and cashflow. That helped a lot.
+
+I suggest that even companies like tech-behemoth Google are not really software
+literate. But the clues are there. In the excellent SRE book (link) author
+(link) the "founder" of SRE in Google,  defines SRE as "SRE is what happens when
+you ask a software enginerr to design an operations team".  As we go forward we
+shall find the software literate companies are what happens when software
+engineers design companies.  Just as hundreds of years ago, it was what happens
+when you ask people who can read and write to design companies.  It was not till
+"everyone" could read and write in the 19th C that we saw the modern company
+evolve. This is probably not a coincidence.
 
 Whatever form a software literate company takes, there will be similar
 foundational skills the company will need - the basics of journalism if you
-wish, and we can see some of the issues with how that has failed in the recent
-past.
+wish, and we can see some of the issues with how that has succeeded, or failed
+in the recent past.
 
 
 Knight Capital
@@ -128,13 +121,13 @@ to operate in the high-frequency trading world of US equities, and had invested
 heavily in programmers and computers
 
 Their business model was *market making* - buying shares from someone who wanted
-to sell, and selling them to someone who wanted to buy. Market making is a
-valued part of all exchanges, and way back when the exchange gave a priviledged
-few the right to be market makers (for a fee of course) it was a very profitable
-exercise.  However as new market makers were granted access, such as Knight
-Capital, the profits dropped (good for buyers and sellers, such as our pension
-funds) and the competition sped up - slow market makers did not get to trade
-with anyone.
+to sell, waiting a bit, and selling them to someone who wanted to buy. Market
+making is a valued part of all exchanges, and way back, when the exchange gave a
+priviledged few the right to be market makers (for a fee of course) it was a
+very profitable exercise.  However as new market makers were granted access,
+such as Knight Capital, the profits dropped (good for buyers and sellers, such
+as our pension funds) and the competition sped up - slow market makers did not
+get to trade with anyone.
 
 On August 1, 2012, Knight Capital released a new version of their software. And
 did so in a partly-manual manner.  Those words, 'not automated' make those who
@@ -193,7 +186,7 @@ they want to know about you in case it is used to balckmail you.
 
 This was it seems all stored on mainframes running COBOL.  And the thing about
 storing data is that you must at minimum, encrypt it at rest on disk.  This is
-like, using ink or folders or filing cabinets. Its something you dont even think
+like, using ink or folders or filing cabinets. Its something you don't even think
 about.  Not for stuff that foreign governments can use to blackmail your Embassy
 staff with.
 
@@ -204,7 +197,7 @@ the Chinese hackers get in.
 This breach, discovered seemingly by accident when a computer forensics firm was
 asked to preapre a demo, is not something solvable by replacing credit cards.
 It is probably America's deepest national security problem for the next few
-decades.
+decades.  Well, one of them.
 
 This is a defining moment in software professionalism.  The right move for a
 professional and so the right move for a software literate organisation, was to
@@ -214,9 +207,9 @@ migration plan.
 Things like intrusion detection programs would have been good, but thats just
 "normal best practise" not "professional ethics".
 
-Now, why did the woman at the top (an Obama confidant, and not likely a
+Now, why did the woman at the top (not likely a
 malicious actor) why did she not take this action? Because of the degree of
-obfuscation? Possibly.  But the one thing that leaps out of OPM is the inabiliy
+obfuscation? Possibly. But the one thing that leaps out of OPM is the inabiliy
 to enmcrypt on COBOL mainframes.
 
 Perhasp Everything else is justifiable in the hindsight race.  But when you

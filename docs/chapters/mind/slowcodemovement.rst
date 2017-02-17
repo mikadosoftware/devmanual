@@ -1,4 +1,3 @@
-:mind
 Slow Code Movement
 ==================
 

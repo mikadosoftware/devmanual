@@ -1,4 +1,3 @@
-:mind
 Designing Software like we design a Novel
 =========================================
 

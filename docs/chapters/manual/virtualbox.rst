@@ -1,4 +1,3 @@
-:manual
 =====================
 VirtualBox on FreeBSD
 =====================

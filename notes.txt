@@ -1,0 +1,25 @@
+My goal for Jan 2017 is to *unify and streamline* my vast publishing empire.
+
+I will work on the following project *themes* ongoing
+
+* The Software Mind Book
+* Campaign for OSS in Government
+* Building a business to sustain my family's future.
+* improving myself and my relationships
+
+Which all seems nice.
+
+Publishing Empire
+-----------------
+
+I have a lot of written words dotted around.
+I will bring them all under one roof, suitably laying 302 trails for Google.
+
+Based on the Mind / Skills
+Mind
+----
+https://github.com/mikadosoftware/mikadoCMS
+
+Skills
+------
+https://github.com/mikadosoftware/ExecutableOpinions

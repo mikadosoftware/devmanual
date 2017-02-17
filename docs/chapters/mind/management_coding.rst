@@ -1,4 +1,3 @@
-:mind
 Management coding
 =================
 

@@ -1,4 +1,3 @@
-:mind
 Modern trends
 =============
 

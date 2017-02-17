@@ -1,15 +1,15 @@
 =================
 The Software Mind
 =================
-The transition from pre-SoftwareLiteracy organisations to post software literacy
+
+Introduction
+============
 
 .. toctree::
    :maxdepth: 1
 
    chapters/introduction.rst
 
-The Right Mind
-==============
 
 .. toctree::
    :maxdepth: 1
@@ -18,7 +18,6 @@ The Right Mind
    chapters/mind/software-literate-company.rst
    chapters/mind/evolving_software.rst
    chapters/mind/the_software_mind
-
    chapters/mind/stoneageminds.rst
    chapters/mind/webdev.rst
    chapters/mind/mutablevimmutable.rst

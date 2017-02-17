@@ -1,4 +1,3 @@
-:manual
 ====================================
 Documenting Your project with Sphinx
 ====================================

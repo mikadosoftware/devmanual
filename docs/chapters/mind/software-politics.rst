@@ -1,4 +1,3 @@
-:mind
 - software is political now
   Weapons math destruction
   The nervous system and soul of enterprises

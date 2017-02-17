@@ -1,4 +1,3 @@
-:manual
 =============================
 Useful command line utilities
 =============================

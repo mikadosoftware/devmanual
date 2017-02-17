@@ -1,4 +1,3 @@
-:mind
 Why Am I writing these articles?
 ================================
 

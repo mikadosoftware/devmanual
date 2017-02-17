@@ -1,4 +1,3 @@
-:manual
 Laptop From Scratch
 ===================
 

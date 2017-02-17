@@ -1,4 +1,3 @@
-:mind
 
 =====================
 Rewrite or Duct Tape?

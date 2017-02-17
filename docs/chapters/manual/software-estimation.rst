@@ -1,4 +1,3 @@
-:manual
 Take a relaxed backwards looking view - summerhill school
 
 Take a experienced editor view - have someone else from outside the LOB estimate the effort based on write ups. And probably average it out

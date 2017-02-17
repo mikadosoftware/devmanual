@@ -1,4 +1,3 @@
-:mind
 Politics is software, software is law
 ======================================
 

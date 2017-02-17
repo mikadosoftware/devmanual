@@ -1,4 +1,3 @@
-:manual
 =====================
 Writing Documentation
 =====================

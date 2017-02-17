@@ -1,4 +1,3 @@
-:mind
 Universal basic income - the basic argument
 ===========================================
 

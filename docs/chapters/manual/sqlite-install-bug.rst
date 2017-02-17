@@ -1,4 +1,3 @@
-:manual
 Installing Sqlite in a venv
 ===========================
 

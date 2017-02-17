@@ -1,4 +1,3 @@
-:mind
 Pokemon Go and Digital Privacy
 ------------------------------
 

@@ -1,4 +1,3 @@
-:manual
 Best practise for logging in Python
 ===================================
 

@@ -1,4 +1,3 @@
-:manual
 Adding a new disk
 =================
 

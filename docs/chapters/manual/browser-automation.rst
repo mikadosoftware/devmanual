@@ -1,4 +1,3 @@
-:manual
 
 Browser Automation
 ==================

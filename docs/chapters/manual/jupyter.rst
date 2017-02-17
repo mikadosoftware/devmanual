@@ -1,4 +1,3 @@
-:manual
 Ipython and Jupyter
 ===================
 

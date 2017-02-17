@@ -1,4 +1,3 @@
-:mind
 Why is the called a developer manual?
 -------------------------------------
 

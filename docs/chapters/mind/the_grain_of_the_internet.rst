@@ -1,4 +1,3 @@
-:mind
 The grain of the Internet
 =========================
 

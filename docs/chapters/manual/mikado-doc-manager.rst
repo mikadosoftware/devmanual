@@ -1,4 +1,3 @@
-:manual
 Mikado-doc-manager
 ==================
 

@@ -1,4 +1,3 @@
-:manual
 
 using both pythons in virtualenvs
 =================================

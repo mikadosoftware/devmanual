@@ -50,14 +50,31 @@ def walk_apply(fn):
         for file in filenames:
             if file.endswith(".rst"):
                 files_to_use.append(os.path.join(dirpath, file))
-    print files_to_use
-    for f in files_to_use: print f
+    for filepath in files_to_use:
+        update_a_file(filepath, fn)
 
+def clear_tokens(text):
+    """
+    >>> clear_tokens(':main fskjdkfjsdlkkfjsdlfj')
+    ':main fskjdkfjsdlkkfjsdlfj'
+    >>> clear_tokens(':mind fskjdkfjsdlkkfjsdlfj')
+    ' fskjdkfjsdlkkfjsdlfj'
+    """
+    tokens = [':mind',]
+    for token in tokens:
+        if text[:len(token)] == token:
+            text = text[len(token):]
+    return text
 
+def run():
+    mkdir_backup()
+    #update_a_file('/home/pbrian/projects/devmanual/docs/conf.py', None)
+    walk_apply(clear_tokens)
 
+def test():
+    import doctest
+    doctest.testmod()
 
 
 if __name__ == '__main__':
-    mkdir_backup()
-    #update_a_file('/home/pbrian/projects/devmanual/docs/conf.py', None)
-    walk_apply(None)
+    run()

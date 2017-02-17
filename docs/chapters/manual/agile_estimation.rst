@@ -1,4 +1,3 @@
-:manual
 ===============================================================
 Agile Estimation - Learning from traditional Project Management
 ===============================================================

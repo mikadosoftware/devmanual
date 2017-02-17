@@ -1,4 +1,3 @@
-:manual
 ===============
 Network Testing
 ===============

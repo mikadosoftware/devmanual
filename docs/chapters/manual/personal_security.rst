@@ -1,4 +1,3 @@
-:manual
 Personal Security
 =================
 

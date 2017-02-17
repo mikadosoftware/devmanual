@@ -1,4 +1,3 @@
-:mind
 The emerging politics
 =====================
 

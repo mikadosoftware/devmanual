@@ -1,4 +1,3 @@
-:manual
 Sensible Mail Handling
 ----------------------
 

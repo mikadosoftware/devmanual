@@ -1,4 +1,3 @@
-:manual
 
 ==================
 Domain name system

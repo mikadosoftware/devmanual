@@ -1,4 +1,3 @@
-:mind
 Landscape and strategy
 ----------------------
 

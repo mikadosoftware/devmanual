@@ -1,4 +1,3 @@
-:manual
 Using Less and ReSt to make nice looking documents
 --------------------------------------------------
 

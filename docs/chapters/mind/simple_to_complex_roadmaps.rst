@@ -1,4 +1,3 @@
-:mind
 Simple to complex roadmaps
 ==========================
 

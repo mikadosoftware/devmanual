@@ -1,4 +1,3 @@
-:mind
 
 Test principles
 * You *cannot* ever be exhaustive in hand crafting tests.

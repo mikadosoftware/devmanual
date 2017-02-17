@@ -1,4 +1,3 @@
-:manual
 Cookies, Testing and security
 =============================
 

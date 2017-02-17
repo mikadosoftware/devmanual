@@ -1,4 +1,3 @@
-:manual
 ============
 Style guides
 ============

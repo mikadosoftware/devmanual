@@ -1,4 +1,3 @@
-:manual
 Metrics and tracing
 ===================
 

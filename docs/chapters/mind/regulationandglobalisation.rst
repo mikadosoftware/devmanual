@@ -1,4 +1,3 @@
-:mind
 Uber / Airbnb
 
 - scammy davis Jr. Could not go in front door

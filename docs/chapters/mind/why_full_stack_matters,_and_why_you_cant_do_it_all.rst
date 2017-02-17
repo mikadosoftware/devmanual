@@ -1,4 +1,3 @@
-:mind
 Why full stack matters, and why you cant do it all
 ==================================================
 
