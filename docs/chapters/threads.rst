@@ -57,4 +57,12 @@ Additionally the end of secrecy
 Facebook and Portland down 
 
 Does it matter?
-Syria - trace the success of government (evil) against rebels (hmmmm) down to Russian military air support which traces to Obama not enforcing redline which traces back to Cameron not getting parliamentary support which traces back to Snowden revelations and mistrust of government revealed secrets and dodgy dossier 45 mins - which is mistrust of closed not opennintelligence 
+Syria - trace the success of government (evil) against rebels (hmmmm) down to Russian military air support which traces to Obama not enforcing redline which traces back to Cameron not getting parliamentary support which traces back to Snowden revelations and mistrust of government revealed secrets and dodgy dossier 45 mins - which is mistrust of closed not opennintelligence
+
+
+Gov as a platform
+http://www.computerweekly.com/opinion/Its-the-business-model-stupid-three-steps-to-transform-UK-public-services
+I'm not entirely convince 
+It's a combo of most government is same stuff (names address, license) so use shared back ends and so forth. It tends not to work without really clear minded powerful executives - i.e. Politicians
+
+And added Amazon aws 
