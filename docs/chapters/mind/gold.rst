@@ -1,4 +1,3 @@
-
 Price of gold is fairly stable
 ------------------------------
 

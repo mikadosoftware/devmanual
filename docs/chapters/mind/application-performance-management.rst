@@ -1,4 +1,3 @@
-
 Test principles
 * You *cannot* ever be exhaustive in hand crafting tests.
 Tests must be auto generated and hammer the code with things you cannot imagine.

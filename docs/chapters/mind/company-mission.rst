@@ -1,4 +1,3 @@
-
 Discovering the company mission
 -------------------------------
 

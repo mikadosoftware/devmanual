@@ -1,4 +1,3 @@
-
 Politically and technologically radical
 Yes prime minster
 

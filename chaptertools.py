@@ -1,8 +1,10 @@
 """
-I am doing a lot of changes to larg numebr of file
+THis is a grep / find / awk replacement.
+I just want to be more careful than a few lines of awk when changing
+all the files, and maybe all I need to do is awk.
 
-TODO: see the diffs I jsut made
-
+I could use subprocess and awk.
+And I could do it and just show me the likely outcomes. seems a nice compromise
 """
 import os
 import shutil
@@ -53,6 +55,17 @@ def walk_apply(fn):
     for filepath in files_to_use:
         update_a_file(filepath, fn)
 
+def run():
+    """We want to backup our files (incase) and apply a fn to each file
+    """
+    mkdir_backup()
+    walk_apply(rmblankline)
+
+def test():
+    import doctest
+    doctest.testmod()
+
+############################ text altering functions to call
 def clear_tokens(text):
     """
     >>> clear_tokens(':main fskjdkfjsdlkkfjsdlfj')
@@ -66,14 +79,30 @@ def clear_tokens(text):
             text = text[len(token):]
     return text
 
-def run():
-    mkdir_backup()
-    #update_a_file('/home/pbrian/projects/devmanual/docs/conf.py', None)
-    walk_apply(clear_tokens)
+def rmblankline(txt):
+    firstline = txt.split("\n")[0]
+    if firstline.strip() == '':
+        newtxt = '\n'.join(txt.split("\n")[1:])
+    else:
+        newtxt = txt
+    return newtxt
 
-def test():
-    import doctest
-    doctest.testmod()
+def mktitle(txt):
+    newtext = ''
+    firstlineflag = False
+    for line in txt.split('\n'):
+        if line.strip() == '':
+            pass
+        elif line.find("===")==0 and not firstlineflag:
+            newtext += line + "\n"
+        elif line.find("===")==0 and not firstlineflag:
+            pass
+
+
+
+
+
+############################ end
 
 
 if __name__ == '__main__':

@@ -1,4 +1,3 @@
-
 Also distributed filesystems - cephfs, HDFS, GLUSTER
 
 ================
