@@ -1,4 +1,7 @@
+==========
 Free Wi-Fi
+==========
+
 ==========
 
 It is increasingly hard to find wifi hardware that supports

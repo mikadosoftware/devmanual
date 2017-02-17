@@ -1,4 +1,7 @@
+=================
 The Software Mind
+=================
+
 =================
 
 The transition from pre-SoftwareLiteracy organisations to post software literacy

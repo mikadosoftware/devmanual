@@ -1,4 +1,7 @@
+========
 closures
+========
+
 --------
 
 Lexical closures are a really useful trick.

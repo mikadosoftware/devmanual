@@ -1,5 +1,7 @@
+===================
 The insane optimist
 ===================
+
 
 I generally prefer to comment on longer term political trends - but Donald Trumps election today
 is, as the whole campaign has been, an exception.

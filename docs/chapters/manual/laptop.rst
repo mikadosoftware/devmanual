@@ -1,4 +1,7 @@
+===================
 Laptop From Scratch
+===================
+
 ===================
 
 How to build and why to choose laptops from scratch in OSS world

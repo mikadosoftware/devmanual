@@ -1,5 +1,7 @@
+======================
 Landscape and strategy
-----------------------
+======================
+
 
 https://medium.com/wardleymaps/on-being-lost-2ef5f05eb1ec#.9hem3u240
 

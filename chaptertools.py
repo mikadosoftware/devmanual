@@ -59,7 +59,7 @@ def run():
     """We want to backup our files (incase) and apply a fn to each file
     """
     mkdir_backup()
-    walk_apply(rmblankline)
+    walk_apply(mktitle)
 
 def test():
     import doctest
@@ -88,15 +88,17 @@ def rmblankline(txt):
     return newtxt
 
 def mktitle(txt):
-    newtext = ''
-    firstlineflag = False
-    for line in txt.split('\n'):
-        if line.strip() == '':
-            pass
-        elif line.find("===")==0 and not firstlineflag:
-            newtext += line + "\n"
-        elif line.find("===")==0 and not firstlineflag:
-            pass
+    newtxt = ''
+    firstline = txt.split("\n")[0]
+    if firstline.find("===") == 0:
+        newtxt = txt
+    else:
+        newtxt = "="*len(firstline) + '\n'
+        newtxt += firstline + '\n'
+        newtxt += '='*len(firstline) + '\n'
+        newtxt += txt[len(firstline):]
+    return newtxt
+
 
 
 

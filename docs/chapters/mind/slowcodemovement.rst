@@ -1,4 +1,7 @@
+==================
 Slow Code Movement
+==================
+
 ==================
 
 Modelled after the `slow food movement <http://en.wikipedia.org/wiki/Slow_Food>`_.

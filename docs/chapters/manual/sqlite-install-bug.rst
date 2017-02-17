@@ -1,4 +1,7 @@
+===========================
 Installing Sqlite in a venv
+===========================
+
 ===========================
 
 Seems to be painful - best answer so far seems to be

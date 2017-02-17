@@ -1,4 +1,7 @@
+======================
 Sensible Mail Handling
+======================
+
 ----------------------
 
 1. Fetchmail delivers mail to you local drive

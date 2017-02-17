@@ -1,5 +1,7 @@
+====================================
 Basic SEO for the independent worker
 ====================================
+
 
 I believe software is a new form of capital, and it itself takes three forms.
 The simplest form is *discover-ability* - for the moment that is essentially

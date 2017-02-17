@@ -1,4 +1,7 @@
+=====================================
 Politics is software, software is law
+=====================================
+
 ======================================
 
 Harmonisation, immigration, globalisation

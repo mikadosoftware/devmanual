@@ -1,4 +1,7 @@
+==================
 Browser Automation
+==================
+
 ==================
 
 .. literalinclude:: testsplinter.py

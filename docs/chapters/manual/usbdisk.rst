@@ -1,4 +1,7 @@
+=================
 Adding a new disk
+=================
+
 =================
 
 Adding a new disk is relatively simple to a BSD system, However the most common

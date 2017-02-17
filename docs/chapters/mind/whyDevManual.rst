@@ -1,4 +1,7 @@
+=====================================
 Why is the called a developer manual?
+=====================================
+
 -------------------------------------
 
 Well it's not anymore but it's because of a simple thing

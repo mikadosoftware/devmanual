@@ -1,4 +1,7 @@
+==============================
 Price of gold is fairly stable
+==============================
+
 ------------------------------
 
 I do love me a bit of Ancient Rome.  And I love the term Solid - it came from the solidus, a gold coin minted by Constantine 315AD

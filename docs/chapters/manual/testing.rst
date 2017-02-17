@@ -1,4 +1,7 @@
+=======
 Testing
+=======
+
 -------
 
 Nose is the standard for Python testing.

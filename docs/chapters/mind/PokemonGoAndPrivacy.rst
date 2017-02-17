@@ -1,4 +1,7 @@
+==============================
 Pokemon Go and Digital Privacy
+==============================
+
 ------------------------------
 
 I never meant to write this article, but I also never meant to wander around

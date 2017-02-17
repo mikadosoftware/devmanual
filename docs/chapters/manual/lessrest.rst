@@ -1,4 +1,7 @@
+==================================================
 Using Less and ReSt to make nice looking documents
+==================================================
+
 --------------------------------------------------
 
 Not so long ago the only *right* way to transform markdown style

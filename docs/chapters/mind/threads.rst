@@ -1,4 +1,7 @@
+===================================================================================================
 - enigma and Bletchley park changing to "collect everything". This is the baby that grew into PRISM
+===================================================================================================
+
 
 - intelligence and desire to see a map and a secret map. The focus on secrets is likely the downfall - openness is such a landscape changing winning approach that sevret assassination plots are steamrollered by history
 
