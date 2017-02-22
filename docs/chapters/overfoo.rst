@@ -6,6 +6,18 @@ So place to put all the bitty mind parts
 
 
 
+Transparency is part of trust
+Why do millebiaps seem to show trust to people met digitally ? Because transparency? 
+
+
+https://medium.com/@adrianco/evolution-of-business-logic-from-monoliths-through-microservices-to-functions-ff464b95a44d#.fphvzltoq
+Cloud history of
+
+
+Distributed computing today
+http://cyrille.rossant.net/moving-away-hdf5/
+Spark
+
 
 
 
@@ -21,6 +33,21 @@ list of work or notes on what makes a developers manual for 21C
 * build servers
 *
 
+
+Pyholodeck
+
+- source control
+- build systems
+- automated tests and xml results
+- deployment 
+- monitoring
+- logging
+- metrics
+- performance testing
+- Pre prod and prod
+- cloud evolutions (serverless architecture)
+- no damn features
+- 
 
 
 1. source control
