@@ -114,3 +114,44 @@ https://honeycomb.io/blog/2017/01/instrumentation-the-first-four-things-you-meas
 Pki
 Cloudflare how to build your own
 https://en.m.wikipedia.org/wiki/Hardware_security_module
+- France enforces open access to scientific publishing
+https://www.openaire.eu/france-final-text-of-the-law-for-oa-has-been-adopted
+
+- pikkety redux
+https://news.ycombinator.com/item?id=12417855#12418438
+
+- snowden
+https://en.m.wikipedia.org/wiki/NSA_ANT_catalog
+http://www.nsaplayset.org
+
+
+- Whats happening in the world - a sense of perspective
+* http://www.digitalattackmap.com/faq/
+* also want, wars, trade, shipping, energy, employment, poverty, investment etc.
+* some kind of model / mapp for the whole world. where is the money flowing / going?
+
+My goal for Jan 2017 is to *unify and streamline* my vast publishing empire.
+
+I will work on the following project *themes* ongoing
+
+* The Software Mind Book
+* Campaign for OSS in Government
+* Building a business to sustain my family's future.
+* improving myself and my relationships
+
+Which all seems nice.
+
+Publishing Empire
+-----------------
+
+I have a lot of written words dotted around.
+I will bring them all under one roof, suitably laying 302 trails for Google.
+
+Based on the Mind / Skills
+Mind
+----
+https://github.com/mikadosoftware/mikadoCMS
+
+Skills
+------
+https://github.com/mikadosoftware/ExecutableOpinions
