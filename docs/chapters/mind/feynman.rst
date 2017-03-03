@@ -98,9 +98,10 @@ Software *evolves* to fit its niche.
 Relax
 -----
 
-I am sometimes troubled by comparing myself to some of life's winners.  But looking at Feynman makes those
-comparisons silly.  A genius that other genius' thought a genius, he still tried to understand this strange world
-we live in, and had no more a grasp on *why* than the rest of us poor schmucks.
+I am sometimes troubled by comparing myself to some of life's winners.  But
+looking at Feynman makes those comparisons silly.  A genius that other genius'
+thought a genius, he still tried to understand this strange world we live in,
+and had no more a grasp on *why* than the rest of us poor schmucks.
 
-So, we do what we can.  And move the world on a little bit.  Some more than others, I must admit, but I am happy to
-be pushing it in the right direction.
+So, we do what we can.  And move the world on a little bit.  Some more than
+others, I must admit, but I am happy to be pushing it in the right direction.

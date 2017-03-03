@@ -76,3 +76,8 @@ Secrecy is gone too
 
 * estimation, prediction, relaxing and reviewing
   Summerhill school
+
+
+* Naive politics and self-serving
+Cannot make a man understand something if his salary depends on his not understanding it.
+See FaceBook Founder manifesto
