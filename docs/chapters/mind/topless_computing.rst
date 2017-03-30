@@ -53,6 +53,9 @@ about topless computing.
 Because it sounds naughty.
 
 
+European topless computing directive - the idea that this accessibility needs to be enforced as a competitive need. Owning up banking like PSD2
+Making personal data geneuninely owned by the person and making the computing substrate accessible and open - thinknautomatic cars
+
 
 
 .. [#] OK, yes this is a bit sexist.
