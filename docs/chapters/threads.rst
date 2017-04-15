@@ -64,5 +64,5 @@ Gov as a platform
 http://www.computerweekly.com/opinion/Its-the-business-model-stupid-three-steps-to-transform-UK-public-services
 I'm not entirely convince 
 It's a combo of most government is same stuff (names address, license) so use shared back ends and so forth. It tends not to work without really clear minded powerful executives - i.e. Politicians
-
+N
 And added Amazon aws 

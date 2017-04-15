@@ -81,3 +81,23 @@ Secrecy is gone too
 * Naive politics and self-serving
 Cannot make a man understand something if his salary depends on his not understanding it.
 See FaceBook Founder manifesto
+
+
+Software and capital
+====================
+
+So let's revisit the building architect. A naive look reveals someone drawing a swooping roofline and leaving the actual how to build it to an Irishman in wellies in three feet of mud.
+
+But if we have a robot, it cannot work out to move the foundations over sonthe door will fit. It will put the door there, and the door will fail to float in air and fall over the building fails
+
+So in software everything has to be perfect or accounted for up front
+
+Think of the moral decision of whom to kill on the roads
+
+But that software is now capable of producing houses from fields at the cost of a bit of concrete
+
+And charging for that software will be all you can do. Licensing?  
+
+But open source software will release that - release that wealth to those who want a house not those who designed the software
+
+Capital becomes ... shareable 
