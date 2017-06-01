@@ -49,3 +49,86 @@ My Tesco habits must be made public to licensed public providers unless I sign o
 
 
 - lost the themes in manual here and discuss them and cross ref - so talk centralised logging and scale here 
+
+- too much or not enough innovation
+Economic innovation is basically energy use (Solow x). So right now we are very energy efficient (can talk to almost any human anywhere on planet) but also using carbon sources - we don't have sustainable energy
+
+More innovation - but it's hard. There are two major drivers of innovation and hence productivity growth in the 21 C - software and fusion. Fusion is self explanatory. Software is really the heart of the book but with widespreasd software literacy we will expect to see a change in corprorate and governmental structures on the same order as we saw as literacy spread throughout renaissance medieval Europe - fundamental. When combined with new power forms we should expect amazing things
+
+James watt not only invented a better steam engine, but he has to invent carbon copy paper in order to make his literate company more efficient.
+
+Someday we shall see the like again. 
+
+- basic Trump thesis is extreme form of book great stagnation- we were promised flying cars and we got 149 characters 
+Golden gate before / it's all getting worse
+
+Or
+
+How hard is it to keep a hospital clean?
+
+As hard as is to maintain security
+
+All a trade off 
+
+AI and productivity 
+Google is a consumer advert company where is the enterprise AI? 
+
+
+- will aliens kill  us all and why is that relevant?
+Unlikely because the technology advances necessary indicate a society that survives a very long time. That means they develop the means to wipe themselves out but also don't do so - which means they develop the social mechanisms to regulate warlike instincts.
+
+Those social mechanism are described by me a s "better organisations" - like democracy, and capitalism
+
+So the more likely a civilisation is to have tech to cross the stars the more likely they are to not use that tech for war, because they need to not be at war with themselves
+
+So this book is about our search for a better way to run the world - better organisations and better inter-nation (another organisation) co operation
+
+Basically if we live in peace, innovate 
+
+First mannupneverest quote:
+It's not that we do mountain mountain climbing because we love the danger it's that it is in an environment that will kill you if you let it.
+
+Space and the future are environments that will kill us if we let it.  We need to prepare at base camps
+
+
+
+Algorithms and fitness functions
+- googles fitness function is relevance search result (i.e. Time before returning to search)
+- Facebook is maybe social engagement - time spent reading
+- better ones might be time spent around genuine friends, and local friends (community building)
+
+But Kathy O'Neill book shows how fitness functions firstly need to exist and second must be chosen with societies goals
+
+We must enforce openness - why literacy is a good analogy
+We do  it allow Kafka Raquel situations if not being allowed to read a law
+
+We need politics that says this is necessary despite the weight of commercial confidence 
+
+
+New government
+Tim oreilly wife says government is vastness ocean and politics is just the waves on top
+
+We are seeing more and more politics turning to GDS style - but this is where we need three important things 
+
+- clear definition of the goal (fitness function)
+  (Dog whistle, undeserving poor etc)
+   Also issues around CV not recognising black women
+   
+- openness and auditability of data inputs, algorithm etc
+
+- legal framework - government by what works. The blairite phrase
+
+These are immensely difficult - and especially the first,
+
+
+- different agents in an economy / world
+Real market 
+Finsicialisation
+
+Government vs trade unions is basically a civil war amount govenrmyn as trade unions are a part of the government role
+
+
+- Coase thoughts
+http://howonlee.github.io/2017/05/30/Poking-20At-20Causation2c.html
+
+AI back propagation in CO's Sian analysis

@@ -21,3 +21,18 @@ Keep it documented and clean
 
 
 choices.
+
+
+Good argument from andressen 
+- the issue of switching to new industry is not one of stupid or unwillingness. Look at farmers or truckers doing 12/20 hour days. The issue is opportunity to retrain.
+
+A bigger check is unlikely to solve it
+
+Because we spend beyond our UBI minimum
+
+And so unless UBI provides a middle class lifestyle it will never be enough
+
+And so we should laser target instead at retraining opportunities 
+
+
+

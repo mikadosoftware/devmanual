@@ -22,3 +22,9 @@ The Trump voter redux
 Market for efficiency and price discovery - government (regulation) for justice
 Possibility of self regulation - by market design (see auction and novel prize winning theory of ???)
 also by AI personalised to our neeeds not our wants
+
+
+https://news.ycombinator.com/item?id=14332206
+Solow residual
+Economic output is basically trying to use energy in better ways
+That's it really
