@@ -104,6 +104,9 @@ We do  it allow Kafka Raquel situations if not being allowed to read a law
 
 We need politics that says this is necessary despite the weight of commercial confidence 
 
+https://news.ycombinator.com/item?id=14490701
+Google itself is a fitness function! 
+
 
 New government
 Tim oreilly wife says government is vastness ocean and politics is just the waves on top
@@ -132,3 +135,27 @@ Government vs trade unions is basically a civil war amount govenrmyn as trade un
 http://howonlee.github.io/2017/05/30/Poking-20At-20Causation2c.html
 
 AI back propagation in CO's Sian analysis
+
+Organisations as a whole - building NASA was as much a challenge as building gimbled rocket engines.  The ability for five thousand people to work to one goal is hard to create and sustain - cf Saturn car project
+
+Costs will be reduced but hard to imagine them being zeroed - an orgnisation has a controlling kind aspect to it that wholst bureaucratic is also necessary and not amenable to fitness functions 
+
+- one global market
+AI apps looking for our wants in a globally transparent market 
+
+
+Securitisation and financialisation
+These are global problems - but Facebook and google are examples of securitisation of internet - why the hell should I send my baby photos to San Francisco to get them seen by my mother in law ten miles away?
+
+- humans dependnat on technology for millions of years
+https://www.theatlantic.com/magazine/archive/2017/04/professor-caveman/517815/
+
+The cutting edge of a flint - we started to develop brains that needed more calories than our claws could get - we would not have survived if stone and fire had been removed - and society and civilisation would have starved.  Formmilkions of years humans have been on this symbiotic rocket ride.  Where we are now is nothing new. Just, faster. 
+
+
+- new finacialisation
+Ok so we have finacilisation - which massively benefitted few. What we want is a new framework that allows the benefits to be more widely spread. For me that means not regulations that pretend they can make access to bonds safer (cf BRRD and banco populare and monte xxx - Spanish and Italian banks in trouble - one was basically wiped out officially and the bond holders got squat, the other Italian has had its bonds sold to retail investors so the impact will be deep - what we need is a more active bond maket with funds and retail investment vehicles so the impact is lessened)
+
+In other words - everyone has access to markets the rich have. This avoids the bigger fincialisation issues.  The other main issue we saw in the crash was incorrect valuations. Come on. That's transparency and opennness.  Look at RECAP - report evaluate and compare alternative prices. This is if you offer for sale you provide a machine language report allowing people to compare prices - no matter how complex the instrument.
+
+
