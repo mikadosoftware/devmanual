@@ -52,3 +52,6 @@ Perhaps we could see Alexa as a butler standing waiting in the doorway. Many man
 Here Apple is effective Ely building a phone that is inherently private. This is same arguments as putting vackdoors into encryption.  It's a terribly idea as it simply moves the onus for security to the place where we store the actual backdoor keys.  And that's never safe.
 
 cIa analyst comment - we have to find other ways in, and CIA has been suborning blackmailing and honey trapping since the invention of the car so I think they are well practised by now
+
+Medical privacy is not absolute - communicable diseases is an example. But at what point should we be opt out not opt in? 
+Google deepmind shared 1.6bn medical records - this was deemed illegal by the British privacy regulators. The regulator wanted more controls and transparency - the direction of travel was right but the means wrong.  This is a fixable problem - basically an equivalent of building a car without catalytic concerto 

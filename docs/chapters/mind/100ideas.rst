@@ -159,3 +159,84 @@ Ok so we have finacilisation - which massively benefitted few. What we want is a
 In other words - everyone has access to markets the rich have. This avoids the bigger fincialisation issues.  The other main issue we saw in the crash was incorrect valuations. Come on. That's transparency and opennness.  Look at RECAP - report evaluate and compare alternative prices. This is if you offer for sale you provide a machine language report allowing people to compare prices - no matter how complex the instrument.
 
 
+- emergent order / invisible hand
+The feedback mechanism, the glue, is free (unfettered) pricing mechanism - it allows each player to determine if they are providing value to the rest of the chain.
+
+Distoriationninnpricing are therefore bad
+
+- global governance is needed before global political union - and if we do that, do we need global political union? Issues of harmonisation and governance and freedom.
+
+So let's look at geo engineering or crispr germline editing. If I spray sulphur into the upper atmosphere it alters the climate globally.  I could take my small country and launch a balloon and soon people might notice.  Would that be a case for bombin? 
+
+The UN is likely to be the place to discuss bombing my little country. But what if people think it's a good idea - but disagree on the setting for the thermostat? What is the right forum to decide that
+
+Some of these are so extreme that out of band discussions like the UN security forum seem too d places. But there are only 5 members. This issue seems so important that other countries will want a say.  And that means wider UN. And now we have to enforce those agreements - to get countries often actually at war with each other to agree to be bound by the same rules.
+
+Brexit has shown that this is really really difficult. European harmonisation is a great achievement - see Canadian European trade agreement on mobile number portability.
+
+But is that too low level, too detailed? 
+
+And now corporate governance - let's look at open source governance as another model.
+
+The disadvantage to real life is hard to move allegiances. Perhaps how you vote whsoukd determine how you are affected? 
+
+
+Bruce schneir 
+Because there are currently no liabilities for lousy software and no regulations mandating secure software, the market rewards software that's fast and cheap at the expense of good. 
+
+How do we chnage that ? Insurance model, suing those who do it badly? How sue Microsoft? Move to layered operating systems - hardened, and much less friendly.
+
+But getting there? The internet of things needs this level of security. EU law recently published recommendations on end to end security. So the EU (currently the world's most uptodate regulatory body of note) is pushing in right direction.  But time to market in the internet of things is vital - and until we start to see things like "ransomware proof guarantees like kite marks" we will be in trouble.
+
+And I don't want to be that software developer. Do I ?
+
+What will that environment look like? 
+
+Frankly I think it will look like this - I don't have editorial reviews for my emails. Yet as a standard office worked I write on average enough words in mail to fill a normal novel.
+
+My writing is for me personally. And as a manager my coding is quite a lot of the time for me personally so. Sometimes I use my coding to collect data or inform myself. And as it's just my code the standards do not have to be high.
+
+That's the organisation around making a product. The meetings, the data collection etc
+
+Now if we have to put more process, more clean room, more assurance in place, then ok.  We simply have to deal with traceability - who write this code and when. Did it get written and tested 
+
+All of this is extractable from the code. NASA approaches may focus on process but they are proven and tested through the code. 
+
+So our assurances need to be around verifying the tests around a code based.
+
+This is achievable 
+
+
+Eu 
+draft proposal on end2end encryption 
+http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-%2F%2FEP%2F%2FNONSGML%2BCOMPARL%2BPE-606.011%2B01%2BDOC%2BPDF%2BV0%2F%2FEN
+
+
+Is social media destroying democracy?
+We are seeing sources if news (and bias) coming from elsewhere than mainstream newspapers - or rather its newspapers where anyone can insert their editorial onnyiur paper.
+
+And is that a problem? How to measure news sources? 
+
+
+Read insights of pentester
+https://0x00sec.org/t/shared-thoughts-after-6-years-in-pentesting/2492
+
+- the shape of workers contracts
+Increasingly we see hotels where the brand licenses to the building owners which licenses to hotel runner which licenses food service and security and so on
+Gig economy
+
+What is needed, much like transparency in food chain and manufacturing chain, and the shares - is beneficial owner and controlling mind 
+
+- who is responsible 
+
+- deep learning: weakness and strength is the training. That there is no real way to interrogate the model for a deterministic reason why it arrived at the answe.
+
+But analysis of humans is that we make decisions before conscious mind is aware- that is it seems the emotions are trained as young and there is then a conscious awareness layer that can detect  dissonance 
+
+Cf the face recognition that did not see black woman
+
+So next development for deep learning is a consistency and coherence layer. 
+
+Make a human kit
+
+
