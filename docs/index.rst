@@ -2,10 +2,7 @@
 The Software Mind
 =================
 
-Thinking in a software literate world.
-The transition from pre-SoftwareLiteracy organisations to post software literacy
-Without open we will be in a world where only powerful are allowed to read and write
-
+Software Literacy and building the society and economy of the 21st Century.
 
 Introduction
 ============
@@ -14,43 +11,80 @@ Introduction
    :maxdepth: 1
 
    chapters/introduction.rst
-   chapters/overfoo.rst
-   chapters/software-literate-company.rst
+   chapters/booklayout.rst
 
-The Software Mind
-=================
+
+The Software Literate Company
+=============================
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   chapters/mind/*
-
-Reflections on The World
-------------------------
+   chapters/mind/company/*
 
 
-
-Reflections on The Organisation
--------------------------------
-
+The Software Literate Society
+=============================
 
 .. toctree::
    :maxdepth: 1
+   :glob:
 
-   chapters/espirit_de_corps.rst
+   chapters/mind/society/*
+
+Security
+--------
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   chapters/mind/security/*
+
+Skills
+------
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   chapters/mind/skills/*
+
+
+Philosophy
+----------
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   chapters/mind/philosophy/*
+
+
+100 ideas
+---------
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   chapters/mind/100ideas/*
+
+
+   
+   
+chapters/mind/software-literate-company.rst
 
 
 Reflections on The Individual
 -----------------------------
 
-
 .. toctree::
    :maxdepth: 1
 
-   chapters/feynman.rst
-   alwaysgoodships.rst
-   ibmadverts.rst
+   chapters/mind/feynman.rst
+   chapters/mind/alwaysgoodships.rst
+   chapters/mind/ibmadverts.rst 
 
 
 The Software Manual

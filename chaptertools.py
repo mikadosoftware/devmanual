@@ -100,12 +100,32 @@ def mktitle(txt):
     return newtxt
 
 
-
-
+def mk_review_html():
+    """pront the rst as HTML for mass print out and review
+    """
+    tgtfilepath = '/home/pbrian/projects/devmanual/all.txt'
+    html = ''
+    toc = ''
+    rootpath = '/home/pbrian/projects/devmanual/docs/chapters'
+    for root, dirs, files in os.walk(rootpath):
+        for filename in files:
+            if filename.find(".rst") == -1:
+                continue
+            html += "\n                 ##### %s ####\n" % filename
+            txt = open(os.path.join(root, filename)).read()
+            #txt = txt.replace("\n","<br/>")
+            html += txt
+            toc += "- %s\n" % filename
+    htmlout = "%s\n#######\n %s" % (toc, html)
+    fo = open(tgtfilepath, 'w')
+    fo.write(htmlout)
+    fo.close()
+    import webbrowser;webbrowser.open(tgtfilepath)
 
 
 ############################ end
 
 
 if __name__ == '__main__':
-    run()
+    #run()
+    mk_review_html()

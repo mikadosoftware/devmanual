@@ -247,13 +247,33 @@ Bibilio
 
 
 
-Ubuntu and Debian
------------------
+Linux and Debian
+----------------
 
 Well, I used to use `upstart`.  That has been replaced with `systemd` now,
-and I ... well, keep using upstart.
+and well, we need to `lose graciously <link to ubuntu post on this>`.
 
-[TBD - insert code from ubuntu setup in Bamboo]
+Using systemd
+-------------
+
+systemd is controversial but it is becoming widespread. It *may* be over complicted.
+For our purposes it is sufficient
+
+We place *our* unit file in `/etc/systemd/system`
+
+::
+
+  [Unit]
+  Description=PaulsTest
+
+  [Service]
+  ExecStart=/home/pbrian/venvs/prodwww/bin/python /home/pbrian/projects/mikadoCMS/mikadocms/cmsapp.py --config=/home/pbrian/projects/mikadoCMS/mikadocms/data/mikadosoftware.com/mikado_dev.ini
+
+  [Install]
+  WantedBy=multi-user.target
+
+
+
 
 Further reading
 ===============

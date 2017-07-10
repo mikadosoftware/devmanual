@@ -1,31 +1,61 @@
-===================
-Dev Manual Overview
-===================
+=======================
+Structure of the Book
+=======================
 
-So place to put all the bitty mind parts
+The software developer who built the first Web Browser, Marc
+Andreessen, famously quipped that "Software is eating the world".
 
+And the reason is that software is a new form of *literacy*.  Imagine
+what literacy did to every walk of human life as it spread. The world
+of Medieval Monks in Scriptoreums had embedded in it newspapers, bus
+timetables, ballot papers and user manuals, but you try predicting
+that.
 
-
-Transparency is part of trust
-Why do millebiaps seem to show trust to people met digitally ? Because transparency? 
-
-
-https://medium.com/@adrianco/evolution-of-business-logic-from-monoliths-through-microservices-to-functions-ff464b95a44d#.fphvzltoq
-Cloud history of
-
-
-Distributed computing today
-http://cyrille.rossant.net/moving-away-hdf5/
-Spark
+It is as deep and as profound as reading and writing, and will have
+impacts as long-lasting on the human race (assuming we all make it that far!).
 
 
 
+Book Sections
+-------------
 
-This will become a toctree of the file sin the directory, but for now it is a
-list of work or notes on what makes a developers manual for 21C
+The first will discuss *Software Literacy* and its impact on
+organisations and economy.  We will look at the shape of literate
+organisations now, and how far short they fall of obvious ideals.
+
+Privacy and individual comes next. Touching on law etc.
+politics, Globalisation, Nations, democracy, equality, Paxos, Bitcoin, my partisantinship, 5% GDP
+Transaprency
+
+The grain of the internet, and the grain of literacy.
+(includes algorithms and fitness functions)
+
+Security. Always Security.
+
+
+
+
+The manual 
+==========
 
 "How are things developed around here, and why."
+-------------------------------------------------
 
+This is a developers manual, constructed as a companion
+piece to `The Software Mind` book. 
+
+
+* The code is the design - code first for everything
+  Infrastructure as a Service
+  Softwre defined networking
+
+* Code as a crime scene
+  Static Analysis and raising all boats.
+
+* Seeing every beat of the corporate body.
+  Dashboards, newspapers of the data rich world - making it easy to understand
+
+  
 * Source control
 * prmotoing code up
 * having a robot promite code after meeting automatic criteria
@@ -130,28 +160,4 @@ http://www.nsaplayset.org
 * also want, wars, trade, shipping, energy, employment, poverty, investment etc.
 * some kind of model / mapp for the whole world. where is the money flowing / going?
 
-My goal for Jan 2017 is to *unify and streamline* my vast publishing empire.
 
-I will work on the following project *themes* ongoing
-
-* The Software Mind Book
-* Campaign for OSS in Government
-* Building a business to sustain my family's future.
-* improving myself and my relationships
-
-Which all seems nice.
-
-Publishing Empire
------------------
-
-I have a lot of written words dotted around.
-I will bring them all under one roof, suitably laying 302 trails for Google.
-
-Based on the Mind / Skills
-Mind
-----
-https://github.com/mikadosoftware/mikadoCMS
-
-Skills
-------
-https://github.com/mikadosoftware/ExecutableOpinions

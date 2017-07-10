@@ -239,4 +239,3 @@ So next development for deep learning is a consistency and coherence layer.
 
 Make a human kit
 
-

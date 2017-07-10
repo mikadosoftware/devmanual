@@ -107,26 +107,6 @@ https://en.wikipedia.org/wiki/Smart_Common_Input_Method
 But its not following the .Xresources settings.
 So its more awkward
 
-I am having fun installing inconsolata
-
-apt-get install fonts-incolsolata
-works
-and I can see a .otf file in
-
-ls /usr/share/fonts/truetype/
-But that still not working
-Am converting  OTF to TTF
-
-apt-get install fontforge
- 
-
-*font:    *-inconsolata-*-*-*-24-*
-URxvt.font: *-inconsolata-*-*-*-24-*,\
-            -misc-fixed-bold-r-normal--15-140-75-75-c-90-iso10646-1,\
-            -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso10646-1, \
-            [codeset=JISX0208]xft:Kochi Gothic:antialias=false, \
-            xft:Code2000:antialias=false
-
 
 emacs
 =====
@@ -155,12 +135,3 @@ Its a free non-commerical,pay for commercial license (500 USD for single user de
 We will need to also install
 
    apt-get install libcurl3
-
-
-Xterm, xmonad and urxvt
-=======================
-
-this is the font option (put in .XDefaults) that can 
-http://blog.liangzan.net/blog/2012/01/19/my-solarized-themed-arch-linux-setup/
-https://github.com/vicfryzel/xmonad-config
-https://wiki.haskell.org/Xmonad/Using_xmonad_in_Lubuntu
