@@ -30,3 +30,10 @@ An on host network proxy that could transparently just pass through network traf
 
 Software defined networks push packets around, thisnoperates on requests??? 
 
+
+Basic security and architecture
+
+https://stackoverflow.com/questions/549/the-definitive-guide-to-form-based-website-authentication
+
+The basal architecture:
+
