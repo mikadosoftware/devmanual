@@ -1,9 +1,0 @@
-================
-Dev Manual
-================
-
-workon devmanual
-
-Build by :
-
-sh ./mkdocs.sh
