@@ -112,6 +112,45 @@ foundational skills the company will need - the basics of journalism if you
 wish, and we can see some of the issues with how that has succeeded, or failed
 in the recent past.
 
+Lets look at it this way - Facebook, if it took all 1.5 BILLION users and moved to
+a new land mass would be the worlds largest country. Ever.
+
+And it would be the least democratic. Ever. A one man dictatorship. No law courts,
+no police, no constitution.
+
+So companies need to deal woth the edge cases and become more like countres
+Discussing software literacy
+----------------------------
+
+::
+
+  Writing is nature’s way of showing us how sloppy our thinking is.
+
+Leslie Lamport
+
+
+The first mass-literacy revolution ran roughly in parallel with the commercial and industrial
+revolutions in euripe.  But apart from the usual things we associate with literacy, things like sharing ideas
+widely, democratic access to knowledge and so on, the one that is often *missed* is that ideas have to be
+much more precisely expressed when you write them down.  If you go around making speeches, each person can walk off
+with different ideas as to what you said (cf the law chapter) but writing it down and they have to disagree with
+what you meant.
+
+WIth software this applies to the n'th degree. There is no longer any forgiving human mind in the
+way of your writing to work out what you really meant. software is unforgiving. And this means we shall have to write
+down what we really mean. Some computer vision AI software failed to see balck women as human faces -
+accurately reflecting the cultural make up of the AI laboratory it sprang from.  And we shall have to solve the multiutude of robotic actions in the real world that were previosuly left to chance.  See the chapter on self-driving cars for example.
+
+So software literacty is not just a nice fluffy teach the world to code idea.  It is going to be a fundamental
+questioning of every aspect of our society and assumptions.  And we will need much much better at resolving those conflicts - large scale democratic politics does not seem to be good at this. Although, as per Churchill, it is a *lot* better than all the others ... so far found.
+
+I do not see this as some portent of doom. More that we are *already* in a world too sophisticated for any one mind to understand.  We rely utterly on the expertese, and indeed munficence of others.  Its just that the procedures for all these are still hidden and opawque. Partly because it is commercailly beneficial, but the vast majority of the time it is just the processes have not been made into software, and so are not accessible (see Indian IT)
+
+Example of BA's IT failure, and parent in laws chaotic handling o f Easyjet. Coul dhave been a few market based tokens.
+
+
+
+
 
 Knight Capital
 --------------

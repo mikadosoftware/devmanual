@@ -2,8 +2,25 @@
 Workstation
 ===========
 
-===========
+How to setup a Linux workstation
+================================
 
+There are several basic principles
+
+1. Automate it.
+2. Keep to the old technologies
+3. Keep it really simple
+   
+
+I am coming to the conclusion that mainatining my own
+workstation build scripts is ... a bit pointless, and
+yet I still keep trying.
+
+I have left the FreeBSD laptop world, and headed into Linux,
+but have not yet moved full scale into Mac.  I know a number of people
+I respect who feel that move to mac simplified a lot of their needs
+
+   
 Bootstrap Python
 ----------------
 
@@ -74,8 +91,41 @@ Then we set the database for xterm and update it::
 
   xrdb -merge ~./Xresources
 
+This Xresources setting will give us a solarized look and feel for the
+terminal, similar to installing the emacs theme
+https://github.com/solarized/xresources/blob/master/Xresources.dark
 
+How to get inconsolata??
+THis is a Xwindows font not a terminal font.
+So ... I am going for terminus...
 
+What is best unicode terminal
+
+mlterm plus SCIM will allow chinese, arabic, RTL fonts
+https://en.wikipedia.org/wiki/Smart_Common_Input_Method
+
+But its not following the .Xresources settings.
+So its more awkward
+
+I am having fun installing inconsolata
+
+apt-get install fonts-incolsolata
+works
+and I can see a .otf file in
+
+ls /usr/share/fonts/truetype/
+But that still not working
+Am converting  OTF to TTF
+
+apt-get install fontforge
+ 
+
+*font:    *-inconsolata-*-*-*-24-*
+URxvt.font: *-inconsolata-*-*-*-24-*,\
+            -misc-fixed-bold-r-normal--15-140-75-75-c-90-iso10646-1,\
+            -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso10646-1, \
+            [codeset=JISX0208]xft:Kochi Gothic:antialias=false, \
+            xft:Code2000:antialias=false
 
 
 emacs
@@ -105,3 +155,12 @@ Its a free non-commerical,pay for commercial license (500 USD for single user de
 We will need to also install
 
    apt-get install libcurl3
+
+
+Xterm, xmonad and urxvt
+=======================
+
+this is the font option (put in .XDefaults) that can 
+http://blog.liangzan.net/blog/2012/01/19/my-solarized-themed-arch-linux-setup/
+https://github.com/vicfryzel/xmonad-config
+https://wiki.haskell.org/Xmonad/Using_xmonad_in_Lubuntu
