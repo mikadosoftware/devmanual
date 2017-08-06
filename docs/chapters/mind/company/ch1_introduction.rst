@@ -109,7 +109,15 @@ SRE book (link) author (link) the "founder" of SRE in Google, defines
 SRE as "SRE is what happens when you ask a software engineer to design
 an operations team".  As we go forward we shall find the software
 literate companies are what happens when software engineers design
-(found, run, populate and evolve) companies.
+(found, run, populate and evolve) companies.  The flush of unicorns today in Silicon Valley are nearly software literate - the effort of founding a company is so huge that it's hard to believe that what results is what a software engineer would design. Things get missed.  But each generation of companies will steal from previous until the majority of a company is what would be designed.
+
+Does it make a difference - well let's compare the old "knowledge company" and the new. In 2012 Google had a revenue of $50bn and a workforce of 40,000 - whereas the Barclays International also had a revenue of $50bn, but a workforce of 120,000.   Fast-forward to 2016 and google has grown to $89bn and 70,000 people.  Bank Of America in 2016 posted revenues of $89bn as well, and a workforce of over 200,000.  There are many caveats comparing these numbers, but all the firms involved are resolutely "knowledge-based" - the core processes of the firms do not involve smelting iron ore or manufacturing cars.  And yet one carries 2/3 less humans for same revenue.  One has used software in a markedly different manner.
+
+My conjecture is that we are hitting a limit on what tracking company processes through accounting can do to limit wasteful (coase) growth. That by forcing more reproducible processes into 
+
+And this is my definition of a programmable company - where all processes are visible in the virtual world 
+
+Since 
 
 Just as hundreds of years ago, it was what happens when you ask people
 who can read and write to design companies.  It was not till

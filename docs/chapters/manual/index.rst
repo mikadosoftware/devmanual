@@ -1,27 +1,12 @@
-===================
-Revolutions
-===================
+Serverless Dev Manual
+=====================
 
-The software development process is like a wheel.  We write some code to solve
-a problem, we *automatically* build it, test it, deploy it to one or many servers
-and we monitor it and the eco-system in which it lives, and we spot things we
-want to improve and go back to writing code.
-
-.. :: draw a better diagram
-
-  Source -> Build -> Test -> Deploy -> Monitor -|
-   /\                                           |
-   ---------------------------------------------
-
-   The eco system is things like DNS, hosted services like OpenStack and AWS,
-   things like PKIs and simpler things like comprehensive logging and metric gathering.
-
-In this Software Manual, a companion piece to the Software Mind, I will walk
-through the development of a piece of software - going through many revolutions
-each time adding some more to the technology stack, but trying my best to keep
-clear the underlying simplicity.
+This is a dev manual - a "how we do things around here" for a development team - and if you read the companion piece "Software Mind" a dev team extends to the whole company.
 
 
+
+
+* GPG and keypairs
 
 
 Revolutions

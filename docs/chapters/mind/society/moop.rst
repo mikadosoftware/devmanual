@@ -4,6 +4,26 @@ Massive Online Open Psychology
 
 ==============================
 
+This is linked heavily to the attention economy and nine dots prize winner
+
+I see technology as needing to benefit us. We have a cycle of tech growth, bad consequences and trying to deal with consequences in society 
+
+But we could also have another term - that the technology should enable a decision in the best interests of the individual
+
+That is it should be able to not only grab my attention and sell me something but be designed to focus on my long term benefit, be steerable by me, and not actively work against me
+
+Why not leave it to the market? See ha jo Chang.
+But basically because we do not leave medical provision to the market (your doctor has sworn an oath, and will go to jail in extreme cases, even if your HMO won't)
+
+But now with AI the HMO and the Doctor are merging - who's ethics should prevail? 
+
+I think I have a clear answer in my head. 
+
+
+This is moops 
+
+
+
 MOOCs are commonplace now (history) but the direction suggested is one where new ideas about security and privacy intersect
 
 We have a fairly clear idea of how massive access to medical diagnosis data may be helpful
