@@ -1,0 +1,4 @@
+- emacs, Jedi, pylint
+
+- weaver will auto commit to git but first we enforce compile time tests, run nose tests etc
+
