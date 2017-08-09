@@ -1,38 +1,6 @@
-=======================
-Structure of the Book
-=======================
-
-The software developer who built the first Web Browser, Marc
-Andreessen, famously quipped that "Software is eating the world".
-
-And the reason is that software is a new form of *literacy*.  Imagine
-what literacy did to every walk of human life as it spread. The world
-of Medieval Monks in Scriptoreums had embedded in it newspapers, bus
-timetables, ballot papers and user manuals, but you try predicting
-that.
-
-It is as deep and as profound as reading and writing, and will have
-impacts as long-lasting on the human race (assuming we all make it that far!).
-
-
-
-Book Sections
--------------
-
-The first will discuss *Software Literacy* and its impact on
-organisations and economy.  We will look at the shape of literate
-organisations now, and how far short they fall of obvious ideals.
-
-Privacy and individual comes next. Touching on law etc.
-politics, Globalisation, Nations, democracy, equality, Paxos, Bitcoin, my partisantinship, 5% GDP
-Transaprency
-
-The grain of the internet, and the grain of literacy.
-(includes algorithms and fitness functions)
-
-Security. Always Security.
-
-
+===================
+The Dev Manual
+===================
 
 
 The manual 
