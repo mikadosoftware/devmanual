@@ -2,7 +2,8 @@
 Book
 =============
 
-Software Mind
+Micro mastery - getting one small
+Skill at a time 
 
 .. toctree::
    :maxdepth: 1
