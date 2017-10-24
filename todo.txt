@@ -1,0 +1,7 @@
+- hypothesis and doctest as the testing basis for my code
+- serverless as basics of the architecture
+- marketing is as important as anything else - 50:50
+- Machine Learning experiments
+- pythonnfor finance - a demo
+- serverless tools for enterprise
+- 
