@@ -3,18 +3,70 @@ Serverless Dev Manual
 
 This is a dev manual - a "how we do things around here" for a software development team.
 
-It is developed in the open to allow or encourage discussion.  If you feel some updates are needed, there will be a 'discourse' link on each page and pull requests are always welcome.
+It is developed in the open to allow or encourage discussion.  If you feel some updates are needed, pull requests are always welcome.
 
+The index is built first as a jumping off point for the longer explanations in the actual chapters. it seemed easier to build this way, and helps keep it straight in my head.
 
+I have written this to be a useful starting point for an imaginary "new CTO", probably a founder with little prior experience.  it is a companion piece to "The Software Mind".
 
 Themes
+======
+
+Plumbing 
+--------
+
+* plumbing needed for every project / component
+  - error handling
+  - config
+  - todo
+  - docs
+  - logging
+  - metrics
+  - activity reporting
+  - governance, style, testing, coverage
+  - source code policy
+  - physically distinct DEV, [UAT], PREPROD and PROD
+    UAT is optional if you have automated testing.
+    dont mix preprod and uat cos you will want to release when users are looking
+  - dashboards for can I release, and what is governance ?
+AQA - automated Qualty Assurance
+- ast based syntax checking
+- checking integration test
+- similar to CI as well
 
 Workstation 
 -----------
+Workstation builds also matter
+
+Hardware production processes
+------------------------------
+This is kinda sorta linked to workstations- i have worked at startups who depended on software and hardware builds.  these are much harder at proper scale, but it matters
+
+see bunny houng.  
+
+
+Teams and culture
+------------------
+
+it matters it really does
+
+start with feedback - sprints and retrospectives
+Be aware of your priviledge
+Begin the difficult conversations publically 
+be aware of the likely problems - metoo is just one.
+
+then aim for the culture you want - 
+
+then hire good people
+
 
 Source control, continuous integration
 --------------------------------------
 
+mono repo vs multi repo - really is a tool discussion so discuss the tools
+- ability to identify all our dependnacies
+- fulltest of all (mono is simpler but multi easier to manage)
+- project control files - ownership etc
 
 Security 
 --------
@@ -104,6 +156,18 @@ Pyholodeck
 - 
 
 
+python tricks 
+
+python eco system 
+- error capture and management - rollbar 
+- metrics capture
+- event capture (kpi)
+- bug tracking and so on 
+how it all fits together 
+
+devmanual - ast and how to do syntax checking like pyflake - how to build own rules 
+
+
 1. source control
    5 chars etc.
    but good example of using automated policy enforcement on checkin
@@ -134,20 +198,7 @@ team is face-to-face conversation.
 11. Risk management
 12. have fun, try new things, don't be afraid
 
-* plumbing needed for every project / component
-  - error handling
-  - config
-  - todo
-  - docs
-  - logging
-  - metrics
-  - activity reporting
-  - governance, style, testing, coverage
-  - source code policy
-  - physically distinct DEV, [UAT], PREPROD and PROD
-    UAT is optional if you have automated testing.
-    dont mix preprod and uat cos you will want to release when users are looking
-  - dashboards for can I release, and what is governance ?
+
   
 
 
