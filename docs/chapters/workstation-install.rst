@@ -130,6 +130,8 @@ This Xresources setting will give us a solarized look and feel for the
 terminal, similar to installing the emacs theme
 https://github.com/solarized/xresources/blob/master/Xresources.dark
 
+we can review the excellent http://www.futurile.net/2016/06/15/xterm-256color-themes-molokai-terminal-theme/ for more details
+
 How to get inconsolata??
 THis is a Xwindows font not a terminal font.
 So ... I am going for terminus...
