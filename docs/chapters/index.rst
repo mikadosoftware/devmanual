@@ -236,4 +236,9 @@ http://www.nsaplayset.org
 * some kind of model / mapp for the whole world. where is the money flowing / going?
 
 
+- Hardende images / servers
+https://www.cisecurity.org/services/hardened-virtual-images/
+
+how compare to serverless? 
+
 
