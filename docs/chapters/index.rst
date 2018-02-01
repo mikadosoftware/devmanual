@@ -241,4 +241,7 @@ https://www.cisecurity.org/services/hardened-virtual-images/
 
 how compare to serverless? 
 
+chaos engineering 
+http://principlesofchaos.org
+
 
