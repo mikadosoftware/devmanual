@@ -135,8 +135,25 @@ I often get tripped up by this when running ntpdate manually::
 
   "step-systime: Operation not permitted"
 
-It is a permissions problem, but crops up most often in Jails and related virtualised servers.  The access to the hardware layer is mediated and so even as root on a Jail, you cannot set time - time is fixed on the host OS.
+It is a permissions problem, but crops up most often in Jails and
+related virtualised servers.  The access to the hardware layer is
+mediated and so even as root on a Jail, you cannot set time - time is
+fixed on the host OS.
 
+
+2018 Update
+-----------
+
+So on systems with systemd (which despite the controversy is most of them)
+there is now `timedatectl`::
+
+  timedatectl
+
+  timedatectl list-timezones
+
+  timedatectl set-timezone Europe/London
+
+  
 
 
 Notes

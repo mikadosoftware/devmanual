@@ -58,7 +58,61 @@ the `html_theme`.
 
 
 
-  
+
+Adjusting the templates.
+------------------------
+
+Let's just make a quick change to layout.html in `mytheme`, by say adding
+"Helloworld" to the footer, re run it and - yes we have a working theme.
+
+Now we want to find the `basic` theme - that everything else derives from.
+This is in the site-packages/sphinx/themes/basic directory.
+
+I want to add a nice "next page" link to my docs, to keep the flow of the book
+working.  There is a hint in alabaster::
+
+  {# Disable base theme's top+bottom related navs; we have our own in sidebar #}
+  {%- block relbar1 %}{% endblock %}
+  {%- block relbar2 %}{% endblock %}
+
+So what is relbar1 and 2? Lets see if we can find them in `basic`
+templates.  Yes, in basic/layout.html, there is a relbar `macro` (yes
+Jinja2 has macros, which are just functions), and that is called in 2
+locations relbar1 and 2.
+
+  {%- block relbar1 %}{{ relbar() }}{% endblock %}
+
+So I am going to steal that macro, and use it in my template,
+and adjust it to look right
+
+Progress on this - look for nextprev macro
+We can use access keys as well to flip through pages 
+
+Customisation
+-------------
+
+If we look at a template, we can see a lot of Jinja2 template
+variables, such as `{{ theme_font_size }}`. These are derived from the
+theme.conf settings, where the prefix `theme_` is appended to each
+variable in the conf (.ini style)
+
+These varables are then pushed into the jinja tempaltes of sphinx and
+globally accessible.
+
+We can show this by just adding `{{ theme_font_size }}` to one of our
+tempaltes and we will see '17px'.  Thats how all our conf.py changes
+are available.
+
+Making changes to theme options.
+So all the theme options in `theme.conf`, are then passed into templates
+as theme_ prefix.
+
+You can change the settings using ::
+
+ html_theme_options = {'nosidebar' : True,
+                      'show_related' : True,
+                      'font_size': '32px', <<<<<<<<<<<<< theme_font_size
+ }
 
 Biblio
 ------
