@@ -2,15 +2,11 @@
 The SimpleCTO Dev Manual
 ========================
 
-This is a dev manual - a "how we do things around here" for a software
-development team.  It is growing and under development, pretty much
-constantly.  However from v.1.0.0 it is a viable document to use as a
-starting point for building a new team around, or changing the culture
-of an existing team.
+In the software industry a dev manual is a "how we do things around here" document. It details everything from the right way to format code and how to bring up new servers.
 
-We have multiple "themes", around which discussions, code examples and
-more are written.  Start here and dive in.
+This Dev Manual covers such things, but importantly it is focused on how to form and bring up people - the teams themselves that do the every day coding and development.
 
+it is always a delicate balance - teams must have clear rules and common ideas on the right way to test their code - but it is harder to lay out rules on how to treat one another with respect.  We layout ideas on team formation from FBI hostage negotiation to political activists.  
 
 
 
