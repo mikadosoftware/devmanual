@@ -1,81 +1,212 @@
-========================
-The SimpleCTO Dev Manual
-========================
+=====================
+Overview of DevManual
+=====================
 
-In the software industry a dev manual is a "how we do things around here" document. It details everything from the right way to format code and how to bring up new servers.
+This manual is both a long list of `how-to` chapters, covering ntp
+servers or SQL connections. These are useful, in-the-trenches guides
+to certain necessary software *capabilities*.  Then there are slightly
+higher level chapters - like this one, that take a particular theme,
+and while they link to the underlying how-tos, these are much more
+`why-tos`.
 
-This Dev Manual covers such things, but importantly it is focused on how to form and bring up people - the teams themselves that do the every day coding and development.
+These `why-tos` are an important part of a Dev Manual.
 
-it is always a delicate balance - teams must have clear rules and common ideas on the right way to test their code - but it is harder to lay out rules on how to treat one another with respect.  We layout ideas on team formation from FBI hostage negotiation to political activists.  
-
-
-
-Start reading here
-------------------
-
-.. toctree::
-   :glob:
-
-   entrypoint_chapters/*
+A seperate book, The Software Mind, is an even higher abstract level,
+looking at how these things playout on a bigger scale.  But for now
+we are looking at how to combine docker, scripts, and servers into a
+complete, working engineering team.
 
 
-The whole lot
--------------
+Plumbing
+========
 
-.. toctree::
-   :glob:
+Pretty much every software project of any size needs some basic plumbing,
+things like a good config approach, a means of linting and testing.
 
-   chapters/*   
+Libraries and protocols for 
 
+  - error handling
+  - config
+  - todo
+  - docs
+  - logging
+  - metrics (graphene)
+  - activity reporting
+  - performance metrics
 
-   
-Themes
-======
+One of the major areas of *plumbing* is Continuous Integration / Delivery
 
-1. source to release
+Continuous Integration (CI)
+===========================
 
-2. tech debt and tech assets - code and tests
-
-3. mise en place (workstation, areas of expertise)
- 
-4. Security
-
-5. Documentation and Marketing
-
-6. Culture openness and reviews and picking on people and culture
-   
-7. Progress Not Perfection (YouTube clip)
-
-8. code analysis and performance analusis static (metrics) and other analysis
-   linting, opinionated structure, consistency, pre-commit hooks and useful
-   things.
-   
-   
-9. Automatic project mgmt Risk management, requirements lifecycle (PEP)
-    
-10. have fun, try new things, don't be afraid
+Just as the spread of Memory managed languages (Java, Python, C#) in
+the 90s gave developers a big boost in avoiding productivity traps (ie
+spending hours debugging) Continuous Integratgion is providing the
+same sort of productivity gain fro developers.  There are many
+components to a large build chain across many servers.  I have called
+these Build Services
 
 
-Vitural Environments
---------------------
-* I want a common setup of libraries etc.
-  so we need to define that setup, and requirements.txt seems best appracoh
-  this way i have common libraries across all projects and try v hard not to vary.
+- physically distinct DEV, [UAT], PREPROD and PROD
+    UAT is optional if you have automated testing.
+    dont mix preprod and uat cos you will want to release when users are looking
+- dashboards for can I release, and what is governance ?
+
+Software Governance
+-------------------
+
+There is a software rule of thumb - that code-bases pass through
+'complexity horizons' every couple of orders of magnitude. That is a
+project that was easy to manage at 1,000 LOC cannot be maintained with
+the same approach when its a 10,000 or 100,000 LOC cadebase.
+
+Pieter Levels is a entrpreneur and coder, who found a certain
+noteriety in 2017 by announcing that he was making sales of over
+$2,000 a day, using a single php file with 4000 LOC, with no
+frameworks and libraries.  The Twitter-sphere exploded, quite
+amusingly, by criticising his coding approach and insisting he needed
+some architecture and frameworks.
+
+"What about the frameworks. THink of the frameworks"
+
+Yes, at some point the 'one guy opens up one file' approach is of course going to fail.
+
+How we manage that is software governance. A fairly formal issue at major international companies.
+The goal is to raise the floor everyewhere.
 
   
-    
+Source Quality Improvement
+==========================
 
-Workstation 
-------------
+We can write code, we can write code that gets us to a basic level
+of feature complete-ness.  And then the next fire alarm arrives, the
+next email from the boss, and ... the polish disappears, the extra bit of
+effort to make something long term useful just does not get done.
 
-   
+But that extra piece of effort can pay dividends just for one developer.
+For a team or a whole community, the dividends are endless, just by raising
+the floor of quality.
 
-Source control, continuous integration
---------------------------------------
+In `todo-inator` I have a concept of self-rating each module or function
+with a modern form of P.G. Wodehouse's re-writing of chapters.  This simple mark::
+
+  pgw: **
+
+While this is a subjective measure from the developer, it is a guide to where
+improvements can be made.  And importantly resides in the codebase.
+
+Other measures of code quality can be autoated and should be part
+of every commit cycle.
+
+
+* Code base governance
+
+Style, coverage
+ast based syntax checking
+use of non-standard plumbing
+`Code as a crime scene`
+Static Analysis and raising all boats.
+
+
+* Systems governance
+  
+Governance (dev to prod access etc)
+(As infrastructure as code increases, this sort of thing is more possible)
+* The code is the design - code first for everything
+
+
+
+
+Language and coding quality improvements
+========================================
+
+python innards
+State machines
+
+When is language optimisation too much?
+* There are at least three levels of "providing business value"
+  When we focus on the lowest level with the least multiplier, we
+  lose productivity gains.  THis is too often seen as an excuse for
+  pushing bad code to prod.  It should rather be seen as an excuse to
+  develop code facing the problems of the higher levels - marketing automation
+  can be a huge win.
+  
+
+
+Testing
+=======
+
+This is seperate from source improvemnt
+      
+
+* Source control
+* prmotoing code up
+* having a robot promite code after meeting automatic criteria
+* having automatic testing
+* build servers
+
+
+
+Pyholodeck
+
+- source control
+- build systems
+- automated tests and xml results
+- deployment 
+- monitoring
+- logging
+- metrics
+- performance testing
+- Pre prod and prod
+- cloud evolutions (serverless architecture)
+- no damn features
+- 
+
+
+python eco system 
+- error capture and management - rollbar 
+- metrics capture
+- event capture (kpi)
+- bug tracking and so on 
+how it all fits together 
+
+
+Basic DevOps
+============
+
+SRE and SRE book.
+Start small, keep whole thing in overview
+Use graphite, and just report out, graph 10 important things
+to your team *today*.
+
+Basic Management Reporting
+==========================
+
+* reportlib
+* SLAs and KPIs - keeping ourselves honest
+* focusing upwards to higher levels of leverage
+* avoiding the drumbeat of deadlines, and panic, and agreeing goals based on
+  data / 20% most effective things to fix.
+
+
+
+Esprit d'corp and Team honesty
+==============================
+
+Hiring practises - be part of the team
+Entry hurdles. 
+start with feedback - sprints and retrospectives
+Be aware of your priviledge
+Begin the difficult conversations publically 
+be aware of the likely problems - metoo is just one.
+
+then aim for the culture you want - 
+
+then hire good people
 
 
 Security 
---------
+=========
 
 
 Mission statements 
@@ -83,7 +214,44 @@ https://www.amazon.jobs/principles
 
 * GPG and keypairs
 
+Managing identity and authentication
+------------------------------------
 
+So this is a huge one for me. If i have the below fairly simple
+micro-services structure, how can I keep Authentication and
+Autorisation correct, and simple?
+
+::
+
+  0           ----------          -----------          (-------)
+  |      ---  | www    |   ----   | uService|  ------- (  DB   )
+  ^           | gateway|          |         |          (       )
+              ----------          -----------          (-------)
+  User
+
+
+Lets say this is a really simple service. User logs in and perform
+get /mydetails They should be presented with their profile pulled form
+the DB.  The uService MUST be sure that the person performing the
+request,
+
+We assume that the hosts in the chain remain uncompromised, but we
+cannot assume that the network is anything other than hostile.  So no
+"send the profile in plain text" and of course no "I got a request for
+user xxx on my port so of course it came from the www server that I
+trust."
+
+The challenge.  I want a strong, robust and widely supported method of
+client authentication.  This fundamentally means X509 client
+certificates.  We are going to "Trust the Math".  But once the TLS
+terminates at www, how do we go about re-trusting the whole shooting
+match.  How do we get the uService to know who the user
+
+How do we do TLS between servers.
+
+How do we trust anything?
+
+  
 * Simplest possible
   We shall build a working web app (about three lines, honest).
   Build it, test it, deploy it to a location locally, and log it.
@@ -111,55 +279,45 @@ https://www.amazon.jobs/principles
 * CTO dashboard, mission control centre
 * bug tracking, feature development
 
+  
+Workstation 
+-----------
 
-===================
-The Dev Manual
-===================
-
-
-The manual 
-==========
-
-"How are things developed around here, and why."
--------------------------------------------------
-
-This is a developers manual, constructed as a companion
-piece to `The Software Mind` book. 
+Workstation builds also matter
 
 
-* The code is the design - code first for everything
-  Infrastructure as a Service
-  Softwre defined networking
+Hardware production processes
+------------------------------
 
-* Code as a crime scene
-  Static Analysis and raising all boats.
+This is kinda sorta linked to workstations- i have worked at startups
+who depended on software and hardware builds.  these are much harder
+at proper scale, but it matters
 
-* Seeing every beat of the corporate body.
-  Dashboards, newspapers of the data rich world - making it easy to understand
+see bunny houng.  
+
+
+
+Project and Programme management
+--------------------------------
+
+It if ain't got a ticket dont work on it
+If it ain't possible to rollup tickets you dont know where you are going
+A backlog out of context is just a horror
+There is nothing wrong with top-down design (side??)
+
+CTO dashboards and Business Process Dashboards
+----------------------------------------------
+
+Dashboards matter
+The basics of code quality can be in dashboard.
+The basics of production health can be in dashboard
+Putting a business process into dashboard is powerful - use Graphite and "light beam trackers"
 
   
-* Source control
-* prmotoing code up
-* having a robot promite code after meeting automatic criteria
-* having automatic testing
-* build servers
-*
 
 
-Pyholodeck
 
-- source control
-- build systems
-- automated tests and xml results
-- deployment 
-- monitoring
-- logging
-- metrics
-- performance testing
-- Pre prod and prod
-- cloud evolutions (serverless architecture)
-- no damn features
-- 
+devmanual - ast and how to do syntax checking like pyflake - how to build own rules 
 
 
 1. source control
@@ -174,6 +332,7 @@ Pyholodeck
 conveying information to and within a development
 team is face-to-face conversation.
    """
+   
    Ya do need to write down the discussion.
    written Proof overcomes authority problems
     it is also way to get everyone discussing
@@ -192,20 +351,7 @@ team is face-to-face conversation.
 11. Risk management
 12. have fun, try new things, don't be afraid
 
-* plumbing needed for every project / component
-  - error handling
-  - config
-  - todo
-  - docs
-  - logging
-  - metrics
-  - activity reporting
-  - governance, style, testing, coverage
-  - source code policy
-  - physically distinct DEV, [UAT], PREPROD and PROD
-    UAT is optional if you have automated testing.
-    dont mix preprod and uat cos you will want to release when users are looking
-  - dashboards for can I release, and what is governance ?
+
   
 
 
@@ -242,5 +388,13 @@ http://www.nsaplayset.org
 * also want, wars, trade, shipping, energy, employment, poverty, investment etc.
 * some kind of model / mapp for the whole world. where is the money flowing / going?
 
+
+- Hardende images / servers
+https://www.cisecurity.org/services/hardened-virtual-images/
+
+how compare to serverless? 
+
+chaos engineering 
+http://principlesofchaos.org
 
 
