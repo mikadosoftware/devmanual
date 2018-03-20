@@ -9,3 +9,13 @@ https://www.b-list.org/weblog/2018/feb/11/usernames/
 http://habitatchronicles.com/2008/10/the-tripartite-identity-pattern/
 unicode handling in python
 https://docs.python.org/2/library/unicodedata.html
+
+
+JWT v cookies vs stateless vs etc
+
+https://news.ycombinator.com/item?id=16517412
+
+ultimately you cannot do stateless 
+- don't store state on client (see tpateck youtube)
+- similar problem trusting requests from internal servers but could use ssh tls
+- 
