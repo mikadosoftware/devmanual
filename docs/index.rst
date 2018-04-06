@@ -182,6 +182,12 @@ Start small, keep whole thing in overview
 Use graphite, and just report out, graph 10 important things
 to your team *today*.
 
+
+time and docker
+https://unix.stackexchange.com/questions/384971/whats-the-difference-between-localtime-and-timezone-files
+
+etc/localtime tells us how to handle 
+
 Basic Management Reporting
 ==========================
 
@@ -390,6 +396,16 @@ at proper scale, but it matters
 see bunny houng.  
 
 
+Working conditions
+
+Overtime is bad
+http://www.phy6.org/stargaze/Lhipprc2.htm
+
+risk management or project management
+
+office space 
+
+
 Links
 =====
 package management
@@ -426,4 +442,31 @@ how compare to serverless?
 chaos engineering 
 http://principlesofchaos.org
 
+
+KISS
+http://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html
+there is simple, and there is too simple to easily manage and monitor. 
+
+
+pentesting and adversarial security
+https://www.trailofbits.com
+black hat python
+the simple ones still work
+AES based oracle 
+
+
+Software development methodologies
+https://zwischenzugs.com/2017/10/15/my-20-year-experience-of-software-development-methodologies/
+
+
+You are not a programmer
+product engineers not software engineers 
+https://blog.intercom.com/run-less-software/
+Three circles of leverage
+
+Future
+
+the great cyber security rewrite(hospital and pumping stations)
+the great project management model - tube of water at real time scale
+the great company shrinkage - coase
 

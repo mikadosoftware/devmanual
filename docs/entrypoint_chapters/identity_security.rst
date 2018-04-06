@@ -19,3 +19,12 @@ ultimately you cannot do stateless
 - don't store state on client (see tpateck youtube)
 - similar problem trusting requests from internal servers but could use ssh tls
 - 
+
+
+Getting the basics right
+
+http://latacora.singles/2018/04/03/cryptographic-right-answers.html
+
+https://www.crypto101.io
+
+
