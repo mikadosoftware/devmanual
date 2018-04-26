@@ -470,3 +470,18 @@ the great cyber security rewrite(hospital and pumping stations)
 the great project management model - tube of water at real time scale
 the great company shrinkage - coase
 
+
+https://allarsblog.com/2018/03/16/confessions-of-an-unreal-engine-4-engineering-firefighter/
+
+
+defence at scale
+https://brandur.org/idempotency-keys
+
+
+being better developer
+https://news.ycombinator.com/item?id=16863591
+
+i don't agree really - there is two kinds - being a master of anything is mastery over self (miyazoko tea master) or specialisation is for insects.  or rather you need experience of all the tools 
+
+i suspect he is just complaining that someone is hammering in a nail with a hammer, then a screwdriver, then a wrench ...
+
