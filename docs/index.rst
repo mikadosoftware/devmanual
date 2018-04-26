@@ -2,6 +2,11 @@
 Overview of DevManual
 =====================
 
+In software world the "how to" has a long and venerable history.
+And in a well run software team the various practises have a mutually
+self re-enfircing effect.  The Dev Manual gives you a set of valuable
+practises 
+
 How to build and run a software *team* and the software *processes*
 and technology involved.
 
@@ -183,10 +188,7 @@ Use graphite, and just report out, graph 10 important things
 to your team *today*.
 
 
-time and docker
-https://unix.stackexchange.com/questions/384971/whats-the-difference-between-localtime-and-timezone-files
-
-etc/localtime tells us how to handle 
+inline :doc:`Managing time in docker containers </chapters/time_in_docker>`
 
 Basic Management Reporting
 ==========================
