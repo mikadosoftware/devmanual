@@ -2,13 +2,19 @@
 Overview of DevManual
 =====================
 
-In software world the "how to" has a long and venerable history.
-And in a well run software team the various practises have a mutually
-self re-enfircing effect.  The Dev Manual gives you a set of valuable
-practises 
+This book dives into the nitty-gritty of building and running a
+software *team*.  It takes a combination of both the hard technical
+skills, and the soft skills of human inter-personal realtionships and
+trust to make an effective team.
 
-How to build and run a software *team* and the software *processes*
-and technology involved.
+This book is a guide for how to smooth the path from the realtively
+easy hard skills to the squishier and much more impactful soft skills.
+
+It focuses heavily on the technical side, because there is a lot more of that
+that can go wrong. Its rather like bootcamp in the army. WIthout the basics of fitness its ahrd to do the rest. 
+
+Middle ground matters - good management skills make a vital difference
+Hostile spaces is easy or impossible, but middle ground can be fixed and will see changes as per programmable company
 
 This manual is both a long list of `how-to` chapters, covering ntp
 servers or SQL connections. These are useful, in-the-trenches guides
@@ -283,6 +289,17 @@ Workstation
 
 Workstation builds also matter, but my preference now is local docker
 
+
+Soft Skills
+-----------
+
+* Culture, and hostile cultures
+* trust, safe space, I dont know
+* learning
+* lunch
+* Keep on in good faith
+* Google HR managemenet
+* management fixes are the middle ground - 
 
 
 
