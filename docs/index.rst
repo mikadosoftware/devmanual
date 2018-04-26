@@ -2,19 +2,22 @@
 Overview of DevManual
 =====================
 
-This book dives into the nitty-gritty of building and running a
-software *team*.  It takes a combination of both the hard technical
-skills, and the soft skills of human inter-personal realtionships and
-trust to make an effective team.
+Software is *hard*.  And it's getting harder.  As Software starts
+to eat more of the world, then the stakes get higher - and the cost of
+mistakes become more traumatic, and the rewards become sky-high.
 
-This book is a guide for how to smooth the path from the realtively
-easy hard skills to the squishier and much more impactful soft skills.
+This book focuses on the ground level foundations of desigining,
+building and running software - from a SoHo office to the vast scales of
+Silicon Valley tech giants, all development processes have similar cores.
 
-It focuses heavily on the technical side, because there is a lot more of that
-that can go wrong. Its rather like bootcamp in the army. WIthout the basics of fitness its ahrd to do the rest. 
+Successful software is *partly* a technical endeavour. Get that wrong
+and nothing else will go right.  But the hard-technical stuff is 20%
+of good software - the other 80% shades into softer human skills, good
+and bad "management practises" and as we shall see, into national and
+even global politics.
 
-Middle ground matters - good management skills make a vital difference
-Hostile spaces is easy or impossible, but middle ground can be fixed and will see changes as per programmable company
+Format
+======
 
 This manual is both a long list of `how-to` chapters, covering ntp
 servers or SQL connections. These are useful, in-the-trenches guides
@@ -30,14 +33,20 @@ looking at how these things playout on a bigger scale.  But for now
 we are looking at how to combine docker, scripts, and servers into a
 complete, working engineering team.
 
+The software behind this Dev Manual is available as Free or Open
+Source Software, under a permissive license, and all the third-party
+software used as building blocks are chosen for similar licenses.
+
+Please note that the examples and frameworks in this book are
+specific to the Python Language. This is simply because I am most
+familiar with that.  However *all* the lessons drawn can be applied
+to any modern language.  
 
 Plumbing
 ========
 
-Pretty much every software project of any size needs some basic plumbing,
+Every software project of any size needs some basic plumbing,
 things like a good config approach, a means of linting and testing.
-
-Libraries and protocols for 
 
   - error handling
   - config
@@ -500,7 +509,161 @@ https://brandur.org/idempotency-keys
 being better developer
 https://news.ycombinator.com/item?id=16863591
 
-i don't agree really - there is two kinds - being a master of anything is mastery over self (miyazoko tea master) or specialisation is for insects.  or rather you need experience of all the tools 
+i don't agree really - there is two kinds - being a master of anything
+is mastery over self (miyazoko tea master) or specialisation is for
+insects.  or rather you need experience of all the tools
 
-i suspect he is just complaining that someone is hammering in a nail with a hammer, then a screwdriver, then a wrench ...
+i suspect he is just complaining that someone is hammering in a nail
+with a hammer, then a screwdriver, then a wrench ...
+
+
+Project Management
+------------------
+agile_estimation.rst
+SoHo1.rst
+ssl-tls.rst
+themes.rst
+urljoin.rst
+veryquickMBA.rst
+
+
+Plumbing
+---------
+backup_strategy.rst
+browser-automation.rst
+centralised_logging.rst
+ch1 security.rst
+continuous_integration.rst
+commit-messages.rst
+keypairs.rst
+cookie_testing.rst #security
+gh-pages.rst
+git.rst
+logging.rst
+metricsAndTracing.rst
+microservices.rst
+network_monitor.rst
+network-testing.rst
+packaging.rst
+pep8.rst
+personal_security.rst
+pki.rst
+pkis.rst
+nginx.rst
+nonblockwsgi.rst
+wsgi_simple_app.rst
+wsgi_test.rst
+wifi.rst
+workstation-install.rst
+workstation.rst
+writing_docs.rst
+webdev.rst
+webtest.rst
+well-behaved-services.rst
+using_burpsuite.rst
+using_github__ssh.rst
+podcast.rst
+postgres-cheatsheet.rst
+project_mgmt.rst
+pxeboot.rst
+python-dev.rat
+python_warts.rst
+randomness.py
+random.rst
+reporting.rst
+routes.rst
+rssso.rst
+samba.rst
+securityoverview.rst
+sed_sort.rst
+seo-case-study.rst
+serverless
+software-capital.rst
+software-estimation.rst
+
+
+Foundational dependancies (like 12 factor)
+------------------------------------------
+databases.rst
+DNS.rst
+email.rst??
+
+Management / Governance
+-----------------------
+application-performance-management.rst
+architectural_overview.rst
+basic_seo.rst
+statistics.rst
+systemd.rst
+technical_capabilities.rst
+terminal.rst
+testing.rst
+text_mining.rst
+source-control.rst
+sphinx.rst
+
+
+Reporting, todo
+---------------
+aspell.rst
+mikado-doc-manager.rst
+
+
+AWS and old school
+------------------
+aws_dns.rst
+cabling_hardware.rst
+filesharing.rst
+freewifi.rst
+highAvailability.rst
+laptop.rst
+loadbalancing.rst
+mail-handling.rst
+virtualbox.rst
+virtualisation.rst
+usbdisk.rst
+
+
+Docker AWS
+----------
+time_in_docker.rst
+time.rst
+
+
+Tech depths
+-----------
+corefile_debugging.rst
+futuretech.rst
+
+UI
+--
+UIDesign.rst
+ajax.rst
+bootstrap_index.rst
+building_bootstrap.rst
+coloursfortheweb.rst
+lessrest.rst
+
+Profesional Stuff you should know 
+---------------------------------
+bothPythons.rst
+emacs.rst
+generative.rst
+- bash
+- functional programming and coding tests and graph 
+interviews_algorithms.rst
+jupyter.rst
+kernel_and_world.rst
+misc.rst
+
+
+Overview
+--------
+manuallayout.rst
+
+
+
+
+
+
 
