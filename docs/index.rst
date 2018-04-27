@@ -2,6 +2,11 @@
 Overview of DevManual
 =====================
 
+..
+
+  Every H1 becomes entrypoint chapter, every chapter is included under H1
+  Also intersphnx with softwqre mind
+  
 Software is *hard*.  And it's getting harder.  As Software starts
 to eat more of the world, then the stakes get higher - and the cost of
 mistakes become more traumatic, and the rewards become sky-high.
@@ -47,7 +52,10 @@ Plumbing
 
 Every software project of any size needs some basic plumbing,
 things like a good config approach, a means of linting and testing.
+These things pay dividends throughout the lifetime of a project,
+making the simple easy and the hard doable.  WIthout it, you are in trouble.
 
+  
   - error handling
   - config
   - todo
@@ -56,10 +64,106 @@ things like a good config approach, a means of linting and testing.
   - metrics (graphene)
   - activity reporting
   - performance metrics
+  - :doc:`chapters/backup_strategy`
+  - :doc:`chapters/centralised_logging`
+  - :doc:`chapters/logging`
+  - :doc:`chapters/metricsAndTracing`
 
-One of the major areas of *plumbing* is Continuous Integration / Delivery
+Architecture and airy-fairy stuff
+=================================
+
+Serverless
+Abstraction
+Rick Hickey on simple vs easy
+  How does a bug get into production? It is written
+  And it passes the tests.  So if you have tests, and you refactor, how
+  do you prevent that bug?
+  Need to be able to *reason* about code. Which is why 900 npm packages worry me.
+  
+  
+
+Skills for individual developer
+===============================
+
+* Source control
+* ALgorithm design, interview questions
+* Salary negotiation, presenting a interface to business and collegues (dont call yourself a programmer)
+* :doc:`chapters/commit-messages`
+* :doc:`chapters/keypairs`
 
 
+
+
+* :doc:`chapters/git`
+* 
+    
+    
+Security
+========
+
+* :doc:`chapters/ch1 security`
+  
+Testing
+=======
+
+- :doc:`chapters/browser-automation`
+
+- :doc:`chapters/cookie_testing` #security
+- :doc:`chapters/gh-pages`
+- :doc:`chapters/microservices`
+- :doc:`chapters/network_monitor`
+- :doc:`chapters/network-testing`
+- :doc:`chapters/packaging`
+- :doc:`chapters/pep8`
+- :doc:`chapters/personal_security`
+- :doc:`chapters/pki`
+- :doc:`chapters/pkis`
+- :doc:`chapters/nginx`
+- :doc:`chapters/nonblockwsgi`
+- :doc:`chapters/wsgi_simple_app`
+- :doc:`chapters/wsgi_test`
+- :doc:`chapters/wifi`
+- :doc:`chapters/workstation-install`
+- :doc:`chapters/workstation`
+- :doc:`chapters/writing_docs`
+- :doc:`chapters/webdev`
+- :doc:`chapters/webtest`
+- :doc:`chapters/well-behaved-services`
+- :doc:`chapters/using_burpsuite`
+- :doc:`chapters/using_github__ssh`
+- :doc:`chapters/podcast`
+- :doc:`chapters/postgres-cheatsheet`
+- :doc:`chapters/pxeboot`
+- :doc:`chapters/python_warts`
+- :doc:`chapters/random`
+- :doc:`chapters/reporting`
+- :doc:`chapters/routes`
+- :doc:`chapters/rssso`
+- :doc:`chapters/samba`
+- :doc:`chapters/securityoverview`
+- :doc:`chapters/sed_sort`
+- :doc:`chapters/seo-case-study`
+
+
+Continuous Integration (CI)
+===========================
+
+Just as the spread of Memory managed languages (Java, Python, C#) in
+the 90s gave developers a big boost in avoiding productivity traps (ie
+spending hours debugging) Continuous Integratgion is providing the
+same sort of productivity gain fro developers.  There are many
+components to a large build chain across many servers.  I have called
+these Build Services
+
+
+- physically distinct DEV, [UAT], PREPROD and PROD
+    UAT is optional if you have automated testing.
+    dont mix preprod and uat cos you will want to release when users are looking
+- dashboards for can I release, and what is governance ?
+
+- :doc:`chapters/continuous_integration`
+- :doc:`chapters/using_docker`
+ 
 Software Governance
 -------------------
 
@@ -77,32 +181,35 @@ some architecture and frameworks.
 
 .. pull-quote::
 
-   "What about the frameworks. THink of the frameworks"
+   "What about the frameworks. Think of the frameworks"
 
-Yes, at some point the 'one guy opens up one file' approach is of course going to fail.
+Yes, at some point the 'one guy opens up one file' approach is of
+course going to fail.
 
 How we manage that is *software governance*.  The goal of software
 governance is to raise the floor everywhere.
 
-We can write code, we can write code that gets us to a basic level
-of feature complete-ness.  And then the next fire alarm arrives, the
-next email from the boss, and ... the polish disappears, the extra bit of
+We can write code, we can write code that gets us to a basic level of
+feature complete-ness.  And then the next fire alarm arrives, the next
+email from the boss, and ... the polish disappears, the extra bit of
 effort to make something long term useful just does not get done.
 
-But that extra piece of effort can pay dividends just for one developer.
-For a team or a whole community, the dividends are endless, just by raising
-the floor of quality.
+But that extra piece of effort can pay dividends just for one
+developer.  For a team or a whole community, the dividends are
+endless, just by raising the floor of quality.
 
-In `todo-inator` I have a concept of self-rating each module or function
-with a modern form of P.G. Wodehouse's re-writing of chapters.  This simple mark::
+In `todo-inator` I have a concept of self-rating each module or
+function with a modern form of P.G. Wodehouse's re-writing of
+chapters.  This simple mark::
 
   pgw: **
 
-While this is a subjective measure from the developer, it is a guide to where
-improvements can be made.  And importantly resides in the codebase.
+While this is a subjective measure from the developer, it is a guide
+to where improvements can be made.  And importantly resides in the
+codebase.
 
-Other measures of code quality can be autoated and should be part
-of every commit cycle.
+Other measures of code quality can be autoated and should be part of
+every commit cycle.
 
 
 Code base governance
@@ -119,8 +226,8 @@ ast and how to do syntax checking like pyflake - how to build own rules
 Systems governance
 ------------------
 
-Governance (dev to prod access etc)
-(As infrastructure as code increases, this sort of thing is more possible)
+Governance (dev to prod access etc) (As infrastructure as code
+increases, this sort of thing is more possible)
 
 
 The code is the design - code first for everything
@@ -158,21 +265,6 @@ Discuss and review common architectural choices
 * containerisation
 * REST API
 
-Continuous Integration (CI)
-===========================
-
-Just as the spread of Memory managed languages (Java, Python, C#) in
-the 90s gave developers a big boost in avoiding productivity traps (ie
-spending hours debugging) Continuous Integratgion is providing the
-same sort of productivity gain fro developers.  There are many
-components to a large build chain across many servers.  I have called
-these Build Services
-
-
-- physically distinct DEV, [UAT], PREPROD and PROD
-    UAT is optional if you have automated testing.
-    dont mix preprod and uat cos you will want to release when users are looking
-- dashboards for can I release, and what is governance ?
 
 
 Testing
@@ -203,7 +295,7 @@ Use graphite, and just report out, graph 10 important things
 to your team *today*.
 
 
-inline :doc:`Managing time in docker containers </chapters/time_in_docker>`
+inline :doc:`chapters/Managing time in docker containers </chapters/time_in_docker>`
 
 Basic Management Reporting
 ==========================
@@ -312,6 +404,17 @@ Soft Skills
 
 
 
+
+
+
+
+Business and Software
+=====================
+serverless
+- :doc:`chapters/software-capital`
+- :doc:`chapters/software-estimation`
+- :doc:`chapters/project_mgmt`
+
 Project and Programme management
 --------------------------------
 
@@ -320,8 +423,6 @@ If it ain't possible to rollup tickets you dont know where you are going
 A backlog out of context is just a horror
 There is nothing wrong with top-down design (side??)
 Backlog for the whole company
-
-
 
 CTO dashboards and Business Process Dashboards
 ----------------------------------------------
@@ -519,147 +620,94 @@ with a hammer, then a screwdriver, then a wrench ...
 
 Project Management
 ------------------
-agile_estimation.rst
-SoHo1.rst
-ssl-tls.rst
-themes.rst
-urljoin.rst
-veryquickMBA.rst
+- :doc:`chapters/agile_estimation`
+- :doc:`chapters/SoHo1`
+- :doc:`chapters/ssl-tls`
+- :doc:`chapters/themes`
+- :doc:`chapters/urljoin`
+- :doc:`chapters/veryquickMBA`
 
 
-Plumbing
----------
-backup_strategy.rst
-browser-automation.rst
-centralised_logging.rst
-ch1 security.rst
-continuous_integration.rst
-commit-messages.rst
-keypairs.rst
-cookie_testing.rst #security
-gh-pages.rst
-git.rst
-logging.rst
-metricsAndTracing.rst
-microservices.rst
-network_monitor.rst
-network-testing.rst
-packaging.rst
-pep8.rst
-personal_security.rst
-pki.rst
-pkis.rst
-nginx.rst
-nonblockwsgi.rst
-wsgi_simple_app.rst
-wsgi_test.rst
-wifi.rst
-workstation-install.rst
-workstation.rst
-writing_docs.rst
-webdev.rst
-webtest.rst
-well-behaved-services.rst
-using_burpsuite.rst
-using_github__ssh.rst
-podcast.rst
-postgres-cheatsheet.rst
-project_mgmt.rst
-pxeboot.rst
-python-dev.rat
-python_warts.rst
-randomness.py
-random.rst
-reporting.rst
-routes.rst
-rssso.rst
-samba.rst
-securityoverview.rst
-sed_sort.rst
-seo-case-study.rst
-serverless
-software-capital.rst
-software-estimation.rst
 
 
 Foundational dependancies (like 12 factor)
 ------------------------------------------
-databases.rst
-DNS.rst
-email.rst??
+- :doc:`chapters/databases`
+- :doc:`chapters/DNS`
+- :doc:`chapters/email`??
 
 Management / Governance
 -----------------------
-application-performance-management.rst
-architectural_overview.rst
-basic_seo.rst
-statistics.rst
-systemd.rst
-technical_capabilities.rst
-terminal.rst
-testing.rst
-text_mining.rst
-source-control.rst
-sphinx.rst
+- :doc:`chapters/application-performance-management`
+- :doc:`chapters/architectural_overview`
+- :doc:`chapters/basic_seo`
+- :doc:`chapters/statistics`
+- :doc:`chapters/systemd`
+- :doc:`chapters/technical_capabilities`
+- :doc:`chapters/terminal`
+- :doc:`chapters/testing`
+- :doc:`chapters/text_mining`
+- :doc:`chapters/source-control`
+- :doc:`chapters/sphinx`
 
 
 Reporting, todo
 ---------------
-aspell.rst
-mikado-doc-manager.rst
+- :doc:`chapters/aspell`
+- :doc:`chapters/mikado-doc-manager`
 
 
 AWS and old school
 ------------------
-aws_dns.rst
-cabling_hardware.rst
-filesharing.rst
-freewifi.rst
-highAvailability.rst
-laptop.rst
-loadbalancing.rst
-mail-handling.rst
-virtualbox.rst
-virtualisation.rst
-usbdisk.rst
+- :doc:`chapters/aws_dns`
+- :doc:`chapters/cabling_hardware`
+- :doc:`chapters/filesharing`
+- :doc:`chapters/freewifi`
+- :doc:`chapters/highAvailability`
+- :doc:`chapters/laptop`
+- :doc:`chapters/loadbalancing`
+- :doc:`chapters/mail-handling`
+- :doc:`chapters/virtualbox`
+- :doc:`chapters/virtualisation`
+- :doc:`chapters/usbdisk`
 
 
 Docker AWS
 ----------
-time_in_docker.rst
-time.rst
+- :doc:`chapters/time_in_docker`
+- :doc:`chapters/time`
 
 
 Tech depths
 -----------
-corefile_debugging.rst
-futuretech.rst
+- :doc:`chapters/corefile_debugging`
+- :doc:`chapters/futuretech`
 
 UI
 --
-UIDesign.rst
-ajax.rst
-bootstrap_index.rst
-building_bootstrap.rst
-coloursfortheweb.rst
-lessrest.rst
+- :doc:`chapters/UIDesign`
+- :doc:`chapters/ajax`
+- :doc:`chapters/bootstrap_index`
+- :doc:`chapters/building_bootstrap`
+- :doc:`chapters/coloursfortheweb`
+- :doc:`chapters/lessrest`
 
 Profesional Stuff you should know 
 ---------------------------------
-bothPythons.rst
-emacs.rst
-generative.rst
+- :doc:`chapters/bothPythons`
+- :doc:`chapters/emacs`
+- :doc:`chapters/generative`
 - bash
 - functional programming and coding tests and graph 
-interviews_algorithms.rst
-jupyter.rst
-kernel_and_world.rst
-misc.rst
+- :doc:`chapters/interviews_algorithms`
+- :doc:`chapters/jupyter`
+- :doc:`chapters/kernel_and_world`
+- :doc:`chapters/misc`
 
 
 Overview
 --------
-manuallayout.rst
+- :doc:`chapters/manuallayout`
 
 
 
