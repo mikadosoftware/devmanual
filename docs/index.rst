@@ -79,7 +79,11 @@ Rick Hickey on simple vs easy
   And it passes the tests.  So if you have tests, and you refactor, how
   do you prevent that bug?
   Need to be able to *reason* about code. Which is why 900 npm packages worry me.
-  
+
+  Tests are *regression* tests. They are written so that having written some code to
+  do a thing, you dont later on screw it up and it stops doing that thing.  Tests are
+  almost by defintion, backwards looking.
+
   
 
 Skills for individual developer
@@ -265,6 +269,15 @@ Discuss and review common architectural choices
 * containerisation
 * REST API
 
+
+WSGI Server
+===========
+
+WSGI is an amazingly cool ... idea.  It just reminds you that *all* web servers are doing
+is passing text strings up and down a request/response cycle.  Remeber CGI? Its still that
+simple.
+
+(all WSGI stuff in here)
 
 
 Testing
