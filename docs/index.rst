@@ -89,10 +89,9 @@ Rick Hickey on simple vs easy
 Skills for individual developer
 ===============================
 
-* Source control
+* :doc:`sourcecontrol`
 * ALgorithm design, interview questions
 * Salary negotiation, presenting a interface to business and collegues (dont call yourself a programmer)
-* :doc:`chapters/commit-messages`
 * :doc:`chapters/keypairs`
 
 
