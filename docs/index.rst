@@ -7,17 +7,18 @@ Overview of DevManual
   Every H1 becomes entrypoint chapter, every chapter is included under H1
   Also intersphnx with softwqre mind
   
-Software is *hard*.  And it's getting harder.  As Software starts
-to eat more of the world, then the stakes get higher - and the cost of
-mistakes become more traumatic, and the rewards become sky-high.
+As Software starts to eat more of the world, then the stakes get
+higher - and the cost of mistakes become more traumatic, and the
+rewards become sky-high.
 
 This book focuses on the ground level foundations of desigining,
-building and running software - from a SoHo office to the vast scales of
-Silicon Valley tech giants, all development processes have similar cores.
+building and running software - because, from a SoHo office to the
+vast scales of Silicon Valley tech giants, all development processes
+have similar cores.
 
 Successful software is *partly* a technical endeavour. Get that wrong
-and nothing else will go right.  But the hard-technical stuff is 20%
-of good software - the other 80% shades into softer human skills, good
+and nothing else will go right.  But the hard-technical stuff is say 50%
+of good software - the other 50% shades into softer human skills, good
 and bad "management practises" and as we shall see, into national and
 even global politics.
 
@@ -47,6 +48,20 @@ specific to the Python Language. This is simply because I am most
 familiar with that.  However *all* the lessons drawn can be applied
 to any modern language.  
 
+Simplicity, and reasoning
+=========================
+
+Our golden goal is to keep things simple.
+
+Simple breaks in simple ways, simple is simple to extned and improve,
+
+We must therefore be able to dig down into implementation and find solutions.
+
+Python is a good enough choice ... for now.  The future does include
+much much more type safety, so the computer can do a lot of reasoning
+for us.
+See rich hickey on simple/easy
+
 Plumbing
 ========
 
@@ -56,21 +71,18 @@ These things pay dividends throughout the lifetime of a project,
 making the simple easy and the hard doable.  WIthout it, you are in trouble.
 
   
-  - error handling
-  - config
-  - todo
-  - docs
-  - logging
-  - metrics (graphene)
-  - activity reporting
-  - performance metrics
+  - :doc:`chapters/errors`
+  - :doc:`chapters/config`
+  - :docs:`chapters/sphinx`
+  - :docs:`chapters/metrics`
   - :doc:`chapters/backup_strategy`
-  - :doc:`chapters/centralised_logging`
   - :doc:`chapters/logging`
   - :doc:`chapters/metricsAndTracing`
 
 Architecture and airy-fairy stuff
 =================================
+
+
 
 Serverless
 Abstraction
@@ -89,8 +101,8 @@ Rick Hickey on simple vs easy
 Skills for individual developer
 ===============================
 
-* :doc:`sourcecontrol`
-* ALgorithm design, interview questions
+* :doc:`chapters/sourcecontrol`
+* :doc:`chapters/interviewQuestions`
 * Salary negotiation, presenting a interface to business and collegues (dont call yourself a programmer)
 * :doc:`chapters/keypairs`
 
@@ -292,7 +304,7 @@ This is seperate from source improvemnt
 * build servers
 
 python eco system 
-- error capture and management - rollbar 
+
 - metrics capture
 - event capture (kpi)
 - bug tracking and so on 
