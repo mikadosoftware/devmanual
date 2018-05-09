@@ -1,3 +1,20 @@
+=====================
+Interview Questions
+=====================
+
+These are called interview questions but really they are ... fundamentals
+you have to know but wont use daily. They are things that if you know about you wont go down horribly wrong roads
+
+
+* Big O notation
+
+  * caches
+  * hashes
+  * pre-sorting and indexes
+  * search problems
+  * graphs
+  *
+  
 =================
 Coding interviews
 =================
