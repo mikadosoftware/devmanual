@@ -8,3 +8,10 @@ https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your
 
 Hardening and golden docker 
 https://support.rackspace.com/how-to/linux-server-security-best-practices/
+
+Attack tools
+https://www.schneier.com/blog/archives/2014/05/the_nsa_is_not_.html
+
+art 
+http://www.dirk-loss.de/sshvis/drunken_bishop.pdf
+
