@@ -1,4 +1,29 @@
-===================
+=================
+Source Control
+=================
+
+History
+=======
+
+BAML vs Sourcesafe vs SVN vs CVS
+
+
+Basic practises
+
+* add / commit
+* Aliases
+
+Different Flows for diffent folks
+---------------------------------
+  
+* githubflow vs gitflow vs gits own approach
+* git rebase and at-risk branches
+  
+Good Commit Messages
+--------------------
+
+
+
 Git Commit messages
 ===================
 

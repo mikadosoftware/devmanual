@@ -2,13 +2,28 @@
 Overview of DevManual
 =====================
 
-In software world the "how to" has a long and venerable history.
-And in a well run software team the various practises have a mutually
-self re-enfircing effect.  The Dev Manual gives you a set of valuable
-practises 
+..
 
-How to build and run a software *team* and the software *processes*
-and technology involved.
+  Every H1 becomes entrypoint chapter, every chapter is included under H1
+  Also intersphnx with softwqre mind
+  
+As Software starts to eat more of the world, then the stakes get
+higher - and the cost of mistakes become more traumatic, and the
+rewards become sky-high.
+
+This book focuses on the ground level foundations of desigining,
+building and running software - because, from a SoHo office to the
+vast scales of Silicon Valley tech giants, all development processes
+have similar cores.
+
+Successful software is *partly* a technical endeavour. Get that wrong
+and nothing else will go right.  But the hard-technical stuff is say 50%
+of good software - the other 50% shades into softer human skills, good
+and bad "management practises" and as we shall see, into national and
+even global politics.
+
+Format
+======
 
 This manual is both a long list of `how-to` chapters, covering ntp
 servers or SQL connections. These are useful, in-the-trenches guides
@@ -24,27 +39,146 @@ looking at how these things playout on a bigger scale.  But for now
 we are looking at how to combine docker, scripts, and servers into a
 complete, working engineering team.
 
+The software behind this Dev Manual is available as Free or Open
+Source Software, under a permissive license, and all the third-party
+software used as building blocks are chosen for similar licenses.
+
+Please note that the examples and frameworks in this book are
+specific to the Python Language. This is simply because I am most
+familiar with that.  However *all* the lessons drawn can be applied
+to any modern language.  
+
+Simplicity, and reasoning
+=========================
+
+Our golden goal is to keep things simple.
+
+Simple breaks in simple ways, simple is simple to extned and improve,
+
+We must therefore be able to dig down into implementation and find solutions.
+
+Python is a good enough choice ... for now.  The future does include
+much much more type safety, so the computer can do a lot of reasoning
+for us.
+See rich hickey on simple/easy
 
 Plumbing
 ========
 
-Pretty much every software project of any size needs some basic plumbing,
+Every software project of any size needs some basic plumbing,
 things like a good config approach, a means of linting and testing.
+These things pay dividends throughout the lifetime of a project,
+making the simple easy and the hard doable.  WIthout it, you are in trouble.
 
-Libraries and protocols for 
+  
+  - :doc:`chapters/errors`
+  - :doc:`chapters/config`
+  - :docs:`chapters/sphinx`
+  - :docs:`chapters/metrics`
+  - :doc:`chapters/backup_strategy`
+  - :doc:`chapters/logging`
+  - :doc:`chapters/metricsAndTracing`
 
-  - error handling
-  - config
-  - todo
-  - docs
-  - logging
-  - metrics (graphene)
-  - activity reporting
-  - performance metrics
-
-One of the major areas of *plumbing* is Continuous Integration / Delivery
+Architecture and airy-fairy stuff
+=================================
 
 
+
+Serverless
+Abstraction
+Rick Hickey on simple vs easy
+  How does a bug get into production? It is written
+  And it passes the tests.  So if you have tests, and you refactor, how
+  do you prevent that bug?
+  Need to be able to *reason* about code. Which is why 900 npm packages worry me.
+
+  Tests are *regression* tests. They are written so that having written some code to
+  do a thing, you dont later on screw it up and it stops doing that thing.  Tests are
+  almost by defintion, backwards looking.
+
+  
+
+Skills for individual developer
+===============================
+
+* :doc:`chapters/sourcecontrol`
+* :doc:`chapters/interviewQuestions`
+* Salary negotiation, presenting a interface to business and collegues (dont call yourself a programmer)
+* :doc:`chapters/keypairs`
+
+
+
+
+* :doc:`chapters/git`
+* 
+    
+    
+Security
+========
+
+* :doc:`chapters/ch1 security`
+  
+Testing
+=======
+
+- :doc:`chapters/browser-automation`
+
+- :doc:`chapters/cookie_testing` #security
+- :doc:`chapters/gh-pages`
+- :doc:`chapters/microservices`
+- :doc:`chapters/network_monitor`
+- :doc:`chapters/network-testing`
+- :doc:`chapters/packaging`
+- :doc:`chapters/pep8`
+- :doc:`chapters/personal_security`
+- :doc:`chapters/pki`
+- :doc:`chapters/pkis`
+- :doc:`chapters/nginx`
+- :doc:`chapters/nonblockwsgi`
+- :doc:`chapters/wsgi_simple_app`
+- :doc:`chapters/wsgi_test`
+- :doc:`chapters/wifi`
+- :doc:`chapters/workstation-install`
+- :doc:`chapters/workstation`
+- :doc:`chapters/writing_docs`
+- :doc:`chapters/webdev`
+- :doc:`chapters/webtest`
+- :doc:`chapters/well-behaved-services`
+- :doc:`chapters/using_burpsuite`
+- :doc:`chapters/using_github__ssh`
+- :doc:`chapters/podcast`
+- :doc:`chapters/postgres-cheatsheet`
+- :doc:`chapters/pxeboot`
+- :doc:`chapters/python_warts`
+- :doc:`chapters/random`
+- :doc:`chapters/reporting`
+- :doc:`chapters/routes`
+- :doc:`chapters/rssso`
+- :doc:`chapters/samba`
+- :doc:`chapters/securityoverview`
+- :doc:`chapters/sed_sort`
+- :doc:`chapters/seo-case-study`
+
+
+Continuous Integration (CI)
+===========================
+
+Just as the spread of Memory managed languages (Java, Python, C#) in
+the 90s gave developers a big boost in avoiding productivity traps (ie
+spending hours debugging) Continuous Integratgion is providing the
+same sort of productivity gain fro developers.  There are many
+components to a large build chain across many servers.  I have called
+these Build Services
+
+
+- physically distinct DEV, [UAT], PREPROD and PROD
+    UAT is optional if you have automated testing.
+    dont mix preprod and uat cos you will want to release when users are looking
+- dashboards for can I release, and what is governance ?
+
+- :doc:`chapters/continuous_integration`
+- :doc:`chapters/using_docker`
+ 
 Software Governance
 -------------------
 
@@ -62,32 +196,35 @@ some architecture and frameworks.
 
 .. pull-quote::
 
-   "What about the frameworks. THink of the frameworks"
+   "What about the frameworks. Think of the frameworks"
 
-Yes, at some point the 'one guy opens up one file' approach is of course going to fail.
+Yes, at some point the 'one guy opens up one file' approach is of
+course going to fail.
 
 How we manage that is *software governance*.  The goal of software
 governance is to raise the floor everywhere.
 
-We can write code, we can write code that gets us to a basic level
-of feature complete-ness.  And then the next fire alarm arrives, the
-next email from the boss, and ... the polish disappears, the extra bit of
+We can write code, we can write code that gets us to a basic level of
+feature complete-ness.  And then the next fire alarm arrives, the next
+email from the boss, and ... the polish disappears, the extra bit of
 effort to make something long term useful just does not get done.
 
-But that extra piece of effort can pay dividends just for one developer.
-For a team or a whole community, the dividends are endless, just by raising
-the floor of quality.
+But that extra piece of effort can pay dividends just for one
+developer.  For a team or a whole community, the dividends are
+endless, just by raising the floor of quality.
 
-In `todo-inator` I have a concept of self-rating each module or function
-with a modern form of P.G. Wodehouse's re-writing of chapters.  This simple mark::
+In `todo-inator` I have a concept of self-rating each module or
+function with a modern form of P.G. Wodehouse's re-writing of
+chapters.  This simple mark::
 
   pgw: **
 
-While this is a subjective measure from the developer, it is a guide to where
-improvements can be made.  And importantly resides in the codebase.
+While this is a subjective measure from the developer, it is a guide
+to where improvements can be made.  And importantly resides in the
+codebase.
 
-Other measures of code quality can be autoated and should be part
-of every commit cycle.
+Other measures of code quality can be autoated and should be part of
+every commit cycle.
 
 
 Code base governance
@@ -104,8 +241,8 @@ ast and how to do syntax checking like pyflake - how to build own rules
 Systems governance
 ------------------
 
-Governance (dev to prod access etc)
-(As infrastructure as code increases, this sort of thing is more possible)
+Governance (dev to prod access etc) (As infrastructure as code
+increases, this sort of thing is more possible)
 
 
 The code is the design - code first for everything
@@ -143,21 +280,15 @@ Discuss and review common architectural choices
 * containerisation
 * REST API
 
-Continuous Integration (CI)
-===========================
 
-Just as the spread of Memory managed languages (Java, Python, C#) in
-the 90s gave developers a big boost in avoiding productivity traps (ie
-spending hours debugging) Continuous Integratgion is providing the
-same sort of productivity gain fro developers.  There are many
-components to a large build chain across many servers.  I have called
-these Build Services
+WSGI Server
+===========
 
+WSGI is an amazingly cool ... idea.  It just reminds you that *all* web servers are doing
+is passing text strings up and down a request/response cycle.  Remeber CGI? Its still that
+simple.
 
-- physically distinct DEV, [UAT], PREPROD and PROD
-    UAT is optional if you have automated testing.
-    dont mix preprod and uat cos you will want to release when users are looking
-- dashboards for can I release, and what is governance ?
+(all WSGI stuff in here)
 
 
 Testing
@@ -173,7 +304,7 @@ This is seperate from source improvemnt
 * build servers
 
 python eco system 
-- error capture and management - rollbar 
+
 - metrics capture
 - event capture (kpi)
 - bug tracking and so on 
@@ -188,7 +319,7 @@ Use graphite, and just report out, graph 10 important things
 to your team *today*.
 
 
-inline :doc:`Managing time in docker containers </chapters/time_in_docker>`
+inline :doc:`chapters/Managing time in docker containers </chapters/time_in_docker>`
 
 Basic Management Reporting
 ==========================
@@ -284,7 +415,29 @@ Workstation
 Workstation builds also matter, but my preference now is local docker
 
 
+Soft Skills
+-----------
 
+* Culture, and hostile cultures
+* trust, safe space, I dont know
+* learning
+* lunch
+* Keep on in good faith
+* Google HR managemenet
+* management fixes are the middle ground - 
+
+
+
+
+
+
+
+Business and Software
+=====================
+serverless
+- :doc:`chapters/software-capital`
+- :doc:`chapters/software-estimation`
+- :doc:`chapters/project_mgmt`
 
 Project and Programme management
 --------------------------------
@@ -294,8 +447,6 @@ If it ain't possible to rollup tickets you dont know where you are going
 A backlog out of context is just a horror
 There is nothing wrong with top-down design (side??)
 Backlog for the whole company
-
-
 
 CTO dashboards and Business Process Dashboards
 ----------------------------------------------
@@ -483,7 +634,108 @@ https://brandur.org/idempotency-keys
 being better developer
 https://news.ycombinator.com/item?id=16863591
 
-i don't agree really - there is two kinds - being a master of anything is mastery over self (miyazoko tea master) or specialisation is for insects.  or rather you need experience of all the tools 
+i don't agree really - there is two kinds - being a master of anything
+is mastery over self (miyazoko tea master) or specialisation is for
+insects.  or rather you need experience of all the tools
 
-i suspect he is just complaining that someone is hammering in a nail with a hammer, then a screwdriver, then a wrench ...
+i suspect he is just complaining that someone is hammering in a nail
+with a hammer, then a screwdriver, then a wrench ...
+
+
+Project Management
+------------------
+- :doc:`chapters/agile_estimation`
+- :doc:`chapters/SoHo1`
+- :doc:`chapters/ssl-tls`
+- :doc:`chapters/themes`
+- :doc:`chapters/urljoin`
+- :doc:`chapters/veryquickMBA`
+
+
+
+
+Foundational dependancies (like 12 factor)
+------------------------------------------
+- :doc:`chapters/databases`
+- :doc:`chapters/DNS`
+- :doc:`chapters/email`??
+
+Management / Governance
+-----------------------
+- :doc:`chapters/application-performance-management`
+- :doc:`chapters/architectural_overview`
+- :doc:`chapters/basic_seo`
+- :doc:`chapters/statistics`
+- :doc:`chapters/systemd`
+- :doc:`chapters/technical_capabilities`
+- :doc:`chapters/terminal`
+- :doc:`chapters/testing`
+- :doc:`chapters/text_mining`
+- :doc:`chapters/source-control`
+- :doc:`chapters/sphinx`
+
+
+Reporting, todo
+---------------
+- :doc:`chapters/aspell`
+- :doc:`chapters/mikado-doc-manager`
+
+
+AWS and old school
+------------------
+- :doc:`chapters/aws_dns`
+- :doc:`chapters/cabling_hardware`
+- :doc:`chapters/filesharing`
+- :doc:`chapters/freewifi`
+- :doc:`chapters/highAvailability`
+- :doc:`chapters/laptop`
+- :doc:`chapters/loadbalancing`
+- :doc:`chapters/mail-handling`
+- :doc:`chapters/virtualbox`
+- :doc:`chapters/virtualisation`
+- :doc:`chapters/usbdisk`
+
+
+Docker AWS
+----------
+- :doc:`chapters/time_in_docker`
+- :doc:`chapters/time`
+
+
+Tech depths
+-----------
+- :doc:`chapters/corefile_debugging`
+- :doc:`chapters/futuretech`
+
+UI
+--
+- :doc:`chapters/UIDesign`
+- :doc:`chapters/ajax`
+- :doc:`chapters/bootstrap_index`
+- :doc:`chapters/building_bootstrap`
+- :doc:`chapters/coloursfortheweb`
+- :doc:`chapters/lessrest`
+
+Profesional Stuff you should know 
+---------------------------------
+- :doc:`chapters/bothPythons`
+- :doc:`chapters/emacs`
+- :doc:`chapters/generative`
+- bash
+- functional programming and coding tests and graph 
+- :doc:`chapters/interviews_algorithms`
+- :doc:`chapters/jupyter`
+- :doc:`chapters/kernel_and_world`
+- :doc:`chapters/misc`
+
+
+Overview
+--------
+- :doc:`chapters/manuallayout`
+
+
+
+
+
+
 
