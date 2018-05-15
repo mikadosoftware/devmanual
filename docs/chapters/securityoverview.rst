@@ -21,6 +21,7 @@ Hardening and golden docker
 https://support.rackspace.com/how-to/linux-server-security-best-practices/
 
 
+
 Managing identity and authentication
 ------------------------------------
 
@@ -70,3 +71,11 @@ We can happily use a random token - no need for JWT etc. Just a single token
 and a call to a central service.
 
 THis is the simplest and best.  Discussions on JWT.
+=======
+Attack tools
+https://www.schneier.com/blog/archives/2014/05/the_nsa_is_not_.html
+
+art 
+http://www.dirk-loss.de/sshvis/drunken_bishop.pdf
+
+
