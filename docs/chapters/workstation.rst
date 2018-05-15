@@ -2,6 +2,14 @@
 Building a FreeBSD laptop from scratch with Salt-stack
 ======================================================
 
+Workstation 
+-----------
+
+Workstation builds also matter, but my preference now is local docker
+
+
+So this chapter changed a lot...
+
 I am a big FreeBSD user, both in servers and as a personal workstation.  Yes,
 Linux is *easier* as a workstation, but then so is Windows.  And its nice to
 have the same environments.

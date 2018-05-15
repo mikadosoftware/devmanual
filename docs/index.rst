@@ -2,14 +2,21 @@
 Overview of DevManual
 =====================
 
-..
+..  ::
 
   Every H1 becomes entrypoint chapter, every chapter is included under H1
   Also intersphnx with softwqre mind
   
-As Software starts to eat more of the world, then the stakes get
-higher - and the cost of mistakes become more traumatic, and the
-rewards become sky-high.
+As Software starts to eat more of the world, the need for good
+software practises, and good software teams will only increase.
+You see, I view software not as some other industry or sector that has
+positive growth prospects in a consultants 2x2 powerpoint presentation.
+
+Software is the new form of literacy.  This is a revilution on the
+scale of moving from illiterate to literate societies - this is not
+going away soon.  And so we need to find the best ways to build
+software - to invent the new Publishing houses, the new scriptoreums,
+the new Newsrooms.
 
 This book focuses on the ground level foundations of desigining,
 building and running software - because, from a SoHo office to the
@@ -32,11 +39,13 @@ higher level chapters - like this one, that take a particular theme,
 and while they link to the underlying how-tos, these are much more
 `why-tos`.
 
-These `why-tos` are an important part of a Dev Manual.
+These `why-tos` are an important part of a Dev Manual.  *How* is just a
+group of people peforming the same actions next to each other. *Why*, is
+a team.
 
 A seperate book, The Software Mind, is an even higher abstract level,
 looking at how these things playout on a bigger scale.  But for now
-we are looking at how to combine docker, scripts, and servers into a
+we are looking at how to combine scripts and servers into a
 complete, working engineering team.
 
 The software behind this Dev Manual is available as Free or Open
@@ -48,19 +57,32 @@ specific to the Python Language. This is simply because I am most
 familiar with that.  However *all* the lessons drawn can be applied
 to any modern language.  
 
-Simplicity, and reasoning
-=========================
+Simplicity
+==========
 
 Our golden goal is to keep things simple.
 
-Simple breaks in simple ways, simple is simple to extned and improve,
+Simple breaks in simple ways, simple is simple to extend and improve.
 
-We must therefore be able to dig down into implementation and find solutions.
+Its not that simple is *easy* - often it is the opposite of easy, or quick.
 
-Python is a good enough choice ... for now.  The future does include
-much much more type safety, so the computer can do a lot of reasoning
-for us.
-See rich hickey on simple/easy
+But simple wins out over time. Simple gives great ROI.
+
+I throughly recommend listening to Rich Hickey on this subject (Link)
+
+So please keep in mind - we aim for simple.  Even if our day to day work pushes us
+to quick and easy and complicated.  We need to push back.
+
+Saying No
+=========
+
+Which takes us to our next issue. It is tied up with professionalism, with
+power structures and personal identity.  It is saying no to writing bad code
+
+Or rather saying yes to writing good enough code.
+
+(expand)
+
 
 Plumbing
 ========
@@ -73,19 +95,109 @@ making the simple easy and the hard doable.  WIthout it, you are in trouble.
   
   - :doc:`chapters/errors`
   - :doc:`chapters/config`
-  - :docs:`chapters/sphinx`
-  - :docs:`chapters/metrics`
+  - :doc:`chapters/sphinx`
+  - :doc:`chapters/metrics`
   - :doc:`chapters/backup_strategy`
   - :doc:`chapters/logging`
   - :doc:`chapters/metricsAndTracing`
+  - :doc:`chapters/network_monitor`
 
+
+    
+Continuous Integration (CI)
+===========================
+
+There is a very rough history of computing which goes like this -
+1940s to 1960s, was a time just getting the basics right, hardware was
+weak and the first compiled language took until 1957 to appear.  The 60s to 70s
+as a time of moving into large niches, like medical devices, corporate accounting systems.
+The 80s was the rise of the Relational Database, the 90s the break out of the web,
+democratising access to information inside and outside corporations, and 2000s the
+rise of new languages.
+
+Just as the spread of Memory managed languages (Java, Python, C#) in
+the 90s gave developers a big boost in avoiding productivity traps (ie
+spending hours debugging) Continuous Integratgion is providing the
+same sort of productivity gain fro developers.  There are many
+components to a large build chain across many servers.  I have called
+these Build Services
+
+- :doc:`chapters/environments`
+- :doc:`chapters/continuous_integration`
+- :doc:`chapters/using_docker`
+- :doc:`chapters/packaging`
+- :doc:`chapters/pep8`
+- :doc:`chapters/writing_docs`
+- :doc:`chapters/using_burpsuite`
+- :doc:`chapters/random`
+- :doc:`chapters/reporting`
+
+    
 Architecture and airy-fairy stuff
 =================================
 
-
-
 Serverless
 Abstraction
+
+A standard approach to architecture - break this only once you have found
+by measuring that its not suitable for your use case
+
+We can see a complete enterprise level solution to pushing out new code.
+
+- :doc:`chapters/microservices`
+- :doc:`chapters/serverless`
+- :doc:`chapters/nginx`
+
+  
+Skills for individual developer
+===============================
+
+Profesional Stuff you should know 
+---------------------------------
+- :doc:`chapters/bothPythons`
+- :doc:`chapters/emacs`
+- :doc:`chapters/generative`
+- bash
+- functional programming and coding tests and graph 
+- :doc:`chapters/interviews_algorithms`
+- :doc:`chapters/jupyter`
+- :doc:`chapters/kernel_and_world`
+- :doc:`chapters/misc`
+
+* :doc:`chapters/sourcecontrol`
+* :doc:`chapters/interviewQuestions`
+* :doc:`chapters/careermanagement`
+* :doc:`chapters/keypairs`
+
+
+- :doc:`chapters/databases`
+- :doc:`chapters/DNS`
+- :doc:`chapters/email`??
+    
+    
+Security
+========
+
+* :doc:`chapters/ch1 security`
+- :doc:`chapters/cookie_testing` #security
+- :doc:`chapters/network-testing`
+- :doc:`chapters/personal_security`
+- :doc:`chapters/pki`
+- :doc:`chapters/pkis`
+
+
+
+Mission statements 
+https://www.amazon.jobs/principles
+
+* GPG and keypairs
+* host based security, networks of trust between hosts,  and DMZs
+* Kubernetes / Rancher as a host / VM world 
+
+
+Testing - a heresy
+==================
+
 Rick Hickey on simple vs easy
   How does a bug get into production? It is written
   And it passes the tests.  So if you have tests, and you refactor, how
@@ -96,88 +208,11 @@ Rick Hickey on simple vs easy
   do a thing, you dont later on screw it up and it stops doing that thing.  Tests are
   almost by defintion, backwards looking.
 
-  
-
-Skills for individual developer
-===============================
-
-* :doc:`chapters/sourcecontrol`
-* :doc:`chapters/interviewQuestions`
-* Salary negotiation, presenting a interface to business and collegues (dont call yourself a programmer)
-* :doc:`chapters/keypairs`
-
-
-
-
-* :doc:`chapters/git`
-* 
-    
-    
-Security
-========
-
-* :doc:`chapters/ch1 security`
-  
-Testing
-=======
-
+- :doc:`chapters/unittests`
 - :doc:`chapters/browser-automation`
-
-- :doc:`chapters/cookie_testing` #security
-- :doc:`chapters/gh-pages`
-- :doc:`chapters/microservices`
-- :doc:`chapters/network_monitor`
-- :doc:`chapters/network-testing`
-- :doc:`chapters/packaging`
-- :doc:`chapters/pep8`
-- :doc:`chapters/personal_security`
-- :doc:`chapters/pki`
-- :doc:`chapters/pkis`
-- :doc:`chapters/nginx`
-- :doc:`chapters/nonblockwsgi`
-- :doc:`chapters/wsgi_simple_app`
-- :doc:`chapters/wsgi_test`
-- :doc:`chapters/wifi`
-- :doc:`chapters/workstation-install`
-- :doc:`chapters/workstation`
-- :doc:`chapters/writing_docs`
-- :doc:`chapters/webdev`
-- :doc:`chapters/webtest`
-- :doc:`chapters/well-behaved-services`
-- :doc:`chapters/using_burpsuite`
-- :doc:`chapters/using_github__ssh`
-- :doc:`chapters/podcast`
-- :doc:`chapters/postgres-cheatsheet`
-- :doc:`chapters/pxeboot`
-- :doc:`chapters/python_warts`
-- :doc:`chapters/random`
-- :doc:`chapters/reporting`
-- :doc:`chapters/routes`
-- :doc:`chapters/rssso`
-- :doc:`chapters/samba`
-- :doc:`chapters/securityoverview`
-- :doc:`chapters/sed_sort`
-- :doc:`chapters/seo-case-study`
+  
 
 
-Continuous Integration (CI)
-===========================
-
-Just as the spread of Memory managed languages (Java, Python, C#) in
-the 90s gave developers a big boost in avoiding productivity traps (ie
-spending hours debugging) Continuous Integratgion is providing the
-same sort of productivity gain fro developers.  There are many
-components to a large build chain across many servers.  I have called
-these Build Services
-
-
-- physically distinct DEV, [UAT], PREPROD and PROD
-    UAT is optional if you have automated testing.
-    dont mix preprod and uat cos you will want to release when users are looking
-- dashboards for can I release, and what is governance ?
-
-- :doc:`chapters/continuous_integration`
-- :doc:`chapters/using_docker`
  
 Software Governance
 -------------------
@@ -238,6 +273,19 @@ Static Analysis and raising all boats.
 ast and how to do syntax checking like pyflake - how to build own rules 
 
 
+- :doc:`chapters/application-performance-management`
+- :doc:`chapters/architectural_overview`
+- :doc:`chapters/basic_seo`
+- :doc:`chapters/statistics`
+- :doc:`chapters/systemd`
+- :doc:`chapters/technical_capabilities`
+- :doc:`chapters/terminal`
+- :doc:`chapters/testing`
+- :doc:`chapters/text_mining`
+- :doc:`chapters/source-control`
+- :doc:`chapters/sphinx`
+
+
 Systems governance
 ------------------
 
@@ -249,6 +297,8 @@ The code is the design - code first for everything
 --------------------------------------------------
 
 Discuss "The code is the design", and the DevOps idea of code for everything.
+
+
 
 When is language optimisation too much?
 ---------------------------------------
@@ -271,45 +321,6 @@ Algorithm design
 data structures
 python innards
 
-Common Architectural choices
-----------------------------
-
-Discuss and review common architectural choices
-
-* cacheing
-* containerisation
-* REST API
-
-
-WSGI Server
-===========
-
-WSGI is an amazingly cool ... idea.  It just reminds you that *all* web servers are doing
-is passing text strings up and down a request/response cycle.  Remeber CGI? Its still that
-simple.
-
-(all WSGI stuff in here)
-
-
-Testing
-=======
-
-This is seperate from source improvemnt
-      
-
-* Source control
-* prmotoing code up
-* having a robot promite code after meeting automatic criteria
-* having automatic testing
-* build servers
-
-python eco system 
-
-- metrics capture
-- event capture (kpi)
-- bug tracking and so on 
-how it all fits together 
-
 DevOps
 ========
 
@@ -319,7 +330,11 @@ Use graphite, and just report out, graph 10 important things
 to your team *today*.
 
 
-inline :doc:`chapters/Managing time in docker containers </chapters/time_in_docker>`
+Docker AWS
+----------
+- :doc:`chapters/time_in_docker`
+- :doc:`chapters/time`
+
 
 Basic Management Reporting
 ==========================
@@ -331,6 +346,8 @@ Basic Management Reporting
   data / 20% most effective things to fix.
 * Make one weekly report *today*
 
+
+  
 Esprit d'corp and Team honesty
 ==============================
 
@@ -346,75 +363,6 @@ then aim for the culture you want -
 then hire good people
 
 
-Security 
-=========
-
-
-Mission statements 
-https://www.amazon.jobs/principles
-
-* GPG and keypairs
-* host based security, networks of trust between hosts,  and DMZs
-* Kubernetes / Rancher as a host / VM world 
-  
-Managing identity and authentication
-------------------------------------
-
-So this is a huge one for me. If i have the below fairly simple
-micro-services structure, how can I keep Authentication and
-Autorisation correct, and simple?
-
-::
-
-  0           ----------          -----------          (-------)
-  |      ---  | www    |   ----   | uService|  ------- (  DB   )
-  ^           | gateway|          |         |          (       )
-              ----------          -----------          (-------)
-  User
-
-
-Lets say this is a really simple service. User logs in and perform
-get /mydetails They should be presented with their profile pulled form
-the DB.  The uService MUST be sure that the person performing the
-request,
-
-We assume that the hosts in the chain remain uncompromised, but we
-cannot assume that the network is anything other than hostile.  So no
-"send the profile in plain text" and of course no "I got a request for
-user xxx on my port so of course it came from the www server that I
-trust."
-
-The challenge.  I want a strong, robust and widely supported method of
-client authentication.  This fundamentally means X509 client
-certificates.  We are going to "Trust the Math".  But once the TLS
-terminates at www, how do we go about re-trusting the whole shooting
-match.  How do we get the uService to know who the user
-
-How do we do TLS between servers.
-
-How do we trust anything?
-
-
-Authentication
-Authorisation
-ROle Management
-
-Use a central service for Authorisation and Role Management - give it a token
-and ask if toekn holder is allowed to do X
-
-We can happily use a random token - no need for JWT etc. Just a single token
-and a call to a central service.
-
-THis is the simplest and best.  Discussions on JWT.
-
-
-  
-Workstation 
------------
-
-Workstation builds also matter, but my preference now is local docker
-
-
 Soft Skills
 -----------
 
@@ -428,13 +376,14 @@ Soft Skills
 
 
 
-
-
-
-
 Business and Software
 =====================
-serverless
+
+* serverless is cheaper. Please rewrite everything now.
+* Overtime is bad
+* remote working is more productive
+* Risk management beats project Management
+  
 - :doc:`chapters/software-capital`
 - :doc:`chapters/software-estimation`
 - :doc:`chapters/project_mgmt`
@@ -448,6 +397,17 @@ A backlog out of context is just a horror
 There is nothing wrong with top-down design (side??)
 Backlog for the whole company
 
+
+Project Management
+------------------
+- :doc:`chapters/agile_estimation`
+- :doc:`chapters/SoHo1`
+- :doc:`chapters/ssl-tls`
+- :doc:`chapters/themes`
+- :doc:`chapters/urljoin`
+- :doc:`chapters/veryquickMBA`
+
+
 CTO dashboards and Business Process Dashboards
 ----------------------------------------------
 
@@ -457,14 +417,153 @@ The basics of production health can be in dashboard
 Putting a business process into dashboard is powerful - use Graphite and "light beam trackers"
 
 
-Cloud, serverless
-==================
+- :doc:`chapters/aspell`
+- :doc:`chapters/mikado-doc-manager`
+AWS and old school
+------------------
+- :doc:`chapters/aws_dns`
+- :doc:`chapters/cabling_hardware`
+- :doc:`chapters/filesharing`
+- :doc:`chapters/freewifi`
+- :doc:`chapters/highAvailability`
+- :doc:`chapters/laptop`
+- :doc:`chapters/loadbalancing`
+- :doc:`chapters/mail-handling`
+- :doc:`chapters/virtualbox`
+- :doc:`chapters/virtualisation`
+- :doc:`chapters/usbdisk`
 
-Discuss
+UI for idiots
+=============
+UI
+--
+- :doc:`chapters/UIDesign`
+- :doc:`chapters/ajax`
+- :doc:`chapters/bootstrap_index`
+- :doc:`chapters/building_bootstrap`
+- :doc:`chapters/coloursfortheweb`
+- :doc:`chapters/lessrest`
+
+  
+
+The dev manual - a proof of concept
+===================================
+
+This is a "business in a box" - it kind of does not matter what the
+buisness is, its just that all the software engineering goodness
+that I describe here needs to be ... dmeonstrable - so I have built a
+example business (and launching a real product) with it.
+
+Its WIP
+
+* simplest app possible
+* adding a unit test
+* adding a performance test
+* building it under python / distutils
+* running it under systemd
+* running dual, behind load balancer, using weaver/ansible/fabric
+* building it on a build server, using .deb files
+* build assets -> docs, perf results, test results, .deb files
+* Security on microservice
+* Identity
+* host-host services (ntp etc)
+* host-app services -> logging, TLS etc 
+* central services - DNS, metric names,
+* code reviews and code promotion
+* metrics gatehrinfg
+* log mgmt
+* rolling out changes
+* incident mgmt (incidents, SLAs, uptime measurements from metrics etc etc)
+* adding message queues, backend services, passing back identiy
+* adding dependancy services - monitoring everything
+* CTO dashboard, mission control centre
+* bug tracking, feature development
+
+  
+Putting it all together
+=======================
+
+* Simplest possible
+  We shall build a working web app (about three lines, honest).
+  Build it, test it, deploy it to a location locally, and log it.
+* systemd, well-behaved services
+* simplest app possible
+* adding a unit test
+* adding a performance test
+* building it under python / distutils
+* running it under systemd
+* running dual, behind load balancer, using weaver/ansible/fabric
+* building it on a build server, using .deb files
+* build assets -> docs, perf results, test results, .deb files
+* Security on microservice
+* linting and style and code reviews
+* Identity
+* host-host services (ntp etc)
+* host-app services -> logging, TLS etc
+* central services - DNS, metric names,
+* code reviews and code promotion
+* metrics gatehrinfg
+* log mgmt
+* rolling out changes
+* adding message queues, backend services, passing back identiy
+* adding dependancy services - monitoring everything
+* CTO dashboard, mission control centre
+* bug tracking, feature development
+* distributed file systems
+  Cephfs, GlusterFS, Lustre, and HDFS
+* work queues
+  CElery, zeroMQ
+* amazon, openstack
 
 
-The top 12 practices
---------------------
+
+  
+Micro-HowTos
+============
+
+- :doc:`chapters/corefile_debugging`
+- :doc:`chapters/futuretech`
+
+
+- :doc:`chapters/gh-pages`
+- :doc:`chapters/nonblockwsgi`
+- :doc:`chapters/wsgi_simple_app`
+- :doc:`chapters/wsgi_test`
+- :doc:`chapters/wifi`
+
+- :doc:`chapters/workstation-install`
+- :doc:`chapters/workstation`
+- :doc:`chapters/webdev`
+- :doc:`chapters/webtest`
+- :doc:`chapters/well-behaved-services`
+- :doc:`chapters/using_github__ssh`
+- :doc:`chapters/podcast`
+- :doc:`chapters/postgres-cheatsheet`
+- :doc:`chapters/pxeboot`
+- :doc:`chapters/python_warts`
+- :doc:`chapters/routes`
+- :doc:`chapters/rssso`
+- :doc:`chapters/samba`
+- :doc:`chapters/securityoverview`
+- :doc:`chapters/sed_sort`
+- :doc:`chapters/seo-case-study`
+- :doc:`chapters/Managing time in docker containers </chapters/time_in_docker>`
+
+
+
+
+
+
+
+
+
+
+The top 12 practices - a summary
+--------------------------------
+
+Like Joel's checklist, this is a checklist for things you need
+Its trying to get ot barebones
+
 
 1. source control
    5 chars etc.
@@ -497,66 +596,6 @@ team is face-to-face conversation.
 11. Risk management
 12. have fun, try new things, don't be afraid
 
-
-  
-Putting it all together
-=======================
-
-* Simplest possible
-  We shall build a working web app (about three lines, honest).
-  Build it, test it, deploy it to a location locally, and log it.
-* systemd, well-behaved services
-* simplest app possible
-* adding a unit test
-* adding a performance test
-* building it under python / distutils
-* running it under systemd
-* running dual, behind load balancer, using weaver/ansible/fabric
-* building it on a build server, using .deb files
-* build assets -> docs, perf results, test results, .deb files
-* Security on microservice
-* linting and style and code reviews
-* Identity
-* host-host services (ntp etc)
-* host-app services -> logging, TLS etc
-* central services - DNS, metric names,
-* code reviews and code promotion
-* metrics gatehrinfg
-* log mgmt
-* rolling out changes
-* adding message queues, backend services, passing back identiy
-* adding dependancy services - monitoring everything
-* CTO dashboard, mission control centre
-* bug tracking, feature development
-
-
-* distributed file systems
-  Cephfs, GlusterFS, Lustre, and HDFS
-
-* work queues
-  CElery, zeroMQ
-
-* amazon, openstack
-
-
-Hardware production processes
-------------------------------
-
-This is kinda sorta linked to workstations- i have worked at startups
-who depended on software and hardware builds.  these are much harder
-at proper scale, but it matters
-
-see bunny houng.  
-
-
-Working conditions
-
-Overtime is bad
-http://www.phy6.org/stargaze/Lhipprc2.htm
-
-risk management or project management
-
-office space 
 
 
 Links
@@ -640,102 +679,3 @@ insects.  or rather you need experience of all the tools
 
 i suspect he is just complaining that someone is hammering in a nail
 with a hammer, then a screwdriver, then a wrench ...
-
-
-Project Management
-------------------
-- :doc:`chapters/agile_estimation`
-- :doc:`chapters/SoHo1`
-- :doc:`chapters/ssl-tls`
-- :doc:`chapters/themes`
-- :doc:`chapters/urljoin`
-- :doc:`chapters/veryquickMBA`
-
-
-
-
-Foundational dependancies (like 12 factor)
-------------------------------------------
-- :doc:`chapters/databases`
-- :doc:`chapters/DNS`
-- :doc:`chapters/email`??
-
-Management / Governance
------------------------
-- :doc:`chapters/application-performance-management`
-- :doc:`chapters/architectural_overview`
-- :doc:`chapters/basic_seo`
-- :doc:`chapters/statistics`
-- :doc:`chapters/systemd`
-- :doc:`chapters/technical_capabilities`
-- :doc:`chapters/terminal`
-- :doc:`chapters/testing`
-- :doc:`chapters/text_mining`
-- :doc:`chapters/source-control`
-- :doc:`chapters/sphinx`
-
-
-Reporting, todo
----------------
-- :doc:`chapters/aspell`
-- :doc:`chapters/mikado-doc-manager`
-
-
-AWS and old school
-------------------
-- :doc:`chapters/aws_dns`
-- :doc:`chapters/cabling_hardware`
-- :doc:`chapters/filesharing`
-- :doc:`chapters/freewifi`
-- :doc:`chapters/highAvailability`
-- :doc:`chapters/laptop`
-- :doc:`chapters/loadbalancing`
-- :doc:`chapters/mail-handling`
-- :doc:`chapters/virtualbox`
-- :doc:`chapters/virtualisation`
-- :doc:`chapters/usbdisk`
-
-
-Docker AWS
-----------
-- :doc:`chapters/time_in_docker`
-- :doc:`chapters/time`
-
-
-Tech depths
------------
-- :doc:`chapters/corefile_debugging`
-- :doc:`chapters/futuretech`
-
-UI
---
-- :doc:`chapters/UIDesign`
-- :doc:`chapters/ajax`
-- :doc:`chapters/bootstrap_index`
-- :doc:`chapters/building_bootstrap`
-- :doc:`chapters/coloursfortheweb`
-- :doc:`chapters/lessrest`
-
-Profesional Stuff you should know 
----------------------------------
-- :doc:`chapters/bothPythons`
-- :doc:`chapters/emacs`
-- :doc:`chapters/generative`
-- bash
-- functional programming and coding tests and graph 
-- :doc:`chapters/interviews_algorithms`
-- :doc:`chapters/jupyter`
-- :doc:`chapters/kernel_and_world`
-- :doc:`chapters/misc`
-
-
-Overview
---------
-- :doc:`chapters/manuallayout`
-
-
-
-
-
-
-

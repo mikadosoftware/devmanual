@@ -2,7 +2,17 @@
 Writing a simple WSGI app
 =========================
 
-=========================
+WSGI Server
+===========
+
+WSGI is an amazingly cool ... idea.  It just reminds you that *all* web servers are doing
+is passing text strings up and down a request/response cycle.  Remeber CGI? Its still that
+simple.
+
+(all WSGI stuff in here)
+
+
+
 
 https://bitbucket.org/vithon/vithon-forum/src/abab8f2a7aef/viforum/forum.py
 
