@@ -72,3 +72,26 @@ HN guy on work related tasks
 
 Good software takes ten years
 And then you rewrite
+
+
+When is language optimisation too much?
+---------------------------------------
+
+One of the most common tropes in software world is the 'interview question'.
+While that is a whole long rant on its own (link), the desire for the industry to
+optimise its code is laudable.  However there is often too much of a focus on
+what language, what framework when there are otehr levels to explore
+
+There are at least three levels of "providing business value" When we
+focus on the lowest level with the least multiplier, we lose
+productivity gains.  THis is too often seen as an excuse for pushing
+bad code to prod.  It should rather be seen as an excuse to develop
+code facing the problems of the higher levels - marketing automation
+can be a huge win.
+
+What we should know about COmputer science
+
+Algorithm design
+data structures
+python innards
+

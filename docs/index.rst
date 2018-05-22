@@ -2,60 +2,78 @@
 Overview of DevManual
 =====================
 
-..  ::
+I have twenty years experience "in the trenches" of software
+developmnet - writing commercial and open source software for cutting
+edge ISPs, major financial houses and not-for-profit organisations, in
+big offices, or on globally distributed teams.  And everywhere, there
+is a process to making and running good software, and those processes
+all have a similar core.
 
-  Every H1 becomes entrypoint chapter, every chapter is included under H1
-  Also intersphnx with softwqre mind
-  
-As Software starts to eat more of the world, the need for good
-software practises, and good software teams will only increase.
-You see, I view software not as some other industry or sector that has
-positive growth prospects in a consultants 2x2 powerpoint presentation.
+This Dev Manual is trying to teach you what that essence of software
+development is, in a practical, immediately useful and downloadable
+fashion - my ultimate goal is provide a software team with exactly
+what is needed to hit the ground running.
 
-Software is the new form of literacy.  This is a revilution on the
-scale of moving from illiterate to literate societies - this is not
-going away soon.  And so we need to find the best ways to build
-software - to invent the new Publishing houses, the new scriptoreums,
-the new Newsrooms.
-
-This book focuses on the ground level foundations of desigining,
-building and running software - because, from a SoHo office to the
-vast scales of Silicon Valley tech giants, all development processes
-have similar cores.
+I have (will-have) built a online business that uses the Dev manual
+processes and code to actually run itself.  Its well meta.
 
 Successful software is *partly* a technical endeavour. Get that wrong
-and nothing else will go right.  But the hard-technical stuff is say 50%
-of good software - the other 50% shades into softer human skills, good
-and bad "management practises" and as we shall see, into national and
-even global politics.
+and nothing else will go right.  But the hard-technical stuff is say
+50% of good software - the other 50% shades into softer human skills,
+good and bad "management practises" and as we shall see, into national
+and even global politics.
 
-Format
-======
+I was trying to create a good structure, consistent and meaningful,
+like an good Technical Architect, but frankly this has turned into a
+much more comfortable and sprawling bazaar.  There is a `lesson
+here. <http://cathedralandbazaar>`_
 
-This manual is both a long list of `how-to` chapters, covering ntp
-servers or SQL connections. These are useful, in-the-trenches guides
-to certain necessary software *capabilities*.  Then there are slightly
-higher level chapters - like this one, that take a particular theme,
-and while they link to the underlying how-tos, these are much more
-`why-tos`.
+It is a good idea to read this in conjunction with it's sister book
+-"The Software Mind", which should be already in your hand - just turn
+the book over and start reading form the back.
 
-These `why-tos` are an important part of a Dev Manual.  *How* is just a
-group of people peforming the same actions next to each other. *Why*, is
-a team.
 
-A seperate book, The Software Mind, is an even higher abstract level,
-looking at how these things playout on a bigger scale.  But for now
-we are looking at how to combine scripts and servers into a
-complete, working engineering team.
+The Metaphor of Building Software
+=================================
 
-The software behind this Dev Manual is available as Free or Open
-Source Software, under a permissive license, and all the third-party
-software used as building blocks are chosen for similar licenses.
+Discuss "The code is the design", and the DevOps idea of code for everything.
+Look at building site in City of London 
 
-Please note that the examples and frameworks in this book are
-specific to the Python Language. This is simply because I am most
-familiar with that.  However *all* the lessons drawn can be applied
-to any modern language.  
+The office building metahpr is a good one because it also includes a
+clear idea of just how much is ocvered in software build chains these
+days - from Steel girders and foundations to Glass UIs and bathroom
+and waste services in conduits no one sees, to building security and
+power outlets.  These things are beasts, and software at even mid size
+enterprise scale is a beast too.  Hence my focus on *governance* as
+well.
+
+Architecture
+============
+
+Architecture is ... hard. And very very very often misunderstood.
+
+Most simply it is the balance between form and function.
+
+There is by now a rough consensus on how to design a sheef of
+internal enterprise applications.  It is basically
+
+.. pull-quote::
+   
+   Microservices owned by Small Teams, with Strong Interfaces
+
+The problem with this is of course not that it is a *technical* change.
+It is not.  It is a business and organisational change.  And so that means
+mostly it gets broken against the internal politics of companies, leading to
+things like huge DevOps departments and large Ops teams.
+
+See the Software Mind chapter.
+
+- :doc:`chapters/microservices`
+- :doc:`chapters/serverless`
+- :doc:`chapters/architectural_overview`
+
+Layers of architecture ?
+However algorithms affect architecture -see the fractal indexes for caches
 
 Simplicity
 ==========
@@ -70,27 +88,18 @@ But simple wins out over time. Simple gives great ROI.
 
 I throughly recommend listening to Rich Hickey on this subject (Link)
 
-So please keep in mind - we aim for simple.  Even if our day to day work pushes us
-to quick and easy and complicated.  We need to push back.
-
-Saying No
-=========
-
-Which takes us to our next issue. It is tied up with professionalism, with
-power structures and personal identity.  It is saying no to writing bad code
-
-Or rather saying yes to writing good enough code.
-
-(expand)
+So please keep in mind - we aim for simple.  Even if our day to day
+work pushes us to quick and easy and complicated.  We need to push
+back.
 
 
 Plumbing
 ========
 
-Every software project of any size needs some basic plumbing,
-things like a good config approach, a means of linting and testing.
-These things pay dividends throughout the lifetime of a project,
-making the simple easy and the hard doable.  WIthout it, you are in trouble.
+Every software project of any size needs some basic plumbing, things
+like a good config approach, a means of linting and testing.  These
+things pay dividends throughout the lifetime of a project, making the
+simple easy and the hard doable.  WIthout it, you are in trouble.
 
   
   - :doc:`chapters/errors`
@@ -104,113 +113,49 @@ making the simple easy and the hard doable.  WIthout it, you are in trouble.
 
 
     
+    
 Continuous Integration (CI)
 ===========================
 
-There is a very rough history of computing which goes like this -
-1940s to 1960s, was a time just getting the basics right, hardware was
-weak and the first compiled language took until 1957 to appear.  The 60s to 70s
-as a time of moving into large niches, like medical devices, corporate accounting systems.
-The 80s was the rise of the Relational Database, the 90s the break out of the web,
-democratising access to information inside and outside corporations, and 2000s the
-rise of new languages.
+.. pull-quote::
+   
+   Re-create your company from scratch, every single day.
 
-Just as the spread of Memory managed languages (Java, Python, C#) in
-the 90s gave developers a big boost in avoiding productivity traps (ie
-spending hours debugging) Continuous Integratgion is providing the
-same sort of productivity gain fro developers.  There are many
-components to a large build chain across many servers.  I have called
-these Build Services
+   
+Continuous Integration / Delivery is probably the biggest boon to developer produtivity
+since the rise of memory managed languages in the 90's.
+
+Languages like C expected the developer to write code that assigned a
+certain amount of memory for a certain data structure - which meant at
+the point of writing your code, you had to know *how big the data was
+going to be, in say two years time*.
+
+People would get this wrong.  The biggest security risk for many years
+was your program accepting a piece of data larger than expected and
+simply overwriting its own memory.  With luck your program just
+crashed.  Otherwise the hacker was very good, and the piece of data
+sent just put their evil code on top of the stack ready to be run.
+
+Nowadays, the business logic we grind out does not need to worry about
+such things.  Instead we have the fun of not being entirely sure if
+the version of the code we think of is going to run on the server with
+the code we think of, using the password we meant and thats if no one
+else changed anything.
+
+Lets call these build services.
+
+
 
 - :doc:`chapters/environments`
 - :doc:`chapters/continuous_integration`
 - :doc:`chapters/using_docker`
+- :doc:`chapters/sharing_secrets`
 - :doc:`chapters/packaging`
 - :doc:`chapters/pep8`
 - :doc:`chapters/writing_docs`
-- :doc:`chapters/using_burpsuite`
+
 - :doc:`chapters/random`
 - :doc:`chapters/reporting`
-
-    
-Architecture and airy-fairy stuff
-=================================
-
-Serverless
-Abstraction
-
-A standard approach to architecture - break this only once you have found
-by measuring that its not suitable for your use case
-
-We can see a complete enterprise level solution to pushing out new code.
-
-- :doc:`chapters/microservices`
-- :doc:`chapters/serverless`
-- :doc:`chapters/nginx`
-
-  
-Skills for individual developer
-===============================
-
-Profesional Stuff you should know 
----------------------------------
-- :doc:`chapters/bothPythons`
-- :doc:`chapters/emacs`
-- :doc:`chapters/generative`
-- bash
-- functional programming and coding tests and graph 
-- :doc:`chapters/interviews_algorithms`
-- :doc:`chapters/jupyter`
-- :doc:`chapters/kernel_and_world`
-- :doc:`chapters/misc`
-
-* :doc:`chapters/sourcecontrol`
-* :doc:`chapters/interviewQuestions`
-* :doc:`chapters/careermanagement`
-* :doc:`chapters/keypairs`
-
-
-- :doc:`chapters/databases`
-- :doc:`chapters/DNS`
-- :doc:`chapters/email`??
-    
-    
-Security
-========
-
-* :doc:`chapters/ch1 security`
-- :doc:`chapters/cookie_testing` #security
-- :doc:`chapters/network-testing`
-- :doc:`chapters/personal_security`
-- :doc:`chapters/pki`
-- :doc:`chapters/pkis`
-
-
-
-Mission statements 
-https://www.amazon.jobs/principles
-
-* GPG and keypairs
-* host based security, networks of trust between hosts,  and DMZs
-* Kubernetes / Rancher as a host / VM world 
-
-
-Testing - a heresy
-==================
-
-Rick Hickey on simple vs easy
-  How does a bug get into production? It is written
-  And it passes the tests.  So if you have tests, and you refactor, how
-  do you prevent that bug?
-  Need to be able to *reason* about code. Which is why 900 npm packages worry me.
-
-  Tests are *regression* tests. They are written so that having written some code to
-  do a thing, you dont later on screw it up and it stops doing that thing.  Tests are
-  almost by defintion, backwards looking.
-
-- :doc:`chapters/unittests`
-- :doc:`chapters/browser-automation`
-  
 
 
  
@@ -261,28 +206,23 @@ codebase.
 Other measures of code quality can be autoated and should be part of
 every commit cycle.
 
+:doc:`chapters/best_approach_to_software_quality`
 
 Code base governance
 --------------------
 
-Style, coverage
-ast based syntax checking
-use of non-standard plumbing
-`Code as a crime scene`
-Static Analysis and raising all boats.
-ast and how to do syntax checking like pyflake - how to build own rules 
+Style, coverage ast based syntax checking use of non-standard plumbing
+`Code as a crime scene` Static Analysis and raising all boats.  ast
+and how to do syntax checking like pyflake - how to build own rules
 
 
 - :doc:`chapters/application-performance-management`
-- :doc:`chapters/architectural_overview`
-- :doc:`chapters/basic_seo`
-- :doc:`chapters/statistics`
 - :doc:`chapters/systemd`
 - :doc:`chapters/technical_capabilities`
 - :doc:`chapters/terminal`
 - :doc:`chapters/testing`
 - :doc:`chapters/text_mining`
-- :doc:`chapters/source-control`
+
 - :doc:`chapters/sphinx`
 
 
@@ -291,47 +231,119 @@ Systems governance
 
 Governance (dev to prod access etc) (As infrastructure as code
 increases, this sort of thing is more possible)
+this is monitoring running systems.  Things like approvals, security etc.
+
+Mission statements 
+https://www.amazon.jobs/principles
 
 
-The code is the design - code first for everything
---------------------------------------------------
-
-Discuss "The code is the design", and the DevOps idea of code for everything.
 
 
+Marketing for dummies
+---------------------
+- :doc:`chapters/basic_seo`
 
-When is language optimisation too much?
----------------------------------------
 
-One of the most common tropes in software world is the 'interview question'.
-While that is a whole long rant on its own (link), the desire for the industry to
-optimise its code is laudable.  However there is often too much of a focus on
-what language, what framework when there are otehr levels to explore
+Skills for individual developer
+===============================
 
-There are at least three levels of "providing business value" When we
-focus on the lowest level with the least multiplier, we lose
-productivity gains.  THis is too often seen as an excuse for pushing
-bad code to prod.  It should rather be seen as an excuse to develop
-code facing the problems of the higher levels - marketing automation
-can be a huge win.
+Software Governance as a force multiplier implies a number of things
+One is that each individual contributor should have the same minimal
+set of skills, and perform those common skills in a similar fashion.
 
-What we should know about COmputer science
+An obvious example might be making good source code commits, and so there
+would need to be an internal "standard" for commits. 
 
-Algorithm design
-data structures
-python innards
+This of course implies ... training. Training your staff to be better
+at their jobs, something that the commitment-less culture these days
+seems to mitigate against.  Things will change - our "principle" of a
+change to Roald Coase's equilibrium point means smaller companies, and
+greater need to standard interfaces and so more need to train your
+people to do it the right way.
+
+
+
+
+Profesional Stuff you should know 
+---------------------------------
+
+
+- :doc:`chapters/jupyter`
+- :doc:`chapters/kernel_and_world`
+- :doc:`chapters/misc`
+- :doc:`chapters/statistics`
+* :doc:`chapters/sourcecontrol`
+* :doc:`chapters/keypairs`
+- :doc:`chapters/databases`
+- :doc:`chapters/DNS`
+- :doc:`chapters/email`??
+- :doc:`chapters/source-control`    
+- :doc:`chapters/using_burpsuite`
+
+Actually personal stuff
+
+* :doc:`chapters/careermanagement`
+* :doc:`chapters/interviewQuestions`
+- :doc:`chapters/interviews_algorithms`
+
+Misc
+- :doc:`chapters/generative`
+  
+Security
+========
+
+Security is principles that are applied across the system. PKI, etc.
+
+Basically trust the maths, and trust nonces.
+
+* :doc:`chapters/ch1 security`
+- :doc:`chapters/cookie_testing` #security
+- :doc:`chapters/network-testing`
+- :doc:`chapters/personal_security`
+- :doc:`chapters/pki`
+- :doc:`chapters/pkis`
+
+
+
+
+* GPG and keypairs
+* host based security, networks of trust between hosts,  and DMZs
+* Kubernetes / Rancher as a host / VM world 
+
+
+Testing - a heresy
+==================
+
+Rick Hickey on simple vs easy
+  How does a bug get into production? It is written
+  And it passes the tests.  So if you have tests, and you refactor, how
+  do you prevent that bug?
+  Need to be able to *reason* about code. Which is why 900 npm packages worry me.
+
+  Tests are *regression* tests. They are written so that having written some code to
+  do a thing, you dont later on screw it up and it stops doing that thing.  Tests are
+  almost by defintion, backwards looking.
+
+- :doc:`chapters/unittests`
+- :doc:`chapters/browser-automation`
+  
 
 DevOps
 ========
 
+Falls naturally out of Microservices owned by Small Teams, with Strong Interfaces
 SRE and SRE book.
 Start small, keep whole thing in overview
 Use graphite, and just report out, graph 10 important things
 to your team *today*.
 
+* :doc:`chapters/graphite_docker`
 
 Docker AWS
 ----------
+
+We shall build a complete enterprise service in the cloud - because we can
+
 - :doc:`chapters/time_in_docker`
 - :doc:`chapters/time`
 
@@ -347,7 +359,10 @@ Basic Management Reporting
 * Make one weekly report *today*
 
 
-  
+Soft Skills
+===========
+
+
 Esprit d'corp and Team honesty
 ==============================
 
@@ -362,9 +377,6 @@ then aim for the culture you want -
 
 then hire good people
 
-
-Soft Skills
------------
 
 * Culture, and hostile cultures
 * trust, safe space, I dont know
@@ -402,7 +414,6 @@ Project Management
 ------------------
 - :doc:`chapters/agile_estimation`
 - :doc:`chapters/SoHo1`
-- :doc:`chapters/ssl-tls`
 - :doc:`chapters/themes`
 - :doc:`chapters/urljoin`
 - :doc:`chapters/veryquickMBA`
@@ -419,6 +430,7 @@ Putting a business process into dashboard is powerful - use Graphite and "light 
 
 - :doc:`chapters/aspell`
 - :doc:`chapters/mikado-doc-manager`
+
 AWS and old school
 ------------------
 - :doc:`chapters/aws_dns`
@@ -433,10 +445,12 @@ AWS and old school
 - :doc:`chapters/virtualisation`
 - :doc:`chapters/usbdisk`
 
+
+  
 UI for idiots
 =============
-UI
---
+
+
 - :doc:`chapters/UIDesign`
 - :doc:`chapters/ajax`
 - :doc:`chapters/bootstrap_index`
@@ -520,17 +534,20 @@ Putting it all together
   
 Micro-HowTos
 ============
+(Misc)
 
 - :doc:`chapters/corefile_debugging`
 - :doc:`chapters/futuretech`
-
+- :doc:`chapters/bothPythons`
+- :doc:`chapters/emacs`
+- :doc:`chapters/nginx`
 
 - :doc:`chapters/gh-pages`
 - :doc:`chapters/nonblockwsgi`
 - :doc:`chapters/wsgi_simple_app`
 - :doc:`chapters/wsgi_test`
 - :doc:`chapters/wifi`
-
+- :doc:`chapters/ssl-tls`
 - :doc:`chapters/workstation-install`
 - :doc:`chapters/workstation`
 - :doc:`chapters/webdev`
