@@ -30,7 +30,7 @@ import shlex
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx', 'rinoh.frontend.sphinx']
 
 #
 intersphinx_mapping = {'weaver': (os.path.abspath('../../weaver/docs/_build/html/'), None)}
@@ -211,14 +211,18 @@ htmlhelp_basename = 'TheDevManualdoc'
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+    'pointsize': '12pt',
 
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
-
+    'preamble': r'''
+        \usepackage{charter}
+        \usepackage[defaultsans]{lato}
+        \usepackage{inconsolata}
+    ''',
+    
 # Latex figure (float) alignment
 #'figure_align': 'htbp',
 }
