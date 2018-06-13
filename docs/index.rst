@@ -158,6 +158,21 @@ Lets call these build services.
 - :doc:`chapters/reporting`
 
 
+Releases
+Continuous delivery cs continuous deployment
+Batching into a RC
+
+Managing the lifecycle
+-----------------------
+
+Application Lifecycle Management
+Gov Service Design Manual
+
+
+Configuration management and secrets
+-------------------------------------
+tbd
+
  
 Software Governance
 -------------------
