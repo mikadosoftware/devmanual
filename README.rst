@@ -20,3 +20,6 @@ Integration server, but it is also how to treat others with respect,
 and how to be involved in decision making etc.
 
 This is my devmanual - 
+
+
+- Dev Manual : how to build the systems needed to develop software : deep dive "labs" on big subject areas like important data structures / algorithms, build-your-own example databases, erlang chat clients, graph databases (dagobah)
