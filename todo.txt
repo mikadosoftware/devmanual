@@ -5,3 +5,6 @@
 - pythonnfor finance - a demo
 - serverless tools for enterprise
 - 
+
+docker components 
+http://catern.com/posts/docker.html
