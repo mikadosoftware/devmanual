@@ -697,7 +697,7 @@ the great company shrinkage - coase
 
 https://allarsblog.com/2018/03/16/confessions-of-an-unreal-engine-4-engineering-firefighter/
 
-
+Club
 defence at scale
 https://brandur.org/idempotency-keys
 
@@ -711,3 +711,72 @@ insects.  or rather you need experience of all the tools
 
 i suspect he is just complaining that someone is hammering in a nail
 with a hammer, then a screwdriver, then a wrench ...
+
+
+One New Skill Evening Club
+--------------------------
+
+Functional Reactive programming and DAGs
+-----------------------------------------
+
+"out of the tar pit" marks/moseley - over simplified it says complexity is the problem in software, and there are two types of complexity - state and control.
+
+A third type is information failures or shooting ourselves in the foot.  
+
+There are then three fixes for the world
+
+- functional programming for managing state (immutable data)
+
+- but data does chnage - so how to handle it? datomic?? bi or tri temporality 
+
+- functional reactive programming and dag - and what about SAC
+
+apache spark is fundamentally one of these. which will win?? hard to say but my money is one language-data tie ups (erlang mnesia, clojure datomic)
+
+https://blog.janestreet.com/introducing-incremental/
+https://blog.janestreet.com/breaking-down-frp/
+
+Basically don't waste time on recomputing
+Which is why Vitrual don can be a dag
+
+
+Why graphs matter. And who cares
+
+
+Scope and coverage
+
+- NoSQL and scale and distribution versus consistency 
+- rise of functional languages
+- the declarative language we all know - SQL
+- datomic and clojure
+- out of the tar pit (mosley and marks) - two problems are state and control - functional solves some of state but state of data changes.  how to handle changing data ? 
+- bitemproarilty and tritemoorality - date we wrote it down, date fact was true, date we are querying about.
+
+- Information management
+
+- systems analysis 
+
+- domain analysis
+
+- leave me alone i am thinking
+
+- stop micro managing 
+
+- no you cannot have an estimate only a direction.  deadline? maybe. try a business solution
+
+- do it smaller first 
+
+- mission and process wins more often 
+
+- ownership of small area wins as well.
+
+
+Have a incident response book
+
+Have a run book
+- basic principle is automate the shit out of it
+
+
+
+
+
