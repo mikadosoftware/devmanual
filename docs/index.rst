@@ -5,19 +5,14 @@ Overview of DevManual
 I have twenty years experience "in the trenches" of software
 developmnet - writing commercial and open source software for cutting
 edge ISPs, major financial houses and not-for-profit organisations, in
-big offices, or on globally distributed teams.  And everywhere, there
-is a process to making and running good software, and those processes
-all have a similar core.
+big offices, tiny offices or on globally distributed teams.  Some were big successes, some ... well less so.  And in each
+case the things that worked well all shared similar cores.
 
-This Dev Manual is trying to teach you what that essence of software
-development is, in a practical, immediately useful and downloadable
-fashion - my ultimate goal is provide a software team with exactly
+If I found myself on a team missing some of these vital components (from automated tests to zookeeper like config) I would build the tools we needed to succeed.  Each component part I would build was an essential part of how software *shoukd* be made - this book is 
+just a walk through all of those component parts - it is trying to be a "software team in a box" - just add coders - my ultimate goal is provide a software team with exactly
 what is needed to hit the ground running.
 
-I have (will-have) built a online business that uses the Dev manual
-processes and code to actually run itself.  Its well meta.
-
-Successful software is *partly* a technical endeavour. Get that wrong
+Of course successful software cannot ignore people - it is obviously is *partly* a technical endeavour. Get that wrong
 and nothing else will go right.  But the hard-technical stuff is say
 50% of good software - the other 50% shades into softer human skills,
 good and bad "management practises" and as we shall see, into national
@@ -775,6 +770,22 @@ Have a incident response book
 
 Have a run book
 - basic principle is automate the shit out of it
+
+
+
+Software Mind
+Moop and IOT
+moop
+
+My data collected on my behalf and analysed for my benefit - shared and communal benefit
+
+
+iot fridge 
+will allow my slow thinking to order for me this allowing me to win back control from the bio-hacking of large corps
+
+
+
+
 
 
 
