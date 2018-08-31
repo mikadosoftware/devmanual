@@ -440,6 +440,8 @@ Putting a business process into dashboard is powerful - use Graphite and "light 
 
 - :doc:`chapters/aspell`
 - :doc:`chapters/mikado-doc-manager`
+- :doc:https://github.com/getredash/redash/blob/master/README.md
+
 
 AWS and old school
 ------------------
@@ -783,11 +785,13 @@ My data collected on my behalf and analysed for my benefit - shared and communal
 iot fridge 
 will allow my slow thinking to order for me this allowing me to win back control from the bio-hacking of large corps
 
+Ethical Open Source
+
+https://librarianshipwreck.wordpress.com/2018/08/24/striving-to-minimize-technical-and-reputational-risks-ethical-os-and-silicon-valleys-guilty-conscience/
 
 
+Privacy - telcos / ISPs are worse
 
-
-
-
+https://www.techdirt.com/articles/20180320/10281539457/if-youre-pissed-about-facebooks-privacy-abuses-you-should-be-four-times-as-angry-broadband-industry.shtml
 
 
