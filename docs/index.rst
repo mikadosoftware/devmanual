@@ -795,3 +795,7 @@ Privacy - telcos / ISPs are worse
 https://www.techdirt.com/articles/20180320/10281539457/if-youre-pissed-about-facebooks-privacy-abuses-you-should-be-four-times-as-angry-broadband-industry.shtml
 
 
+
+
+
+
