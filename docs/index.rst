@@ -27,6 +27,18 @@ It is a good idea to read this in conjunction with it's sister book
 -"The Software Mind", which should be already in your hand - just turn
 the book over and start reading form the back.
 
+The value of building good software as a company
+https://www.ben-evans.com/benedictevans/2018/8/29/tesla-software-and-disruption
+
+- That the record of software coming in to disrupt industry is good - it's hard to learn software.  As a company
+
+this book is about having software in your DNA
+
+
+(interview some good people for it)
+
+
+
 
 The Metaphor of Building Software
 =================================
