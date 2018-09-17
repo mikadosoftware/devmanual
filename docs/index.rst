@@ -88,6 +88,32 @@ around some of these ideas but it is worth having a quick riffle through some.
   In my experience, software takes as long as it takes.  All the running around and shouting, the pressure and the politics
   are just ways of selling the inevitable time / money / scope trade offs.
 
+The value of building good software as a company
+https://www.ben-evans.com/benedictevans/2018/8/29/tesla-software-and-disruption
+
+- That the record of software coming in to disrupt industry is good - it's hard to learn software.  As a company
+
+this book is about having software in your DNA
+
+
+(interview some good people for it)
+
+
+How much software is there
+
+https://news.ycombinator.com/reply?id=17994976&goto=item%3Fid%3D17994600%2317994976
+https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/
+
+the google peace dividend
+https://news.ycombinator.com/reply?id=17996693&goto=item%3Fid%3D17995053%2317996693
+
+Data schedulaers /  Processors / BigIsh Data
+Apache Beam
+https://stackoverflow.com/questions/43581127/what-are-the-benefits-of-apache-beam-over-spark-flink-for-batch-processing
+
+
+
+
 
 The Metaphor of Building Software
 =================================
@@ -1008,3 +1034,4 @@ https://en.wikipedia.org/wiki/Fractal_tree_index
    are helping (a bit) but building software in our modern day
    institutions is still frustrating.  As software eats the world, it
    will find politics and push back.
+

@@ -5,3 +5,5 @@
 Produce a latex version aimed at tufte book template
 
 http://www.latextemplates.com/template/tufte-style-book
+
+http://gordonbrander.com/pattern/
