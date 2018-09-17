@@ -38,6 +38,20 @@ this book is about having software in your DNA
 (interview some good people for it)
 
 
+How much software is there
+
+https://news.ycombinator.com/reply?id=17994976&goto=item%3Fid%3D17994600%2317994976
+https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/
+
+the google peace dividend
+https://news.ycombinator.com/reply?id=17996693&goto=item%3Fid%3D17995053%2317996693
+
+Data schedulaers /  Processors / BigIsh Data
+Apache Beam
+https://stackoverflow.com/questions/43581127/what-are-the-benefits-of-apache-beam-over-spark-flink-for-batch-processing
+
+
+
 
 
 The Metaphor of Building Software
