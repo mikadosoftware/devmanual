@@ -280,6 +280,41 @@ Application Lifecycle Management
 Gov Service Design Manual
 
 
+
+
+Simplicity
+==========
+
+Our golden goal is to keep things simple.
+
+Simple breaks in simple ways, simple is simple to extend and improve.
+
+Its not that simple is *easy* - often it is the opposite of easy, or quick.
+
+But simple wins out over time. Simple gives great ROI.
+
+I throughly recommend listening to Rich Hickey on this subject (Link)
+
+So please keep in mind - we aim for simple.  Even if our day to day
+work pushes us to quick and easy and complicated.  We need to push
+back.
+
+
+Data Mangement  Philosophy
+
+Data Publishing needs to be a business level function, providing consistent accurate and timely data to the
+rest of the organisation is a vital task.
+
+Like Bezos, can only consume data that is published - and people only publishbsokething they willing to support
+
+"but i cannot get my job done if "... that's not the problem ... the problem is clean data
+
+it's like security - it's a priority or it is not.
+
+
+
+
+
 Plumbing
 ========
 
