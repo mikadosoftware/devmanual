@@ -13,6 +13,10 @@ from pprint import pprint as pp
 ROOTPATH='/home/pbrian/projects/devmanual/docs'
 BACKUPLOCATION="/tmp/chaptertools/"
 
+def build_one_pager():
+    """Build a single page (does pdf???) """
+    
+
 def mkdir_backup():
     try:
         os.makedirs(BACKUPLOCATION)

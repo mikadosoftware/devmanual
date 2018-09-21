@@ -1,31 +1,92 @@
-=====================
-Overview of DevManual
-=====================
+============
+SoftwareMind
+============
+
+Introduction
+============
 
 I have twenty years experience "in the trenches" of software
 developmnet - writing commercial and open source software for cutting
 edge ISPs, major financial houses and not-for-profit organisations, in
-big offices, tiny offices or on globally distributed teams.  Some were big successes, some ... well less so.  And in each
-case the things that worked well all shared similar cores.
+big offices, tiny offices or on globally distributed teams.  Some were
+big successes, some ... well, less so.  And in each case the things
+that worked well all shared similar cores.
 
-If I found myself on a team missing some of these vital components (from automated tests to zookeeper like config) I would build the tools we needed to succeed.  Each component part I would build was an essential part of how software *shoukd* be made - this book is 
-just a walk through all of those component parts - it is trying to be a "software team in a box" - just add coders - my ultimate goal is provide a software team with exactly
+If I found myself on a team missing some of these vital components
+(from automated tests to zookeeper like config) I would work to
+install or just plain build the tools we needed to succeed.  Each
+component part was only worth the effort it if was an essential part of how software
+*shoukd* be made - this book is just a walk through all of those
+component parts - it is trying to be a "software team in a box".
+
+My ultimate goal is provide a software team with exactly
 what is needed to hit the ground running.
 
-Of course successful software cannot ignore people - it is obviously is *partly* a technical endeavour. Get that wrong
-and nothing else will go right.  But the hard-technical stuff is say
-50% of good software - the other 50% shades into softer human skills,
-good and bad "management practises" and as we shall see, into national
-and even global politics.
+Of course successful software cannot ignore people - it obviously
+is *partly* a technical endeavour. Get that wrong and nothing else
+will go right.  But the hard-technical stuff is say, 50% of good
+software - the other 50% shades into softer human skills, good and bad
+"management practises" and as we shall see, into national and even
+global politics.
 
-I was trying to create a good structure, consistent and meaningful,
-like an good Technical Architect, but frankly this has turned into a
-much more comfortable and sprawling bazaar.  There is a `lesson
-here. <http://cathedralandbazaar>`_
+In writing this book I tried to create a good structure, consistent
+and meaningful, like any good coder, but frankly this has turned into
+a much more comfortable and sprawling bazaar of ideas and how-tos.
+There is a `lesson here. <http://cathedralandbazaar>`_. [#f1]_ 
 
-It is a good idea to read this in conjunction with it's sister book
--"The Software Mind", which should be already in your hand - just turn
-the book over and start reading form the back.
+
+The Chairman's tricky Question
+==============================
+
+Some time ago I was asked by the Chairman of the Board what one thing
+he could do to make sure all these damn software projects were under
+control.
+
+I could only boil it down to two
+
+* Require *every* project to automatically deploy to a prod-parallel
+  environment, *every* day, their most recent approved, tested code
+  and post their test results.
+
+* Reduce every project to small teams, controlling everything from dev
+  to production, with strong interfaces to other services they might
+  need.
+
+These two seem to capture pretty much everything that seems important
+in software.  It is also treating a company much like a code base -
+being able to rebuild it from scratch instantly, and having in-depth
+resilience so if some small parts fail, everything does not stop.
+
+
+The Software Mind
+=================
+
+It is hard to understand how software engineering fits into the modern
+world without a few *philosophical* underpinnings.  I will bounce in and
+around some of these ideas but it is worth having a quick riffle through some.
+
+* The size of companies (in terms of employees) is changing. Mostly we shall
+  see pressure to have msaller companies, but the success of companies that are essentially
+  federations of very small companies is impressive (see Amazon)
+  The Economist Roald Coase is important here, for we are seeing a shift in the curve that determines
+  how small a company can be
+
+* Software Literacy is an important concept - it is hard for us to recongise how literacy has shaped us and
+  our society. Look at road signs. And it is hard to recognise how much software literacy will change
+  companies, socieites and opportunities.
+  This is the underlying message of "Software is eating the world" - we have made a world that only works because
+  everyone in it can read and write.  We are making a new world, where everyone will be expected to code.
+
+* Software is subject to politics, but the importance of software is leaving development of
+  softre to be driven by people who do not "understand" software (see literacy), and it is also leading to substandard
+  software being allowed.  Regulation and professinalisation is likely to affect that.
+
+* Almost all software development is about exploring.  And two things
+  we can say about exploration - you never know how long it is going
+  to take and it often is risky.  Guess what the vast majority of project planning and management try and do
+  They demand time estimates and plan other items around that, and they do not schedule resources to mitigate risk.
+  In my experience, software takes as long as it takes.  All the running around and shouting, the pressure and the politics
+  are just ways of selling the inevitable time / money / scope trade offs.
 
 The value of building good software as a company
 https://www.ben-evans.com/benedictevans/2018/8/29/tesla-software-and-disruption
@@ -57,8 +118,8 @@ https://stackoverflow.com/questions/43581127/what-are-the-benefits-of-apache-bea
 The Metaphor of Building Software
 =================================
 
-Discuss "The code is the design", and the DevOps idea of code for everything.
-Look at building site in City of London 
+Discuss "The code is the design", and the DevOps idea of code for
+everything.  Look at building site in City of London
 
 The office building metahpr is a good one because it also includes a
 clear idea of just how much is ocvered in software build chains these
@@ -68,33 +129,119 @@ power outlets.  These things are beasts, and software at even mid size
 enterprise scale is a beast too.  Hence my focus on *governance* as
 well.
 
-Architecture
-============
+Technical Architecture
+----------------------
 
-Architecture is ... hard. And very very very often misunderstood.
+There are lot of "Technical Architects" around these days.  (One of
+the problems with not having a software profession the same way we do
+in actual architecture is its hard to stop people calling themselves a
+Technical Architect. (I mean, just look at *my* business card ...)
 
-Most simply it is the balance between form and function.
+A stereotype of TAs is of isolated geniuses (at least they hope to
+give that impression) announcing the correct way to build software to
+a large team or organisation.
 
-There is by now a rough consensus on how to design a sheef of
-internal enterprise applications.  It is basically
+The problem is that if no-one is following yourq architectureal rules,
+then you arent an architect.  Architecture is a human function,
+persuading others that your way is better.  SOmetimes, we *enforce*
+that - through Software Governance (an important idea we will return
+to) In the same way that an Architects design for a building is
+followed by the builders, or a City Planners rules for a City are
+followed by all agents involved.
+
+With a metaphor of building cities, we can see why the idea of Architecture is
+an attractive one, but it is really at the scale of the biggest software houses
+in the world (Major Banks and financial instituions) that you can see the incredilbe
+value of ... City Planning.  We shall call this Software Governance.
+
+Software Governance
+===================
+
+There is a software rule of thumb - that code-bases pass through
+'complexity horizons' every couple of orders of magnitude. That is a
+project that was easy to manage at 1,000 LOC cannot be maintained with
+the same approach when its a 10,000 or 100,000 LOC cadebase.
+
+Pieter Levels is a entrpreneur and coder, who found a certain
+noteriety in 2017 by announcing that he was making sales of over
+$2,000 a day, using a single php file with 4000 LOC, with no
+frameworks and libraries.  The Twitter-sphere exploded, quite
+amusingly, by criticising his coding approach and insisting he needed
+some architecture and frameworks.
 
 .. pull-quote::
-   
-   Microservices owned by Small Teams, with Strong Interfaces
 
-The problem with this is of course not that it is a *technical* change.
-It is not.  It is a business and organisational change.  And so that means
-mostly it gets broken against the internal politics of companies, leading to
-things like huge DevOps departments and large Ops teams.
+   "What about the frameworks. Think of the frameworks"
 
-See the Software Mind chapter.
+Yes, at some point the 'one guy opens up one file' approach is of
+course going to fail.
 
-- :doc:`chapters/microservices`
-- :doc:`chapters/serverless`
-- :doc:`chapters/architectural_overview`
+How we manage that is *software governance*.  The goal of software
+governance is to raise the floor everywhere.
 
-Layers of architecture ?
-However algorithms affect architecture -see the fractal indexes for caches
+We can write code, we can write code that gets us to a basic level of
+feature complete-ness.  And then the next fire alarm arrives, the next
+email from the boss, and ... the polish disappears, the extra bit of
+effort to make something long term useful just does not get done.
+
+But that extra piece of effort can pay dividends just for one
+developer.  For a team or a whole community, the dividends are
+endless, just by raising the floor of quality.
+
+In `todo-inator` I have a concept of self-rating each module or
+function with a modern form of P.G. Wodehouse's re-writing of
+chapters.  This simple mark::
+
+  pgw: **
+
+While this is a subjective measure from the developer, it is a guide
+to where improvements can be made.  And importantly resides in the
+codebase.
+
+Other measures of code quality can be autoated and should be part of
+every commit cycle.
+
+:doc:`chapters/best_approach_to_software_quality`
+
+Code base governance
+--------------------
+
+Style, coverage ast based syntax checking use of non-standard plumbing
+`Code as a crime scene` Static Analysis and raising all boats.  ast
+and how to do syntax checking like pyflake - how to build own rules
+
+
+
+- :doc:`chapters/application-performance-management`
+- :doc:`chapters/systemd`
+- :doc:`chapters/technical_capabilities`
+- :doc:`chapters/terminal`
+- :doc:`chapters/testing`
+- :doc:`chapters/text_mining`
+
+- :doc:`chapters/sphinx`
+
+
+.. toctree::
+
+   chapters/sphinx
+
+Systems governance
+------------------
+
+Governance (dev to prod access etc) (As infrastructure as code
+increases, this sort of thing is more possible)
+this is monitoring running systems.  Things like approvals, security etc.
+
+Mission statements 
+https://www.amazon.jobs/principles
+
+Managing the lifecycle
+-----------------------
+
+Application Lifecycle Management
+Gov Service Design Manual
+
 
 Simplicity
 ==========
@@ -193,102 +340,10 @@ Releases
 Continuous delivery cs continuous deployment
 Batching into a RC
 
-Managing the lifecycle
------------------------
-
-Application Lifecycle Management
-Gov Service Design Manual
 
 
-Configuration management and secrets
--------------------------------------
-tbd
 
  
-Software Governance
--------------------
-
-There is a software rule of thumb - that code-bases pass through
-'complexity horizons' every couple of orders of magnitude. That is a
-project that was easy to manage at 1,000 LOC cannot be maintained with
-the same approach when its a 10,000 or 100,000 LOC cadebase.
-
-Pieter Levels is a entrpreneur and coder, who found a certain
-noteriety in 2017 by announcing that he was making sales of over
-$2,000 a day, using a single php file with 4000 LOC, with no
-frameworks and libraries.  The Twitter-sphere exploded, quite
-amusingly, by criticising his coding approach and insisting he needed
-some architecture and frameworks.
-
-.. pull-quote::
-
-   "What about the frameworks. Think of the frameworks"
-
-Yes, at some point the 'one guy opens up one file' approach is of
-course going to fail.
-
-How we manage that is *software governance*.  The goal of software
-governance is to raise the floor everywhere.
-
-We can write code, we can write code that gets us to a basic level of
-feature complete-ness.  And then the next fire alarm arrives, the next
-email from the boss, and ... the polish disappears, the extra bit of
-effort to make something long term useful just does not get done.
-
-But that extra piece of effort can pay dividends just for one
-developer.  For a team or a whole community, the dividends are
-endless, just by raising the floor of quality.
-
-In `todo-inator` I have a concept of self-rating each module or
-function with a modern form of P.G. Wodehouse's re-writing of
-chapters.  This simple mark::
-
-  pgw: **
-
-While this is a subjective measure from the developer, it is a guide
-to where improvements can be made.  And importantly resides in the
-codebase.
-
-Other measures of code quality can be autoated and should be part of
-every commit cycle.
-
-:doc:`chapters/best_approach_to_software_quality`
-
-Code base governance
---------------------
-
-Style, coverage ast based syntax checking use of non-standard plumbing
-`Code as a crime scene` Static Analysis and raising all boats.  ast
-and how to do syntax checking like pyflake - how to build own rules
-
-
-- :doc:`chapters/application-performance-management`
-- :doc:`chapters/systemd`
-- :doc:`chapters/technical_capabilities`
-- :doc:`chapters/terminal`
-- :doc:`chapters/testing`
-- :doc:`chapters/text_mining`
-
-- :doc:`chapters/sphinx`
-
-
-Systems governance
-------------------
-
-Governance (dev to prod access etc) (As infrastructure as code
-increases, this sort of thing is more possible)
-this is monitoring running systems.  Things like approvals, security etc.
-
-Mission statements 
-https://www.amazon.jobs/principles
-
-
-
-
-Marketing for dummies
----------------------
-- :doc:`chapters/basic_seo`
-
 
 Skills for individual developer
 ===============================
@@ -331,6 +386,7 @@ Actually personal stuff
 * :doc:`chapters/careermanagement`
 * :doc:`chapters/interviewQuestions`
 - :doc:`chapters/interviews_algorithms`
+- :doc:`chapters/basic_seo`
 
 Misc
 - :doc:`chapters/generative`
@@ -355,6 +411,12 @@ Basically trust the maths, and trust nonces.
 * GPG and keypairs
 * host based security, networks of trust between hosts,  and DMZs
 * Kubernetes / Rancher as a host / VM world 
+
+Configuration management and secrets
+-------------------------------------
+
+Use etcd / kubernetes.
+How to build own Docker based co-ordination service - or why kUbernetes is nice.
 
 
 Testing - a heresy
@@ -447,13 +509,24 @@ Business and Software
 - :doc:`chapters/project_mgmt`
 
 Project and Programme management
---------------------------------
+================================
+
+So there is a well known story in the Agile world about `why estimates are always wrong <https://www.quora.com/Engineering-Management/Why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3/answer/Michael-Wolfe?srid=24b&share=1>`_
+
+Basically we cannot do it.  So why do people ask for estimates? They dont want estimates - they want landmarks !!!
+
 
 It if ain't got a ticket dont work on it
 If it ain't possible to rollup tickets you dont know where you are going
 A backlog out of context is just a horror
-There is nothing wrong with top-down design (side??)
-Backlog for the whole company
+There is nothing wrong with top-down design (see Linux)
+Backlog for the whole company - agile for the whole company  just see progress on a map.
+If its not going fast wnough for the board they can fix things at their level.
+
+
+We need to track our work so we can provide an audit trail
+THese are useful
+
 
 
 Project Management
@@ -489,9 +562,6 @@ AWS and old school
 - :doc:`chapters/laptop`
 - :doc:`chapters/loadbalancing`
 - :doc:`chapters/mail-handling`
-- :doc:`chapters/virtualbox`
-- :doc:`chapters/virtualisation`
-- :doc:`chapters/usbdisk`
 
 
   
@@ -831,7 +901,147 @@ Privacy - telcos / ISPs are worse
 https://www.techdirt.com/articles/20180320/10281539457/if-youre-pissed-about-facebooks-privacy-abuses-you-should-be-four-times-as-angry-broadband-industry.shtml
 
 
+#https://docs.typo3.org/typo3cms/extensions/sphinx/AdvancedUsersManual/RenderingPdf/CustomizingRendering.html
 
 
+Articles
+========
 
+This is the articles linked above.
+
+.. toctree::
+
+    chapters/microservices
+    chapters/serverless
+    chapters/architectural_overview
+    chapters/best_approach_to_software_quality
+    chapters/application-performance-management
+    chapters/systemd
+    chapters/technical_capabilities
+    chapters/terminal
+    chapters/testing
+    chapters/text_mining
+    chapters/sphinx
+    chapters/errors
+    chapters/config
+    chapters/sphinx
+    chapters/metrics
+    chapters/backup_strategy
+    chapters/logging
+    chapters/metricsAndTracing
+    chapters/network_monitor
+    chapters/environments
+    chapters/continuous_integration
+    chapters/using_docker
+    chapters/sharing_secrets
+    chapters/packaging
+    chapters/pep8
+    chapters/writing_docs
+    chapters/random
+    chapters/reporting
+    chapters/jupyter
+    chapters/kernel_and_world
+    chapters/misc
+    chapters/statistics
+    chapters/sourcecontrol
+    chapters/keypairs
+    chapters/databases
+    chapters/DNS
+    chapters/email
+    chapters/source-control    
+    chapters/using_burpsuite
+    chapters/careermanagement
+    chapters/interviewQuestions
+    chapters/interviews_algorithms
+    chapters/basic_seo
+    chapters/generative
+    chapters/ch1 security
+    chapters/cookie_testing #security
+    chapters/network-testing
+    chapters/personal_security
+    chapters/pki
+    chapters/pkis
+    chapters/unittests
+    chapters/browser-automation
+    chapters/graphite_docker
+    chapters/time_in_docker
+    chapters/time
+    chapters/software-capital
+    chapters/software-estimation
+    chapters/project_mgmt
+    chapters/agile_estimation
+    chapters/SoHo1
+    chapters/themes
+    chapters/urljoin
+    chapters/veryquickMBA
+    chapters/aspell
+    chapters/mikado-doc-manager
+    chapters/aws_dns
+    chapters/cabling_hardware
+    chapters/filesharing
+    chapters/freewifi
+    chapters/highAvailability
+    chapters/laptop
+    chapters/loadbalancing
+    chapters/mail-handling
+    chapters/virtualbox
+
+    chapters/usbdisk
+    chapters/UIDesign
+    chapters/ajax
+    chapters/bootstrap_index
+    chapters/building_bootstrap
+    chapters/coloursfortheweb
+    chapters/lessrest
+    chapters/corefile_debugging
+    chapters/futuretech
+    chapters/bothPythons
+    chapters/emacs
+    chapters/nginx
+    chapters/gh-pages
+    chapters/nonblockwsgi
+    chapters/wsgi_simple_app
+    chapters/wsgi_test
+    chapters/wifi
+    chapters/ssl-tls
+    chapters/workstation-install
+    chapters/workstation
+    chapters/webdev
+    chapters/webtest
+    chapters/well-behaved-services
+    chapters/using_github__ssh
+    chapters/podcast
+    chapters/postgres-cheatsheet
+    chapters/pxeboot
+    chapters/python_warts
+    chapters/routes
+    chapters/rssso
+    chapters/samba
+    chapters/securityoverview
+    chapters/sed_sort
+    chapters/seo-case-study
+    chapters/Managing time in docker containers </chapters/time_in_docker>
+
+
+Out of date already
+===================
+
+chapters/virtualisation
+chapters/virtualbox`
+chapters/usbdisk`
+
+
+https://en.wikipedia.org/wiki/Fractal_tree_index
+
+
+.. rubric:: Footnotes
+
+.. [#f1] The linked essay is by Eric S Raymond and is almost two
+   decades old, and lays out an important philosophical difference
+   between how open source software gets developed (in a mad press of new
+   things being tried out) and how cathedrals are built.  The cathedral
+   builders have tried to learn from the bazaar, and concepts like Agile
+   are helping (a bit) but building software in our modern day
+   institutions is still frustrating.  As software eats the world, it
+   will find politics and push back.
 
