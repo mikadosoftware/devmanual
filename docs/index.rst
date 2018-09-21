@@ -113,6 +113,16 @@ So please keep in mind - we aim for simple.  Even if our day to day
 work pushes us to quick and easy and complicated.  We need to push
 back.
 
+Data Mangement  Philosophy
+==========
+Like Bezos, can only consume data that is published - and people only publishbsokething they willing to support
+
+"but i cannot get my job done if "... that's not the problem ... the problem is clean data
+
+it's like security - it's a priority or it is not.
+
+
+
 
 Plumbing
 ========
