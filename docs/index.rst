@@ -112,6 +112,43 @@ Apache Beam
 https://stackoverflow.com/questions/43581127/what-are-the-benefits-of-apache-beam-over-spark-flink-for-batch-processing
 
 
+Writing code is about 20% of the job
+- CI and repeatability
+- reporting on functionality of running processes
+- analysis of inputs, running, outputs
+- project and programme mgmt 
+- reporting upwards and outwards
+- marketing your code
+
+Overviews again
+
+- Web micro service
+-- security (secrets management)
+-- security (deployment / repeatability)
+-- CI/CD
+-- prod parallel
+-- teams to deliver components of a eco system
+-- one example will need
+
+testing
+linting and commuting and pre commit hooks
+governance
+simple worker queues
+simple load balancer
+simple kubernetes / DNS etc
+simple js client 
+simple web server 
+simple user management 
+
+-- user management / aithentication authorisation
+-- FIDO
+-- plumbing
+-- metric capture and operations management 
+
+The goal here is not best practise, but good enough practise that can scale enough for you not to panic while replacing it.
+
+Example will be a site selling FIDO keys? 
+
 
 
 

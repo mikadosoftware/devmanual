@@ -7,3 +7,9 @@ Produce a latex version aimed at tufte book template
 http://www.latextemplates.com/template/tufte-style-book
 
 http://gordonbrander.com/pattern/
+
+project mgmt
+- effectiveness of troops in battle 60-90 days to peak, 200 to trough
+lindybeige
+
+- so why not use that for team formation? 
