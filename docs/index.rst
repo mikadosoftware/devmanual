@@ -88,29 +88,41 @@ around some of these ideas but it is worth having a quick riffle through some.
   In my experience, software takes as long as it takes.  All the running around and shouting, the pressure and the politics
   are just ways of selling the inevitable time / money / scope trade offs.
 
-The value of building good software as a company
-https://www.ben-evans.com/benedictevans/2018/8/29/tesla-software-and-disruption
+* The Google Peace Dividend - three / four major areas of computing beig transformed by OSS
+  
+* Pikety redux
+  - Labour lost, capital won (the reaosn wages not  subject to suply demand)
+  - the great hollowing out
+  - literacy and automation
+  - Snowden was also right - data and pollution 
+- snowden
+https://en.m.wikipedia.org/wiki/NSA_ANT_catalog
+http://www.nsaplayset.org
+- Whats happening in the world - a sense of perspective
+* http://www.digitalattackmap.com/faq/
+* also want, wars, trade, shipping, energy, employment, poverty, investment etc.* 
+some kind of model / mapp for the whole world. where is the money flowing / going?
 
-- That the record of software coming in to disrupt industry is good - it's hard to learn software.  As a company
+* Software literate company
+  The value of building good software as a company
+  tps://www.ben-evans.com/benedictevans/2018/8/29/tesla-software-and-disruption
 
-this book is about having software in your DNA
+  That the record of software coming in to disrupt industry is good - it's hard to learn software.  As a company
+  this book is about having software in your company DNA
 
 
-(interview some good people for it)
 
 
-How much software is there
 
-https://news.ycombinator.com/reply?id=17994976&goto=item%3Fid%3D17994600%2317994976
-https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/
 
-the google peace dividend
-https://news.ycombinator.com/reply?id=17996693&goto=item%3Fid%3D17995053%2317996693
 
-Data schedulaers /  Processors / BigIsh Data
-Apache Beam
-https://stackoverflow.com/questions/43581127/what-are-the-benefits-of-apache-beam-over-spark-flink-for-batch-processing
 
+
+Principles
+==========
+
+Simplicity
+==========
 
 Writing code is about 20% of the job
 - CI and repeatability
@@ -149,7 +161,32 @@ The goal here is not best practise, but good enough practise that can scale enou
 
 Example will be a site selling FIDO keys? 
 
+Our golden goal is to keep things simple.
 
+Simple breaks in simple ways, simple is simple to extend and improve.
+
+Its not that simple is *easy* - often it is the opposite of easy, or quick.
+
+But simple wins out over time. Simple gives great ROI.
+
+I throughly recommend listening to Rich Hickey on this subject (Link)
+
+So please keep in mind - we aim for simple.  Even if our day to day
+work pushes us to quick and easy and complicated.  We need to push
+back.
+
+chaos engineering 
+http://principlesofchaos.org
+
+KISS
+http://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html
+there is simple, and there is too simple to easily manage and monitor. 
+
+pentesting and adversarial security
+https://www.trailofbits.com
+black hat python
+the simple ones still work
+AES based oracle 
 
 
 The Metaphor of Building Software
@@ -243,8 +280,12 @@ every commit cycle.
 Code base governance
 --------------------
 
-Style, coverage ast based syntax checking use of non-standard plumbing
-`Code as a crime scene` Static Analysis and raising all boats.  ast
+Style,
+coverage
+ast based syntax checking use of non-standard plumbing
+`Code as a crime scene`
+Static Analysis and raising all boats.
+ast
 and how to do syntax checking like pyflake - how to build own rules
 
 
@@ -255,7 +296,6 @@ and how to do syntax checking like pyflake - how to build own rules
 - :doc:`chapters/terminal`
 - :doc:`chapters/testing`
 - :doc:`chapters/text_mining`
-
 - :doc:`chapters/sphinx`
 
 
@@ -266,18 +306,17 @@ and how to do syntax checking like pyflake - how to build own rules
 Systems governance
 ------------------
 
-Governance (dev to prod access etc) (As infrastructure as code
-increases, this sort of thing is more possible)
+SRE / building for failure (Erlang and OTP)
 this is monitoring running systems.  Things like approvals, security etc.
 
-Mission statements 
-https://www.amazon.jobs/principles
 
 Managing the lifecycle
 -----------------------
 
 Application Lifecycle Management
 Gov Service Design Manual
+
+
 
 
 Simplicity
@@ -297,13 +336,18 @@ So please keep in mind - we aim for simple.  Even if our day to day
 work pushes us to quick and easy and complicated.  We need to push
 back.
 
+
 Data Mangement  Philosophy
-==========
+
+Data Publishing needs to be a business level function, providing consistent accurate and timely data to the
+rest of the organisation is a vital task.
+
 Like Bezos, can only consume data that is published - and people only publishbsokething they willing to support
 
 "but i cannot get my job done if "... that's not the problem ... the problem is clean data
 
 it's like security - it's a priority or it is not.
+
 
 
 
@@ -368,19 +412,107 @@ Lets call these build services.
 - :doc:`chapters/packaging`
 - :doc:`chapters/pep8`
 - :doc:`chapters/writing_docs`
-
 - :doc:`chapters/random`
 - :doc:`chapters/reporting`
 
 
-Releases
-Continuous delivery cs continuous deployment
-Batching into a RC
-
-
-
-
  
+
+  
+Security
+========
+
+Security is principles that are applied across the system. PKI, etc.
+
+Basically trust the maths, and trust nonces.
+
+* :doc:`chapters/ch1 security`
+- :doc:`chapters/cookie_testing` #security
+- :doc:`chapters/network-testing`
+- :doc:`chapters/personal_security`
+- :doc:`chapters/pki`
+- :doc:`chapters/pkis`
+
+
+Pki
+Cloudflare how to build your own
+https://en.m.wikipedia.org/wiki/Hardware_security_module
+
+
+* GPG and keypairs
+* host based security, networks of trust between hosts,  and DMZs
+* Kubernetes / Rancher as a host / VM world 
+
+Configuration management and secrets
+====================================
+
+Use etcd / kubernetes.
+How to build own Docker based co-ordination service - or why kUbernetes is nice.
+My USB Secrets
+
+(also Google Peace Dividend)
+
+Testing - a heresy
+==================
+
+Rick Hickey on simple vs easy
+  How does a bug get into production? It is written
+  And it passes the tests.  So if you have tests, and you refactor, how
+  do you prevent that bug?
+  Need to be able to *reason* about code. Which is why 900 npm packages worry me.
+
+  Tests are *regression* tests. They are written so that having written some code to
+  do a thing, you dont later on screw it up and it stops doing that thing.  Tests are
+  almost by defintion, backwards looking.
+
+- :doc:`chapters/unittests`
+- :doc:`chapters/browser-automation`
+  
+
+DevOps
+======
+
+Falls naturally out of Microservices owned by Small Teams, with Strong Interfaces
+SRE and SRE book.
+Start small, keep whole thing in overview
+Use graphite, and just report out, graph 10 important things
+to your team *today*.
+
+* :doc:`chapters/graphite_docker`
+
+
+
+Basic Management Reporting
+==========================
+
+* reportlib
+* SLAs and KPIs - keeping ourselves honest
+* focusing upwards to higher levels of leverage
+* avoiding the drumbeat of deadlines, and panic, and agreeing goals based on
+  data / 20% most effective things to fix.
+* Make one weekly report *today*
+
+
+The scope
+=========
+
+How much software is there
+
+https://news.ycombinator.com/reply?id=17994976&goto=item%3Fid%3D17994600%2317994976
+https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/
+
+the google peace dividend
+https://news.ycombinator.com/reply?id=17996693&goto=item%3Fid%3D17995053%2317996693
+
+Data schedulaers /  Processors / BigIsh Data
+Apache Beam
+https://stackoverflow.com/questions/43581127/what-are-the-benefits-of-apache-beam-over-spark-flink-for-batch-processing
+
+
+
+
+Soft Skills
+===========
 
 Skills for individual developer
 ===============================
@@ -400,6 +532,10 @@ greater need to standard interfaces and so more need to train your
 people to do it the right way.
 
 
+You are not a programmer
+product engineers not software engineers 
+https://blog.intercom.com/run-less-software/
+Three circles of leverage
 
 
 Profesional Stuff you should know 
@@ -427,85 +563,6 @@ Actually personal stuff
 
 Misc
 - :doc:`chapters/generative`
-  
-Security
-========
-
-Security is principles that are applied across the system. PKI, etc.
-
-Basically trust the maths, and trust nonces.
-
-* :doc:`chapters/ch1 security`
-- :doc:`chapters/cookie_testing` #security
-- :doc:`chapters/network-testing`
-- :doc:`chapters/personal_security`
-- :doc:`chapters/pki`
-- :doc:`chapters/pkis`
-
-
-
-
-* GPG and keypairs
-* host based security, networks of trust between hosts,  and DMZs
-* Kubernetes / Rancher as a host / VM world 
-
-Configuration management and secrets
--------------------------------------
-
-Use etcd / kubernetes.
-How to build own Docker based co-ordination service - or why kUbernetes is nice.
-
-
-Testing - a heresy
-==================
-
-Rick Hickey on simple vs easy
-  How does a bug get into production? It is written
-  And it passes the tests.  So if you have tests, and you refactor, how
-  do you prevent that bug?
-  Need to be able to *reason* about code. Which is why 900 npm packages worry me.
-
-  Tests are *regression* tests. They are written so that having written some code to
-  do a thing, you dont later on screw it up and it stops doing that thing.  Tests are
-  almost by defintion, backwards looking.
-
-- :doc:`chapters/unittests`
-- :doc:`chapters/browser-automation`
-  
-
-DevOps
-========
-
-Falls naturally out of Microservices owned by Small Teams, with Strong Interfaces
-SRE and SRE book.
-Start small, keep whole thing in overview
-Use graphite, and just report out, graph 10 important things
-to your team *today*.
-
-* :doc:`chapters/graphite_docker`
-
-Docker AWS
-----------
-
-We shall build a complete enterprise service in the cloud - because we can
-
-- :doc:`chapters/time_in_docker`
-- :doc:`chapters/time`
-
-
-Basic Management Reporting
-==========================
-
-* reportlib
-* SLAs and KPIs - keeping ourselves honest
-* focusing upwards to higher levels of leverage
-* avoiding the drumbeat of deadlines, and panic, and agreeing goals based on
-  data / 20% most effective things to fix.
-* Make one weekly report *today*
-
-
-Soft Skills
-===========
 
 
 Esprit d'corp and Team honesty
@@ -532,10 +589,6 @@ then hire good people
 * management fixes are the middle ground - 
 
 
-
-Business and Software
-=====================
-
 * serverless is cheaper. Please rewrite everything now.
 * Overtime is bad
 * remote working is more productive
@@ -548,9 +601,12 @@ Business and Software
 Project and Programme management
 ================================
 
-So there is a well known story in the Agile world about `why estimates are always wrong <https://www.quora.com/Engineering-Management/Why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3/answer/Michael-Wolfe?srid=24b&share=1>`_
+So there is a well known story in the Agile world about `why estimates
+are always wrong
+<https://www.quora.com/Engineering-Management/Why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3/answer/Michael-Wolfe?srid=24b&share=1>`_
 
-Basically we cannot do it.  So why do people ask for estimates? They dont want estimates - they want landmarks !!!
+Basically we cannot do it.  So why do people ask for estimates? They
+dont want estimates - they want landmarks !!!
 
 
 It if ain't got a ticket dont work on it
@@ -576,7 +632,7 @@ Project Management
 
 
 CTO dashboards and Business Process Dashboards
-----------------------------------------------
+==============================================
 
 Dashboards matter
 The basics of code quality can be in dashboard.
@@ -587,6 +643,8 @@ Putting a business process into dashboard is powerful - use Graphite and "light 
 - :doc:`chapters/aspell`
 - :doc:`chapters/mikado-doc-manager`
 - :doc:https://github.com/getredash/redash/blob/master/README.md
+
+
 
 
 AWS and old school
@@ -617,6 +675,22 @@ UI for idiots
 
 The dev manual - a proof of concept
 ===================================
+
+
+Example Micro-Service eco-system
+
+
+I want to have a detailed exmaple - so here is a functioning, internal and external
+web based, docker based complete setup.
+
+Docker AWS
+----------
+
+We shall build a complete enterprise service in the cloud - because we can
+
+- :doc:`chapters/time_in_docker`
+- :doc:`chapters/time`
+
 
 This is a "business in a box" - it kind of does not matter what the
 buisness is, its just that all the software engineering goodness
@@ -742,7 +816,8 @@ Its trying to get ot barebones
    but good example of using automated policy enforcement on checkin
 
 2. tech debt and tech assets - code and tests
-
+   "Lines of code spent"
+   
 3. requirements lifecycle (PEP)
    the wrongest part of the agile manifesto
    """ The most efficient and effective method of
@@ -769,66 +844,27 @@ team is face-to-face conversation.
 12. have fun, try new things, don't be afraid
 
 
+Google Peace dividend and Distributed computing
+===============================================
 
-Links
-=====
-package management
-http://nvie.com/posts/better-package-management/
+THe new capabilities
 
-Instrumentation
-https://honeycomb.io/blog/2017/01/instrumentation-the-first-four-things-you-measure/
+Kebernetes (the micro services as cattle)
+Beam / spark - distributed parallelised computing - the new scheduler
+Tensorflow - AI
+(Serverless)
 
-Pki
-Cloudflare how to build your own
-https://en.m.wikipedia.org/wiki/Hardware_security_module
-- France enforces open access to scientific publishing
-https://www.openaire.eu/france-final-text-of-the-law-for-oa-has-been-adopted
-
-- pikkety redux
-https://news.ycombinator.com/item?id=12417855#12418438
-
-- snowden
-https://en.m.wikipedia.org/wiki/NSA_ANT_catalog
-http://www.nsaplayset.org
+But underneath this we have basics of plumbing, philoshphy and so on
 
 
-- Whats happening in the world - a sense of perspective
-* http://www.digitalattackmap.com/faq/
-* also want, wars, trade, shipping, energy, employment, poverty, investment etc.
-* some kind of model / mapp for the whole world. where is the money flowing / going?
-
-
-- Hardende images / servers
-https://www.cisecurity.org/services/hardened-virtual-images/
-
-how compare to serverless? 
-
-chaos engineering 
-http://principlesofchaos.org
-
-
-KISS
-http://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html
-there is simple, and there is too simple to easily manage and monitor. 
-
-
-pentesting and adversarial security
-https://www.trailofbits.com
-black hat python
-the simple ones still work
-AES based oracle 
 
 
 Software development methodologies
 https://zwischenzugs.com/2017/10/15/my-20-year-experience-of-software-development-methodologies/
 
 
-You are not a programmer
-product engineers not software engineers 
-https://blog.intercom.com/run-less-software/
-Three circles of leverage
-
 Future
+======
 
 the great cyber security rewrite(hospital and pumping stations)
 the great project management model - tube of water at real time scale
@@ -939,6 +975,8 @@ https://www.techdirt.com/articles/20180320/10281539457/if-youre-pissed-about-fac
 
 
 #https://docs.typo3.org/typo3cms/extensions/sphinx/AdvancedUsersManual/RenderingPdf/CustomizingRendering.html
+
+
 
 
 Articles
