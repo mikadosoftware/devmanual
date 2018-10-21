@@ -15,9 +15,10 @@ that worked well all shared similar cores.
 If I found myself on a team missing some of these vital components
 (from automated tests to zookeeper like config) I would work to
 install or just plain build the tools we needed to succeed.  Each
-component part was only worth the effort it if was an essential part of how software
-*shoukd* be made - this book is just a walk through all of those
-component parts - it is trying to be a "software team in a box".
+component part was only worth the effort it if was an essential part
+of how software *shoukd* be made - this book is just a walk through
+all of those component parts - it is trying to be a "software team in
+a box".
 
 My ultimate goal is provide a software team with exactly
 what is needed to hit the ground running.
@@ -42,7 +43,10 @@ Some time ago I was asked by the Chairman of the Board what one thing
 he could do to make sure all these damn software projects were under
 control.
 
-I could only boil it down to two
+What he meant by under-control, was *on-time*. Which is not what I meant.
+
+So I had two answers.   One was under control from a development perspective.
+This is pretty simple and  boils  down to 
 
 * Require *every* project to automatically deploy to a prod-parallel
   environment, *every* day, their most recent approved, tested code
@@ -52,11 +56,19 @@ I could only boil it down to two
   to production, with strong interfaces to other services they might
   need.
 
-These two seem to capture pretty much everything that seems important
-in software.  It is also treating a company much like a code base -
-being able to rebuild it from scratch instantly, and having in-depth
-resilience so if some small parts fail, everything does not stop.
+These seemed radical, but achievable. Especially when you point out Amazon
+does the second one a lot.  A lot of the *technical* side of this Dev Manual is focused on achieving this.
 
+
+But the *real* point was about *on-time*.  And that is where I gave an answer
+he did not like.
+
+* Stop having deadlines.  That way nothing is late.
+
+Yes.
+
+We will expand on that, but I am going to stick to it.  I hate deadlines.
+They infect everything with panic and poor quality.  
 
 The Software Mind
 =================
@@ -65,37 +77,66 @@ It is hard to understand how software engineering fits into the modern
 world without a few *philosophical* underpinnings.  I will bounce in and
 around some of these ideas but it is worth having a quick riffle through some.
 
-* The size of companies (in terms of employees) is changing. Mostly we shall
-  see pressure to have msaller companies, but the success of companies that are essentially
-  federations of very small companies is impressive (see Amazon)
-  The Economist Roald Coase is important here, for we are seeing a shift in the curve that determines
-  how small a company can be
+A point about Company Size
+--------------------------
 
-* Software Literacy is an important concept - it is hard for us to recongise how literacy has shaped us and
-  our society. Look at road signs. And it is hard to recognise how much software literacy will change
-  companies, socieites and opportunities.
-  This is the underlying message of "Software is eating the world" - we have made a world that only works because
-  everyone in it can read and write.  We are making a new world, where everyone will be expected to code.
+OK, this is meandering a bit but, company size matters. A mid-20C
+econmist named Roald Coase had a great theory of the firm - basically wondering
+why a firm would have say, an internal depratmetn for, I dunno, say, market research, when it could go to the outside markte and buy it in.
+Why hire employees basically.  And the answer is its easier to tell an employee what to do, and then change your mind as circumstances change, than it is to find, source, and contract for similar in open market.
 
-* Software is subject to politics, but the importance of software is leaving development of
-  softre to be driven by people who do not "understand" software (see literacy), and it is also leading to substandard
-  software being allowed.  Regulation and professinalisation is likely to affect that.
+A lot is changing about this.  From Virtual assisitants to others.
+
+But downward sizer pressure exists.  (see note on Google / Barlcays)
+
+A point about Software Literacy
+-------------------------------
+
+* Software Literacy is an important concept - it is hard for us to
+  recongise how literacy has shaped us and our society. Look at road
+  signs. And it is hard to recognise how much software literacy will
+  change companies, socieites and opportunities.  This is the
+  underlying message of "Software is eating the world" - we have made
+  a world that only works because everyone in it can read and write.
+  We are making a new world, where everyone will be expected to code.
+
+* Software is subject to politics, but the importance of software is
+  leaving development of softre to be driven by people who do not
+  "understand" software (see literacy), and it is also leading to
+  substandard software being allowed.  Regulation and
+  professinalisation is likely to affect that.
 
 * Almost all software development is about exploring.  And two things
   we can say about exploration - you never know how long it is going
-  to take and it often is risky.  Guess what the vast majority of project planning and management try and do
-  They demand time estimates and plan other items around that, and they do not schedule resources to mitigate risk.
-  In my experience, software takes as long as it takes.  All the running around and shouting, the pressure and the politics
-  are just ways of selling the inevitable time / money / scope trade offs.
+  to take and it often is risky.  Guess what the vast majority of
+  project planning and management try and do They demand time
+  estimates and plan other items around that, and they do not schedule
+  resources to mitigate risk.  In my experience, software takes as
+  long as it takes.  All the running around and shouting, the pressure
+  and the politics are just ways of selling the inevitable time /
+  money / scope trade offs.
 
-* The Google Peace Dividend - three / four major areas of computing beig transformed by OSS
-  
+* Software literate company The value of building good software as a
+  company
+  tps://www.ben-evans.com/benedictevans/2018/8/29/tesla-software-and-disruption
+
+
+A point about the Google Peace Dividend
+---------------------------------------
+
+* The Google Peace Dividend - three / four major areas of computing
+  beig transformed by OSS
+
+A point about Pikety
+--------------------
+
 * Pikety redux
+
   - Labour lost, capital won (the reaosn wages not  subject to suply demand)
   - the great hollowing out
   - literacy and automation
   - Snowden was also right - data and pollution 
-- snowden
+  - snowden
 https://en.m.wikipedia.org/wiki/NSA_ANT_catalog
 http://www.nsaplayset.org
 - Whats happening in the world - a sense of perspective
@@ -103,16 +144,16 @@ http://www.nsaplayset.org
 * also want, wars, trade, shipping, energy, employment, poverty, investment etc.* 
 some kind of model / mapp for the whole world. where is the money flowing / going?
 
-* Software literate company
-  The value of building good software as a company
-  tps://www.ben-evans.com/benedictevans/2018/8/29/tesla-software-and-disruption
 
   That the record of software coming in to disrupt industry is good - it's hard to learn software.  As a company
   this book is about having software in your company DNA
 
+A point about project management and democratic companies
+=========================================================
 
+I am going to stick my neck out and go for it - companies will become more democratic - we shall see more voting and consensus in the workplace.  We will also see the end of deadlines as companies become *event driven* - that is, instead of shouting "get to this point" there will be more "we need to get here" and monitoring and encouragement.
 
-
+I hate deadlines.
 
 
 
@@ -228,8 +269,8 @@ an attractive one, but it is really at the scale of the biggest software houses
 in the world (Major Banks and financial instituions) that you can see the incredilbe
 value of ... City Planning.  We shall call this Software Governance.
 
-Software Governance
-===================
+A point about Software Governance
+=================================
 
 There is a software rule of thumb - that code-bases pass through
 'complexity horizons' every couple of orders of magnitude. That is a
@@ -303,8 +344,8 @@ and how to do syntax checking like pyflake - how to build own rules
 
    chapters/sphinx
 
-Systems governance
-------------------
+A point about Systems governance
+--------------------------------
 
 SRE / building for failure (Erlang and OTP)
 this is monitoring running systems.  Things like approvals, security etc.
@@ -319,8 +360,9 @@ Gov Service Design Manual
 
 
 
-Simplicity
-==========
+A point about Simplicity
+========================
+
 
 Our golden goal is to keep things simple.
 
