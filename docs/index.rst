@@ -36,6 +36,17 @@ a much more comfortable and sprawling bazaar of ideas and how-tos.
 There is a `lesson here. <http://cathedralandbazaar>`_. [#f1]_ 
 
 
+The techie bit is the smallest part of successful teams
+
+- proejct mgmt / communicating with rest world
+- plumbing and CI
+- software literacy as the driving metaphir for dev
+- town planning as the driving metaphir for ops 
+- this means go ernance matters
+- team morale and trust (people leave managers not companies)
+- future issues 
+
+
 The Chairman's tricky Question
 ==============================
 
