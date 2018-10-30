@@ -13,3 +13,7 @@ project mgmt
 lindybeige
 
 - so why not use that for team formation? 
+
+Future
+- Climate chnage
+-- a war footing solution for the globe - like march of dimes
