@@ -6,34 +6,27 @@ Introduction
 ============
 
 I have twenty years experience "in the trenches" of software
-developmnet - writing commercial and open source software for cutting
+development - writing commercial and open source software for cutting
 edge ISPs, major financial houses and not-for-profit organisations, in
 big offices, tiny offices or on globally distributed teams.  Some were
-big successes, some ... well, less so.  And in each case the things
-that worked well all shared similar cores.
+big successes, some ... well, less so.  But in each case, there was a core
+of things the were vital to success - essential items in making good software,
+think of it as a "Software team in a box".
 
-If I found myself on a team missing some of these vital components
-(from automated tests to zookeeper like config) I would work to
-install or just plain build the tools we needed to succeed.  Each
-component part was only worth the effort it if was an essential part
-of how software *shoukd* be made - this book is just a walk through
-all of those component parts - it is trying to be a "software team in
-a box".
+I have long promoted an idea of "Software Literacy", that being able to read and write software,
+will be as vital and transformative a skill in the 21C as reading and writing was to the 19C
+But Software Literacy forces us to consider not just the easy ideas like testing. But the
+difficult ones like changing company culture
+
 
 My ultimate goal is provide a software team with exactly
-what is needed to hit the ground running.
+what is needed to hit the ground running - some of it is "easy" - just copy this code or install that server.
+Then some of it is ... political - changes to management methods and even company culture and ethos.
 
-Of course successful software cannot ignore people - it obviously
-is *partly* a technical endeavour. Get that wrong and nothing else
-will go right.  But the hard-technical stuff is say, 50% of good
-software - the other 50% shades into softer human skills, good and bad
-"management practises" and as we shall see, into national and even
-global politics.
+We need software literate companies - and I am trying to guess what they will look like,
+in the same way a scribe in a Medieval Scriptoreum could try and guess what Woodward and Bernstein's
+Washinton Post would look like.
 
-In writing this book I tried to create a good structure, consistent
-and meaningful, like any good coder, but frankly this has turned into
-a much more comfortable and sprawling bazaar of ideas and how-tos.
-There is a `lesson here. <http://cathedralandbazaar>`_. [#f1]_ 
 
 
 The Chairman's tricky Question
@@ -389,6 +382,22 @@ Like Bezos, can only consume data that is published - and people only publishbso
 "but i cannot get my job done if "... that's not the problem ... the problem is clean data
 
 it's like security - it's a priority or it is not.
+
+
+Workstation
+===========
+
+The project mikadosoftware/workstation is the best point to discuss a
+develoeprs workstation.  A while back I realised I was spending waaay
+too much time altering my worksttion - as an itinerant developer /
+contractor I would effectivety be a bum on a seat (in many senses of
+the word!).
+
+So I have taken some time to define a repeatable workstation process.
+Its not ever going to be perfect but at least it is a valuable start
+
+
+Workstations are part of overall plumbing.
 
 
 
