@@ -5,6 +5,13 @@ I think Bruce Springsteen's later drafts of the song were much better but it is 
 
 
 
+Why do "old" organizations like hospitals understand comparative advantage better than FAANG? Why isn't it seen as a failure of management to prioritize effectively when everybody isn't always doing the most important thing they could be doing at that moment?
+https://news.ycombinator.com/reply?id=18197220&goto=item%3Fid%3D18192534%2318197220
+
+
+
+
+
 telecommute 
 - managing is a seperate function
 - mission - policy. solve with democracy

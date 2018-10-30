@@ -79,3 +79,22 @@ art
 http://www.dirk-loss.de/sshvis/drunken_bishop.pdf
 
 
+Securing AWS / CI flow
+The big big big advantage is if it is repeatable automated steps you can add a tiny improvement once a day and  it is locked in free for ever
+
+Not only but also
+
+- Vendor supply chain. How to verify that the code you download as dependnacies is secure
+
+- Physical security - including personal 
+
+- reputational security - defending your repirtstuin 
+
+- ransomware and recovery
+
+- Losing your apple iphone... 
+
+- infrastructure security - certificates etc. How did that guy find zero days in ?
+
+- 
+

@@ -2,6 +2,38 @@
 Agile Estimation - Learning from traditional Project Management
 ===============================================================
 
+Remember the basic problem with any estimation for something that has not been done before is that it's impossible to be accurate enough for anyone else to rely on
+
+And then other parts of the company then try to rely on it.
+
+Which then becomes your problem because they are delenandt on you and can blame you for not "delivering".
+
+this then likes pressure on you to take shirt cute, donless testing and generally drop your quality
+
+We can mitigate this slightly by enforcing high quality though CI processes like linting and constant deployment.
+
+this shows forward progress but essentially the underlying problem is still there - we are making a journey we have not made before from a starting point we have never been at before (ie out  odebase now)
+
+So what we need is a different approach - reactive project management t - or event driven project management
+
+On top of which we need risk based project mgmt - where we report the top risks in the project - one of which is always always always the code quality
+
+
+This takes us to todoinator- anatfempt to handle all this and the reprint of the same throughout.
+
+
+You need to 
+
+* identify a portion of codebase responsible for and a feature set needed 
+
+* estimate these 
+
+* publish and record your estimates *locally* (ie in your ticket system before putting into the whatever jira
+
+* manage your actual book of work through todo and your local ticket system - see 'why the tickets never match reality" - 10x number of commits as tickets in system.
+
+* 
+
 I have long wondered why Agile (well, read Scrum) planning is *so* simplistic.
 
 Yes, having the team estimate the tasks and then agree to them is, frankly, a
