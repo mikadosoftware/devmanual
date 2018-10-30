@@ -43,7 +43,7 @@ The techie bit is the smallest part of successful teams
 - software literacy as the driving metaphir for dev
 - town planning as the driving metaphir for ops 
 - this means go ernance matters
-- team morale and trust (people leave managers not companies)
+- team morale and we trust (people leave managers not companies)
 - future issues 
 
 
