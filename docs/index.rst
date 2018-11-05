@@ -8,23 +8,41 @@ Introduction
 I have twenty years experience "in the trenches" of software
 development - writing commercial and open source software for cutting
 edge ISPs, major financial houses and not-for-profit organisations, in
-big offices, tiny offices or on globally distributed teams.  Some were
-big successes, some ... well, less so.  But in each case, there was a core
-of things the were vital to success - essential items in making good software,
-think of it as a "Software team in a box".
+big offices, tiny offices or on globally distributed teams.
 
-I have long promoted an idea of "Software Literacy", that being able to read and write software,
-will be as vital and transformative a skill in the 21C as reading and writing was to the 19C
-But Software Literacy forces us to consider not just the easy ideas like testing. But the
-difficult ones like changing company culture
+And I have learnt a lot about what works, and what does not, when it comes to
+getting software out of the door.
+
+This book is my attempt to distill two decades of lessons, into an increaasingly
+less-brief book.  (I mean this book started as an idea for a blog post.)
+
+Some of the book is fairly easy to do - suggestions like "Use a
+Continuous Integration Pipeline".  This is good advice and almost a
+*software team in a box*.  You can find this sort of advice all over
+the internet (in dribs and drabs often) - but Its just that this
+advice kind of stops short of making a good software team.  Its rather
+like saying "practise passing and penalty shots" to a football team.
+Yes, its necessary. But it is rarely sufficient to make a team *gel*.
+
+Most teams I have worked in were not missing the basic blocks of CI (some where and
+it is hard to explain why we need to stop and fix that), but as we go
+
+* Technical
+* Team management (workbreakdown, publishing current status, maintaining quality, change managment)
+* Organisational culture and project management (Maturty of company project mgmt, accepting honest status, fighting for resources)
 
 
-My ultimate goal is provide a software team with exactly
-what is needed to hit the ground running - some of it is "easy" - just copy this code or install that server.
-Then some of it is ... political - changes to management methods and even company culture and ethos.
 
-We need software literate companies - and I am trying to guess what they will look like,
-in the same way a scribe in a Medieval Scriptoreum could try and guess what Woodward and Bernstein's
+I have long promoted an idea of "Software Literacy", that being able
+to read and write software, will be as vital and transformative a
+skill in the 21C as reading and writing was to the 19C But Software
+Literacy forces us to consider not just the easy ideas like testing.
+But the difficult ones like changing company culture
+
+
+We need software literate companies - and I am trying to guess what
+they will look like, in the same way a scribe in a Medieval
+Scriptoreum could try and guess what Woodward and Bernstein's
 Washinton Post would look like.
 
 
