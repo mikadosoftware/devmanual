@@ -38,7 +38,9 @@ The techie bit is the smallest part of successful teams
 - this means go ernance matters
 - team morale and we trust (people leave managers not companies)
 - future issues 
+- culture people process
 
+https://medium.com/coaching-notes/youre-not-managing-a-team-of-software-engineers-you-re-managing-a-team-of-writers-b263d3a10cc7
 
 The Chairman's tricky Question
 ==============================
