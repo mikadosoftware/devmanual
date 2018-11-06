@@ -2,6 +2,18 @@
 Dev Manual
 ================
 
+How to build a software stack a software teams and a software literate  company
+
+- Interviews around the major themes - CI, testing, security, 
+- .org design, coase economics, etc etc 
+
+Find people and validate the chapters and interview for podcast / vlog
+
+
+
+
+
+
 Build by :
 
 sh ./mkdocs.sh
