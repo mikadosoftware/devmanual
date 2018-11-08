@@ -17,3 +17,5 @@ lindybeige
 Future
 - Climate chnage
 -- a war footing solution for the globe - like march of dimes
+
+team based performance reviews - more useful more team focused
