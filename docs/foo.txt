@@ -1,0 +1,81 @@
+A point about software literacy
+A point about Company Size
+A point about Software Literacy
+A point about the Google Peace Dividend
+A point about Pikety
+A point about project management and democratic companies
+Fractal Management
+Plumbing
+security (secrets management & auth)
+security (deployment / repeatability)
+prod parallel
+Technical Architecture
+Code base governance
+A point about Systems governance
+Managing the lifecycle
+Profesional Stuff you should know 
+Project Management
+Event driven Project Management
+AWS and old school
+Docker AWS
+One New Skill Evening Club
+Functional Reactive programming and DAGs
+SoftwareMind
+--
+Introduction
+--
+How this book is organised
+--
+The Software Mind
+--
+The Metaphor of Building Software
+--
+A point about Software Governance
+--
+A point about Simplicity
+--
+Workstation
+--
+Plumbing
+--
+Continuous Integration (CI)
+--
+Security
+--
+Configuration management and secrets
+--
+Testing - a heresy
+--
+DevOps
+--
+Basic Management Reporting
+--
+The scope
+--
+Soft Skills
+--
+Skills for individual developer
+--
+Esprit d'corp and Team honesty
+--
+Project and Programme management
+--
+The Chairman's tricky Question
+--
+CTO dashboards and Business Process Dashboards
+--
+UI for idiots
+--
+The dev manual - a proof of concept
+--
+Putting it all together
+--
+Micro-HowTos
+--
+Google Peace dividend and Distributed computing
+--
+Future
+--
+Articles
+--
+Out of date already

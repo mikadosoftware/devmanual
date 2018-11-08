@@ -10,104 +10,76 @@ development - writing commercial and open source software for cutting
 edge ISPs, major financial houses and not-for-profit organisations, in
 big offices, tiny offices or on globally distributed teams.
 
-And I have learnt a lot about what works, and what does not, when it comes to
-getting software out of the door.
+And I have learnt a lot about what works, and what does not, when it
+comes to getting software out of the door.
 
-This book is my attempt to distill two decades of lessons, into an increaasingly
-less-brief book.  (I mean this book started as an idea for a blog post.)
+This book is my attempt to distill those two decades of lessons, into
+one book.  Well, maybe two books.  And a website. OK, so there is a
+lot to distill ...
 
-Some of the book is fairly easy to do - suggestions like "Use a
-Continuous Integration Pipeline".  This is good advice and almost a
-*software team in a box*.  You can find this sort of advice all over
-the internet (in dribs and drabs often) - but Its just that this
-advice kind of stops short of making a good software team.  Its rather
-like saying "practise passing and penalty shots" to a football team.
-Yes, its necessary. But it is rarely sufficient to make a team *gel*.
+How this book is organised
+==========================
 
-Most teams I have worked in were not missing the basic blocks of CI (some where and
-it is hard to explain why we need to stop and fix that), but as we go
+Mostly what needs to be distilled is not *how* to create software and
+software teams, a lot of this book is about ... why.  Why is software
+eating the world, why do certain practises work well and why do
+certain pathologies still run in our organisations.
 
-* Technical
-* Team management (workbreakdown, publishing current status, maintaining quality, change managment)
-* Organisational culture and project management (Maturty of company project mgmt, accepting honest status, fighting for resources)
+I call this *why*, The Software Mind.  The *how* is The Dev Manual.
 
-
-
-I have long promoted an idea of "Software Literacy", that being able
-to read and write software, will be as vital and transformative a
-skill in the 21C as reading and writing was to the 19C But Software
-Literacy forces us to consider not just the easy ideas like testing.
-But the difficult ones like changing company culture
+So there are two kinds of chapter - one trying to explain the why, the
+context for the more detailed, how-to chapters. Both are useful to
+read, and you can think of this as two interleaved books.
 
 
-We need software literate companies - and I am trying to guess what
-they will look like, in the same way a scribe in a Medieval
-Scriptoreum could try and guess what Woodward and Bernstein's
-Washinton Post would look like.
+* SM - Software Literacy
+* DM - Plumbing / CI
+* SM - Coase, firms and democracy
+* DM - Project Mgmt, tickets and todoinator
+* DM - town planning as the driving metaphor for ops  - Governace Matters
+* DM - Fractal Management
+* SM - Pikkety, social impact issues
+       Why is AirBnB like the European Commission   
+* DM - team morale and trust (people leave managers not companies)
+* SM - future software trends
+* SM - culture people process
 
-
-
-The techie bit is the smallest part of successful teams
-
-- proejct mgmt / communicating with rest world
-- plumbing and CI
-- software literacy as the driving metaphir for dev
-- town planning as the driving metaphir for ops 
-- this means go ernance matters
-- team morale and we trust (people leave managers not companies)
-- future issues 
-- culture people process
-
-https://medium.com/coaching-notes/youre-not-managing-a-team-of-software-engineers-you-re-managing-a-team-of-writers-b263d3a10cc7
-
-The Chairman's tricky Question
-==============================
-
-Some time ago I was asked by the Chairman of the Board what one thing
-he could do to make sure all these damn software projects were under
-control.
-
-What he meant by under-control, was *on-time*. Which is not what I meant.
-
-So I had two answers.   One was under control from a development perspective.
-This is pretty simple and  boils  down to 
-
-* Require *every* project to automatically deploy to a prod-parallel
-  environment, *every* day, their most recent approved, tested code
-  and post their test results.
-
-* Reduce every project to small teams, controlling everything from dev
-  to production, with strong interfaces to other services they might
-  need.
-
-These seemed radical, but achievable. Especially when you point out Amazon
-does the second one a lot.  A lot of the *technical* side of this Dev Manual is focused on achieving this.
-
-
-But the *real* point was about *on-time*.  And that is where I gave an answer
-he did not like.
-
-* Stop having deadlines.  That way nothing is late.
-
-Yes.
-
-We will expand on that, but I am going to stick to it.  I hate deadlines.
-They infect everything with panic and poor quality.  
 
 The Software Mind
 =================
 
 It is hard to understand how software engineering fits into the modern
-world without a few *philosophical* underpinnings.  I will bounce in and
-around some of these ideas but it is worth having a quick riffle through some.
+world without a few *philosophical* underpinnings.  I will bounce in
+and around some of these ideas but it is worth having a quick riffle
+through some.
+
+A point about software literacy
+-------------------------------
+
+I have long promoted an idea of "Software Literacy", that being able
+to read and write software, will be as vital and transformative a
+skill in the 21C as reading and writing was to the 19C. But Software
+Literacy forces us to consider not just the easy ideas like testing.
+But the difficult ones like changing company culture.
+
+We need software literate companies - and I am trying to guess what
+they will look like, in the same way a scribe in a Medieval
+Scriptoreum could try and guess what Woodward and Bernstein's
+Washington Post would look like.
+
+
 
 A point about Company Size
 --------------------------
 
 OK, this is meandering a bit but, company size matters. A mid-20C
-econmist named Roald Coase had a great theory of the firm - basically wondering
-why a firm would have say, an internal depratmetn for, I dunno, say, market research, when it could go to the outside markte and buy it in.
-Why hire employees basically.  And the answer is its easier to tell an employee what to do, and then change your mind as circumstances change, than it is to find, source, and contract for similar in open market.
+econmist named Roald Coase had a great theory of the firm - basically
+wondering why a firm would have say, an internal depratmetn for, I
+dunno, say, market research, when it could go to the outside markte
+and buy it in.  Why hire employees basically.  And the answer is its
+easier to tell an employee what to do, and then change your mind as
+circumstances change, than it is to find, source, and contract for
+similar in open market.
 
 A lot is changing about this.  From Virtual assisitants to others.
 
@@ -149,7 +121,7 @@ A point about the Google Peace Dividend
 ---------------------------------------
 
 * The Google Peace Dividend - three / four major areas of computing
-  beig transformed by OSS
+  beig transformed by OSS - ML/AI, data processing pipelines, virtual machine management,
 
 A point about Pikety
 --------------------
@@ -169,89 +141,73 @@ http://www.nsaplayset.org
 some kind of model / mapp for the whole world. where is the money flowing / going?
 
 
-  That the record of software coming in to disrupt industry is good - it's hard to learn software.  As a company
-  this book is about having software in your company DNA
+  That the record of software coming in to disrupt industry is good -
+  it's hard to learn software.  As a company this book is about having
+  software in your company DNA
 
 A point about project management and democratic companies
-=========================================================
+---------------------------------------------------------
 
-I am going to stick my neck out and go for it - companies will become more democratic - we shall see more voting and consensus in the workplace.  We will also see the end of deadlines as companies become *event driven* - that is, instead of shouting "get to this point" there will be more "we need to get here" and monitoring and encouragement.
+I am going to stick my neck out and go for it - companies will become
+more democratic - we shall see more voting and consensus in the
+workplace.  We will also see the end of deadlines as companies become
+*event driven* - that is, instead of shouting "get to this point"
+there will be more "we need to get here" and monitoring and
+encouragement.
 
-I hate deadlines.
+
+The problem is *always* at the top
+----------------------------------
+
+Most technical problems can be solved by changing the business environment.
+If the security of a company is challenged because a top level executive refuses to follow
+the security restrictions, then there is a clear choice betwene firing the Sales Director
+or having security.  Only the Board can decide that, and once they do it must be clear.
+
+Google is currently experiencing a similar issue over sexual harrassment.
+
+Data publication
 
 
 
 
+Fractal Management
+------------------
 
-Principles
-==========
+How individuals and teams need to model, monitor, mentor.
 
-Simplicity
-==========
 
-Writing code is about 20% of the job
 - CI and repeatability
 - reporting on functionality of running processes
 - analysis of inputs, running, outputs
-- project and programme mgmt 
 - reporting upwards and outwards
 - marketing your code
 
-Overviews again
 
-- Web micro service
--- security (secrets management)
--- security (deployment / repeatability)
--- CI/CD
--- prod parallel
--- teams to deliver components of a eco system
--- one example will need
 
-testing
-linting and commuting and pre commit hooks
-governance
-simple worker queues
-simple load balancer
-simple kubernetes / DNS etc
-simple js client 
-simple web server 
-simple user management 
 
+
+security (secrets management & auth)
+------------------------------------
 -- user management / aithentication authorisation
 -- FIDO
+
+
+security (deployment / repeatability)
+-------------------------------------
+
+
+prod parallel
+-------------
+Modelling
+
+
+
 -- plumbing
--- metric capture and operations management 
 
-The goal here is not best practise, but good enough practise that can scale enough for you not to panic while replacing it.
 
-Example will be a site selling FIDO keys? 
 
-Our golden goal is to keep things simple.
 
-Simple breaks in simple ways, simple is simple to extend and improve.
-
-Its not that simple is *easy* - often it is the opposite of easy, or quick.
-
-But simple wins out over time. Simple gives great ROI.
-
-I throughly recommend listening to Rich Hickey on this subject (Link)
-
-So please keep in mind - we aim for simple.  Even if our day to day
-work pushes us to quick and easy and complicated.  We need to push
-back.
-
-chaos engineering 
-http://principlesofchaos.org
-
-KISS
-http://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html
-there is simple, and there is too simple to easily manage and monitor. 
-
-pentesting and adversarial security
-https://www.trailofbits.com
-black hat python
-the simple ones still work
-AES based oracle 
 
 
 The Metaphor of Building Software
@@ -312,8 +268,11 @@ some architecture and frameworks.
 
    "What about the frameworks. Think of the frameworks"
 
-Yes, at some point the 'one guy opens up one file' approach is of
-course going to fail.
+Pieter seems to be doing fine his way, but yes, at some point the 'one
+guy opens up one file' approach is of course going to fail as
+complexity rises.  But managing it with the latest technical framework is
+not the right answer - a technical framework is one response to the problem
+of increasing complexity, one means of *governing* the codebase.
 
 How we manage that is *software governance*.  The goal of software
 governance is to raise the floor everywhere.
@@ -404,13 +363,17 @@ back.
 
 
 Data Mangement  Philosophy
+==========================
 
-Data Publishing needs to be a business level function, providing consistent accurate and timely data to the
-rest of the organisation is a vital task.
+Data Publishing needs to be a business level function, providing
+consistent accurate and timely data to the rest of the organisation is
+a vital task.
 
-Like Bezos, can only consume data that is published - and people only publishbsokething they willing to support
+Like Bezos, can only consume data that is published - and people only
+publishbsokething they willing to support
 
-"but i cannot get my job done if "... that's not the problem ... the problem is clean data
+"but i cannot get my job done if "... that's not the problem ... the
+problem is clean data
 
 it's like security - it's a priority or it is not.
 
@@ -452,6 +415,50 @@ simple easy and the hard doable.  WIthout it, you are in trouble.
   - :doc:`chapters/metricsAndTracing`
   - :doc:`chapters/network_monitor`
 
+- Runbooks and monitoring
+
+
+Plumbing
+-----------------
+
+The goal here is not best practise, but good enough practise that can
+scale enough for you not to panic while replacing it.
+Our golden goal is to keep things simple.
+
+Simple breaks in simple ways, simple is simple to extend and improve.
+
+Its not that simple is *easy* - often it is the opposite of easy, or quick.
+
+But simple wins out over time. Simple gives great ROI.
+
+I throughly recommend listening to Rich Hickey on this subject (Link)
+
+chaos engineering 
+http://principlesofchaos.org
+
+KISS
+http://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html
+there is simple, and there is too simple to easily manage and monitor. 
+
+pentesting and adversarial security
+https://www.trailofbits.com
+black hat python
+the simple ones still work
+AES based oracle 
+
+
+- microservices
+- CI / CD
+-- metric capture and operations management 
+testing
+linting and commuting and pre commit hooks
+governance
+simple worker queues
+simple load balancer
+simple kubernetes / DNS etc
+simple js client 
+simple web server 
+simple user management 
 
     
     
@@ -688,24 +695,71 @@ are always wrong
 <https://www.quora.com/Engineering-Management/Why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3/answer/Michael-Wolfe?srid=24b&share=1>`_
 
 Basically we cannot do it.  So why do people ask for estimates? They
-dont want estimates - they want landmarks !!!
+dont want estimates - they want evenly spaced landmarks. They want
+confidence that progress is being made.
 
 
-It if ain't got a ticket dont work on it
-If it ain't possible to rollup tickets you dont know where you are going
-A backlog out of context is just a horror
-There is nothing wrong with top-down design (see Linux)
-Backlog for the whole company - agile for the whole company  just see progress on a map.
-If its not going fast wnough for the board they can fix things at their level.
+It if ain't got a ticket dont work on it If it ain't possible to
+rollup tickets you dont know where you are going A backlog out of
+context is just a horror There is nothing wrong with top-down design
+(see Linux) Backlog for the whole company - agile for the whole
+company just see progress on a map.  If its not going fast wnough for
+the board they can fix things at their level.
 
 
 We need to track our work so we can provide an audit trail
 THese are useful
 
 
+Event driven Project Management
+-------------------------------
 
-Project Management
-------------------
+How companies need to reactively plan, with exception / assert monitoring.
+How this replaces "managment judgement" with clear budgeting.?
+
+
+** Project Management
+The Chairman's tricky Question
+==============================
+
+Some time ago I was asked by the Chairman of the Board what one thing
+he could do to make sure all these damn software projects were under
+control.
+
+What he meant by under-control, was *on-time* and *as expected*. Which
+is not what I meant.
+
+So I had two answers.   One was under control from a development perspective.
+This is pretty simple and  boils  down to 
+
+* Require *every* project to automatically deploy to at least a prod-parallel
+  environment, *every* day, their most recent approved, tested code
+  and post their test results.
+
+These seemed radical, but achievable.  A lot of the *technical* side
+of this Dev Manual is focused on achieving this.
+
+But the *real* point was about *on-time* and *as expected*.  And that
+is where I gave an answer he did not like.
+
+* Stop having deadlines.  That way nothing is late.
+
+Yes.  You can see why it was not a popular suggestion.
+
+We will expand on that, but I am going to stick to it.  I hate
+deadlines.  They infect everything with panic and poor quality.  And
+the deadlines are almost always derived from poor information about
+reality, and where the deadline should be, and rarely if ever updated,
+as if reality and poor estimation are irrelevant.
+
+Its much better to have regular, reality-grounded views on where one
+really is, and alter plans based on that.  Automatically.
+
+Deadlines sometimes help. Mostly they do not.
+
+If it ain't ready, setting the deadline to today won't make it ready.
+
+
 - :doc:`chapters/agile_estimation`
 - :doc:`chapters/SoHo1`
 - :doc:`chapters/themes`
