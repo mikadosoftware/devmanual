@@ -88,7 +88,7 @@ unavoidable in the future.
 
 
 
-.. figure:: /_static/robards.jpg
+.. figure:: /_static/all-the-presidents-men.png
    :width: 75%
 
    When I speak of a literate company, please keep this film in mind.
