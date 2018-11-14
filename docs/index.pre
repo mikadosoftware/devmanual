@@ -33,23 +33,56 @@ read, and you can think of this as two interleaved books.
 
 {{ conceptchapters/sm_software_literacy.rst }}
 
+
 I am trying to guess what
 they will look like, in the same way a scribe in a Medieval
 Scriptoreum could try and guess what Woodward and Bernstein's
 Washington Post would look like.
 
+Plumbing
+========
 
-- :doc:`conceptchapters/dm_plumbing_ci`
-- :doc:`conceptchapters/sm_firms_coase_democracy`
-- :doc:`conceptchapters/dm_projects_tickets_todoinator`
-- :doc:`conceptchapters/dm_townplanning_goverance`
-- :doc:`conceptchapters/dm_fractal_management`
-- :doc:`conceptchapters/sm_pikkety_social_regulation`
-- :doc:`conceptchapters/dm_team_morale_trust`
-- :doc:`conceptchapters/sm_futuresoftwaretrends`
-- :doc:`conceptchapters/dm_culture_people_process`
-- :doc:`conceptchapters/conclusions`
-- :doc:`conceptchapters/landscapestrategy`
+{{ conceptchapters/dm_plumbing_ci.rst }}
+
+Democracy
+=========
+
+{{ conceptchapters/sm_firms_coase_democracy.rst }}
+
+Project Management
+==================
+{{ conceptchapters/dm_projects_tickets_todoinator.rst }}
+
+Governance
+==========
+{{ conceptchapters/dm_townplanning_goverance.rst }}
+
+Fractal Management
+==================
+{{ conceptchapters/dm_fractal_management.rst }}
+
+Pikkety
+=======
+{{ conceptchapters/sm_pikkety_social_regulation.rst }}
+
+Team building up and down
+=========================
+{{ conceptchapters/dm_team_morale_trust.rst }}
+
+Future Trends
+=============
+{{ conceptchapters/sm_futuresoftwaretrends.rst }}
+
+People, Process, Culture
+========================
+{{ conceptchapters/dm_culture_people_process.rst }}
+{{ conceptchapters/landscapestrategy.rst }}
+
+Conclusions
+===========
+{{ conceptchapters/conclusions.rst }}
+
+
 
 
 

@@ -27,6 +27,37 @@ Customising Projects all the way
 Custom Themes
 -------------
 
+Lets build the simplest possible Sphinx theme in the simplest possible
+way.
+
+::
+   #go to the docs dir for the sphinx project
+   cd docs/
+   mkdir -p themes/darktheme/static
+   touch themes/darktheme/theme.conf
+   touch themes/darktheme/static/style.css
+
+   in `conf.py` alter
+   #the theme name (based on dir)
+   html_theme = 'darktheme'
+   #where to find the subdir
+   html_theme_path = ['themes']
+
+   in `theme.conf`
+   [theme]
+   inherit = alabaster
+   stylesheet = style.css
+   pygments_style = pygments.css
+
+   in style.css
+   body { color:red; }
+
+Now we *should* have the alabaster style but with red text.
+Cool.
+
+
+
+
 We might want to build our own custom theme. In fact this is a lot of
 fun.  So the best way is to steal an existing theme, lets say
 alabaster, and add to our docs directory in _template
@@ -34,6 +65,7 @@ alabaster, and add to our docs directory in _template
 Lets say we copy the directory::
   
   ~/venvs/book/lib64/python3.6/site-packages/alabaster/
+  /usr/local/lib/python3.6/dist-packages/alabaster
 
 to::
 
