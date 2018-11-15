@@ -1,0 +1,25 @@
+/*
+ * bizstyle.css_t
+ * ~~~~~~~~~~~~~~
+ *
+ * Sphinx stylesheet -- business style theme.
+ *
+ * :copyright: Copyright 2011-2014 by Sphinx team, see AUTHORS.
+ * :license: BSD, see LICENSE for details.
+ *
+ */
+
+@import url("bizstyle.css");
+
+/* -- page layout ----------------------------------------------------------- */
+
+body {
+  font-size: 18px;
+  background-image: none;#url(background_b01.png);
+  color: green;
+  background-color: black;
+}
+
+div.document {
+  background-color: black;  
+}
