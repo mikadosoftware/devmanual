@@ -27,6 +27,18 @@ Customising Projects all the way
 Custom Themes
 -------------
 
+A sphinx theme is, at bottom, a simple thing.
+A directory in the `docs/` folder, named 'mytheme', containing
+`styles/style.css` and a `theme.conf` file.
+
+Creating one from scratch is possible, but a far far simpler approach is
+to copy the `bizstyle` directory found in `/usr/local/lib/python3.6/dist-packages/sphinx/themes/bizstyle` into our docs dir, then rename to 'mytheme'
+
+At this point alter the css as below
+
+Now we can start making changes as we want and grow our style.
+
+
 Lets build the simplest possible Sphinx theme in the simplest possible
 way.
 
