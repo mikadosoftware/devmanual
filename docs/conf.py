@@ -119,7 +119,7 @@ html_theme = 'devmanual'
 # documentation.
 html_theme_options = {'nosidebar' : True,
                       'show_copyright' : False,
-                      
+                      #'show_related': False,             
                       }
 
 # Add any paths that contain custom themes here, relative to this directory.

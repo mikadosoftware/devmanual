@@ -1,0 +1,78 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>aspell &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Mikado-doc-manager" href="mikado-doc-manager.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="veryquickMBA.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="aspell">
+<h1>aspell<a class="headerlink" href="#aspell" title="Permalink to this headline">¶</a></h1>
+<p>This is an enormously painful setup and generally a painful program.  But its
+a limited choice world it seems.</p>
+<p>Install aspell is pretty simple.  <cite>/usr/ports/textproc/aspell</cite></p>
+<p>We then want to get dictionaries - which are word lists in specific formats.
+The only place to get these and remain sane is <a class="reference external" href="http://ftp.gnu.org/gnu/aspell/dict/en">http://ftp.gnu.org/gnu/aspell/dict/en</a></p>
+<p>After untarring, we run:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./configure
+Finding Dictionary file location ... /usr/local/share/aspell
+Finding Data file location ... /usr/local/lib/aspell-0.60
+$ sudo make
+$ sudo make install
+</pre></div>
+</div>
+<p>Now if we look in /usr/local/share/aspell we have a huge list of english words in aspell formats.</p>
+<p>Using it with emacs:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>M-$
+or
+M-x flyspell-mode
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

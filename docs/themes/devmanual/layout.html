@@ -15,6 +15,11 @@
 {% block sidebar1 %}{{ sidebar() }}{% endblock %}
 {% block sidebar2 %}{% endblock %}
 
+{# Disable base theme's top+bottom related navs; #}
+  {%- block relbar1 %}{% endblock %}
+  {%- block relbar2 %}{% endblock %}
+
+
 {# doctype override #}
 {%- block doctype %}
 <!doctype html>

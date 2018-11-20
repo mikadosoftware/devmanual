@@ -1,0 +1,96 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Network Monitoring &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Testing Environments" href="environments.html" />
+    <link rel="prev" title="Best practise for logging in Python" href="logging.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="network-monitoring">
+<h1>Network Monitoring<a class="headerlink" href="#network-monitoring" title="Permalink to this headline">¶</a></h1>
+<div class="sidebar">
+<p class="first sidebar-title">historical note</p>
+<dl class="last docutils">
+<dt>This area has moved on considerably as well.  netflow is still the heart of</dt>
+<dd>it and RRTD graphs exist everywhere still but graphite and the new
+PacketBeat are showing a new wave.</dd>
+</dl>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Monitoring what is flowing over your network tubes is more important than ever.
+For reasons of capacity planning, as well as security and &#8220;getting a feel for
+the network&#8221; good tools matter.</p>
+</div>
+<div class="section" id="net-flow-and-cousins">
+<h2>Net-flow and cousins<a class="headerlink" href="#net-flow-and-cousins" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://forums.freebsd.org/showthread.php?t=248">http://forums.freebsd.org/showthread.php?t=248</a></p>
+<p>net-mgmt/softflowd
+$ softflowd -i rl0 -n 192.168.1.20:8888</p>
+<p>$ softflowctl statistics
+softflowd[11241]: Accumulated statistics:
+Number of active flows: 182
+Packets processed: 2529
+Fragments: 0
+Ignored packets: 5 (5 non-IP, 0 too short)
+Flows expired: 0 (0 forced)
+Flows exported: 0 in 0 packets (0 failures)
+Packets received by libpcap: 2579
+Packets dropped by libpcap: 0
+Packets dropped by interface: 63</p>
+<p>net-mgmt/flow-tools
+mkdir /var/log/netflow</p>
+<dl class="docutils">
+<dt>echo /usr/local/bin/flow-capture -p /var/run/flow-capture.pid -n 287</dt>
+<dd>-N 0 -w /var/log/netflow/ -S 5 0/0/8888</dd>
+</dl>
+<p><a class="reference external" href="http://onlamp.com/bsd/2005/08/18/Big_Scary_Daemons.html">http://onlamp.com/bsd/2005/08/18/Big_Scary_Daemons.html</a></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Managing identity and authentication &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Useful command line utilities" href="sed_sort.html" />
+    <link rel="prev" title="Samba File and Print Server" href="samba.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <p>Have a demo website with all different methods of auth and how to share across many enterprise apps</p>
+<p>ie - one portal for login, via OAuth2, and sets a redis session key
+Use SQRL
+Use FIDO2
+Use client sertificates (see fido2)
+Use TOTP</p>
+<p>Thats bout ti.</p>
+<p>GPG basics
+<a class="reference external" href="https://lwn.net/SubscriberLink/734767/b8509e00378301f9/">https://lwn.net/SubscriberLink/734767/b8509e00378301f9/</a></p>
+<p><a class="reference external" href="https://developers.google.com/web/fundamentals/security/csp/">https://developers.google.com/web/fundamentals/security/csp/</a>
+<a class="reference external" href="https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5">https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5</a></p>
+<p>Hardening and golden docker
+<a class="reference external" href="https://support.rackspace.com/how-to/linux-server-security-best-practices/">https://support.rackspace.com/how-to/linux-server-security-best-practices/</a></p>
+<div class="section" id="managing-identity-and-authentication">
+<h1>Managing identity and authentication<a class="headerlink" href="#managing-identity-and-authentication" title="Permalink to this headline">¶</a></h1>
+<p>So this is a huge one for me. If i have the below fairly simple
+micro-services structure, how can I keep Authentication and
+Autorisation correct, and simple?</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">0</span>           <span class="o">----------</span>          <span class="o">-----------</span>          <span class="p">(</span><span class="o">-------</span><span class="p">)</span>
+<span class="o">|</span>      <span class="o">---</span>  <span class="o">|</span> <span class="n">www</span>    <span class="o">|</span>   <span class="o">----</span>   <span class="o">|</span> <span class="n">uService</span><span class="o">|</span>  <span class="o">-------</span> <span class="p">(</span>  <span class="n">DB</span>   <span class="p">)</span>
+<span class="o">^</span>           <span class="o">|</span> <span class="n">gateway</span><span class="o">|</span>          <span class="o">|</span>         <span class="o">|</span>          <span class="p">(</span>       <span class="p">)</span>
+            <span class="o">----------</span>          <span class="o">-----------</span>          <span class="p">(</span><span class="o">-------</span><span class="p">)</span>
+<span class="n">User</span>
+</pre></div>
+</div>
+<p>Lets say this is a really simple service. User logs in and perform
+get /mydetails They should be presented with their profile pulled form
+the DB.  The uService MUST be sure that the person performing the
+request,</p>
+<p>We assume that the hosts in the chain remain uncompromised, but we
+cannot assume that the network is anything other than hostile.  So no
+&#8220;send the profile in plain text&#8221; and of course no &#8220;I got a request for
+user xxx on my port so of course it came from the www server that I
+trust.&#8221;</p>
+<p>The challenge.  I want a strong, robust and widely supported method of
+client authentication.  This fundamentally means X509 client
+certificates.  We are going to &#8220;Trust the Math&#8221;.  But once the TLS
+terminates at www, how do we go about re-trusting the whole shooting
+match.  How do we get the uService to know who the user</p>
+<p>How do we do TLS between servers.</p>
+<p>How do we trust anything?</p>
+<p>Authentication
+Authorisation
+ROle Management</p>
+<p>Use a central service for Authorisation and Role Management - give it a token
+and ask if toekn holder is allowed to do X</p>
+<p>We can happily use a random token - no need for JWT etc. Just a single token
+and a call to a central service.</p>
+<div class="section" id="this-is-the-simplest-and-best-discussions-on-jwt">
+<h2>THis is the simplest and best.  Discussions on JWT.<a class="headerlink" href="#this-is-the-simplest-and-best-discussions-on-jwt" title="Permalink to this headline">¶</a></h2>
+<p>Attack tools
+<a class="reference external" href="https://www.schneier.com/blog/archives/2014/05/">https://www.schneier.com/blog/archives/2014/05/</a><a href="#id1"><span class="problematic" id="id2">the_nsa_is_not_</span></a>.html</p>
+<p>art
+<a class="reference external" href="http://www.dirk-loss.de/sshvis/drunken_bishop.pdf">http://www.dirk-loss.de/sshvis/drunken_bishop.pdf</a></p>
+<p>Securing AWS / CI flow
+The big big big advantage is if it is repeatable automated steps you can add a tiny improvement once a day and  it is locked in free for ever</p>
+<p>Not only but also</p>
+<ul class="simple">
+<li>Vendor supply chain. How to verify that the code you download as dependnacies is secure</li>
+<li>Physical security - including personal</li>
+<li>reputational security - defending your repirtstuin</li>
+<li>ransomware and recovery</li>
+<li>Losing your apple iphone...</li>
+<li>infrastructure security - certificates etc. How did that guy find zero days in ?</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

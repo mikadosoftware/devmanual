@@ -1,0 +1,70 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Burp Suite &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Managing a Software Career" href="careermanagement.html" />
+    <link rel="prev" title="Email" href="email.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="burp-suite">
+<h1>Burp Suite<a class="headerlink" href="#burp-suite" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<p>A java based, advanced proxy / intercept / wiretapping tool for watching your
+REST API talk and debug.</p>
+<p>Its less user-friendly than charles, but it runs on FreeBSD...</p>
+<p>It is also recommended by tpatcek</p>
+<p>Options are stored in <code class="docutils literal"><span class="pre">.java/.userPrefs/burp/prefs.xml</span></code></p>
+<div class="section" id="installing-a-ca">
+<h2>Installing a CA<a class="headerlink" href="#installing-a-ca" title="Permalink to this headline">¶</a></h2>
+<p>We force Chrome to visit a site where a CA error will throw a User Warning.
+Basically this means almost any https site. The browser shows a warning- we click through to details of the certificate (it is the one sent by burp, and not the one recieved by burp from <a class="reference external" href="https://google">https://google</a></p>
+<p>Then export the certificate, and now visit the &#8220;update cert&#8221; in the browser and import what we just saved.</p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Testing &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Text Mining" href="text_mining.html" />
+    <link rel="prev" title="Using Terminals" href="terminal.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="testing">
+<h1>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h1>
+<p>Two kinds
+&#8212;———
+There are two kinds of test
+Unit tests and integration  tests</p>
+<p>Unit tests should be typified by doctrst - explanatory, covering the developers thought processes when building this
+And also by hypothesis- attribute based testing (passing in nulls and floats to top end of the ranges and billion character strings)</p>
+<p>Then everything else is integration testing - UI level, in through the front door.  Jason just makes this easier but it builds up to become the operational level feedback - you cannot do operational testin gwithout building integration tests up and up.  And integration tests should be runnable from any env</p>
+<p>Se feynmanns description of engine based testing</p>
+<p>Nose is the standard for Python testing.</p>
+<p><a class="reference external" href="http://stackoverflow.com/questions/8054512/anyone-know-how-nosetests-m-i-and-e-work">http://stackoverflow.com/questions/8054512/anyone-know-how-nosetests-m-i-and-e-work</a>
+<a class="reference external" href="https://groups.google.com/forum/?fromgroups=#!topic/nose-users/1IGF0xliWiA">https://groups.google.com/forum/?fromgroups=#!topic/nose-users/1IGF0xliWiA</a></p>
+<p>Sphinx and DocTests</p>
+<p><a class="reference external" href="https://mitmproxy.org/posts/releases/mitmproxy3/">https://mitmproxy.org/posts/releases/mitmproxy3/</a>
+Basic principles
+it&#8217;s hard
+go with your gut (ref elite handbook)</p>
+<p><a class="reference external" href="https://stephenmann.io/post/lessons-learned-writing-unit-tests/#lesson-4-if-you-can-t-make-a-test-smaller-your-code-probably-has-too-many-dependencies">https://stephenmann.io/post/lessons-learned-writing-unit-tests/#lesson-4-if-you-can-t-make-a-test-smaller-your-code-probably-has-too-many-dependencies</a></p>
+<ul class="simple">
+<li>functional helps</li>
+<li>smaller, pure, smaller than that</li>
+<li>doc tests are great cos you can see the relative sizes</li>
+</ul>
+<p>Do lots of integrationnand fitness tests - they help users a lot.  this is why cucumber style testing is crap -</p>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

@@ -31,6 +31,9 @@ So there are two kinds of chapter - one trying to explain the why, the
 context for the more detailed, how-to chapters. Both are useful to
 read, and you can think of this as two interleaved books.
 
+So, lets start with probably the most important idea - that of
+Software Literacy.
+
 {{ conceptchapters/sm_software_literacy.rst }}
 
 

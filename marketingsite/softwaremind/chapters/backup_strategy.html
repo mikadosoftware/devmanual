@@ -1,0 +1,167 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>How to run a simple backup strategy &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Best practise for logging in Python" href="logging.html" />
+    <link rel="prev" title="Metrics and tracing" href="metrics.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="how-to-run-a-simple-backup-strategy">
+<h1>How to run a simple backup strategy<a class="headerlink" href="#how-to-run-a-simple-backup-strategy" title="Permalink to this headline">¶</a></h1>
+<blockquote class="epigraph">
+<div>You will never be forgiven for losing data when people want it.
+Even if they never looked at it for a year previously.</div></blockquote>
+<p>1. git is not a backup service.  It is a development history.
+2.</p>
+<p>3 kinds of backup
+- code - svn mostly 1GB - 1mb pday max delta
+- strutured data - database - 1gb+ 10mb pday
+- semi structured - emails - 200gb - 100mb pday
+- unstrucutred - files docs etc</p>
+<p>I want the first two off site online backups. Use replicaton for database</p>
+<p>Samba - daily backup to local, using yesterday, t-2 t-3 approach for 5 days.
+Issues:
+- verification. THe cheapest way is to mount the yesterday backup as a samba file and people can come and look at it
+- off-site - how do we keep yestedays backup off site. Or do we accept that as a potential loss and just keep the rolling backup off site</p>
+<p>Rolling Archive - archive to disk a snapshot each 1st month and keep.</p>
+<p>Never remove Archive all files &gt; 1yr old, leaving placeholder txt files? These go to Ongoing archiveof ll files with modification date &gt; 1yr</p>
+<p>Email backup - ?
+I want exchange totally isolated - with all smtp traffic handled by postfix sendmail both in and out.
+Then i want all mail to be side tracked to mysql Then how do we backup pst files?</p>
+<div class="section" id="spec">
+<h2>SPec<a class="headerlink" href="#spec" title="Permalink to this headline">¶</a></h2>
+<p>Our Backup strategy</p>
+<p>We have 4 types of data to contend with and 4 types of loss to defend against</p>
+</div>
+<div class="section" id="data-types">
+<h2>Data types<a class="headerlink" href="#data-types" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>&#8216;code&#8217; - developed Code, config files for servers etc</li>
+<li>structured data - SQL basically</li>
+<li>email data - I would prefer it if it was MailDir, but we have got pst files or rather a huge NTBackup file</li>
+<li>file server documents - ie Samba</li>
+</ol>
+</div>
+<div class="section" id="data-loss">
+<h2>Data Loss<a class="headerlink" href="#data-loss" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Disk failure</li>
+<li>Accidental deletion</li>
+<li>file corruption</li>
+<li>site loss</li>
+</ol>
+<p>The strategies for all 4 loss scenarios are very different</p>
+<ol class="arabic">
+<li><p class="first">Disk failure - either
+- striping (ie RAID 5, or google-like map-reduce)
+- mirrored backups (ie a copy on big backup machine)</p>
+</li>
+<li><p class="first">accidental deletion
+- mirrored and temporarily preserved backups (Daily snaphot, rotated weekly)
+- mirrored and permanently preserved backups (archive snapshot kept forever)</p>
+</li>
+<li><p class="first">Random file corruption
+- the strategy is same as accidental deletion, however the approach to detection</p>
+<blockquote>
+<div><p>is to use something like mtree (hashes file signatures)</p>
+</div></blockquote>
+</li>
+<li><p class="first">site loss
+- disaster recovery using replacement hardware, new site, and a full mirrored backup</p>
+</li>
+</ol>
+</div>
+<div class="section" id="extra-strategies">
+<h2>Extra strategies<a class="headerlink" href="#extra-strategies" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">archiving unused documents</p>
+</li>
+<li><p class="first">online backups only go to hot swap not to data dump
+By this I mean we only backup over the wire to a hot application, to a location
+where if we suffer site loss is very simple and easy to set up.</p>
+<dl class="docutils">
+<dt>ie replicate MYSQL to a MYSQL server in US/docklands</dt>
+<dd><p class="first last">mirror samba to another samba server that is sitting in a spare office</p>
+</dd>
+</dl>
+</li>
+</ol>
+<p>We do not want to be in a situation where we have dumped samba to a disk in docklands
+And then lose the site, decide to buy new servers and put them in alans house,
+have to wait hours/days to download that disk over alans DSL. We should have servers in
+Alans house and mirror the backup to that hot server. So if we need to we just move to alans house and hey presto the data is alsready there</p>
+</div>
+<div class="section" id="strategy">
+<h2>Strategy<a class="headerlink" href="#strategy" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Backup all to large array of disks at far end of office</li>
+<li>Install tape drive on large array and perform backup</li>
+<li>online backup of svn, mysql</li>
+</ol>
+<p>4. backup tapes are rotated on daily basis out of office and a snapshot kept every
+14 days</p>
+</div>
+<div class="section" id="bibliography">
+<h2>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this headline">¶</a></h2>
+<p>Disk failure
+(quite common - see biblio. Basically google says its more common than you think. So given MTBF of 100,000 hours, thats bascially 1/2 of all disks will fail in 100,000hours
+in 10 years. We have close on 100 disks (pcs, latops, raids) so 50 will fail in next 10 years, expect 5 to fail each year ).
+Most MTBF is 300,000 - 500,000. So 1 disk a year from MTBF, but google says more. We have lost 4 since I got here, so 1-2% failure rate  is close.</p>
+<p>Google results
+<a class="reference external" href="http://labs.google.com/papers/disk_failures.pdf">http://labs.google.com/papers/disk_failures.pdf</a></p>
+<p>Blog on google results
+<a class="reference external" href="http://storagemojo.com/2007/02/19/googles-disk-failure-experience/">http://storagemojo.com/2007/02/19/googles-disk-failure-experience/</a></p>
+<p>How to calculate RAID MTBF from HDD MTBF
+<a class="reference external" href="http://answers.google.com/answers/threadview?id=730165">http://answers.google.com/answers/threadview?id=730165</a></p>
+<p>General article
+<a class="reference external" href="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9073158&amp;source=rss_topic17">http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9073158&amp;source=rss_topic17</a></p>
+<p><a class="reference external" href="http://www.freebsd.org/doc/en/books/handbook/backup-strategies.html">http://www.freebsd.org/doc/en/books/handbook/backup-strategies.html</a></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

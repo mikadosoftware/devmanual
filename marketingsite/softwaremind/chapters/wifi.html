@@ -1,0 +1,339 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>wifi &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="SSL-TLS and microservices" href="ssl-tls.html" />
+    <link rel="prev" title="webtest" href="wsgi_test.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="wifi">
+<h1>wifi<a class="headerlink" href="#wifi" title="Permalink to this headline">¶</a></h1>
+<p>Connecting to a wireless network is <em>de rigeur</em> these days.  It&#8217;s
+simple to do - apparently.  For Mac users perhaps, but for us doughty
+FreeBSD folks, life is never so simple.  Well, setting up a BSD wifi
+connection is not that bad really, it&#8217;s just that compared to Mac,
+Windows or even Ubuntu, well it <em>is</em> awkward.</p>
+<p>However, once we have, we find we can do other bigger things, like
+creating our own access point, running wireless sniffers and more, all
+just a little more confidently and knowledgably than those Mac and
+Windows users.  And that frankly is the point - a little more pain in
+return for confidence, knowledge and clearer path into the &#8216;advanced&#8217;
+functions.</p>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<p>With a normal Ethernet over wire, we establish a live <em>physical</em>
+circuit, send packets over that circuit and route accordingly.</p>
+<p>With wifi we need to create a <em>radio ethernet</em>, essentially we sling a
+virtual wire between our adaptor and the Access Point (AP).</p>
+<p>This virtual wire requires three things</p>
+<ul class="simple">
+<li>find the wifi adaptor on your machine (laptop)</li>
+<li>ensure the drivers are loaded into kernel and the adaptor is found</li>
+<li>configure adaptor with <em>ifconfig</em></li>
+<li>authenticate with AP and so &#8220;associate&#8221;</li>
+</ul>
+</div>
+<div class="section" id="find-the-adaptor">
+<h2>Find the adaptor<a class="headerlink" href="#find-the-adaptor" title="Permalink to this headline">¶</a></h2>
+<p>To be honest this is clearly the most awkward point.  I am using a
+work-supplied laptop, and finding the chipset that is built in is a
+RRPITA.  To be perfectly honest, I am still unsure I have managed to.</p>
+<p>Firstly look at dmesg for anything resembling an Ethernet driver or setup.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ dmesg | grep -i ethernet
+mskc0: &lt;Marvell Yukon 88E8055 Gigabit Ethernet&gt; mem 0xf5000000-0xf5003fff irq 19 at device 0.0 on pci6
+msk0: Ethernet address: 00:13:77:6f:93:ed
+</pre></div>
+</div>
+<p>Well, thats my wired Ethernet.
+Now, if we want we can look for similar information in <em>sysctl -a</em></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mskc0</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">Marvell</span> <span class="n">Yukon</span> <span class="mi">88</span><span class="n">E8055</span> <span class="n">Gigabit</span> <span class="n">Ethernet</span><span class="o">&gt;</span> <span class="n">mem</span> <span class="mh">0xf5000000</span><span class="o">-</span><span class="mh">0xf5003fff</span> <span class="n">irq</span> <span class="mi">19</span> <span class="n">at</span> <span class="n">device</span> <span class="mf">0.0</span> <span class="n">on</span> <span class="n">pci6</span>
+<span class="n">msk0</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">Marvell</span> <span class="n">Technology</span> <span class="n">Group</span> <span class="n">Ltd</span><span class="o">.</span> <span class="n">Yukon</span> <span class="n">EC</span> <span class="n">Ultra</span> <span class="n">Id</span> <span class="mh">0xb4</span> <span class="n">Rev</span> <span class="mh">0x03</span><span class="o">&gt;</span> <span class="n">on</span> <span class="n">mskc0</span>
+<span class="n">msk0</span><span class="p">:</span> <span class="n">Ethernet</span> <span class="n">address</span><span class="p">:</span> <span class="mi">00</span><span class="p">:</span><span class="mi">13</span><span class="p">:</span><span class="mi">77</span><span class="p">:</span><span class="mi">6</span><span class="n">f</span><span class="p">:</span><span class="mi">93</span><span class="p">:</span><span class="n">ed</span>
+<span class="n">miibus0</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">MII</span> <span class="n">bus</span><span class="o">&gt;</span> <span class="n">on</span> <span class="n">msk0</span>
+</pre></div>
+</div>
+<p>The thing to note here is that we can get useful stats from sysctl</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">dev</span><span class="o">.</span><span class="n">msk</span><span class="o">.</span><span class="mf">0.</span><span class="n">stats</span><span class="o">.</span><span class="n">rx</span><span class="o">.</span><span class="n">ucast_frames</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">dev</span><span class="o">.</span><span class="n">msk</span><span class="o">.</span><span class="mf">0.</span><span class="n">stats</span><span class="o">.</span><span class="n">rx</span><span class="o">.</span><span class="n">bcast_frames</span><span class="p">:</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<p>OK, well, msk is the driver for my fixed ethernet.  So, err, what
+about the wifi?  Well the best I can find is what appears to be a dual
+function Broadcom chip.  And all the Google-butt <a class="footnote-reference" href="#id3" id="id1">[1]</a> says that
+Broadcom hates Unix and this chipset stands about as much chance
+working with FreeBSD as Michael Jackson does working with the Abused
+Children&#8217;s Dance Therapy group.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>ugen1: &lt;Broadcom Corp BCM92045NMD, class 224/1, rev 2.00/3.54, addr 2&gt; on uhub6
+</pre></div>
+</div>
+<p>So I went and bought a USB stick</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>rum0: &lt;Belkin Belkin 54g USB Network Adapter, class 0/0, rev 2.00/0.01, addr 2&gt; on uhub7
+rum0: MAC/BBP RT2573 (rev 0x2573a), RF RT2528
+rum0: WARNING: using obsoleted IFF_NEEDSGIANT flag
+rum0: Ethernet address: 00:22:75:fd:d7:8a
+</pre></div>
+</div>
+<p>I plug it in, ugen (the standard USB driver) finds it, then the rum driver is identified and hooray.</p>
+<p>I think I want to be more ... hackerish on this.  But I have things to do, and that USB dongle has now served 3 laptops quite happily.</p>
+</div>
+<div class="section" id="what-drivers-work-with-what-chipsets">
+<h2>What drivers work with what chipsets?<a class="headerlink" href="#what-drivers-work-with-what-chipsets" title="Permalink to this headline">¶</a></h2>
+<p>[EXTEND - how does kernel locate drivers - device to driver mapping - find the right .h file. ]</p>
+<p>This is a slight diversion, but it is important - how does the Kernel
+know which driver to assign to which device.  Firstly it identifies
+the device.</p>
+<ul class="simple">
+<li>device on pci bus</li>
+<li>device on usb bus</li>
+</ul>
+<div class="section" id="what-drivers-for-what-chipset">
+<h3>What drivers for what chipset?<a class="headerlink" href="#what-drivers-for-what-chipset" title="Permalink to this headline">¶</a></h3>
+<p>Basically, read the man pages.  Each ethernet driver (I think thet are
+rum, ath, zyd, upgt ...)  has a man page and in there it is listed
+which chipsets that driver supports</p>
+<p>However we can run</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pciconf</span> <span class="o">-</span><span class="n">lv</span>
+</pre></div>
+</div>
+<p>which will show</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>none1@pci0:2:0:0:       class=0xff0000 card=0x3577103c chip=0x520910ec rev=0x01 hdr=0x00
+  vendor     = &#39;Realtek Semiconductor Co., Ltd.&#39;
+re0@pci0:6:0:0: class=0x020000 card=0x3577103c chip=0x813610ec rev=0x05 hdr=0x00
+  vendor     = &#39;Realtek Semiconductor Co., Ltd.&#39;
+  device     = &#39;RTL8101E/RTL8102E PCI Express Fast Ethernet controller&#39;
+  class      = network
+  subclass   = ethernet
+none2@pci0:7:0:0:       class=0x028000 card=0x1636103c chip=0x53901814 rev=0x00 hdr=0x00
+  vendor     = &#39;Ralink corp.&#39;
+  class      = network
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="ifconfig-settings">
+<h2>ifconfig settings<a class="headerlink" href="#ifconfig-settings" title="Permalink to this headline">¶</a></h2>
+<p>We are assuming that the wifi adaptor has been found and that a driver
+is assigned, We now want to connect to the Access Point (AP).</p>
+<p>I do recommend reading the ifconfig man pages.  It is really useful.</p>
+<div class="section" id="scan-for-ap-s">
+<h3>Scan for AP&#8217;s<a class="headerlink" href="#scan-for-ap-s" title="Permalink to this headline">¶</a></h3>
+<p>The first thing to do is see if the adaptor can find the AP</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ifconfig wlan0 up
+$ ifconfig wlan0 list scan
+</pre></div>
+</div>
+<p>In a NY hotel room I get</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pbrian_laptop</span><span class="c1"># ifconfig rum0 list scan</span>
+<span class="n">SSID</span>            <span class="n">BSSID</span>              <span class="n">CHAN</span> <span class="n">RATE</span>   <span class="n">S</span><span class="p">:</span><span class="n">N</span>     <span class="n">INT</span> <span class="n">CAPS</span>
+<span class="n">Buckingham_</span><span class="o">...</span>  <span class="mi">00</span><span class="p">:</span><span class="n">c0</span><span class="p">:</span><span class="mi">02</span><span class="p">:</span><span class="mi">0</span><span class="n">f</span><span class="p">:</span><span class="n">ac</span><span class="p">:</span><span class="mi">67</span>    <span class="mi">8</span>   <span class="mi">54</span><span class="n">M</span> <span class="o">-</span><span class="mi">89</span><span class="p">:</span><span class="o">-</span><span class="mi">95</span>  <span class="mi">100</span> <span class="n">ES</span>
+
+           <span class="o">^^^</span>
+</pre></div>
+</div>
+<p>Err, why the ... try -v option to view SSID&#8217;s that are longer than usual.:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pbrian_laptop</span><span class="c1"># ifconfig -v rum0 list scan</span>
+<span class="n">SSID</span>                              <span class="n">BSSID</span>              <span class="n">CHAN</span> <span class="n">RATE</span>   <span class="n">S</span><span class="p">:</span><span class="n">N</span>     <span class="n">INT</span> <span class="n">CAPS</span>
+<span class="n">Buckingham_Hotel</span>                  <span class="mi">00</span><span class="p">:</span><span class="n">c0</span><span class="p">:</span><span class="mi">02</span><span class="p">:</span><span class="mi">0</span><span class="n">f</span><span class="p">:</span><span class="n">ac</span><span class="p">:</span><span class="mi">67</span>    <span class="mi">8</span>   <span class="mi">54</span><span class="n">M</span> <span class="o">-</span><span class="mi">89</span><span class="p">:</span><span class="o">-</span><span class="mi">95</span>  <span class="mi">100</span> <span class="n">ES</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="unencrypted">
+<h3>unencrypted<a class="headerlink" href="#unencrypted" title="Permalink to this headline">¶</a></h3>
+<p>So, this is an unencrypted link, with an SSID and a channel.</p>
+<p>/etc/rc.conf</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ifconfig_rum0</span><span class="o">=</span><span class="s2">&quot;ssid Buckingham_Hotel channel 8 authmode open DHCP&quot;</span>
+</pre></div>
+</div>
+<p>(authmode - pretty much everyone uses open. When we are in an infrastructure mode (ie using Access Points that create an infrastucture the clients hang off, we need to say we are in infrastructure mode and then choose an Authentication mode.  It is usually open (with WEP) or wpa).  The alternative to infrastructure mode is ad-hoc - its like the OLPC idea of grid connections. Anyway, use open for now)</p>
+<p>And, hey presto I get a connection to the AP in the hotel.  And a web page wanting 12.95 a day for access...
+But it worked.</p>
+<p>So next, encrypted links</p>
+</div>
+<div class="section" id="wep">
+<h3>WEP<a class="headerlink" href="#wep" title="Permalink to this headline">¶</a></h3>
+<p>WEP needs a shared key - one that is known to the client and the AP.  Unfortunately most people never change the key and it can take only a few hundren megabytes of traffic to break the encryption, so WEP is not actually secure, just secure enough to prevent your neighbours from seeing what you surf <a class="footnote-reference" href="#id4" id="id2">[2]</a></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ifconfig_rum0</span><span class="o">=</span><span class="s2">&quot;ssid HOME channel 6 authmode open wepmode on weptxkey 1 wepkey 0xyyyyyyyyyyyyyyyyyyyyyyyyy DHCP&quot;</span>
+</pre></div>
+</div>
+<p>WEP key is a 26 digit hex (0x prefix tells us that.  If you get &#8220;String too long&#8221; errors, put 0x in to explain this is a hex string).  Now &#8220;weptxkey 1&#8221; - there are several &#8220;slots&#8221; to use in the shared key - basically the AP has several shared keys it could use, you need to tell it which slot you are thinking of.  Weptkey is the means.  Ifconfig man suggests that using</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">wepkey</span> <span class="mi">1</span><span class="p">:</span><span class="mi">0</span><span class="n">xyyyyyyyyyyyy</span>
+</pre></div>
+</div>
+<p>but this does not work for me,  Stick to being explicit.</p>
+<p>So, this connects happily to my HOME AP.</p>
+<div class="section" id="note-on-dhcp-and-ifconfig">
+<h4>Note on DHCP and ifconfig<a class="headerlink" href="#note-on-dhcp-and-ifconfig" title="Permalink to this headline">¶</a></h4>
+<p>usually I can easily transliterate the following:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span> <span class="n">ifconfig_rum0</span><span class="o">=</span><span class="s2">&quot;ssid HOME channel 6 authmode open wepmode on weptxkey 1 wepkey 0xyyyyyyyyyyyyyyyyyyyyyyyyyy inet 192.16.1.10 netmask 255.255.255.0&quot;</span>
+
+ <span class="ow">in</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">rc</span><span class="o">.</span><span class="n">conf</span> <span class="n">can</span> <span class="n">also</span> <span class="n">be</span> <span class="nb">set</span> <span class="n">up</span> <span class="n">during</span> <span class="n">run</span> <span class="n">time</span>
+
+ <span class="n">ifconfig</span> <span class="n">rum0</span> <span class="n">ssid</span> <span class="n">HOME</span> <span class="n">channel</span> <span class="mi">6</span> <span class="n">authmode</span> <span class="nb">open</span> <span class="n">wepmode</span> <span class="n">on</span> <span class="n">weptxkey</span> <span class="mi">1</span> <span class="n">wepkey</span> <span class="mi">0</span><span class="n">xyyyyyyyyyyyyyyyyyyyyyyyyyy</span> <span class="n">inet</span> <span class="mf">192.16</span><span class="o">.</span><span class="mf">1.10</span>\
+<span class="n">netmask</span> <span class="mf">255.255</span><span class="o">.</span><span class="mf">255.0</span>
+</pre></div>
+</div>
+<p>however, the following raises an error</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ifconfig</span> <span class="n">rum0</span>   <span class="n">ssid</span> <span class="n">HOME</span> <span class="n">channel</span> <span class="mi">6</span> <span class="n">authmode</span> <span class="nb">open</span> <span class="n">wepmode</span> <span class="n">on</span> <span class="n">weptxkey</span> <span class="mi">1</span> <span class="n">wepkey</span> <span class="mi">0</span><span class="n">xyyyyyyyyyyyyyyyyyyyyyyyyyy</span> <span class="n">DHCP</span>
+</pre></div>
+</div>
+<p>while this, in /etc/rc.conf is fine</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ifconfig_rum0</span><span class="o">=</span><span class="s2">&quot;ssid HOME channel 6 authmode open wepmode on weptxkey 1 wepkey 0xyyyyyyyyyyyyyyyyyyyyyyyyyy DHCP&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="testing-etc-settings">
+<h4>testing /etc settings<a class="headerlink" href="#testing-etc-settings" title="Permalink to this headline">¶</a></h4>
+<p>Change settings in /etc/rc.conf, then run</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pbrian_laptop</span><span class="c1"># /etc/rc.d/netif start</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="all-change">
+<h2>All Change<a class="headerlink" href="#all-change" title="Permalink to this headline">¶</a></h2>
+<p>The above was very useful.  Back in the day.  However things have moved on and now the approach is to use wpa security.</p>
+<p>in /etc/rc.conf:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">wlan_load</span><span class="o">=</span><span class="s2">&quot;YES&quot;</span>
+
+<span class="c1">#making wep /wpa work</span>
+<span class="n">wlan_wep_load</span><span class="o">=</span><span class="s2">&quot;YES&quot;</span>
+<span class="n">wlan_ccmp_load</span><span class="o">=</span><span class="s2">&quot;YES&quot;</span>
+<span class="n">wlan_tkip_load</span><span class="o">=</span><span class="s2">&quot;YES&quot;</span>
+
+<span class="n">wlans_rum0</span><span class="o">=</span><span class="s2">&quot;wlan0&quot;</span>
+<span class="n">ifconfig_wlan0</span><span class="o">=</span><span class="s2">&quot;WPA DHCP&quot;</span>
+</pre></div>
+</div>
+<p>this essentially replaces the ifconfig calls earlier in rc.conf.
+All of FreeBSD wifi is handled by a super driver - wlan.
+We tell this that we want to use the rum0 driver, and refer to it as wlan0.</p>
+<div class="section" id="using-wpa-security">
+<h3>using WPA security<a class="headerlink" href="#using-wpa-security" title="Permalink to this headline">¶</a></h3>
+<p>As noted above, WEP security was essentially broken, and advice from respected security advisors such as Bruce Schneier was to run open wifi.[*]_</p>
+</div>
+<div class="section" id="discussion-of-settings">
+<h3>discussion of settings<a class="headerlink" href="#discussion-of-settings" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>SSID</dt>
+<dd>Here we state the SSID of the base station we want to connect to.  (SSID
+<em>can</em> refer to more than one base station (usually if a company wants to give
+a seamless experiece in a wide area - in this case we can use BSSID which is a
+sort of mac address for base stations)</dd>
+<dt>channel</dt>
+<dd>We can set the channel to use.  Not always necessary but can be found from the
+data in &#8220;ifconfig rum0 list scan&#8221;</dd>
+<dt>authmode</dt>
+<dd>open / shared.  In general WEP is considered not secure.  Shared
+authentication less so.  Use Open for trivial home surfing and watch your SSL
+padlock</dd>
+<dt>wepmode</dt>
+<dd>on / off
+Kind of obvious</dd>
+<dt>weptxkey</dt>
+<dd>wep keys need a &#8220;slot&#8221; - the key itself is known to the client and the AP, but
+each needs to know which slot they are in.  this is seen in ifconfig as</dd>
+</dl>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ifconfig</span>
+      <span class="n">status</span><span class="p">:</span> <span class="n">associated</span>
+      <span class="n">ssid</span> <span class="n">HOME</span> <span class="n">channel</span> <span class="mi">6</span> <span class="p">(</span><span class="mi">2437</span> <span class="n">Mhz</span> <span class="mi">11</span><span class="n">g</span><span class="p">)</span> <span class="n">bssid</span> <span class="mi">00</span><span class="p">:</span><span class="mi">14</span><span class="p">:</span><span class="mi">6</span><span class="n">c</span><span class="p">:</span><span class="n">d4</span><span class="p">:</span><span class="n">e4</span><span class="p">:</span><span class="n">e4</span>
+      <span class="n">authmode</span> <span class="n">OPEN</span> <span class="n">privacy</span> <span class="n">ON</span> <span class="o">*</span><span class="n">deftxkey</span> <span class="mi">1</span><span class="o">*</span> <span class="n">wepkey</span> <span class="mi">1</span><span class="p">:</span><span class="mi">104</span><span class="o">-</span><span class="n">bit</span> <span class="n">txpower</span> <span class="mi">50</span>
+      <span class="n">bmiss</span> <span class="mi">7</span> <span class="n">scanvalid</span> <span class="mi">60</span> <span class="n">bgscan</span> <span class="n">bgscanintvl</span> <span class="mi">300</span> <span class="n">bgscanidle</span> <span class="mi">250</span>
+</pre></div>
+</div>
+<p>defttxkey - weptkey is deprecated in favour of this term</p>
+<dl class="docutils">
+<dt>wepkey</dt>
+<dd>the key itself, use 0x12345 if 12345 is the HEX version of key</dd>
+<dt>DHCP</dt>
+<dd>obvious</dd>
+<dt>NB</dt>
+<dd><ul class="first last simple">
+<li>if usng ifconfig on comamnd line put DHCP in early not at end of string.</li>
+</ul>
+</dd>
+</dl>
+<p>Well, thats about it for now folks.  This will be an oft-revisited entry I
+think.</p>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Like scuttlebutt, but comes from reading Google found entries on whatever
+subject you are looking for.  I just made it up cos it sounded good, but
+there are clearly some other interpretations.  I just cannot stop hearing
+David Schwimmer singing &#8220;I like big butts ...&#8221;.  Sad or what.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>THis is not the same as SSL being broken.  If your neighbour breaks your
+WEP key its as if he has plugged into your wired switch/hub.  He can read all
+your packets.  He can see which porn sites you look at, but if you use SSL to
+enter your credit card details, he cannot get the important information.
+(You do use SSL pages when buying your porn don&#8217;t you :-).  And when did you
+stop beating your wife ?</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[3]</td><td><a class="reference external" href="http://www.schneier.com/blog/archives/2011/04/security_risks_7.html">http://www.schneier.com/blog/archives/2011/04/security_risks_7.html</a>,</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[4]</td><td><a class="reference external" href="http://www.schneier.com/blog/archives/2008/01/my_open_wireles.html">http://www.schneier.com/blog/archives/2008/01/my_open_wireles.html</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+http://spacecraft.ssl.umd.edu/akins_laws.html

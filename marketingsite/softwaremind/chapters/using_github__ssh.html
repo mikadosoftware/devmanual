@@ -1,0 +1,92 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Using GitHub / ssh &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Simple Podcasting" href="podcast.html" />
+    <link rel="prev" title="Keeping micro-web services alive, supervised and restarted" href="well-behaved-services.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="using-github-ssh">
+<h1>Using GitHub / ssh<a class="headerlink" href="#using-github-ssh" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ssh-keygen
+choose no passphrase,
+save in home/pbrian/.ssh/github
+
+Your identification has been saved in /home/pbrian/.ssh/github.
+Your public key has been saved in /home/pbrian/.ssh/github.pub.
+The key fingerprint is:
+a8:81:d2:77:ef:5e:36:e0:8d:74:8e:3e:bd:38:33:7d pbrian@HPCube
+</pre></div>
+</div>
+<p>Lets test to see if we have github access (ie they got our <em>public</em> key)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ~/projects$ ssh -T -i ~/.ssh/github git@github.com
+Hi lifeisstillgood! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+</pre></div>
+</div>
+<p>But thats a mouthful to run each time</p>
+<p>Now we update our .ssh/config</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ cat ~/.ssh/config
+Host github
+    HostName github.com
+    IdentityFile ~/.ssh/github
+    User git
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span>pbrian@HPCube:~/projects$ ssh -T github
+</pre></div>
+</div>
+<p>Hi lifeisstillgood! You&#8217;ve successfully authenticated, but GitHub does not provide shell access.</p>
+<p>We want to upload github.pub to github and then start up and down loading code</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git clone git@github.com:lifeisstillgood/myhomedir.git
+Cloning into &#39;myhomedir&#39;...
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

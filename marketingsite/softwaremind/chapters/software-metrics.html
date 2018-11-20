@@ -1,0 +1,80 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Software Metrics &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="software-metrics">
+<h1>Software Metrics<a class="headerlink" href="#software-metrics" title="Permalink to this headline">¶</a></h1>
+<p>How can we <em>automatically</em> measure code quality? There are a few basic options, and a lot more complex options - let&#8217;s look at a couple</p>
+<div class="section" id="the-basics">
+<h2>The basics<a class="headerlink" href="#the-basics" title="Permalink to this headline">¶</a></h2>
+<p>Lines of Code Spent</p>
+<p>Computer science pioneer Ed Dykstra suggested one that I like - Number of lines of code Spent.</p>
+<p>This is just a line count stat, but it reports it in a simple and inverted manner - spent means there is a cost to every extra line of code.  Giving rise to the idea that reducing our code base  is a saving</p>
+<p>Errors Raised
+Fairly simple to do again - how many and what errors are raised in production.</p>
+<p>Peer code reviews
+Someone needs to walk through and attest they have understood the intention of the changes made.</p>
+<p>After these two, which are pretty good, things can get more complicated</p>
+<p>Test coverage
+This is less great, because human written tests are mostly automated requirements documents.</p>
+<p>Test fuzzing
+This is very good</p>
+<p>Next level
+Static analysis of code base
+there are providers out there that do this - worth hunting out - OWASP ASIDE</p>
+<p>quality: <a class="reference external" href="https://en.wikipedia.org/wiki/Software_quality">https://en.wikipedia.org/wiki/Software_quality</a>
+Software metric: <a class="reference external" href="https://en.wikipedia.org/wiki/Software_metric">https://en.wikipedia.org/wiki/Software_metric</a>
+&#8216;&#8217;&#8217; Common software measurements include:
+- Balanced scorecard - Bugs per line of code - Code coverage - Cohesion - Comment density[1] - Connascent software components - Constructive Cost Model - Coupling - Cyclomatic complexity (McCabe&#8217;s complexity) - DSQI (design structure quality index) - Function Points and Automated Function Points, an Object Management Group standard[2] - Halstead Complexity - Instruction path length - Maintainability index - Number of classes and interfaces[citation needed] - Number of lines of code - Number of lines of customer requirements[citation needed] - Program execution time - Program load time - Program size (binary) - Weighted Micro Function Points - CISQ automated quality characteristics measures &#8216;&#8217;&#8217;
+Category:Software metrics</p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

@@ -133,8 +133,12 @@ has used software in a markedly different manner.
 Just what is a programmable company?
 ------------------------------------
 
-(image of dutch 16th century trader pointing at his accounts books)
+.. figure:: /_static/portrait_of_merchant_jan_gossaert.png
+   :width: 75%
 
+   A dutch 16th century trader pointing at his accounts books
+   Jan Gossaert (Washington National Gallery)
+   
 My conjecture is that we are hitting a limit on what tracking company
 processes through accounting can do to limit wasteful (coase)
 growth. That by forcing more reproducible processes into
@@ -142,11 +146,12 @@ growth. That by forcing more reproducible processes into
 And this is my definition of a programmable company - where all
 processes are visible in the virtual world
 
-The brilliant mid-twentieth century Economist `Roald Coase` gave us a fascinating
-way to model why companies and organisations are the size they are - a Theory of the Firm.
-We shall dive deeper into this later on but as more and more processes become visible in
-the virtual, as we practise 'topless computing', then we shall see dramatic shifts in
-the size and shape of our organisations.
+The brilliant mid-twentieth century Economist `Roald Coase` gave us a
+fascinating way to model why companies and organisations are the size
+they are - a Theory of the Firm.  We shall dive deeper into this later
+on but as more and more processes become visible in the virtual, as we
+practise 'topless computing', then we shall see dramatic shifts in the
+size and shape of our organisations.
 
 We are already seeing calls for the software industry to regulate
 itself, on privacy, on deals with repressive regiemes.  The answer is

@@ -1,0 +1,166 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Best practise for logging in Python &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Network Monitoring" href="network_monitor.html" />
+    <link rel="prev" title="How to run a simple backup strategy" href="backup_strategy.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="best-practise-for-logging-in-python">
+<h1>Best practise for logging in Python<a class="headerlink" href="#best-practise-for-logging-in-python" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<div class="section" id="replace-print-stmts-with-logging-debug">
+<h2>Replace print stmts with logging.debug<a class="headerlink" href="#replace-print-stmts-with-logging-debug" title="Permalink to this headline">¶</a></h2>
+<p>If all you ever do with logging is</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">logging</span>
+<span class="o">...</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;help&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You are 100% better off than</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">print</span> <span class="s2">&quot;help&quot;</span>
+</pre></div>
+</div>
+<p>By using logging stmts throughout your code, with no more real thought than
+sprinkling with print stmts, we do the hard part (sprinkling print stmts in
+difficult places) whilst leaving the easy but valuable part (collating and
+reviewing logs) for later.</p>
+<p>For example, later on we can create in the <cite>run</cite> start up of any module, something like:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">logging</span><span class="o">.</span><span class="n">BasicConfig</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;/var/log/myapp.log&quot;</span><span class="p">,</span>
+                    <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will log all this app&#8217;s calls at or above DEBUG to /var/log.  Which is
+where it is supposed to.  And something extra like logging to syslog, then using
+rsyslog to pull to a central logging server, is just a <cite>salt</cite> call away.</p>
+</div>
+<div class="section" id="do-not-use-string-formatting-in-the-calling-module">
+<h2>Do not use string formatting in the calling module<a class="headerlink" href="#do-not-use-string-formatting-in-the-calling-module" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Help </span><span class="si">%s</span><span class="s2"> has gone wrong.&quot;</span> <span class="o">%</span> <span class="n">myvar</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If myvar does not exist here, then we shall raise an error</p>
+</div>
+<div class="section" id="do-not-use-python3-style-formatting">
+<h2>Do not use Python3 style formatting<a class="headerlink" href="#do-not-use-python3-style-formatting" title="Permalink to this headline">¶</a></h2>
+<p>Obviously Python 3 stuff is in flux, but the logging module
+expects %s style formating, and is unlikely to change for
+sometime as it will break backwards compatibility.</p>
+<p>So stick to {&#8216;reason&#8217;: MyVar} for the moment.</p>
+</div>
+<div class="section" id="reraise-errors-by-default">
+<h2>ReRaise errors by default<a class="headerlink" href="#reraise-errors-by-default" title="Permalink to this headline">¶</a></h2>
+<p>How we handle errors will vary a lot, depending on the app and the error.
+But, if we are logging something, its often because an exception has been
+thrown.  In most cases in my personal view, we want to log the existence of
+the problem, and then rethrow</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">logging</span>
+<span class="gp">... </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;Notmuchchanceofthisexisting.txt&quot;</span><span class="p">)</span>
+<span class="gp">... </span><span class="k">except</span> <span class="ne">IOError</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Could not open file&quot;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">raise</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="http://victorlin.me/posts/2012/08/26/good-logging-practice-in-python">http://victorlin.me/posts/2012/08/26/good-logging-practice-in-python</a>
+Logging
+&#8212;&#8212;-</p>
+<p><a class="reference external" href="http://docs.python.org/2/howto/logging-cookbook.html#logging-cookbook">http://docs.python.org/2/howto/logging-cookbook.html#logging-cookbook</a>
+<a class="reference external" href="http://css.dzone.com/articles/best-practices-python-logging">http://css.dzone.com/articles/best-practices-python-logging</a>
+<a class="reference external" href="http://victorlin.me/2012/08/good-logging-practice-in-python/">http://victorlin.me/2012/08/good-logging-practice-in-python/</a>
+<a class="reference external" href="http://www.robg3d.com/?p=906">http://www.robg3d.com/?p=906</a></p>
+<p>Basics:</p>
+<dl class="docutils">
+<dt>At app start up:</dt>
+<dd>import logging
+name a logger</dd>
+<dt>in every other module</dt>
+<dd>import logging
+set a module level global with that same logging name</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="centralised-logging-and-metrics">
+<h1>Centralised Logging and metrics<a class="headerlink" href="#centralised-logging-and-metrics" title="Permalink to this headline">¶</a></h1>
+<p>We need to talk about scale.</p>
+<p>Mostly we should ignore scale. Simple will always be easier to scale than anything you planned for scale.</p>
+<p>Keeping it simple <em>is</em> planning for scale.</p>
+<p>There are three layers of scale - that roughly co-incide with two orders of magnitude of servers / cores we have to deal with (a not perfect but ok proxy for complexity of the eco system)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="47%" />
+<col width="53%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Scaling phase</th>
+<th class="head">Number of servers</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Small</td>
+<td>1 - 100</td>
+</tr>
+<tr class="row-odd"><td>Medium</td>
+<td>100 - 10,000</td>
+</tr>
+<tr class="row-even"><td>Enterprise</td>
+<td>10,000 - 1,000,000</td>
+</tr>
+</tbody>
+</table>
+<p>Yes from 1 to a million. No one has to worry about a million servers. Ok Amazon has to - at about 2 million servers in AWS estimated by Bloomberg back in 2014.</p>
+<p>But real companies - yes. If we think not of servers so much as virtual machines running on say one core each, much of the Fortune 500 easily manage 1 m each</p>
+<p>And as for 10,000. The entry level enterprise here.? How many machines run the millionth Alexa ?</p>
+<p>Now remember I am assuming we are going to be
+running our small company on cloud based micro-services.  A micro-service is fine at just one rebuikdabke, backed up machine, but this is building services that do not wake us up at night or if they do we can wait a while before fixing them.  So we build in (simple) redundancy, and to do so we start adding servers like the clappers. Have a load balancer, two web servers and two master master databases allowing almost anything to fail over (and we can build one with scripts really quick) and we have 5 machines.  100 is not a long way off.  But we only get there is we are serving lots of customers which is a very good metric (but not the best!)</p>
+<p>But sometimes we need to scale much earlier than we thought. In logging that&#8217;s when you get a second server. Any number more than one is a log management nightmare.</p>
+<p>Want to see if the user who hit the web server also got that SQL stmt executed on the DNase server? Well that&#8217;s two machines to log into and tail /car/log/messages. Add a simple web load balancer to keep uptime running and ... oh dear</p>
+<p>There is a wealth of new log services out there, from LinkedIn, Facebook, Elastic search and Elsewhere. And they are very good.  But we want simple</p>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

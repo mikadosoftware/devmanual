@@ -1,0 +1,80 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Test principles &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Restarting crashed apps" href="systemd.html" />
+    <link rel="prev" title="The Single Best Method to raise Software Quality" href="best_approach_to_software_quality.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="test-principles">
+<h1>Test principles<a class="headerlink" href="#test-principles" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>You <em>cannot</em> ever be exhaustive in hand crafting tests.</li>
+</ul>
+<p>Tests must be auto generated and hammer the code with things you cannot imagine.
+YOur unit tests should cover the golden path - why I like doctests
+Your smoke tests ensure things fit toether
+Your automated tests hammer everything else</p>
+<p>It is waaaay better to write lots of feature tests from outside and few unit tests
+than to write lots unittests and few outside tests.  We are user centritc and users
+sit outsode the code.</p>
+<p>See danluu on bug tracking with analytics I think you cannot hand craft enough
+tests  I think tests should be doc tests and then automated Much better to
+hammer an api with every possible option and then arrow back down than to try
+and imagine all the options</p>
+<p>Python version of this???</p>
+<p>Then we can simply do diff between metrics I care about (user signnups funnel)
+and metrics that allow performsna car and bugbtracking (i.e. Every step or api
+call made)</p>
+<p>Source code analytics and testing
+- given source code what gets called and how often?
+- how to generate test data
+- python quickcheck for strong types</p>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

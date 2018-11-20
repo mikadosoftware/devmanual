@@ -1,0 +1,72 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Metrics and tracing &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="How to run a simple backup strategy" href="backup_strategy.html" />
+    <link rel="prev" title="Managing Configuration" href="config.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="metrics-and-tracing">
+<h1>Metrics and tracing<a class="headerlink" href="#metrics-and-tracing" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>setup graphite as docker service</li>
+<li>send simple events</li>
+<li>technical events vs business events</li>
+<li>SImple KPI reporting on top of graphite</li>
+<li>use that to monitor SLA violations</li>
+</ul>
+<p>Done. There are more complex approaches, dtrace, new relic etc.
+But these require a (close to full time) dedicated DevOps staff
+to get real value, and the value is on the few percent from our core ops
+- that is when a few percent win is a Full time staff cost its worth doing.</p>
+<p>dtrace and python - use it to track a program
+Similar to new relic?
+<a class="reference external" href="https://docs.python.org/dev/howto/instrumentation.html">https://docs.python.org/dev/howto/instrumentation.html</a></p>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

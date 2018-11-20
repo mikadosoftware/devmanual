@@ -1,0 +1,76 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>SSL-TLS and microservices &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Workstation" href="workstation-install.html" />
+    <link rel="prev" title="wifi" href="wifi.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ssl-tls-and-microservices">
+<h1>SSL-TLS and microservices<a class="headerlink" href="#ssl-tls-and-microservices" title="Permalink to this headline">¶</a></h1>
+<p>We need to understand the SSL process and so forth to understand the last line</p>
+<p>We want to build microservices - we shall do so by using BI-directional TLS certificates under a PKI to allow our services and servers to talk to each other</p>
+<p>We shall deploy a simple distributed application and slowly build up its architecture to be modern responsive but also secure. We won&#8217;t be dealing with much serverless architecture</p>
+<p>The road to lambda</p>
+<ul class="simple">
+<li>discuss the article by Adam ??</li>
+</ul>
+<div class="section" id="the-theory-behind-tls">
+<h2>The theory behind TLS<a class="headerlink" href="#the-theory-behind-tls" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://www.moserware.com/2009/06/first-few-milliseconds-of-https.html">http://www.moserware.com/2009/06/first-few-milliseconds-of-https.html</a></p>
+</div>
+<div class="section" id="the-architecture-aimed-at">
+<h2>The architecture aimed at<a class="headerlink" href="#the-architecture-aimed-at" title="Permalink to this headline">¶</a></h2>
+<p>Somthe first approach will be to have one application web server that will
+ask a back end server for some details before returning it to the user in a secure fashion</p>
+<p>We shall slowly build on this secure base (always build the security first - features get minus 100) until we have load balanced globally distibut e stack with cdns JavaScript monitoring metrics deployment and more</p>
+<p>We shall get there don&#8217;t worry</p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>
