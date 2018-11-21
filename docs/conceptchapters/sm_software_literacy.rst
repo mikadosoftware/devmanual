@@ -430,6 +430,12 @@ can be automated, and the co-ordination of functions is an email away.
 For almost everything a company or organisation does a second time, that can be automated
 or co-ordinated via software.  A company will become a programmable entity.
 
+A New Hope
+==========
+
+GDPR
+Plus rulings like this (https://techcrunch.com/2018/11/20/how-a-small-french-privacy-ruling-could-remake-adtech-for-good/) that will unpick the privacy issue - or rather the "who has my data" issue.
+
 
 The rare, right way
 -------------------
