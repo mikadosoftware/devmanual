@@ -129,12 +129,27 @@ involve smelting iron ore or manufacturing cars.  And yet `Google`
 carries 2/3 less humans for same revenue at each stage.  One of them
 has used software in a markedly different manner.
 
+One of them has become more *software literate*.
 
 Just what is a programmable company?
 ------------------------------------
 
-(image of dutch 16th century trader pointing at his accounts books)
+Companies just reflect what is the organisational capability of a
+group of humans.  How do we control a group of us to act as (more or
+less) as one.  WHere and how does a group action stop looking like a
+single agency and more like a market, a flock.
 
+It is an interesting question.
+
+My optimism says huma markets - flocks - make it feasible we all work together.
+
+
+.. figure:: /_static/portrait_of_merchant_jan_gossaert.png
+   :width: 75%
+
+   A dutch 16th century trader pointing at his accounts books
+   Jan Gossaert (Washington National Gallery)
+   
 My conjecture is that we are hitting a limit on what tracking company
 processes through accounting can do to limit wasteful (coase)
 growth. That by forcing more reproducible processes into
@@ -142,11 +157,43 @@ growth. That by forcing more reproducible processes into
 And this is my definition of a programmable company - where all
 processes are visible in the virtual world
 
-The brilliant mid-twentieth century Economist `Roald Coase` gave us a fascinating
-way to model why companies and organisations are the size they are - a Theory of the Firm.
-We shall dive deeper into this later on but as more and more processes become visible in
-the virtual, as we practise 'topless computing', then we shall see dramatic shifts in
-the size and shape of our organisations.
+The brilliant mid-twentieth century Economist `Roald Coase` gave us a
+fascinating way to model why companies and organisations are the size
+they are - a Theory of the Firm.  We shall dive deeper into this later
+on but as more and more processes become visible in the virtual, as we
+practise 'topless computing', then we shall see dramatic shifts in the
+size and shape of our organisations.
+
+I think there is another interesting way to look at Coase firm size -
+its to do with the cost of *trusting data*.  If data is published
+internally, or from a *trusted third party* (lets say Reuters) there
+is a limited amount of double checking needed.  Rumour is aproblem in
+all companies, but Fake News is not. But with smaller and smaller
+companies, the cost of finding and *trusting* data increases.
+
+The fight against fake news is going to be a long defining one in
+years to come.  The most obvious way is simply to revert back to the
+old saw "You can have your own opnion, but not your own facts". The
+KGB lead approach to destroying this is to put so many fake facts, so
+much chaff, that people just reinforce their own biases.  SOme method to
+validate real geniuine facts against fake facts is within reach.
+We can see how cameras could sign images, how articles published could be
+cryptographically signed and stored, how facts marked up in the text.
+
+ANd so how news aggregators (sorry advertising companies) like Google and Facebook
+could use that to mark fake news as such.
+
+SOme method to validate inferences from a *selection* of facts.  Well.
+Thats harder. Hell, Human Politics might be defined as that problem.
+
+
+
+As such the current privacy, GDPR world is not merely a lefy liberal
+problem. It is a major factor in form size, market efficency and the
+underlying fundamentals of
+
+How do I know - well, as a software literate person, its just obvious.
+
 
 We are already seeing calls for the software industry to regulate
 itself, on privacy, on deals with repressive regiemes.  The answer is
@@ -170,22 +217,21 @@ with its "government" than they ever had with their proper governments.
 Each day we see some new controversy, YouTube failing to police its
 comments section against paedophiles, (find more examples).  This is not because
 Facebook is inherently evil, but because we are moving our lives online - and
-some people moving online are inherently evil. [#]_
+*some* people moving online *are* inherently evil. [#]_
 
 So companies, governments, organisations, the structures we all spend
-so much of our lives wirking within, need to change to get the best
+so much of our lives working within, need to change to get the best
 out of the new technologial opportunity we face.
 
 Because it could be a golden future for humanity.  Honest.
 
 
-
-
 .. [#]:: OK, you might need to know a tiny bit about my political
       stance, which can be described as nice fluffy Euro-liberal until
       we look at Child Protection and I take a stance that makes
-      Gengis Khan look forgiving.  Anyway.
-================================
+      Gengis Khan look left wing.  Anyway the important takeaway for
+      this book is individual equality and market-led price discovery.
+      
 From literacy to programmability
 ================================
 
@@ -197,12 +243,14 @@ From literacy to programmability
 
 I very happily recounted my "Literacy started with the printing press,
 software literacy starts with the Internet" meme in the last chapter.
-I was rather proud of my little self, right up until I attended `Sprint 16`
-the UK Government's annual conference on tech and software and government.
-And the Minister for the Cabinet Office stood up and gave a keynote that
-was basically the speech I gave so many years prior in a London pub basement.
+I was rather proud of my little self, right up until I attended
+`Sprint 16` the UK Government's annual conference on tech and software
+and government.  And the Minister for the Cabinet Office stood up and
+gave a keynote that was basically the speech I gave so many years
+prior in a London pub basement.
 
-Nothing stops you feeling smug like national politicians spouting the same ideas as you.
+Nothing stops you feeling smug like national politicians spouting the
+same ideas as you.
 
 But the thing is, we are both right.  Although his suit was better. 
 
@@ -249,11 +297,24 @@ time it is just the processes have not been made into software, and so
 are not accessible.
 
 
+Some companies are more software literate than others. It is hard to
+define this but we can see some outlines in the fog.  They are
+basically around a quote from Googler <name> ::
 
+       "SRE is what happens when you ask a software engineer to design
+        an operations team".
 
-When it goes wrong
-==================
+And we can extend that to ::
 
+       "Software Literacy is what happens when you ask (a Western
+       Political Liberal) Software Engineer to design a company"
+
+I have dropped in the political leanings of the software engineer,
+because that will come to matter, and beause i am doing the desigining
+and it is always good to know thyself.
+
+Lets have a look at what happens when Software Engineers do not design
+a company, and it breaks its own literacy.
 
 Knight Capital
 --------------
@@ -284,79 +345,100 @@ placing *test* orders onto the *real* market.
 Test orders, such as Buy high and Sell at a loss, and repeat 10,000
 times in a few fractions of a second.
 
-Knight Capital tried to turn off their mistakes, but 45 minutes later (an age in
-HFT) they had mistakenly executed 4 million orders for 100+ stocks, and lost 440
-million dollars, effectively bankrupting the company.  Other players in the
-market had of course realised something was wrong, and initially expected the
-orders to be turned off within seconds. When it was not, they merrily took the
-winning side on all Knight Capitals traded and pocketed the cash. No point
-turning down free money is there?
+Knight Capital tried to turn off their mistakes, but 45 minutes later
+(an eternity in HFT) they had mistakenly executed 4 million orders for
+100+ stocks, and lost 440 million dollars, effectively bankrupting the
+company.  Other players in the market had of course realised something
+was wrong, and initially expected the orders to be turned off within
+seconds. When it was not, they merrily took the winning side on all
+Knight Capitals traded and pocketed the cash. No point turning down
+free money is there?
 
-Knight Capital's process of getting software that had been written correctly out
-and into the hands of users (ie the equivalent of publishing) was broken.  A
-newspaper that could write brilliant articles but struggled with the whole
-delivering bundles to street vendors would not last long.
+Knight Capital's process of getting software that had been written
+correctly out and into the hands of users (ie the equivalent of
+publishing) was broken.  A newspaper that could write brilliant
+articles but struggled with the whole delivering bundles to street
+vendors would not last long.
 
-In software, this publishing is called a release, but its as vital as the
-process of publishing and delivering paper was to the Post.  Companies I have worked in
-have had ranges of automated releases done a few times a day, or
-manually a few times a year.  Guess who felt more ... literate.
+In software, this publishing is called a release, but its as vital as
+the process of publishing and delivering paper was to the Post.
+Companies I have worked in have had ranges of automated releases done
+a few times a day, or manually a few times a year.  Guess who felt
+more ... literate.
+
+It is worth noting that Knight Capital paid the full price for their
+failure to control their literacy. However, this market imposed
+discipline, which is societally a Good Thing, does not apply equally.
+Goldman Sachs did a similar thing in 2016, sending broken orders.
+Then instead of being forced to pay the price for their mistake, they
+simply agreed with the exchange that those orders *did not count*,
+reverted the changes and did not pay a billion for their own
+education.
+
+Thats simply wrong.  Remeber our nice fluffy liberal "everyone is
+equal" values. That should apply to everyone.
 
 Office Of Personnel Management
 ------------------------------
 
-In June 2015, the US government agency "Office of Personnel Management"
-announced it had suffered a data breach.  Starting in March 2014, external
-hackers had breached the firewalls around the agency and were able to access the
-personnel records of millions of current and former government workers.  The
-agency collected many things, like pay records, but also, held background checks
-on employees who needed higher levels of security clearance - in short they had
-the records that said you used to be a drug addict or depressed. All the stuff
-they want to know about you in case it is used to balckmail you.
+In June 2015, the US government agency "Office of Personnel
+Management" announced it had suffered a data breach.  Starting in
+March 2014, external hackers had breached the firewalls around the
+agency and were able to access the personnel records of millions of
+current and former government workers.  The agency collected many
+things, like pay records, but also, held background checks on
+employees who needed higher levels of security clearance - in short
+they had the records that said you used to be a drug addict or
+depressed. All the stuff they want to know about you in case it is
+used to balckmail you.
 
-This was it seems all stored on mainframes running COBOL.  And the thing about
-storing data is that you must at minimum, encrypt it at rest on disk.  This is
-like, using ink or folders or filing cabinets. Its something you don't even think
-about.  Not for stuff that foreign governments can use to blackmail your Embassy
-staff with.
+This was it seems all stored on mainframes running COBOL.  And the
+thing about storing data is that you must at minimum, encrypt it at
+rest on disk.  This is like, using ink or folders or filing
+cabinets. Its something you don't even think about.  Not for stuff
+that foreign governments can use to blackmail your Embassy staff with.
 
-So lets get this clear.  Vital security information and pay records, stored
-unencrypted on mainframes that are so old they cannot spell encryption, and then
-the Chinese hackers get in.
+So lets get this clear.  Vital security information and pay records,
+stored unencrypted on mainframes that are so old they cannot spell
+encryption, and then the Chinese hackers get in.
 
-This breach, discovered seemingly by accident when a computer forensics firm was
-asked to preapre a demo, is not something solvable by replacing credit cards.
-It is probably America's deepest national security problem for the next few
-decades.  Well, one of them.
+This breach, discovered seemingly by accident when a computer
+forensics firm was asked to preapre a demo, is not something solvable
+by replacing credit cards.  It is probably America's deepest national
+security problem for the next few decades.  Well, one of them.
 
-This is a defining moment in software professionalism.  The right move for a
-professional and so the right move for a software literate organisation, was to
-shutdown the impossible-to-secure mainframes and announce a budget request and a
-migration plan.
+This is a defining moment in software professionalism.  The right move
+for a professional and so the right move for a software literate
+organisation, was to shutdown the impossible-to-secure mainframes and
+announce a budget request and a migration plan.
 
-Things like intrusion detection programs would have been good, but thats just
-"normal best practise" not "professional ethics".
+Things like intrusion detection programs would have been good, but
+thats just "normal best practise" not "professional ethics".
 
-Now, why did the woman at the top (not likely a
-malicious actor) why did she not take this action? Because of the degree of
-obfuscation? Possibly. But the one thing that leaps out of OPM is the inabiliy
-to enmcrypt on COBOL mainframes.
+Now, why did the woman at the top (not likely a malicious actor) why
+did she not take this action? Because of the degree of obfuscation?
+Possibly. But the one thing that leaps out of OPM is the inabiliy to
+enmcrypt on COBOL mainframes.
 
-Perhasp Everything else is justifiable in the hindsight race.  But when you
-simply cannot do the job ethics dictates you dont pretend and carry on.
+Perhasp Everything else is justifiable in the hindsight race.  But
+when you simply cannot do the job ethics dictates you dont pretend and
+carry on.
 
-OPM shows us that one defining quality of software literacy will be professional
-ethics. to quote Spiderman, "with great power comes great responsibility".  For
-the next generation at least, software literacy will be unevenly spread
-throughout the world.  And the importance of software to the world at large is
-so great that we should ensure those who wield that importance are not just
-expected to be trustworthy, but are monitored by their peers.
+OPM shows us that one defining quality of software literacy will be
+professional ethics. to quote Spiderman, "with great power comes great
+responsibility".  For the next generation at least, software literacy
+will be unevenly spread throughout the world.  And the importance of
+software to the world at large is so great that we should ensure those
+who wield that importance are not just expected to be trustworthy, but
+are monitored by their peers.
 
 Professional Ethics still matters
 
-Sweden Mistry Transport
------------------------
-So just as we thought OPM was bad, the Swedish Government stood up, looked the US Feds in the eye and said, "Hold my beer"
+Sweden Ministry of Transport
+----------------------------
+
+So just as we thought OPM was bad, the Swedish Government stood up,
+looked the US Feds in the eye and said, "Hold my beer"
 
 https://www.privateinternetaccess.com/blog/2017/07/swedish-transport-agency-worst-known-governmental-leak-ever-is-slowly-coming-to-light/
 
@@ -364,46 +446,91 @@ https://www.privateinternetaccess.com/blog/2017/07/swedish-transport-agency-wors
 Target and Yahoo
 ----------------
 
-Target and Yahoo make interesting case studies. Target in 2014 had given a
-Air conditioning contractor access *into* their internal network, from the
-A/C contractor's own network.  So when the A/C contractor was breached, the
-Target internal network was just a hop away.
+Target and Yahoo make interesting case studies. Target in 2014 had
+given a Air conditioning contractor access *into* their internal
+network, from the A/C contractor's own network.  So when the A/C
+contractor was breached, the Target internal network was just a hop
+away.
 
-Target lost millions of credit card details, and, probably more importantly
-lost their CEO because of the public reaction.
+Target lost millions of credit card details, and, probably more
+importantly lost their CEO because of the public reaction.
 
-Yahoo, had attackers copy 1 Billion (image) email addresses and passwords.
-They only admitted it because they had to for SEC rulings. (check)
+Yahoo, had attackers copy 1 Billion (image) email addresses and
+passwords.  They only admitted it because they had to for SEC
+rulings. (check)
 
-Target is probably when software security failings first took a major scalp.
-Yahoo is probably the last.
+Target is probably when software security failings first took a major
+scalp.  Yahoo is probably the last.
 
 Equifax
 --------
-Equifax is worse - waaaay worse because in this mucked up world of mothers maidennname 
-they alga every away all the answers. God knows what the effect will be but unless the swedes shoot the manager and Equifax goes out of business then we will never fix these security issues
+
+Equifax is worse - waaaay worse because in this mucked up world of
+mothers maidennname they alga every away all the answers. God knows
+what the effect will be but unless the swedes shoot the manager and
+Equifax goes out of business then we will never fix these security
+issues
 
 
-You want security in your company - fire the head of the CIA if he can't keep his affairs secret. Fire people who breach secrets. Otherwise stop worrying about it 
+You want security in your company - fire the head of the CIA if he
+can't keep his affairs secret. Fire people who breach
+secrets. Otherwise stop worrying about it
 
 
 Healthcare.gov
 --------------
 
-?
+As part of Barack Obama's healthcare reforms (back pre-Trump, if you
+can rememebr that far back) a government agency was tasked with
+setting up a online exchange that would allow hundreds of millions of
+Americans to search for and find the most suitable of the new
+insurance contracts that were available.  The project was handled in
+the usual manner, and as is usual for large software projects it
+failed to achieve its goals.  THis was hugely embarrasing and
+*actually meant a large scale political initiative was at risk because
+software it depended on was badly written*. (THis in itself is a
+seismic moment.)
+
+So the while mess was put in the lap of one of the new Breed of
+GOvernment Best-practise Digital Agency, who proceeded to rescue the
+mess, using best practise appraches. (it was not an unalloyed success,
+but it worked).  Famously the attitude used was boiled down to a quote
+from a frustrated DevOps engineer, who during a fraught and well
+populated project meeting asked "If I cannot deploy New Relic (a
+systems monitoring system) I'm gonna punch somebody".
+
+WHilst violence in the workplace is obbiously forbidden, the teams it
+seems divided along the lines of people who thought it was obvious to
+use these new tools, and thus obvvious that someone banned from using
+them should get driven to rage, and those who thought it was obvious
+to follow the old, way.
+
+THis dividing line is what i think of as the software literate line.
+The point at which one thinks "WTF?" when looking at processes or
+services.  The point at which a literate person would look at a
+company or society that, for example, has a legion of clergymen, who
+stand up in chilly expensive cathedrals, and read out political
+declarations.  And say, "Why not just print them and nail them to the
+church door so people can just read it themselves?"
+
+That is the dividing line.  That is the sort of change to society
+softeware literacy threatens.
+
 
 What have we learnt
 -------------------
 
-A software literate company will not necessarily have these issues fixed and
-working perfectly, but they will be top of mind, and everyone in the company
-will know, not "something is wrong" but "this thing right here is not happening"
+A software literate company will not necessarily have these issues
+fixed and working perfectly, but they will be top of mind, and
+everyone in the company will know, not "something is wrong" but "this
+thing right here is not happening"
 
-Look at the famous "New Relic Punch".  There was not "we do not know what is
-going on" but a clear "if I do this I will know what is going on".
+Look at the famous "New Relic Punch".  There was not "we do not know
+what is going on" but a clear "if I do this I will know what is going
+on".
 
-OPM shows us the new scope of ethics, and Healthcare.gov shows us "normal best
-pracise"
+OPM shows us the new scope of ethics, and Healthcare.gov shows us
+"normal best pracise"
 
 
 There is hope
@@ -412,51 +539,62 @@ There is hope
 Government Digital Services
 
 
-However, these are not normal, or default, or even expected. They are high profile
-and positive. But legal frameworks (from privacy laws to the defintion of a company)
-have not changed.  We need to go further in changing the structure of a company.
+However, these are not normal, or default, or even expected. They are
+high profile and positive. But legal frameworks (from privacy laws to
+the defintion of a company) have not changed.  We need to go further
+in changing the structure of a company.
 
 
 The programmable company
 ------------------------
 
-One theme I shall return to is the idea that companies and organisations
-are simply means to organise humans - and that has lower cost and friction
-than it used to with software intermediation.
+One theme I shall return to is the idea that companies and
+organisations are simply means to organise humans - and that has lower
+cost and friction than it used to with software intermediation.
 
-To put it simply, almost everything that is done in a normal company now
-can be automated, and the co-ordination of functions is an email away.
+To put it simply, almost everything that is done in a normal company
+now can be automated, and the co-ordination of functions is an email
+away.
 
-For almost everything a company or organisation does a second time, that can be automated
-or co-ordinated via software.  A company will become a programmable entity.
+For almost everything a company or organisation does a second time,
+that can be automated or co-ordinated via software.  A company will
+become a programmable entity.  Most if not all effort that goes into
+todays software projects, goes not into creating new business logic, but into
+finding the data, massaging it, guaranteeing it, handling exceptions, and fitting into the rest of the businesses weird ways.
+
+But a programmable company, that has robust exception handling, that has open standards that are easy to fit into, that has trustable data, 
 
 
 The rare, right way
 -------------------
 
-The failures above are all very varied. Amount them no obvious solutions.
-This is the point - we simply do not know what the Washington post of often years
-Hence will look and behave like.  But like the team at healthcare, we don't need to
-We need to follow "best practise".  Sadly there is no written how to on that - it is more
-the gross difference between a Washington post set up and run by a literate editor and that setup and run by an illiterate - charlelemn
+The failures above are all very varied. Amount them no obvious
+solutions.  This is the point - we simply do not know what the
+Washington post of often years Hence will look and behave like.  But
+like the team at healthcare, we don't need to We need to follow "best
+practise".  Sadly there is no written how to on that - it is more the
+gross difference between a Washington post set up and run by a
+literate editor and that setup and run by an illiterate - charlelemn
 
 
 
-* software poliktics and snowden and Cathy
-  gatekeepers of new news.
+* software poliktics and snowden and Cathy gatekeepers of new news.
   Not news but models
 
 * conway and coase - structure of organisations and markets
+
 * Who owns you? devices, data, profit from data, externalities compensation
+
 * professionalism - growing up - Cracked, its what you can do for others
   reliability. Its like an API for a software dev - and same for a software team
   See the API
+
 * culture and software
   literate companies, esp those with literate output, had a new culture.
   a more open culture in europe. It just came with reading.
   I cannot imagine working on a code base I cannot roam around in
   Add in pixar and candour, and its a new culture.
-*
+  
 
 
 
@@ -466,18 +604,18 @@ Software is politics now
 http://blog.memespring.co.uk/2015/09/14/product-land-part-3/
 ::
 
-    """Politics in the 21st century will, in part, be about control over the
-    digital services we now rely on, and which hold an ever         growing
-    concentration of our personal and household data, from how often we move
-    (fitbit, jawbone), where to (Google Play             Services), what we tell
-    people (WhatsApp, Facebook) and to how often we burn our toast (Nest)."""
+    """Politics in the 21st century will, in part, be about control
+    over the digital services we now rely on, and which hold an ever
+    growing concentration of our personal and household data, from how
+    often we move (fitbit, jawbone), where to (Google Play Services),
+    what we tell people (WhatsApp, Facebook) and to how often we burn
+    our toast (Nest)."""
 
-The types of organisations that *can* exist are likelyt to have ot expand
-We need a software literate civil service as urgently as we need more start ups.
-GDS is a marvellous step in the right direction
+The types of organisations that *can* exist are likelyt to have ot
+expand We need a software literate civil service as urgently as we
+need more start ups.  GDS is a marvellous step in the right direction
 
-Weapons of math destruction and the hidden hand
-- Asimov ?
+Weapons of math destruction and the hidden hand - Asimov ?
 
 
 The revolution has not happened yet
@@ -485,8 +623,8 @@ The revolution has not happened yet
 
 https://medium.com/absurdist/the-computer-revolution-has-yet-to-happen-f1dbf983d477#.a9n5t8be6
 
-Devices are curated not owned by us
-The APIs do not exist because vast majority of users could not use them - would need to buy another app
+Devices are curated not owned by us The APIs do not exist because vast
+majority of users could not use them - would need to buy another app
 
 Pen and paper ?
 
@@ -495,8 +633,8 @@ Pen and paper ?
 Notes misc
 ===========
 
-None of these are purely technical foul-ups.  Where humans are involved thats never
-the case - it is always tinged with plitics.
+None of these are purely technical foul-ups.  Where humans are
+involved thats never the case - it is always tinged with plitics.
 
 It's how would an illiterate person run the Washington Post.  Ben
 bradlee
@@ -517,18 +655,25 @@ it should run", because they were illiterate too.
 .. #: http://www.hrc.utexas.edu/educator/modules/gutenberg/books/legacy/
 
 
-The incremental improvement - constant little bit better till it is out of sight
-This is a fundamental part - daily, hourly improvements just sent out.
+The incremental improvement - constant little bit better till it is
+out of sight This is a fundamental part - daily, hourly improvements
+just sent out.
 
 A Mea Culpa - from me and Uncle Bob
 http://blog.paul-brian.com/2015/06/05/being-professional/
 
 ::
 
-Conclusion The trick to handling pressure is to avoid it when you can, and weather it when you can’t. You avoid it by managing commitments, following your disciplines, and keeping clean. You weather it by staying calm, communicating, following your disciplines, and getting help
+  Conclusion The trick to handling pressure is to avoid it when you can,
+  and weather it when you can’t. You avoid it by managing commitments,
+  following your disciplines, and keeping clean. You weather it by
+  staying calm, communicating, following your disciplines, and getting
+  help
 
-So as we know what is wrong, it is useful to dive into why, and what to do about it.
-Uncle bob recommends managing pressure - and Inwoukd like to suggest that professionalism is an API we present to our stake holders - like "keeping a promise"
+So as we know what is wrong, it is useful to dive into why, and what
+to do about it.  Uncle bob recommends managing pressure - and Inwoukd
+like to suggest that professionalism is an API we present to our stake
+holders - like "keeping a promise"
 
 The APIs -
 
