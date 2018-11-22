@@ -195,6 +195,20 @@ underlying fundamentals of
 How do I know - well, as a software literate person, its just obvious.
 
 
+Is fake news really a problem inside companies. Let me tell you a story. Names have been changed to protect the guilty 
+
+Project - codebase begins, insufficiency for purpose, no one admitting to it because if so then get fired.  The project management process allowed for ... lies. Yes it passes, kind of.  any outside scrutiny- day by a news reporter - would trivially see a problem. But no the fake news carries on up
+
+size makes this harder simply because at each step the ability to take time and challenge fake news is harder - and made worse by the culture of productivity/ hazing of directors
+
+so we need automated helpnto dosciver fake news in our own project reporting
+
+and that means trusting / managing the code 
+
+
+this inefficient is argued it is what brought down soviet - what all doctoaros suffer from (see saudi air force) - and we love it in our own companies??
+
+
 We are already seeing calls for the software industry to regulate
 itself, on privacy, on deals with repressive regiemes.  The answer is
 not as simple as coders all being nice people.  But society needs to
