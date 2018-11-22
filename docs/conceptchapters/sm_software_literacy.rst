@@ -564,6 +564,12 @@ finding the data, massaging it, guaranteeing it, handling exceptions, and fittin
 
 But a programmable company, that has robust exception handling, that has open standards that are easy to fit into, that has trustable data, 
 
+A New Hope
+==========
+
+GDPR
+Plus rulings like this (https://techcrunch.com/2018/11/20/how-a-small-french-privacy-ruling-could-remake-adtech-for-good/) that will unpick the privacy issue - or rather the "who has my data" issue.
+
 
 The rare, right way
 -------------------
