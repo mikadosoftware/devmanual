@@ -1,0 +1,119 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Writing a simple WSGI app &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="webtest" href="wsgi_test.html" />
+    <link rel="prev" title="Non blocking" href="nonblockwsgi.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="writing-a-simple-wsgi-app">
+<h1>Writing a simple WSGI app<a class="headerlink" href="#writing-a-simple-wsgi-app" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="wsgi-server">
+<h2>WSGI Server<a class="headerlink" href="#wsgi-server" title="Permalink to this headline">¶</a></h2>
+<p>WSGI is an amazingly cool ... idea.  It just reminds you that <em>all</em> web servers are doing
+is passing text strings up and down a request/response cycle.  Remeber CGI? Its still that
+simple.</p>
+<p>(all WSGI stuff in here)</p>
+<p><a class="reference external" href="https://bitbucket.org/vithon/vithon-forum/src/abab8f2a7aef/viforum/forum.py">https://bitbucket.org/vithon/vithon-forum/src/abab8f2a7aef/viforum/forum.py</a></p>
+<p>What should have happend?</p>
+<p>start_response probably should have been left out, and ...
+well thats the hard part - you need to be able to send back up
+the chain a stream of bytes (body) <em>and</em> a environ / header dict
+So it does need two channels.</p>
+<p>Support for non-blocking requests?
+A (thread) in an event-based server needs to have mechanisms for
+halting its own processing while an I/O event occurs, and then restarting</p>
+<p>This leads to rewrites of pretty much everything.</p>
+<div class="section" id="application">
+<h3>Application<a class="headerlink" href="#application" title="Permalink to this headline">¶</a></h3>
+<p>An &#8220;app&#8221; is <em>only</em> a piece of code that calls start_response and so begins the
+response process.</p>
+<p>This is how middleware can operate - by deciding if or not to respond instead of
+the &#8220;officially configured&#8221; app.</p>
+<p>I think this &#8220;officially configured&#8221; app is also the source of much confusion.:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">doctest2.doclit</span> <span class="k">import</span> <span class="n">doclit</span>
+<span class="gp">... </span><span class="k">def</span> <span class="nf">paul_app</span><span class="p">(</span><span class="n">environ</span><span class="p">,</span> <span class="n">start_response</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="sd">&quot;&quot;&quot; &quot;&quot;&quot;</span>
+<span class="gp">... </span>    <span class="c1">#do something with environ</span>
+<span class="gp">... </span>    <span class="n">resp_headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;text/html&#39;</span><span class="p">}</span>
+<span class="gp">... </span>    <span class="n">start_response</span><span class="p">(</span><span class="s2">&quot;200 OK&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="s2">&quot;Hello World&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="serving-the-app">
+<h3>Serving the app<a class="headerlink" href="#serving-the-app" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">waitress</span> <span class="k">import</span> <span class="n">serve</span>
+<span class="gp">... </span><span class="n">serve</span><span class="p">(</span><span class="n">paul_app</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="adjusting-a-environ-on-way-in">
+<h3>Adjusting a environ on way in<a class="headerlink" href="#adjusting-a-environ-on-way-in" title="Permalink to this headline">¶</a></h3>
+<p>TBC</p>
+</div>
+<div class="section" id="adjusting-environ-on-way-out">
+<h3>Adjusting environ on way out<a class="headerlink" href="#adjusting-environ-on-way-out" title="Permalink to this headline">¶</a></h3>
+<p>TBC</p>
+<div class="section" id="setting-and-unsetting-cookies">
+<h4>Setting and unsetting cookies<a class="headerlink" href="#setting-and-unsetting-cookies" title="Permalink to this headline">¶</a></h4>
+<p>See RSSSO</p>
+</div>
+<div class="section" id="secure-cookies">
+<h4>Secure cookies<a class="headerlink" href="#secure-cookies" title="Permalink to this headline">¶</a></h4>
+<p>Some people think that secure cookies is about encrypting the text on the
+cookie so bad guys cannot read it.  Frankly, this is nonsense.  You will
+make a mistake, and they will read it.  So we have an issue - which is faster
+an in-memory redis lookup or a decryption of a <em>really secure</em> piece of text.</p>
+<p>This looks like an interesting test...</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

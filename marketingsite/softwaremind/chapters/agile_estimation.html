@@ -1,0 +1,112 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Agile Estimation - Learning from traditional Project Management &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Running a Small Office / Home Office Network" href="SoHo1.html" />
+    <link rel="prev" title="Project mgmt" href="project_mgmt.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="agile-estimation-learning-from-traditional-project-management">
+<h1>Agile Estimation - Learning from traditional Project Management<a class="headerlink" href="#agile-estimation-learning-from-traditional-project-management" title="Permalink to this headline">¶</a></h1>
+<p>Remember the basic problem with any estimation for something that has not been done before is that it&#8217;s impossible to be accurate enough for anyone else to rely on</p>
+<p>And then other parts of the company then try to rely on it.</p>
+<p>Which then becomes your problem because they are delenandt on you and can blame you for not &#8220;delivering&#8221;.</p>
+<p>this then likes pressure on you to take shirt cute, donless testing and generally drop your quality</p>
+<p>We can mitigate this slightly by enforcing high quality though CI processes like linting and constant deployment.</p>
+<p>this shows forward progress but essentially the underlying problem is still there - we are making a journey we have not made before from a starting point we have never been at before (ie out  odebase now)</p>
+<p>So what we need is a different approach - reactive project management t - or event driven project management</p>
+<p>On top of which we need risk based project mgmt - where we report the top risks in the project - one of which is always always always the code quality</p>
+<p>This takes us to todoinator- anatfempt to handle all this and the reprint of the same throughout.</p>
+<p>You need to</p>
+<ul class="simple">
+<li>identify a portion of codebase responsible for and a feature set needed</li>
+<li>estimate these</li>
+<li>publish and record your estimates <em>locally</em> (ie in your ticket system before putting into the whatever jira</li>
+<li>manage your actual book of work through todo and your local ticket system - see &#8216;why the tickets never match reality&#8221; - 10x number of commits as tickets in system.</li>
+<li></li>
+</ul>
+<p>I have long wondered why Agile (well, read Scrum) planning is <em>so</em> simplistic.</p>
+<p>Yes, having the team estimate the tasks and then agree to them is, frankly, a
+world away from the handed-down-from-on-high estimation found in most companies,
+big and small.  Even where estimation is <em>initially</em> done by the teams, I have
+found a number of times that the estimates are either massaged, or are part of a
+in-all-but-name waterfall approach.</p>
+<p>Even a little more sophistication can lead us to estimates that are dramatically
+more useful outside the team, and that tends to lead to teams getting left alone with a reputation for hitting thier promises.</p>
+<p>So I suggest that all Planning Poker estimates are provided with PERT three-way estimation points, and then thyat is</p>
+<p>Planning poker is based on <a class="reference external" href="http://en.wikipedia.org/wiki/Wide_band_delphi">Wide-Band Delphi</a> which came out of RAND Corporation via Barry Boehm.</p>
+<p>Flow control in networking and Agile estimation</p>
+<ul class="simple">
+<li>team ramps up slowly then halves it&#8217;s rate if it ever missed</li>
+</ul>
+<p>Notes</p>
+<ul>
+<li><p class="first"><a class="reference external" href="http://www.palisade.com/risk/monte_carlo_simulation.asp">http://www.palisade.com/risk/monte_carlo_simulation.asp</a></p>
+</li>
+<li><p class="first"><a class="reference external" href="http://sunset.usc.edu/publications/TECHRPTS/1995/usccse95-507/ASP.pdf">http://sunset.usc.edu/publications/TECHRPTS/1995/usccse95-507/ASP.pdf</a></p>
+<p>(Boehm: Know why you are building the software, know your architecture is upto it and make sure the initial release carries the promise.)</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://csse.usc.edu/csse/TECHRPTS/2007/usc-csse-2007-715/usc-csse-2007-715.pdf">http://csse.usc.edu/csse/TECHRPTS/2007/usc-csse-2007-715/usc-csse-2007-715.pdf</a>
+(Incremental commitment - a very Agile approach, basically using risk based analysis to judge if those paying will get what they are paying for - at each stage they can incrmentally commit a little more money.  Or as Ward Cunningham puts it &#8220;Can leave with software representing the amount of money committed to date&#8221;</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://tynerblain.com/blog/2006/04/13/foundation-series-basic-pert-estimate-tutorial/">http://tynerblain.com/blog/2006/04/13/foundation-series-basic-pert-estimate-tutorial/</a></p>
+<p>E = (O + 4N + P)/6
+stdev = (pessimistic – optimistic) / 6
+Combining estiamtes (chances of EPIC / backlog)</p>
+<blockquote>
+<div><p>The combined mean is the sum of the two old means. 32.5 + 32.5 = 65 minutes.
+The combined stdev is the square root of the sum of the squares of the two old stdevs. SQRT(7.5^2 + 7.5^2) = 10.6.
+The combined optimistic estimate is the mean minus ( 3 * stdev). Optimistic = 65 – (3 * 10.6) = 33 minutes.
+The combined pessimistic estimate is the mean plus (3 * stdev). Pessimistic = 65 + (3 * 10.6) = 97 minutes.
+Our combined PERT estimate is 33/65/97 with a mean of 65 minutes and a stdev of 10.6 minutes.</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

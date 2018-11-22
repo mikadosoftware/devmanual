@@ -1,0 +1,116 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Setting up python repos to use Sphinx and Github Pages &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Non blocking" href="nonblockwsgi.html" />
+    <link rel="prev" title="Nginx - load balancing" href="nginx.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="setting-up-python-repos-to-use-sphinx-and-github-pages">
+<h1>Setting up python repos to use Sphinx and Github Pages<a class="headerlink" href="#setting-up-python-repos-to-use-sphinx-and-github-pages" title="Permalink to this headline">¶</a></h1>
+<p>We want to use <a class="reference external" href="http://sphinx-doc.org">Sphinx</a> to generate our documentation
+but then use github to host the documentation (not withstanding the excellent
+<a class="reference external" href="http://www.readthedocs.org">readthedocs</a>.)</p>
+<p>Github pages are a relatively simple idea - create a branch with a special name
+(<cite>gh-pages</cite>) in your repo.  Whatever (html) is in the root of that branch will
+be served from <a class="reference external" href="http://reponame.github.com">http://reponame.github.com</a> as if it was the document root.</p>
+<p>So our basic process will be to create an orphan branch in our repo called
+&#8220;gh-pages&#8221;, then generate the docs in the normal fashion, and copy over the docs
+to the new branch and commit.</p>
+<p>Obviously I would like to automate the complete process, of building the docs,
+but that will wait till we have greater control and comfort with creating venvs
+automatically and running docs within them (Its doable - just ...)</p>
+<div class="section" id="first-stage">
+<h2>First stage<a class="headerlink" href="#first-stage" title="Permalink to this headline">¶</a></h2>
+<p>We want to create a new orphan branch called gh-pages (orphans carry no history baggage so its neater)</p>
+<dl class="docutils">
+<dt>::</dt>
+<dd><p class="first"># cd into repo on disk
+$ git checkout &#8211;orphan gh-pages
+Switched to a new branch &#8216;gh-pages&#8217;
+$ git rm -rf .</p>
+<p class="last">rhaptos2.user$ echo &#8220;Initial commit&#8221; &gt; index.html
+rhaptos2.user$ git add index.html
+rhaptos2.user$ git commit -m &#8220;First cut for gh-pages&#8221;</p>
+</dd>
+</dl>
+<p>Now that we have on github a gh-pages branch, we want to put something in it.
+Create a file like the one below, in the root of say master.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>#
+SRCDOCS=/home/pbrian/src/rhaptos2.user/docs/_build/html
+
+cd $SRCDOCS
+MSG=&quot;Adding gh-pages docs for `git log -1 --pretty=short --abbrev-commit`&quot;
+
+TMPREPO=/tmp/docs/user
+rm -rf $TMPREPO
+mkdir -p -m 0755 $TMPREPO
+
+git clone git@github.com:Connexions/rhaptos2.user.git $TMPREPO
+cd $TMPREPO
+git checkout gh-pages  ###gh-pages has previously one off been set to be nothing but html
+cp -r $SRCDOCS/ $TMPREPO
+git add -A
+git commit -m &quot;$MSG&quot; &amp;&amp; git push origin gh-pages
+</pre></div>
+</div>
+<p>I am assuming that we have already built the documentation in branch &lt;master&gt; as in:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ cd docs
+$ workon vuser
+$ (vuser) make clean &amp;&amp; make html
+</pre></div>
+</div>
+<p>This can all clearly be adjusted to suit each repo, and easily generic-isized.
+But it does the job - of creating a temporary clone of gh-pages, and bringing the
+pre-built html into the right location in gh-pages.</p>
+<p>/usr/pbi/rxvt-unicode-amd64/lib/urxvt/perl/
+thats were tabbed brwstring is in urxvt</p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

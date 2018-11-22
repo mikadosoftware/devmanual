@@ -1,0 +1,117 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Cabling and other hardware &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Also distributed filesystems - cephfs, HDFS, GLUSTER" href="filesharing.html" />
+    <link rel="prev" title="Using AWS Route53 for my DNS" href="aws_dns.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="cabling-and-other-hardware">
+<h1>Cabling and other hardware<a class="headerlink" href="#cabling-and-other-hardware" title="Permalink to this headline">¶</a></h1>
+<p>Like a number of others this is for historical purposes, but yes, I really
+did run a real business with a &#8220;server room&#8221; that was cooled using a aircon unit
+we just hauled in from <a class="reference external" href="http://www.diy.com">B&amp;Q</a>.</p>
+<div class="section" id="power-and-cooling">
+<h2>Power, and Cooling<a class="headerlink" href="#power-and-cooling" title="Permalink to this headline">¶</a></h2>
+<p>At some point a small company will move from having a few laptops, to
+having a <em>server</em>.[#]_  And at some point after that they get another
+one, and an IT manager, and soon they have to think hardware.</p>
+<p>A Pentium4 CPU can hit 90C, and stay there under heavy load.  The fans
+and other noise are designed to throw that heat away from the CPU.
+One of the most common causes of computer failure is overheating in
+summer. <a class="footnote-reference" href="#id2" id="id1">[1]</a></p>
+<p>So in essence we are running an office full of bar heaters.</p>
+<div class="section" id="how-do-i-cool-this-all-down">
+<h3>How do I cool this all down ?<a class="headerlink" href="#how-do-i-cool-this-all-down" title="Permalink to this headline">¶</a></h3>
+<p>Its all down to Watts.  1 watt is a rate of power consumption equal to 1 joule
+per second</p>
+<div class="sidebar">
+<p class="first sidebar-title">Get off your BTus</p>
+<ol class="upperalpha simple" start="17">
+<li>How do I convert Kilowatts (kW) into British thermal unit (Btu)?</li>
+</ol>
+<p>A.  To convert Kilowatts (kW) into a British thermal unit (Btu) value simply
+multiply the Kilowatts value by 3414</p>
+<p>kW x 3414 = Btu</p>
+<p>OR from wikipedia</p>
+<p class="last">1 watt is approximately 3.41 BTU/h
+(presumably they mean 1 watt hour is about 3.41 BTU hours)</p>
+</div>
+<p>on average a single server will consume 60-120W (yes that is a big varience, but
+dual cores and load all make a difference.  Measure it using a <a class="reference external" href="http://michaelbluejay.com/electricity/measure.html">kill-a-watt
+meter</a> for ease) .</p>
+<p>so, 120 W = 120*3.41 = 409 BTU for a single server So, 15 servers, all running
+at once will pump out about 9000 BTU 9000 BTU is the bottom end rating for a DIY
+air conditioner.  Do you see where we are going?</p>
+<p>So if I have a 6000 BTU rated air conditioner I can in theory have 30 servers on
+at full blast and the temperature will stay the same.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Admittedly that point gets further off as years pass - web</td></tr>
+</tbody>
+</table>
+<p>based services really do offer a small business a real benefit if they
+are willing to risk hosting. [Ha - can you see my bold prediction of the
+cloud-computing era.  Well at least I saw it&#8217;s benefits :-)]</p>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[2]</td><td>Curiously tropical and desert failures due to heat seem to be</td></tr>
+</tbody>
+</table>
+<p>less commonly reported.  My assumption is that in the UK most of the
+year it is cold enough to get away with no (or insufficient) dedicated
+cooling.  When summer hits, the servers pay the price.  In a hot
+climate, that is an ever present threat and is factored in from the
+start.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

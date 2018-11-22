@@ -1,0 +1,108 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Useful command line utilities &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="SEO case study" href="seo-case-study.html" />
+    <link rel="prev" title="Managing identity and authentication" href="securityoverview.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="useful-command-line-utilities">
+<h1>Useful command line utilities<a class="headerlink" href="#useful-command-line-utilities" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="learn-the-command-line">
+<h2>learn the command line<a class="headerlink" href="#learn-the-command-line" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>::</dt>
+<dd># echo day | sed s/day/night/
+night
+# echo daylight | sed s/day/night/
+nightlight</dd>
+</dl>
+<p>Oh yeah baby. Power.</p>
+<p>Let me show you how Linus <a class="footnote-reference" href="#id2" id="id1">[1]</a> did a simple check of his bash history</p>
+<dl class="docutils">
+<dt>::</dt>
+<dd><dl class="first last docutils">
+<dt>history</dt>
+<dd><div class="first last line-block">
+<div class="line">grep git</div>
+<div class="line">sed &#8216;s/[ 0-9]*(git[ ]*[a-z-]*).*/1/&#8217;</div>
+<div class="line">sort</div>
+<div class="line">uniq -c</div>
+<div class="line">sort -n</div>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>so lets go through that and see what is worth learning</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="ch">#!/bin/ksh</span>
+
+<span class="n">mystring</span><span class="o">=</span><span class="s2">&quot;01.Driver Report|userid@company.com&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;$mystring&quot;</span><span class="o">|</span><span class="k">while</span> <span class="n">IFS</span><span class="o">=</span><span class="s2">&quot;|&quot;</span> <span class="n">read</span> <span class="n">f1</span> <span class="n">f2</span>
+<span class="n">do</span>
+<span class="n">name</span><span class="o">=</span><span class="s2">&quot;$f1&quot;</span>
+<span class="n">email</span><span class="o">=</span><span class="s2">&quot;$f2&quot;</span>
+<span class="n">done</span>
+<span class="n">echo</span> <span class="s2">&quot;$name&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;$email&quot;</span>
+</pre></div>
+</div>
+<div class="section" id="bibliography">
+<h3>bibliography<a class="headerlink" href="#bibliography" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://www.grymoire.com/Unix/Sed.html#uh-0">http://www.grymoire.com/Unix/Sed.html#uh-0</a></p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://www.linux-mag.com/cache/7314/1.html">http://www.linux-mag.com/cache/7314/1.html</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

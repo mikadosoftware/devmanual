@@ -1,0 +1,82 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Mikado-doc-manager &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Using AWS Route53 for my DNS" href="aws_dns.html" />
+    <link rel="prev" title="aspell" href="aspell.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="mikado-doc-manager">
+<h1>Mikado-doc-manager<a class="headerlink" href="#mikado-doc-manager" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<p>I wish to capture, store, retrieve and tag &#8220;documents&#8221; used in the course of
+the business.  A document is a single file holding useful infomration that is
+not itself a file designed to be a database.</p>
+<p>Examples include image files, PDF files, Text files (thought less common) and
+possibly so-called office productivity files like Word.
+An HTML file is less likely a document as to achieve the human readbility it needs to be processed through a browser, and will 99% of time
+need other files to make sense (CSS, img, js etc)</p>
+<p>The doc-manager will simply - for now - accept input via a email box, and will
+store the single, selfcontained file in a disk location using tags associated
+with it in the email</p>
+<p>the main tag will be the subject line such as mikado.travel.train
+and would be a image file of a train receipt ticket</p>
+<p>Further tags would be key value pairs on their own lines in the mail body:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">user</span><span class="o">=</span><span class="n">pbrian</span>
+<span class="n">value</span><span class="o">=</span><span class="mf">37.50</span> <span class="n">GBP</span>
+<span class="n">date</span><span class="o">=&lt;</span><span class="n">taken</span> <span class="kn">from</span> <span class="nn">mail</span> <span class="n">timestamp</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>The file(s) in the mail would be hashed (md5/sha1) and that hash used to
+index the files and associate the tag information with image</p>
+<p>A simple doc-browser would be a &#8220;web app&#8221; that will allow browsing
+of the docs by tags etc</p>
+<p>Security review will be needed</p>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

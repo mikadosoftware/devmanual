@@ -1,0 +1,36 @@
+/*
+ * bizstyle.css_t
+ * ~~~~~~~~~~~~~~
+ *
+ * Sphinx stylesheet -- business style theme.
+ *
+ * :copyright: Copyright 2011-2014 by Sphinx team, see AUTHORS.
+ * :license: BSD, see LICENSE for details.
+ *
+ */
+
+@import url("bizstyle.css");
+
+/* -- page layout ----------------------------------------------------------- */
+
+body {
+  font-size: 28px;
+  background-image: none;#url(background_b01.png);
+  color: green;
+  background-color: black;
+  counter-reset: section;
+
+}
+
+div.document {
+  background-color: black;  
+}
+
+body {
+                       /* Set a counter named 'section', and its initial value is 0. */
+}
+
+h3::before {
+  counter-increment: section;                 /* Increment the value of section counter by 1 */
+  content: counter(section);                  /* Display the value of section counter */
+}

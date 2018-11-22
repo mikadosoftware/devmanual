@@ -1,0 +1,272 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Serverless Dev Manual &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="serverless-dev-manual">
+<h1>Serverless Dev Manual<a class="headerlink" href="#serverless-dev-manual" title="Permalink to this headline">¶</a></h1>
+<p>This is a dev manual - a &#8220;how we do things around here&#8221; for a software development team.</p>
+<p>It is developed in the open to allow or encourage discussion.  If you feel some updates are needed, pull requests are always welcome.</p>
+<p>The index is built first as a jumping off point for the longer explanations in the actual chapters. it seemed easier to build this way, and helps keep it straight in my head.</p>
+<p>I have written this to be a useful starting point for an imaginary &#8220;new CTO&#8221;, probably a founder with little prior experience.  it is a companion piece to &#8220;The Software Mind&#8221;.</p>
+</div>
+<div class="section" id="themes">
+<h1>Themes<a class="headerlink" href="#themes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="plumbing">
+<h2>Plumbing<a class="headerlink" href="#plumbing" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">plumbing needed for every project / component
+- error handling
+- config
+- todo
+- docs
+- logging
+- metrics
+- activity reporting
+- governance, style, testing, coverage
+- source code policy
+- physically distinct DEV, [UAT], PREPROD and PROD</p>
+<blockquote>
+<div><p>UAT is optional if you have automated testing.
+dont mix preprod and uat cos you will want to release when users are looking</p>
+</div></blockquote>
+<ul class="simple">
+<li>dashboards for can I release, and what is governance ?</li>
+</ul>
+</li>
+</ul>
+<p>AQA - automated Qualty Assurance
+- ast based syntax checking
+- checking integration test
+- similar to CI as well</p>
+</div>
+<div class="section" id="workstation">
+<h2>Workstation<a class="headerlink" href="#workstation" title="Permalink to this headline">¶</a></h2>
+<p>Workstation builds also matter</p>
+</div>
+<div class="section" id="hardware-production-processes">
+<h2>Hardware production processes<a class="headerlink" href="#hardware-production-processes" title="Permalink to this headline">¶</a></h2>
+<p>This is kinda sorta linked to workstations- i have worked at startups who depended on software and hardware builds.  these are much harder at proper scale, but it matters</p>
+<p>see bunny houng.</p>
+</div>
+<div class="section" id="teams-and-culture">
+<h2>Teams and culture<a class="headerlink" href="#teams-and-culture" title="Permalink to this headline">¶</a></h2>
+<p>it matters it really does</p>
+<p>start with feedback - sprints and retrospectives
+Be aware of your priviledge
+Begin the difficult conversations publically
+be aware of the likely problems - metoo is just one.</p>
+<p>then aim for the culture you want -</p>
+<p>then hire good people</p>
+</div>
+<div class="section" id="source-control-continuous-integration">
+<h2>Source control, continuous integration<a class="headerlink" href="#source-control-continuous-integration" title="Permalink to this headline">¶</a></h2>
+<p>mono repo vs multi repo - really is a tool discussion so discuss the tools
+- ability to identify all our dependnacies
+- fulltest of all (mono is simpler but multi easier to manage)
+- project control files - ownership etc</p>
+</div>
+<div class="section" id="security">
+<h2>Security<a class="headerlink" href="#security" title="Permalink to this headline">¶</a></h2>
+<p>Mission statements
+<a class="reference external" href="https://www.amazon.jobs/principles">https://www.amazon.jobs/principles</a></p>
+<ul class="simple">
+<li>GPG and keypairs</li>
+<li>Simplest possible
+We shall build a working web app (about three lines, honest).
+Build it, test it, deploy it to a location locally, and log it.</li>
+<li>systemd, well-behaved services</li>
+<li>simplest app possible</li>
+<li>adding a unit test</li>
+<li>adding a performance test</li>
+<li>building it under python / distutils</li>
+<li>running it under systemd</li>
+<li>running dual, behind load balancer, using weaver/ansible/fabric</li>
+<li>building it on a build server, using .deb files</li>
+<li>build assets -&gt; docs, perf results, test results, .deb files</li>
+<li>Security on microservice</li>
+<li>linting and style and code reviews</li>
+<li>Identity</li>
+<li>host-host services (ntp etc)</li>
+<li>host-app services -&gt; logging, TLS etc</li>
+<li>central services - DNS, metric names,</li>
+<li>code reviews and code promotion</li>
+<li>metrics gatehrinfg</li>
+<li>log mgmt</li>
+<li>rolling out changes</li>
+<li>adding message queues, backend services, passing back identiy</li>
+<li>adding dependancy services - monitoring everything</li>
+<li>CTO dashboard, mission control centre</li>
+<li>bug tracking, feature development</li>
+</ul>
+<div class="section" id="the-dev-manual">
+<h3>The Dev Manual<a class="headerlink" href="#the-dev-manual" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+<div class="section" id="the-manual">
+<h1>The manual<a class="headerlink" href="#the-manual" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="how-are-things-developed-around-here-and-why">
+<h2>&#8220;How are things developed around here, and why.&#8221;<a class="headerlink" href="#how-are-things-developed-around-here-and-why" title="Permalink to this headline">¶</a></h2>
+<p>This is a developers manual, constructed as a companion
+piece to <cite>The Software Mind</cite> book.</p>
+<ul class="simple">
+<li>The code is the design - code first for everything
+Infrastructure as a Service
+Softwre defined networking</li>
+<li>Code as a crime scene
+Static Analysis and raising all boats.</li>
+<li>Seeing every beat of the corporate body.
+Dashboards, newspapers of the data rich world - making it easy to understand</li>
+<li>Source control</li>
+<li>prmotoing code up</li>
+<li>having a robot promite code after meeting automatic criteria</li>
+<li>having automatic testing</li>
+<li>build servers</li>
+<li></li>
+</ul>
+<p>Pyholodeck</p>
+<ul class="simple">
+<li>source control</li>
+<li>build systems</li>
+<li>automated tests and xml results</li>
+<li>deployment</li>
+<li>monitoring</li>
+<li>logging</li>
+<li>metrics</li>
+<li>performance testing</li>
+<li>Pre prod and prod</li>
+<li>cloud evolutions (serverless architecture)</li>
+<li>no damn features</li>
+<li></li>
+</ul>
+<p>python tricks</p>
+<p>python eco system
+- error capture and management - rollbar
+- metrics capture
+- event capture (kpi)
+- bug tracking and so on
+how it all fits together</p>
+<p>devmanual - ast and how to do syntax checking like pyflake - how to build own rules</p>
+<ol class="arabic simple">
+<li>source control
+5 chars etc.
+but good example of using automated policy enforcement on checkin</li>
+<li>tech debt and tech assets - code and tests</li>
+<li>requirements lifecycle (PEP)
+the wrongest part of the agile manifesto
+&#8220;&#8221;&#8221; The most efficient and effective method of</li>
+</ol>
+<p>conveying information to and within a development
+team is face-to-face conversation.</p>
+<blockquote>
+<div><p>&#8220;&#8221;&#8221;
+Ya do need to write down the discussion.
+written Proof overcomes authority problems</p>
+<blockquote>
+<div>it is also way to get everyone discussing
+this only works with really co-locateed and mission focused teams</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>automated build and deployment (dogfood)
+Look, bash is just <em>fine</em>
+pyholodeck</li>
+<li>Documentation and Marketing</li>
+<li>openness and reviews</li>
+<li>Progress Not Perfection (YouTube clip)</li>
+<li>static and other analysis</li>
+<li>performance mgmt and measuring everything (and making reports on everything)</li>
+<li>Automatic project mgmt</li>
+<li>Risk management</li>
+<li>have fun, try new things, don&#8217;t be afraid</li>
+</ol>
+<ul class="simple">
+<li>distributed file systems
+Cephfs, GlusterFS, Lustre, and HDFS</li>
+<li>work queues
+CElery, zeroMQ</li>
+<li>amazon, openstack</li>
+</ul>
+<p>package management
+<a class="reference external" href="http://nvie.com/posts/better-package-management/">http://nvie.com/posts/better-package-management/</a></p>
+<p>Instrumentation
+<a class="reference external" href="https://honeycomb.io/blog/2017/01/instrumentation-the-first-four-things-you-measure/">https://honeycomb.io/blog/2017/01/instrumentation-the-first-four-things-you-measure/</a></p>
+<p>Pki
+Cloudflare how to build your own
+<a class="reference external" href="https://en.m.wikipedia.org/wiki/Hardware_security_module">https://en.m.wikipedia.org/wiki/Hardware_security_module</a>
+- France enforces open access to scientific publishing
+<a class="reference external" href="https://www.openaire.eu/france-final-text-of-the-law-for-oa-has-been-adopted">https://www.openaire.eu/france-final-text-of-the-law-for-oa-has-been-adopted</a></p>
+<ul class="simple">
+<li>pikkety redux</li>
+</ul>
+<p><a class="reference external" href="https://news.ycombinator.com/item?id=12417855#12418438">https://news.ycombinator.com/item?id=12417855#12418438</a></p>
+<ul class="simple">
+<li>snowden</li>
+</ul>
+<p><a class="reference external" href="https://en.m.wikipedia.org/wiki/NSA_ANT_catalog">https://en.m.wikipedia.org/wiki/NSA_ANT_catalog</a>
+<a class="reference external" href="http://www.nsaplayset.org">http://www.nsaplayset.org</a></p>
+<ul class="simple">
+<li>Whats happening in the world - a sense of perspective</li>
+</ul>
+<ul class="simple">
+<li><a class="reference external" href="http://www.digitalattackmap.com/faq/">http://www.digitalattackmap.com/faq/</a></li>
+<li>also want, wars, trade, shipping, energy, employment, poverty, investment etc.</li>
+<li>some kind of model / mapp for the whole world. where is the money flowing / going?</li>
+</ul>
+<ul class="simple">
+<li>Hardende images / servers</li>
+</ul>
+<p><a class="reference external" href="https://www.cisecurity.org/services/hardened-virtual-images/">https://www.cisecurity.org/services/hardened-virtual-images/</a></p>
+<p>how compare to serverless?</p>
+<p>chaos engineering
+<a class="reference external" href="http://principlesofchaos.org">http://principlesofchaos.org</a></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

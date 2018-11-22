@@ -1,0 +1,102 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Unicode &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="unicode">
+<h1>Unicode<a class="headerlink" href="#unicode" title="Permalink to this headline">¶</a></h1>
+<p>Unicode is both amazing and complex and challenging.</p>
+<p>You know the whole Python 2, Python 3 thing? Where sane and sensible core python
+developers just threw their hands in the air and wrote a backwards incompatible
+version of python (3).  Yeah. The main reason for doing that.  Unicode.</p>
+<p>Its that hard.</p>
+<p>But now, using Python 3 <em>only</em>, unicode become much more ... understandable.</p>
+<p>So lets try some things. Firstly, i like to use <cite>emacs</cite> the editor, and it has
+OK unicode support. So if i want to print the chinese yuan symbol (¥) I use the key combinations <cite>C-x 8 Y</cite> - that is Ctrl-x, digit 8 and uppercase Y.  The C-x 8 gets me into the unicode &#8220;entry system&#8221; and capital Y is a common shortcut.</p>
+<p>I can enter any unicode via (#TODO: C-x 8 entry how to)</p>
+<p>Ok, so lets just see if I can print to my terminal, a non ascii character</p>
+<p>foo.py</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That will be 10 ¥ please.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>I run it from my terminal (<cite>python foo.py</cite>), and hey presto. total fail:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>[pbrian@bluemountain ~]$ python foo.py
+File &quot;foo.py&quot;, line 1
+SyntaxError: Non-ASCII character &#39;\xc2&#39; in file foo.py on line 1, but no
+encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+</pre></div>
+</div>
+<p>This is Python telling me that I loaded up a file (foo.py) but when it tried to
+parse the file it hit a problem.  There was no encoding set for the file, and
+it defaulted to ASCII. SO it read some bytes and hey presto - there is a byte above 128</p>
+<p>So we need to declare that the module will be utf-8 encoded</p>
+<p>foo.py</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="ch">#! -*- coding:utf-8 -*-</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That will be 10 ¥ please.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now thats better - we get a print out in our terminal</p>
+<p>(Oh having a unicode aware terminal. Different problem but mostly solved these days)</p>
+<div class="section" id="biblio">
+<h2>Biblio<a class="headerlink" href="#biblio" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://docs.python.org/2/library/unicodedata.html">https://docs.python.org/2/library/unicodedata.html</a></p>
+<p>Usernames as identify and tripartite identify patter</p>
+<p><a class="reference external" href="https://www.b-list.org/weblog/2018/feb/11/usernames/">https://www.b-list.org/weblog/2018/feb/11/usernames/</a></p>
+<p>Simple test - test everything with a set of unicode poems - maybe omar kayyam and j&#8217;taime
+everything should be able to display it - terminals to web browsers to logs and so on</p>
+<p>my goal is a fixed group of micro services running on docker that talk to each other securely <a class="reference external" href="http://www.daemonology.net/blog/2009-09-28-securing-https.html">http://www.daemonology.net/blog/2009-09-28-securing-https.html</a></p>
+<p><a class="reference external" href="https://security.stackexchange.com/questions/93886/dek-kek-and-master-key-simple-explanation">https://security.stackexchange.com/questions/93886/dek-kek-and-master-key-simple-explanation</a></p>
+<p>Rebuild docker tomunderstand it more</p>
+<p>don&#8217;t do JWT for sessions
+<a class="reference external" href="http://cryto.net/~joepie91/blog/attachments/jwt-flowchart.png">http://cryto.net/~joepie91/blog/attachments/jwt-flowchart.png</a></p>
+<p><a class="reference external" href="http://cryto.net/%7Ejoepie91/blog/2016/06/19/stop-using-jwt-for-sessions-part-2-why-your-solution-doesnt-work/">http://cryto.net/%7Ejoepie91/blog/2016/06/19/stop-using-jwt-for-sessions-part-2-why-your-solution-doesnt-work/</a></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

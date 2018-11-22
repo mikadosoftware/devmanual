@@ -1,0 +1,401 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Compiling and modifying bootstrap &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="How to Compile and Customise Twitter Bootstrap so you can stop worrying and get on with coding" href="bootstrap_index.html" />
+    <link rel="next" title="Valid Colour Names for Web" href="coloursfortheweb.html" />
+    <link rel="prev" title="How to Compile and Customise Twitter Bootstrap so you can stop worrying and get on with coding" href="bootstrap_index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="compiling-and-modifying-bootstrap">
+<h1>Compiling and modifying bootstrap<a class="headerlink" href="#compiling-and-modifying-bootstrap" title="Permalink to this headline">¶</a></h1>
+<p>Building a simple web page these days is fraught with hidden traps for the
+unwary.  A long time ago, I sat wearing a padded jacket in a cold office,
+hand-typing out webpages for multi-national companies.  (That got old quick so
+we pretty soon fixed the heating and the production workflow).</p>
+<p>But the point was, one person used to be able to write an entire web site,
+suitable for the Fortune 500, in a text editor.</p>
+<p>These days, not so much.  Obviously we still use text editors, but they produce
+programs that produce programs that produce web sites.  And they are not
+one-person jobs.</p>
+<p>However one person can still pull together all the right pieces, and with
+Twitter Bootstrap, its even easier to get &#8220;good enough&#8221; design and look, whilst
+still keeping everything manageable.</p>
+<p>I intend to create the following page template, for an open source project I am
+working on and promoting - it takes a DataWarehouse ETL tool (Oracle ODI) and
+allows it to work bi-directionally with modern source control tools
+(<a class="reference external" href="http://github.com/pmsoftware/odietamo">http://github.com/pmsoftware/odietamo</a>)</p>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>We shall</p>
+<ul class="simple">
+<li>git clone the Bootstrap repo,</li>
+<li>install the (mostly javascript) dependancies and tool chains</li>
+<li>run a simple compile</li>
+<li>celebrate.</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1">## Some variables for later</span>
+<span class="n">rootdir</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">bootstrap</span>
+</pre></div>
+</div>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>cd $rootdir
+git clone https://github.com/twbs/bootstrap.git
+</pre></div>
+</div>
+<p>Right, now a bit of tricky javascript.
+Install <cite>node</cite> and <cite>npm</cite> with your distribution&#8217;s preferred method.
+For example that would be ports on FreeBSD - you are using BSD no?
+If not try</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ apt-get install -y node npm
+</pre></div>
+</div>
+<p>If you have node and npm installed then:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ cd $rootdir/bootstrap/bootstrap
+$ sudo npm install
+</pre></div>
+</div>
+<p>This will download all the dependancies and</p>
+<p>NB - FreeBSD is not well supported for PhantomJS - which only matters for the
+self-tests.  I ignore this on my local machine and blip over to a VM when I need.</p>
+<p>If that did not make sense, do not worry.</p>
+<div class="section" id="how-to-compile">
+<h3>How to compile<a class="headerlink" href="#how-to-compile" title="Permalink to this headline">¶</a></h3>
+<p>Its simple, in the bootstrap dir, where we can see the <cite>Gruntfile.js</cite> run:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ grunt dist
+</pre></div>
+</div>
+<p>This will start a javascript task runner (sort of make for js) that simply
+builds a <cite>/dist/</cite> directory containing the compiled js, css and font files.
+This <cite>/dist/</cite> dir is what gets served to the browser in production.  The rest of the files are supporting acts.</p>
+<p>OK, we should have seen something like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Running</span> <span class="s2">&quot;copy:fonts&quot;</span> <span class="p">(</span><span class="n">copy</span><span class="p">)</span> <span class="n">task</span>
+<span class="n">Copied</span> <span class="mi">4</span> <span class="n">files</span>
+
+<span class="n">Running</span> <span class="s2">&quot;concat:bootstrap&quot;</span> <span class="p">(</span><span class="n">concat</span><span class="p">)</span> <span class="n">task</span>
+<span class="n">File</span> <span class="s2">&quot;dist/js/bootstrap.js&quot;</span> <span class="n">created</span><span class="o">.</span>
+
+<span class="n">Running</span> <span class="s2">&quot;uglify:bootstrap&quot;</span> <span class="p">(</span><span class="n">uglify</span><span class="p">)</span> <span class="n">task</span>
+<span class="n">File</span> <span class="s2">&quot;dist/js/bootstrap.min.js&quot;</span> <span class="n">created</span><span class="o">.</span>
+
+<span class="n">Done</span><span class="p">,</span> <span class="n">without</span> <span class="n">errors</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="serving">
+<h2>Serving<a class="headerlink" href="#serving" title="Permalink to this headline">¶</a></h2>
+<p>As this is all very local, we want to see the web browser deal with it</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ cd $rootdir
+$ python -m SimpleHTTPServer
+Serving HTTP on 0.0.0.0 port 8000 ...
+</pre></div>
+</div>
+<p>Now a webbrowser can ask for <cite>http://localhost:8000/example-page.html</cite>
+and it should see</p>
+<div class="figure">
+<a class="reference internal image-reference" href="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/customfree-examplepage.png"><img alt="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/customfree-examplepage.png" src="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/customfree-examplepage.png" style="width: 50%;" /></a>
+</div>
+<div class="section" id="moving-things-around">
+<h3>Moving things around<a class="headerlink" href="#moving-things-around" title="Permalink to this headline">¶</a></h3>
+<p>You can skip this bit and come back later - it will make more sense then.</p>
+<p>We don&#8217;t want to directly change the files provided for us by the bootstrap
+team.  We do however need to change <em>something</em></p>
+</div>
+</div>
+<div class="section" id="our-first-bootstrap-file">
+<h2>Our first Bootstrap File<a class="headerlink" href="#our-first-bootstrap-file" title="Permalink to this headline">¶</a></h2>
+<p>We are now using Bootstrap 3.  This is a new, updated version, that is
+<em>mobile first</em>.  Which means its designed to be really sensible on most devices.
+Hooray - that means we can deploy applications to a mobile, without going through the various appstores.  Well sort of.</p>
+<div class="section" id="html5">
+<h3>HTML5<a class="headerlink" href="#html5" title="Permalink to this headline">¶</a></h3>
+<p>We need a solid HTML5 template file.  The best one to use is HTML5 boilerplate.</p>
+<p>Make sure this is in the template file <code class="docutils literal"><span class="pre">&lt;head&gt;</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">meta</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;viewport&quot;</span> <span class="n">content</span><span class="o">=</span><span class="s2">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Responsive friendly images.  We need to add <code class="docutils literal"><span class="pre">.img-responsive</span></code> class to each <code class="docutils literal"><span class="pre">img</span></code> tag so that they are treated correctly by Bootstrap.  I need to use a post-process step in the CMS to shoe-horn these in - whatever gets you through the night.</p>
+</div>
+<div class="section" id="containers">
+<h3>Containers<a class="headerlink" href="#containers" title="Permalink to this headline">¶</a></h3>
+<p>Everything in BootStrap is in a container.
+A container is defined as follows.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;container&quot;</span><span class="o">&gt;</span>
+<span class="o">...</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>The hero units (now seemingly renamed Jumbotrons), the forms, the tables, they</p>
+</div>
+<div class="section" id="shims-and-things">
+<h3>Shims and things<a class="headerlink" href="#shims-and-things" title="Permalink to this headline">¶</a></h3>
+<p>Shims and polyfills are bits of javascript code that provide HTML5 functionality
+on older, but still widely deployed, web browsers that do not support HTML5
+natively.  The IE range upto IE 7 is a notable case, still widely deployed in
+corporate environments.</p>
+<p>An example is the HTML5 element <code class="docutils literal"><span class="pre">canvas</span></code> which allows javascript to draw on a
+canvas.  Where there is no HTML5 <code class="docutils literal"><span class="pre">canvas</span></code> element built into the browser, the
+polyfill will call up perhaps a Silverlight plugin and perform the draw action
+on that.</p>
+<p>These shims and polyfills are amazing pieces of work, but (as in polyfilla) they
+simply cover over cracks. And they are not perfect.  So I am ignoring them for
+now in my template code.  In production this may change but for our purposes
+they add complexity to understanding.</p>
+<p><a class="reference external" href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills</a>
+<a class="reference external" href="http://remysharp.com/2010/10/08/what-is-a-polyfill/">http://remysharp.com/2010/10/08/what-is-a-polyfill/</a></p>
+</div>
+</div>
+<div class="section" id="a-quick-customisation">
+<h2>A quick customisation<a class="headerlink" href="#a-quick-customisation" title="Permalink to this headline">¶</a></h2>
+<p>Lets start with <cite>variables.less</cite>.  The CSS we use for Bootstrap is not
+hand-written - it is compiled into CSS after the original <cite>less</cite> code is parsed.
+The original <cite>less</cite> code is designed to make writing lots of CSS easier, so it
+supports things like variables and functions (called <cite>mixins</cite> but think
+returning function for ease).</p>
+<p>So a quick snippet of <cite>variables.less</cite>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span> @gray-darker:            lighten(#000, 13.5%); // #222
+ @gray-dark:              lighten(#000, 20%);   // #333
+ @gray:                   lighten(#000, 33.5%); // #555
+ @gray-light:             lighten(#000, 60%);   // #999
+ @gray-lighter:           lighten(#000, 93.5%); // #eee
+
+ // Scaffolding
+ // -------------------------
+
+ @body-bg:               #fff;
+ @text-color:            @gray-dark;
+`
+</pre></div>
+</div>
+<p>Now, lets have some fun.  Firstly our <cite>test.html</cite> page.
+This is quite a bit of code, but it is about the simplest HTML5 + bootstrap page you can make,
+and it liberally ripped off from the bootstrap site.</p>
+<div class="code html highlight-default"><div class="highlight"><pre><span></span>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Navbar Template for Bootstrap&lt;/title&gt;
+    &lt;!-- Bootstrap core CSS --&gt;
+    &lt;link href=&quot;bootstrap/dist/css/bootstrap.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;!-- Custom styles for this template --&gt;
+    &lt;link href=&quot;navbar.css&quot; rel=&quot;stylesheet&quot;&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+      &lt;!-- Main component for a primary marketing message or call to action --&gt;
+      &lt;div class=&quot;jumbotron&quot; id=&quot;showcasing&quot; style=&quot;background: url(&#39;LHC.jpg&#39;) repeat-x top center;&quot;&gt;&gt;
+        &lt;h1&gt;It works !&lt;/h1&gt;
+        &lt;p&gt;Hooray&lt;/p&gt;
+        &lt;p&gt;
+          &lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;Press me&lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt; &lt;!-- /container --&gt;
+
+    &lt;!-- Bootstrap core JavaScript
+    ================================================== --&gt;
+    &lt;!-- Placed at the end of the document so the pages load faster --&gt;
+    &lt;script src=&quot;bootstrap/assets/js/jquery.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre></div>
+</div>
+<p>Now the above html, is about the simplest one can get for bootstrap.  And it looks like this:</p>
+<div class="figure">
+<a class="reference internal image-reference" href="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/bare-initial-css.png"><img alt="Screenshot showing standard bootstrap themeing." src="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/bare-initial-css.png" style="width: 50%;" /></a>
+</div>
+<p>Firstly let&#8217;s adjust the simplest things we can - the LESS variables.</p>
+<div class="code css highlight-default"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="n">added</span> <span class="n">pbrian</span>
+<span class="nd">@brand</span><span class="o">-</span><span class="n">back</span><span class="p">:</span> <span class="c1">#8a928e;</span>
+<span class="nd">@brand</span><span class="o">-</span><span class="n">fore</span><span class="p">:</span>  <span class="c1">#8e393f;</span>
+
+<span class="nd">@gray</span><span class="o">-</span><span class="n">darker</span><span class="p">:</span>            <span class="n">lighten</span><span class="p">(</span><span class="c1">#000, 13.5%); // #222</span>
+<span class="nd">@gray</span><span class="o">-</span><span class="n">dark</span><span class="p">:</span>              <span class="n">lighten</span><span class="p">(</span><span class="c1">#000, 20%);   // #333</span>
+<span class="nd">@gray</span><span class="p">:</span>                   <span class="n">lighten</span><span class="p">(</span><span class="c1">#000, 33.5%); // #555</span>
+
+
+<span class="nd">@brand</span><span class="o">-</span><span class="n">primary</span><span class="p">:</span>         <span class="nd">@brand</span><span class="o">-</span><span class="n">fore</span><span class="p">;</span>
+
+                        <span class="o">^^^^^^</span>
+                        <span class="n">This</span> <span class="n">will</span> <span class="n">roll</span> <span class="n">out</span> <span class="n">across</span> <span class="n">the</span> <span class="n">site</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>And the result is :</p>
+<div class="figure">
+<a class="reference internal image-reference" href="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/redgreyexample.png"><img alt="Screenshot showing subtly changed colors using new compiled LESS" src="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/redgreyexample.png" style="width: 50%;" /></a>
+</div>
+<p>Ok, nothing spectacular, but one line change gives us a new colour set across the board.
+What else can we do?</p>
+</div>
+<div class="section" id="fonts">
+<h2>Fonts<a class="headerlink" href="#fonts" title="Permalink to this headline">¶</a></h2>
+<p>TBD</p>
+</div>
+<div class="section" id="images">
+<h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
+<p>TBD</p>
+</div>
+<div class="section" id="biblio">
+<h2>biblio<a class="headerlink" href="#biblio" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/colorschemedesigner.png">https://raw.github.com/mikadosoftware/screengrab/master/screenshots/colorschemedesigner.png</a>
+<a class="reference external" href="http://bootstrap.lesscss.ru/less.html">http://bootstrap.lesscss.ru/less.html</a>
+<a class="reference external" href="http://copyhackers.com/2012/12/the-3-step-hack-for-startups-bootstrapping-their-design/">http://copyhackers.com/2012/12/the-3-step-hack-for-startups-bootstrapping-their-design/</a>
+<a class="reference external" href="http://24ways.org/2012/how-to-make-your-site-look-half-decent/">http://24ways.org/2012/how-to-make-your-site-look-half-decent/</a>
+<a class="reference external" href="http://www.sitediscount.ru/verso/index.html">http://www.sitediscount.ru/verso/index.html</a></p>
+<p>Choose a color scheme: <a class="reference external" href="http://colorschemedesigner.com/">http://colorschemedesigner.com/</a></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1">#####  Color Palette by Color Scheme Designer</span>
+<span class="c1">#####  Palette URL: http://colorschemedesigner.com/#0Q51Rw0w0w0w0</span>
+<span class="c1">#####  Color Space: RGB;</span>
+
+
+
+<span class="o">***</span> <span class="n">Primary</span> <span class="n">Color</span><span class="p">:</span>
+
+   <span class="n">var</span><span class="o">.</span> <span class="mi">1</span> <span class="o">=</span> <span class="c1">#FF9F00 = rgb(255,159,0)</span>
+   <span class="n">var</span><span class="o">.</span> <span class="mi">2</span> <span class="o">=</span> <span class="c1">#BF8930 = rgb(191,137,48)</span>
+   <span class="n">var</span><span class="o">.</span> <span class="mi">3</span> <span class="o">=</span> <span class="c1">#A66800 = rgb(166,104,0)</span>
+   <span class="n">var</span><span class="o">.</span> <span class="mi">4</span> <span class="o">=</span> <span class="c1">#FFB740 = rgb(255,183,64)</span>
+   <span class="n">var</span><span class="o">.</span> <span class="mi">5</span> <span class="o">=</span> <span class="c1">#FFCA73 = rgb(255,202,115)</span>
+
+<span class="o">***</span> <span class="n">Secondary</span> <span class="n">Color</span> <span class="n">A</span><span class="p">:</span>
+
+   <span class="n">var</span><span class="o">.</span> <span class="mi">1</span> <span class="o">=</span> <span class="c1">#FFC700 = rgb(255,199,0)</span>
+   <span class="n">var</span><span class="o">.</span> <span class="mi">2</span> <span class="o">=</span> <span class="c1">#BFA030 = rgb(191,160,48)</span>
+   <span class="n">var</span><span class="o">.</span> <span class="mi">3</span> <span class="o">=</span> <span class="c1">#A68100 = rgb(166,129,0)</span>
+   <span class="n">var</span><span class="o">.</span> <span class="mi">4</span> <span class="o">=</span> <span class="c1">#FFD540 = rgb(255,213,64)</span>
+   <span class="n">var</span><span class="o">.</span> <span class="mi">5</span> <span class="o">=</span> <span class="c1">#FFE073 = rgb(255,224,115)</span>
+
+<span class="o">***</span> <span class="n">Secondary</span> <span class="n">Color</span> <span class="n">B</span><span class="p">:</span>
+
+   <span class="n">var</span><span class="o">.</span> <span class="mi">1</span> <span class="o">=</span> <span class="c1">#FF6700 = rgb(255,103,0)</span>
+   <span class="n">var</span><span class="o">.</span> <span class="mi">2</span> <span class="o">=</span> <span class="c1">#BF6A30 = rgb(191,106,48)</span>
+   <span class="n">var</span><span class="o">.</span> <span class="mi">3</span> <span class="o">=</span> <span class="c1">#A64300 = rgb(166,67,0)</span>
+   <span class="n">var</span><span class="o">.</span> <span class="mi">4</span> <span class="o">=</span> <span class="c1">#FF8D40 = rgb(255,141,64)</span>
+   <span class="n">var</span><span class="o">.</span> <span class="mi">5</span> <span class="o">=</span> <span class="c1">#FFAB73 = rgb(255,171,115)</span>
+
+
+<span class="c1">#####  Generated by Color Scheme Designer (c) Petr Stanicek 2002-2010</span>
+
+
+   <span class="nd">@colorA1</span><span class="p">:</span>  <span class="c1">#FF9F00;</span>
+   <span class="nd">@colorA2</span><span class="p">:</span>  <span class="c1">#BF8930;</span>
+   <span class="nd">@colorA3</span><span class="p">:</span>  <span class="c1">#A66800;</span>
+   <span class="nd">@colorA4</span><span class="p">:</span>  <span class="c1">#FFB740;</span>
+   <span class="nd">@colorA5</span><span class="p">:</span>  <span class="c1">#FFCA73;</span>
+
+   <span class="nd">@colorB1</span><span class="p">:</span>  <span class="c1">#FFC700;</span>
+   <span class="nd">@colorB2</span><span class="p">:</span>  <span class="c1">#BFA030;</span>
+   <span class="nd">@colorB3</span><span class="p">:</span>  <span class="c1">#A68100;</span>
+   <span class="nd">@colorB4</span><span class="p">:</span>  <span class="c1">#FFD540;</span>
+   <span class="nd">@colorB5</span><span class="p">:</span>  <span class="c1">#FFE073;</span>
+
+   <span class="nd">@colorC1</span><span class="p">:</span>  <span class="c1">#FF6700;</span>
+   <span class="nd">@colorC2</span><span class="p">:</span>  <span class="c1">#BF6A30;</span>
+   <span class="nd">@colorC3</span><span class="p">:</span>  <span class="c1">#A64300;</span>
+   <span class="nd">@colorC4</span><span class="p">:</span>  <span class="c1">#FF8D40;</span>
+   <span class="nd">@colorC5</span><span class="p">:</span>  <span class="c1">#FFAB73;</span>
+</pre></div>
+</div>
+<p>We can also adjust the fonts site wide.</p>
+<p>New fonts:
+<a class="reference external" href="http://www.google.com/fonts/">http://www.google.com/fonts/</a></p>
+<p>&lt;link href=&#8217;<a class="reference external" href="http://fonts.googleapis.com/css?family=Roboto">http://fonts.googleapis.com/css?family=Roboto</a>&#8216; rel=&#8217;stylesheet&#8217; type=&#8217;text/css&#8217;&gt;</p>
+<p>font-family: &#8216;Roboto&#8217;, sans-serif;
+&lt;link href=&#8217;<a class="reference external" href="http://fonts.googleapis.com/css?family=Press+Start+2P">http://fonts.googleapis.com/css?family=Press+Start+2P</a>&#8216; rel=&#8217;stylesheet&#8217; type=&#8217;text/css&#8217;&gt; (ad nauseum example)</p>
+<p>We can see the results (quite horrible) here:</p>
+<div class="figure">
+<a class="reference internal image-reference" href="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/horriblecolorandfont.png"><img alt="horrible color scheme" src="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/horriblecolorandfont.png" style="width: 50%;" /></a>
+</div>
+<p><a class="reference external" href="http://coding.smashingmagazine.com/2013/03/12/customizing-bootstrap/">http://coding.smashingmagazine.com/2013/03/12/customizing-bootstrap/</a></p>
+</div>
+<div class="section" id="building-my-masterpiece">
+<h2>Building my masterpiece<a class="headerlink" href="#building-my-masterpiece" title="Permalink to this headline">¶</a></h2>
+<p>OK, so I want to transform this</p>
+<div class="figure">
+<a class="reference internal image-reference" href="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/original-odi.png"><img alt="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/original-odi.png" src="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/original-odi.png" style="width: 50%;" /></a>
+</div>
+<p>Into this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Tada</span>
+</pre></div>
+</div>
+<p>So lets start with Design basics - cribbed liberally from the folks on InterWebs</p>
+<ul class="simple">
+<li>Step 1 - Make it look good in Black and White first</li>
+<li>Step 2 - Write the right things</li>
+<li>Step 3 - Do less.  No less than that.</li>
+</ul>
+<div class="section" id="color-theory">
+<h3>Color theory<a class="headerlink" href="#color-theory" title="Permalink to this headline">¶</a></h3>
+<p>Well, just colour wheels really.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/colorpicker-simple.png"><img alt="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/colorpicker-simple.png" src="https://raw.github.com/mikadosoftware/screengrab/master/screenshots/colorpicker-simple.png" style="width: 50%;" /></a>
+</div>
+</div>
+</div>
+<div class="section" id="building-my-own-bootstrap-classes">
+<h2>Building my own bootstrap classes<a class="headerlink" href="#building-my-own-bootstrap-classes" title="Permalink to this headline">¶</a></h2>
+<p>Its pretty obvious what &lt;div class=&#8221;span6&#8221;&gt; means.  But that does not mean its
+a good idea.  Yopu want a sidebar, not a span6.</p>
+<p>So we define our own classes, and use those in the HTML instead.</p>
+<p>This is accounted for in Bootstrap by
+<a class="reference external" href="http://getbootstrap.com/css/#grid-less">http://getbootstrap.com/css/#grid-less</a></p>
+<p><a class="reference external" href="http://ruby.bvision.com/blog/please-stop-embedding-bootstrap-classes-in-your-html">http://ruby.bvision.com/blog/please-stop-embedding-bootstrap-classes-in-your-html</a></p>
+</div>
+<div class="section" id="building-our-own-mobile-aware-classes">
+<h2>Building our own mobile aware classes<a class="headerlink" href="#building-our-own-mobile-aware-classes" title="Permalink to this headline">¶</a></h2>
+<p>Oh fuck it, really.  This is the shit designers are supposed to
+obessess over.  Here I stop.  If I cannot make do with a main column and a sidebar I am going to have to go back to pen and paper.</p>
+<a href="http://www.colourlovers.com/palette/3010906/RedBlue" target="_blank"><img src="http://www.colourlovers.com/images/badges/p/3010/3010906_RedBlue.png" style="width: 240px; height: 120px; border: 0 none;" alt="RedBlue" /></a><br /><span style="font-size: 10px; color: #5e5e5e;"><a href="http://www.colourlovers.com/color" target="_blank" style="font-size: 10px; color: #5e5e5e;">Color</a> by <a href="http://www.colourlovers.com/" target="_blank" style="font-size: 10px; color: #5e5e5e;">COLOURlovers</a></span></div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Also distributed filesystems - cephfs, HDFS, GLUSTER &#8212; TheDevManual 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/devmanual.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="TheDevManual 0.0.1 documentation" href="../index.html" />
+    <link rel="next" title="Free Wi-Fi" href="freewifi.html" />
+    <link rel="prev" title="Cabling and other hardware" href="cabling_hardware.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="also-distributed-filesystems-cephfs-hdfs-gluster">
+<h1>Also distributed filesystems - cephfs, HDFS, GLUSTER<a class="headerlink" href="#also-distributed-filesystems-cephfs-hdfs-gluster" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="nfs-file-sharing">
+<h1>NFS File sharing<a class="headerlink" href="#nfs-file-sharing" title="Permalink to this headline">¶</a></h1>
+<div class="sidebar">
+<p class="first sidebar-title">Historical Note</p>
+<p class="last">Wow, this one is a golden oldie too.  Look, Samba, NFS.
+I am fairly sure that samba / windows file sharing is slowly getting
+replaced with cloud based file sharing like <a class="reference external" href="http://www.dropbox.com">Dropbox</a>
+It won&#8217;t completely happen, its generally a security nightmare, but
+a good product might be a dropbox proxy that encrypts in and out traffic
+so no matter what is sent out, it is encrypted on disk &#8220;out there&#8221;</p>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<p>First there was NFS - it was written to share files over trusted networks (cos
+back then everyone trusted everyone else, and wore flowers in their hair.)  The
+program that supports this is nfsd.</p>
+<p>Then came SMB/CIFS which did not trust everyone, and was built to work with
+WIndows machines.  THe program that supports this is SAMBA.</p>
+<p>Then people started to really miss NFS, so they made it work with Kerberos.</p>
+<p>This chapter starts with NFS, and then moves onto NFS with Kerberos.  For file
+sharing within a windows domain see the chapter on SAMBA.</p>
+<div class="section" id="nfs-plain">
+<h3>NFS Plain<a class="headerlink" href="#nfs-plain" title="Permalink to this headline">¶</a></h3>
+<p>We need a server and a client.</p>
+<div class="section" id="server">
+<h4>Server<a class="headerlink" href="#server" title="Permalink to this headline">¶</a></h4>
+<p>This needs to run nfsd (which handles incoming requests) and mountd (which deals
+with actually sending receiving the files). rpcbind is also needed so clients
+can see what port the nfsd is on.</p>
+<p>/etc/rc.conf</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">rpcbind_enable</span><span class="o">=</span><span class="s2">&quot;YES&quot;</span>
+<span class="n">nfs_server_enable</span><span class="o">=</span><span class="s2">&quot;YES&quot;</span>
+<span class="n">mountd_flags</span><span class="o">=</span><span class="s2">&quot;-r&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="client">
+<h4>client<a class="headerlink" href="#client" title="Permalink to this headline">¶</a></h4>
+<p>/etc/rc.conf</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">nfs_client_enable</span><span class="o">=</span><span class="s2">&quot;YES&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sharing">
+<h4>Sharing<a class="headerlink" href="#sharing" title="Permalink to this headline">¶</a></h4>
+<p>On the server we determine which directories we want to &#8216;share&#8217; or &#8216;export&#8217;.
+These are listed line by line in /etc/exports along with the hosts that can see them</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">workspace</span><span class="o">/</span><span class="n">projects</span><span class="o">/</span><span class="n">projects</span><span class="o">/</span><span class="n">build_system</span><span class="o">/</span><span class="n">trunk</span><span class="o">/</span><span class="n">bsdbasebuild</span><span class="o">/</span><span class="n">new</span> <span class="n">belmarsh</span> <span class="n">belmarsh2</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt><em>maproot</em></dt>
+<dd>The -maproot=root flag allows the root user on the remote system to write data on the exported file system as root. If the -maproot=root flag is not specified, then even if a user has root access on the remote system, he will not be able to modify files on the exported file system.</dd>
+</dl>
+<p>To connect.
+Easiest way is to reboot both machines then</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mount</span> <span class="n">server</span><span class="p">:</span><span class="o">/</span><span class="n">path</span> <span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">point</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="trouble-shooting">
+<h3>Trouble shooting<a class="headerlink" href="#trouble-shooting" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>symlinks.</li>
+</ul>
+<p>This gets <em>everyone</em>. NFS cannot deal with (in fact for security is designed not to deal with) exporting from the server a path witha symlink in it.  If you find that the mounting on the client is failing with <em>permission denied</em>, suspect this first.
+To check tail /var/log/messages.  You will almost certainly find a message like</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Apr</span> <span class="mi">27</span> <span class="mi">12</span><span class="p">:</span><span class="mi">39</span><span class="p">:</span><span class="mi">35</span> <span class="n">paullaptop</span> <span class="n">mountd</span><span class="p">[</span><span class="mi">643</span><span class="p">]:</span> <span class="n">mount</span> <span class="n">request</span> <span class="n">denied</span> <span class="kn">from</span> <span class="mf">10.137</span><span class="o">.</span><span class="mf">1.42</span> <span class="k">for</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">pbrian</span><span class="o">/</span><span class="n">workspace</span><span class="o">/</span><span class="n">projects</span><span class="o">/</span><span class="n">projects</span><span class="o">/</span><span class="n">build_system</span><span class="o">/</span><span class="n">trunk</span><span class="o">/</span><span class="n">bsdbasebuild</span><span class="o">/</span><span class="n">new</span>
+</pre></div>
+</div>
+<p>now if I look at my /etc/exports</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">root</span><span class="o">/</span><span class="n">workspace</span><span class="o">/</span><span class="n">projects</span><span class="o">/</span><span class="n">projects</span><span class="o">/</span><span class="n">build_system</span><span class="o">/</span><span class="n">trunk</span><span class="o">/</span><span class="n">bsdbasebuild</span><span class="o">/</span><span class="n">new</span> <span class="o">-</span><span class="n">maproot</span><span class="o">=</span><span class="n">root</span> <span class="n">belmarsh</span> <span class="n">belmarsh2</span>
+</pre></div>
+</div>
+<p>aha!</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">lrwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span>   <span class="mi">1</span> <span class="n">root</span>  <span class="n">wheel</span>    <span class="mi">22</span><span class="n">B</span> <span class="n">Dec</span> <span class="mi">11</span> <span class="mi">11</span><span class="p">:</span><span class="mi">11</span> <span class="n">workspace</span> <span class="o">-&gt;</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">pbrian</span><span class="o">/</span><span class="n">workspace</span>
+</pre></div>
+</div>
+<p>(yes, I am evil and am running as root)</p>
+<p>so I solve it by altering the /etc/exports to</p>
+<p>then I give NFS a kick (do this whenever adjusting /etc/exports)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>kill -HUP `cat /var/run/mountd.pid`
+</pre></div>
+</div>
+</div>
+<div class="section" id="bibliography">
+<h3>bibliography<a class="headerlink" href="#bibliography" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://www.freebsd.org/doc/en/books/handbook/network-nfs.html">http://www.freebsd.org/doc/en/books/handbook/network-nfs.html</a>
+<a class="reference external" href="http://www.freesoftwaremagazine.com/columns/securing_nfs">http://www.freesoftwaremagazine.com/columns/securing_nfs</a>
+<a class="reference external" href="http://www.the-labs.com/FreeBSD/JailTools/cookbook.html">http://www.the-labs.com/FreeBSD/JailTools/cookbook.html</a></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Paul Brian.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>
