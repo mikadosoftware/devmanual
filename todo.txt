@@ -8,3 +8,13 @@
 
 docker components 
 http://catern.com/posts/docker.html
+
+redash / reporting
+ELK
+elasticsearch logstash kabana 
+
+deploy always with rpms dev files
+
+Hardeneing servers - CIS
+Measuring against baseline - hubblestack
+Config management is giving way to treating most servers like cattle
