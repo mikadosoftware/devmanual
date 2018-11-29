@@ -88,3 +88,20 @@ of their basic income is protected.
 
 Also why airbucks.io is an example of project that works in
 marketplace but notninside company
+
+A point about Company Size
+--------------------------
+
+OK, this is meandering a bit but, company size matters. A mid-20C
+econmist named Roald Coase had a great theory of the firm - basically
+wondering why a firm would have say, an internal depratmetn for, I
+dunno, say, market research, when it could go to the outside markte
+and buy it in.  Why hire employees basically.  And the answer is its
+easier to tell an employee what to do, and then change your mind as
+circumstances change, than it is to find, source, and contract for
+similar in open market.
+
+A lot is changing about this.  From Virtual assisitants to others.
+
+But downward sizer pressure exists.  (see note on Google / Barlcays)
+

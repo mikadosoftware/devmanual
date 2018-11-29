@@ -1490,3 +1490,35 @@ Basically, I need to get the old stuff out of my brain and down onto paper, or a
 have fun learning some new stuff.
 
 I hope you enjoy what is getting pushed out of my brain.  I also hope it helps you.
+
+
+A point about Software Literacy
+-------------------------------
+
+* Software Literacy is an important concept - it is hard for us to
+  recongise how literacy has shaped us and our society. Look at road
+  signs. And it is hard to recognise how much software literacy will
+  change companies, socieites and opportunities.  This is the
+  underlying message of "Software is eating the world" - we have made
+  a world that only works because everyone in it can read and write.
+  We are making a new world, where everyone will be expected to code.
+
+* Software is subject to politics, but the importance of software is
+  leaving development of softre to be driven by people who do not
+  "understand" software (see literacy), and it is also leading to
+  substandard software being allowed.  Regulation and
+  professinalisation is likely to affect that.
+
+* Almost all software development is about exploring.  And two things
+  we can say about exploration - you never know how long it is going
+  to take and it often is risky.  Guess what the vast majority of
+  project planning and management try and do They demand time
+  estimates and plan other items around that, and they do not schedule
+  resources to mitigate risk.  In my experience, software takes as
+  long as it takes.  All the running around and shouting, the pressure
+  and the politics are just ways of selling the inevitable time /
+  money / scope trade offs.
+
+* Software literate company The value of building good software as a
+  company
+  tps://www.ben-evans.com/benedictevans/2018/8/29/tesla-software-and-disruption

@@ -79,3 +79,99 @@ Software CapEx
 
 Software - intangible fixed assets 
 https://www.quora.com/What-are-the-rules-and-rationale-behind-treating-software-development-as-capex-vs-an-operating-expense
+
+
+Project and Programme management
+================================
+
+So there is a well known story in the Agile world about `why estimates
+are always wrong
+<https://www.quora.com/Engineering-Management/Why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3/answer/Michael-Wolfe?srid=24b&share=1>`_
+
+Basically we cannot do it.  So why do people ask for estimates? They
+dont want estimates - they want evenly spaced landmarks. They want
+confidence that progress is being made.
+
+
+It if ain't got a ticket dont work on it If it ain't possible to
+rollup tickets you dont know where you are going A backlog out of
+context is just a horror There is nothing wrong with top-down design
+(see Linux) Backlog for the whole company - agile for the whole
+company just see progress on a map.  If its not going fast wnough for
+the board they can fix things at their level.
+
+
+We need to track our work so we can provide an audit trail
+THese are useful
+
+
+Event driven Project Management
+-------------------------------
+
+How companies need to reactively plan, with exception / assert monitoring.
+How this replaces "managment judgement" with clear budgeting.?
+
+
+** Project Management
+The Chairman's tricky Question
+==============================
+
+Some time ago I was asked by the Chairman of the Board what one thing
+he could do to make sure all these damn software projects were under
+control.
+
+What he meant by under-control, was *on-time* and *as expected*. Which
+is not what I meant.
+
+So I had two answers.   One was under control from a development perspective.
+This is pretty simple and  boils  down to 
+
+* Require *every* project to automatically deploy to at least a prod-parallel
+  environment, *every* day, their most recent approved, tested code
+  and post their test results.
+
+These seemed radical, but achievable.  A lot of the *technical* side
+of this Dev Manual is focused on achieving this.
+
+But the *real* point was about *on-time* and *as expected*.  And that
+is where I gave an answer he did not like.
+
+* Stop having deadlines.  That way nothing is late.
+
+Yes.  You can see why it was not a popular suggestion.
+
+We will expand on that, but I am going to stick to it.  I hate
+deadlines.  They infect everything with panic and poor quality.  And
+the deadlines are almost always derived from poor information about
+reality, and where the deadline should be, and rarely if ever updated,
+as if reality and poor estimation are irrelevant.
+
+Its much better to have regular, reality-grounded views on where one
+really is, and alter plans based on that.  Automatically.
+
+Deadlines sometimes help. Mostly they do not.
+
+If it ain't ready, setting the deadline to today won't make it ready.
+
+
+- :doc:`chapters/agile_estimation`
+- :doc:`chapters/SoHo1`
+- :doc:`chapters/themes`
+- :doc:`chapters/urljoin`
+- :doc:`chapters/veryquickMBA`
+
+
+CTO dashboards and Business Process Dashboards
+==============================================
+
+Dashboards matter
+The basics of code quality can be in dashboard.
+The basics of production health can be in dashboard
+Putting a business process into dashboard is powerful - use Graphite and "light beam trackers"
+
+
+- :doc:`chapters/aspell`
+- :doc:`chapters/mikado-doc-manager`
+- :doc:https://github.com/getredash/redash/blob/master/README.md
+
+

@@ -4,6 +4,17 @@
 
 :focus: how size and structure of companies is determined and it ain't management cleverness. 
 
+
+Also: We must include political biases when "asking a software engineer to designing a company" - look at openness and transparency in project reporting or in open source code reviews etc
+
+it is more efficient yes, but openness and transparency are a threat to established orders - only meritocracy survives (look at linux and even thorvaldsen being less of a git)
+
+dictators know this - and what is a CEO but a dictoator in a top down ecology
+
+So democracy in companies might not be a requirement for literacy, but like literacy in europe, it has one end point.
+
+as such gov tech software is a genuine need for focus.
+
 THere must be acoase minimum - how is that changing.
 	
 Why are companies the size and structure they are. why are some
