@@ -140,23 +140,25 @@ actually, imagine if you could have Google's revenue's but only have 2
 or 3 employees, (working *very* hard!).  Well that would be the
 sensible choice.  So the extra people must be there for a good reason.
 But you would not add *more* people than needed.  That would cut the
-amount of loot to go round.  So there must be counter-vailing forces,
+amount of loot to go round.  So there must be counter-veiling forces,
 pushing and pulling for hiring or reducing people.
 
-The British Mid-Century Ecnomist Roald Coase came up with a theory of the firm
-to explain this struggle - that a firm size (number of employees)
-is an equilibrium between getting your work done through external contracts,
-and getting the work done internally by employees.  Coase's Theory of the Firm
-says that the *transaction costs* of each (ie finding a external provider,
-verifying they are secure, can meet your needs, or training up a new employee etc)
-determine the total cost of providing a service, and so determine whether it is
-better to hire a new employee rather than looking out for a contract provider.
+The British Mid-Century Ecnomist Roald Coase came up with a *theory of
+the firm* to explain this struggle - that a firm size (number of
+employees) is an equilibrium between getting your work done through
+external contracts, and getting the work done internally by employees.
+Coase's Theory of the Firm says that the *transaction costs* of each
+(ie finding a external provider, verifying they are secure, can meet
+your needs, versus training up a new employee) determine the total
+cost of providing a service, and so determine whether it is better to
+hire a new employee rather than looking out for a contract provider.
 
-Now of course, software and the internet is changing these transaction costs, and
-so changing the equilibrium point of firms sizes.  And as form sizes change,
-they change governance structures as well.  The trend looks to be *smaller*.
-But to really take advantage of Coase's thoery, a firm needs to be more than automated,
-it needs to be *programmable*.
+Now of course, software and the internet is changing these transaction
+costs, and so changing the equilibrium point of firms sizes.  And as
+form sizes change, they change governance structures as well.  The
+trend looks to be *smaller*.  But to really take advantage of Coase's
+thoery, a firm needs to be more than automated, it needs to be
+*programmable*.
 
 
 Just what is a programmable company?
@@ -168,17 +170,19 @@ Just what is a programmable company?
    A dutch 16th century trader pointing at his accounts books
    Jan Gossaert (Washington National Gallery)
    
-The 16th Century Trader shown above is a good exmaple of how proud
-rich merchants were of their new "system" - accounting. Yes, 500 years
-ago, accountatants were cool.  Accounting was cool because it was a
-way to control companies in a *very nearly* programmatic way.  By
-setting limits to how subordinates could behave by setting budgets,
-and by being able to monitor how successfult they were through
-budgets, a company could be controlled, or perhaps I should say
-*programmed* to behave in certain ways.
+The 16th Century Trader shown above is writing in an accounting book,
+and has hanging behind him his accounts for the past venture.  As a
+portrait like this would be outrageously expensive, and so it is is a
+good exmaple of how proud rich merchants were of their new "system" -
+accounting. Yes, 500 years ago, accountatants were cool.  It was cool
+because it was a way to control companies in a *very nearly*
+programmatic way.  By setting limits to how subordinates could behave
+by setting budgets, and by being able to monitor how successfult they
+were through budgets, a company could be controlled, or perhaps I
+should say *programmed* to behave in certain ways.
 
 By the industrial revolution accounting had become globally accepted
-and slowly standardised, and by the 1950s Managmeent Accounting had
+and slowly standardised, and after the 1950s Management Accounting had
 been invented / popularised by consultants like Bain, but now Software is
 bridging the physical world and the virtual more granualarly than
 previsouly.
@@ -212,23 +216,9 @@ has fundamentally moved advertising and marketing away from "brilliant
 creative endeavours" and into "try this and measure its affect".
 Funnel optimisation is a real thing.
 
-So automation is eating away at pretty much everything. Surely at some point we can *automate all the things*, and have a gazillion dollar company run by one woman part-time?
-
-Well, lets turn to the The brilliant mid-twentieth century Economist
-`Roald Coase` who gave us a fascinating way to model why companies and
-organisations are the size they are - a Theory of the Firm.  We shall
-dive deeper into this later on but as more and more processes become
-visible in the virtual then we shall see dramatic shifts in the size
-and shape of our organisations, simply because the forces that push
-and pull them into a certain shape are changing.
-
-Coase's basic idea was that firms sizes have an equilibrium point -
-that the costs of hiring an employee and telling them to do a certain
-job is cheaper and easier than going to the market and looking for a
-similar service.  The *transaction costs* of finding an external
-service provider to say run payroll, or detect fraud in your incoming
-credit card payments or
-
+So automation is eating away at pretty much everything. Surely at some
+point we can *automate all the things*, and have a gazillion dollar
+company run by one woman part-time?
 
 It is a trope that it is much cheaper to start a Start-up now than in
 the early 2000s.  But it is cheaper to *run* a company of almost any
@@ -243,30 +233,132 @@ automation of processes, good goverance.
 What aspects of Coasian Transaction Costs are being changed by software?
 ------------------------------------------------------------------------
 
+We need to watch for data management. I delve more into this in the DevManual
+chapter on BigAndSmallData, but *trusting* data is a key transaction cost.
+
+Data that is generated from inside the company is implicitly trusted
+(even perhaps if it should not - see later points on fake news and
+fake project management), but data from outside the company needs filtering,
+transforming etc.  However the impact of external *ledgers* (with the Blockchain as the poster boy ledger) will change what can be trusted.
+
+SImilarly encryption technologies, and zero-knowledge encryption
+especially, will start to impact on where data can be stored and
+manipulated.  Trusting a thrid party to hold your data, is a big cost
+(unless of course you are an indivdiual in which case Google and
+Facebook and the advertising industry just hoover it up relenetlessly,
+... ranting again.  Look its hard to read I know but just imagine what
+its like to be in my head.  I have this stuff going on all the time.)
+But encrypting data and then working on it map-reduce style on rented
+machines and re-encrypting it when finished is likely to be a growth
+model.
+
+Additionally the willingness to outsource wholesale services to SaaS
+companies shows that data management is loosely held. (I mean the
+timesheets and payrolls of employees is not only sesnitive but
+competitively useful, but hardly any company does this inhouse
+anymore.)
+
+Enterprise Meta Data management will be, (is), a thing.  Not only should
+the data you have in a stream be labelled, but it should be clear its pedigree
+and have owners ats high level who guarantee its integrity.  (see chapter on data)
+
+The *serverless* software model has some compelling financial and
+flexibility arguments.
+
+As data, and more importantly meta-data is managed at a first class level in companies
+we shall see a huge shift in what can be offloaded, outsourced etc.
+
+Software applied to Data
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+There is a truism in software engineering - its better to have few simple data structures
+and complex operations on them, then many complex data structures and few operations.
+
+.. pull-quote::
+
+   (have the Brooks quote on show me your data model)
+
+Having got data undercontrol, companies need to start
+
+You would be amazed at how much duplication of work and processing,
+how much different understandings of what a piece of data is or means
+goes on inside every large corporation.
+
+Let me give you a quick example.  Actually 2 examples.
+
+(I *love* Monzo. They are a challenger bank. 
+Banking. New banks, the Monzo Beta issue.)
+
+So even if we have data under control, the messy evolved system
+internally to a company
+
+I think this messy system also justifies the Director Hazing culture
+in most large companies.  To be able to deal with the morass of crazy,
+there is a hazing. After passing through that the ability to see it as
+crazy is reduced, because its part of you.
+
+Is this a bad thing? See Book on "why hasnot everything collapsed" We
+need to be sure about resiliency.  But spagethhi code has never
+defneded against resiliency.
+
+FInally, if we have a programmable company it can do an amazing thing.
+COntrolling a company through accountancy and budgets was
+impressive. It allowed empirical testing of ideas (give this section
+this much budget and see what happens)
+
+But it lacked ... predictive capabilities.
+
+But if you have a programmable company, where the processes are
+explicit in code, then you also have a *modellable* company.  ONe that
+can have its code brought up in a safe environment, and run against
+different scenarios and tested for failures - and optimisations.
+
+This does already happen - integration tests of systems perform
+what-if analysis on systems (just like what Knight Capital did not
+do).  But testing environments look for failures.  New modelling
+environments will look for optimisations.
+
+And optimisations may not meet the needs or wants of the people in the
+company.  For exmaple shift patterns in places like Starbucks have
+been seeng "optmisation", and leading to issues like people being
+given 3 hours in the morning and then told to leave (unpaid) for a few
+hours then get a few hours in the afternoon.  THis of course plays
+havoc with any real persons life.  It has seen a lot of push back.
+
+And that push back, that *political decision* to not do an optimised
+change, to not follow the A/B test down a path, that is governance.
+That is how does a programmable company, that can run itself without
+human decision making, and that can through modelling, change itself,
+how does that company change in ways that benefit us. By having a
+controlling mind, that decides which changes are good or bad.
+
+And this last is the essence of Uber, AirBnB, facebook and google -
+how they have affected our world and how regulations are trying to
+steer that affect.
+
+
 
 
 What about landscape - what are other companies doing.
 ------------------------------------------------------
 
-So we now have a couple of tools that will be useful in working out not only
-that software is eating the world, but what size and shape will the meals be.
+(Notes on landscaping)
 
-We are all about the automation anyway - thats software and any
-company that is not literate, that is not aiming to make its own data
-accessible is on the losing side.  Let me rephrase that - literate
-companies will be Lisp like - able to rewrite the virtual data that
+
+
+.. pull-quote::
+
+  So we now have a couple of tools that will be useful in working out
+  not only that software is eating the world, but what size and shape
+  will the meals be.
+
+Literate companies will be Lisp like - able to rewrite the virtual data that
 represents their real-world actions, but also able to treat their
 real-world actions as rewritable too. It was obvious how to make a
 student warehouse picker change what he was doing programmatically. It
-was less obvious how to make the head of marketing do so.  A/B testing was the answer - or rather metrics were.
+was less obvious how to make the head of marketing do so.  A/B testing
+was the answer - or rather metrics were.
 
-The other tools for company size will be Coasian - what influences trnasaction costs at a gross level
-
-* costs of data managmeent (ledgers? encryption)
-* costs of checking the softeare transforms are what you want
-* governance, performance management, modelling
-  being able to make a change does not mean you should.
-  (ie is this the company we want)
 
 
 Fake News, Project Management, programmable company
@@ -275,7 +367,10 @@ Fake News, Project Management, programmable company
 THe whole programmable company thing has two needs - it needs a body
 (a corps or corporation) that does as it is told, and there has to be
 a controlling mind. That controlling mind is the company governance.
-At the moment it is a dictatorship of epic proportions. The CEO says jump, 20,00 people say how high. But as more and more of us shift into being programmed (like warehouse pickers or Marketing Directors) there will be more demand to have influence over that controlling mind.
+At the moment it is a dictatorship of epic proportions. The CEO says
+jump, 20,00 people say how high. But as more and more of us shift into
+being programmed (like warehouse pickers or Marketing Directors) there
+will be more demand to have influence over that controlling mind.
 
  When a company had barely accounting, and time between command and
 affect was measured in time it took a ship to sail, company employees
