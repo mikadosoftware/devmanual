@@ -230,6 +230,12 @@ fake news carries on up
 
 size makes this harder simply because at each step the ability to take time and challenge fake news is harder - and made worse by the culture of productivity/ hazing of directors
 
+Director Hazing 
+- grows people who are good at chaos
+- not convinced that is needed - 120 junior doctor hours 
+- 
+
+
 so we need automated helpnto dosciver fake news in our own project reporting
 
 and that means trusting / managing the code 
@@ -1490,3 +1496,7 @@ Basically, I need to get the old stuff out of my brain and down onto paper, or a
 have fun learning some new stuff.
 
 I hope you enjoy what is getting pushed out of my brain.  I also hope it helps you.
+
+Fake News: crowd behaviour (rumour) in a crowd of publishers (it's not facebook that has caused it, they just monitor all the publishers - you can hear anyone in the crowd shout anything.  we need to chart our own course in a crowd - this is a crowd where we follow not because we are physically pushed but because we choose to / do not see guided alternatives
+
+potential mixes include libertarian paternalism ...

@@ -16,3 +16,9 @@ com.business-panda.data.hr.total_num_employees
 
 .employee.personalrecord.name
 .suppliers
+
+
+Data Structures matter more than almost anything
+
+Clever code on simple / well known data structure 
+https://swtch.com/~rsc/regexp/regexp4.html
