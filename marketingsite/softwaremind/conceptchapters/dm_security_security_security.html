@@ -39,13 +39,42 @@
       <div class="documentwrapper">
           <div class="body" role="main">
             
-  <div class="section" id="basically-we-are-all-f-d">
+  <p>Use this chapter as opportunity to interview well known and get clarification</p>
+<div class="section" id="basically-we-are-all-f-d">
 <h1>Basically we are all f****d<a class="headerlink" href="#basically-we-are-all-f-d" title="Permalink to this headline">¶</a></h1>
 <p>When respected security writer Bruce Schneier writes a book titled</p>
 <p>But there is light - slowly larger places are learning to lock it all down <a class="reference external" href="https://threader.app/thread/1063423110513418240">https://threader.app/thread/1063423110513418240</a></p>
 <p>but hospitals mri scanners??</p>
 <p>become our own pentesters
 <a class="reference external" href="http://blog.mallardlabs.com/zero-to-oscp-in-292-days-or-how-i-accidentally-the-whole-thing-part-2/">http://blog.mallardlabs.com/zero-to-oscp-in-292-days-or-how-i-accidentally-the-whole-thing-part-2/</a></p>
+<p>A Skeleton Design for an evolutionary secure eco-system</p>
+<p>Security, as you may guess, is hard. And yet there are a few <em>basic</em>
+approaches that are more likely to lead to success than others</p>
+<p>Firstly it&#8217;s worth pointing out that online security is never a fixed job, but a process, and your approach needs to <em>evolve</em>.  Secondly remember the most important rule - &#8220;Anyone is capable of designing a security system that they themselves can not break&#8221;
+I cannot break this design.  Beware.
+Thirdly, remember to evolve your design but have the shape of it in from the beginning.  Look at &#8216;libconfig.py&#8217; as an example - it can be as simple as a python library to pull config from environment variables - literally a couple of lines.  But having put that in place, developers will just import that library, and when you upgrade the library so that instead of reading from the environment it pulls from a secure vault, you have improved the security situation and the developers have not noticed.</p>
+<ul class="simple">
+<li>Common, evolvable libraries
+libconfig, liblog, libsecrets</li>
+<li>use a vault</li>
+<li>service discovery layer</li>
+<li>user identity</li>
+<li>machine identity</li>
+<li>self hosted CA</li>
+</ul>
+<p>The lifecycle</p>
+<p>A docker instance is built on a &#8220;build machine&#8221;. It is then saved somewhere, with its hash recorder.</p>
+<p>The instance is brought up on a host machine (AWS) and given a set of configuration and a set of secrets.  This is the weaker part of the process, but we go with it.  Kubernetes or rancher are good for this process.</p>
+<p>At this point the machine has a known identity and a private client certificate to use to prove it.</p>
+<p>Log shipping to central audit
+Using security audits</p>
+<p>Policy reference
+<a class="reference external" href="https://developer.conjur.net/reference/policy-markup.html">https://developer.conjur.net/reference/policy-markup.html</a></p>
+<p>Ref:
+<a class="reference external" href="https://developer.conjur.net/key_concepts/machine_identity.html">https://developer.conjur.net/key_concepts/machine_identity.html</a>
+Hashicorp - vault</p>
+<p>Config and keyrings
+Use Linux Secret Service as means to pass complete secure set of secrets over to a container - and make them accessible (ie &#8216;summon&#8217; like)</p>
 </div>
 
 

@@ -131,18 +131,28 @@ has used software in a markedly different manner.
 
 One of them has become more *software literate*.
 
+
+Why are companies big or small?
+-------------------------------
+
+This might seem a silly question, big ones are more successful.  But
+actually, imagine if you could have Google's revenue's but only have 2
+or 3 employees, (working *very* hard!).  Well that would be the
+sensible choice.  So the extra people must be there for a good reason.
+But you would not add *more* people than needed.  That would cut the
+amount of loot to go round.  So there must be counter-vailing forces,
+pushing and pulling for hiring or reducing people.
+
+I will discuss Roald Coase and his theory of the firm in detail later,
+but its worth noting that there are several forces pushing and pulling
+firm size (both employee and "volume").  And those forces are changing
+- a lot.  Firms will add more and more automation for their internal
+processes, changing the number of people needed, as well as the speed
+of abosorbing change.  I call this a `programmable company`.
+
+
 Just what is a programmable company?
 ------------------------------------
-
-Companies just reflect what is the organisational capability of a
-group of humans.  How do we control a group of us to act as (more or
-less) as one.  WHere and how does a group action stop looking like a
-single agency and more like a market, a flock.
-
-It is an interesting question.
-
-My optimism says huma markets - flocks - make it feasible we all work together.
-
 
 .. figure:: /_static/portrait_of_merchant_jan_gossaert.png
    :width: 75%
@@ -152,7 +162,18 @@ My optimism says huma markets - flocks - make it feasible we all work together.
    
 My conjecture is that we are hitting a limit on what tracking company
 processes through accounting can do to limit wasteful (coase)
-growth. That by forcing more reproducible processes into
+growth.  The 16th Century Trader shown above is a good exmaple of
+how proud rich merchants were of their new "system" - accounting. Yes, 500 years ago,
+accountatants were cool.
+
+Accounting was a generic approach that could be used to control *any* form
+of business.  And by the industrial revolution it had become globally accepted and
+slowly stadnardised.
+
+But a new generic approach is slowly being developed now - software. A
+virtual world that can be measured as easily as money can be counted
+but is more granular, and precise.  Software based metrics.
+
 
 And this is my definition of a programmable company - where all
 processes are visible in the virtual world
@@ -193,6 +214,28 @@ problem. It is a major factor in form size, market efficency and the
 underlying fundamentals of
 
 How do I know - well, as a software literate person, its just obvious.
+
+
+New Project Management
+----------------------
+
+Is fake news really a problem inside companies. Let me tell you a
+story. Names have been changed to protect the guilty
+
+Project - codebase begins, insufficiency for purpose, no one admitting
+to it because if so then get fired.  The project management process
+allowed for ... lies. Yes it passes, kind of.  any outside scrutiny-
+day by a news reporter - would trivially see a problem. But no the
+fake news carries on up
+
+size makes this harder simply because at each step the ability to take time and challenge fake news is harder - and made worse by the culture of productivity/ hazing of directors
+
+so we need automated helpnto dosciver fake news in our own project reporting
+
+and that means trusting / managing the code 
+
+
+this inefficient is argued it is what brought down soviet - what all doctoaros suffer from (see saudi air force) - and we love it in our own companies??
 
 
 We are already seeing calls for the software industry to regulate

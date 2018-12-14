@@ -1,6 +1,8 @@
 ============
 SoftwareMind
 ============
+A dev manual for software literate organisations
+
 
 Introduction
 ============
@@ -167,18 +169,28 @@ has used software in a markedly different manner.
 
 One of them has become more *software literate*.
 
+
+Why are companies big or small?
+-------------------------------
+
+This might seem a silly question, big ones are more successful.  But
+actually, imagine if you could have Google's revenue's but only have 2
+or 3 employees, (working *very* hard!).  Well that would be the
+sensible choice.  So the extra people must be there for a good reason.
+But you would not add *more* people than needed.  That would cut the
+amount of loot to go round.  So there must be counter-vailing forces,
+pushing and pulling for hiring or reducing people.
+
+I will discuss Roald Coase and his theory of the firm in detail later,
+but its worth noting that there are several forces pushing and pulling
+firm size (both employee and "volume").  And those forces are changing
+- a lot.  Firms will add more and more automation for their internal
+processes, changing the number of people needed, as well as the speed
+of abosorbing change.  I call this a `programmable company`.
+
+
 Just what is a programmable company?
 ------------------------------------
-
-Companies just reflect what is the organisational capability of a
-group of humans.  How do we control a group of us to act as (more or
-less) as one.  WHere and how does a group action stop looking like a
-single agency and more like a market, a flock.
-
-It is an interesting question.
-
-My optimism says huma markets - flocks - make it feasible we all work together.
-
 
 .. figure:: /_static/portrait_of_merchant_jan_gossaert.png
    :width: 75%
@@ -188,7 +200,18 @@ My optimism says huma markets - flocks - make it feasible we all work together.
    
 My conjecture is that we are hitting a limit on what tracking company
 processes through accounting can do to limit wasteful (coase)
-growth. That by forcing more reproducible processes into
+growth.  The 16th Century Trader shown above is a good exmaple of
+how proud rich merchants were of their new "system" - accounting. Yes, 500 years ago,
+accountatants were cool.
+
+Accounting was a generic approach that could be used to control *any* form
+of business.  And by the industrial revolution it had become globally accepted and
+slowly stadnardised.
+
+But a new generic approach is slowly being developed now - software. A
+virtual world that can be measured as easily as money can be counted
+but is more granular, and precise.  Software based metrics.
+
 
 And this is my definition of a programmable company - where all
 processes are visible in the virtual world
@@ -229,6 +252,28 @@ problem. It is a major factor in form size, market efficency and the
 underlying fundamentals of
 
 How do I know - well, as a software literate person, its just obvious.
+
+
+New Project Management
+----------------------
+
+Is fake news really a problem inside companies. Let me tell you a
+story. Names have been changed to protect the guilty
+
+Project - codebase begins, insufficiency for purpose, no one admitting
+to it because if so then get fired.  The project management process
+allowed for ... lies. Yes it passes, kind of.  any outside scrutiny-
+day by a news reporter - would trivially see a problem. But no the
+fake news carries on up
+
+size makes this harder simply because at each step the ability to take time and challenge fake news is harder - and made worse by the culture of productivity/ hazing of directors
+
+so we need automated helpnto dosciver fake news in our own project reporting
+
+and that means trusting / managing the code 
+
+
+this inefficient is argued it is what brought down soviet - what all doctoaros suffer from (see saudi air force) - and we love it in our own companies??
 
 
 We are already seeing calls for the software industry to regulate
@@ -1507,6 +1552,17 @@ Democracy
 
 :focus: how size and structure of companies is determined and it ain't management cleverness. 
 
+
+Also: We must include political biases when "asking a software engineer to designing a company" - look at openness and transparency in project reporting or in open source code reviews etc
+
+it is more efficient yes, but openness and transparency are a threat to established orders - only meritocracy survives (look at linux and even thorvaldsen being less of a git)
+
+dictators know this - and what is a CEO but a dictoator in a top down ecology
+
+So democracy in companies might not be a requirement for literacy, but like literacy in europe, it has one end point.
+
+as such gov tech software is a genuine need for focus.
+
 THere must be acoase minimum - how is that changing.
 	
 Why are companies the size and structure they are. why are some
@@ -1586,13 +1642,84 @@ Project Management
 Ask a Software Engineer to design Project Management
 ====================================================
 
+<Name>, an influential Googler who helped popularise the idea of
+Software Reliability Engineer (SRE) said "SRE is what you get when you ask a
+developer to design an Operations process."
+
+To be honest, this entire book can be boiled down to "Software Literate companies is what you get when you ask a developer to design a company".
+
+But lets just look at one (important) aspect of a company - *Project
+Management*.  Fundamentally, work inside a company can be divided into
+two parts - *running the company* and *changing (improving?) the
+company*.
+
+Running the company is just the day-to-day
+business-as-usual processes.  Opening up the store, stocking the
+shelves etc.  (and yes, very amenable to automation).
+
+Changing the company is usually harder.  It is a search process usually, looking for product-market fit for early stage companies, or later stage companies loking for efficencies etc.
+
+And CHanging the company is almost always coralled into *projects*.  As such automating project management will be very very helpful.
+
+And as we are designgin a softweare literate company, we dhall desing a compny that is mostly automated, and driven by software - and as such changing the software means changing the company.
+
+Lets repeat that - changing the codebase, means changing a company. And if changing the codebase is now project management, then project management should flow *from* gthe codebase.
+
+
+
+
 Software Literate Project Management.
+-------------------------------------
 
 I am embarrassingly bad at traditional Project management.
+Co-ordination, keeping an eye on the most important parts.  Basically
+I assume that if i know something, then everyone else knows it too.
+So there would be no point in telling other people about
+it. Co-ordinating. for example.  Also my timekeeping sucks which tends
+to piss everyone off eventually. (Such as the woman I left waiting at
+the Cinema so long, the film actually finished before I got
+there. There wasn't a second date.  Not sure why I am sharing, but you
+get the idea. Manual project management is a skill I really want to
+automate away.)
+
+So what can a codebase do that is *better* than manual project managers?
+Better than teams of "change specialists"?
+
+Well, lets start with lying.  People lie. Everyone lies. If your
+husband asks if this sweater makes him look fat round the middle, you
+say "no darling".  If your boss' boss asks if the project is going to
+be ready on time, you are *optimistic*.  You don't for example,
+recommend a regieme of salads, beans and cutting out the chocolate
+biscuits while running 2 miles a day.  You dont say the code base is
+crap, the test coverage laughable and the specifications so vague we
+still dont know what the goal is.
+
+No, you lie. So your boss thinks its ok. And meerily everyone trundles along
+kind of hoping everything will work out all right.
+
+Whcih brings us to project management and risk management
+
+Which brings us to Backlogs and True State of project
+
+WHich brings us to tests, and velocity.
+
+
+* everybody lies
+* Capex and Opex, hidden Capex, slow code movement, spikes and inches.
+* Software Option pricing
+* Capturng cost data. Infrastructure as code.
+* ticketing, scrum and agile, co-ordination, risk management.
 
 Everyone hates agile
 https://www.allankellyassociates.co.uk/archives/388/why-do-devs-hate-agile/
 
+Software CapEx
+
+- anecdotally loads of time money thrown away as people decide to rewrite or chnage minds
+- this will be more carefully managed if it was clear from capex how much this costs
+
+Software - intangible fixed assets 
+https://www.quora.com/What-are-the-rules-and-rationale-behind-treating-software-development-as-capex-vs-an-operating-expense
 
 Governance
 ==========
@@ -1601,6 +1728,21 @@ Town Planning and Governance
 
 TBD
 
+
+Documenting architecture 
+https://news.ycombinator.com/item?id=18508284
+
+the killer post is 
+
+https://news.ycombinator.com/reply?id=18508336&goto=item%3Fid%3D18508284%2318508336
+
+Markets vs governance
+- Curation vs eyeball capture
+- thinknof the bill walking police officers. the end of blackadder 
+No one has time to do those things now - it's all jump cuts
+but we make better decisions slowly
+
+so governance 
 Fractal Management
 ==================
 Fractal Management

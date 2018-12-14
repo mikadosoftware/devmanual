@@ -2,6 +2,13 @@
 How is the future going to look?
 ================================
 
+A point about the Google Peace Dividend
+---------------------------------------
+
+* The Google Peace Dividend - three / four major areas of computing
+  beig transformed by OSS - ML/AI, data processing pipelines, virtual machine management,
+
+
 What is about to make my life harder?
 =====================================
 
