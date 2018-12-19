@@ -52,7 +52,7 @@ idea how to quantify the advantages a company whose staff can all read
 and write will have over a company whose staff are illiterate. It's
 not one of lower labour cost, or better marketing, it's something
 else...Deep in our bones we *know* that literacy changes everything.
-Its so built into us and into everyone we know that we cannot imagine
+Its so built into us andy into everyone we know that we cannot imagine
 a world where we cannot read or write.
 
 Anyway, you, like the poor people wanting to get to the bar, can see
@@ -70,6 +70,14 @@ predictions about what they will and won't be.
 
 And so, as the Meetup wanders back to the bar slightly shocked, we
 wander back to our theme.
+
+It is worth noting that about 50,000 years before Gutenberg, humans invented another world changing technology - spoken language.  It became possible to communicate abstract ideas. Possibly one minor gene chnage enabled tot 
+Every thing in civilisation was spread via language
+
+To look at it another way - for 50,000 years we coded up one single release of a single parser / interpreter - nowadays we have many to aim for and so are building a new .. language?
+
+
+
 
 The software literate company, and the programmable company
 -----------------------------------------------------------
@@ -618,6 +626,11 @@ A New Hope
 
 GDPR
 Plus rulings like this (https://techcrunch.com/2018/11/20/how-a-small-french-privacy-ruling-could-remake-adtech-for-good/) that will unpick the privacy issue - or rather the "who has my data" issue.
+
+privacy again 
+https://www.nytimes.com/2018/12/18/technology/facebook-privacy.html
+
+
 
 
 The rare, right way

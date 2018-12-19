@@ -142,3 +142,11 @@ There's a lot more in the paper.
 
 This essay was co-authored by Henry Farrell, and previously appeared on Lawfare.com.
 https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3273111
+
+
+Good Citation practise
+
+The panic began in April when a video that appears to show a child being scooped off the street by two men on a motorcycle went viral. The video was originally created in Pakistan as a public service announcement to teach parents to watch their children more closely. The end of the clip showed the child returned by the "kidnappers" who held up a sign: "It takes but a moment to snatch a child off the streets of Karachi."
+But that wasn’t what millions of Indians saw on WhatsApp. In the doctored Indian version, that ending was cut off, so the child never reappears. (nytimes - https://www.nytimes.com/2018/08/23/opinion/stranger-fear-children-kidnapping-india.html)
+
+But if the video was embedded with hashed frames and linked back securely then it frankly is almost impossible to mistake that - it screams fake
