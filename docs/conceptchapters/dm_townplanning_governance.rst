@@ -111,3 +111,15 @@ No one has time to do those things now - it's all jump cuts
 but we make better decisions slowly
 
 so governance 
+
+Python governance 
+https://lwn.net/SubscriberLink/775105/5db16cfe82e78dc3/
+
+we are searching for many different suitable approaches.
+
+onencommonality is first past post votes are mostly rejected
+
+
+Capturing co-created value
+- socialising risk privvitisjng profits
+- but cryto can easily transform this - if funding comes from government then can apply a form of copyleft
