@@ -123,3 +123,5 @@ onencommonality is first past post votes are mostly rejected
 Capturing co-created value
 - socialising risk privvitisjng profits
 - but cryto can easily transform this - if funding comes from government then can apply a form of copyleft
+
+Professor Mariana Mazzucato
