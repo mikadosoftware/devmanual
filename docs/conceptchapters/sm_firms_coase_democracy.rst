@@ -150,3 +150,7 @@ The panic began in April when a video that appears to show a child being scooped
 But that wasn’t what millions of Indians saw on WhatsApp. In the doctored Indian version, that ending was cut off, so the child never reappears. (nytimes - https://www.nytimes.com/2018/08/23/opinion/stranger-fear-children-kidnapping-india.html)
 
 But if the video was embedded with hashed frames and linked back securely then it frankly is almost impossible to mistake that - it screams fake
+
+The Data Commons
+----------------
+

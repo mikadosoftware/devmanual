@@ -456,6 +456,7 @@ Putting it all together
 * adding dependancy services - monitoring everything
 * CTO dashboard, mission control centre
 * bug tracking, feature development
+  need automated error trapping and user bug reporting
 * distributed file systems
   Cephfs, GlusterFS, Lustre, and HDFS
 * work queues
