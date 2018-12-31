@@ -154,3 +154,21 @@ But if the video was embedded with hashed frames and linked back securely then i
 The Data Commons
 ----------------
 
+Eu is funding bug bounties for some oss projects
+https://www.zdnet.com/article/eu-to-fund-bug-bounty-programs-for-14-open-source-projects-starting-january-2019/
+
+example - https://evolveum.com/midpoint/
+
+and keepass
+
+needs a validated build !?
+
+
+AI / ML
+https://www.ben-evans.com/benedictevans/2018/12/19/does-ai-make-strong-tech-companies-stronger
+
+it's like SQL
+
+
+
+
