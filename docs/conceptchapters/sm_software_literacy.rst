@@ -52,7 +52,7 @@ idea how to quantify the advantages a company whose staff can all read
 and write will have over a company whose staff are illiterate. It's
 not one of lower labour cost, or better marketing, it's something
 else...Deep in our bones we *know* that literacy changes everything.
-Its so built into us and into everyone we know that we cannot imagine
+Its so built into us andy into everyone we know that we cannot imagine
 a world where we cannot read or write.
 
 Anyway, you, like the poor people wanting to get to the bar, can see
@@ -70,6 +70,14 @@ predictions about what they will and won't be.
 
 And so, as the Meetup wanders back to the bar slightly shocked, we
 wander back to our theme.
+
+It is worth noting that about 50,000 years before Gutenberg, humans invented another world changing technology - spoken language.  It became possible to communicate abstract ideas. Possibly one minor gene chnage enabled tot 
+Every thing in civilisation was spread via language
+
+To look at it another way - for 50,000 years we coded up one single release of a single parser / interpreter - nowadays we have many to aim for and so are building a new .. language?
+
+
+
 
 The software literate company, and the programmable company
 -----------------------------------------------------------
@@ -474,8 +482,13 @@ size makes this harder simply because at each step the ability to take
 time and challenge fake news is harder - and made worse by the culture
 of productivity/ hazing of directors
 
-so we need automated helpnto dosciver fake news in our own project
-reporting
+Director Hazing 
+- grows people who are good at chaos
+- not convinced that is needed - 120 junior doctor hours 
+- 
+
+
+so we need automated helpnto dosciver fake news in our own project reporting
 
 and that means trusting / managing the code 
 
@@ -851,6 +864,11 @@ A New Hope
 
 GDPR
 Plus rulings like this (https://techcrunch.com/2018/11/20/how-a-small-french-privacy-ruling-could-remake-adtech-for-good/) that will unpick the privacy issue - or rather the "who has my data" issue.
+
+privacy again 
+https://www.nytimes.com/2018/12/18/technology/facebook-privacy.html
+
+
 
 
 The rare, right way
@@ -1705,6 +1723,9 @@ have fun learning some new stuff.
 
 I hope you enjoy what is getting pushed out of my brain.  I also hope it helps you.
 
+Fake News: crowd behaviour (rumour) in a crowd of publishers (it's not facebook that has caused it, they just monitor all the publishers - you can hear anyone in the crowd shout anything.  we need to chart our own course in a crowd - this is a crowd where we follow not because we are physically pushed but because we choose to / do not see guided alternatives
+
+potential mixes include libertarian paternalism ...
 
 A point about Software Literacy
 -------------------------------
@@ -1736,3 +1757,8 @@ A point about Software Literacy
 * Software literate company The value of building good software as a
   company
   tps://www.ben-evans.com/benedictevans/2018/8/29/tesla-software-and-disruption
+
+
+- data driven business
+the more (transactional) data that is generated the more likely a "moneyball" approach will lead to business analytics that allow programmable company to have real effect
+

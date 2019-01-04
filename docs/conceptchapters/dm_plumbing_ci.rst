@@ -456,6 +456,7 @@ Putting it all together
 * adding dependancy services - monitoring everything
 * CTO dashboard, mission control centre
 * bug tracking, feature development
+  need automated error trapping and user bug reporting
 * distributed file systems
   Cephfs, GlusterFS, Lustre, and HDFS
 * work queues
@@ -799,6 +800,9 @@ This is the articles linked above.
     chapters/sed_sort
     chapters/seo-case-study
     chapters/Managing time in docker containers </chapters/time_in_docker>
+
+Google Plumbing pdf
+https://arxiv.org/ftp/arxiv/papers/1702/1702.01715.pdf#page10
 
 
 Out of date already
