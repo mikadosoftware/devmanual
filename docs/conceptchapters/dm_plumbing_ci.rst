@@ -801,6 +801,9 @@ This is the articles linked above.
     chapters/seo-case-study
     chapters/Managing time in docker containers </chapters/time_in_docker>
 
+Google Plumbing pdf
+https://arxiv.org/ftp/arxiv/papers/1702/1702.01715.pdf#page10
+
 
 Out of date already
 ===================

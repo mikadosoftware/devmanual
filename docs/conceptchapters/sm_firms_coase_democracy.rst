@@ -171,4 +171,21 @@ it's like SQL
 
 
 
+Todoinator and democracy
+- writing code that does blogs, release notes, etc from code. because at a certain point it is too big to keep up.  at some scale we want press and media to publish what is happening - so things like tools to show what is happening to codebase will be useful 
+
+it is also part of project reporting - but we all know project reporting upwards is flagrrring lies, so we would like to see a free press as a counter weight to that innthe organisational eco system
+
+if as a manager your job is basically just to tell people where we are going (co ordination or leadership) then as code tools help people conordinate more then what is managements job? it seems more and more like a free press - idenofoting crucial salient pints and raising the alarm
+but in a more consistent manner
+
+management 
+project risk 
+leadership (bs)
+
+
+Tactics strategy
+https://diogomonica.com/2018/10/07/a-pirates-take-on-strategy-vs-tactics/
+
+battles are changing the programming of the programmable company - small intense battles.  Strategic implementation is then the day yo day 
 

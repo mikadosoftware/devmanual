@@ -1544,3 +1544,8 @@ A point about Software Literacy
 * Software literate company The value of building good software as a
   company
   tps://www.ben-evans.com/benedictevans/2018/8/29/tesla-software-and-disruption
+
+
+- data driven business
+the more (transactional) data that is generated the more likely a "moneyball" approach will lead to business analytics that allow programmable company to have real effect
+
