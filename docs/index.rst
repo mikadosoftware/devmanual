@@ -1,6 +1,7 @@
 ============
 SoftwareMind
 ============
+
 A dev manual for software literate organisations
 
 
@@ -178,15 +179,25 @@ actually, imagine if you could have Google's revenue's but only have 2
 or 3 employees, (working *very* hard!).  Well that would be the
 sensible choice.  So the extra people must be there for a good reason.
 But you would not add *more* people than needed.  That would cut the
-amount of loot to go round.  So there must be counter-vailing forces,
+amount of loot to go round.  So there must be counter-veiling forces,
 pushing and pulling for hiring or reducing people.
 
-I will discuss Roald Coase and his theory of the firm in detail later,
-but its worth noting that there are several forces pushing and pulling
-firm size (both employee and "volume").  And those forces are changing
-- a lot.  Firms will add more and more automation for their internal
-processes, changing the number of people needed, as well as the speed
-of abosorbing change.  I call this a `programmable company`.
+The British Mid-Century Ecnomist Roald Coase came up with a *theory of
+the firm* to explain this struggle - that a firm size (number of
+employees) is an equilibrium between getting your work done through
+external contracts, and getting the work done internally by employees.
+Coase's Theory of the Firm says that the *transaction costs* of each
+(ie finding a external provider, verifying they are secure, can meet
+your needs, versus training up a new employee) determine the total
+cost of providing a service, and so determine whether it is better to
+hire a new employee rather than looking out for a contract provider.
+
+Now of course, software and the internet is changing these transaction
+costs, and so changing the equilibrium point of firms sizes.  And as
+form sizes change, they change governance structures as well.  The
+trend looks to be *smaller*.  But to really take advantage of Coase's
+thoery, a firm needs to be more than automated, it needs to be
+*programmable*.
 
 
 Just what is a programmable company?
@@ -198,30 +209,257 @@ Just what is a programmable company?
    A dutch 16th century trader pointing at his accounts books
    Jan Gossaert (Washington National Gallery)
    
-My conjecture is that we are hitting a limit on what tracking company
-processes through accounting can do to limit wasteful (coase)
-growth.  The 16th Century Trader shown above is a good exmaple of
-how proud rich merchants were of their new "system" - accounting. Yes, 500 years ago,
-accountatants were cool.
+The 16th Century Trader shown above is writing in an accounting book,
+and has hanging behind him his accounts for the past venture.  As a
+portrait like this would be outrageously expensive, and so it is is a
+good exmaple of how proud rich merchants were of their new "system" -
+accounting. Yes, 500 years ago, accountatants were cool.  It was cool
+because it was a way to control companies in a *very nearly*
+programmatic way.  By setting limits to how subordinates could behave
+by setting budgets, and by being able to monitor how successfult they
+were through budgets, a company could be controlled, or perhaps I
+should say *programmed* to behave in certain ways.
 
-Accounting was a generic approach that could be used to control *any* form
-of business.  And by the industrial revolution it had become globally accepted and
-slowly stadnardised.
-
-But a new generic approach is slowly being developed now - software. A
-virtual world that can be measured as easily as money can be counted
-but is more granular, and precise.  Software based metrics.
-
+By the industrial revolution accounting had become globally accepted
+and slowly standardised, and after the 1950s Management Accounting had
+been invented / popularised by consultants like Bain, but now Software is
+bridging the physical world and the virtual more granualarly than
+previsouly.
 
 And this is my definition of a programmable company - where all
-processes are visible in the virtual world
+processes are visible in the virtual world - where the levers can be
+pulled at a more granular level, and feedback controlled more
+precisely, through software.  This is not *entirely* about replacing
+people with robots.  Years ago as a student I worked as a Warehouse
+Picker, ripping a performated sheet off a printer, walking up and down
+aisles filling crates and loading crates onto lorries to be shipped
+out.  If the Software told me to load 6 bottles of Johnny Walker,
+thats what I did.  I may have been slow and surly but I was entirely
+programmable.
 
-The brilliant mid-twentieth century Economist `Roald Coase` gave us a
-fascinating way to model why companies and organisations are the size
-they are - a Theory of the Firm.  We shall dive deeper into this later
-on but as more and more processes become visible in the virtual, as we
-practise 'topless computing', then we shall see dramatic shifts in the
-size and shape of our organisations.
+I expect warehouse robots have replaced my erstwhile collegues, but
+they are no more programmable than we were. But the marketing
+department for the giant Distillery firm had employees to run their
+recruitment drives, had employees to complete payroll, had employees
+to sort out our shifts and employees to decide what adverts to send to
+what companies to sell their services.
+
+All of those were not programmable jobs back in my student days
+(sometime after Napoleon's exile) - but many have become so today.
+Payroll has been automated for a long time, but Software-as-a-Service
+companies offer end to end recruitment services that can be turned on
+or off as easily as when I ripped a A4 sheet of performatted paper.
+SaaS companies offer mobile apps that let people swap their shifts
+around, and still meet local working time regulations, and A/B testing
+has fundamentally moved advertising and marketing away from "brilliant
+creative endeavours" and into "try this and measure its affect".
+Funnel optimisation is a real thing.
+
+So automation is eating away at pretty much everything. Surely at some
+point we can *automate all the things*, and have a gazillion dollar
+company run by one woman part-time?
+
+It is a trope that it is much cheaper to start a Start-up now than in
+the early 2000s.  But it is cheaper to *run* a company of almost any
+size if it is autoamted.  The amount that companies are / will spend
+on "Robot Process Automation" (ie screen scraping and replacing back
+office staff) is a majour growth area today.
+
+But automating processes is not the whole story for a programmable company.
+There seem to be four componts - trustable data, models / what if planning,
+automation of processes, good goverance.
+
+What aspects of Coasian Transaction Costs are being changed by software?
+------------------------------------------------------------------------
+
+We need to watch for data management. I delve more into this in the DevManual
+chapter on BigAndSmallData, but *trusting* data is a key transaction cost.
+
+Data that is generated from inside the company is implicitly trusted
+(even perhaps if it should not - see later points on fake news and
+fake project management), but data from outside the company needs filtering,
+transforming etc.  However the impact of external *ledgers* (with the Blockchain as the poster boy ledger) will change what can be trusted.
+
+SImilarly encryption technologies, and zero-knowledge encryption
+especially, will start to impact on where data can be stored and
+manipulated.  Trusting a thrid party to hold your data, is a big cost
+(unless of course you are an indivdiual in which case Google and
+Facebook and the advertising industry just hoover it up relenetlessly,
+... ranting again.  Look its hard to read I know but just imagine what
+its like to be in my head.  I have this stuff going on all the time.)
+But encrypting data and then working on it map-reduce style on rented
+machines and re-encrypting it when finished is likely to be a growth
+model.
+
+Additionally the willingness to outsource wholesale services to SaaS
+companies shows that data management is loosely held. (I mean the
+timesheets and payrolls of employees is not only sesnitive but
+competitively useful, but hardly any company does this inhouse
+anymore.)
+
+Enterprise Meta Data management will be, (is), a thing.  Not only should
+the data you have in a stream be labelled, but it should be clear its pedigree
+and have owners ats high level who guarantee its integrity.  (see chapter on data)
+
+The *serverless* software model has some compelling financial and
+flexibility arguments.
+
+As data, and more importantly meta-data is managed at a first class level in companies
+we shall see a huge shift in what can be offloaded, outsourced etc.
+
+Software applied to Data
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+There is a truism in software engineering - its better to have few simple data structures
+and complex operations on them, then many complex data structures and few operations.
+
+.. pull-quote::
+
+   (have the Brooks quote on show me your data model)
+
+Having got data undercontrol, companies need to start
+
+You would be amazed at how much duplication of work and processing,
+how much different understandings of what a piece of data is or means
+goes on inside every large corporation.
+
+Let me give you a quick example.  Actually 2 examples.
+
+(I *love* Monzo. They are a challenger bank. 
+Banking. New banks, the Monzo Beta issue.)
+
+So even if we have data under control, the messy evolved system
+internally to a company
+
+I think this messy system also justifies the Director Hazing culture
+in most large companies.  To be able to deal with the morass of crazy,
+there is a hazing. After passing through that the ability to see it as
+crazy is reduced, because its part of you.
+
+Is this a bad thing? See Book on "why hasnot everything collapsed" We
+need to be sure about resiliency.  But spagethhi code has never
+defneded against resiliency.
+
+FInally, if we have a programmable company it can do an amazing thing.
+COntrolling a company through accountancy and budgets was
+impressive. It allowed empirical testing of ideas (give this section
+this much budget and see what happens)
+
+But it lacked ... predictive capabilities.
+
+But if you have a programmable company, where the processes are
+explicit in code, then you also have a *modellable* company.  ONe that
+can have its code brought up in a safe environment, and run against
+different scenarios and tested for failures - and optimisations.
+
+This does already happen - integration tests of systems perform
+what-if analysis on systems (just like what Knight Capital did not
+do).  But testing environments look for failures.  New modelling
+environments will look for optimisations.
+
+And optimisations may not meet the needs or wants of the people in the
+company.  For exmaple shift patterns in places like Starbucks have
+been seeng "optmisation", and leading to issues like people being
+given 3 hours in the morning and then told to leave (unpaid) for a few
+hours then get a few hours in the afternoon.  THis of course plays
+havoc with any real persons life.  It has seen a lot of push back.
+
+And that push back, that *political decision* to not do an optimised
+change, to not follow the A/B test down a path, that is governance.
+That is how does a programmable company, that can run itself without
+human decision making, and that can through modelling, change itself,
+how does that company change in ways that benefit us. By having a
+controlling mind, that decides which changes are good or bad.
+
+And this last is the essence of Uber, AirBnB, facebook and google -
+how they have affected our world and how regulations are trying to
+steer that affect.
+
+
+
+
+What about landscape - what are other companies doing.
+------------------------------------------------------
+
+(Notes on landscaping)
+
+
+
+.. pull-quote::
+
+  So we now have a couple of tools that will be useful in working out
+  not only that software is eating the world, but what size and shape
+  will the meals be.
+
+Literate companies will be Lisp like - able to rewrite the virtual data that
+represents their real-world actions, but also able to treat their
+real-world actions as rewritable too. It was obvious how to make a
+student warehouse picker change what he was doing programmatically. It
+was less obvious how to make the head of marketing do so.  A/B testing
+was the answer - or rather metrics were.
+
+
+
+Fake News, Project Management, programmable company
+---------------------------------------------------
+
+THe whole programmable company thing has two needs - it needs a body
+(a corps or corporation) that does as it is told, and there has to be
+a controlling mind. That controlling mind is the company governance.
+At the moment it is a dictatorship of epic proportions. The CEO says
+jump, 20,00 people say how high. But as more and more of us shift into
+being programmed (like warehouse pickers or Marketing Directors) there
+will be more demand to have influence over that controlling mind.
+
+ When a company had barely accounting, and time between command and
+affect was measured in time it took a ship to sail, company employees
+had much autonomy.  This autonomy has been shrinking and shrinking,
+till many employees are merely robots, ripping off performated paper.
+As this hits the middle class, middle management, then history tells
+us middle classes demand representation at the top.  Demand democracy
+in corporations.
+
+I conjecture that we shall see more and more skilled people, the ones
+who are usually "changing the company" will jump ship and run their
+own smaller service providers.  But this kind of is happening as many
+contractors will say.  But it is still a command and control
+relationship. Smaller companies, with smaller transaction costs.
+
+
+
+The programmable company
+------------------------
+
+For almost everything a company or organisation does a second time,
+that can be automated or co-ordinated via software.  A company will
+become a programmable entity.  Most if not all effort that goes into
+todays software projects, goes not into creating new business logic,
+but into finding the data, massaging it, guaranteeing it, handling
+exceptions, and fitting into the rest of the businesses weird ways.
+
+But a programmable company, that has robust exception handling, that
+has open standards that are easy to fit into, that has trustable data,
+is something else.  At a certain point, changing a company becomes a
+matter of changing code.
+
+What is a firm? A collection of processes, the handling of exceptions,
+the culture? the human decision making?
+
+There are 2 parts - running the company, and changing the company
+Where BAU does not really involve human decision making we can see
+automtion drop costs and increase speeds.
+
+Trustable processes
+-------------------
+
+There is a lot of work on getting processes 'into the cloud' Putting
+data up there securely, Future issues will include not leaking
+competitive information Lots of work on Robot process automation.
+
+
+
+Trusting data and firm size
+---------------------------
 
 I think there is another interesting way to look at Coase firm size -
 its to do with the cost of *trusting data*.  If data is published
@@ -234,24 +472,24 @@ The fight against fake news is going to be a long defining one in
 years to come.  The most obvious way is simply to revert back to the
 old saw "You can have your own opnion, but not your own facts". The
 KGB lead approach to destroying this is to put so many fake facts, so
-much chaff, that people just reinforce their own biases.  SOme method to
-validate real geniuine facts against fake facts is within reach.
-We can see how cameras could sign images, how articles published could be
-cryptographically signed and stored, how facts marked up in the text.
+much chaff, that people just reinforce their own biases.  SOme method
+to validate real geniuine facts against fake facts is within reach.
+We can see how cameras could sign images, how articles published could
+be cryptographically signed and stored, how facts marked up in the
+text.
 
-ANd so how news aggregators (sorry advertising companies) like Google and Facebook
-could use that to mark fake news as such.
+ANd so how news aggregators (sorry advertising companies) like Google
+and Facebook could use that to mark fake news as such.
 
 SOme method to validate inferences from a *selection* of facts.  Well.
 Thats harder. Hell, Human Politics might be defined as that problem.
-
-
 
 As such the current privacy, GDPR world is not merely a lefy liberal
 problem. It is a major factor in form size, market efficency and the
 underlying fundamentals of
 
 How do I know - well, as a software literate person, its just obvious.
+
 
 
 New Project Management
@@ -266,14 +504,21 @@ allowed for ... lies. Yes it passes, kind of.  any outside scrutiny-
 day by a news reporter - would trivially see a problem. But no the
 fake news carries on up
 
-size makes this harder simply because at each step the ability to take time and challenge fake news is harder - and made worse by the culture of productivity/ hazing of directors
+size makes this harder simply because at each step the ability to take
+time and challenge fake news is harder - and made worse by the culture
+of productivity/ hazing of directors
 
-so we need automated helpnto dosciver fake news in our own project reporting
+so we need automated helpnto dosciver fake news in our own project
+reporting
 
 and that means trusting / managing the code 
 
 
-this inefficient is argued it is what brought down soviet - what all doctoaros suffer from (see saudi air force) - and we love it in our own companies??
+this inefficient is argued it is what brought down soviet - what all
+doctoaros suffer from (see saudi air force) - and we love it in our
+own companies??
+
+
 
 
 We are already seeing calls for the software industry to regulate
@@ -281,10 +526,10 @@ itself, on privacy, on deals with repressive regiemes.  The answer is
 not as simple as coders all being nice people.  But society needs to
 regulate and also accept change.  We shall see that in section 2.
 
-But companies, governments and organisations of every stripe, will need to adapt
-to a new set of technologies that have a grain, a direction of travel, ... a tidal force.
-Those techologies are here now, and our old organisational structures are no longer
-sufficent.  
+But companies, governments and organisations of every stripe, will
+need to adapt to a new set of technologies that have a grain, a
+direction of travel, ... a tidal force.  Those techologies are here
+now, and our old organisational structures are no longer sufficent.
 
 Lets look at it this way - Facebook, if it took all 1.5 BILLION users
 and moved to a new land mass would be the worlds largest
@@ -293,12 +538,14 @@ country. Ever.
 And it would be the least democratic. Ever. A one man dictatorship. No
 law courts, no police, no constitution.  Nada.  And yet every Facebook
 app-using citizen would have more daily contact (what 3 hours a day?)
-with its "government" than they ever had with their proper governments.
+with its "government" than they ever had with their proper
+governments.
 
 Each day we see some new controversy, YouTube failing to police its
-comments section against paedophiles, (find more examples).  This is not because
-Facebook is inherently evil, but because we are moving our lives online - and
-*some* people moving online *are* inherently evil. [#]_
+comments section against paedophiles, (find more examples).  This is
+not because Facebook is inherently evil, but because we are moving our
+lives online - and *some* people moving online *are* inherently
+evil. [#]_
 
 So companies, governments, organisations, the structures we all spend
 so much of our lives working within, need to change to get the best
@@ -310,10 +557,15 @@ Because it could be a golden future for humanity.  Honest.
 .. [#]:: OK, you might need to know a tiny bit about my political
       stance, which can be described as nice fluffy Euro-liberal until
       we look at Child Protection and I take a stance that makes
-      Gengis Khan look left wing.  Anyway the important takeaway for
-      this book is individual equality and market-led price discovery.
-      
-From literacy to programmability
+      Gengis Khan look like a big softie.  Anyway the important
+      takeaway for this book is individual equality and market-led
+      price discovery.
+
+(more governace)
+
+
+
+Governance and Software
 ================================
 
 .. pull-quote::
@@ -321,6 +573,7 @@ From literacy to programmability
   "Writing is nature’s way of showing us how sloppy our thinking is."
   Leslie Lamport
 
+Writing down software shows you how sloppy your thinking was about the job in hand.
 
 I very happily recounted my "Literacy started with the printing press,
 software literacy starts with the Internet" meme in the last chapter.
@@ -626,24 +879,6 @@ the defintion of a company) have not changed.  We need to go further
 in changing the structure of a company.
 
 
-The programmable company
-------------------------
-
-One theme I shall return to is the idea that companies and
-organisations are simply means to organise humans - and that has lower
-cost and friction than it used to with software intermediation.
-
-To put it simply, almost everything that is done in a normal company
-now can be automated, and the co-ordination of functions is an email
-away.
-
-For almost everything a company or organisation does a second time,
-that can be automated or co-ordinated via software.  A company will
-become a programmable entity.  Most if not all effort that goes into
-todays software projects, goes not into creating new business logic, but into
-finding the data, massaging it, guaranteeing it, handling exceptions, and fitting into the rest of the businesses weird ways.
-
-But a programmable company, that has robust exception handling, that has open standards that are easy to fit into, that has trustable data, 
 
 A New Hope
 ==========
@@ -717,34 +952,9 @@ Pen and paper ?
 
 
 
-Notes misc
-===========
-
-None of these are purely technical foul-ups.  Where humans are
-involved thats never the case - it is always tinged with plitics.
-
-It's how would an illiterate person run the Washington Post.  Ben
-bradlee
-
-
-Healthcare.gov - one of the team responsible for the clean up of
-healthcare.gov tells a story (YouTube). He explains. But mostly he
-says they did nothing clever, they invented nothing new. They just ran
-best practises (the famous new relic punch).
-
-But why did they run best practises and not others. There are many
-explanations, multiple gov contractors, sclerotic practises etc. but
-ultimately the people at the top looked at a newspaper that was run as
-it would be run by an illiterate and said "well I can't see how else
-it should run", because they were illiterate too.
-
-
 .. #: http://www.hrc.utexas.edu/educator/modules/gutenberg/books/legacy/
 
 
-The incremental improvement - constant little bit better till it is
-out of sight This is a fundamental part - daily, hourly improvements
-just sent out.
 
 A Mea Culpa - from me and Uncle Bob
 http://blog.paul-brian.com/2015/06/05/being-professional/
@@ -1530,6 +1740,38 @@ have fun learning some new stuff.
 I hope you enjoy what is getting pushed out of my brain.  I also hope it helps you.
 
 
+A point about Software Literacy
+-------------------------------
+
+* Software Literacy is an important concept - it is hard for us to
+  recongise how literacy has shaped us and our society. Look at road
+  signs. And it is hard to recognise how much software literacy will
+  change companies, socieites and opportunities.  This is the
+  underlying message of "Software is eating the world" - we have made
+  a world that only works because everyone in it can read and write.
+  We are making a new world, where everyone will be expected to code.
+
+* Software is subject to politics, but the importance of software is
+  leaving development of softre to be driven by people who do not
+  "understand" software (see literacy), and it is also leading to
+  substandard software being allowed.  Regulation and
+  professinalisation is likely to affect that.
+
+* Almost all software development is about exploring.  And two things
+  we can say about exploration - you never know how long it is going
+  to take and it often is risky.  Guess what the vast majority of
+  project planning and management try and do They demand time
+  estimates and plan other items around that, and they do not schedule
+  resources to mitigate risk.  In my experience, software takes as
+  long as it takes.  All the running around and shouting, the pressure
+  and the politics are just ways of selling the inevitable time /
+  money / scope trade offs.
+
+* Software literate company The value of building good software as a
+  company
+  tps://www.ben-evans.com/benedictevans/2018/8/29/tesla-software-and-disruption
+
+
 I am trying to guess what
 they will look like, in the same way a scribe in a Medieval
 Scriptoreum could try and guess what Woodward and Bernstein's
@@ -1541,7 +1783,816 @@ Plumbing
 Plumbing and CI
 ===============
 
-TBD
+The Metaphor of Building Software
+=================================
+
+Discuss "The code is the design", and the DevOps idea of code for
+everything.  Look at building site in City of London
+
+The office building metahpr is a good one because it also includes a
+clear idea of just how much is ocvered in software build chains these
+days - from Steel girders and foundations to Glass UIs and bathroom
+and waste services in conduits no one sees, to building security and
+power outlets.  These things are beasts, and software at even mid size
+enterprise scale is a beast too.  Hence my focus on *governance* as
+well.
+
+Technical Architecture
+----------------------
+
+There are lot of "Technical Architects" around these days.  (One of
+the problems with not having a software profession the same way we do
+in actual architecture is its hard to stop people calling themselves a
+Technical Architect. (I mean, just look at *my* business card ...)
+
+A stereotype of TAs is of isolated geniuses (at least they hope to
+give that impression) announcing the correct way to build software to
+a large team or organisation.
+
+The problem is that if no-one is following yourq architectureal rules,
+then you arent an architect.  Architecture is a human function,
+persuading others that your way is better.  SOmetimes, we *enforce*
+that - through Software Governance (an important idea we will return
+to) In the same way that an Architects design for a building is
+followed by the builders, or a City Planners rules for a City are
+followed by all agents involved.
+
+With a metaphor of building cities, we can see why the idea of Architecture is
+an attractive one, but it is really at the scale of the biggest software houses
+in the world (Major Banks and financial instituions) that you can see the incredilbe
+value of ... City Planning.  We shall call this Software Governance.
+
+Workstation
+===========
+
+The project mikadosoftware/workstation is the best point to discuss a
+develoeprs workstation.  A while back I realised I was spending waaay
+too much time altering my worksttion - as an itinerant developer /
+contractor I would effectivety be a bum on a seat (in many senses of
+the word!).
+
+So I have taken some time to define a repeatable workstation process.
+Its not ever going to be perfect but at least it is a valuable start
+
+
+Workstations are part of overall plumbing.
+
+
+
+
+
+Plumbing
+========
+
+Every software project of any size needs some basic plumbing, things
+like a good config approach, a means of linting and testing.  These
+things pay dividends throughout the lifetime of a project, making the
+simple easy and the hard doable.  WIthout it, you are in trouble.
+
+  
+  - :doc:`chapters/errors`
+  - :doc:`chapters/config`
+  - :doc:`chapters/sphinx`
+  - :doc:`chapters/metrics`
+  - :doc:`chapters/backup_strategy`
+  - :doc:`chapters/logging`
+  - :doc:`chapters/metricsAndTracing`
+  - :doc:`chapters/network_monitor`
+
+- Runbooks and monitoring
+
+
+Plumbing
+-----------------
+
+The goal here is not best practise, but good enough practise that can
+scale enough for you not to panic while replacing it.
+Our golden goal is to keep things simple.
+
+Simple breaks in simple ways, simple is simple to extend and improve.
+
+Its not that simple is *easy* - often it is the opposite of easy, or quick.
+
+But simple wins out over time. Simple gives great ROI.
+
+I throughly recommend listening to Rich Hickey on this subject (Link)
+
+chaos engineering 
+http://principlesofchaos.org
+
+KISS
+http://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html
+there is simple, and there is too simple to easily manage and monitor. 
+
+pentesting and adversarial security
+https://www.trailofbits.com
+black hat python
+the simple ones still work
+AES based oracle 
+
+
+- microservices
+- CI / CD
+-- metric capture and operations management 
+testing
+linting and commuting and pre commit hooks
+governance
+simple worker queues
+simple load balancer
+simple kubernetes / DNS etc
+simple js client 
+simple web server 
+simple user management 
+
+    
+    
+Continuous Integration (CI)
+===========================
+
+.. pull-quote::
+   
+   Re-create your company from scratch, every single day.
+
+   
+Continuous Integration / Delivery is probably the biggest boon to developer produtivity
+since the rise of memory managed languages in the 90's.
+
+Languages like C expected the developer to write code that assigned a
+certain amount of memory for a certain data structure - which meant at
+the point of writing your code, you had to know *how big the data was
+going to be, in say two years time*.
+
+People would get this wrong.  The biggest security risk for many years
+was your program accepting a piece of data larger than expected and
+simply overwriting its own memory.  With luck your program just
+crashed.  Otherwise the hacker was very good, and the piece of data
+sent just put their evil code on top of the stack ready to be run.
+
+Nowadays, the business logic we grind out does not need to worry about
+such things.  Instead we have the fun of not being entirely sure if
+the version of the code we think of is going to run on the server with
+the code we think of, using the password we meant and thats if no one
+else changed anything.
+
+Lets call these build services.
+
+
+
+- :doc:`chapters/environments`
+- :doc:`chapters/continuous_integration`
+- :doc:`chapters/using_docker`
+- :doc:`chapters/sharing_secrets`
+- :doc:`chapters/packaging`
+- :doc:`chapters/pep8`
+- :doc:`chapters/writing_docs`
+- :doc:`chapters/random`
+- :doc:`chapters/reporting`
+
+
+ 
+
+  
+Security
+========
+
+Security is principles that are applied across the system. PKI, etc.
+
+Basically trust the maths, and trust nonces.
+
+* :doc:`chapters/ch1 security`
+- :doc:`chapters/cookie_testing` #security
+- :doc:`chapters/network-testing`
+- :doc:`chapters/personal_security`
+- :doc:`chapters/pki`
+- :doc:`chapters/pkis`
+
+
+Pki
+Cloudflare how to build your own
+https://en.m.wikipedia.org/wiki/Hardware_security_module
+
+
+* GPG and keypairs
+* host based security, networks of trust between hosts,  and DMZs
+* Kubernetes / Rancher as a host / VM world 
+
+Configuration management and secrets
+====================================
+
+Use etcd / kubernetes.
+How to build own Docker based co-ordination service - or why kUbernetes is nice.
+My USB Secrets
+
+(also Google Peace Dividend)
+
+Testing - a heresy
+==================
+
+Rick Hickey on simple vs easy
+  How does a bug get into production? It is written
+  And it passes the tests.  So if you have tests, and you refactor, how
+  do you prevent that bug?
+  Need to be able to *reason* about code. Which is why 900 npm packages worry me.
+
+  Tests are *regression* tests. They are written so that having written some code to
+  do a thing, you dont later on screw it up and it stops doing that thing.  Tests are
+  almost by defintion, backwards looking.
+
+- :doc:`chapters/unittests`
+- :doc:`chapters/browser-automation`
+  
+
+DevOps
+======
+
+Falls naturally out of Microservices owned by Small Teams, with Strong Interfaces
+SRE and SRE book.
+Start small, keep whole thing in overview
+Use graphite, and just report out, graph 10 important things
+to your team *today*.
+
+* :doc:`chapters/graphite_docker`
+
+
+
+Basic Management Reporting
+==========================
+
+* reportlib
+* SLAs and KPIs - keeping ourselves honest
+* focusing upwards to higher levels of leverage
+* avoiding the drumbeat of deadlines, and panic, and agreeing goals based on
+  data / 20% most effective things to fix.
+* Make one weekly report *today*
+
+
+The scope
+=========
+
+How much software is there
+
+https://news.ycombinator.com/reply?id=17994976&goto=item%3Fid%3D17994600%2317994976
+https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/
+
+the google peace dividend
+https://news.ycombinator.com/reply?id=17996693&goto=item%3Fid%3D17995053%2317996693
+
+Data schedulaers /  Processors / BigIsh Data
+Apache Beam
+https://stackoverflow.com/questions/43581127/what-are-the-benefits-of-apache-beam-over-spark-flink-for-batch-processing
+
+
+
+
+Soft Skills
+===========
+
+Skills for individual developer
+===============================
+
+Software Governance as a force multiplier implies a number of things
+One is that each individual contributor should have the same minimal
+set of skills, and perform those common skills in a similar fashion.
+
+An obvious example might be making good source code commits, and so there
+would need to be an internal "standard" for commits. 
+
+This of course implies ... training. Training your staff to be better
+at their jobs, something that the commitment-less culture these days
+seems to mitigate against.  Things will change - our "principle" of a
+change to Roald Coase's equilibrium point means smaller companies, and
+greater need to standard interfaces and so more need to train your
+people to do it the right way.
+
+
+You are not a programmer
+product engineers not software engineers 
+https://blog.intercom.com/run-less-software/
+Three circles of leverage
+
+
+Profesional Stuff you should know 
+---------------------------------
+
+
+- :doc:`chapters/jupyter`
+- :doc:`chapters/kernel_and_world`
+- :doc:`chapters/misc`
+- :doc:`chapters/statistics`
+* :doc:`chapters/sourcecontrol`
+* :doc:`chapters/keypairs`
+- :doc:`chapters/databases`
+- :doc:`chapters/DNS`
+- :doc:`chapters/email`??
+- :doc:`chapters/source-control`    
+- :doc:`chapters/using_burpsuite`
+
+Actually personal stuff
+
+* :doc:`chapters/careermanagement`
+* :doc:`chapters/interviewQuestions`
+- :doc:`chapters/interviews_algorithms`
+- :doc:`chapters/basic_seo`
+
+Misc
+- :doc:`chapters/generative`
+
+
+Esprit d'corp and Team honesty
+==============================
+
+Hiring practises - be part of the team
+Entry hurdles. 
+start with feedback - sprints and retrospectives
+Be aware of your priviledge
+Begin the difficult conversations publically 
+be aware of the likely problems - metoo is just one.
+
+then aim for the culture you want - 
+
+then hire good people
+
+
+* Culture, and hostile cultures
+* trust, safe space, I dont know
+* learning
+* lunch
+* Keep on in good faith
+* Google HR managemenet
+* management fixes are the middle ground - 
+
+
+* serverless is cheaper. Please rewrite everything now.
+* Overtime is bad
+* remote working is more productive
+* Risk management beats project Management
+  
+- :doc:`chapters/software-capital`
+- :doc:`chapters/software-estimation`
+- :doc:`chapters/project_mgmt`
+
+
+
+AWS and old school
+------------------
+- :doc:`chapters/aws_dns`
+- :doc:`chapters/cabling_hardware`
+- :doc:`chapters/filesharing`
+- :doc:`chapters/freewifi`
+- :doc:`chapters/highAvailability`
+- :doc:`chapters/laptop`
+- :doc:`chapters/loadbalancing`
+- :doc:`chapters/mail-handling`
+
+
+  
+UI for idiots
+=============
+
+
+- :doc:`chapters/UIDesign`
+- :doc:`chapters/ajax`
+- :doc:`chapters/bootstrap_index`
+- :doc:`chapters/building_bootstrap`
+- :doc:`chapters/coloursfortheweb`
+- :doc:`chapters/lessrest`
+
+  
+
+The dev manual - a proof of concept
+===================================
+
+
+Example Micro-Service eco-system
+
+
+I want to have a detailed exmaple - so here is a functioning, internal and external
+web based, docker based complete setup.
+
+Docker AWS
+----------
+
+We shall build a complete enterprise service in the cloud - because we can
+
+- :doc:`chapters/time_in_docker`
+- :doc:`chapters/time`
+
+
+This is a "business in a box" - it kind of does not matter what the
+buisness is, its just that all the software engineering goodness
+that I describe here needs to be ... dmeonstrable - so I have built a
+example business (and launching a real product) with it.
+
+Its WIP
+
+* simplest app possible
+* adding a unit test
+* adding a performance test
+* building it under python / distutils
+* running it under systemd
+* running dual, behind load balancer, using weaver/ansible/fabric
+* building it on a build server, using .deb files
+* build assets -> docs, perf results, test results, .deb files
+* Security on microservice
+* Identity
+* host-host services (ntp etc)
+* host-app services -> logging, TLS etc 
+* central services - DNS, metric names,
+* code reviews and code promotion
+* metrics gatehrinfg
+* log mgmt
+* rolling out changes
+* incident mgmt (incidents, SLAs, uptime measurements from metrics etc etc)
+* adding message queues, backend services, passing back identiy
+* adding dependancy services - monitoring everything
+* CTO dashboard, mission control centre
+* bug tracking, feature development
+
+  
+Putting it all together
+=======================
+
+* Simplest possible
+  We shall build a working web app (about three lines, honest).
+  Build it, test it, deploy it to a location locally, and log it.
+* systemd, well-behaved services
+* simplest app possible
+* adding a unit test
+* adding a performance test
+* building it under python / distutils
+* running it under systemd
+* running dual, behind load balancer, using weaver/ansible/fabric
+* building it on a build server, using .deb files
+* build assets -> docs, perf results, test results, .deb files
+* Security on microservice
+* linting and style and code reviews
+* Identity
+* host-host services (ntp etc)
+* host-app services -> logging, TLS etc
+* central services - DNS, metric names,
+* code reviews and code promotion
+* metrics gatehrinfg
+* log mgmt
+* rolling out changes
+* adding message queues, backend services, passing back identiy
+* adding dependancy services - monitoring everything
+* CTO dashboard, mission control centre
+* bug tracking, feature development
+* distributed file systems
+  Cephfs, GlusterFS, Lustre, and HDFS
+* work queues
+  CElery, zeroMQ
+* amazon, openstack
+
+
+
+  
+Micro-HowTos
+============
+(Misc)
+
+- :doc:`chapters/corefile_debugging`
+- :doc:`chapters/futuretech`
+- :doc:`chapters/bothPythons`
+- :doc:`chapters/emacs`
+- :doc:`chapters/nginx`
+
+- :doc:`chapters/gh-pages`
+- :doc:`chapters/nonblockwsgi`
+- :doc:`chapters/wsgi_simple_app`
+- :doc:`chapters/wsgi_test`
+- :doc:`chapters/wifi`
+- :doc:`chapters/ssl-tls`
+- :doc:`chapters/workstation-install`
+- :doc:`chapters/workstation`
+- :doc:`chapters/webdev`
+- :doc:`chapters/webtest`
+- :doc:`chapters/well-behaved-services`
+- :doc:`chapters/using_github__ssh`
+- :doc:`chapters/podcast`
+- :doc:`chapters/postgres-cheatsheet`
+- :doc:`chapters/pxeboot`
+- :doc:`chapters/python_warts`
+- :doc:`chapters/routes`
+- :doc:`chapters/rssso`
+- :doc:`chapters/samba`
+- :doc:`chapters/securityoverview`
+- :doc:`chapters/sed_sort`
+- :doc:`chapters/seo-case-study`
+- :doc:`chapters/Managing time in docker containers </chapters/time_in_docker>`
+
+
+
+
+
+
+
+
+
+
+The top 12 practices - a summary
+--------------------------------
+
+Like Joel's checklist, this is a checklist for things you need
+Its trying to get ot barebones
+
+
+1. source control
+   5 chars etc.
+   but good example of using automated policy enforcement on checkin
+
+2. tech debt and tech assets - code and tests
+   "Lines of code spent"
+   
+3. requirements lifecycle (PEP)
+   the wrongest part of the agile manifesto
+   """ The most efficient and effective method of
+conveying information to and within a development
+team is face-to-face conversation.
+   """
+   
+   Ya do need to write down the discussion.
+   written Proof overcomes authority problems
+    it is also way to get everyone discussing
+    this only works with really co-locateed and mission focused teams
+
+4. automated build and deployment (dogfood)
+   Look, bash is just *fine*
+   pyholodeck
+
+5. Documentation and Marketing
+6. openness and reviews
+7. Progress Not Perfection (YouTube clip)
+8. static and other analysis
+9. performance mgmt and measuring everything (and making reports on everything)
+10. Automatic project mgmt
+11. Risk management
+12. have fun, try new things, don't be afraid
+
+
+Google Peace dividend and Distributed computing
+===============================================
+
+THe new capabilities
+
+Kebernetes (the micro services as cattle)
+Beam / spark - distributed parallelised computing - the new scheduler
+Tensorflow - AI
+(Serverless)
+
+But underneath this we have basics of plumbing, philoshphy and so on
+
+
+
+
+Software development methodologies
+https://zwischenzugs.com/2017/10/15/my-20-year-experience-of-software-development-methodologies/
+
+Future
+======
+
+the great cyber security rewrite(hospital and pumping stations)
+the great project management model - tube of water at real time scale
+the great company shrinkage - coase
+
+
+https://allarsblog.com/2018/03/16/confessions-of-an-unreal-engine-4-engineering-firefighter/
+
+Club
+defence at scale
+https://brandur.org/idempotency-keys
+
+
+being better developer
+https://news.ycombinator.com/item?id=16863591
+
+i don't agree really - there is two kinds - being a master of anything
+is mastery over self (miyazoko tea master) or specialisation is for
+insects.  or rather you need experience of all the tools
+
+i suspect he is just complaining that someone is hammering in a nail
+with a hammer, then a screwdriver, then a wrench ...
+
+
+One New Skill Evening Club
+--------------------------
+
+Functional Reactive programming and DAGs
+-----------------------------------------
+
+"out of the tar pit" marks/moseley - over simplified it says complexity is the problem in software, and there are two types of complexity - state and control.
+
+A third type is information failures or shooting ourselves in the foot.  
+
+There are then three fixes for the world
+
+- functional programming for managing state (immutable data)
+
+- but data does chnage - so how to handle it? datomic?? bi or tri temporality 
+
+- functional reactive programming and dag - and what about SAC
+
+apache spark is fundamentally one of these. which will win?? hard to say but my money is one language-data tie ups (erlang mnesia, clojure datomic)
+
+https://blog.janestreet.com/introducing-incremental/
+https://blog.janestreet.com/breaking-down-frp/
+
+Basically don't waste time on recomputing
+Which is why Vitrual don can be a dag
+
+
+Why graphs matter. And who cares
+
+
+Scope and coverage
+
+- NoSQL and scale and distribution versus consistency 
+- rise of functional languages
+- the declarative language we all know - SQL
+- datomic and clojure
+- out of the tar pit (mosley and marks) - two problems are state and control - functional solves some of state but state of data changes.  how to handle changing data ? 
+- bitemproarilty and tritemoorality - date we wrote it down, date fact was true, date we are querying about.
+
+- Information management
+
+- systems analysis 
+
+- domain analysis
+
+- leave me alone i am thinking
+
+- stop micro managing 
+
+- no you cannot have an estimate only a direction.  deadline? maybe. try a business solution
+
+- do it smaller first 
+
+- mission and process wins more often 
+
+- ownership of small area wins as well.
+
+
+Have a incident response book
+
+Have a run book
+- basic principle is automate the shit out of it
+
+
+
+Software Mind
+Moop and IOT
+moop
+
+My data collected on my behalf and analysed for my benefit - shared and communal benefit
+
+
+iot fridge 
+will allow my slow thinking to order for me this allowing me to win back control from the bio-hacking of large corps
+
+Ethical Open Source
+
+https://librarianshipwreck.wordpress.com/2018/08/24/striving-to-minimize-technical-and-reputational-risks-ethical-os-and-silicon-valleys-guilty-conscience/
+
+
+Privacy - telcos / ISPs are worse
+
+https://www.techdirt.com/articles/20180320/10281539457/if-youre-pissed-about-facebooks-privacy-abuses-you-should-be-four-times-as-angry-broadband-industry.shtml
+
+
+#https://docs.typo3.org/typo3cms/extensions/sphinx/AdvancedUsersManual/RenderingPdf/CustomizingRendering.html
+
+
+
+
+Articles
+========
+
+This is the articles linked above.
+
+.. toctree::
+
+    chapters/microservices
+    chapters/serverless
+    chapters/architectural_overview
+    chapters/best_approach_to_software_quality
+    chapters/application-performance-management
+    chapters/systemd
+    chapters/technical_capabilities
+    chapters/terminal
+    chapters/testing
+    chapters/text_mining
+    chapters/sphinx
+    chapters/errors
+    chapters/config
+    chapters/sphinx
+    chapters/metrics
+    chapters/backup_strategy
+    chapters/logging
+    chapters/metricsAndTracing
+    chapters/network_monitor
+    chapters/environments
+    chapters/continuous_integration
+    chapters/using_docker
+    chapters/sharing_secrets
+    chapters/packaging
+    chapters/pep8
+    chapters/writing_docs
+    chapters/random
+    chapters/reporting
+    chapters/jupyter
+    chapters/kernel_and_world
+    chapters/misc
+    chapters/statistics
+    chapters/sourcecontrol
+    chapters/keypairs
+    chapters/databases
+    chapters/DNS
+    chapters/email
+    chapters/source-control    
+    chapters/using_burpsuite
+    chapters/careermanagement
+    chapters/interviewQuestions
+    chapters/interviews_algorithms
+    chapters/basic_seo
+    chapters/generative
+    chapters/ch1 security
+    chapters/cookie_testing #security
+    chapters/network-testing
+    chapters/personal_security
+    chapters/pki
+    chapters/pkis
+    chapters/unittests
+    chapters/browser-automation
+    chapters/graphite_docker
+    chapters/time_in_docker
+    chapters/time
+    chapters/software-capital
+    chapters/software-estimation
+    chapters/project_mgmt
+    chapters/agile_estimation
+    chapters/SoHo1
+    chapters/themes
+    chapters/urljoin
+    chapters/veryquickMBA
+    chapters/aspell
+    chapters/mikado-doc-manager
+    chapters/aws_dns
+    chapters/cabling_hardware
+    chapters/filesharing
+    chapters/freewifi
+    chapters/highAvailability
+    chapters/laptop
+    chapters/loadbalancing
+    chapters/mail-handling
+    chapters/virtualbox
+
+    chapters/usbdisk
+    chapters/UIDesign
+    chapters/ajax
+    chapters/bootstrap_index
+    chapters/building_bootstrap
+    chapters/coloursfortheweb
+    chapters/lessrest
+    chapters/corefile_debugging
+    chapters/futuretech
+    chapters/bothPythons
+    chapters/emacs
+    chapters/nginx
+    chapters/gh-pages
+    chapters/nonblockwsgi
+    chapters/wsgi_simple_app
+    chapters/wsgi_test
+    chapters/wifi
+    chapters/ssl-tls
+    chapters/workstation-install
+    chapters/workstation
+    chapters/webdev
+    chapters/webtest
+    chapters/well-behaved-services
+    chapters/using_github__ssh
+    chapters/podcast
+    chapters/postgres-cheatsheet
+    chapters/pxeboot
+    chapters/python_warts
+    chapters/routes
+    chapters/rssso
+    chapters/samba
+    chapters/securityoverview
+    chapters/sed_sort
+    chapters/seo-case-study
+    chapters/Managing time in docker containers </chapters/time_in_docker>
+
+
+Out of date already
+===================
+
+chapters/virtualisation
+chapters/virtualbox`
+chapters/usbdisk`
+
+
+https://en.wikipedia.org/wiki/Fractal_tree_index
+
 
 Democracy
 =========
@@ -1637,6 +2688,23 @@ of their basic income is protected.
 Also why airbucks.io is an example of project that works in
 marketplace but notninside company
 
+A point about Company Size
+--------------------------
+
+OK, this is meandering a bit but, company size matters. A mid-20C
+econmist named Roald Coase had a great theory of the firm - basically
+wondering why a firm would have say, an internal depratmetn for, I
+dunno, say, market research, when it could go to the outside markte
+and buy it in.  Why hire employees basically.  And the answer is its
+easier to tell an employee what to do, and then change your mind as
+circumstances change, than it is to find, source, and contract for
+similar in open market.
+
+A lot is changing about this.  From Virtual assisitants to others.
+
+But downward sizer pressure exists.  (see note on Google / Barlcays)
+
+
 Project Management
 ==================
 Ask a Software Engineer to design Project Management
@@ -1721,10 +2789,199 @@ Software CapEx
 Software - intangible fixed assets 
 https://www.quora.com/What-are-the-rules-and-rationale-behind-treating-software-development-as-capex-vs-an-operating-expense
 
+
+Project and Programme management
+================================
+
+So there is a well known story in the Agile world about `why estimates
+are always wrong
+<https://www.quora.com/Engineering-Management/Why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3/answer/Michael-Wolfe?srid=24b&share=1>`_
+
+Basically we cannot do it.  So why do people ask for estimates? They
+dont want estimates - they want evenly spaced landmarks. They want
+confidence that progress is being made.
+
+
+It if ain't got a ticket dont work on it If it ain't possible to
+rollup tickets you dont know where you are going A backlog out of
+context is just a horror There is nothing wrong with top-down design
+(see Linux) Backlog for the whole company - agile for the whole
+company just see progress on a map.  If its not going fast wnough for
+the board they can fix things at their level.
+
+
+We need to track our work so we can provide an audit trail
+THese are useful
+
+
+Event driven Project Management
+-------------------------------
+
+How companies need to reactively plan, with exception / assert monitoring.
+How this replaces "managment judgement" with clear budgeting.?
+
+
+** Project Management
+The Chairman's tricky Question
+==============================
+
+Some time ago I was asked by the Chairman of the Board what one thing
+he could do to make sure all these damn software projects were under
+control.
+
+What he meant by under-control, was *on-time* and *as expected*. Which
+is not what I meant.
+
+So I had two answers.   One was under control from a development perspective.
+This is pretty simple and  boils  down to 
+
+* Require *every* project to automatically deploy to at least a prod-parallel
+  environment, *every* day, their most recent approved, tested code
+  and post their test results.
+
+These seemed radical, but achievable.  A lot of the *technical* side
+of this Dev Manual is focused on achieving this.
+
+But the *real* point was about *on-time* and *as expected*.  And that
+is where I gave an answer he did not like.
+
+* Stop having deadlines.  That way nothing is late.
+
+Yes.  You can see why it was not a popular suggestion.
+
+We will expand on that, but I am going to stick to it.  I hate
+deadlines.  They infect everything with panic and poor quality.  And
+the deadlines are almost always derived from poor information about
+reality, and where the deadline should be, and rarely if ever updated,
+as if reality and poor estimation are irrelevant.
+
+Its much better to have regular, reality-grounded views on where one
+really is, and alter plans based on that.  Automatically.
+
+Deadlines sometimes help. Mostly they do not.
+
+If it ain't ready, setting the deadline to today won't make it ready.
+
+
+- :doc:`chapters/agile_estimation`
+- :doc:`chapters/SoHo1`
+- :doc:`chapters/themes`
+- :doc:`chapters/urljoin`
+- :doc:`chapters/veryquickMBA`
+
+
+CTO dashboards and Business Process Dashboards
+==============================================
+
+Dashboards matter
+The basics of code quality can be in dashboard.
+The basics of production health can be in dashboard
+Putting a business process into dashboard is powerful - use Graphite and "light beam trackers"
+
+
+- :doc:`chapters/aspell`
+- :doc:`chapters/mikado-doc-manager`
+- :doc:https://github.com/getredash/redash/blob/master/README.md
+
+
+
 Governance
 ==========
 Town Planning and Governance
 ============================
+
+
+A point about Software Governance
+=================================
+
+There is a software rule of thumb - that code-bases pass through
+'complexity horizons' every couple of orders of magnitude. That is a
+project that was easy to manage at 1,000 LOC cannot be maintained with
+the same approach when its a 10,000 or 100,000 LOC cadebase.
+
+Pieter Levels is a entrpreneur and coder, who found a certain
+noteriety in 2017 by announcing that he was making sales of over
+$2,000 a day, using a single php file with 4000 LOC, with no
+frameworks and libraries.  The Twitter-sphere exploded, quite
+amusingly, by criticising his coding approach and insisting he needed
+some architecture and frameworks.
+
+.. pull-quote::
+
+   "What about the frameworks. Think of the frameworks"
+
+Pieter seems to be doing fine his way, but yes, at some point the 'one
+guy opens up one file' approach is of course going to fail as
+complexity rises.  But managing it with the latest technical framework is
+not the right answer - a technical framework is one response to the problem
+of increasing complexity, one means of *governing* the codebase.
+
+How we manage that is *software governance*.  The goal of software
+governance is to raise the floor everywhere.
+
+We can write code, we can write code that gets us to a basic level of
+feature complete-ness.  And then the next fire alarm arrives, the next
+email from the boss, and ... the polish disappears, the extra bit of
+effort to make something long term useful just does not get done.
+
+But that extra piece of effort can pay dividends just for one
+developer.  For a team or a whole community, the dividends are
+endless, just by raising the floor of quality.
+
+In `todo-inator` I have a concept of self-rating each module or
+function with a modern form of P.G. Wodehouse's re-writing of
+chapters.  This simple mark::
+
+  pgw: **
+
+While this is a subjective measure from the developer, it is a guide
+to where improvements can be made.  And importantly resides in the
+codebase.
+
+Other measures of code quality can be autoated and should be part of
+every commit cycle.
+
+:doc:`chapters/best_approach_to_software_quality`
+
+Code base governance
+--------------------
+
+Style,
+coverage
+ast based syntax checking use of non-standard plumbing
+`Code as a crime scene`
+Static Analysis and raising all boats.
+ast
+and how to do syntax checking like pyflake - how to build own rules
+
+
+
+- :doc:`chapters/application-performance-management`
+- :doc:`chapters/systemd`
+- :doc:`chapters/technical_capabilities`
+- :doc:`chapters/terminal`
+- :doc:`chapters/testing`
+- :doc:`chapters/text_mining`
+- :doc:`chapters/sphinx`
+
+
+.. toctree::
+
+   chapters/sphinx
+
+A point about Systems governance
+--------------------------------
+
+SRE / building for failure (Erlang and OTP)
+this is monitoring running systems.  Things like approvals, security etc.
+
+
+Managing the lifecycle
+-----------------------
+
+Application Lifecycle Management
+Gov Service Design Manual
+
 
 TBD
 
@@ -1743,6 +3000,7 @@ No one has time to do those things now - it's all jump cuts
 but we make better decisions slowly
 
 so governance 
+
 Fractal Management
 ==================
 Fractal Management
@@ -1797,6 +3055,13 @@ Future Trends
 ================================
 How is the future going to look?
 ================================
+
+A point about the Google Peace Dividend
+---------------------------------------
+
+* The Google Peace Dividend - three / four major areas of computing
+  beig transformed by OSS - ML/AI, data processing pipelines, virtual machine management,
+
 
 What is about to make my life harder?
 =====================================
@@ -2210,59 +3475,8 @@ I push Oss4gov but I need it funded by right wing maniacs
 
 
 
-A point about Company Size
---------------------------
-
-OK, this is meandering a bit but, company size matters. A mid-20C
-econmist named Roald Coase had a great theory of the firm - basically
-wondering why a firm would have say, an internal depratmetn for, I
-dunno, say, market research, when it could go to the outside markte
-and buy it in.  Why hire employees basically.  And the answer is its
-easier to tell an employee what to do, and then change your mind as
-circumstances change, than it is to find, source, and contract for
-similar in open market.
-
-A lot is changing about this.  From Virtual assisitants to others.
-
-But downward sizer pressure exists.  (see note on Google / Barlcays)
-
-A point about Software Literacy
--------------------------------
-
-* Software Literacy is an important concept - it is hard for us to
-  recongise how literacy has shaped us and our society. Look at road
-  signs. And it is hard to recognise how much software literacy will
-  change companies, socieites and opportunities.  This is the
-  underlying message of "Software is eating the world" - we have made
-  a world that only works because everyone in it can read and write.
-  We are making a new world, where everyone will be expected to code.
-
-* Software is subject to politics, but the importance of software is
-  leaving development of softre to be driven by people who do not
-  "understand" software (see literacy), and it is also leading to
-  substandard software being allowed.  Regulation and
-  professinalisation is likely to affect that.
-
-* Almost all software development is about exploring.  And two things
-  we can say about exploration - you never know how long it is going
-  to take and it often is risky.  Guess what the vast majority of
-  project planning and management try and do They demand time
-  estimates and plan other items around that, and they do not schedule
-  resources to mitigate risk.  In my experience, software takes as
-  long as it takes.  All the running around and shouting, the pressure
-  and the politics are just ways of selling the inevitable time /
-  money / scope trade offs.
-
-* Software literate company The value of building good software as a
-  company
-  tps://www.ben-evans.com/benedictevans/2018/8/29/tesla-software-and-disruption
 
 
-A point about the Google Peace Dividend
----------------------------------------
-
-* The Google Peace Dividend - three / four major areas of computing
-  beig transformed by OSS - ML/AI, data processing pipelines, virtual machine management,
 
 A point about Pikety
 --------------------
@@ -2351,137 +3565,8 @@ Modelling
 
 
 
-The Metaphor of Building Software
-=================================
 
-Discuss "The code is the design", and the DevOps idea of code for
-everything.  Look at building site in City of London
-
-The office building metahpr is a good one because it also includes a
-clear idea of just how much is ocvered in software build chains these
-days - from Steel girders and foundations to Glass UIs and bathroom
-and waste services in conduits no one sees, to building security and
-power outlets.  These things are beasts, and software at even mid size
-enterprise scale is a beast too.  Hence my focus on *governance* as
-well.
-
-Technical Architecture
-----------------------
-
-There are lot of "Technical Architects" around these days.  (One of
-the problems with not having a software profession the same way we do
-in actual architecture is its hard to stop people calling themselves a
-Technical Architect. (I mean, just look at *my* business card ...)
-
-A stereotype of TAs is of isolated geniuses (at least they hope to
-give that impression) announcing the correct way to build software to
-a large team or organisation.
-
-The problem is that if no-one is following yourq architectureal rules,
-then you arent an architect.  Architecture is a human function,
-persuading others that your way is better.  SOmetimes, we *enforce*
-that - through Software Governance (an important idea we will return
-to) In the same way that an Architects design for a building is
-followed by the builders, or a City Planners rules for a City are
-followed by all agents involved.
-
-With a metaphor of building cities, we can see why the idea of Architecture is
-an attractive one, but it is really at the scale of the biggest software houses
-in the world (Major Banks and financial instituions) that you can see the incredilbe
-value of ... City Planning.  We shall call this Software Governance.
-
-A point about Software Governance
-=================================
-
-There is a software rule of thumb - that code-bases pass through
-'complexity horizons' every couple of orders of magnitude. That is a
-project that was easy to manage at 1,000 LOC cannot be maintained with
-the same approach when its a 10,000 or 100,000 LOC cadebase.
-
-Pieter Levels is a entrpreneur and coder, who found a certain
-noteriety in 2017 by announcing that he was making sales of over
-$2,000 a day, using a single php file with 4000 LOC, with no
-frameworks and libraries.  The Twitter-sphere exploded, quite
-amusingly, by criticising his coding approach and insisting he needed
-some architecture and frameworks.
-
-.. pull-quote::
-
-   "What about the frameworks. Think of the frameworks"
-
-Pieter seems to be doing fine his way, but yes, at some point the 'one
-guy opens up one file' approach is of course going to fail as
-complexity rises.  But managing it with the latest technical framework is
-not the right answer - a technical framework is one response to the problem
-of increasing complexity, one means of *governing* the codebase.
-
-How we manage that is *software governance*.  The goal of software
-governance is to raise the floor everywhere.
-
-We can write code, we can write code that gets us to a basic level of
-feature complete-ness.  And then the next fire alarm arrives, the next
-email from the boss, and ... the polish disappears, the extra bit of
-effort to make something long term useful just does not get done.
-
-But that extra piece of effort can pay dividends just for one
-developer.  For a team or a whole community, the dividends are
-endless, just by raising the floor of quality.
-
-In `todo-inator` I have a concept of self-rating each module or
-function with a modern form of P.G. Wodehouse's re-writing of
-chapters.  This simple mark::
-
-  pgw: **
-
-While this is a subjective measure from the developer, it is a guide
-to where improvements can be made.  And importantly resides in the
-codebase.
-
-Other measures of code quality can be autoated and should be part of
-every commit cycle.
-
-:doc:`chapters/best_approach_to_software_quality`
-
-Code base governance
---------------------
-
-Style,
-coverage
-ast based syntax checking use of non-standard plumbing
-`Code as a crime scene`
-Static Analysis and raising all boats.
-ast
-and how to do syntax checking like pyflake - how to build own rules
-
-
-
-- :doc:`chapters/application-performance-management`
-- :doc:`chapters/systemd`
-- :doc:`chapters/technical_capabilities`
-- :doc:`chapters/terminal`
-- :doc:`chapters/testing`
-- :doc:`chapters/text_mining`
-- :doc:`chapters/sphinx`
-
-
-.. toctree::
-
-   chapters/sphinx
-
-A point about Systems governance
---------------------------------
-
-SRE / building for failure (Erlang and OTP)
-this is monitoring running systems.  Things like approvals, security etc.
-
-
-Managing the lifecycle
------------------------
-
-Application Lifecycle Management
-Gov Service Design Manual
-
-
+   
 
 
 A point about Simplicity
@@ -2519,871 +3604,10 @@ problem is clean data
 it's like security - it's a priority or it is not.
 
 
-Workstation
-===========
 
-The project mikadosoftware/workstation is the best point to discuss a
-develoeprs workstation.  A while back I realised I was spending waaay
-too much time altering my worksttion - as an itinerant developer /
-contractor I would effectivety be a bum on a seat (in many senses of
-the word!).
 
-So I have taken some time to define a repeatable workstation process.
-Its not ever going to be perfect but at least it is a valuable start
 
 
-Workstations are part of overall plumbing.
-
-
-
-
-
-Plumbing
-========
-
-Every software project of any size needs some basic plumbing, things
-like a good config approach, a means of linting and testing.  These
-things pay dividends throughout the lifetime of a project, making the
-simple easy and the hard doable.  WIthout it, you are in trouble.
-
-  
-  - :doc:`chapters/errors`
-  - :doc:`chapters/config`
-  - :doc:`chapters/sphinx`
-  - :doc:`chapters/metrics`
-  - :doc:`chapters/backup_strategy`
-  - :doc:`chapters/logging`
-  - :doc:`chapters/metricsAndTracing`
-  - :doc:`chapters/network_monitor`
-
-- Runbooks and monitoring
-
-
-Plumbing
------------------
-
-The goal here is not best practise, but good enough practise that can
-scale enough for you not to panic while replacing it.
-Our golden goal is to keep things simple.
-
-Simple breaks in simple ways, simple is simple to extend and improve.
-
-Its not that simple is *easy* - often it is the opposite of easy, or quick.
-
-But simple wins out over time. Simple gives great ROI.
-
-I throughly recommend listening to Rich Hickey on this subject (Link)
-
-chaos engineering 
-http://principlesofchaos.org
-
-KISS
-http://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html
-there is simple, and there is too simple to easily manage and monitor. 
-
-pentesting and adversarial security
-https://www.trailofbits.com
-black hat python
-the simple ones still work
-AES based oracle 
-
-
-- microservices
-- CI / CD
--- metric capture and operations management 
-testing
-linting and commuting and pre commit hooks
-governance
-simple worker queues
-simple load balancer
-simple kubernetes / DNS etc
-simple js client 
-simple web server 
-simple user management 
-
-    
-    
-Continuous Integration (CI)
-===========================
-
-.. pull-quote::
-   
-   Re-create your company from scratch, every single day.
-
-   
-Continuous Integration / Delivery is probably the biggest boon to developer produtivity
-since the rise of memory managed languages in the 90's.
-
-Languages like C expected the developer to write code that assigned a
-certain amount of memory for a certain data structure - which meant at
-the point of writing your code, you had to know *how big the data was
-going to be, in say two years time*.
-
-People would get this wrong.  The biggest security risk for many years
-was your program accepting a piece of data larger than expected and
-simply overwriting its own memory.  With luck your program just
-crashed.  Otherwise the hacker was very good, and the piece of data
-sent just put their evil code on top of the stack ready to be run.
-
-Nowadays, the business logic we grind out does not need to worry about
-such things.  Instead we have the fun of not being entirely sure if
-the version of the code we think of is going to run on the server with
-the code we think of, using the password we meant and thats if no one
-else changed anything.
-
-Lets call these build services.
-
-
-
-- :doc:`chapters/environments`
-- :doc:`chapters/continuous_integration`
-- :doc:`chapters/using_docker`
-- :doc:`chapters/sharing_secrets`
-- :doc:`chapters/packaging`
-- :doc:`chapters/pep8`
-- :doc:`chapters/writing_docs`
-- :doc:`chapters/random`
-- :doc:`chapters/reporting`
-
-
- 
-
-  
-Security
-========
-
-Security is principles that are applied across the system. PKI, etc.
-
-Basically trust the maths, and trust nonces.
-
-* :doc:`chapters/ch1 security`
-- :doc:`chapters/cookie_testing` #security
-- :doc:`chapters/network-testing`
-- :doc:`chapters/personal_security`
-- :doc:`chapters/pki`
-- :doc:`chapters/pkis`
-
-
-Pki
-Cloudflare how to build your own
-https://en.m.wikipedia.org/wiki/Hardware_security_module
-
-
-* GPG and keypairs
-* host based security, networks of trust between hosts,  and DMZs
-* Kubernetes / Rancher as a host / VM world 
-
-Configuration management and secrets
-====================================
-
-Use etcd / kubernetes.
-How to build own Docker based co-ordination service - or why kUbernetes is nice.
-My USB Secrets
-
-(also Google Peace Dividend)
-
-Testing - a heresy
-==================
-
-Rick Hickey on simple vs easy
-  How does a bug get into production? It is written
-  And it passes the tests.  So if you have tests, and you refactor, how
-  do you prevent that bug?
-  Need to be able to *reason* about code. Which is why 900 npm packages worry me.
-
-  Tests are *regression* tests. They are written so that having written some code to
-  do a thing, you dont later on screw it up and it stops doing that thing.  Tests are
-  almost by defintion, backwards looking.
-
-- :doc:`chapters/unittests`
-- :doc:`chapters/browser-automation`
-  
-
-DevOps
-======
-
-Falls naturally out of Microservices owned by Small Teams, with Strong Interfaces
-SRE and SRE book.
-Start small, keep whole thing in overview
-Use graphite, and just report out, graph 10 important things
-to your team *today*.
-
-* :doc:`chapters/graphite_docker`
-
-
-
-Basic Management Reporting
-==========================
-
-* reportlib
-* SLAs and KPIs - keeping ourselves honest
-* focusing upwards to higher levels of leverage
-* avoiding the drumbeat of deadlines, and panic, and agreeing goals based on
-  data / 20% most effective things to fix.
-* Make one weekly report *today*
-
-
-The scope
-=========
-
-How much software is there
-
-https://news.ycombinator.com/reply?id=17994976&goto=item%3Fid%3D17994600%2317994976
-https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/
-
-the google peace dividend
-https://news.ycombinator.com/reply?id=17996693&goto=item%3Fid%3D17995053%2317996693
-
-Data schedulaers /  Processors / BigIsh Data
-Apache Beam
-https://stackoverflow.com/questions/43581127/what-are-the-benefits-of-apache-beam-over-spark-flink-for-batch-processing
-
-
-
-
-Soft Skills
-===========
-
-Skills for individual developer
-===============================
-
-Software Governance as a force multiplier implies a number of things
-One is that each individual contributor should have the same minimal
-set of skills, and perform those common skills in a similar fashion.
-
-An obvious example might be making good source code commits, and so there
-would need to be an internal "standard" for commits. 
-
-This of course implies ... training. Training your staff to be better
-at their jobs, something that the commitment-less culture these days
-seems to mitigate against.  Things will change - our "principle" of a
-change to Roald Coase's equilibrium point means smaller companies, and
-greater need to standard interfaces and so more need to train your
-people to do it the right way.
-
-
-You are not a programmer
-product engineers not software engineers 
-https://blog.intercom.com/run-less-software/
-Three circles of leverage
-
-
-Profesional Stuff you should know 
----------------------------------
-
-
-- :doc:`chapters/jupyter`
-- :doc:`chapters/kernel_and_world`
-- :doc:`chapters/misc`
-- :doc:`chapters/statistics`
-* :doc:`chapters/sourcecontrol`
-* :doc:`chapters/keypairs`
-- :doc:`chapters/databases`
-- :doc:`chapters/DNS`
-- :doc:`chapters/email`??
-- :doc:`chapters/source-control`    
-- :doc:`chapters/using_burpsuite`
-
-Actually personal stuff
-
-* :doc:`chapters/careermanagement`
-* :doc:`chapters/interviewQuestions`
-- :doc:`chapters/interviews_algorithms`
-- :doc:`chapters/basic_seo`
-
-Misc
-- :doc:`chapters/generative`
-
-
-Esprit d'corp and Team honesty
-==============================
-
-Hiring practises - be part of the team
-Entry hurdles. 
-start with feedback - sprints and retrospectives
-Be aware of your priviledge
-Begin the difficult conversations publically 
-be aware of the likely problems - metoo is just one.
-
-then aim for the culture you want - 
-
-then hire good people
-
-
-* Culture, and hostile cultures
-* trust, safe space, I dont know
-* learning
-* lunch
-* Keep on in good faith
-* Google HR managemenet
-* management fixes are the middle ground - 
-
-
-* serverless is cheaper. Please rewrite everything now.
-* Overtime is bad
-* remote working is more productive
-* Risk management beats project Management
-  
-- :doc:`chapters/software-capital`
-- :doc:`chapters/software-estimation`
-- :doc:`chapters/project_mgmt`
-
-Project and Programme management
-================================
-
-So there is a well known story in the Agile world about `why estimates
-are always wrong
-<https://www.quora.com/Engineering-Management/Why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3/answer/Michael-Wolfe?srid=24b&share=1>`_
-
-Basically we cannot do it.  So why do people ask for estimates? They
-dont want estimates - they want evenly spaced landmarks. They want
-confidence that progress is being made.
-
-
-It if ain't got a ticket dont work on it If it ain't possible to
-rollup tickets you dont know where you are going A backlog out of
-context is just a horror There is nothing wrong with top-down design
-(see Linux) Backlog for the whole company - agile for the whole
-company just see progress on a map.  If its not going fast wnough for
-the board they can fix things at their level.
-
-
-We need to track our work so we can provide an audit trail
-THese are useful
-
-
-Event driven Project Management
--------------------------------
-
-How companies need to reactively plan, with exception / assert monitoring.
-How this replaces "managment judgement" with clear budgeting.?
-
-
-** Project Management
-The Chairman's tricky Question
-==============================
-
-Some time ago I was asked by the Chairman of the Board what one thing
-he could do to make sure all these damn software projects were under
-control.
-
-What he meant by under-control, was *on-time* and *as expected*. Which
-is not what I meant.
-
-So I had two answers.   One was under control from a development perspective.
-This is pretty simple and  boils  down to 
-
-* Require *every* project to automatically deploy to at least a prod-parallel
-  environment, *every* day, their most recent approved, tested code
-  and post their test results.
-
-These seemed radical, but achievable.  A lot of the *technical* side
-of this Dev Manual is focused on achieving this.
-
-But the *real* point was about *on-time* and *as expected*.  And that
-is where I gave an answer he did not like.
-
-* Stop having deadlines.  That way nothing is late.
-
-Yes.  You can see why it was not a popular suggestion.
-
-We will expand on that, but I am going to stick to it.  I hate
-deadlines.  They infect everything with panic and poor quality.  And
-the deadlines are almost always derived from poor information about
-reality, and where the deadline should be, and rarely if ever updated,
-as if reality and poor estimation are irrelevant.
-
-Its much better to have regular, reality-grounded views on where one
-really is, and alter plans based on that.  Automatically.
-
-Deadlines sometimes help. Mostly they do not.
-
-If it ain't ready, setting the deadline to today won't make it ready.
-
-
-- :doc:`chapters/agile_estimation`
-- :doc:`chapters/SoHo1`
-- :doc:`chapters/themes`
-- :doc:`chapters/urljoin`
-- :doc:`chapters/veryquickMBA`
-
-
-CTO dashboards and Business Process Dashboards
-==============================================
-
-Dashboards matter
-The basics of code quality can be in dashboard.
-The basics of production health can be in dashboard
-Putting a business process into dashboard is powerful - use Graphite and "light beam trackers"
-
-
-- :doc:`chapters/aspell`
-- :doc:`chapters/mikado-doc-manager`
-- :doc:https://github.com/getredash/redash/blob/master/README.md
-
-
-
-
-AWS and old school
-------------------
-- :doc:`chapters/aws_dns`
-- :doc:`chapters/cabling_hardware`
-- :doc:`chapters/filesharing`
-- :doc:`chapters/freewifi`
-- :doc:`chapters/highAvailability`
-- :doc:`chapters/laptop`
-- :doc:`chapters/loadbalancing`
-- :doc:`chapters/mail-handling`
-
-
-  
-UI for idiots
-=============
-
-
-- :doc:`chapters/UIDesign`
-- :doc:`chapters/ajax`
-- :doc:`chapters/bootstrap_index`
-- :doc:`chapters/building_bootstrap`
-- :doc:`chapters/coloursfortheweb`
-- :doc:`chapters/lessrest`
-
-  
-
-The dev manual - a proof of concept
-===================================
-
-
-Example Micro-Service eco-system
-
-
-I want to have a detailed exmaple - so here is a functioning, internal and external
-web based, docker based complete setup.
-
-Docker AWS
-----------
-
-We shall build a complete enterprise service in the cloud - because we can
-
-- :doc:`chapters/time_in_docker`
-- :doc:`chapters/time`
-
-
-This is a "business in a box" - it kind of does not matter what the
-buisness is, its just that all the software engineering goodness
-that I describe here needs to be ... dmeonstrable - so I have built a
-example business (and launching a real product) with it.
-
-Its WIP
-
-* simplest app possible
-* adding a unit test
-* adding a performance test
-* building it under python / distutils
-* running it under systemd
-* running dual, behind load balancer, using weaver/ansible/fabric
-* building it on a build server, using .deb files
-* build assets -> docs, perf results, test results, .deb files
-* Security on microservice
-* Identity
-* host-host services (ntp etc)
-* host-app services -> logging, TLS etc 
-* central services - DNS, metric names,
-* code reviews and code promotion
-* metrics gatehrinfg
-* log mgmt
-* rolling out changes
-* incident mgmt (incidents, SLAs, uptime measurements from metrics etc etc)
-* adding message queues, backend services, passing back identiy
-* adding dependancy services - monitoring everything
-* CTO dashboard, mission control centre
-* bug tracking, feature development
-
-  
-Putting it all together
-=======================
-
-* Simplest possible
-  We shall build a working web app (about three lines, honest).
-  Build it, test it, deploy it to a location locally, and log it.
-* systemd, well-behaved services
-* simplest app possible
-* adding a unit test
-* adding a performance test
-* building it under python / distutils
-* running it under systemd
-* running dual, behind load balancer, using weaver/ansible/fabric
-* building it on a build server, using .deb files
-* build assets -> docs, perf results, test results, .deb files
-* Security on microservice
-* linting and style and code reviews
-* Identity
-* host-host services (ntp etc)
-* host-app services -> logging, TLS etc
-* central services - DNS, metric names,
-* code reviews and code promotion
-* metrics gatehrinfg
-* log mgmt
-* rolling out changes
-* adding message queues, backend services, passing back identiy
-* adding dependancy services - monitoring everything
-* CTO dashboard, mission control centre
-* bug tracking, feature development
-* distributed file systems
-  Cephfs, GlusterFS, Lustre, and HDFS
-* work queues
-  CElery, zeroMQ
-* amazon, openstack
-
-
-
-  
-Micro-HowTos
-============
-(Misc)
-
-- :doc:`chapters/corefile_debugging`
-- :doc:`chapters/futuretech`
-- :doc:`chapters/bothPythons`
-- :doc:`chapters/emacs`
-- :doc:`chapters/nginx`
-
-- :doc:`chapters/gh-pages`
-- :doc:`chapters/nonblockwsgi`
-- :doc:`chapters/wsgi_simple_app`
-- :doc:`chapters/wsgi_test`
-- :doc:`chapters/wifi`
-- :doc:`chapters/ssl-tls`
-- :doc:`chapters/workstation-install`
-- :doc:`chapters/workstation`
-- :doc:`chapters/webdev`
-- :doc:`chapters/webtest`
-- :doc:`chapters/well-behaved-services`
-- :doc:`chapters/using_github__ssh`
-- :doc:`chapters/podcast`
-- :doc:`chapters/postgres-cheatsheet`
-- :doc:`chapters/pxeboot`
-- :doc:`chapters/python_warts`
-- :doc:`chapters/routes`
-- :doc:`chapters/rssso`
-- :doc:`chapters/samba`
-- :doc:`chapters/securityoverview`
-- :doc:`chapters/sed_sort`
-- :doc:`chapters/seo-case-study`
-- :doc:`chapters/Managing time in docker containers </chapters/time_in_docker>`
-
-
-
-
-
-
-
-
-
-
-The top 12 practices - a summary
---------------------------------
-
-Like Joel's checklist, this is a checklist for things you need
-Its trying to get ot barebones
-
-
-1. source control
-   5 chars etc.
-   but good example of using automated policy enforcement on checkin
-
-2. tech debt and tech assets - code and tests
-   "Lines of code spent"
-   
-3. requirements lifecycle (PEP)
-   the wrongest part of the agile manifesto
-   """ The most efficient and effective method of
-conveying information to and within a development
-team is face-to-face conversation.
-   """
-   
-   Ya do need to write down the discussion.
-   written Proof overcomes authority problems
-    it is also way to get everyone discussing
-    this only works with really co-locateed and mission focused teams
-
-4. automated build and deployment (dogfood)
-   Look, bash is just *fine*
-   pyholodeck
-
-5. Documentation and Marketing
-6. openness and reviews
-7. Progress Not Perfection (YouTube clip)
-8. static and other analysis
-9. performance mgmt and measuring everything (and making reports on everything)
-10. Automatic project mgmt
-11. Risk management
-12. have fun, try new things, don't be afraid
-
-
-Google Peace dividend and Distributed computing
-===============================================
-
-THe new capabilities
-
-Kebernetes (the micro services as cattle)
-Beam / spark - distributed parallelised computing - the new scheduler
-Tensorflow - AI
-(Serverless)
-
-But underneath this we have basics of plumbing, philoshphy and so on
-
-
-
-
-Software development methodologies
-https://zwischenzugs.com/2017/10/15/my-20-year-experience-of-software-development-methodologies/
-
-
-Future
-======
-
-the great cyber security rewrite(hospital and pumping stations)
-the great project management model - tube of water at real time scale
-the great company shrinkage - coase
-
-
-https://allarsblog.com/2018/03/16/confessions-of-an-unreal-engine-4-engineering-firefighter/
-
-Club
-defence at scale
-https://brandur.org/idempotency-keys
-
-
-being better developer
-https://news.ycombinator.com/item?id=16863591
-
-i don't agree really - there is two kinds - being a master of anything
-is mastery over self (miyazoko tea master) or specialisation is for
-insects.  or rather you need experience of all the tools
-
-i suspect he is just complaining that someone is hammering in a nail
-with a hammer, then a screwdriver, then a wrench ...
-
-
-One New Skill Evening Club
---------------------------
-
-Functional Reactive programming and DAGs
------------------------------------------
-
-"out of the tar pit" marks/moseley - over simplified it says complexity is the problem in software, and there are two types of complexity - state and control.
-
-A third type is information failures or shooting ourselves in the foot.  
-
-There are then three fixes for the world
-
-- functional programming for managing state (immutable data)
-
-- but data does chnage - so how to handle it? datomic?? bi or tri temporality 
-
-- functional reactive programming and dag - and what about SAC
-
-apache spark is fundamentally one of these. which will win?? hard to say but my money is one language-data tie ups (erlang mnesia, clojure datomic)
-
-https://blog.janestreet.com/introducing-incremental/
-https://blog.janestreet.com/breaking-down-frp/
-
-Basically don't waste time on recomputing
-Which is why Vitrual don can be a dag
-
-
-Why graphs matter. And who cares
-
-
-Scope and coverage
-
-- NoSQL and scale and distribution versus consistency 
-- rise of functional languages
-- the declarative language we all know - SQL
-- datomic and clojure
-- out of the tar pit (mosley and marks) - two problems are state and control - functional solves some of state but state of data changes.  how to handle changing data ? 
-- bitemproarilty and tritemoorality - date we wrote it down, date fact was true, date we are querying about.
-
-- Information management
-
-- systems analysis 
-
-- domain analysis
-
-- leave me alone i am thinking
-
-- stop micro managing 
-
-- no you cannot have an estimate only a direction.  deadline? maybe. try a business solution
-
-- do it smaller first 
-
-- mission and process wins more often 
-
-- ownership of small area wins as well.
-
-
-Have a incident response book
-
-Have a run book
-- basic principle is automate the shit out of it
-
-
-
-Software Mind
-Moop and IOT
-moop
-
-My data collected on my behalf and analysed for my benefit - shared and communal benefit
-
-
-iot fridge 
-will allow my slow thinking to order for me this allowing me to win back control from the bio-hacking of large corps
-
-Ethical Open Source
-
-https://librarianshipwreck.wordpress.com/2018/08/24/striving-to-minimize-technical-and-reputational-risks-ethical-os-and-silicon-valleys-guilty-conscience/
-
-
-Privacy - telcos / ISPs are worse
-
-https://www.techdirt.com/articles/20180320/10281539457/if-youre-pissed-about-facebooks-privacy-abuses-you-should-be-four-times-as-angry-broadband-industry.shtml
-
-
-#https://docs.typo3.org/typo3cms/extensions/sphinx/AdvancedUsersManual/RenderingPdf/CustomizingRendering.html
-
-
-
-
-Articles
-========
-
-This is the articles linked above.
-
-.. toctree::
-
-    chapters/microservices
-    chapters/serverless
-    chapters/architectural_overview
-    chapters/best_approach_to_software_quality
-    chapters/application-performance-management
-    chapters/systemd
-    chapters/technical_capabilities
-    chapters/terminal
-    chapters/testing
-    chapters/text_mining
-    chapters/sphinx
-    chapters/errors
-    chapters/config
-    chapters/sphinx
-    chapters/metrics
-    chapters/backup_strategy
-    chapters/logging
-    chapters/metricsAndTracing
-    chapters/network_monitor
-    chapters/environments
-    chapters/continuous_integration
-    chapters/using_docker
-    chapters/sharing_secrets
-    chapters/packaging
-    chapters/pep8
-    chapters/writing_docs
-    chapters/random
-    chapters/reporting
-    chapters/jupyter
-    chapters/kernel_and_world
-    chapters/misc
-    chapters/statistics
-    chapters/sourcecontrol
-    chapters/keypairs
-    chapters/databases
-    chapters/DNS
-    chapters/email
-    chapters/source-control    
-    chapters/using_burpsuite
-    chapters/careermanagement
-    chapters/interviewQuestions
-    chapters/interviews_algorithms
-    chapters/basic_seo
-    chapters/generative
-    chapters/ch1 security
-    chapters/cookie_testing #security
-    chapters/network-testing
-    chapters/personal_security
-    chapters/pki
-    chapters/pkis
-    chapters/unittests
-    chapters/browser-automation
-    chapters/graphite_docker
-    chapters/time_in_docker
-    chapters/time
-    chapters/software-capital
-    chapters/software-estimation
-    chapters/project_mgmt
-    chapters/agile_estimation
-    chapters/SoHo1
-    chapters/themes
-    chapters/urljoin
-    chapters/veryquickMBA
-    chapters/aspell
-    chapters/mikado-doc-manager
-    chapters/aws_dns
-    chapters/cabling_hardware
-    chapters/filesharing
-    chapters/freewifi
-    chapters/highAvailability
-    chapters/laptop
-    chapters/loadbalancing
-    chapters/mail-handling
-    chapters/virtualbox
-
-    chapters/usbdisk
-    chapters/UIDesign
-    chapters/ajax
-    chapters/bootstrap_index
-    chapters/building_bootstrap
-    chapters/coloursfortheweb
-    chapters/lessrest
-    chapters/corefile_debugging
-    chapters/futuretech
-    chapters/bothPythons
-    chapters/emacs
-    chapters/nginx
-    chapters/gh-pages
-    chapters/nonblockwsgi
-    chapters/wsgi_simple_app
-    chapters/wsgi_test
-    chapters/wifi
-    chapters/ssl-tls
-    chapters/workstation-install
-    chapters/workstation
-    chapters/webdev
-    chapters/webtest
-    chapters/well-behaved-services
-    chapters/using_github__ssh
-    chapters/podcast
-    chapters/postgres-cheatsheet
-    chapters/pxeboot
-    chapters/python_warts
-    chapters/routes
-    chapters/rssso
-    chapters/samba
-    chapters/securityoverview
-    chapters/sed_sort
-    chapters/seo-case-study
-    chapters/Managing time in docker containers </chapters/time_in_docker>
-
-
-Out of date already
-===================
-
-chapters/virtualisation
-chapters/virtualbox`
-chapters/usbdisk`
-
-
-https://en.wikipedia.org/wiki/Fractal_tree_index
 
 
 .. rubric:: Footnotes

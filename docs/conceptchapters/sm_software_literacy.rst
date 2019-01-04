@@ -238,8 +238,10 @@ chapter on BigAndSmallData, but *trusting* data is a key transaction cost.
 
 Data that is generated from inside the company is implicitly trusted
 (even perhaps if it should not - see later points on fake news and
-fake project management), but data from outside the company needs filtering,
-transforming etc.  However the impact of external *ledgers* (with the Blockchain as the poster boy ledger) will change what can be trusted.
+fake project management), but data from outside the company needs
+filtering, transforming etc.  However the impact of external *ledgers*
+(with the Blockchain as the poster boy ledger) will change what can be
+trusted.
 
 SImilarly encryption technologies, and zero-knowledge encryption
 especially, will start to impact on where data can be stored and
@@ -258,21 +260,24 @@ timesheets and payrolls of employees is not only sesnitive but
 competitively useful, but hardly any company does this inhouse
 anymore.)
 
-Enterprise Meta Data management will be, (is), a thing.  Not only should
-the data you have in a stream be labelled, but it should be clear its pedigree
-and have owners ats high level who guarantee its integrity.  (see chapter on data)
+Enterprise Meta Data management will be, (is), a thing.  Not only
+should the data you have in a stream be labelled, but it should be
+clear its pedigree and have owners ats high level who guarantee its
+integrity.  (see chapter on data)
 
 The *serverless* software model has some compelling financial and
 flexibility arguments.
 
-As data, and more importantly meta-data is managed at a first class level in companies
-we shall see a huge shift in what can be offloaded, outsourced etc.
+As data, and more importantly meta-data is managed at a first class
+level in companies we shall see a huge shift in what can be offloaded,
+outsourced etc.
 
 Software applied to Data
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-There is a truism in software engineering - its better to have few simple data structures
-and complex operations on them, then many complex data structures and few operations.
+There is a truism in software engineering - its better to have few
+simple data structures and complex operations on them, then many
+complex data structures and few operations.
 
 .. pull-quote::
 
