@@ -71,12 +71,14 @@ predictions about what they will and won't be.
 And so, as the Meetup wanders back to the bar slightly shocked, we
 wander back to our theme.
 
-It is worth noting that about 50,000 years before Gutenberg, humans invented another world changing technology - spoken language.  It became possible to communicate abstract ideas. Possibly one minor gene chnage enabled tot 
-Every thing in civilisation was spread via language
+It is worth noting that about 50,000 years before Gutenberg, humans
+invented another world changing technology - spoken language.  It
+became possible to communicate abstract ideas. Possibly one minor gene
+chnage enabled tot Every thing in civilisation was spread via language
 
-To look at it another way - for 50,000 years we coded up one single release of a single parser / interpreter - nowadays we have many to aim for and so are building a new .. language?
-
-
+To look at it another way - for 50,000 years we coded up one single
+release of a single parser / interpreter - nowadays we have many to
+aim for and so are building a new .. language?
 
 
 The software literate company, and the programmable company
@@ -203,10 +205,9 @@ people with robots.  Years ago as a student I worked as a Warehouse
 Picker, ripping a performated sheet off a printer, walking up and down
 aisles filling crates and loading crates onto lorries to be shipped
 out.  If the Software told me to load 6 bottles of Johnny Walker,
-thats what I did.  I may have been slow and surly but I was entirely
-programmable.
+thats what I did.  I may have been slow, surly and occassioanly hungover, but I was entirely programmable.  Think of me as a student Marvin the Paranoid Android, with a similar pain in my diodes down the left side
 
-I expect warehouse robots have replaced my erstwhile collegues, but
+I expect warehouse robots *have* now replaced my erstwhile collegues, but
 they are no more programmable than we were. But the marketing
 department for the giant Distillery firm had employees to run their
 recruitment drives, had employees to complete payroll, had employees
@@ -348,6 +349,7 @@ controlling mind, that decides which changes are good or bad.
 And this last is the essence of Uber, AirBnB, facebook and google -
 how they have affected our world and how regulations are trying to
 steer that affect.
+
 
 
 
