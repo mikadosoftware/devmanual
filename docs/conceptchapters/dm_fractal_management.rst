@@ -1,5 +1,6 @@
 Fractal Management
 ==================
+
 TBD
 
 
@@ -10,3 +11,5 @@ Many intelligences model of an organisation / country / culture
 impact on fake news etc, consensus
 
 https://www.ribbonfarm.com/2009/10/07/the-gervais-principle-or-the-office-according-to-the-office/
+
+Old hierarchies, the failure of management etc
