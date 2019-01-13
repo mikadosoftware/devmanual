@@ -1764,3 +1764,15 @@ A point about Software Literacy
 - data driven business
 the more (transactional) data that is generated the more likely a "moneyball" approach will lead to business analytics that allow programmable company to have real effect
 
+
+Software Socialism
+We live in very young democracies, and fake news - the "two faced" ability to say one thing to one person and another to a second person at scale is one of our biggest threats
+
+But we invented socialism because society needed to find new rules
+
+we need a new socialism 
+
+Integrity in message
+Having something to say 
+
+(critique of American ciewsnof socaulism)
