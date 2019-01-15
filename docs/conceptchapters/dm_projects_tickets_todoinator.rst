@@ -58,6 +58,9 @@ kind of hoping everything will work out all right.
 
 Whcih brings us to project management and risk management
 
+https://github.com/risk-first/website/wiki/Risk-Landscape
+(review)
+
 Which brings us to Backlogs and True State of project
 
 WHich brings us to tests, and velocity.

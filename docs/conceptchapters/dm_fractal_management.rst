@@ -13,3 +13,7 @@ impact on fake news etc, consensus
 https://www.ribbonfarm.com/2009/10/07/the-gervais-principle-or-the-office-according-to-the-office/
 
 Old hierarchies, the failure of management etc
+
+
+developer hegemony
+https://news.ycombinator.com/edit?id=18840640

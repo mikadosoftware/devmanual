@@ -136,6 +136,10 @@ This difference explains how the same policy measure can increase the stability 
 
 In other words, the same fake news techniques that benefit autocracies by making everyone unsure about political alternatives undermine democracies by making people question the common political systems that bind their society.
 
+
+Fake news: being able to "win the narrative" in face of evidence - at scale, tailored to individual people at scale - usually as in Russia a negative de-engagement but if voting opportunity exists as in brexit it's a positive act (cf dominic cummings )
+
+
 This framework not only helps us understand how different political systems are vulnerable and how they can be attacked, but also how to bolster security in democracies. First, we need to better defend the common political knowledge that democracies need to function. That is, we need to bolster public confidence in the institutions and systems that maintain a democracy. Second, we need to make it harder for outside political groups to cooperate with inside political groups and organize disinformation attacks, through measures like transparency in political funding and spending. And finally, we need to treat attacks on common political knowledge by insiders as being just as threatening as the same attacks by foreigners.
 
 There's a lot more in the paper.

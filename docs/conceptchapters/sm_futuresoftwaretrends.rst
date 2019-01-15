@@ -101,6 +101,13 @@ Conclusion
 Hype and the Next Big Thing are always around us, and spotting the difference between real faultlines and over-hyped faultlines is a difficulty, but one we must all learn.  The business world (and real world too) do not change that fast, the signs are all around if we care to look.  Like someone said, 'the future is already here, just not evenly distributed yet.'
 
 
+2019 wish lists
+---------------
+
+https://alexgaynor.net/2019/jan/06/security-wish-list-2019/
+
+https://noncombatant.org/2019/01/06/state-of-security-2019/
+
 
 
 

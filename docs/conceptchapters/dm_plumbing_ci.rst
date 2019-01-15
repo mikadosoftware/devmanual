@@ -804,6 +804,25 @@ This is the articles linked above.
 Google Plumbing pdf
 https://arxiv.org/ftp/arxiv/papers/1702/1702.01715.pdf#page10
 
+Incident response
+-----------------
+https://response.pagerduty.com/resources/anti_patterns/
+
+SEO and funnels
+---------------
+https://www.wordstream.com/quality-score
+https://www.indiehackers.com/@AntonElfimov/we-wasted-50k-on-google-ads-so-you-don-t-have-to-af688095de
+
+Important concepts:
+Sales funnel - 
+Awareness ladder - you need to attract people to the site with keywords - either organic search keywords or paid for keywords - but their keywords "betray" how aware of the problem space you are working in - "log all the time all my team spends automatically" to "punchclock " - PR / blog is very good at the bottom of the awareness ladder and targeted keywords at the top
+- irrespective of the funnel
+
+
+
+
+
+
 
 Out of date already
 ===================
