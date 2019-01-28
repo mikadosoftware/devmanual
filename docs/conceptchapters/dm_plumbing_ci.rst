@@ -80,6 +80,12 @@ simple easy and the hard doable.  WIthout it, you are in trouble.
 - Runbooks and monitoring
 
 
+RabbitMQ
+- erlang
+- erlang
+- friendly
+
+
 Plumbing
 -----------------
 
@@ -362,6 +368,15 @@ AWS and old school
 - :doc:`chapters/loadbalancing`
 - :doc:`chapters/mail-handling`
 
+
+Logging
+-------
+
+How to log 
+Capturing metrics not logs
+Logging as part of governance and security
+Logging as governance - everyone uses logging to same centralised monitored logging
+Monitor for logging governance - ie Confiedntial / personal data vs proprietary data 
 
   
 UI for idiots
@@ -819,7 +834,10 @@ Awareness ladder - you need to attract people to the site with keywords - either
 - irrespective of the funnel
 
 
+AWS Virtual Procate cloud
 
+https://grahamlyons.com/article/everything-you-need-to-know-about-networking-on-aws
+https://news.ycombinator.com/item?id=18925350
 
 
 

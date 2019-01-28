@@ -860,6 +860,11 @@ the defintion of a company) have not changed.  We need to go further
 in changing the structure of a company.
 
 
+Tim Cook Manifesto
+http://time.com/collection/davos-2019/5502591/tim-cook-data-privacy/
+
+It's not the right manifesto - but it at least has a heavy hitter and is an indication of direction
+
 
 A New Hope
 ==========

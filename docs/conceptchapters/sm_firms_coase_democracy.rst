@@ -193,3 +193,24 @@ https://diogomonica.com/2018/10/07/a-pirates-take-on-strategy-vs-tactics/
 
 battles are changing the programming of the programmable company - small intense battles.  Strategic implementation is then the day yo day 
 
+
+from schneier newsletter
+Fraudulent Tactics on Amazon Marketplace
+
+[2018.12.20] Fascinating article about the many ways Amazon Marketplace sellers sabotage each other and defraud customers. The opening example: framing a seller for false advertising by buying fake five-star reviews for their products.
+
+Defacement: Sellers armed with the accounts of Amazon distributors (sometimes legitimately, sometimes through the black market) can make all manner of changes to a rival's listings, from changing images to altering text to reclassifying a product into an irrelevant category, like "sex toys."
+
+Phony fires: Sellers will buy their rival's product, light it on fire, and post a picture to the reviews, claiming it exploded. Amazon is quick to suspend sellers for safety claims.
+
+[...]
+
+Over the following days, Harris came to realize that someone had been targeting him for almost a year, preparing an intricate trap. While he had trademarked his watch and registered his brand, Dead End Survival, with Amazon, Harris hadn't trademarked the name of his Amazon seller account, SharpSurvival. So the interloper did just that, submitting to the patent office as evidence that he owned the goods a photo taken from Harris' Amazon listings, including one of Harris' own hands lighting a fire using the clasp of his survival watch. The hijacker then took that trademark to Amazon and registered it, giving him the power to kick Harris off his own listings and commandeer his name.
+
+[...]
+
+There are more subtle methods of sabotage as well. Sellers will sometimes buy Google ads for their competitors for unrelated products -- say, a dog food ad linking to a shampoo listing -- so that Amazon's algorithm sees the rate of clicks converting to sales drop and automatically demotes their product.
+
+What's also interesting is how Amazon is basically its own government -- with its own rules that its suppliers have no choice but to follow. And, of course, increasingly there is no option but to sell your stuff on Amazon.
+
+
