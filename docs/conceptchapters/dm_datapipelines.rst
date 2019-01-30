@@ -35,3 +35,8 @@ Python simple canvas applications
 http://fabiensanglard.net/doom_fire_psx/
 http://agilerepose.weebly.com/water-ripple.html
 
+
+Data Pipeline stack
+-------------------
+
+https://medium.com/gyroscopesoftware/a-reference-stack-for-modern-data-science-4bd9fddcdc6b
