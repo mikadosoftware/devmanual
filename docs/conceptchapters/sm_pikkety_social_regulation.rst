@@ -30,3 +30,15 @@ Now monitor that, looking for common metrics, maybe AI patterns looking for high
 
 just look at use of text signals in depression (use of I)
 
+
+
+Great Hollowing Out
+-------------------
+
+https://itnext.io/the-cloud-skills-shortage-and-the-unemployed-army-of-the-certified-bd405784cef1
+
+Sign of maturity in IT space
+Massive job loss and relocation 
+- devops / CI / serverless
+
+serverless - where scalability design meets the developer 
