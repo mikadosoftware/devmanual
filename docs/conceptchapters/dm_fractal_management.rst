@@ -40,5 +40,12 @@ Only front end web facing businesses are going to have that hockey stick - and f
 i may be being overly cynical in that lat one. but if your business model scales to the web then every part of your business will need to do this same thing.
 
 
+.. quote::
+https://news.ycombinator.com/reply?id=19066087&goto=item%3Fid%3D19062042%2319066087
+"""Legacy apps asummes a certain degree of reliability from the underlaying infrastructure. This assumption falls flat on its face in the cloud. Netflix wouldn't have needed to develop Chaos Monkey if this wasn't the case.
+Secondly leap to cloud native never happens because no one wants to take the pain once it works even barely. Any issues can be pushed onto Infrastructure team. It's pure and simple risk avoidance."""
+
+
+
 
 

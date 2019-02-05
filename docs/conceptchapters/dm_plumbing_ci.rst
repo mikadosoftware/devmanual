@@ -851,3 +851,14 @@ chapters/usbdisk`
 
 
 https://en.wikipedia.org/wiki/Fractal_tree_index
+
+Amazon AWS examples / Vendor lock-in
+=====================================
+
+I have migrated all of the code here "to the cloud".  This tries to include avoiding the lift and shift paradigm and using the cloud providers own proprietary versions of oss services - see discussion on google paas vs aws iaas
+
+I am even going so far as to try serverless 
+
+but this is because there is value in cloud native approaches vs cloud lift and shift - and more value (or less cost) in serverless
+
+but lock-in is real - but is a trade off if the cost of lockin 
