@@ -15,6 +15,21 @@ power outlets.  These things are beasts, and software at even mid size
 enterprise scale is a beast too.  Hence my focus on *governance* as
 well.
 
+Why does this matter - why try to be full stack? why not specialise?
+
+There are a few, not many, but a few people in companies like Boeing who understand the *entire* airframe - from bernoulli's principle over the wings to the feedback pressure on the pilots control stick - they can reason through the trade offs and keep it all in their heads
+
+A full stack developer is not just a cheaper replacement for hiring 3 specialised ones, (certainly not if I am invoicing you) but is someone who can rationalise the trade offs across the whole stack.
+
+Similarly for a business you need working models for all the interactions - sales, marketing manufacturing etc. And as those models are surfaced and captured in concrete code they can be shared and manipulated - the more the trade offs do not just appear on one person head but are explicitly modelled and tested the closer we get to a programmable company.
+
+So having a full stack is one thing - being able to recreate that stack in a wind tunnel environment and see it respond to new changes is vital for understanding the trade offs across the stack.
+
+
+As an example the trade offs start to matter at those "order of magnitude" barriers - going from 10x lines of code to 100x, or 10x servers to 100x servers or people.
+
+
+
 Technical Architecture
 ----------------------
 
