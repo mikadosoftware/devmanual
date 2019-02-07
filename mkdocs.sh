@@ -1,6 +1,10 @@
 #. /home/pbrian/venvs/devmanual/bin/activate
+
+echo Run PreProcess
 #prepare by putting it all in one big file
 python preprocess.py docs/index.pre
+
+echo Make Sphinx Docs
 cd docs/
 make clean
 make html
@@ -10,6 +14,7 @@ make html
 #I expect to run this in a docker instacne on my laptop
 #so i need to run it on here like a server
 
+echo Run post Process (build marketing site)
 #build it as a book marketring site
 cd ../
 python postprocess.py
