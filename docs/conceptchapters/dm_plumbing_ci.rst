@@ -15,6 +15,21 @@ power outlets.  These things are beasts, and software at even mid size
 enterprise scale is a beast too.  Hence my focus on *governance* as
 well.
 
+Why does this matter - why try to be full stack? why not specialise?
+
+There are a few, not many, but a few people in companies like Boeing who understand the *entire* airframe - from bernoulli's principle over the wings to the feedback pressure on the pilots control stick - they can reason through the trade offs and keep it all in their heads
+
+A full stack developer is not just a cheaper replacement for hiring 3 specialised ones, (certainly not if I am invoicing you) but is someone who can rationalise the trade offs across the whole stack.
+
+Similarly for a business you need working models for all the interactions - sales, marketing manufacturing etc. And as those models are surfaced and captured in concrete code they can be shared and manipulated - the more the trade offs do not just appear on one person head but are explicitly modelled and tested the closer we get to a programmable company.
+
+So having a full stack is one thing - being able to recreate that stack in a wind tunnel environment and see it respond to new changes is vital for understanding the trade offs across the stack.
+
+
+As an example the trade offs start to matter at those "order of magnitude" barriers - going from 10x lines of code to 100x, or 10x servers to 100x servers or people.
+
+
+
 Technical Architecture
 ----------------------
 
@@ -78,6 +93,12 @@ simple easy and the hard doable.  WIthout it, you are in trouble.
   - :doc:`chapters/network_monitor`
 
 - Runbooks and monitoring
+
+
+RabbitMQ
+- erlang
+- erlang
+- friendly
 
 
 Plumbing
@@ -362,6 +383,15 @@ AWS and old school
 - :doc:`chapters/loadbalancing`
 - :doc:`chapters/mail-handling`
 
+
+Logging
+-------
+
+How to log 
+Capturing metrics not logs
+Logging as part of governance and security
+Logging as governance - everyone uses logging to same centralised monitored logging
+Monitor for logging governance - ie Confiedntial / personal data vs proprietary data 
 
   
 UI for idiots
@@ -819,7 +849,10 @@ Awareness ladder - you need to attract people to the site with keywords - either
 - irrespective of the funnel
 
 
+AWS Virtual Procate cloud
 
+https://grahamlyons.com/article/everything-you-need-to-know-about-networking-on-aws
+https://news.ycombinator.com/item?id=18925350
 
 
 
@@ -833,3 +866,14 @@ chapters/usbdisk`
 
 
 https://en.wikipedia.org/wiki/Fractal_tree_index
+
+Amazon AWS examples / Vendor lock-in
+=====================================
+
+I have migrated all of the code here "to the cloud".  This tries to include avoiding the lift and shift paradigm and using the cloud providers own proprietary versions of oss services - see discussion on google paas vs aws iaas
+
+I am even going so far as to try serverless 
+
+but this is because there is value in cloud native approaches vs cloud lift and shift - and more value (or less cost) in serverless
+
+but lock-in is real - but is a trade off if the cost of lockin 

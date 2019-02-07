@@ -1,5 +1,41 @@
 Use this chapter as opportunity to interview well known and get clarification 
 
+The landscape - and what you can do
+===================================
+
+It's a dangerous cyber world out there.
+
+The 90s to Heartbleed
+Heartbleed to Huawei
+The future
+
+The 90s to Heartbleed 
+This was a wild west - slowly value was being put online, and so it was being stolen by criminals
+State actors it seems had a whale of a time - the ease of which stack overflow could be exploited 
+
+
+CarderPlanet became focus of card sales online 
+
+Heartbleed
+A shock moment
+Snowden had told us - but to be honest I think it was the SSL vulnerability that brought home how little we had been thinking about our dependencies
+
+The future 
+Recovering from part mistakes and building secure future - costs will rise, socialism is our best hope 
+
+- two factor auth and passwords
+- open source is still a tragedy of commons and still humanity's best hope. (imagine a world where you could not write down words you chose to - but had to select from authorised or proprietary paragraphs to express yourself)
+
+- socialism - software socialist needs re expressing.  Look at western world today - 
+
+
+The landscape today
+https://krebsonsecurity.com/2013/06/the-value-of-a-hacked-email-account/
+
+
+The legal landscape 
+https://arstechnica.com/tech-policy/2019/01/20-legal-cases-across-20-years-these-are-our-favorites/
+192 countries in UN - yeah ... we might need the lessons in Brexit and EU harmonisation 
 
 Basically we are all f****d
 ============================
@@ -7,6 +43,11 @@ Basically we are all f****d
 When respected security writer Bruce Schneier writes a book titled 
 
 But there is light - slowly larger places are learning to lock it all down https://threader.app/thread/1063423110513418240
+
+
+
+
+
 
 but hospitals mri scanners??
 
@@ -62,3 +103,26 @@ Hashicorp - vault
 
 Config and keyrings
 Use Linux Secret Service as means to pass complete secure set of secrets over to a container - and make them accessible (ie 'summon' like) 
+
+
+Pentesterlab.com
+
+
+Supply chain Security
+---------------------
+We are all hugely depenandt in other peoples code. In many ways this is good - software reuse.
+In others it is terrible 
+
+
+Solutions - standardised eco systems 
+
+RHEL is basically charging for the cost of managing depenandcy chain - it's why Debian Developers have months of mentoring to actually become part of the web of trust
+
+It's why I suspect "kyretsu" of trusted webs of companies using same or similar stacks will arise simply because it's easier than doing it yourself - and frankly this is what the dev manual is trying to kick start
+
+There can be great value in curating, monitoring for malicious actors, fuzzing and supplying curated bugs upstream, and then funnelling development money upstream as well
+
+
+A plan for sustainable Open Source? 
+
+

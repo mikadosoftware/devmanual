@@ -96,6 +96,9 @@ Online dating sites - tracking users
 https://datadating.tacticaltech.org/viz
 
 
+Some security checklists
+https://securitycheckli.st
+
 Conclusion
 ----------
 Hype and the Next Big Thing are always around us, and spotting the difference between real faultlines and over-hyped faultlines is a difficulty, but one we must all learn.  The business world (and real world too) do not change that fast, the signs are all around if we care to look.  Like someone said, 'the future is already here, just not evenly distributed yet.'
@@ -195,4 +198,17 @@ The second biggest is where do I put my data
 
 https://github.com/awslabs/aws-serverless-auth-reference-app/issues/5
 
+
+Hardware and software
+----------------------
+
+Trust is biggest issue
+
+then using hardware and software - there is more value in both and much rarer
+
+see Software defines radio - https://adamgannon.com/2014/11/21/decoding-your-keyless-entry-remote-with-software-defined-radio/
+
+https://www.rtl-sdr.com/tag/car-key/
+
+http://spench.net
 
