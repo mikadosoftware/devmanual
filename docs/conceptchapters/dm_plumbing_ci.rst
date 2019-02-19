@@ -877,3 +877,8 @@ I am even going so far as to try serverless
 but this is because there is value in cloud native approaches vs cloud lift and shift - and more value (or less cost) in serverless
 
 but lock-in is real - but is a trade off if the cost of lockin 
+
+User experience and page loading
+--------------------------------
+
+https://www.johnwdefeo.com/articles/seo-for-engineers

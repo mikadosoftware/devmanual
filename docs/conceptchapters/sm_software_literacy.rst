@@ -351,6 +351,13 @@ how they have affected our world and how regulations are trying to
 steer that affect.
 
 
+It is subtle in some cases this regulatory arbitrage. For example the nightmare videos on YouTube have two issues - 1. as youtube avoids being a publisher it is not responsible for content - but if it was responsible it would have to find ways to curate the content.
+
+2. yes it may not be possible to automatically review the content, the copyright laws may not be enforceable at that scale (dubious) - but frankly that's just a failure of business model not a technical hurdle.
+
+Nothing stops someone putting their own videos on line - youtube simply aggregates and collects rent
+
+
 
 
 
