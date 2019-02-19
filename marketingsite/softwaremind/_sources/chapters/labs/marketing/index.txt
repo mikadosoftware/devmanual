@@ -1,9 +1,0 @@
-=========
-marketing
-=========
-
-.. toctree::
- 
- 
-
-    marketing

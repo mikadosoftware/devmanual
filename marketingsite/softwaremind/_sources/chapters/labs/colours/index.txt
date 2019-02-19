@@ -1,9 +1,0 @@
-=======
-colours
-=======
-
-.. toctree::
- 
-
-    coloursfortheweb
-
