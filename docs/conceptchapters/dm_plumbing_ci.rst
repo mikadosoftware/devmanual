@@ -1,6 +1,12 @@
 Plumbing and CI
 ===============
 
+build a deploy for (cms) using
+spinnaker docker etc 
+
+Front end client trade offs
+https://journal.plausible.io/you-probably-dont-need-a-single-page-app
+
 The Metaphor of Building Software
 =================================
 

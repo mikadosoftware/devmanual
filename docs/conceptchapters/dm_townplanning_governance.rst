@@ -125,3 +125,15 @@ Capturing co-created value
 - but cryto can easily transform this - if funding comes from government then can apply a form of copyleft
 
 Professor Mariana Mazzucato
+
+
+Do I need a procedure to deal with governance matters?
+
+Yes - look at this from CISA 
+https://cyber.dhs.gov/ed/19-01/#required-actions ::
+
+Within 10 business days, for all .gov or other agency-managed domains, audit public DNS records on all authoritative and secondary DNS servers to verify they 
+
+suddenly you have to do something - and record it and it needs to be done by a deadline and you need to not look like it's your first rodeo
+
+

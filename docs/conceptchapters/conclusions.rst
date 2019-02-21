@@ -180,3 +180,35 @@ But open gov is almost a democractod imperative
 I push Oss4gov but I need it funded by right wing maniacs
 
 
+Steven Soderburgh shots his films on iphones - he does camera and editing "two more conversations Indont need to have"
+
+It's this speed of decision making and reduction in friction that programmable company aims to produce - but it runs up against bad decision making of start ups in ethics feee regulation free environment 
+
+OSS funded by EU
+https://www.zdnet.com/article/eu-to-fund-bug-bounty-programs-for-14-open-source-projects-starting-january-2019/
+
+Facebook and radio lab podcast
+expand a lot
+Centralising has lead to trying to moderate at billion people scale - this leads to facebook moderation currently at 16,000 people looking at a million flagged items a day
+
+the trade off between better (western cultural) norms (!) and raising the floor and being able to deal with granularity 
+
+It most reminds me of the rowntrees model village - where they tried to make perfect community
+Which is nice but it did not work for everyone and it chafed a lot and eventually people moved out because they wanted different freedoms - 
+
+walled garden is nice but if you cannot build on the garden and create your own house and community then ... you will eventually outgrow it
+
+Problems with PageRank
+----------------------
+
+Facebook and youtube etc are aggregators - and a problem with Pagerank leads to a global feedback loop - that google (the essential search engine) assumes that a *domain* that has high quality in one location has high quality across the board.
+
+So facebook.com/newyorktimes is seen as good content by google.  And then facebook.com/grotmoron gets that same level of google juice.
+
+This means that if you want your web page to be found by google it is waaaay better to put it on facebook than on your own domain
+
+this leads to positive feedback loop for aggregators and a negative one for the domain based internet (which is how it is designed)
+
+but this is a flawed google (search engine) view - in other words facebook is assumed to be guaranteeing quality of all its content - which effectively makes it a publisher (the big radiolab discussion on moderation at scale)
+
+so some form of regulation for search engine seems sensible - ie something in robots.txt that tells you the site structure and site governance (ie this bit we publish, this bit is platform

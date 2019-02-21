@@ -31,6 +31,24 @@ Now monitor that, looking for common metrics, maybe AI patterns looking for high
 just look at use of text signals in depression (use of I)
 
 
+Other reasons why MOOP
+- Twitter and Facebook self monitoring (mword at bullion scale - see facebook CISO guy) is really hard and likely to be counter productive - we have taken every pub conversation, every snarled word, and made them searchable.
+
+It is not pretty.  The world that used to be published is only "the best choicest curated" version of the world out there.
+
+Yes by allowing global distribution it has given such ugly words more power 
+
+But we cannot deny they exist - and if we want to fix them we need to deal with the words not suppress them (well there is a degree is suppression - you cannot walk up to someone and say "go home" because that's crap.)
+
+
+
+Whatsapp / E2E privacy is good.  Just as video camera not cause vile people to film child abuse, they just filmed what evil crimes they were committing anyway
+
+It's up to our society to find ways to discover such abuse (hands in photos etc)
+
+
+
+
 
 Great Hollowing Out
 -------------------
