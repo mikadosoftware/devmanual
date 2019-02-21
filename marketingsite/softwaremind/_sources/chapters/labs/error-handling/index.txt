@@ -1,9 +1,0 @@
-==============
-error-handling
-==============
-
-.. toctree::
- 
-
-    error
-
