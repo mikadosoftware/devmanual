@@ -212,3 +212,15 @@ https://www.rtl-sdr.com/tag/car-key/
 
 http://spench.net
 
+
+The second wave 
+We are now seeing less of the "applied to everyone" startups looking for recruits and many more of the "specific niche that is ripe for software to eat it" start ups.
+
+insurance for gig econmony (insurance by the minute)  legal NLP
+
+
+Add in "the rental economy" (or the subscription economy) where the whole idea is to gain market domaince and then exploit prices sounds bad for us all - and we don't think regulation  is going to keep up (Europe) or be allowed to think about keeping up (rest of world) - see schneier on lawyers like us - https://venturebeat.com/2019/03/06/bruce-schneier-its-time-for-technologists-to-become-lawmakers/
+
+Add on to this the ways we are trying to regulate the new tech landscape - GDPR, elizabeth warrens proposal to split up companies into platforms and exploiters, these are all generally good (software socialist remember) where good means having a floor but no ceiling to society.
+
+https://medium.com/@teamwarren/heres-how-we-can-break-up-big-tech-9ad9e0da324c?stream=business

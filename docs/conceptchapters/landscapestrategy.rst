@@ -37,3 +37,18 @@ FOr example, in configuration and co-ordination, we start with just a init file 
 telling us what config data exists for our systems.  This is *fine* but it really quickly hits limits.
 SOmething like APache Zookeeper is the next logical step, but that is waay more complicated to set up.
 So we start witht he simplest possible, and point to where to take the next steps.
+m
+
+
+Also for sales marketing 
+
+ICE Cube
+Impact
+Confidence
+Ease
+
+Gives us priorities for sales and marketing efforts 
+
+
+This gives us some ideas of hot tomimplement to strategic landscape we see
+

@@ -59,7 +59,7 @@ Anyway, you, like the poor people wanting to get to the bar, can see
 where I am taking this. The ability to marshall knowledge, to code and
 compile and compute, the natural inclination to arrange the world so
 it can be iterated over, the ability to turn a business from a
-medieval scriptorium into an operating system is software literacy.
+medieval scriptorium into an automated system is software literacy.
 
 The final shape of a software literate company is probably unguessable
 to us, in the same way that an airports departures board was
@@ -71,14 +71,16 @@ predictions about what they will and won't be.
 And so, as the Meetup wanders back to the bar slightly shocked, we
 wander back to our theme.
 
+.. sidebar:: 
+
 It is worth noting that about 50,000 years before Gutenberg, humans
-invented another world changing technology - spoken language.  It
-became possible to communicate abstract ideas. Possibly one minor gene
-chnage enabled tot Every thing in civilisation was spread via language
+invented another world changing technology - a spoken language.  It
+became possible to communicate abstract ideas. Beyond "danger" we could achieve "danger from tiger tomorrow" - and our brains evolved in step with our language to cope.  
 
 To look at it another way - for 50,000 years we coded up one single
-release of a single parser / interpreter - nowadays we have many to
-aim for and so are building a new .. language?
+release of a single parser / interpreter - the human brain.  The written word became a hard drive to store code on, and Gutenberg invented distributed networking.
+
+It's 
 
 
 The software literate company, and the programmable company
