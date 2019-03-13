@@ -224,3 +224,6 @@ Add in "the rental economy" (or the subscription economy) where the whole idea i
 Add on to this the ways we are trying to regulate the new tech landscape - GDPR, elizabeth warrens proposal to split up companies into platforms and exploiters, these are all generally good (software socialist remember) where good means having a floor but no ceiling to society.
 
 https://medium.com/@teamwarren/heres-how-we-can-break-up-big-tech-9ad9e0da324c?stream=business
+
+The silver lining
+https://news.ycombinator.com/item?id=19364883

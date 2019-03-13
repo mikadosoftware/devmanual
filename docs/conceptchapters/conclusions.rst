@@ -212,3 +212,19 @@ this leads to positive feedback loop for aggregators and a negative one for the 
 but this is a flawed google (search engine) view - in other words facebook is assumed to be guaranteeing quality of all its content - which effectively makes it a publisher (the big radiolab discussion on moderation at scale)
 
 so some form of regulation for search engine seems sensible - ie something in robots.txt that tells you the site structure and site governance (ie this bit we publish, this bit is platform
+
+
+Software Socialist
+------------------
+
+We live in utopian socialist society
+VC funding is just ensuring nice middle class life not threatens when trying to build company
+
+But point of (most) companies is not wealth creation (!) - Facebook just took ad revenue from Fifth Avenue
+Amazon just moves sales from Walmart to amazon
+
+But the organisational changes needed to achieve this are profound and deep - building amazon was an amazing acheieneltnt - and it is in the organisational format that government follows - government invests stem for long term wealth creation (new forms tech) and business takes that invention and innovates new product forms and new organisational forms to distribute the created wealth (or rather wealth only creates when it is distributed)
+
+As such my predilection got expenreinifn with governance forms in organisations - why Debian is a bigger idea than its distbuttion
+
+
