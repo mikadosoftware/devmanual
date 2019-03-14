@@ -228,3 +228,9 @@ But the organisational changes needed to achieve this are profound and deep - bu
 As such my predilection got expenreinifn with governance forms in organisations - why Debian is a bigger idea than its distbuttion
 
 
+social media - it turns out that social media was actually public publishing - (Zuckerbetgs pivot to person to person messaging) - and that newspapers were curators of publishing - journalism was about deciding what gets putinot oublic sphere.  
+
+democratic journalism is important - social media was a way of allowing people to publish something important  (mexico drug wars) or crap (influencers) - somehow we need good ways to find facts and raise them to consciousness - a backlog of issues and a store of facts
+
+
+
