@@ -232,5 +232,22 @@ social media - it turns out that social media was actually public publishing - (
 
 democratic journalism is important - social media was a way of allowing people to publish something important  (mexico drug wars) or crap (influencers) - somehow we need good ways to find facts and raise them to consciousness - a backlog of issues and a store of facts
 
+Science funding and support
+----------------------------
+
+Are we seeing drop off in support for science and technology? Well, poets don't tend to compose eulogies for scientists buried in st. paul's very much like Newton? (maybe hawking?)
+
+We are seeing explanation exponent change
+
+what makes rocket ships go up - funding makes rockets go up - no bucks no buck rogers.
+
+Funding comes from support - which comes from understanding why the next step counts - this is education
+
+I am doing important experiments for kids and Inam 500 years behind !!
+
+education funding comes first 
+
+I am a statistical socialist - i believe that every human being born in the planet is born within a narrow normal distribution for all of their attributes - intelligence, height, weight, good looks and sexual size (!) - and where their life outcomes are greater than the range of their distribution i believe those outcomes are influenced more by structural and systemic factors, and then by their character 
+
 
 
