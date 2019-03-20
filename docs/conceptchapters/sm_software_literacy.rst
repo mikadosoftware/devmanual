@@ -143,7 +143,19 @@ has used software in a markedly different manner.
 
 One of them has become more *software literate*.
 
+Software Literacy - The calculus of literacy
+-----------------------------------
 
+Calculus is the mathematics of chnage.
+Computers model functions and are exceptionally useful for working through changing things
+
+We live in a changing world - chnage of business size or costs.  All of which can be described by software (more effectively i think and more widely than "real" mathematics)
+
+So as we walk though the world that is being changed by software t is software that will enable us to describe those changes - and to be able to manage those changes.
+
+Software literacy will become part of the core fabric because software is core to why the world is changing - because it enables us to describe predict chnage - the models in our heads need to be externalised to be more shared, validated and reviewed
+
+(political models especially)
 Why are companies big or small?
 -------------------------------
 

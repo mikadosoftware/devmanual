@@ -214,3 +214,15 @@ There are more subtle methods of sabotage as well. Sellers will sometimes buy Go
 What's also interesting is how Amazon is basically its own government -- with its own rules that its suppliers have no choice but to follow. And, of course, increasingly there is no option but to sell your stuff on Amazon.
 
 
+Roman Legonary theory of organisational management
+-------------------------
+
+Walk, don't run, but walk with big stick
+
+legions walked in threes not very far but always defensible. 
+
+The charge in movies and the slow profession in real life of attacking a castle
+
+Capability theory - don't run, certainly don't sprint, but deliver and grow capability of team
+https://www.systemdynamics.org/assets/conferences/2017/proceed/papers/P1325.pdf
+

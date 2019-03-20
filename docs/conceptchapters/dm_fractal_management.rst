@@ -47,5 +47,14 @@ Secondly leap to cloud native never happens because no one wants to take the pai
 
 
 
+Google SRE
+- seek to cap time on operational work at 50% so they can invent and build capability 
+https://www.usenix.org/system/files/login/articles/login_fall16_08_beyer.pdf
+
+This is part of the automate all the things attitude 
+
+Shipped Email list
+------------------
+Internally publish a shipped email - similar to Stripe - see https://news.ycombinator.com/item?id=19423530
 
 
