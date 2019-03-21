@@ -247,7 +247,22 @@ I am doing important experiments for kids and Inam 500 years behind !!
 
 education funding comes first 
 
+Statistical socialist
+---------------------
 I am a statistical socialist - i believe that every human being born in the planet is born within a narrow normal distribution for all of their attributes - intelligence, height, weight, good looks and sexual size (!) - and where their life outcomes are greater than the range of their distribution i believe those outcomes are influenced more by structural and systemic factors, and then by their character 
+
+
+Rise (return) of curation
+--------------------------
+Death of the newsfeed 
+https://www.ben-evans.com/benedictevans/2018/4/2/the-death-of-the-newsfeed
+Newsfeed is going as facebook signals peer to peer focus (snapshot stories taking their toll)
+But this implies rise again of journalism - who do i follow which leads to newspapers with opinions - but at least they are open accountable opinions (cf murdoch scandals) 
+
+Position on platform vs search vs responsibility 
+-------------------------
+https://news.ycombinator.com/item?id=19446511
+https://news.ycombinator.com/item?id=19406733
 
 
 
