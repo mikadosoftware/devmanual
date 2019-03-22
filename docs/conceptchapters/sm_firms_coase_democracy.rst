@@ -226,3 +226,7 @@ The charge in movies and the slow profession in real life of attacking a castle
 Capability theory - don't run, certainly don't sprint, but deliver and grow capability of team
 https://www.systemdynamics.org/assets/conferences/2017/proceed/papers/P1325.pdf
 
+software governance and social governance 
+-----------------------
+As facebook et al build tools for "governance" (combat bullying, view who views me we see those gov forms adapt to society 
+
