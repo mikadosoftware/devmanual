@@ -214,6 +214,11 @@ There are more subtle methods of sabotage as well. Sellers will sometimes buy Go
 What's also interesting is how Amazon is basically its own government -- with its own rules that its suppliers have no choice but to follow. And, of course, increasingly there is no option but to sell your stuff on Amazon.
 
 
+The long grass of mediocrity theory of companies
+----------------------------
+A programmable company needs to exist because what you do not automate is going to revert to the mean - what you automate is a upwards ratchet
+
+
 Roman Legonary theory of organisational management
 -------------------------
 

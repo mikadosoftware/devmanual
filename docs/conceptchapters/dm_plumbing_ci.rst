@@ -399,6 +399,14 @@ Logging as part of governance and security
 Logging as governance - everyone uses logging to same centralised monitored logging
 Monitor for logging governance - ie Confiedntial / personal data vs proprietary data 
 
+
+Don't use exceptions as flow control
+Don't bury exceptions in logs
+
+The right way to do this is to write log.error(msg) and then have logs grepped for ERROR flag and then log that out to graphite so it is clear what errrors exist
+
+Place that in the project / repo weekly operational report
+
   
 UI for idiots
 =============
@@ -888,3 +896,17 @@ User experience and page loading
 --------------------------------
 
 https://www.johnwdefeo.com/articles/seo-for-engineers
+
+
+Distributed Batch Programming
+------------------------------
+
+EC2 docker and mesos
+http://mesos.apache.org
+Example app is a friday night batch that produces the TPS report (!)
+
+Just run something ok !
+
+Then micro services deployed into cloud with kubernetes (different to mesos)
+
+And a data lake ... ??? 

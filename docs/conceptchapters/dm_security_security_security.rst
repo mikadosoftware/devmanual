@@ -126,3 +126,9 @@ There can be great value in curating, monitoring for malicious actors, fuzzing a
 A plan for sustainable Open Source? 
 
 
+Why you need a Purchase Order System
+-----------------
+
+https://www.justice.gov/usao-sdny/press-release/file/950556/download
+
+steal 100M from google and facebook 
