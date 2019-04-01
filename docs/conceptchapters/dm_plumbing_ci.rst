@@ -407,6 +407,29 @@ The right way to do this is to write log.error(msg) and then have logs grepped f
 
 Place that in the project / repo weekly operational report
 
+
+Business Worst Case "Stop Loss"
+-------------------------------
+
+These are the business rules that prevent disaster - that sort of things you would expect a human to say "WTF" about and start calling for help
+
+One thing it is vital to agree with the business is not just what are our SLAs but what are our stop losses - what are the business boundaries that if they are crossed an emergency should be sounded - and what is the emergence safe state to take ?
+
+
+Lessons from KightFrank
+
+- have a common error raising system - that is not email
+
+- Debug / Info / Warn / Error / Critical / StopLoss
+
+- These are measured at the level of integration tests etc
+
+
+- invest in preproduction environments 
+
+- advocate for risk mitigation costs in your industry - cf knight frank and Goldman 
+
+
   
 UI for idiots
 =============
