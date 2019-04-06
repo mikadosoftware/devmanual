@@ -430,6 +430,15 @@ Lessons from KightFrank
 - advocate for risk mitigation costs in your industry - cf knight frank and Goldman 
 
 
+https://www.kitchensoap.com/2013/10/29/counterfactuals-knight-capital/
+
+Don't use counterfactuals for post mortems
+----------------
+
+What they did not do, what they should have done is not the point - the point is "what did they do" and "why did that make sense to them at the time" - we are trying to work out why the organisations model of reality was at odds with reality, and how to better align the two 
+
+That is basically post mittens
+
   
 UI for idiots
 =============
