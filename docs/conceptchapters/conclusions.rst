@@ -264,5 +264,7 @@ Position on platform vs search vs responsibility
 https://news.ycombinator.com/item?id=19446511
 https://news.ycombinator.com/item?id=19406733
 
-
+Brexit
+------
+The big takeaway here is the constraining of executive powers on international scene - Uvettee cooper oliver lwtwin bill - seen in congress refusing to ratify treaties with dubbya - this is greater recognition of gloablisation - not just trade between boundaries but with services and regulation a merging and porous nature of boundaries  - and a search for legislative approval - a search for democratic approval against executive power - truly reflecting the new power balance infra companies 
 

@@ -57,4 +57,14 @@ Shipped Email list
 ------------------
 Internally publish a shipped email - similar to Stripe - see https://news.ycombinator.com/item?id=19423530
 
+The Toyota way still applies
+-----------------------------
+https://en.m.wikipedia.org/wiki/Toyota_Production_System
+
+Slow programming
+Zero bugs methodology
+Automate all the things
+
+It is amazing to see what I slowly have arrived at already being in existence
+
 
