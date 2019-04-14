@@ -232,6 +232,25 @@ social media - it turns out that social media was actually public publishing - (
 
 democratic journalism is important - social media was a way of allowing people to publish something important  (mexico drug wars) or crap (influencers) - somehow we need good ways to find facts and raise them to consciousness - a backlog of issues and a store of facts
 
+
+The new socialism - of the character
+---------------------
+https://news.ycombinator.com/item?id=19661601
+
+Companies will chnage to be more open because the benefits of the MOOP
+
+Look at graduates of today - well adjusted renaissance people with little desire / experience to kill maim.
+
+Was this how we imagined the future in 1800? No - yet we are what changed more than the world - we could not take the 1750 mindset into a car / modern world - it's not a question  of technical skills - it's about character and attitude 
+
+it's basically why putin cannot take his country further - it's the reason the drunk cannot crawl out of the bottle.
+
+It's about choice. 
+
+Keanau would know 
+
+
+
 Science funding and support
 ----------------------------
 
@@ -268,3 +287,6 @@ Brexit
 ------
 The big takeaway here is the constraining of executive powers on international scene - Uvettee cooper oliver lwtwin bill - seen in congress refusing to ratify treaties with dubbya - this is greater recognition of gloablisation - not just trade between boundaries but with services and regulation a merging and porous nature of boundaries  - and a search for legislative approval - a search for democratic approval against executive power - truly reflecting the new power balance infra companies 
 
+SICP for orgs
+-------------
+Structure and Interpretation of Programmabke Companies 
