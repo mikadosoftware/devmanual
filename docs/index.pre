@@ -35,6 +35,17 @@ There are only two rules here
 
 2. the dev manual must be working code - explanations are fine but working code examples is the only useful devmanual - esp if I will be getting pull requests 
 
+The startup OS
+---------------
+Why is it so many startups start finding themselves writing code to do what is not "core competency"
+why is oss not the fibres and muscles of a business ?  why learn one saas after another?
+
+envisage one set of protocols and code that runs almost every business ? can that work? seems likely 
+
+infrastructure as code?? 
+business as code
+programmabke company 
+
 So, lets start with probably the most important idea - that of
 Software Literacy.
 
