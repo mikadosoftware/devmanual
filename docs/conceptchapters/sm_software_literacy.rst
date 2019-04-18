@@ -184,6 +184,15 @@ trend looks to be *smaller*.  But to really take advantage of Coase's
 thoery, a firm needs to be more than automated, it needs to be
 *programmable*.
 
+copernicus principle and democracy 
+-----------------------------------
+see talking politics but if we see end of our short mass participation democracy - what will replace it? remember electronic voting cannot work so the easy answer is wrong
+
+searching for a world where we have different models but models are reviewable. models can be represented in code. and if we tell our agent what we want (nobel prize win) we get optimal outcomes
+
+start to smell a programmable company and programmable society where our wants are explicit and modelled and actions reviewable - and best interests are kept (mid term democracy)  - and moop exists to help us deal with it (see slabscsoe drugs to stop worrying) 
+
+
 
 Just what is a programmable company?
 ------------------------------------
