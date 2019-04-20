@@ -34,7 +34,20 @@ So having a full stack is one thing - being able to recreate that stack in a win
 
 As an example the trade offs start to matter at those "order of magnitude" barriers - going from 10x lines of code to 100x, or 10x servers to 100x servers or people.
 
+Infrastructure matters most
+---------------------------
+culture is infrastructure 
 
+
+Submit Queue and any submit queue
+---------------------------------
+
+http://delivery.acm.org/10.1145/3310000/3303970/a29-ananthanarayanan.pdf
+
+Uber has SubmitQueue to scale queued commits - but you don't need regression analysis in most cases - you just need to build and test and do so automatically with a queue - a mono repo or a distributed set of repos eventually becomes a mono repo at integration stage
+
+Everything is eventually a monorepo
+At integration testing stage everything is a monorepo - so you need a submit queue to manage the process
 
 Technical Architecture
 ----------------------
@@ -60,6 +73,11 @@ With a metaphor of building cities, we can see why the idea of Architecture is
 an attractive one, but it is really at the scale of the biggest software houses
 in the world (Major Banks and financial instituions) that you can see the incredilbe
 value of ... City Planning.  We shall call this Software Governance.
+
+opinionated software
+--------------------
+
+It has strong views on how it should be used in its domain. This is seen everywhere and it makes software easier to use once you understand its philosophy.  So have an  opinion on how your users should donthings - some users will agree wildly others not so much - but at least they know what you stand for - it's marketing as well as a philosophy 
 
 Workstation
 ===========

@@ -67,4 +67,10 @@ Automate all the things
 
 It is amazing to see what I slowly have arrived at already being in existence
 
+Hiring the right way
+--------------------
+
+https://news.ycombinator.com/item?id=19707543
+
+Calibrate your interview process by having a recruiter identify ten great hires and pay them to do your crappy interview questions. if most of them fail think about it
 
