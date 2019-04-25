@@ -283,6 +283,26 @@ Position on platform vs search vs responsibility
 https://news.ycombinator.com/item?id=19446511
 https://news.ycombinator.com/item?id=19406733
 
+AI Auditing
+------------
+
+https://www.ben-evans.com/benedictevans/2019/4/15/notes-on-ai-bias?utm_source=Benedict%27s+newsletter&utm_campaign=80ec9639df-Benedict%27s+Newsletter_COPY_01&utm_medium=email&utm_term=0_4999ca107f-80ec9639df-70375349
+
+It's going to be around picking out sample bias really really well
+
+Seems to me to create multiple models using random selections of same training sets and then see if models come up with similar answers - can build statistical models around that.
+
+find a statistician??? 
+
+Predistribution
+---------------
+
+Roberto Unger - changing the market structure of it is unfair so that redistribution is not always swimming up stream
+
+"A billionaire is an example of market failure" (me)
+
+Progressive politics seems to be engaged in harm reduction for their opponents 
+
 Brexit
 ------
 The big takeaway here is the constraining of executive powers on international scene - Uvettee cooper oliver lwtwin bill - seen in congress refusing to ratify treaties with dubbya - this is greater recognition of gloablisation - not just trade between boundaries but with services and regulation a merging and porous nature of boundaries  - and a search for legislative approval - a search for democratic approval against executive power - truly reflecting the new power balance infra companies 

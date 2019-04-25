@@ -227,3 +227,29 @@ https://medium.com/@teamwarren/heres-how-we-can-break-up-big-tech-9ad9e0da324c?s
 
 The silver lining
 https://news.ycombinator.com/item?id=19364883
+
+Animation and AR VR
+
+https://talkingphysics.wordpress.com/2019/01/08/getting-started-animating-with-manim-and-python-3-7/
+
+There is a trend. look I worry that my kids aren't playing with each other but are stuck on ipads.  but minecraft (trust) - what about AR/CR. What about "let's play sea captains" bbc in real life?? 
+
+
+Software as a machine 
+---------------------
+
+It is just a machine (transistors)
+software as a machine - Paul Mason book - transforms energy into other form energy - so is it organisation as energy ?? better forms of working together - where is the utility? it's in the organisation !!!  
+
+We need ethics in our society - we can see the market as a slow form of AI using price as the optimising metric
+
+As such we can easily see from experience that market does not drive the higher ethical issues - they must be the externally regulated systems
+- and for most people and indeed maoist capuchin monkeys ethics are the same (fairness and grapes)
+
+see Paul Mason book 
+
+As such I posit that we cannot make AInlook human till we have strong ethical constraints on it, which require ethical judgements 
+(ie General AI is a long way off)
+
+but we can see AI as helping optimise organisations (ie MOOP becomes a training device for the cog wheels) and organisational design and information flow becomes viable - i mean if brexit or trump can send different tailored messages why cannot the good guys (see I robot last book) 
+

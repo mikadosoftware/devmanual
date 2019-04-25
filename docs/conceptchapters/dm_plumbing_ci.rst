@@ -248,6 +248,13 @@ My USB Secrets
 
 (also Google Peace Dividend)
 
+
+DataLakes
+=========
+https://techcrunch.com/2019/04/24/databricks-open-sources-delta-lake-to-make-data-lakes-more-reliable/
+
+
+
 Testing - a heresy
 ==================
 
