@@ -310,3 +310,17 @@ The big takeaway here is the constraining of executive powers on international s
 SICP for orgs
 -------------
 Structure and Interpretation of Programmabke Companies 
+
+The Big Ideas
+-------------
+We have well tested ways of using science to discover facts
+
+we have ways of using engineering science to discover facts about machines
+
+we are starting to use those lessons to run software system
+then we shall use same engineering and statistical principles to find facts on the rest of the pyroamid - how to better run organisations 
+and then societies
+
+and we shall do so if we choose the right metrics to be guided by
+
+and see david kings handling of foot and mouth - two days and it turned around by using what epidemiologist saw as simple 
