@@ -1811,3 +1811,13 @@ Integrity in message
 Having something to say 
 
 (critique of American ciewsnof socaulism)
+
+What does good software development feel like?
+---------------------------------
+
+https://podcasts.apple.com/gb/podcast/a16z/id842818711?i=1000435605773
+(Early ios development)
+It takes time, close to code
+clear vision - use regression tests to ratchet the features you most want
+
+other examples ?

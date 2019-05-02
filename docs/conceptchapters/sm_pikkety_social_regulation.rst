@@ -60,3 +60,42 @@ Massive job loss and relocation
 - devops / CI / serverless
 
 serverless - where scalability design meets the developer 
+
+
+Blockchain is not a magic sprinkle dust
+--------------------------------
+https://news.ycombinator.com/item?id=19739574
+
+https://nvlpubs.nist.gov/nistpubs/ir/2018/NIST.IR.8202.pdf
+
+solving gang problems 
+----------------------
+https://news.ycombinator.com/item?id=19742603
+
+
+The autonomous vehicle bizplan fallacy
+------------------------------
+There is a lot of interesting issues being thrown up around automous vehicles and it's worth diving into some of them because they throw the issues around software eating the world (the architects dilemma) into sharp relief
+
+- The ethics "upfront" issue (cf governance) - hit the little girl or kill the driver?? impacts on global regulation. are you going to be able to drive a foreign car on this countries roads if the software is not patched?? 
+
+- The "it's going to be cheaper"
+Not until the death rate is close to railways at minimum.  Tesla is getting sued (https://news.ycombinator.com/item?id=19802284) and claim that their safety is 3.7 times better than humans.  That's good and all.  but that's not the right comparison 
+
+Roads kill an average of 43,000 people pa in USA. Rail has 7 passenger deaths (or a bit over 100 if you count workers and pedestrians at crossings)
+
+So railways are the right comparison with self driving cars.  and railways are between 6,000 and 300 times safer.
+
+If I get in a self driving car Inwant to be confident of not dying on a scale similar to trains or planes. 
+
+We are a loong way from that 
+
+
+https://journalistsresource.org/studies/environment/transportation/comparing-fatality-risks-united-states-transportation-across-modes-time/
+
+seven passengers traveling on mainline trains die.
+
+Software demands global regulation
+----------------------------------
+
+We unlikely to see balkanisation of internet - we might see DVD regionalist.  but software will define our geopolitics as much as anything.  software configuration as a tariff !! Look at is your car going to kill the girl or the driver? 

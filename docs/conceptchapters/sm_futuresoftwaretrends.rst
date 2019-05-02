@@ -253,3 +253,5 @@ As such I posit that we cannot make AInlook human till we have strong ethical co
 
 but we can see AI as helping optimise organisations (ie MOOP becomes a training device for the cog wheels) and organisational design and information flow becomes viable - i mean if brexit or trump can send different tailored messages why cannot the good guys (see I robot last book) 
 
+Ethics are boundary conditions for optimising algorithm - same as regulation for markets - which is why regulations are so hard to agree on 
+
