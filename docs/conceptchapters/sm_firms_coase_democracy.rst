@@ -61,6 +61,20 @@ Apples vaunted process is to model the process correctly first
 And this is my argument for the new company - the programmable company is one where all the interactions are programmed and viable in pre-production allowing choice, optimisationand modelling
 
 
+The changes we are seeing about programmable company 
+----------------------
+
+https://podcasts.apple.com/gb/podcast/a16z/id842818711
+
+- Everyone becomes an analyst
+- everyone becomes a real time analyst
+- we are seeing rise of software mediated marketing (growth hacker) and product management (where the product is reporting on metrics (ie funnel) and so guides next feature development
+
+and 
+
+- modelling of organisation will be means to management of org 
+
+
 Why companies are not really command and control
 ------------------------------------------------
 

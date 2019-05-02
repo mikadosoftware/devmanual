@@ -74,3 +74,8 @@ https://news.ycombinator.com/item?id=19707543
 
 Calibrate your interview process by having a recruiter identify ten great hires and pay them to do your crappy interview questions. if most of them fail think about it
 
+Span of code control
+--------------------
+Scripts get better as we re-write then. Code gets better as ewe refactor it.  Two pizza teams are good for a sizing of span of control - and we want the quality of code to keep improving - so is there a number of lines of code that we should compare "editors" to - book editors? 
+but even that is not right as it's common to reuse code - not reuse books. perhaps editing regular editions ? 
+
