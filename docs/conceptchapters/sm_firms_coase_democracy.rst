@@ -74,7 +74,19 @@ and
 
 - modelling of organisation will be means to management of org 
 
+ 
+- you need software skills not easier tools
+- you need application performance monitoring for business processes - internal and external (internal friction or monitoring our marketing response)
 
+why software - because it is infinitely easier to get a programmer to analyse data from five areas and knock up a report than it is to wor it's a tool flexible enough for a non programmer
+
+it's like can you write a tool to let annilliterate write a book? 
+
+and so it becomes easier to hire coders and teach them to make good business decisions than hire business deciders and teach them to code
+
+the last generation is at the top now
+
+### xxx potential blog post 
 Why companies are not really command and control
 ------------------------------------------------
 
