@@ -255,3 +255,6 @@ but we can see AI as helping optimise organisations (ie MOOP becomes a training 
 
 Ethics are boundary conditions for optimising algorithm - same as regulation for markets - which is why regulations are so hard to agree on 
 
+Robo automation and AI 
+-----------------------
+will be resurgence of email vs apps - simply because it's so much easier to email X in order to book my squash court or something 

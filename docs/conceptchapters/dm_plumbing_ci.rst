@@ -415,6 +415,12 @@ AWS and old school
 - :doc:`chapters/mail-handling`
 
 
+Visualisation
+-------------
+D3.js is good
+https://github.com/apache/incubator-superset/blob/master/README.md
+
+
 Logging
 -------
 
