@@ -40,3 +40,7 @@ Data Pipeline stack
 -------------------
 
 https://medium.com/gyroscopesoftware/a-reference-stack-for-modern-data-science-4bd9fddcdc6b
+
+PySpark to take huge data sets down to something small enough to fit in memory and pandas.  then pandas.  then visualisation tools - the simple enough stuff is Altair / Vega - but always have D3.JS as fallback for when you cannot find the right graph pre made
+
+Adjust lib-report to hold visualisation library too

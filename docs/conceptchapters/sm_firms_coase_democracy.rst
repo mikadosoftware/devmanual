@@ -261,3 +261,17 @@ software governance and social governance
 -----------------------
 As facebook et al build tools for "governance" (combat bullying, view who views me we see those gov forms adapt to society 
 
+Programmable company and bus factor
+-----------------------------------
+
+Bus factor is how many employees can get hit by a bus before company loses the institutional knowledge to continue
+
+this has links to the director hazing - you have to be able to operate the levers even if the levers are dumbawful systems
+
+but programmable company surfaces the institutional knowledge and encodes it - it may be more effort like an architect programming robot but once done it is explicit modellabke and open for A/B testing 
+
+And so we see reduction in bus factor - in fact perhaps a bus factor of zero is needed
+
+And this means most human creative work will be in finding and building companies that have product market fit - a coase dilemma perhaps - we can reduce the company size to zero ? 
+
+Only antagonist parts are brand, changing market place, reliability of suppliers ? 

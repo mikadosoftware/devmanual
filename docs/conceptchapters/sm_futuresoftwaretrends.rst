@@ -258,3 +258,10 @@ Ethics are boundary conditions for optimising algorithm - same as regulation for
 Robo automation and AI 
 -----------------------
 will be resurgence of email vs apps - simply because it's so much easier to email X in order to book my squash court or something 
+
+Web of Trust and crypto currency
+---------------------------------
+JPMorgan thing s(where they assert that I have x million in account)
+is fascinating - but what If I asserted that with my web of trust FIDO key? 
+Who would trust me? What could Indo about it? 
+Or 
