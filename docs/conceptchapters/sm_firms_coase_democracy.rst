@@ -275,3 +275,18 @@ And so we see reduction in bus factor - in fact perhaps a bus factor of zero is 
 And this means most human creative work will be in finding and building companies that have product market fit - a coase dilemma perhaps - we can reduce the company size to zero ? 
 
 Only antagonist parts are brand, changing market place, reliability of suppliers ? 
+
+Let's look at the advantages of AWS over doing it ourselves. The guardian found that openstack was too much to do it alone. Mostly because the advantages of specialisation have accrued to Aws - they can afford to have someone whose a Kubernetes developer focusing on that solely ehwrreas guardian and even major banks can only have someone who knows how to use it
+
+the size of core teams in even major banks is surprisingly small - and that means the firehouse hits you all - whereas even a little bit bigger means the firehoase can be avoided
+
+which acrues a lot
+
+Firehose metric for support growth
+----------------------------------
+
+you need at least one person removed from the fray to observe and OODA - lieutenants and above
+
+Sergeants focus on the team lieutenants on the battle, generals on the war
+
+but it only needs three levels max. and you can probably do without the generals 
