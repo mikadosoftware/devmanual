@@ -22,25 +22,39 @@ certain pathologies still run in our organisations.
 I call this *why*, The Software Mind.  The *how* is The Dev Manual.
 
 
-MeanCulpa
-I am working hard to ensure there is nothing wrong here, but that does not mean it is right or not naive - this will be a growing evolving book and will accompany podcasts and new editions as more research and interviews happen
+Mea Culpa
+---------
+
+I am working hard to ensure there is nothing wrong here, but that does
+not mean it is right or not naive - this will be a growing evolving
+book and will accompany podcasts and new editions as more research and
+interviews happen
 
 So there are two kinds of chapter - one trying to explain the why, the
 context for the more detailed, how-to chapters. Both are useful to
-read, and you can think of this as two interleaved books.  If you see a note like this () it means we are looking at a new concept or emerging importance - take note. It's a biggie.
+read, and you can think of this as two interleaved books.  If you see
+a note like this () it means we are looking at a new concept or
+emerging importance - take note. It's a biggie.
 
 
 There are only two rules here 
-1. The world changes - and our minds must chnage too.  What isninbthebsoftware mind is the best i know today
 
-2. the dev manual must be working code - explanations are fine but working code examples is the only useful devmanual - esp if I will be getting pull requests 
+1. The world changes - and our minds must chnage too.  What
+is in the software mind is the best I know of today
+
+2. the dev manual must be working code - explanations are fine but
+working code examples is the only useful devmanual - esp if I will be
+getting pull requests
 
 The startup OS
 ---------------
-Why is it so many startups start finding themselves writing code to do what is not "core competency"
-why is oss not the fibres and muscles of a business ?  why learn one saas after another?
 
-envisage one set of protocols and code that runs almost every business ? can that work? seems likely 
+Why is it so many startups start finding themselves writing code to do
+what is not "core competency" why is oss not the fibres and muscles of
+a business ?  why learn one saas after another?
+
+envisage one set of protocols and code that runs almost every business
+? can that work? seems likely
 
 infrastructure as code?? 
 business as code
@@ -49,10 +63,8 @@ programmabke company
 So, lets start with probably the most important idea - that of
 Software Literacy.
 
-(how will it eat the world - it's what you get when you ask a software developer to run operations dept (sre)  in fact what you get when you ask a software developer to run anything - it's not follow the young person it's follow the software literate person - a company built by a literate person full of other literate people will look different 
 
 {{ conceptchapters/sm_software_literacy.rst }}
-
 
 
 {{ conceptchapters/dm_plumbing_ci.rst }}

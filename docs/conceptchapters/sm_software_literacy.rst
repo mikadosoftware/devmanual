@@ -156,6 +156,24 @@ So as we walk though the world that is being changed by software t is software t
 Software literacy will become part of the core fabric because software is core to why the world is changing - because it enables us to describe predict change - the models in our heads need to be externalised to be more shared, validated and reviewed
 
 (political models especially)
+
+When I started in the Internet world the truism then was 'follow the
+young'.  Young people then were drinking in pubs (of course) but using
+digital cameras to record the night, and uploading the pictures to a
+web page later that evening so everyone could see the next morning.
+And they did so listening to MP3s played out of the PCs speakers.
+Which in 1995 was *prescient*.
+
+But it turned out that was not what young people were doing.  It was
+what softeare literate young people with access to fixed line internet
+were doing.
+
+The rule should have been, and still is, if you want to understand how
+software is eating the world, follow the software literate person - a
+company built by a literate person full of other literate people will
+look different to anything else before.
+
+
 Why are companies big or small?
 -------------------------------
 
