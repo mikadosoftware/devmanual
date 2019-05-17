@@ -22,6 +22,21 @@ Orchestra
  - reduce interdependance through good architecture - good practise
 
 
+Testing and Trusting
+--------------------
+
+Please try this if you have many teams
+
+You need a better pre-prod testing environment.  Younjust do.  It is not good enough, comprehensive enough, well set up enough 
+
+So build standard build environments and a suite of integration tests that runs against it - and then each quarter have a different team become the tiger team for 
+
+As part of their testing and refactoring day they get to write tests on other teams integration envrinementa - and if they write failing tests the y win a "proze" - swapnround eachbquarter
+
+stops getting stale, not seeing the wood for trees and encourages relationships between teams
+
+Also get the "PAs" tomorganise brown bag lunches 
+
 MBAs
 ====
 

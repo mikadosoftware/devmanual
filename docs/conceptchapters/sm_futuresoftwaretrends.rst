@@ -265,3 +265,13 @@ JPMorgan thing s(where they assert that I have x million in account)
 is fascinating - but what If I asserted that with my web of trust FIDO key? 
 Who would trust me? What could Indo about it? 
 Or 
+
+
+Developer Hegemony and Programmable company
+-----------------
+
+::
+
+thinking of ourselves as automation professionals--efficiencers.
+
+I see this as part of building a programmable company - the robot automation as it were 

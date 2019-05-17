@@ -137,3 +137,32 @@ Within 10 business days, for all .gov or other agency-managed domains, audit pub
 suddenly you have to do something - and record it and it needs to be done by a deadline and you need to not look like it's your first rodeo
 
 
+capitalism isn't working
+------------------------
+Because ... capitalism isn't working 
+
+Elon Musk - tearing himself to bits because he thinks he needs to be as personally productive as necessary tonallocate and use the capital he has been able to acquire
+but no human is or can be that good
+
+Some are better than others (i would like buffet to look after my personal finances pls) 
+
+but no one can allocate billions at the detail level
+
+That's the point of ... democracy 
+
+But capitalism is ending up giving people small numbers of people far more wealth than it should.
+
+It's  it necessary to destroy it - but to distribute it
+
+Perhaps redistribution or oredisteibution
+
+But perhaps control of capital is all we need not ownership
+
+And as such that's regulation 
+
+or 
+
+Democratic companies 
+
+What if musk had parliament ? 
+
