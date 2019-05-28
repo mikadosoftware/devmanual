@@ -221,3 +221,13 @@ Putting a business process into dashboard is powerful - use Graphite and "light 
 - :doc:https://github.com/getredash/redash/blob/master/README.md
 
 
+Examples and solutions
+----------------------
+https://blog.plover.com/tech/prudential.html
+
+Quote for payment upto milestones and delays incur penalties 
+> "But," they said, "how do we collect the referral fees?"
+This is why you need to understand what problem a client wants solved and not just build what their suggested solution is
+
+
+
