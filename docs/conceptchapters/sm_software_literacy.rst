@@ -143,19 +143,15 @@ has used software in a markedly different manner.
 
 One of them has become more *software literate*.
 
-Software Literacy - The calculus of literacy
------------------------------------
+Software literacy will become part of the core fabric because software
+is core to why the world is changing - because software allows us to
+more precisely express and then share the models in our heads.  So if
+my model in my head says that the life of a child crossing the road is
+more valuable than the driver of a Tesla, then perhaps one day I will
+vote on a software pull request ...
 
-Calculus is the mathematics of change.
-Computers model functions and are exceptionally useful for working through changing things
-
-We live in a changing world - change of business size or costs.  All of which can be described by software (more effectively i think and more widely than "real" mathematics)
-
-So as we walk though the world that is being changed by software t is software that will enable us to describe those changes - and to be able to manage those changes.
-
-Software literacy will become part of the core fabric because software is core to why the world is changing - because it enables us to describe predict change - the models in our heads need to be externalised to be more shared, validated and reviewed
-
-(political models especially)
+Follow the Literate
+-------------------
 
 When I started in the Internet world the truism then was 'follow the
 young'.  Young people then were drinking in pubs (of course) but using
@@ -177,40 +173,60 @@ look different to anything else before.
 Why are companies big or small?
 -------------------------------
 
-This might seem a silly question, big ones are more successful.  But
-actually, imagine if you could have Google's revenue's but only have 2
-or 3 employees, (working *very* hard!).  Well that would be the
-sensible choice.  So the extra people must be there for a good reason.
-But you would not add *more* people than needed.  That would cut the
-amount of loot to go round.  So there must be counter-veiling forces,
-pushing and pulling for hiring or reducing people.
+This might seem a silly question, obviously the more successful
+companies get bigger.  But that means you have to share the loot with
+more people - so if you could run a company completely automatedly,
+you would so you would not share the revenue with any one.  So the
+extra people must be there for a good reason.  But you would not add
+*more* people than needed.  That would cut the amount of loot to go
+round.  So there must be counter-veiling forces, pushing and pulling
+for hiring or reducing people.
 
 The British Mid-Century Economist Roald Coase came up with a *theory of
 the firm* to explain this struggle - that a firm size (number of
 employees) is an equilibrium between getting your work done through
 external contracts, and getting the work done internally by employees.
+
 Coase's Theory of the Firm says that the *transaction costs* of each
 (ie finding a external provider, verifying they are secure, can meet
 your needs, versus training up a new employee) determine the total
 cost of providing a service, and so determine whether it is better to
 hire a new employee rather than looking out for a contract provider.
 
+So when we look at Google v Barclays we can *intuit* that the 2/3 of
+the old style firm is making up for the missing automation.  And that
+about 1/3 of the old firm is then a combination of people not yet
+automated away and people changing the firm (ie adding new automation
+to do new parts of the job).
+
 Now of course, software and the internet is changing these transaction
 costs, and so changing the equilibrium point of firms sizes.  And as
-form sizes change, they change governance structures as well.  The
+firm sizes change, they change governance structures as well.  The
 trend looks to be *smaller*.  But to really take advantage of Coase's
 theory, a firm needs to be more than automated, it needs to be
 *programmable*.
 
-Copernicus principle and democracy 
------------------------------------
-see talking politics but if we see end of our short mass participation democracy - what will replace it? remember electronic voting cannot work so the easy answer is wrong
-
-searching for a world where we have different models but models are review-able. models can be represented in code. and if we tell our agent what we want (Nobel prize win) we get optimal outcomes
-
-start to smell a programmable company and programmable society where our wants are explicit and modelled and actions review-able - and best interests are kept (mid term democracy)  - and moop exists to help us deal with it (see slabscsoe drugs to stop worrying) 
 
 
+.. ::
+
+  Copernicus principle and democracy 
+   -----------------------------------
+
+  see talking politics but if we see end of our short mass participation
+  democracy - what will replace it? remember electronic voting cannot
+  work so the easy answer is wrong
+
+  searching for a world where we have different models but models are
+  review-able. models can be represented in code. and if we tell our
+  agent what we want (Nobel prize win) we get optimal outcomes
+
+  start to smell a programmable company and programmable society where
+  our wants are explicit and modelled and actions review-able - and best
+  interests are kept (mid term democracy) - and moop exists to help us
+  deal with it (see slabscsoe drugs to stop worrying)
+
+  (can expand but is seperate section)
 
 Just what is a programmable company?
 ------------------------------------
@@ -283,8 +299,18 @@ automation of processes, good governance.
 What aspects of Coasian Transaction Costs are being changed by software?
 ------------------------------------------------------------------------
 
-We need to watch for data management. I delve more into this in the DevManual
-chapter on BigAndSmallData, but *trusting* data is a key transaction cost.
+For me the single biggest transaction cost left is *data management*.
+No this is not "stick it on a disk", but data about data.  What data do we have,
+what does it mean, who produced it, when, how does that data fit into our models
+and suddenly there is a *lot* of work involved.
+
+There are signs this matters because Chief Information Officers
+regulalrly sit on company boards - as a sign that at board level no
+one has any reliable data and does not know what is going on and
+therefore creates a high level post to just sort it out.
+
+In short the cost of *trusting* data is one of the biggest single transaction
+costs between using internal employees and internal data sources and using external (cheaper) data sources.
 
 Data that is generated from inside the company is implicitly trusted
 (even perhaps if it should not - see later points on fake news and
@@ -293,6 +319,13 @@ filtering, transforming etc.  However the impact of external *ledgers*
 (with the Blockchain as the poster boy ledger) will change what can be
 trusted.
 
+Walmart and Tesco are sometimes described as companies only possible
+after the creation of the Relational Database - they built internally
+trustable supply chains - but if that supply chain is now placed on a
+Blockchain ledger - If you can see the supply chain from factory to
+shop, for every SKU in your shop, then the vast web of databases and
+processes Walmart (or Amazon) has built are ... legacy.
+
 Similarly encryption technologies, and zero-knowledge encryption
 especially, will start to impact on where data can be stored and
 manipulated.  Trusting a third party to hold your data, is a big cost
@@ -300,20 +333,16 @@ manipulated.  Trusting a third party to hold your data, is a big cost
 Facebook and the advertising industry just hoover it up relentlessly,
 ... ranting again.  Look its hard to read I know but just imagine what
 its like to be in my head.  I have this stuff going on all the time.)
-But encrypting data and then working on it map-reduce style on rented
-machines and re-encrypting it when finished is likely to be a growth
-model.
+
+You see, encrypting your data and then working on it map-reduce style
+on rented machines and re-encrypting it when finished is likely to be
+a growth model.
 
 Additionally the willingness to outsource wholesale services to SaaS
 companies shows that data management is loosely held. (I mean the
 timesheets and payrolls of employees is not only sensitive but
 competitively useful, but hardly any company does this in-house
 anymore.)
-
-Enterprise Meta Data management will be, (is), a thing.  Not only
-should the data you have in a stream be labelled, but it should be
-clear its pedigree and have owners ats high level who guarantee its
-integrity.  (see chapter on data)
 
 The *serverless* software model has some compelling financial and
 flexibility arguments.
@@ -333,7 +362,7 @@ complex data structures and few operations.
 
    (have the Brooks quote on show me your data model)
 
-Having got data under control, companies need to start
+Having got data under control, companies need to start managing their *processes*.
 
 You would be amazed at how much duplication of work and processing,
 how much different understandings of what a piece of data is or means
@@ -347,14 +376,42 @@ Banking. New banks, the Monzo Beta issue.)
 So even if we have data under control, the messy evolved system
 internally to a company
 
-I think this messy system also justifies the Director Hazing culture
-in most large companies.  To be able to deal with the morass of crazy,
-there is a hazing. After passing through that the ability to see it as
-crazy is reduced, because its part of you.
+Director Hazing
+---------------
 
-Is this a bad thing? See Book on "why hasn't everything collapsed" We
-need to be sure about resiliency.  But spaghetti code has never
-defended against resiliency.
+Large companies have evolved *horrific* internal processes.  Just as
+Monzo learnt, I hope, somethings need extra checks.  Now Hopefully
+Monzo has written tests that prevent them sending changed statements.
+Automated tests.
+
+But that is extra grist. A new sign off. After many years, (and not
+enough automation of sign offs and checks!) the system just becomes
+"what we have always done" and usually someone tries to get a Big
+Important Consultancy in to fix it which of course means a crazier,
+overly configureable system with no *opinions* and now no one understands it.
+
+In other words internal processes become really messy relly quickly.
+
+And companies need internal middle management that understand how to get things done in that mess. So they hire talented, clever people at middle management level (in the US model this is the Director level).  And what every new Director
+in every major company discovers is that their first six months are *hell*.
+
+Whereas signing off payroll or ordering new pencils or agreeing a budget was something your boss did, now you have to learn how to do it - and that means learning that "the ARCP system needs a Green approval in the TENDER system before you can get the PMO to OK the release of funds for NCD".
+
+And this happens hundreds of times a day.  You either learn to swim,
+or you sink - fast.  Those who swim are now in line for the real
+tournament to the top.
+
+I call this Director Hazing.  The total mind-fuck that learning
+pointless systems trivia unique to one company, so that you can simply
+*function*.  And doing it at a hundred decisions a day speed.
+And because the older hands had to do it, they are quite
+happy to see the younglings go through the same pain. It did them good afterall.
+
+But, is the skill to be able to manually make hundreds of tiny actions  a day,
+to navigate the crazy internal systems, to manage the hundreds of people you have, is that *necessary* or is that contingent on the lack of automation?
+
+Are the skills Director Hazing selects for, the skills a Programmable Company needs?  
+
 
 Finally, if we have a programmable company it can do an amazing thing.
 Controlling a company through accountancy and budgets was
@@ -408,7 +465,6 @@ What about landscape - what are other companies doing.
 (Notes on landscaping)
 
 
-
 .. pull-quote::
 
   So we now have a couple of tools that will be useful in working out
@@ -424,8 +480,8 @@ was the answer - or rather metrics were.
 
 
 
-Fake News, Project Management, programmable company
----------------------------------------------------
+Fake News and Fake Project Management
+-------------------------------------
 
 The whole programmable company thing has two needs - it needs a body
 (a corps or corporation) that does as it is told, and there has to be

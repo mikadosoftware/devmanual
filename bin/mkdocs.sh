@@ -15,6 +15,7 @@ echo "Make Sphinx Docs"
 cd docs/
 make clean
 make html
+make latex
 
 #I expect to run this in a docker instacne on my laptop
 #so i need to run it on here like a server
@@ -26,6 +27,7 @@ python bin/postprocess.py
 echo `pwd`
 
 #firefox http://172.17.0.2:8000/_build/latex/TheDevManual.pdf
-firefox http://172.17.0.2:8000/marketingsite/index.html
+firefox http://172.17.0.2:8000/marketingsite/index.html &
+
 cd /tmp
 python -m http.server 8000

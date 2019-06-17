@@ -119,9 +119,58 @@ What we are missing is the re-organisation of the factory similar to that of ele
 We are missing the dynamo. 
 
 
+Kaizen vs Kaikaku
+-----------------
+
+Run the company vs change the company
+
+Incremental change (AB testing) vs Radical change
+
+WHy not SaaS
+------------
+
+BEcause I *should* be able to do:
+
+::
+
+   authenticate('mycompany')
+   for employee in get_all_my_employees():
+       if employee.isTimesheetComplete:
+           approve_payroll(employee)
+	   send_payment_to_bank(employee)
+	   send_email_to_employee(employee, template="youarepaid")
+
+Now, there is a lot of noise about IFTT and all the SaaS providers and
+so on but - they are wrong.
+
+The above is the *right* way.
+
+It just is.  You know it is.
+
+
+Operations
+----------
+Severity Levels
+usually maps to customer impact
+
+(Apologies to Abraham Lincoln)
+
+* All of the people cannot use all of it, all of the time
+* All of the people cannot use some of it, all of the time
+* Some of the people cannot use all of it
+* Some of the people cannot use some of it
+* Some of our capacity or redundnacy is lost, but no people are affected
+* Everything Else
+
+Is like a DefCon - actual *action* is required and defined and taken
+(ie customer support portal is updated, these people are notified.)
+
+This is *still* a programmable company - only we did not programm it
+to deal with this situation and so it needs to be worked *on* not *in*
 
 
 Politics and software
+----------------------
 
 - new economics becoming clearer - the neo-liberal consensus seems agonisingly wrong in Africa and just misguided post 2008
 Open source - oss4gov manifesto

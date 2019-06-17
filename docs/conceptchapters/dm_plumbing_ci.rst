@@ -7,6 +7,11 @@ spinnaker docker etc
 Front end client trade offs
 https://journal.plausible.io/you-probably-dont-need-a-single-page-app
 
+K8s and meshes
+--------------
+Mutual AUthentication in TLS - ww.nginx.com/blog/do-i-need-a-service-mesh/
+
+
 The Metaphor of Building Software
 =================================
 
