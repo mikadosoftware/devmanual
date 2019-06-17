@@ -8,6 +8,20 @@ A point about the Google Peace Dividend
 * The Google Peace Dividend - three / four major areas of computing
   beig transformed by OSS - ML/AI, data processing pipelines, virtual machine management,
 
+What has the long sweep been
+----------------------------
+BAck when I was young I worked at Demon Internet and we would have *meaningful* discussions about how the Internet was going to change the world (in your twenties it is important to have strong opinions about how something you don't understand properly is going to change something else you don't understand properly.)
+
+But one thing was clear - we were connecting the Virtual to the Real. And that made opportunities
+
+But now that is *done* what next?
+
+Well, firstly, of course it is not done.
+
+The things still not online are ... our real day to day lives and our training ecesaary to be modern humans (see MOOPs)
+
+
+
 
 What is about to make my life harder?
 =====================================

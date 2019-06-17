@@ -246,7 +246,9 @@ because it was a way to control companies in a *very nearly*
 programmatic way.  By setting limits to how subordinates could behave
 by setting budgets, and by being able to monitor how successful they
 were through budgets, a company could be controlled, or perhaps I
-should say *programmed* to behave in certain ways.
+should say *programmed* to behave in certain ways. Companies could be controlled by telling people what to do, but by setting and altering budgets, they could be (in a limited sense) programmed. They were and are a slow form of AI [#stross1]_ 
+
+
 
 By the industrial revolution accounting had become globally accepted
 and slowly standardised, and after the 1950s Management Accounting had
@@ -262,7 +264,10 @@ people with robots.  Years ago as a student I worked as a Warehouse
 Picker, ripping a perforated sheet off a printer, walking up and down
 aisles filling crates and loading crates onto lorries to be shipped
 out.  If the Software told me to load 6 bottles of Johnny Walker,
-that's what I did.  I may have been slow, surly and occasionally hungover, but I was entirely programmable.  Think of me as a student Marvin the Paranoid Android, with a similar pain in my diodes down the left side
+that's what I did.  I may have been slow, surly and occasionally
+hungover, but I was entirely programmable.  Think of me as a student
+Marvin the Paranoid Android, with a similar pain in my diodes down the
+left side
 
 I expect warehouse robots *have* now replaced my erstwhile colleagues, but
 they are no more programmable than we were. But the marketing
@@ -285,6 +290,7 @@ Funnel optimisation is a real thing.
 So automation is eating away at pretty much everything. Surely at some
 point we can *automate all the things*, and have a gazillion dollar
 company run by one woman part-time?
+
 
 It is a trope that it is much cheaper to start a Start-up now than in
 the early 2000s.  But it is cheaper to *run* a company of almost any
@@ -1895,3 +1901,8 @@ It takes time, close to code
 clear vision - use regression tests to ratchet the features you most want
 
 other examples ?
+
+.. rubric:: Footnotes
+
+.. [#stross1] Charlie Stross is well known for popularising, if not inventing, the idea of `corporations as slow AIs <http://www.antipope.org/charlie/blog-static/2018/01/dude-you-broke-the-future.html>`_ 
+
