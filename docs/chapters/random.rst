@@ -46,22 +46,20 @@ takes to grab them.  That way I can know which is faster PRNG or real.
 (I think we can guess)
 
 
-[pbrian@localhost chapters]$ python randomness.py 
+.. literalinclude:: randomness.py
 
-[0.47841713243204875, 0.9106930754528739, 0.10139849285025149]
-[0.47841713243204875, 0.9106930754528739, 0.10139849285025149]
-[0.00025916099548339844]
+   
 
-[0.6060143833031767, 0.6573259634008972, 0.586415954525388]
-[0.38238270018686693, 0.8731295368542729, 0.1982646979928232]
-[0.011247873306274414]
+Which gives us as a result::
 
-By my measures, 
-0.00862002372742
-0.168267965317
+    $ python randomness.py 
+    0.014582695000171952
+    0.21012862700013102
 
-PRNG is 20 times faster than system random.  WHich for getting `real`
-randomness, is pretty good.
+PRNG is 20 times faster than system random.  But system random gets us
+"real" randomness, whats called CSRNG - Cryptographically secure
+Random Number generator.  Running on a normal linux box this will
+generate randomness sufficient for most real world security.
 
 Getting estimates of entropy??
 ------------------------------
