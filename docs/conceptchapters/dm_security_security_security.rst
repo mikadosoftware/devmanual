@@ -132,3 +132,11 @@ Why you need a Purchase Order System
 https://www.justice.gov/usao-sdny/press-release/file/950556/download
 
 steal 100M from google and facebook 
+
+cyber insurance 
+----------------
+The comparison with boilers in late 19th C and today 
+
+https://www.insuranceage.co.uk/insurer/3925246/cyber-row-continues-as-abi-responds-to-mactavish
+
+Speak to Mactavish boss Hepburn 

@@ -9,22 +9,29 @@ To be honest, this entire book can be boiled down to "Software Literate companie
 
 But lets just look at one (important) aspect of a company - *Project
 Management*.  Fundamentally, work inside a company can be divided into
-two parts - *running the company* and *changing (improving?) the
+two parts - *running the company* and *changing (improving hopefully) the
 company*.
 
 Running the company is just the day-to-day
 business-as-usual processes.  Opening up the store, stocking the
-shelves etc.  (and yes, very amenable to automation).
+shelves etc.  (and yes, very amenable to automation).  This is the programmable
+company - it's hard to do - good solid processes that are repeatable and scalable and respect your values and reflect them externally - it's hard to do.  Harder even to automate, to link the physical to the virtual.  I heard recently that the restaurant chain Wahaca recycled all of its waste - using upto six bins outside the kitchen.  And how much harder is it then to weigh those bins as they grow over the night, to put rfid scanner in them.   it that is how we need to link the virtual and the physical, that is how processes get audited and chained and checked.  It's going to be a lot of work - yes.
+
+
 
 Changing the company is usually harder.  It is a search process usually, looking for product-market fit for early stage companies, or later stage companies loking for efficencies etc.
 
 And CHanging the company is almost always coralled into *projects*.  As such automating project management will be very very helpful.
 
-And as we are designgin a softweare literate company, we dhall desing a compny that is mostly automated, and driven by software - and as such changing the software means changing the company.
+And as we are designgin a softweare literate company, we dhall desing a compny that is mostly automated, and driven by software - a programmable company with software mediated processes - and will need programming ...
 
 Lets repeat that - changing the codebase, means changing a company. And if changing the codebase is now project management, then project management should flow *from* gthe codebase.
 
+So that's my big take away here - if project management takes you away from the codebase it is flat out no question *wrong*
 
+Which means almost all project management in the world today is *wrong*.
+
+So no biggie.
 
 
 Software Literate Project Management.
@@ -34,11 +41,14 @@ I am embarrassingly bad at traditional Project management.
 Co-ordination, keeping an eye on the most important parts.  Basically
 I assume that if i know something, then everyone else knows it too.
 So there would be no point in telling other people about
-it. Co-ordinating. for example.  Also my timekeeping sucks which tends
+it. 
+Co-ordinating. for example.  Also my timekeeping sucks which tends
 to piss everyone off eventually. (Such as the woman I left waiting at
 the Cinema so long, the film actually finished before I got
 there. There wasn't a second date.  Not sure why I am sharing, but you
-get the idea. Manual project management is a skill I really want to
+get the idea. 
+
+What I am saying is that Manual project management is a skill I really want to
 automate away.)
 
 So what can a codebase do that is *better* than manual project managers?
@@ -49,14 +59,47 @@ husband asks if this sweater makes him look fat round the middle, you
 say "no darling".  If your boss' boss asks if the project is going to
 be ready on time, you are *optimistic*.  You don't for example,
 recommend a regieme of salads, beans and cutting out the chocolate
-biscuits while running 2 miles a day.  You dont say the code base is
+biscuits while running 2 miles a day just because someone wants an opinion about knitwear.
+
+Similarly You dont say the code base is
 crap, the test coverage laughable and the specifications so vague we
 still dont know what the goal is.
 
-No, you lie. So your boss thinks its ok. And meerily everyone trundles along
+The question was not designed to find out real problems.
+
+No, you lie. So your boss does not have to be disturbed from his comfort zone and your husband does not have to give up their lofestyle.
+
+And meerily everyone trundles along
 kind of hoping everything will work out all right.
 
 Whcih brings us to project management and risk management
+
+
+Most projects are planned *optimistically*.  When we plan a journey we can only plan the landscape we can see, or imagine.
+
+We tend to underestimate the difficulty of the unknown.
+
+So most projects are risky - they have risks that may or may not come to pass.  And most times when a project manager successfully steers a project home what really happened was that they just got lucky.
+
+Luck is not a strategy
+-----------------------
+
+Dancing with bears and risk management 
+(cf rudolf reporting)
+
+- code can track wjeee we have been and what remains todo?
+
+Risks and tests
+- what don't we know - what tests can we run that show we don't have something fixed but we just call it a risk? a test that is supposed to gail's because we are accepting the risk?
+
+Then we can define every risk in code
+- we can even model riskmlikelihood in test runs? 
+
+Risk: we don't account for null values
+Risks : the ApI we depend on goes away / rate limits us
+Risks: the 
+
+
 
 https://github.com/risk-first/website/wiki/Risk-Landscape
 (review)
@@ -176,5 +219,15 @@ Putting a business process into dashboard is powerful - use Graphite and "light 
 - :doc:`chapters/aspell`
 - :doc:`chapters/mikado-doc-manager`
 - :doc:https://github.com/getredash/redash/blob/master/README.md
+
+
+Examples and solutions
+----------------------
+https://blog.plover.com/tech/prudential.html
+
+Quote for payment upto milestones and delays incur penalties 
+> "But," they said, "how do we collect the referral fees?"
+This is why you need to understand what problem a client wants solved and not just build what their suggested solution is
+
 
 

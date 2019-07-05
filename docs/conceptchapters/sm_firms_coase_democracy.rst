@@ -290,3 +290,13 @@ you need at least one person removed from the fray to observe and OODA - lieuten
 Sergeants focus on the team lieutenants on the battle, generals on the war
 
 but it only needs three levels max. and you can probably do without the generals 
+
+What's wrong with Malthus
+--------------------------
+
+The equation needs extra term - efficiency of use of resources
+
+and organisations are a brilliant way of improving efficiency - possibly only one outside of physics
+
+imagine a scrum versus a queue for dinner
+

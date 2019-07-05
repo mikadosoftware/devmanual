@@ -99,3 +99,39 @@ Software demands global regulation
 ----------------------------------
 
 We unlikely to see balkanisation of internet - we might see DVD regionalist.  but software will define our geopolitics as much as anything.  software configuration as a tariff !! Look at is your car going to kill the girl or the driver? 
+
+When incentives mid align
+-------------------------
+
+Always a bad idea 
+
+Facebook GlobalCoin - the idea is that when you post youbdo valuabkenunpaid work for social media tech giants - my view on digital footprints is that should be your property just like copyright
+
+But now facebook wants to pay you - but notnin dollars - in a currency they control - global coin
+
+that looks like it is heading for massive inflationary pressure 
+
+A world of abandoned trust
+--------------------------
+
+Tech has not brought so much value as it has abandoned traditional ethical limits and traded them for profit - uber and airbnb are the obvious examples but we can see it in all the big firms
+
+this is trading curation for exploitation
+
+google facebook are obvious examples - we have no trust whatsoever- they will extract and sell every piece of data
+
+the mass ecosystem around them of data collection  and advertising predictions 
+
+even amazon - a retailer which traditionally signals curation of the product has abandoned this (previously this was hidden - the book publisher curated the product and it looked like amazon was therefore also curation - but now it is clear - there is any amount of fake, knock off or just cheap sub standard crap on there and how the hell donyountell ? (website for spotting bad reviews?) 
+
+fake review industry !!! 
+
+What is the solution ? We had evolved a commercial  system that protected from the worst most egregious exploitation - but we are rolling that back to achieve regulatory harmonisationnglovally (soon to be reginonally)
+
+I am a bit lost except to say that the tech firms must shoulder the burden - but it may be beyond the automated solution (see facebook moderation)
+
+https://transparency.facebook.com/community-standards-enforcement
+
+And yet we need a solution ? 
+
+

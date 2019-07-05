@@ -463,6 +463,12 @@ Visualisation
 D3.js is good
 https://github.com/apache/incubator-superset/blob/master/README.md
 
+Typography and Design
+---------------------
+https://practicaltypography.com/font-basics.html
+
+Really most of what I am going to say on this will be in lib-report
+
 
 Logging
 -------
