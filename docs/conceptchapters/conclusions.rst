@@ -324,3 +324,14 @@ and then societies
 and we shall do so if we choose the right metrics to be guided by
 
 and see david kings handling of foot and mouth - two days and it turned around by using what epidemiologist saw as simple 
+
+Not founding a unicorn
+-----------------------
+
+I am of the right age that I *shoukd* have founded a billion dollar unicorn in the nineties, and been on a TV dance show by now. 
+
+But I did not.  And it's probably not talent (risk aversion aside)
+
+It's Rosencrantz and Guidebstern, it's the people in life of brian at the back of the crowd unable to hear
+
+it's just living your life 

@@ -166,3 +166,19 @@ Democratic companies
 
 What if musk had parliament ? 
 
+
+Borg star trek and brexit
+- what if countries could feel the schumter 
+- what if there was chapter 11 for countries 
+- what if it looked like joining the EU
+- the borg are bad because??? Apart from the screws and the slow talking what is it - a collection of individuals all communicating, and making voting based decisions s 
+
+what is it meaning to say individuality is wiped out?  there are always some actions not allowed by society - and perhaps worse some actions encouraged (psychopathy) and some trained into us (education) 
+
+the borg would look a lot like star trek federation frankly - just like seven of nine - a couple of cool looking implants and a nutrition controlled diet
+
+Brexit - we have been in a constitutional crisis since the vote - when majority of people refised to give consoent to the constitutional arrangement s of much of the uk - and as we did not have a written consortium it was not clear - now supreme court has said parliament is a balance of power to executive we see shape of the new modern cosmotionton - which is what the brexit 'tis wanted to stop
+
+but 
+
+

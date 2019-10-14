@@ -49,6 +49,20 @@ Uber has SubmitQueue to scale queued commits - but you don't need regression ana
 Everything is eventually a monorepo
 At integration testing stage everything is a monorepo - so you need a submit queue to manage the process
 
+
+Testing
+
+TDD is dead
+- testing is a roadway not a map - we cannot diacover new things with testing 
+
+We can plan testing upfront if we understand the domain well - this is why (someone) quotes that software is just how much coders understand the problem
+
+sometimes that is why fitnesses testing is excellent - it allows a sme to define the tests not the developer
+
+but mostly the developer need to understand the domain to program it 
+
+
+
 Technical Architecture
 ----------------------
 
@@ -73,6 +87,20 @@ With a metaphor of building cities, we can see why the idea of Architecture is
 an attractive one, but it is really at the scale of the biggest software houses
 in the world (Major Banks and financial instituions) that you can see the incredilbe
 value of ... City Planning.  We shall call this Software Governance.
+
+
+real technical architecture 
+so, modern functional languages are better because they have better dev friendly features - a good example is pattern matching v if statements- it's just easier to read
+
+but
+
+that's from a standing start - that's sssiminf the code all sits on one place cos if your biz logic is spread out in different suesyens if statements are a unicorn dream
+
+nexus of business logic
+
+in my view technical architecture is about going out and finding the places in the business that need the logic, finding the code, persuading the business of the business case and then right at the end, writing nice code
+
+the inverted pyramid of technical excellent 
 
 opinionated software
 --------------------
