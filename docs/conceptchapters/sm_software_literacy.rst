@@ -33,7 +33,7 @@ training of middle-class merchantmen who would then dare, only 40
 years later, to cross the Atlantic.
 
 Literacy en mass changed the course of human history and gave a tiny
-corner EurAsia some huge advantages the effects of which are only just
+corner Eurasia some huge advantages the effects of which are only just
 wearing off five centuries later.
 
 Before people wandered off to the bar I decided to let them know why
@@ -46,17 +46,17 @@ literacy - *software literacy.*
 Even in the 15th century, nations, companies and guilds and churches
 competed, and ran international concerns. But somewhere between
 Gutenberg's Bible and Luther's 95 Theses these companies changed. Not
-with business process reengineering, or total quality circles - but
+with business process re-engineering, or total quality circles - but
 changed like leaving the water and walking on land changed. I have no
 idea how to quantify the advantages a company whose staff can all read
 and write will have over a company whose staff are illiterate. It's
 not one of lower labour cost, or better marketing, it's something
 else...Deep in our bones we *know* that literacy changes everything.
-Its so built into us andy into everyone we know that we cannot imagine
+Its so built into us and into everyone we know that we cannot imagine
 a world where we cannot read or write.
 
 Anyway, you, like the poor people wanting to get to the bar, can see
-where I am taking this. The ability to marshall knowledge, to code and
+where I am taking this. The ability to marshal knowledge, to code and
 compile and compute, the natural inclination to arrange the world so
 it can be iterated over, the ability to turn a business from a
 medieval scriptorium into an automated system is software literacy.
@@ -87,15 +87,15 @@ The software literate company, and the programmable company
 -----------------------------------------------------------
 
 Software literacy for a company does not mean that it just hires a lot
-of programmers, and calls the job done.  Thats been happening for a
+of programmers, and calls the job done.  That's been happening for a
 long time and yet few companies manage to evolve.  I am hoping to
 describe in this book a vision of a company *that does not exist yet*.
-A truly literate company, in a world of other softwre literate
+A truly literate company, in a world of other software literate
 companies.  We cannot know for sure the shape such companies will
 take - they will jostle and change in a complex dance of evolution,
 but we can look at both positive and negative data we have today - how
 companies have failed to act in a sane / literate manner, and how some
-fundamentals of software literacy are shining thorugh and will be
+fundamentals of software literacy are shining thru and will be
 unavoidable in the future.
 
 
@@ -113,7 +113,7 @@ Bradlee was the epitome of a (non-software) literate company.  It had
 well trained professionals, clear ethical standards, clear business
 processes and clear processes for ensuring that its literate output
 met their standards. Editors and copy-sub-editors and so on.  Oh, and
-cashflow. That helped a lot.
+cash-flow. That helped a lot.
 
 I suggest that even companies like tech-behemoth Google are not really
 software literate ... yet. But the clues are there. In the excellent
@@ -143,56 +143,90 @@ has used software in a markedly different manner.
 
 One of them has become more *software literate*.
 
-Software Literacy - The calculus of literacy
------------------------------------
+Software literacy will become part of the core fabric because software
+is core to why the world is changing - because software allows us to
+more precisely express and then share the models in our heads.  So if
+my model in my head says that the life of a child crossing the road is
+more valuable than the driver of a Tesla, then perhaps one day I will
+vote on a software pull request ...
 
-Calculus is the mathematics of chnage.
-Computers model functions and are exceptionally useful for working through changing things
+Follow the Literate
+-------------------
 
-We live in a changing world - chnage of business size or costs.  All of which can be described by software (more effectively i think and more widely than "real" mathematics)
+When I started in the Internet world the truism then was 'follow the
+young'.  Young people then were drinking in pubs (of course) but using
+digital cameras to record the night, and uploading the pictures to a
+web page later that evening so everyone could see the next morning.
+And they did so listening to MP3s played out of the PCs speakers.
+Which in 1995 was *prescient*.
 
-So as we walk though the world that is being changed by software t is software that will enable us to describe those changes - and to be able to manage those changes.
+But it turned out that was not what young people were doing.  It was
+what softeare literate young people with access to fixed line internet
+were doing.
 
-Software literacy will become part of the core fabric because software is core to why the world is changing - because it enables us to describe predict chnage - the models in our heads need to be externalised to be more shared, validated and reviewed
+The rule should have been, and still is, if you want to understand how
+software is eating the world, follow the software literate person - a
+company built by a literate person full of other literate people will
+look different to anything else before.
 
-(political models especially)
+
 Why are companies big or small?
 -------------------------------
 
-This might seem a silly question, big ones are more successful.  But
-actually, imagine if you could have Google's revenue's but only have 2
-or 3 employees, (working *very* hard!).  Well that would be the
-sensible choice.  So the extra people must be there for a good reason.
-But you would not add *more* people than needed.  That would cut the
-amount of loot to go round.  So there must be counter-veiling forces,
-pushing and pulling for hiring or reducing people.
+This might seem a silly question, obviously the more successful
+companies get bigger.  But that means you have to share the loot with
+more people - so if you could run a company completely automatedly,
+you would so you would not share the revenue with any one.  So the
+extra people must be there for a good reason.  But you would not add
+*more* people than needed.  That would cut the amount of loot to go
+round.  So there must be counter-veiling forces, pushing and pulling
+for hiring or reducing people.
 
-The British Mid-Century Ecnomist Roald Coase came up with a *theory of
+The British Mid-Century Economist Roald Coase came up with a *theory of
 the firm* to explain this struggle - that a firm size (number of
 employees) is an equilibrium between getting your work done through
 external contracts, and getting the work done internally by employees.
+
 Coase's Theory of the Firm says that the *transaction costs* of each
 (ie finding a external provider, verifying they are secure, can meet
 your needs, versus training up a new employee) determine the total
 cost of providing a service, and so determine whether it is better to
 hire a new employee rather than looking out for a contract provider.
 
+So when we look at Google v Barclays we can *intuit* that the 2/3 of
+the old style firm is making up for the missing automation.  And that
+about 1/3 of the old firm is then a combination of people not yet
+automated away and people changing the firm (ie adding new automation
+to do new parts of the job).
+
 Now of course, software and the internet is changing these transaction
 costs, and so changing the equilibrium point of firms sizes.  And as
-form sizes change, they change governance structures as well.  The
+firm sizes change, they change governance structures as well.  The
 trend looks to be *smaller*.  But to really take advantage of Coase's
-thoery, a firm needs to be more than automated, it needs to be
+theory, a firm needs to be more than automated, it needs to be
 *programmable*.
 
-copernicus principle and democracy 
------------------------------------
-see talking politics but if we see end of our short mass participation democracy - what will replace it? remember electronic voting cannot work so the easy answer is wrong
-
-searching for a world where we have different models but models are reviewable. models can be represented in code. and if we tell our agent what we want (nobel prize win) we get optimal outcomes
-
-start to smell a programmable company and programmable society where our wants are explicit and modelled and actions reviewable - and best interests are kept (mid term democracy)  - and moop exists to help us deal with it (see slabscsoe drugs to stop worrying) 
 
 
+.. ::
+
+  Copernicus principle and democracy 
+   -----------------------------------
+
+  see talking politics but if we see end of our short mass participation
+  democracy - what will replace it? remember electronic voting cannot
+  work so the easy answer is wrong
+
+  searching for a world where we have different models but models are
+  review-able. models can be represented in code. and if we tell our
+  agent what we want (Nobel prize win) we get optimal outcomes
+
+  start to smell a programmable company and programmable society where
+  our wants are explicit and modelled and actions review-able - and best
+  interests are kept (mid term democracy) - and moop exists to help us
+  deal with it (see slabscsoe drugs to stop worrying)
+
+  (can expand but is seperate section)
 
 Just what is a programmable company?
 ------------------------------------
@@ -206,31 +240,36 @@ Just what is a programmable company?
 The 16th Century Trader shown above is writing in an accounting book,
 and has hanging behind him his accounts for the past venture.  As a
 portrait like this would be outrageously expensive, and so it is is a
-good exmaple of how proud rich merchants were of their new "system" -
-accounting. Yes, 500 years ago, accountatants were cool.  It was cool
+good example of how proud rich merchants were of their new "system" -
+accounting. Yes, 500 years ago, accountants were cool.  It was cool
 because it was a way to control companies in a *very nearly*
 programmatic way.  By setting limits to how subordinates could behave
-by setting budgets, and by being able to monitor how successfult they
+by setting budgets, and by being able to monitor how successful they
 were through budgets, a company could be controlled, or perhaps I
-should say *programmed* to behave in certain ways.
+should say *programmed* to behave in certain ways. Companies could be controlled by telling people what to do, but by setting and altering budgets, they could be (in a limited sense) programmed. They were and are a slow form of AI [#stross1]_ 
+
+
 
 By the industrial revolution accounting had become globally accepted
 and slowly standardised, and after the 1950s Management Accounting had
 been invented / popularised by consultants like Bain, but now Software is
-bridging the physical world and the virtual more granualarly than
-previsouly.
+bridging the physical world and the virtual more granular than
+previously.
 
 And this is my definition of a programmable company - where all
 processes are visible in the virtual world - where the levers can be
 pulled at a more granular level, and feedback controlled more
 precisely, through software.  This is not *entirely* about replacing
 people with robots.  Years ago as a student I worked as a Warehouse
-Picker, ripping a performated sheet off a printer, walking up and down
+Picker, ripping a perforated sheet off a printer, walking up and down
 aisles filling crates and loading crates onto lorries to be shipped
 out.  If the Software told me to load 6 bottles of Johnny Walker,
-thats what I did.  I may have been slow, surly and occassioanly hungover, but I was entirely programmable.  Think of me as a student Marvin the Paranoid Android, with a similar pain in my diodes down the left side
+that's what I did.  I may have been slow, surly and occasionally
+hungover, but I was entirely programmable.  Think of me as a student
+Marvin the Paranoid Android, with a similar pain in my diodes down the
+left side
 
-I expect warehouse robots *have* now replaced my erstwhile collegues, but
+I expect warehouse robots *have* now replaced my erstwhile colleagues, but
 they are no more programmable than we were. But the marketing
 department for the giant Distillery firm had employees to run their
 recruitment drives, had employees to complete payroll, had employees
@@ -241,7 +280,7 @@ All of those were not programmable jobs back in my student days
 (sometime after Napoleon's exile) - but many have become so today.
 Payroll has been automated for a long time, but Software-as-a-Service
 companies offer end to end recruitment services that can be turned on
-or off as easily as when I ripped a A4 sheet of performatted paper.
+or off as easily as when I ripped a A4 sheet of perforated paper.
 SaaS companies offer mobile apps that let people swap their shifts
 around, and still meet local working time regulations, and A/B testing
 has fundamentally moved advertising and marketing away from "brilliant
@@ -252,21 +291,32 @@ So automation is eating away at pretty much everything. Surely at some
 point we can *automate all the things*, and have a gazillion dollar
 company run by one woman part-time?
 
+
 It is a trope that it is much cheaper to start a Start-up now than in
 the early 2000s.  But it is cheaper to *run* a company of almost any
-size if it is autoamted.  The amount that companies are / will spend
+size if it is automated.  The amount that companies are / will spend
 on "Robot Process Automation" (ie screen scraping and replacing back
-office staff) is a majour growth area today.
+office staff) is a major growth area today.
 
 But automating processes is not the whole story for a programmable company.
-There seem to be four componts - trustable data, models / what if planning,
-automation of processes, good goverance.
+There seem to be four components - trust-able data, models / what if planning,
+automation of processes, good governance.
 
 What aspects of Coasian Transaction Costs are being changed by software?
 ------------------------------------------------------------------------
 
-We need to watch for data management. I delve more into this in the DevManual
-chapter on BigAndSmallData, but *trusting* data is a key transaction cost.
+For me the single biggest transaction cost left is *data management*.
+No this is not "stick it on a disk", but data about data.  What data do we have,
+what does it mean, who produced it, when, how does that data fit into our models
+and suddenly there is a *lot* of work involved.
+
+There are signs this matters because Chief Information Officers
+regulalrly sit on company boards - as a sign that at board level no
+one has any reliable data and does not know what is going on and
+therefore creates a high level post to just sort it out.
+
+In short the cost of *trusting* data is one of the biggest single transaction
+costs between using internal employees and internal data sources and using external (cheaper) data sources.
 
 Data that is generated from inside the company is implicitly trusted
 (even perhaps if it should not - see later points on fake news and
@@ -275,27 +325,30 @@ filtering, transforming etc.  However the impact of external *ledgers*
 (with the Blockchain as the poster boy ledger) will change what can be
 trusted.
 
-SImilarly encryption technologies, and zero-knowledge encryption
+Walmart and Tesco are sometimes described as companies only possible
+after the creation of the Relational Database - they built internally
+trustable supply chains - but if that supply chain is now placed on a
+Blockchain ledger - If you can see the supply chain from factory to
+shop, for every SKU in your shop, then the vast web of databases and
+processes Walmart (or Amazon) has built are ... legacy.
+
+Similarly encryption technologies, and zero-knowledge encryption
 especially, will start to impact on where data can be stored and
-manipulated.  Trusting a thrid party to hold your data, is a big cost
-(unless of course you are an indivdiual in which case Google and
-Facebook and the advertising industry just hoover it up relenetlessly,
+manipulated.  Trusting a third party to hold your data, is a big cost
+(unless of course you are an individual in which case Google and
+Facebook and the advertising industry just hoover it up relentlessly,
 ... ranting again.  Look its hard to read I know but just imagine what
 its like to be in my head.  I have this stuff going on all the time.)
-But encrypting data and then working on it map-reduce style on rented
-machines and re-encrypting it when finished is likely to be a growth
-model.
+
+You see, encrypting your data and then working on it map-reduce style
+on rented machines and re-encrypting it when finished is likely to be
+a growth model.
 
 Additionally the willingness to outsource wholesale services to SaaS
 companies shows that data management is loosely held. (I mean the
-timesheets and payrolls of employees is not only sesnitive but
-competitively useful, but hardly any company does this inhouse
+timesheets and payrolls of employees is not only sensitive but
+competitively useful, but hardly any company does this in-house
 anymore.)
-
-Enterprise Meta Data management will be, (is), a thing.  Not only
-should the data you have in a stream be labelled, but it should be
-clear its pedigree and have owners ats high level who guarantee its
-integrity.  (see chapter on data)
 
 The *serverless* software model has some compelling financial and
 flexibility arguments.
@@ -315,7 +368,7 @@ complex data structures and few operations.
 
    (have the Brooks quote on show me your data model)
 
-Having got data undercontrol, companies need to start
+Having got data under control, companies need to start managing their *processes*.
 
 You would be amazed at how much duplication of work and processing,
 how much different understandings of what a piece of data is or means
@@ -329,24 +382,52 @@ Banking. New banks, the Monzo Beta issue.)
 So even if we have data under control, the messy evolved system
 internally to a company
 
-I think this messy system also justifies the Director Hazing culture
-in most large companies.  To be able to deal with the morass of crazy,
-there is a hazing. After passing through that the ability to see it as
-crazy is reduced, because its part of you.
+Director Hazing
+---------------
 
-Is this a bad thing? See Book on "why hasnot everything collapsed" We
-need to be sure about resiliency.  But spagethhi code has never
-defneded against resiliency.
+Large companies have evolved *horrific* internal processes.  Just as
+Monzo learnt, I hope, somethings need extra checks.  Now Hopefully
+Monzo has written tests that prevent them sending changed statements.
+Automated tests.
 
-FInally, if we have a programmable company it can do an amazing thing.
-COntrolling a company through accountancy and budgets was
+But that is extra grist. A new sign off. After many years, (and not
+enough automation of sign offs and checks!) the system just becomes
+"what we have always done" and usually someone tries to get a Big
+Important Consultancy in to fix it which of course means a crazier,
+overly configureable system with no *opinions* and now no one understands it.
+
+In other words internal processes become really messy relly quickly.
+
+And companies need internal middle management that understand how to get things done in that mess. So they hire talented, clever people at middle management level (in the US model this is the Director level).  And what every new Director
+in every major company discovers is that their first six months are *hell*.
+
+Whereas signing off payroll or ordering new pencils or agreeing a budget was something your boss did, now you have to learn how to do it - and that means learning that "the ARCP system needs a Green approval in the TENDER system before you can get the PMO to OK the release of funds for NCD".
+
+And this happens hundreds of times a day.  You either learn to swim,
+or you sink - fast.  Those who swim are now in line for the real
+tournament to the top.
+
+I call this Director Hazing.  The total mind-fuck that learning
+pointless systems trivia unique to one company, so that you can simply
+*function*.  And doing it at a hundred decisions a day speed.
+And because the older hands had to do it, they are quite
+happy to see the younglings go through the same pain. It did them good afterall.
+
+But, is the skill to be able to manually make hundreds of tiny actions  a day,
+to navigate the crazy internal systems, to manage the hundreds of people you have, is that *necessary* or is that contingent on the lack of automation?
+
+Are the skills Director Hazing selects for, the skills a Programmable Company needs?  
+
+
+Finally, if we have a programmable company it can do an amazing thing.
+Controlling a company through accountancy and budgets was
 impressive. It allowed empirical testing of ideas (give this section
 this much budget and see what happens)
 
 But it lacked ... predictive capabilities.
 
 But if you have a programmable company, where the processes are
-explicit in code, then you also have a *modellable* company.  ONe that
+explicit in code, then you also have a *modellable* company.  One that
 can have its code brought up in a safe environment, and run against
 different scenarios and tested for failures - and optimisations.
 
@@ -356,10 +437,10 @@ do).  But testing environments look for failures.  New modelling
 environments will look for optimisations.
 
 And optimisations may not meet the needs or wants of the people in the
-company.  For exmaple shift patterns in places like Starbucks have
-been seeng "optmisation", and leading to issues like people being
+company.  For example shift patterns in places like Starbucks have
+been seeing "optimisation", and leading to issues like people being
 given 3 hours in the morning and then told to leave (unpaid) for a few
-hours then get a few hours in the afternoon.  THis of course plays
+hours then get a few hours in the afternoon.  This of course plays
 havoc with any real persons life.  It has seen a lot of push back.
 
 And that push back, that *political decision* to not do an optimised
@@ -369,16 +450,16 @@ human decision making, and that can through modelling, change itself,
 how does that company change in ways that benefit us. By having a
 controlling mind, that decides which changes are good or bad.
 
-And this last is the essence of Uber, AirBnB, facebook and google -
+And this last is the essence of Uber, AirBnB, Facebook and google -
 how they have affected our world and how regulations are trying to
 steer that affect.
 
 
-It is subtle in some cases this regulatory arbitrage. For example the nightmare videos on YouTube have two issues - 1. as youtube avoids being a publisher it is not responsible for content - but if it was responsible it would have to find ways to curate the content.
+It is subtle in some cases this regulatory arbitrage. For example the nightmare videos on YouTube have two issues - 1. as YouTube avoids being a publisher it is not responsible for content - but if it was responsible it would have to find ways to curate the content.
 
 2. yes it may not be possible to automatically review the content, the copyright laws may not be enforceable at that scale (dubious) - but frankly that's just a failure of business model not a technical hurdle.
 
-Nothing stops someone putting their own videos on line - youtube simply aggregates and collects rent
+Nothing stops someone putting their own videos on line - YouTube simply aggregates and collects rent
 
 
 
@@ -390,7 +471,6 @@ What about landscape - what are other companies doing.
 (Notes on landscaping)
 
 
-
 .. pull-quote::
 
   So we now have a couple of tools that will be useful in working out
@@ -399,17 +479,17 @@ What about landscape - what are other companies doing.
 
 Literate companies will be Lisp like - able to rewrite the virtual data that
 represents their real-world actions, but also able to treat their
-real-world actions as rewritable too. It was obvious how to make a
+real-world actions as re-writable too. It was obvious how to make a
 student warehouse picker change what he was doing programmatically. It
 was less obvious how to make the head of marketing do so.  A/B testing
 was the answer - or rather metrics were.
 
 
 
-Fake News, Project Management, programmable company
----------------------------------------------------
+Fake News and Fake Project Management
+-------------------------------------
 
-THe whole programmable company thing has two needs - it needs a body
+The whole programmable company thing has two needs - it needs a body
 (a corps or corporation) that does as it is told, and there has to be
 a controlling mind. That controlling mind is the company governance.
 At the moment it is a dictatorship of epic proportions. The CEO says
@@ -420,7 +500,7 @@ will be more demand to have influence over that controlling mind.
  When a company had barely accounting, and time between command and
 affect was measured in time it took a ship to sail, company employees
 had much autonomy.  This autonomy has been shrinking and shrinking,
-till many employees are merely robots, ripping off performated paper.
+till many employees are merely robots, ripping off perforated paper.
 As this hits the middle class, middle management, then history tells
 us middle classes demand representation at the top.  Demand democracy
 in corporations.
@@ -439,7 +519,7 @@ The programmable company
 For almost everything a company or organisation does a second time,
 that can be automated or co-ordinated via software.  A company will
 become a programmable entity.  Most if not all effort that goes into
-todays software projects, goes not into creating new business logic,
+today's software projects, goes not into creating new business logic,
 but into finding the data, massaging it, guaranteeing it, handling
 exceptions, and fitting into the rest of the businesses weird ways.
 
@@ -1821,3 +1901,8 @@ It takes time, close to code
 clear vision - use regression tests to ratchet the features you most want
 
 other examples ?
+
+.. rubric:: Footnotes
+
+.. [#stross1] Charlie Stross is well known for popularising, if not inventing, the idea of `corporations as slow AIs <http://www.antipope.org/charlie/blog-static/2018/01/dude-you-broke-the-future.html>`_ 
+

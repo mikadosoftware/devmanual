@@ -7,6 +7,11 @@ spinnaker docker etc
 Front end client trade offs
 https://journal.plausible.io/you-probably-dont-need-a-single-page-app
 
+K8s and meshes
+--------------
+Mutual AUthentication in TLS - ww.nginx.com/blog/do-i-need-a-service-mesh/
+
+
 The Metaphor of Building Software
 =================================
 
@@ -33,6 +38,44 @@ So having a full stack is one thing - being able to recreate that stack in a win
 
 
 As an example the trade offs start to matter at those "order of magnitude" barriers - going from 10x lines of code to 100x, or 10x servers to 100x servers or people.
+
+
+Stuff Metaphors, what do we do?
+===============================
+
+We break almost everything down into services,
+run using code-based *products* that generally are
+kept in a code repository.
+
+In other words, we run services from code. Together those services
+work together to make our offering to the world.
+
+Each repo as a product
+----------------------
+
+The organisation, built from scratch every moment
+-------------------------------------------------
+
+THis involves test-as-a-spectrum
+Pre-prod or no pre-prod?
+Generally if you can rebuild all form scratch, and have awesome in prod monitoring you can get away with no pre-prod.  Just its really really hard to pretend.
+So I think its much much better to have a pre-prod env where a portion
+of prod is fired at the service (replay attacks)
+
+For each *repo* have a product owner
+------------------------------------
+
+Yes you heard. If its a repo, its a service, its something someone cares about.
+It will have tests and builds and it will matter. Maybe the only users are
+three sysadmins - but it still matters that they are customers.
+
+So
+
+* Have a product *vision* (Design the box)
+* Have a product *roadmap* (Milestones, and order. DOnt do deadlines)
+* Track the metrics 
+
+
 
 Infrastructure matters most
 ---------------------------

@@ -2,26 +2,27 @@
 Compiling and modifying bootstrap
 =================================
 
-Building a simple web page these days is fraught with hidden traps for the
-unwary.  A long time ago, I sat wearing a padded jacket in a cold office,
-hand-typing out webpages for multi-national companies.  (That got old quick so
-we pretty soon fixed the heating and the production workflow).
+Building a simple web page these days is fraught with hidden traps for
+the unwary.  A long time ago, I sat wearing a padded jacket in a cold
+office, hand-typing out webpages for multi-national companies.  (That
+got old quick so we pretty soon fixed the heating and the production
+workflow).
 
-But the point was, one person used to be able to write an entire web site,
-suitable for the Fortune 500, in a text editor.
+But the point was, one person used to be able to write an entire web
+site, suitable for the Fortune 500, in a text editor.
 
-These days, not so much.  Obviously we still use text editors, but they produce
-programs that produce programs that produce web sites.  And they are not
-one-person jobs.
+These days, not so much.  Obviously we still use text editors, but
+they produce programs that produce programs that produce web sites.
+And they are not one-person jobs.
 
-However one person can still pull together all the right pieces, and with
-Twitter Bootstrap, its even easier to get "good enough" design and look, whilst
-still keeping everything manageable.
+However one person can still pull together all the right pieces, and
+with Twitter Bootstrap, its even easier to get "good enough" design
+and look, whilst still keeping everything manageable.
 
-I intend to create the following page template, for an open source project I am
-working on and promoting - it takes a DataWarehouse ETL tool (Oracle ODI) and
-allows it to work bi-directionally with modern source control tools
-(http://github.com/pmsoftware/odietamo)
+I intend to create the following page template, for an open source
+project I am working on and promoting - it takes a DataWarehouse ETL
+tool (Oracle ODI) and allows it to work bi-directionally with modern
+source control tools (http://github.com/pmsoftware/odietamo)
 
 .. figure todo
 
@@ -47,10 +48,9 @@ We shall
    cd $rootdir
    git clone https://github.com/twbs/bootstrap.git
 
-Right, now a bit of tricky javascript.
-Install `node` and `npm` with your distribution's preferred method.
-For example that would be ports on FreeBSD - you are using BSD no?
-If not try ::
+Right, now a bit of tricky javascript.  Install `node` and `npm` with
+your distribution's preferred method.  For example that would be ports
+on FreeBSD - you are using BSD no?  If not try ::
 
 
    $ apt-get install -y node npm
@@ -62,8 +62,9 @@ If you have node and npm installed then::
 
 This will download all the dependancies and
 
-NB - FreeBSD is not well supported for PhantomJS - which only matters for the
-self-tests.  I ignore this on my local machine and blip over to a VM when I need.
+NB - FreeBSD is not well supported for PhantomJS - which only matters
+for the self-tests.  I ignore this on my local machine and blip over
+to a VM when I need.
 
 If that did not make sense, do not worry.
 
@@ -71,13 +72,15 @@ If that did not make sense, do not worry.
 How to compile
 --------------
 
-Its simple, in the bootstrap dir, where we can see the `Gruntfile.js` run::
+Its simple, in the bootstrap dir, where we can see the `Gruntfile.js`
+run::
 
   $ grunt dist
 
-This will start a javascript task runner (sort of make for js) that simply
-builds a `/dist/` directory containing the compiled js, css and font files.
-This `/dist/` dir is what gets served to the browser in production.  The rest of the files are supporting acts.
+This will start a javascript task runner (sort of make for js) that
+simply builds a `/dist/` directory containing the compiled js, css and
+font files.  This `/dist/` dir is what gets served to the browser in
+production.  The rest of the files are supporting acts.
 
 
 OK, we should have seen something like this::
@@ -111,10 +114,11 @@ and it should see
 Moving things around
 --------------------
 
-You can skip this bit and come back later - it will make more sense then.
+You can skip this bit and come back later - it will make more sense
+then.
 
-We don't want to directly change the files provided for us by the bootstrap
-team.  We do however need to change *something*
+We don't want to directly change the files provided for us by the
+bootstrap team.  We do however need to change *something*
 
 
 
@@ -123,8 +127,9 @@ Our first Bootstrap File
 ========================
 
 We are now using Bootstrap 3.  This is a new, updated version, that is
-*mobile first*.  Which means its designed to be really sensible on most devices.
-Hooray - that means we can deploy applications to a mobile, without going through the various appstores.  Well sort of.
+*mobile first*.  Which means its designed to be really sensible on
+most devices.  Hooray - that means we can deploy applications to a
+mobile, without going through the various appstores.  Well sort of.
 
 HTML5
 -----
@@ -135,15 +140,18 @@ Make sure this is in the template file ``<head>``::
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-Responsive friendly images.  We need to add ``.img-responsive`` class to each ``img`` tag so that they are treated correctly by Bootstrap.  I need to use a post-process step in the CMS to shoe-horn these in - whatever gets you through the night.
+Responsive friendly images.  We need to add ``.img-responsive`` class
+to each ``img`` tag so that they are treated correctly by Bootstrap.
+I need to use a post-process step in the CMS to shoe-horn these in -
+whatever gets you through the night.
 
 
 
 Containers
 ----------
 
-Everything in BootStrap is in a container.
-A container is defined as follows. ::
+Everything in BootStrap is in a container.  A container is defined as
+follows. ::
 
   <div class="container">
   ...
@@ -154,20 +162,20 @@ The hero units (now seemingly renamed Jumbotrons), the forms, the tables, they
 Shims and things
 ----------------
 
-Shims and polyfills are bits of javascript code that provide HTML5 functionality
-on older, but still widely deployed, web browsers that do not support HTML5
-natively.  The IE range upto IE 7 is a notable case, still widely deployed in
-corporate environments.
+Shims and polyfills are bits of javascript code that provide HTML5
+functionality on older, but still widely deployed, web browsers that
+do not support HTML5 natively.  The IE range upto IE 7 is a notable
+case, still widely deployed in corporate environments.
 
-An example is the HTML5 element ``canvas`` which allows javascript to draw on a
-canvas.  Where there is no HTML5 ``canvas`` element built into the browser, the
-polyfill will call up perhaps a Silverlight plugin and perform the draw action
-on that.
+An example is the HTML5 element ``canvas`` which allows javascript to
+draw on a canvas.  Where there is no HTML5 ``canvas`` element built
+into the browser, the polyfill will call up perhaps a Silverlight
+plugin and perform the draw action on that.
 
-These shims and polyfills are amazing pieces of work, but (as in polyfilla) they
-simply cover over cracks. And they are not perfect.  So I am ignoring them for
-now in my template code.  In production this may change but for our purposes
-they add complexity to understanding.
+These shims and polyfills are amazing pieces of work, but (as in
+polyfilla) they simply cover over cracks. And they are not perfect.
+So I am ignoring them for now in my template code.  In production this
+may change but for our purposes they add complexity to understanding.
 
 https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills
 http://remysharp.com/2010/10/08/what-is-a-polyfill/
@@ -179,10 +187,10 @@ A quick customisation
 =====================
 
 Lets start with `variables.less`.  The CSS we use for Bootstrap is not
-hand-written - it is compiled into CSS after the original `less` code is parsed.
-The original `less` code is designed to make writing lots of CSS easier, so it
-supports things like variables and functions (called `mixins` but think
-returning function for ease).
+hand-written - it is compiled into CSS after the original `less` code
+is parsed.  The original `less` code is designed to make writing lots
+of CSS easier, so it supports things like variables and functions
+(called `mixins` but think returning function for ease).
 
 So a quick snippet of `variables.less`::
 
@@ -199,9 +207,9 @@ So a quick snippet of `variables.less`::
     @text-color:            @gray-dark;
    `
 
-Now, lets have some fun.  Firstly our `test.html` page.
-This is quite a bit of code, but it is about the simplest HTML5 + bootstrap page you can make,
-and it liberally ripped off from the bootstrap site.
+Now, lets have some fun.  Firstly our `test.html` page.  This is quite
+a bit of code, but it is about the simplest HTML5 + bootstrap page you
+can make, and it liberally ripped off from the bootstrap site.
 
 .. code:: html
 
@@ -244,7 +252,8 @@ and it liberally ripped off from the bootstrap site.
 
 
 
-Now the above html, is about the simplest one can get for bootstrap.  And it looks like this:
+Now the above html, is about the simplest one can get for bootstrap.
+And it looks like this:
 
 
 .. figure:: https://raw.github.com/mikadosoftware/screengrab/master/screenshots/bare-initial-css.png
@@ -281,8 +290,8 @@ And the result is :
    :alt: Screenshot showing subtly changed colors using new compiled LESS
 
 
-Ok, nothing spectacular, but one line change gives us a new colour set across the board.
-What else can we do?
+Ok, nothing spectacular, but one line change gives us a new colour set
+across the board.  What else can we do?
 
 
 Fonts
@@ -402,7 +411,8 @@ Into this::
    Tada
 
 
-So lets start with Design basics - cribbed liberally from the folks on InterWebs
+So lets start with Design basics - cribbed liberally from the folks on
+InterWebs
 
 
 * Step 1 - Make it look good in Black and White first
@@ -443,7 +453,8 @@ Building our own mobile aware classes
 =====================================
 
 Oh fuck it, really.  This is the shit designers are supposed to
-obessess over.  Here I stop.  If I cannot make do with a main column and a sidebar I am going to have to go back to pen and paper.
+obessess over.  Here I stop.  If I cannot make do with a main column
+and a sidebar I am going to have to go back to pen and paper.
 
 
 .. raw::  html
