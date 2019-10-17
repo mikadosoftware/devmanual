@@ -53,3 +53,42 @@ one option was a board of directors like arrangement (pep 8012)
 But these were no pythonistas - now if they were a business then  the code made less of a impact on business (inverted pyramid) than wider business issues that the coders not in the weeds on - it's who is in the weeds makes decision about the weeds
 
 it's why business / IT distinction works - because business people are in th weeds of business - and it's one thing that may have to chnage - but how does programmable company chnage the amount that can be modelled / relied upon ? how will person management chnage versus governance - will we need person management as much once we have democracy in a company? 
+
+
+Platforms, values and globalisation
+------------------------------------
+
+We see the push back against internal "values" and desire to remain neutral to take money
+
+"what is the point in discussing values 
+
+
+effectively businesses have always said  what their given audience wants to hear and hoped like hell the various different audiences do not listen.  but like politicians they are finding it is now much much easier for different audiences to hear the dissonance
+
+and so we are seeing rose ofnpoliticoans that avoid the dossonce by taking unnuanced aggressive *simple* and most importantly consistent positions 
+
+we should expect the same for businesses - and perhaps massive fracturing of brands (Avon owned Tiffany) 
+
+Globalisation makes this talking to different audiences even harder - it used to be possible to have distinct geographical brands that happened to share the same name - from IBM innUSA having different approaches to That in Nazi germany.
+
+Language will be the best way to hide, but even so there is a pressure for company brand values to influence which clients they use, 
+
+Platforms : we need to see the rise of a new kind of class of business - we had publishers, and common carriers, but is there now a platform.  I don't think so but the main argument is look at gmail - they do filter my email for me based on rules.  But those rules are both mostly common, and mostly user configurable 
+
+we are looking to demand something like : the minute you start selecting what to show 
+
+gmail does not remove my access to my emails but it does present them in filters 
+
+I think the filter bubble implies a different seduction process - the difference between contextual advertising and behavioural advertising
+
+as such I think we have a line for difference between common carrier and publisher / platform 
+
+the difference of applying individual rules ?? 
+
+this has huge implications for AI/ML - mostly the need to explain the rules / decisions
+
+email
+search
+timeline - this is where we are still working out details - and it almost certainly leads us to a *agent* based approach where the agent is working on our behalf to deliver a best experience - which implies that we stop being the product and start being the programmer - as why should Inrely on Facebook being the best agent for me to view facebook platform
+
+and we come full circle - the walled gardens are looking unlikely to succeed. 

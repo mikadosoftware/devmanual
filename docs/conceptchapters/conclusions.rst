@@ -383,4 +383,9 @@ But I did not.  And it's probably not talent (risk aversion aside)
 
 It's Rosencrantz and Guidebstern, it's the people in life of brian at the back of the crowd unable to hear
 
-it's just living your life 
+it's just living your life while The Greatest Story Ever Told is just over there...
+
+Monty Pythons Life ofBroan is what would happen if the same trigger events occurred to someone who was not "special " - and the misinterpretation of the rest of the world ... i am just as deserving, i just was born in the stable next door
+
+as such i am a huge proponent of communal wealth not privatised profits - colour me euro-liberal 
+
