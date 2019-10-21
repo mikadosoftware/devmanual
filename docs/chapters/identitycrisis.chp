@@ -1,0 +1,283 @@
+===============
+Identity Crises
+===============
+
+Why are all government ID schemes bad ideas and what can be done instead ?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+..  notes:
+    Put our own ID / biometrics online
+    then others can see them - too hide them in govt dbases that are somehow made secure
+    is to belive foolishly the govt can do this (and then allow every toim dick and customs guard to view it, instantly
+    and to beleive in security through obscurity.
+    its like thinking if I wear a paper bag no one can steal my face.
+    Stealing a likeness of your face or retina is not the hard part.
+    Passing your self off with my face or retina. Thats the hard part.
+
+    security is web of trust, and amount of trust.
+
+    Clinet ssl certificates as worked example 
+
+Identity, Security and ID Cards
+===============================
+
+You are unique, a one-off, there is no-one quite like you in the world. Honestly.
+
+It sounds like a nice compliment, and of course I meant it like that.  I *love* your work, *dahling*. 
+ 
+However, its probably less of a compliment than most of us would first think, because its rather an obvious statement.
+
+That you are a single, unique person, that you *have* identity is after all kind of obvious.
+
+No other human being stands exactly where you are or has lived exactly the same life.  There is a singleness about you, one and only one, a uniqueness, or to dip into neology, an *identity-ness*.
+
+That we are not terribly different from others is the fipside of the compliment.  There are millions of people who are just as (or, horror of horrors, more) intelligent, good-looking and generous.  To stand out from the crowd can reinforce your identity-ness, and is probably why fame is so sort after.
+
+So if I am different from everyone else in the world (although maybe not by much) what is all the fuss about.  Give us all a card, problem solved, surely?
+
+
+Authentication and Authorisation
+--------------------------------
+Just because you have identity, it is not a simple problem to translate that into an effective security system.
+
+Security is, at root, knowing who, and how much, to trust another human being.  To achieve this you, or any security system 
+need to make two decisions.  Firstly, *which* identity, out of all the others, is this human being.  And having decided that, how much access/trust should you give that identity. 
+
+Both those decisions have gradations - that is we can be 90% sure this person is Fred Bloggs, and we trust Fred with only 50% access to our secrets.
+
+That first decision is Authentication - a human claims to be a given identity, can we verify that?  
+
+The second decision is Authorisation - how much access do we give to a person whom we believe has a given identity?
+
+Identity is not Authentication, nor is it Authorisation.
+
+Identity, and this is important, identity is a *public* thing. I am Paul Brian.  Everything that can be used to support that identity is public - my face, my fingerprints, my friends' faces' etc etc.  
+
+But for security to work well there need to be secrets, usually secrets *shared* between the secure system and the person wanting access.
+
+I am the identity Paul Brian.  There is next to no point in spending effort to ensure that I am who I claim to be.  If I claim to be Richard Branson, that is a deception, but it truly does not matter (in fact in the UK it is not even illegal).  Only *obtaining pecuniary advantage by deception* is illegal.  So when I walk into the bank, their job is not to determine if I am Ricahrd Branson, owner of Virgin PLC, but only if any human being has the correct shared secret that allows that human to withdraw from the account named R Branson.
+
+Identity does not matter.  Web-of-trust matters.  And a web of trust depends on secrets.  Just not necessarily shared secrets.
+
+The simplest security approach is to have a shared secret, and rely on that.  For example a PIN number or a key.  This works fairly well.  Of course this is one-factor authentication.  Two factor authentication works even better - for example a PIN Number and a bank card.  The Bank does not care if Richard Branson taps in his PIN into the ATM, or if I do, they only care if it is correct.  
+
+This is OK, for most security.  If you want to do more you have two choices - monitor for likely fraudulent or suspect transactions, or try for three-factor security.  
+
+THree factor security usually means not only must any human hold the card and know the PIN number, but the hand holding the card must bleong to a given person.  Now here are two foolish assumptions.  Firstly three factor authentication is a bit more secure, but the minute biometrics work say 98% well, then we shall junk the bank cards and go back to two factor authentication, or even one factor, losing even the PIN numbers. This is dangerous
+
+OK, three factor authentication is not getting us anywhere.  How about monotoring for suspect transactions.  This works surprisingly well.  I have had credit cards refused on holiday because I forgot to tell the bank I was going.  Enbarrassing but from the banks point of view it empahsises their main selling point - security.
+
+And it works well for the things governments are concerned about too - crime and taxation.  Tax evasion is prevented not because governments know the identity of those supposed to be paying tax.  (well the really easy cases might be :-).  But evasion is caught because that massive loss in the second quarter looked a bit unlikely, because the auditor counted the number of chinese takeaway foil boxes coming in and meals going out. [#]_
+
+
+
+Failure of biometrics and two factor authentication
+---------------------------------------------------
+
+Using a persons identity to Authenticate their identity is circular and foolish.  This is the failure of biometrics.  The most common biometric all humans have is their face.  Millions of years of evolution have brought us the ability to easily recognise the clearest identity-proxy humans have.  I can be pretty sure of differentiating between any one of 6 billion humans using this simple biometric.  But it is *not* a shared secret.  It is not part of a web of trust.  It is a username, not a password.  And using biometrics as a security is asking for *one* factor authentication.  We have just confused difficulty of stealing biometrics with difficulty of obtaining two factors at once.  Its fine to let the computer recognise my face, and say please enter password.  But not to let it recgnise my face and open up.
+
+In 2005 [#]_ the Mercedes S-class car had fingerprint recognition on the handle.  Very swish.  Till robbers in Malaysia cut off a man's fingers and stole his car.  The car makers had confused a public (and publicly available) statement (the owner's identity) with Authentication - a corroboration of the identity (i.e. knowing a pin number to get in the car).  This was not Identity theft.  It was theft of his *car keys*.  His one-factor security system, just was not secure.  
+
+Web of trust
+------------
+
+Imagine a Kafka-esque situation for a moment. You wake up one morning
+and say hello to your husband who demands to know what you are doing
+in his house.  Your kids do not recognise you, your boss and
+colleagues say "where is Susan?".  The world has gone mad.  
+
+It's the beginning of an exciting movie or a fantastically dull book.
+
+But look at things from the point of view of the rest of the world.
+They remember a different, possibly better-looking person called
+Susan.  They laughed and spent time with her.  Now you turn up and say
+"Hi, I am Susan".
+
+The world has two choices - to think that the entire country has
+undergone some parallel universe swap / mass hypnosis event, *or* that
+you are mad.  Guess which they will take?
+
+So what *is* your identity?  Are you Susan? Or is the other person your husband remembers marrying actually Susan? 
+
+Well, from the practical point of view, its who the rest of the world thinks is Susan, *is* Susan.  Your Identity is a function of everyone else in the world.  Who you are is who you are - how everyone else recognises you will vary.  Your wife will recognise you from your face [#]_
+
+ This is a bit of an odd one to get your head round, but bear with me.
+
+
+OK, now imagine the inverse of this.  A person awakes with total
+amnesia.  He has no idea who he is.  Again, an exciting movie beckons.
+The doctor smiles and says "Hello, George".  His wife walks in and
+kisses him, his friends all assure him he is George and they remember
+him.  He must assume he actually *is* George, and seeks treatment for amnesia.  (But sitting in the waiting room, he finds the secret piece of
+paper found in his pocket saying "They are all lying.  You are John Watson, meet me by Tower Bridge at midnight !).
+
+How would an amnesiac know if they were being lied to about who they are?
+
+Your identity depends on the rest of the world.  Your identity also
+*varies* with the rest of the world.  Perhaps your wife knows you
+better than you know yourself, but the Amazon marketing department
+barely knows customer 12345678 at all.
+
+You do have *an* identity, but *which* identity depends on everyone
+else agreeing.  If you think I am going off the deep end, ask
+yourself, how does a spy ring put sleepers into a country.  Someone
+arrives in Chicago and says 'Hello Comrades, my name is Gregorovitch,
+err sorry, Greg.'  If enough people believe him, he *becomes*
+Greg. [#]_
+
+The crypto-blokes have a term for this - web of trust.
+
+Essentially it means that the only way to know if you can "trust"
+person X is to trust the judgment of someone else who also trusts
+person X.
+
+This web provides the source of our uncertainty.  If you are relying
+on other people to tell you what a persons identity is and how much
+you can trust a person with that identity, then you can never be 100%
+sure.
+
+And so a computer security system starts off like our amnesiac, and
+needs to be told who to trust, in order to start their web of trust.
+[#]_
+
+Governments want to keep the web of trust *short*.  The "government"
+trusted the post office clerk, the post office clerk saw my passport
+and issued me a ID card.  Therefore my ID card is valid.
+
+
+
+Better Bio-metrics
+------------------
+It seems bio-metrics is misunderstood.  By the U.K. Government as much as Mercedes.  My bio-metrics do not "prove" I am who I claim to be.  They *are* who I claim to be.  The most widely used biometric is the human face.  Everyday hundreds of people walk past you publically displaying their identity.  Its as if everyone walked around flashing their passports.
+
+I would like to suggest a different approach to all this.  I simply take a recent photo of myself, and I take my NHS number or drivers license number, and I produce a SHA-1 hash.  I put this on the web, say on paulbrian.bigbrother.gov.uk.
+Lets call it my electronic face.
+
+Get everyone else in the country to do the same.  See a cottage industry spring up to support it. It will be self funding, and cost a lot less than letting the government try.
+
+Now my wife hashes *her* e-face and mine together.  Anyone who wants to can now see that my wife is willing to say that the photo and the NHS number on my face are mine.  
+
+Now lets move on a bit.  I vist the ID card counter (post office I suspect).  The nice man behind the counter (trained in all the arts of counter terrorism and anti-fraud) looks at my passport (or whatever system government will invent to make ID cards less laughable) and looks at my face, then hashes the e-face with his e-face.
+
+Now what has this achieved.
+
+Firstly the government does not own or control copies of Identity.  I do. 
+
+Secondly we have moved the security focus away from how can the government grab my bio metric to how can the government assure itself my bio metric matches up with their internal ref numbers
+
+then we can sensibly worry about authorisation.  WHich is where the fuss should be.  It does not matter if xxx had had a valid ID card that demonstrated he was a british citizen.  the problem was he had a bomb on his back.
+
+
+What is the point of an ID card.
+It protects nothing
+
+It makes collecting taxes easier.
+Well thats not the point. And anyway 50% of the fortune 500 paid no income tax last year.  I can give you their registered addresses if you want.  
+
+
+So whats to be done?
+--------------------
+
+Firstly, we accept that a specific identity is not something we have, or are. It is something other people give to us through their interactions with us. 
+
+Then we realise that authenticating identity is not the point - we need to authenticate our web of trust - the six degrees of separation f you will.
+
+How good are biometrics is not really the point - its how much can we trust an ID card.
+
+The biometrics are not an authentication - they are an identity. a public declaration. (cf username)
+so what does a ID card *really* say - not much actually. it just links one public identity (my retina scan/ face)
+to another (social security number). Well frankly that's not a lot of help, and it does not need a hundred million pounds.
+
+imagine I take a photo of myself, turn it into a TIFF file, and then create a hash of it, and say my social security number.
+that hash cryptographically links my photo to my social security file.  (the chances of a collision? dunno)
+
+I can then publish this, and anyone can download the hash, and the two parts. Now the person at the social security desk can then hash the photo again, 
+
+What is needed is a way to trust that the hash you downloaded from the Internet 
+It should be simple - there should only be one unique publicly available social security number up on Google. The minute there are two I can be informed, lets face it a search of 60m social security numbers even on a modern laptop is less than a second.
+
+.. The problem of authentication is then placed where it should be - with human beings looking at other human beings and going - huh?
+
+.. The govt does not need to run an ID card system - it needs to run a dispute resolution system, and a large publicly available social security and hash photo repository.
+
+.. Can it fail - well yes, but as the data needed to commit impersonation successfully is publicly stored, the chances of a poisoning of the data being discovered in a timely fashion is orders of magnitude higher.
+
+
+
+
+
+
+
+
+.. Even if we authenticate you, we are back to levels of trust.
+We authenticate you as being 
+
+.. tying too much into one identity token is dangerous. If I want to join Special Branch they basically go an talk to all my friends and family. The more good trust links I get the better
+
+
+
+
+
+.. The original Identity / Authentication Two-step
+
+.. I got my first bank account when I was 14 years old - very exciting. Barclay's had a "get 'em early" account if my Father would counter sign. No credit, just a savings account.  If I wanted to withdraw money, I had to go to the bank and sign a slip.
+
+.. Now here is the perfect example.  I would walk into the bank and announce that I was Paul Brian (14 and 3/4s).  The bank teller would not care whether that identity was correct or not.  They would just ask me to provide my shared secret - my signature. If my shared secret matched their shared secret, they would give me the cash.
+
+.. How did they get the shared secret ?  They trusted another party (my father) to corroborate that I was Paul Brian, then they would accept a shared secret from me (my signature)
+
+
+
+
+.. Is a signature a biometric or a shared secret?
+
+
+
+.. Secrets corroborate your identity in a hard to repudiate manner, and is to all intents and purposes a hash of all the trust the *link person* has converted into a proxy.
+
+.. So we want secrets not identity to use for authentication
+
+ 
+
+.. Sometimes that is done by passing on the risk. see Dick Fuld
+
+
+
+.. woman who was refused credit because of woman with same name and birthday living next door.
+  
+
+
+
+Weaknesses of ID card schemes
+-----------------------------
+
+The quality of the collection of intial bio-metric
+
+The public identity proposal neatly side steps this.  The government is then not *giving me* my identity, but is using what ever process they choose to confirm that I am who I claim to be.  And let us not forget the government is not one entity.  MI5 will take a very different approach to handing out a swipe card to Thames House than nipping down the post office and showing the guy my passport.
+
+privacy and data trails
+The ability to remove the data trail.  Bruce Schneir writes interestingly on this and compares our data pollution with the pllution of the early Industrial Age.  
+
+
+Public Identity 
+
+It is I who claim to *be* a particular identity.  Therefore that is how the process should work most simply.  I make a public statement of my identity 
+(a public key and a hashed photo).  I then get a job.  The HR manager looks at me, and looks at my hashed photo, and verifies that they are the same.  And puts that on my webspace.  
+
+
+good reading
+* http://web.archive.org/web/20071228050037/http://www.matasano.com/log/958/enough-with-the-rainbow-tables-what-you-need-to-know-about-secure-password-schemes/
+
++++
+
+.. [#]  (http://news.bbc.co.uk/2/hi/asia-pacific/4396831.stm). One thing to take away from this is biometrics are usernames (ie public declarations).  They really do not need to be kept secret, or even particularly private.  All biometrics are is a door key. It says nothing about who you are, just what you have or hold.  Mercedes effectively turned this mans fingers into his car keys.  The robbers just stole his car keys.
+
+.. [#] OK - I used to work in a pub during college summer breaks.  There was a regular called "Mike" - nice quiet, unassuming guy, stood his round, laughed at others jokes, that sort of thing.  One night after a heavy bout of drinking, "Mike" went home, and everyone in the pub said goodnight, a chorus of friendly "goodnight mike"s rang out, till he turned and stood in the doorway, took a deep breath and slurred "My name's not Mike.  I'm Jim".  It was suddenly a quiet pub.  About four years earlier someone had got his name wrong, others copied the wrong name and, well the poor guy just never corrected it.  Till that night.  True Story. 
+
+.. [#] This might be an urban myth.
+
+.. [#] compared to all the other basic mistakes, like thinking somehow you can build a single database with everyones retina scans on it, and have it available to every civil servant, *and still keep it secret*.
+
+.. [#] Or she will recognise you from other parts of your body, that frankly I don't want to see scanned at the entrance to a server room. Or at least provide WetWipes.
+
+.. [#] When the robots take over the world, I want to be *that* guy.  Telling the Terminator who he cannot trust.  Bwahahahahaha....
