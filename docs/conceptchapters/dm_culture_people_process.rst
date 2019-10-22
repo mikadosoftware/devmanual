@@ -92,3 +92,5 @@ search
 timeline - this is where we are still working out details - and it almost certainly leads us to a *agent* based approach where the agent is working on our behalf to deliver a best experience - which implies that we stop being the product and start being the programmer - as why should Inrely on Facebook being the best agent for me to view facebook platform
 
 and we come full circle - the walled gardens are looking unlikely to succeed. 
+
+Facebook essentially is if you want to share your post with people not like you you need to pay - the behavioural filter is a pay wall ? 
