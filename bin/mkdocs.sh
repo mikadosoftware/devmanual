@@ -6,28 +6,25 @@
 
 # Get back out of bin
 cd ..
-
+REPODIR=`pwd`
 echo "Run PreProcess"
 #prepare by putting it all in one big file
-python bin/preprocess.py docs/index.pre
+python $REPODIR/bin/preprocess.py docs/index.pre
 
 echo "Make Sphinx Docs"
-cd docs/
+cd $REPODIR/docs/
 make clean
 make html
 make latex
+cd $REPODIR/docs/_build/latex
+pdflatex --interaction=nonstopmode TheDevManual.tex
 
 #I expect to run this in a docker instacne on my laptop
 #so i need to run it on here like a server
 
 echo "Run post Process (build marketing site)"
 #build it as a book marketring site
-cd ../
-python bin/postprocess.py
-echo `pwd`
+cd $REPODIR/
+python $REPODIR/bin/postprocess.py
 
-#firefox http://172.17.0.2:8000/_build/latex/TheDevManual.pdf
-firefox http://172.17.0.2:8000/marketingsite/index.html &
 
-cd /tmp
-python -m http.server 8000

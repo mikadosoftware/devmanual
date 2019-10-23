@@ -231,3 +231,114 @@ This is why you need to understand what problem a client wants solved and not ju
 
 
 
+Improving Ticket Tracking in Path
+=================================
+
+It does not matter what tracking system you use, as long as everyone uses it 
+consistently.  The silver bullet is not the tool, its the discipline.
+
+Paul's Personal Principles for Ticket Tracking
+----------------------------------------------
+
+Everything is either a *feature*, a *bug* or an *admin task*.
+
+*feature*
+  An improvement (hopefully!) to an existing system.  It might be 
+  tweaking the logo size, it might be rewriting the accounts system.
+  Whatever it is, there is some business value that will be added to 
+  the whole.  It is *analogous* to a capital investment.
+
+*bug*
+  A bug occurs when we find out what we meant to do, is not actually 
+  what happened.  It might be a typo in code that subtracts 20% VAT from
+  every till sale instead of adding it on top, or it might be a receiver
+  on a wall, with smoke pouring out of the power supply.  Either way, 
+  it was working as intended, or we thought it was and did not know.
+
+*admin*
+  Admin tasks are at best, things we have not automated yet. Filling in 
+  expenses forms, posting a letter, updating the web site news feed.
+  There are a million and one things we can put under "admin" but if it's
+  something we repeat with only small changes, its admin.  If its a one off,
+  it might be more like a feature.
+
+Bugs and Admin tasks are simple - they appear in a queue, you can deal with them
+in order of arrival, or triage and apply some importance to them, but they 
+are just one queue.
+
+Features are a little more complex - they have hierarchies associated with them.
+The usual one in Scrum is Theme -> Epic -> Story -> Task.  Sometimes it is
+easier to have explicit hierarchies, sometimes it is easier to use tagging.
+
+However this goal is to manage the backlog of work - to allow everyone to see
+the forest of themes and epics, whilst still working on trees of stories.
+
+ 
+
+
+
+Important and Urgent
+--------------------
+
+.. figure:: workstreams.png
+   :scale: 50 %
+
+Departments / and teams
+-----------------------
+
+however there needs to be someone sweeping the floors.
+
+so we have a compromise - three strands of work - feature, bug, admin.
+and they are prioritised across the board (admin is very rately at
+the top)
+
+but admin does need to get done - so we time slice and pick off top of
+the admin queue
+
+this also works for bugs (such as devops) and features
+
+each time has it's 80% focus.  for a developer like seun it's 80% on features
+
+for devops like Ryan it's 80% bugs (where bugs can also be  the
+receiver is not working)
+
+for reporting team the 80% is admin - doing the same report but
+slightly different
+
+
+all of it ends up in us getting paid, so it's all "important",
+and it's all "urgent" - our job is to differentiate between very very
+important and very very very very important
+
+ordering within groups :
+
+each "team" is responsible for a subset of all features, bugs, admin
+work. by dividing up in owner we can then prioritise within owner and
+within parent owner. that way while remains ordered
+
+
+Status transitions
+
+I want to change them. WHo is using them for what
+WHy have we got resolved, closed 
+
+
+
+
+Cheat sheet
+-----------
+
+TEST and Hashin Kanri
+
+
+Features and Bugs are in the sprint
+Support tickets are done on the "admin day".  However we count the
+support tickets done, and display them.  Also [ADMIN] is *exactly* the same as saying "support" tracker.  We shall merge this eventually
+
+Burndown is just burndown.
+
+
+Release Mangement
+-----------------
+
+
