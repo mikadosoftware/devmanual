@@ -6,20 +6,30 @@ The Software Mind
 Introduction
 ============
 
-I have twenty years experience "in the trenches" of software
-development - writing commercial and open source software for cutting
-edge ISPs, major financial houses and not-for-profit organisations, in
-big offices, tiny offices or on globally distributed teams.
+The Dev Manual - how to do it right
 
-And I have learnt a lot about what works, and what does not, when it
-comes to getting software out of the door.  
+This is an attempt to look for best practise (not the ossified stuff the real stuff) and then build an OSS skeleton around which i build a real saas business - I want to see it and do it right
 
-Mostly this is not *how* to create software and
-software teams, a lot of this book is about ... why.  Why is software
-eating the world, why do certain practises work well and why do
-certain pathologies still run in our organisations.
+Security
+--------
+95% of the time security is doing the right thing well.  It's the remaining 5% that is the hard costly trade offs.  We will come to those later.
 
-I call this *why*, The Software Mind.  The *how* is The Dev Manual.
+
+
+
+
+Use CAs for SSH 
+Each docker build needs to trust various ssh clients 
+see smallstep.com/blog/use-ssh-certificates
+
+Use client certificates to handle web access
+Use MFA to handle web access
+
+Don't bother with passwords etc - ???
+
+
+
+
 
 
 {{ conceptchapters/dm_plumbing_ci.rst }}

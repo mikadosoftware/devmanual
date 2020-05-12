@@ -389,3 +389,7 @@ Monty Pythons Life ofBroan is what would happen if the same trigger events occur
 
 as such i am a huge proponent of communal wealth not privatised profits - colour me euro-liberal 
 
+
+
+SEO
+https://moz.com/blog/case-study-ranking-high-volume-keyword
