@@ -393,3 +393,16 @@ as such i am a huge proponent of communal wealth not privatised profits - colour
 
 SEO
 https://moz.com/blog/case-study-ranking-high-volume-keyword
+
+
+Spectrum of jobs
+
+http://rachelbythebay.com/w/2020/08/14/jobs/
+
+Software is a spectrum - and the lines are getting a bit clearer
+
+- vendor ops
+- internal code ops
+- core tooling
+- regulation
+- mis 

@@ -1050,3 +1050,22 @@ Just run something ok !
 Then micro services deployed into cloud with kubernetes (different to mesos)
 
 And a data lake ... ??? 
+
+SRE Software Reliability Engineering
+-------------------------
+
+http://rachelbythebay.com/w/2020/08/09/lib/
+
+This is important but it is not about Google Scale.  Google scale is where the one in a million failure happens this week. Twice.  But that is trying to fix the bugs that happen say outside the 2nd standard deviation (98%) 
+
+We are interested in fixing bugs where it affects reliability.  I think this is something like std dev spread - 68% 
+
+example is writing a file or a dot file that might end up getting used in diff threads
+
+just write with normal io - probably won't get used in threads probably won't collide
+
+but if it does collide then do something like write copy as temp and mv file over afterwards in a quick little library (fileio-lib)
+
+that will get us to the 98% level - after that real seriousness takes over
+
+So I am going to try and build devmanual as series of structured points - the basic teaching the simple stuff - then hand off to libraries for second std dev and the rest is up to you 

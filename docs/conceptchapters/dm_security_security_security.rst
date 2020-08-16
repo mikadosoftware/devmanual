@@ -140,3 +140,11 @@ The comparison with boilers in late 19th C and today
 https://www.insuranceage.co.uk/insurer/3925246/cyber-row-continues-as-abi-responds-to-mactavish
 
 Speak to Mactavish boss Hepburn 
+
+
+
+security ideas
+--------------
+
+
+https://github.com/Netflix/bless/blob/master/README.md

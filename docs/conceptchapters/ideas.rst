@@ -1,3 +1,23 @@
+
+SRE
+---
+
+PostMortems
+
+https://codeascraft.com/2012/05/22/blameless-postmortems/
+
+
+Front end
+---------
+https://jvns.ca/blog/2020/06/19/a-little-bit-of-plain-javascript-can-do-a-lot/
+
+https://news.ycombinator.com/item?id=23578319
+
+
+javascript
+https://news.ycombinator.com/item?id=23590848
+
+
 We have become our own agents (all that time looking things up on iphones tripadvisor hotels.com) was supposed to have been done by AI
 
 
@@ -31,3 +51,71 @@ https://cloud.google.com/blog/products/devops-sre/the-2019-accelerate-state-of-d
 
 https://blog.acolyer.org/2019/04/03/establishing-software-root-of-trust-unconditionally/
 - external verifier asks server to hash its memory in such a way that it can only happen in time t if there is no malware or anything else present...
+
+Metrics
+-------
+https://news.ycombinator.com/item?id=23361319
+
+
+Don't do distributed - yet
+--------------------------
+
+99 times out of a hundred your problem is not going to be solved with a distributed processing platform - your data is not that big (see vaez) your reliability not that vital
+
+Solve the problems in order 
+
+- who
+- what changes their behaviour
+- why 
+- 
+
+Build a robust *process* for discovering customer needs and meeting those iteratively - watch your metrics, run tests and experiments - focus on writing business software in a sensible manner 
+
+Once you breach that 4th order of magnitude you can worry about Google Scale problem (GANDALF)
+
+
+
+
+https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/
+
+
+Distributed tracing 
+-------------------
+
+https://medium.com/@copyconstruct/distributed-tracing-weve-been-doing-it-wrong-39fc92a857df
+
+https://www.kartar.net/2019/07/intro-to-distributed-tracing/
+
+https://research.google/pubs/pub36356/
+
+
+Once we do go distributed we hit many more issues - but we know we need to go there someday
+
+
+More on encryption
+------------------
+https://news.ycombinator.com/item?id=23390966
+
+https://github.com/hashicorp/vault/blob/45b9f7c1a53506dc97221f0915daeaeb0a6fe894/website/pages/guides/operations/rekeying-and-rotating.mdx#L20
+
+https://latacora.singles/2019/07/16/the-pgp-problem.html
+
+
+Methodology 
+-----------
+Agile is fairly simple - it's an *iterative* process.
+Barry Boehm had this in 1986 with "spiral model" - where you developed to mitigate the largest known risks at each iteration.
+
+length of iteration up to you
+
+Web components
+--------------
+why are they good? 
+webcomponents.dev - all the ways to make a web component
+
+
+scaffolding 
+-----------
+Use the cadence to build scaffolding for organisation 
+
+https://medium.com/craft-ventures/the-cadence-how-to-operate-a-saas-startup-436aa8099e8
