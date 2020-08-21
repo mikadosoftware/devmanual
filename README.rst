@@ -95,7 +95,7 @@ Marketing
 - Contacts database
 - CRM 
 - email review
-- 
+- utm_source - how to track clicks from emails through to your site
 
 - Interviews around the major themes - CI, testing, security, 
 - .org design, coase economics, etc etc 
@@ -128,3 +128,23 @@ This is my devmanual -
 
 
 - Dev Manual : how to build the systems needed to develop software : deep dive "labs" on big subject areas like important data structures / algorithms, build-your-own example databases, erlang chat clients, graph databases (dagobah)
+
+
+
+
+
+There are two kinds of devmanual
+
+there is the manual *for* developers and there is the manual *about* developer processes
+
+For most businesses - if for example you are going to sell a business, then the manual *about* the processes is what counts.
+
+- release process
+- SDM process sdlc
+- infrastructure 
+- backup recovery disaster recovery
+
+this is stuff that is how do we operate without you, how do we scale without you, how do we change without you 
+
+Audit cloud services for security
+https://news.ycombinator.com/item?id=23262873

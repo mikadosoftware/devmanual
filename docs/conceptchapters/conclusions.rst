@@ -406,3 +406,37 @@ Software is a spectrum - and the lines are getting a bit clearer
 - core tooling
 - regulation
 - mis 
+
+
+Excel / Rest API for data provision
+
+- data better 
+- 
+
+What is a product manager ?
+----------------------------
+
+It's the next CEO training ground
+
+You need to understand
+
+- the user and user need
+- the business model / business
+- the product data (usage sales costs etc)
+- industry and domain
+
+manage four risks
+
+- customer value risk
+- feasibility risk
+- regulatory risk
+- business risk  (profitable) 
+- communication risk (moving the stakeholders with you)
+
+
+usage of swardley maps can help greatly to understand and then explain decisions 
+
+
+
+https://svpg.com/product-vs-feature-teams/
+https://svpg.com/the-product-manager-contribution/

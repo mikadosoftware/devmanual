@@ -5,6 +5,11 @@ Data Publishing needs to be a business level function, providing
 consistent accurate and timely data to the rest of the organisation is
 a vital task.
 
+https://news.ycombinator.com/item?id=24224355#24225508
+
+There will be emerging "data librarians" departments as a cross functional discipline 
+
+
 Like Bezos, can only consume data that is published - and people only
 publishbsokething they willing to support
 
