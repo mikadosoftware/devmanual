@@ -1122,6 +1122,19 @@ I keep stuffing it up. I am a fairly good coder - and have survived almost 20 ye
 
 Remote pair programming
 
+Pair Programming ain't so hot
+------------------------
+Often touted as a cure all for Agile, Infind pair programming less effective and often frustrating
+
+Creativity is often a solo affair (at least in short bursts).  Painters don't tend to share canvases and writers of sitcoms don't use the writers room to actually write - in fact the writers room is often a hell hole so do better reviews guys 
+
+Pair programming is great for knowledge sharing (working on or through a system unknown to both or just one) - and it is pretty good for grinding (got to work through dozens of similar crap - make two people miserable and share the job!)
+
+Finally there is the creative room - get three or four skilled developers, well
+motivated, given then a clear task and get the usual management structure out of their way and you can expect great things - I can personally attest to this across many years - it can work like magic (for a short while)
+
+But this is hardly a function of pair programming and barley or proximity - but the time you have four expert developed skilled in the system being worked on and familiar with each other, identified most vital areas to work on and removed organisational barriers then the bit most people focus on (put them in a room) seems barely relevant - at that point you could lock them up in ashling cells in Alcatraz and force them to tap pout signals on the piepwork in morae and you would still expect a pretty good result. 
+
 After the fact ticketd
 
 https://itunes.apple.com/gb/podcast/tedtalks-audio/id160904630?mt=2&i=346210793
@@ -1906,3 +1919,5 @@ other examples ?
 
 .. [#stross1] Charlie Stross is well known for popularising, if not inventing, the idea of `corporations as slow AIs <http://www.antipope.org/charlie/blog-static/2018/01/dude-you-broke-the-future.html>`_ 
 
+VFX artists will form first global trade unionism
+------------------
