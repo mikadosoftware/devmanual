@@ -44,6 +44,21 @@ me.
 
 * Part 2 - Actually designing something, with colour wheels and stuff.
 
+great explanation of how many colours you really need: https://refactoringui.com/previews/building-your-color-palette/
+
+five greys, five primary five accent colours (primary and accents different shade / tints of one main choice, but can have mant accent main colours depending how complex the UI is 
+
+
+https://news.ycombinator.com/item?id=25180180
+Can you imagine if every city in America used a different stop sign? It would be disastrous. 
+
+The last bit is culture. Color in each culture is widely different. Red in China conveys prosperity, which is why if you look at designs for stock portfolio apps in China, graphs are red when going up in price.
+
+
+
+
+
+
 * Part 3 - The bit where I need a three part series but have run out of things to say.
 
 

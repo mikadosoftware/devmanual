@@ -76,6 +76,13 @@ So
 * Track the metrics 
 
 
+Business Metrics
+
+- customer account churn %
+- Monthly mrr revenue churn %
+- net mrr churn 
+(check out startups for rest of us) 
+
 
 Infrastructure matters most
 ---------------------------

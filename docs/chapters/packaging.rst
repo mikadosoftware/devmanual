@@ -3,6 +3,14 @@ Python Packaging Best Practises
 ===============================
 
 
+
+https://news.ycombinator.com/item?id=25260948
+
+use pip constraints 
+
+
+
+
 Rule number 1: Run! Run for the hills !
 
 Some notes

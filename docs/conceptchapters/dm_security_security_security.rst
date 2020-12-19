@@ -141,10 +141,28 @@ https://www.insuranceage.co.uk/insurer/3925246/cyber-row-continues-as-abi-respon
 
 Speak to Mactavish boss Hepburn 
 
+Automated tools to get a baseline
+------------
+https://swimm.io/blog/infection-monkey-tutorial-start-contributing-using-swimm/
 
+
+BeyondCorp
+-----------
+Host based security
+https://transcend.io/blog/restrict-access-to-internal-websites-with-beyondcorp
 
 security ideas
 --------------
 
 
 https://github.com/Netflix/bless/blob/master/README.md
+
+
+Interesting AWS overview of security
+----------------
+
+https://summitroute.com/downloads/aws_security_maturity_roadmap-Summit_Route.pdf
+
+
+https://latacora.singles
+

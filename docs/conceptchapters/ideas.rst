@@ -101,6 +101,12 @@ https://github.com/hashicorp/vault/blob/45b9f7c1a53506dc97221f0915daeaeb0a6fe894
 https://latacora.singles/2019/07/16/the-pgp-problem.html
 
 
+Tech stack for one person saas discussion
+-------------------------
+
+https://news.ycombinator.com/item?id=25186342
+
+
 Methodology 
 -----------
 Agile is fairly simple - it's an *iterative* process.
@@ -112,6 +118,11 @@ Web components
 --------------
 why are they good? 
 webcomponents.dev - all the ways to make a web component
+
+Overall views
+--------------
+https://paulosman.me/2019/12/30/production-oriented-development.html
+
 
 
 scaffolding 

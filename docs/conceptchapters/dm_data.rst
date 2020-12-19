@@ -27,3 +27,12 @@ same level of cultural priority.
 Simply put, you need to fire the Director of Marketing for failing to
 keep his data clean.
 
+
+Is Europe one market or many?
+-----------------
+Yes, both.  Just like America is one market but many.
+It's just in America there is a strong aspirational hierarchy (driven by federalism / national tv stations) - people in Ohio want to be just like the Cool california surfers they see.  But few Spaniards aspire to be like the cool Budapest or berliners.  And vice versa.
+
+So market transfers need to apply market specific changes - making mining between markets as one company much harder. 
+
+facebook and msft will have amazong i18n war stories 
