@@ -79,3 +79,19 @@ Span of code control
 Scripts get better as we re-write then. Code gets better as ewe refactor it.  Two pizza teams are good for a sizing of span of control - and we want the quality of code to keep improving - so is there a number of lines of code that we should compare "editors" to - book editors? 
 but even that is not right as it's common to reuse code - not reuse books. perhaps editing regular editions ? 
 
+
+Capturing tech debt
+-------------------
+
+Tech debt is a vital and costly idea.  (see why can't people with SAP installs upgrade ?)
+
+we can assess costs as follows
+
+
+- backwards compatible means that a given reference model (ie test suite) passes when a change is made, and that the test suite / ref model adequately matches real world requirements 
+
+(yes that means coding up your requirements)
+
+- Can we accept upstream patches / upgrades with only a single release cycle of testing and no custom coding (ie assume patch has no backward compatible issues) 
+
+- can we make our own upstream changes (ie developmcode) and see the same effect? 

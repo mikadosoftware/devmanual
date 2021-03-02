@@ -34,6 +34,11 @@ plumbing :
 
 But this all needs a degree of infrastructure - ie carbon or splint
 
+Company telemetry from NaSA
+-----------------------
+https://news.ycombinator.com/item?id=25951003
+
+
 Then there is the enterprisey stuff
 
 * Ticketing system

@@ -83,6 +83,21 @@ Business Metrics
 - net mrr churn 
 (check out startups for rest of us) 
 
+Company telemetry from NaSA
+-----------------------
+https://news.ycombinator.com/item?id=25951003
+
+
+
+
+
+Is systemd really that bad?
+----------------------
+comment from archlinux sys init maintainer
+https://www.reddit.com/r/archlinux/comments/4lzxs3/comment/d3rhxlc
+
+https://lwn.net/Articles/698822/
+
 
 Infrastructure matters most
 ---------------------------
@@ -372,6 +387,17 @@ Basic Management Reporting
 * avoiding the drumbeat of deadlines, and panic, and agreeing goals based on
   data / 20% most effective things to fix.
 * Make one weekly report *today*
+
+
+Style guide
+----------
+https://medium.com/deepnote/building-a-design-system-at-a-startup-7b352d9875b3
+
+
+
+Cool diagramming
+-----------------
+https://pikchr.org/home/doc/trunk/homepage.md
 
 
 The scope

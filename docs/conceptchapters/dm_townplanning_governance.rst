@@ -54,6 +54,12 @@ every commit cycle.
 
 :doc:`chapters/best_approach_to_software_quality`
 
+
+Style guide
+-----------
+https://medium.com/deepnote/building-a-design-system-at-a-startup-7b352d9875b3
+
+
 Code base governance
 --------------------
 

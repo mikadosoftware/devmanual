@@ -103,3 +103,7 @@ Biblio
 https://conf.slac.stanford.edu/xldb2018/sites/xldb2018.conf.slac.stanford.edu/files/Tues_15.50%20Ian%20Willson%20XLDB%202018%20Boeing%20IOT.pdf
 
 
+Latex layouts
+-------------
+https://www.latextemplates.com/cat/books
+

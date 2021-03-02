@@ -1,5 +1,19 @@
 I want to understand and build on cloud the right certificate based trust model etc etc
 
+python authenticate (webauthn) / client certs
+python oso authorise
+
+server approach - ssl disaggregat and then internal certs - beyondcorp 
+
+wasm ui
+
+kuberneyes 
+
+
+
+
+
+
 https://www.hashicorp.com/resources/best-practices-using-hashicorp-terraform-with-hashicorp-vault
 
 https://codelabs.transcend.io/codelabs/aws-beyondcorp/index.html?index=..%2F..index#9
