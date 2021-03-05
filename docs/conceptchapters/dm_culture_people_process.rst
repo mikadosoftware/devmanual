@@ -94,3 +94,9 @@ timeline - this is where we are still working out details - and it almost certai
 and we come full circle - the walled gardens are looking unlikely to succeed. 
 
 Facebook essentially is if you want to share your post with people not like you you need to pay - the behavioural filter is a pay wall ? 
+
+
+Run office hours for FOSS
+-------------------------
+
+Good idea from simon Williamson 
