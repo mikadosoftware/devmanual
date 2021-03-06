@@ -1,3 +1,70 @@
+Systems and products and software etc.
+======================================
+
+We write, maintain andoperate a *software system*.
+This could be some giant tech company like FAANG or it could be
+a small IT department in a small company, or even just a start up.
+
+A system will have *components*
+
+Source code repos - a discussion
+--------------------------------
+(see moxie on why not federated - basically cannot enforce
+keeping up.  This is likely to be the major constraint on
+all network growth - it may be a regulated issue - it often is
+no bank can run on out of support software.)
+
+Monorepo - this is a trick to try and force everyone to upgrade
+on a treadmill - your stuff simply stops working.
+(other benefits to monrepo - reduces number of dependnacies)
+
+I think the monorepo idea is *minimal* - its quite feaible to have
+a mono-working-area - just ensure any rollout follows
+scripted set of dependancies and limit the number of choices people can have.
+They are paid to work here after all.
+
+* Components
+Divide the system into compnents
+
+- audience comms
+- reportlib
+
+Each component has a cision/roadmap
+interleaved for the systme as a whole
+
+
+- Rooms and Racking 
+- Power and cooling
+- Network Hardware and cabling
+- CPU Hardware
+- OS
+Mostly this is answered by "AWS" but we old timers still dream of
+heading to B&Q and buying portable air-con units to keep the server room
+cool in summer.
+
+- primary development stack (ie Python, pandas, AWS)
+I am going to aly down this as python. But the important point here is
+Rust , PHP, Go, Elixir perl, whatever these are language decsioons and are
+all *fine*. They are mainstream and have hundreds of thousandas to millions of people using the stack.  The main trade off to learn here is ... stick to one
+stack as if your life depends on it. Dont try a little bit of everything.
+
+If you realise you need to change the language do it slowly and controlled.
+
+PS Front end does not count as stack - that is more .. flexible. We shall see later.  But even so - dont go hunting off wildly without good reason.
+And mostly, go native for a front end on Mobile.
+
+Plumbing
+--------
+
+- Audience comms
+- database
+- config tables
+- operator tooling
+- metrics
+
+etc
+
+
 Google's Four Keys
 ==================
 
@@ -7,6 +74,7 @@ Deployment Frequency
 Lead Time for Changes
 Time to Restore Services
 Change Failure Rate
+
 
 
 https://thenewstack.io/googles-formula-for-elite-devops-performance/
