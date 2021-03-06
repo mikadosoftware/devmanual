@@ -393,6 +393,18 @@ Style guide
 ----------
 https://medium.com/deepnote/building-a-design-system-at-a-startup-7b352d9875b3
 
+Breach disclosure
+-----------------
+https://www.troyhunt.com/data-breach-disclosure-101-how-to-succeed-after-youve-failed/
+
+Audience comms
+--------------
+- release announcements
+- feature launches
+- breach disclosure
+- password reset (don't use passwords)
+- user manual 
+- 
 
 
 Cool diagramming
