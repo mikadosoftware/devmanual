@@ -87,18 +87,32 @@ https://paulosman.me/2019/12/30/production-oriented-development.html
 better
 https://news.ycombinator.com/item?id=25170547
 
+Dev mode and product mode
+-------------------------
+
+You need to talk to users but also think like users - and it's hard to do both at same time 
+
 
 Building the Decking
 --------------------
 The decking - planks of wood, each simple on its on, together a nice place to stand
 
+plumbing Index
+---------------
 
+
+- Ongoing Incident Management
+  An external or internal situation that seems 
+  highly 
+  A means to gather all known data about incident
+  
+  
+  
 Internal to the code is 
 
 plumbing : 
 - logging
 - metrics
-- etc etc
 
 But this all needs a degree of infrastructure - ie carbon or splint
 
