@@ -1,5 +1,60 @@
+Fundamental principles
+
+- keeping it simple - should fit in one persons head
+
+- Metrics help you keep on the road and there are very few you really need. 
+Speed and Stability (google four keys).
+
+Deployment Frequency
+Lead Time for Changes
+
+Time to Restore Services
+Change Failure Rate
+(https://github.com/GoogleCloudPlatform/fourkeys)
+
+
+We can apply similar four key metrics to the business funnel 
+
+- marketing (lead generation)
+- sales (lead conversion)
+- onboarding (lead to early customer)
+- customer lifecycle (early to ex)
+
+Each of these should also have four keys (or maybe just two) in speed stability terms
+
+Speed:
+Percentage loss through funnel (lead quality) - relates heavily to acquisition cost (ie of you spend acquistionnonlymon the exact lead who will convert you can pay almost any acquisition cost)
+
+?ZFeature uptake - how long after release does a feature get used ? 
+
+
+
+
+Stability:
+
+Churn rate as % of MRR 
+acquisition cost (total customer cost)
+
+usage % ? that's similar to churn ? 
+
+
+
+
+
 Plumbing and CI
 ===============
+
+I really wish I had a better term for this next chapter than "plumbing".
+
+The difference between a pile of rocks and a castle is how the rocks interact to strengthen each other.
+
+Whatever that term is, is the term I want to use for this chapter.  But plumbing will do.
+
+Here we describe the various rocks in the modern software world, and try to show how they interact.
+
+
+
+
 
 build a deploy for (cms) using
 spinnaker docker etc 
