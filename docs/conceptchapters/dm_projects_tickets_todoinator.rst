@@ -338,6 +338,19 @@ support tickets done, and display them.  Also [ADMIN] is *exactly* the same as s
 Burndown is just burndown.
 
 
+Discussion on productivity
+--------------------------
+
+Best analysis of agile ever: 
+https://apenwarr.ca/log/?m=201712
+
+https://writemoretests.com/2012/02/estimating-like-an-adult-what-to-steal-from-agile.html
+
+https://news.ycombinator.com/item?id=15923496
+
+
+Make decisions and stick to them.
+
 Release Mangement
 -----------------
 
