@@ -20,6 +20,39 @@ openness
 Where we double down on democracy
 
 
+The two minute guide to growing a dev team 
+------------------------
+https://allarsblog.com/2018/03/17/confessions-of-an-unreal-engine-4-engineering-firefighter/
+"""
+If you're reading this as an employer or producer, this is how you should be classifying your team's weaknesses and how you should look at distributing team effort to overcome them. If you find yourself in a situation where your top level engineers are being strapped for time because their too busy helping the people below them, you need more senior level engineers. If you find that productivity is good and that you are underutilizing your senior level engineers, the answer is to bring on mid-level engineers. The seniors will allow the mid levels to grow, which in turn allow the seniors to grow as well either sideways into lead roles or upwards into executive / principle / board member roles.
+"""
+
+The essence is you need to start with senior engineers (and in my view senior is 50/50 context and skill - ie you have to know the codebase abs have to have skills.)
+
+But basically you have to monitor burn down (points over time, not tickets) and it should be roughly consistent and *then* you need to find that your engineers have time to answer questions and convey answers abs meaning - ie watch the mailing lists 
+
+public email works because it is as precise or quick as needed and it can be mass publication or individual and it is asynchronous - so not a  interrupt culture like slack 
+
+But 
+
+Start with Senior engineers - when they have surfaced the product or are comfortable then bringin people under them - if seniors become too short on time you have brought on too many mid level so hire senior or reduce mid level
+
+
+Then abs only then bring on people under them - grow teams from the top - 
+
+
+
+sweep
+of history
+----------
+Empires evolved to be nice places to live - better than europe mostly
+but unable to take on changes as they fell back from edge of chaos
+
+so we want some means to take on the chaos and valuable improvements - basically a generational rewrite? that's revolution and scary
+
+i don't have a good answer
+
+but rely on democracy and all people making sensible choices 
 
 
 
