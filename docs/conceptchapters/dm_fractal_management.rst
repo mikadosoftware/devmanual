@@ -3,6 +3,26 @@ Fractal Management
 
 TBD
 
+What is management?
+--------------------
+https://news.ycombinator.com/item?id=16775166
+
+Going to go with my definitions - based on what is bad management we can see good
+
+- build and improve a process (ie dev lead forums)
+
+
+Historically :
+
+a king plus parliament 
+openness
+
+Where we double down on democracy
+
+
+
+
+
 
 Many intelligences model of an organisation / country / culture
 
@@ -73,6 +93,18 @@ Hiring the right way
 https://news.ycombinator.com/item?id=19707543
 
 Calibrate your interview process by having a recruiter identify ten great hires and pay them to do your crappy interview questions. if most of them fail think about it
+
+Embrace the Grind
+-----------------
+https://jacobian.org/2021/apr/7/embrace-the-grind/
+
+
+NOSql world view
+-----------------
+https://highlyscalable.wordpress.com/2012/03/01/nosql-data-modeling-techniques/
+
+
+
 
 Span of code control
 --------------------
