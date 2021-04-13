@@ -40,6 +40,28 @@ Start with Senior engineers - when they have surfaced the product or are comfort
 
 Then abs only then bring on people under them - grow teams from the top - 
 
+Wealth taxes and bill gates
+---------------------------
+https://keenen.xyz/just-be-rich/
+
+
+government is bad at spending money so they should not tax the wealthy 
+
+Bill gates is waaay better at spending money than Inam - or almost anyone frankly
+
+So we should not impose a wealth tax and let him spend that money effectively - a good use of money 
+
+kinda - what if we go one better and give home more
+on why to spend? Like he can have my salary and make me more cash ? Or at least make
+me feel better it is curing malaria or something 
+
+but hang on - why don't we just *elect* billg then he can spend trillions well, not billions
+
+- but no ! that will mean he has to deal with special interests and so on 
+
+hang on - you just said he was better at spending it than governments? if governments would be good if not for all the crap we give then, then why - what?
+
+Ok - let's tax but then be really careful about who we elect and what system they work under - i mean what governments would billg work in - what's wrong with the system such that it cannot work like a business? or what's right (ie disabled rights ) 
 
 
 sweep
