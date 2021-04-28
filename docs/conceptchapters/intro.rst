@@ -7,6 +7,22 @@ a small IT department in a small company, or even just a start up.
 
 A system will have *components*
 
+
+First things
+------------
+
+- publish / surface
+- security 
+https://news.ycombinator.com/item?id=26838333
+
+
+
+
+
+
+
+
+
 Source code repos - a discussion
 --------------------------------
 (see moxie on why not federated - basically cannot enforce

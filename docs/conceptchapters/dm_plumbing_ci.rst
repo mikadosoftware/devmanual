@@ -38,7 +38,15 @@ acquisition cost (total customer cost)
 usage % ? that's similar to churn ? 
 
 
+Upgrade treadmill
+-----------------
+https://www.cracked.com/article_23108_6-ancient-technologies-u.s.-government-still-relies-on.html
 
+NASA buys 8086 chips off ebay
+
+We have to regularly upgrade our deoendnacies 
+
+RAID project mgmt - risks, assumptions, issues, deoendnacie (issue is a risk / dep / assum that went bad) 
 
 
 Plumbing and CI
