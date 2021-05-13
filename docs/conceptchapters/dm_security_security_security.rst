@@ -151,6 +151,13 @@ BeyondCorp
 Host based security
 https://transcend.io/blog/restrict-access-to-internal-websites-with-beyondcorp
 
+HN best practises 
+-----------------
+https://news.ycombinator.com/item?id=27100483
+
+
+
+
 security ideas
 --------------
 
