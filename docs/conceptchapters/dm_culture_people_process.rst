@@ -95,6 +95,16 @@ and we come full circle - the walled gardens are looking unlikely to succeed.
 
 Facebook essentially is if you want to share your post with people not like you you need to pay - the behavioural filter is a pay wall ? 
 
+Research on software engineering
+-----------
+http://www.knosof.co.uk/ESEUR/ESEUR-mobile.pdf
+
+https://www.oreilly.com/library/view/making-software/9780596808310/
+
+
+
+
+
 
 Run office hours for FOSS
 -------------------------
