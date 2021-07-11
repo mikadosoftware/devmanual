@@ -101,6 +101,11 @@ https://github.com/hashicorp/vault/blob/45b9f7c1a53506dc97221f0915daeaeb0a6fe894
 https://latacora.singles/2019/07/16/the-pgp-problem.html
 
 
+definition of unit test v integration test 
+-------------------------
+https://news.ycombinator.com/item?id=27731342
+
+
 Tech stack for one person saas discussion
 -------------------------
 

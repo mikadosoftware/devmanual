@@ -11,8 +11,9 @@ kuberneyes
 
 
 
-
-
+Also Google SLSA
+and reproducible builds
+tamper evident logs : http://transparency.dev 
 
 https://www.hashicorp.com/resources/best-practices-using-hashicorp-terraform-with-hashicorp-vault
 

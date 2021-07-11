@@ -436,6 +436,14 @@ manage four risks
 
 usage of swardley maps can help greatly to understand and then explain decisions 
 
+Nice idea of mise-en-place
+--------------------------
+https://fortelabs.co/blog/mise-en-place-for-knowledge-workers/
+
+https://news.ycombinator.com/item?id=27708708
+
+but i prefer "a plug-in mindset" - there is a queue 
+running always and you are plugging in / out.  Mostly you want to write some code to join that queue - a plug-in that has logging and common data IO and so on 
 
 
 https://svpg.com/product-vs-feature-teams/
