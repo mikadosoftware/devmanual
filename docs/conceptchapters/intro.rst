@@ -175,3 +175,14 @@ engineering means ...
 politics means everyone wants to be at top - but that means picking winners which almost always fails (see literacy at top) try voting 
 Emergent competition is not good way to engineer - no one has lots of roads being built and chooses one - or do they?? 
 
+
+Organisational design 
+----------
+https://riverin.substack.com/p/the-canonical-startup-org-structure
+
+Simple : there are 5 main "functions" Product Management / Product Developement (engineering) / Product Marketing / Operations / Sales.
+
+As you grow you fill out those as "functions" - but everyone has an 80/20 association with those - ie have a major and a minor and 3 awaeenesses
+
+Then you can build teams with a major in each five so they can herd a product 
+
