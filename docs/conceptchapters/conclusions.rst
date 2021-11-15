@@ -281,6 +281,15 @@ social media - it turns out that social media was actually public publishing - (
 
 democratic journalism is important - social media was a way of allowing people to publish something important  (mexico drug wars) or crap (influencers) - somehow we need good ways to find facts and raise them to consciousness - a backlog of issues and a store of facts
 
+80% rule of thumb
+queuing theory says things get bad 75% utilisation
+
+https://news.ycombinator.com/item?id=29220338
+
+so don't plan more than thursday 
+
+
+
 
 The new socialism - of the character
 ---------------------
