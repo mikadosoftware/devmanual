@@ -1,5 +1,7 @@
 I want to understand and build on cloud the right certificate based trust model etc etc
 
+Michael Stepankin: hidden o auth attack vectors 
+
 python authenticate (webauthn) / client certs
 python oso authorise
 
@@ -9,6 +11,9 @@ wasm ui
 
 kuberneyes 
 
+https://www.openpolicyagent.org
+
+use fly.io
 
 
 Also Google SLSA

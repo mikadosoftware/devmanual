@@ -1,4 +1,20 @@
 
+
+logging:
+https://news.ycombinator.com/item?id=30393683
+https://github.com/citusdata/citus
+
+
+https://www.unite.ai/ten-best-machine-learning-algorithms/
+
+
+Asterix / PBX / phone 
+https://github.com/MatejKovacic/RasPBX-install
+
+
+https://rosslazer.com/posts/startup-tooling/
+
+
 SRE
 ---
 
@@ -135,3 +151,10 @@ scaffolding
 Use the cadence to build scaffolding for organisation 
 
 https://medium.com/craft-ventures/the-cadence-how-to-operate-a-saas-startup-436aa8099e8
+
+
+Colour grading and themes 
+
+https://youtu.be/CYRyaY-9F_g
+
+60/30/10 rule
