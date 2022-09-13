@@ -1,5 +1,14 @@
 Fundamental principles
 
+Basic plumbing
+--------------
+
+Run multiple distributed 
+https://www.ray.io/ray-core
+
+
+
+
 
 144 factor development
 ----------------------

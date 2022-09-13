@@ -1,3 +1,32 @@
+Tools in the toolkit
+Commonly agreed processs and stabdards
+
+- use Blender for 2/3d animations for simple get the point across
+
+
+
+
+
+
+
+What is the new ideal minimum?
+===================•=••
+
+Use pyodide and html web components 
+https://www.jackfranklin.co.uk/blog/working-with-react-and-the-web-platform/
+
+Use pyodide and wasm and pandas to handle tablular front end
+
+IAM
+something like this?
+https://news.ycombinator.com/item?id=31258953
+ideally client certificates 
+
+
+
+
+
+
 Systems and products and software etc.
 ======================================
 

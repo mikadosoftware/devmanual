@@ -1,3 +1,9 @@
+Test 
+https://fly.io/jobs/platform-product-engineer/
+
+
+Fly.io takes Docker containers from users and converts them to Firecracker micro-VMs running on our hardware around the world, hooked via WireGuard to a global Anycast network, managed Postgres databases, LVM2 volumes, an industrial-scale metrics cluster, a high-performance messaging-based logging system, all coordinated by a global orchestration system. You don't have to know any of this to use Fly.io: if you have a working container, it can be running in Singapore, São Paolo, and Sunnyvale in just a couple minutes.
+
 I want to understand and build on cloud the right certificate based trust model etc etc
 
 Michael Stepankin: hidden o auth attack vectors 
