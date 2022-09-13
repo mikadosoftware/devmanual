@@ -1,23 +1,37 @@
 ==================
-The Software Mind
+The DevManual
 ==================
 
 
 Introduction
 ============
+A 'DevManual' is the (usually barely understandable) documentation passed
+to a new coder on thier first day, explaining "how we do things around here".
 
-The Dev Manual - how to do it right
+It *should* be comprehensive, it *should* explain *why* as well as *how.
 
-This is an attempt to look for best practise (not the ossified stuff the real stuff) and then build an OSS skeleton around which i build a real saas business - I want to see it and do it right
+It so often is not ...
 
-Security
---------
-95% of the time security is doing the right thing well.  It's the remaining 5% that is the hard costly trade offs.  We will come to those later.
+But this is my attempt to provide a set of best practises, and guidelines.
 
-
+If I could describe the idea in one line it is
 
 
+All the component parts to running a software-literate, programmable company
+with examples.
 
+
+Walkthrough
+-----------
+
+0. Security
+This is the most basic component. And it informs so much else
+- HSM (phones and ubikeys)
+- identity management on every request
+- zero trust security
+95% of the time security is doing the right thing well.  It's the
+remaining 5% that is the hard costly trade offs.  We will come to
+those later.
 Use CAs for SSH 
 Each docker build needs to trust various ssh clients 
 see smallstep.com/blog/use-ssh-certificates
@@ -28,8 +42,11 @@ Use MFA to handle web access
 Don't bother with passwords etc - ???
 
 
+1. code development and deployment pipeline
+deployment on untrusted machines
 
 
+2. plumbing
 
 
 {{ conceptchapters/dm_plumbing_ci.rst }}
