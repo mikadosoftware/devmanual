@@ -5,7 +5,7 @@ Commonly agreed processs and stabdards
 
 
 
-
+https://koptional.com/article/software-start-up-system-essentials
 
 
 
