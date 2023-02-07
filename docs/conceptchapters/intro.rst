@@ -9,9 +9,13 @@ It is specifically designes (ecolves) to handle working inside the usually restr
 
 Follow the rules, break the rules, transcend the rules (shuhari)
 
+Why Companiez ?
 
+Since humans discovered agricyktre and so made technology (somethijg that genrally is easier if youndont move location evey month) we have been a texhnology auffised society and organisae around its beenfots
 
+The very idea that the modern limited company with direct hierarchical control is the only or best organisatioalnform is laughable even if we seem to pay homage to it globally.  
 
+More chnages will come as democracy matures 
 
 discussion on enterprises
 -------------------------
