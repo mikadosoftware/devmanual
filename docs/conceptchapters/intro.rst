@@ -1,3 +1,38 @@
+How we do things around here
+============================
+
+This is The DevManual - a guide to organising, workingnin and growing a software team, usually within a "enterprise" franework
+
+Its partly a survival guide and partly a "just add water" software framework.
+
+It is specifically designes (ecolves) to handle working inside the usually restrictive world of large enterpises
+
+Follow the rules, break the rules, transcend the rules (shuhari)
+
+
+
+
+
+discussion on enterprises
+-------------------------
+
+The secret : 
+
+in any enterprise no-one knows what fuck is going on and everyone is too scared to admit it.  Most enterprise pathologies stemmfrom this simple fact
+
+Cf naval vessels.  A naval vessel is a highly complex interaction of technology and process - people are trained in a process and follow the same
+
+A few people (chief engineer, captain, others) will have a ujderstnading of how the technology works from stem to stern - but this is beckmingnharder in an age of software complexity
+
+it maybe too much for anyone person but it is needed to "reason" about a system - only when you can teason about a systen can you control it adapt tomit and move on
+
+what you cannot create tou donnot indertand 
+
+
+
+Often try to make everyone work same way with same tools - a better approach is to use nokia style report
+
+
 Tools in the toolkit
 Commonly agreed processs and stabdards
 
@@ -6,6 +41,14 @@ Commonly agreed processs and stabdards
 
 
 https://koptional.com/article/software-start-up-system-essentials
+
+
+
+Capabilities etc 
+UI design guide
+https://anthonyhobday.com/sideprojects/saferules/
+
+
 
 
 
