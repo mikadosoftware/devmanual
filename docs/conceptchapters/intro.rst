@@ -33,6 +33,11 @@ Marxism - britain and dutch developed modern capitalism / bourges and wound it u
 
 The modern world is woukd up with industrial revolution 
 
+But each empire is tied up with a "philosophy" - empire, industry, capitalism, democracy for all (US) and now the indian and chinese philosophies which are ... less clear
+
+but democracy is something it hink wont die - indovodual rofhts make a difference and somdoes agreement in path forward. Its really hard and lots of negotiation and compromise and niance and frnakly we moght not like ot 
+
+
 
 discussion on enterprises
 -------------------------
