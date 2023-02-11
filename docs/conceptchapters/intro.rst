@@ -17,6 +17,23 @@ The very idea that the modern limited company with direct hierarchical control i
 
 More chnages will come as democracy matures 
 
+The rocket equation for enterprises
+
+The more money / political outcome is put onto a project (the more money) then more momey and effort is needed tomlift it - more expectation, means more
+money, which means more
+momey needed yo lift all the people who like to be on multinmillion dollar project
+
+Also 
+- autuer theory for projects and systems linus and linux but extend it out - whomare autoers for facebook ? Google? gmail guy 
+
+
+india not caring about US culture https://dor.gov.in/sites/default/files/FinalBlackMoney.pdf
+
+Marxism - britain and dutch developed modern capitalism / bourges and wound it uo with empire and industrial revolution - also trade is profitable, empire is costly
+
+The modern world is woukd up with industrial revolution 
+
+
 discussion on enterprises
 -------------------------
 
