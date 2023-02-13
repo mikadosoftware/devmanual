@@ -38,6 +38,10 @@ But each empire is tied up with a "philosophy" - empire, industry, capitalism, d
 but democracy is something it hink wont die - indovodual rofhts make a difference and somdoes agreement in path forward. Its really hard and lots of negotiation and compromise and niance and frnakly we moght not like ot 
 
 
+banks as arm of state (implies MMT) and does digital currency threaten them? 
+
+massive investment in iphones and networks to empower billions adults - but stopped short of software loteracy the  next oart of owning and benefiting from suchninfrastructure 
+
 
 discussion on enterprises
 -------------------------
