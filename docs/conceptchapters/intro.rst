@@ -42,6 +42,14 @@ banks as arm of state (implies MMT) and does digital currency threaten them?
 
 massive investment in iphones and networks to empower billions adults - but stopped short of software loteracy the  next oart of owning and benefiting from suchninfrastructure 
 
+We see markets appearing in everything, ledgers will drive this more - esp currency ledgers like fiat digital currency.
+
+This will chnage relationahshipmof state to banks - whichbwill chnage enormous amounts (visa, moneyblaundering etc)
+
+But markwts in othe rthings - labour (gigbeconomy) etc will be enormous - lessonsnin regukating finacial markets are valuable - abuses are common and regulation needs to be strong and in our favour - but software literacy is not enough to educate people - they need open access to the code (to read the lw) and to vote on chnaging the law.
+
+You mightbthink that we wont get a referendum on which piece if C code gets used.  But inagine the vote for kill the driver or kill the kid
+
 
 discussion on enterprises
 -------------------------
