@@ -9,48 +9,10 @@ It is specifically designes (ecolves) to handle working inside the usually restr
 
 Follow the rules, break the rules, transcend the rules (shuhari)
 
-Why Companiez ?
 
-Since humans discovered agricyktre and so made technology (somethijg that genrally is easier if youndont move location evey month) we have been a texhnology auffised society and organisae around its beenfots
+Lots if books on building scaling hiring the best people - because if you are bot technical, thats the only fucking thing you can do.  Is it important? Yes. But if you get non-technical people outnof the way if technical people then half the provlem is solved - then just look to have technical people work together fir best resukts - competiion or not 
 
-The very idea that the modern limited company with direct hierarchical control is the only or best organisatioalnform is laughable even if we seem to pay homage to it globally.  
-
-More chnages will come as democracy matures 
-
-The rocket equation for enterprises
-
-The more money / political outcome is put onto a project (the more money) then more momey and effort is needed tomlift it - more expectation, means more
-money, which means more
-momey needed yo lift all the people who like to be on multinmillion dollar project
-
-Also 
-- autuer theory for projects and systems linus and linux but extend it out - whomare autoers for facebook ? Google? gmail guy 
-
-
-india not caring about US culture https://dor.gov.in/sites/default/files/FinalBlackMoney.pdf
-
-Marxism - britain and dutch developed modern capitalism / bourges and wound it uo with empire and industrial revolution - also trade is profitable, empire is costly
-
-The modern world is woukd up with industrial revolution 
-
-But each empire is tied up with a "philosophy" - empire, industry, capitalism, democracy for all (US) and now the indian and chinese philosophies which are ... less clear
-
-but democracy is something it hink wont die - indovodual rofhts make a difference and somdoes agreement in path forward. Its really hard and lots of negotiation and compromise and niance and frnakly we moght not like ot 
-
-
-banks as arm of state (implies MMT) and does digital currency threaten them? 
-
-massive investment in iphones and networks to empower billions adults - but stopped short of software loteracy the  next oart of owning and benefiting from suchninfrastructure 
-
-We see markets appearing in everything, ledgers will drive this more - esp currency ledgers like fiat digital currency.
-
-This will chnage relationahshipmof state to banks - whichbwill chnage enormous amounts (visa, moneyblaundering etc)
-
-But markwts in othe rthings - labour (gigbeconomy) etc will be enormous - lessonsnin regukating finacial markets are valuable - abuses are common and regulation needs to be strong and in our favour - but software literacy is not enough to educate people - they need open access to the code (to read the lw) and to vote on chnaging the law.
-
-You mightbthink that we wont get a referendum on which piece if C code gets used.  But inagine the vote for kill the driver or kill the kid
-
-
+the end goal for texh 
 discussion on enterprises
 -------------------------
 
