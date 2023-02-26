@@ -29,3 +29,15 @@ financier
 oolitician 
 
 anythingninvetween adds friction ans cost 
+
+
+
+democracy lies in the approach to understanding yhe decisions we take not in how we take decisions 
+
+management is "specially privledged people taking decisions" - but generally trying to take decisions based onnsxientific priciple of eliminating the wrong
+
+but they use people they trust, take all important decisions in a rush ten minites before the budget deadline 
+
+a better democracy has more people invocled in deciding what is wrong and then maybe voting on what is right - but its much wasier to stay in org that you have helped prevent do wring than not
+
+thats democracy - can i trust it to do not wring 
