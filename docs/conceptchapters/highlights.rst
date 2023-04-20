@@ -1,5 +1,19 @@
 Everything texhnical you might want to donin a large orfanisation is as simple as the technical side in a two person startup
 
+- python
+- prolog
+- haskell
+- Sql
+
+Plumbing
+- authentication 
+- authorisation
+- access 
+
+
+
+The role of morale in war battle and organisations - this is where leadership excels 
+
 everyrhing hard is down to the structure of org
 
 one approach os to make relationships - but this only helps you and makes you kore valuable
@@ -41,3 +55,5 @@ but they use people they trust, take all important decisions in a rush ten minit
 a better democracy has more people invocled in deciding what is wrong and then maybe voting on what is right - but its much wasier to stay in org that you have helped prevent do wring than not
 
 thats democracy - can i trust it to do not wring 
+
+also internet is a snapshot ofnhuman metamind 
