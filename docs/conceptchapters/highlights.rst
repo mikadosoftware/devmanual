@@ -14,6 +14,9 @@ Plumbing
 
 The role of morale in war battle and organisations - this is where leadership excels 
 
+software is engaged (front of battle?) at the point of user interaction - being used - and further back from that development occurs the less effective feedback the worse the decision loop is - individuals decisions make all the difference - we can look at operational aspects (communication, logistics) at the level of general and then strategic issues at financier and politician level but 
+
+
 everyrhing hard is down to the structure of org
 
 one approach os to make relationships - but this only helps you and makes you kore valuable
