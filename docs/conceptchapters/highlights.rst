@@ -17,6 +17,15 @@ The role of morale in war battle and organisations - this is where leadership ex
 software is engaged (front of battle?) at the point of user interaction - being used - and further back from that development occurs the less effective feedback the worse the decision loop is - individuals decisions make all the difference - we can look at operational aspects (communication, logistics) at the level of general and then strategic issues at financier and politician level but 
 
 
+
+politics and organisations
+- the role of politics and oN levels - you can hear statements that are supporting an elite 
+
+the elite trade off - it's like paradox of representation - as long as elected is self aware and going in right direction and making few mistakes (wrong not wrong) it's bearable not breakable
+
+but often the politics is retoric not aligned to reality so much it is the dissonance of totalitarianism- which is of course what a hierarchy of (economic) coercion is 
+
+
 everyrhing hard is down to the structure of org
 
 one approach os to make relationships - but this only helps you and makes you kore valuable
