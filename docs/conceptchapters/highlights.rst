@@ -21,6 +21,10 @@ software is engaged (front of battle?) at the point of user interaction - being 
 politics and organisations
 - the role of politics and oN levels - you can hear statements that are supporting an elite 
 
+at each layer we have engineers down and airways and politicians upwards - you must build system to make the next hire workable, provide the purchased service / product upwards - but political is always about representing the people around upwards - not using them - the political is local politician on behalf of the constituency 
+
+
+
 the elite trade off - it's like paradox of representation - as long as elected is self aware and going in right direction and making few mistakes (wrong not wrong) it's bearable not breakable
 
 but often the politics is retoric not aligned to reality so much it is the dissonance of totalitarianism- which is of course what a hierarchy of (economic) coercion is 
