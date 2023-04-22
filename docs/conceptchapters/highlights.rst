@@ -23,7 +23,14 @@ politics and organisations
 
 at each layer we have engineers down and airways and politicians upwards - you must build system to make the next hire workable, provide the purchased service / product upwards - but political is always about representing the people around upwards - not using them - the political is local politician on behalf of the constituency 
 
+politican ipwards means representing on behalf of 
 
+
+treat it like politics - have decisions made at higher levels and publish them so the org A and B can see what is going on 
+
+politics is the sorting out of common agreements amoung each level - and applying up for changes 
+
+2 columns A and B, 4 levels 
 
 the elite trade off - it's like paradox of representation - as long as elected is self aware and going in right direction and making few mistakes (wrong not wrong) it's bearable not breakable
 
