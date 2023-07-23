@@ -1,3 +1,25 @@
+Coders are the new Managers
+---------------------------
+
+Software is becoming central to how many many businesses operate.  
+
+But software grows its own scaffolding - and this essentially replaces the original human (https://en.m.wikipedia.org/wiki/Strangler_fig)
+
+This scaffolding has layers (see meta meta notes) but it grows to the point that it is now providing all data about the performance of the software which is now the performance of the business - and coders are the only ones able to chnage it.  (two rods mag) 
+
+- code solves specific business problem
+- write an environment that allows easy testing (test rig) and deployment (release process)
+- write code to monitor the code - from is it running at all to its performance speed, is it outputting correct data (log monitoring)
+- how to monitor in production (qa to performance monitoring)
+- how has this chnaged the problem we had - we need to measure the metric as well
+- what if we adjust the orignal code - how does it chnage on the metrics we care about? 
+- what about chnage a different metric - are we fixing one thing to break another? 
+- where is the model to predict this - it needs to be encoded so it can be tested (backtested) with prediction 
+- another environment needs to be built to verify the model / replay production 
+- pretty soon we have a model of how the business reacts across many areas and metrics - and we have an env to test validate some of that (pre release verification) and can validate it in production 
+- and the orignal tree is gone
+
+
 Everything texhnical you might want to donin a large orfanisation is as simple as the technical side in a two person startup
 
 - python
@@ -24,13 +46,19 @@ politics and organisations
 at each layer we have engineers down and airways and politicians upwards - you must build system to make the next hire workable, provide the purchased service / product upwards - but political is always about representing the people around upwards - not using them - the political is local politician on behalf of the constituency 
 
 politican ipwards means representing on behalf of 
-
+i 
 
 treat it like politics - have decisions made at higher levels and publish them so the org A and B can see what is going on 
 
 politics is the sorting out of common agreements amoung each level - and applying up for changes 
 
 2 columns A and B, 4 levels 
+
+
+A politician is at the next level up - but just as war is not about tactics and weapons but logistics and supply operations then business is not about polities - it's about building the systems to apply those policies at marginal costs 
+
+
+
 
 the elite trade off - it's like paradox of representation - as long as elected is self aware and going in right direction and making few mistakes (wrong not wrong) it's bearable not breakable
 
