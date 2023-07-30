@@ -252,7 +252,24 @@ Organisational design
 ----------
 https://riverin.substack.com/p/the-canonical-startup-org-structure
 
-Simple : there are 5 main "functions" Product Management / Product Developement (engineering) / Product Marketing / Operations / Sales.
+Simple : 
+
+there are 5 main "functions" 
+
+Product Marketing (Choosing correct changes to product to be a better product)
+
+Product Development (altering the product including its operations, to be better)
+
+Product Operations 
+
+Product Sales 
+
+Company Management (Altering the company that builds the product to be better able to build the better product) 
+
+
+
+
+
 
 As you grow you fill out those as "functions" - but everyone has an 80/20 association with those - ie have a major and a minor and 3 awaeenesses
 
