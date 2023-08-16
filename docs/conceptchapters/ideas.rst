@@ -1,4 +1,6 @@
+https://cxl.com/blog/ab-testing-statistics/
 
+build our own p-value AB test framework to learn about stats
 
 logging:
 https://news.ycombinator.com/item?id=30393683
