@@ -1,6 +1,20 @@
 Fundamental principles
 ----------------------
+Simplicity (fits in one brain) and coherent (avoids lots of cases)
 
+High reliability (matches and exceeds (80%) needs if business in normal running and extreme scenarios)
+
+psychological safety
+
+Automation for everything
+
+structured and rational decision making
+
+
+
+Team work 
+---------
+	
 
 Importance of training and certification for systems support
 
@@ -12,6 +26,32 @@ Importance of training and certification for systems support
 
 https://sre.google/sre-book/table-of-contents/
 
+Chapter 3 - Embracing Risk
+Chapter 4 - Service Level Objectives
+Chapter 5 - Eliminating Toil
+Chapter 6 - Monitoring Distributed Systems
+Chapter 7 - The Evolution of Automation at Google
+Chapter 8 - Release Engineering
+Chapter 9 - Simplicity
+Part III - Practices
+Chapter 10 - Practical Alerting
+Chapter 11 - Being On-Call
+Chapter 12 - Effective Troubleshooting
+Chapter 13 - Emergency Response
+Chapter 14 - Managing Incidents
+Chapter 15 - Postmortem Culture: Learning from Failure
+Chapter 16 - Tracking Outages
+Chapter 17 - Testing for Reliability
+Chapter 18 - Software Engineering in SRE
+Chapter 19 - Load Balancing at the Frontend
+Chapter 20 - Load Balancing in the Datacenter
+Chapter 21 - Handling Overload
+Chapter 22 - Addressing Cascading Failures
+Chapter 23 - Managing Critical State: Distributed Consensus for Reliability
+Chapter 24 - Distributed Periodic Scheduling with Cron
+Chapter 25 - Data Processing Pipelines
+Chapter 26 - Data Integrity: What You Read Is What You Wrote
+Chapter 27 - Reliable Product Launches at Scale
 
 
 
