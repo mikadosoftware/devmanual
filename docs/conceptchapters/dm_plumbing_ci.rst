@@ -1,4 +1,20 @@
 Fundamental principles
+----------------------
+
+
+Importance of training and certification for systems support
+
+
+
+- Logging
+- metrics
+- observability
+
+https://sre.google/sre-book/table-of-contents/
+
+
+
+
 
 Basic plumbing
 --------------
