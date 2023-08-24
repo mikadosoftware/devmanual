@@ -47,6 +47,19 @@ Front Line support
 Moniotring and reporting
 ------------------------
 
+SDLC
+-----
+coverage 
+
+testing 
+------
+
+project mgmt
+-------------
+
+audience mgmt 
+--------------
+
 
 
 
