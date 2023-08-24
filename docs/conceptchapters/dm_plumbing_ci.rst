@@ -1,3 +1,55 @@
+What is "the plumbing" in the DevManual?
+========================================
+
+The DevManual is a detailed users guide to setting up
+and running software team(s).  And the plumbing are the tools and proccesses (and tools that enforce processes -its turtles all the way down ...), and that can be carried from one organisation to another with minimal changes.  In short we all use the same plumbing, even if the bathroom layout changes.
+
+This is the essence - how to take a working team environment from one company to another, how to have productive teams from day one, or rather how to ensure the lack of productivity comes from the hard people problems not the failure to auto-generate release notes.
+
+Plumbing Features
+-----------------
+
+
+Security
+--------
+* ssh and client certificates, mutual TLS (mTLS)
+* LDAP to client certs
+* 
+
+Simple architecture
+-------------------
+
+Cloud vs colocation 
+Serverless
+Pets Then Cattle 
+DevTeamMachine 
+DataLake and similar storage in office
+
+
+Release Management
+------------------
+ 
+* base OS install
+* upgrading OS 
+* Release train
+* git / github 
+* 
+
+RunTime Management
+------------------
+
+logging
+exceptions
+observaility
+
+Front Line support
+
+Moniotring and reporting
+------------------------
+
+
+
+
 Fundamental principles
 ----------------------
 Simplicity (fits in one brain) and coherent (avoids lots of cases)
