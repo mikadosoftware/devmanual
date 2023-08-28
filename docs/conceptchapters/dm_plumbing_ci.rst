@@ -9,6 +9,14 @@ This is the essence - how to take a working team environment from one company to
 Plumbing Features
 -----------------
 
+Networking
+----------
+Wirefuard based VPN
+ie netbird to connect all machines at overlay network
+Just assume it works. Part if zero-trust networking. Each machine identifies itself coa mTLS
+
+
+
 
 Security
 --------
