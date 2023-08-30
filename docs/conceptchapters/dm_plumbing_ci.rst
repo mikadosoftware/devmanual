@@ -54,6 +54,7 @@ Front Line support
 
 Moniotring and reporting
 ------------------------
+OpenTelemetry
 
 SDLC
 -----
