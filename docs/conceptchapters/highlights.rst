@@ -1,3 +1,14 @@
+plumbing
+--------
+Four dashboards 
+
+- software in development (new projects
+new capital) 
+- marketing (funnels) & finance (payjents and churn and costs)
+- current operations performance speed v stability
+- unmeasured operations 
+
+
 Coders are the new Managers
 ---------------------------
 
