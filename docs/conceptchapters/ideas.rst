@@ -1,3 +1,14 @@
+The DevManual - basic rescue principles
+
+We are trying to get complexity out of a system - which is far harder than building simplicity in. It's where a rewrite is desirable.
+
+I just don't want to fight anymore. People come in with opinions and the only way to over come is - persuasion (minimal), authority (reputation or actual) or competition (go off and build competitor) 
+
+- talk to every developer and ensure their incentives align / otherwise guilt them
+
+- cover all the bases - dev support, prod support, monitoring observability, release process, env creation, 
+
+
 https://cxl.com/blog/ab-testing-statistics/
 
 build our own p-value AB test framework to learn about stats
