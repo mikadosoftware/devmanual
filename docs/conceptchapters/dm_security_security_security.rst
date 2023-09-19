@@ -7,6 +7,12 @@ If I am running my own services and servers (big assumption minimal saas) can I 
 latacora- soc2 seven 
 https://www.latacora.com/blog/2020/03/12/the-soc-starting/
 
+If most of SOC2 is Access Control and most of the rest of it is Change Management, then most of the rest of the rest is “Monitoring of Controls”, and a flexible centralized logging system is going to answer every monitoring control item your auditor asks about.
+
+
+
+
+
 https://documentation.cloud-iam.com/keycloak/configure-mTLS.html
 
 The landscape - and what you can do
