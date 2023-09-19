@@ -1,4 +1,13 @@
-Use this chapter as opportunity to interview well known and get clarification 
+Some basic ideas:
+
+Keycloak is the OSS equivalent of Okta.  but its still complex ans comllicated.  isnt TLS a good idea?
+
+If I am running my own services and servers (big assumption minimal saas) can I "simply" use mTLS on each connection - even fall down to webauthn ? 
+
+latacora- soc2 seven 
+https://www.latacora.com/blog/2020/03/12/the-soc-starting/
+
+https://documentation.cloud-iam.com/keycloak/configure-mTLS.html
 
 The landscape - and what you can do
 ===================================
