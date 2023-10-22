@@ -9,6 +9,17 @@ new capital)
 - unmeasured operations 
 
 
+GPU progrsmmjngcand derp leadnkng
+
+data structures (database structures)
+
+functional data atructires
+
+CSZdZt data struvtures
+
+heaph dara structure 
+
+
 Coders are the new Managers
 ---------------------------
 
