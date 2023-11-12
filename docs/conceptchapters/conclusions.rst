@@ -150,6 +150,20 @@ It just is.  You know it is.
 
 Operations
 ----------
+Measurements and metrics
+
+- how are you oerforming 
+measure aerver cpu and memory
+but measure business events as well
+as point actions (logging grafana)
+but also measure the latency through
+the system
+
+so metrics need to be a platform
+
+
+
+
 Severity Levels
 usually maps to customer impact
 
