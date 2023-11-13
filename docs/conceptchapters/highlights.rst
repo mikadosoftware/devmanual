@@ -1,6 +1,26 @@
 
-All the plumbing you need to understand, and how to implement as academic exercises then how tonplug into real working systems
+We will list a range of "concepts" like "capacity planning"
+which are important parts of the plumning of a software system 
+and so you need to understand, and understand how it fits into our
+system
 
+Each componwnt shows how theybwork indovidually,
+shows the bronze, silver and sometimes gold approaches 
+and implements the bronze levels into our "out of the box" 
+software team management syatem
+
+
+
+- logging, event capturing
+- production monitoring and QA in production (spectrum)
+- unit tests, mocking and stubbing, 
+- teat rigs emvironemts
+- config handling and environments
+- security authentication authorisation access
+FIDO / client certs etc
+- queues and queueing theory
+- runbooks, prod support 
+- trade off between urgency and robustness (promtiong code and FFS) 
 
 Queueing Theory
 ---------------
