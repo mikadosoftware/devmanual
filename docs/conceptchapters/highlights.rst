@@ -1,3 +1,30 @@
+
+All the plumbing you need to understand, and how to implement as academic exercises then how tonplug into real working systems
+
+
+Queueing Theory
+---------------
+https://news.ycombinator.com/item?id=29225681
+
+The basics of queueing theory are 
+
+mean rate in / mean rate out / variance distribution
+
+So lets model a simple cars at traffic lights - how 
+often at what variance will ot take for there to be a queue of ten cars (whichbwill block the next interaecrion?)
+
+Then using thatbmodel, what donyou meed toncollect frommevery 
+connector in your ecosystem to be able tonbuild queue based models?
+
+how to raise red flags, plan for expansion etc? 
+
+(Production monitoring, capacity planning)
+
+
+
+
+
+
 plumbing
 --------
 Four dashboards 
