@@ -22,6 +22,10 @@ FIDO / client certs etc
 - runbooks, prod support 
 - trade off between urgency and robustness (promtiong code and FFS) 
 
+- Wikidata as sourc eif "truth"? https://stackoverflow.com/questions/55961615/how-to-integrate-wikidata-query-in-python
+
+
+
 Queueing Theory
 ---------------
 https://news.ycombinator.com/item?id=29225681
