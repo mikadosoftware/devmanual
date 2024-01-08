@@ -1,23 +1,6 @@
 What is "the plumbing" in the DevManual?
 ========================================
 
-Try to extract all as bullet points here
-
-- logging, event capturing
-- production monitoring and QA in production (spectrum)
-- unit tests, mocking and stubbing, 
-- teat rigs emvironemts
-- config handling and environments
-- security authentication authorisation access
-FIDO / client certs etc
-- queues and queueing theory
-- runbooks, prod support 
-- trade off between urgency and robustness (promtiong code and FFS) 
-- use of dashboards
-- business metrics growing out of / related to tech metrics
-- 
-
-
 The DevManual is a detailed users guide to setting up
 and running software team(s).  And the plumbing are the tools and proccesses (and tools that enforce processes -its turtles all the way down ...), and that can be carried from one organisation to another with minimal changes.  In short we all use the same plumbing, even if the bathroom layout changes.
 

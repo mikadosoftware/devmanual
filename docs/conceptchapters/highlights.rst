@@ -21,6 +21,11 @@ FIDO / client certs etc
 - queues and queueing theory
 - runbooks, prod support 
 - trade off between urgency and robustness (promtiong code and FFS) 
+- use of dashboards
+- business metrics growing out of / related to tech metrics
+- 
+
+
 
 - Wikidata as sourc eif "truth"? https://stackoverflow.com/questions/55961615/how-to-integrate-wikidata-query-in-python
 
