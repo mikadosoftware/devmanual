@@ -2,6 +2,16 @@
 The Dev Manual
 ===================
 
+- capabilities 
+unit test mock-stubs
+store test data in git repo
+
+http proxy for unit teat stubbing
+test fuxzing 
+define tests by network boundaries and Order magnitude boundaries
+have smae repo hold tests for applcation 
+multi repo style simpler in general - see package approach for mikado
+
 
 The manual 
 ==========
