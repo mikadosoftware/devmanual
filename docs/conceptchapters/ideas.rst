@@ -1,8 +1,4 @@
-- capabilities 
-unit test mock-stubs
-store test data in git repo
 
-http proxy for unit teat stubbing
 
 
 
