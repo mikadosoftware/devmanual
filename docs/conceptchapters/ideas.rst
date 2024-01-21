@@ -1,3 +1,15 @@
+- capabilities 
+unit test mock-stubs
+store test data in git repo
+
+http proxy for unit teat stubbing
+
+
+
+
+
+
+
 The DevManual - basic rescue principles
 
 We are trying to get complexity out of a system - which is far harder than building simplicity in. It's where a rewrite is desirable.
