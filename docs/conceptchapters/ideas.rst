@@ -179,3 +179,7 @@ Colour grading and themes
 https://youtu.be/CYRyaY-9F_g
 
 60/30/10 rule
+
+
+deployment etc
+https://hynek.me/articles/python-app-deployment-with-native-packages/
