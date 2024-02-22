@@ -75,16 +75,20 @@ feature flag system
 - device management 
 - 
 
-
-ETL 
-
-rdbms
-block storage 
-network file system
-
+backing services
+----------------
+storage 
+data platform (ETL/ hadoop)
+RDBMS
 
 
 
+
+
+
+web service 
+https://www.nginx.com/blog/microservices-reference-architecture-nginx-twelve-factor-app/
+12 factor app
 
 
 UBI breaks money as allocation of resources - or rather means 
