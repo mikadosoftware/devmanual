@@ -4,7 +4,85 @@ The DevManual
 
 Draw the rest of the f***ing Owl 
 
+the devmanual is about everything 
+needed for a software team to operate 
+within a business or organisation,
+everything *before* a line of code 
+is written - the stuff every team 
+needs or will benefit from, from 
+CI/CD setup, review processes, etc
+
+
+
 lexicon
+
+servers 
+workstations
+standard builds
+
+compounts
+
+security
+- CA self hosted / lets encrypt?
+- approval system
+- 
+
+test rigging
+- feature files / 
+- teat generation 
+- mitmproxy style teating
+- break at network ans system boundaries
+less at the unit level.
+
+
+management 
+- budgets
+- approval system (purchase orders)
+- future modelling (spreadsheet onwards)
+- record and publish meetings
+- MIS systems - event logging reporting
+- 
+
+
+project planning 
+- whats the user need
+- written press release and essay
+- automated milestone achievement 
+
+feature flag system 
+- whole module hiding
+
+
+
+- CI/CD
+  - Jenkins
+  - various linters
+  - pre commot hooks
+
+- ticketing
+
+- operational support
+  - ticketing 
+  
+- dashboards
+
+- report
+
+- logging and log capture
+- event capture
+
+- mesaging 
+- device management 
+- 
+
+
+ETL 
+
+rdbms
+block storage 
+network file system
+
+
 
 
 
