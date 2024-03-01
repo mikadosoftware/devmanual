@@ -71,6 +71,12 @@ concepts from literacy's
 - gold silver bronze
 - shared concepts (religion, bible, preachers)
 
+testing and test rifs more and more define
+what works and does not 
+
+https://google.github.io/oss-fuzz/
+
+
 
 Efficiencies firns
 ------------------
