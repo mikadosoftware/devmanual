@@ -63,6 +63,22 @@ Future
 
 team based performance reviews - more useful more team focused
 
+Capabilities
+------------
+The software workd is cast and thats kinda to be expected as software is eating thebwhole world
+somwhat capabilities are essentialmand what are commonnand somon
+
+essential
+- got repos config reease mgmt logging
+
+common
+RDBMS
+data platofrms / ETL
+
+not niche
+GEO servers https://www.go-inicio.com/blog/anatomy-of-a-mapserver-how-to-leverage-and-visualize-your-geographical-data
+
+
 concepts from literacy's
 -----------------------
 
