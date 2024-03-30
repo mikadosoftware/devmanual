@@ -1,3 +1,14 @@
+concepts:
+
+
+SDLC
+https://news.ycombinator.com/item?id=39600810
+
+
+
+
+
+
 Philosophy
 ----------
 
