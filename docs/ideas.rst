@@ -7,6 +7,9 @@ https://news.ycombinator.com/item?id=39600810
 
 
 
+Prefer to Avoid Object Orientated
+----------
+https://news.ycombinator.com/item?id=39999019
 
 
 Philosophy
