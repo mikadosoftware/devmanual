@@ -12,6 +12,11 @@ Follow the rules, break the rules, transcend the rules (shuhari)
 
 Lots if books on building scaling hiring the best people - because if you are bot technical, thats the only fucking thing you can do.  Is it important? Yes. But if you get non-technical people outnof the way if technical people then half the provlem is solved - then just look to have technical people work together fir best resukts - competiion or not 
 
+
+ising make - even for python
+https://gagor.pro/2024/02/how-i-stopped-worrying-and-loved-makefiles/
+
+
 the end goal for texh 
 discussion on enterprises
 -------------------------
