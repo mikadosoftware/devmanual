@@ -4,6 +4,10 @@ The DevManual
 
 Draw the rest of the f***ing Owl 
 
+Twitter - can you really fire 90% of the devs?
+What about all the other things that hurt at scale
+3-4(O)
+
 Scene: newsroom like his gorlmfrodsy
 "write this down"
 "i'm just carving the oencil"
@@ -20,6 +24,52 @@ everything *before* a line of code
 is written - the stuff every team 
 needs or will benefit from, from 
 CI/CD setup, review processes, etc
+
+
+
+
+This is a book about filling in the missing gaps on how to 
+be part of, setup, maintain, run, "self-manage" a software team / teams.
+Its not about what programming language, its about how to deal with users, 
+auditors, maangers, what is best practise and what is just theatre.
+
+It flows from one point of view - the code is *everything*.
+EaC - Everything As Code
+
+
+What are the areas to work on?
+
+* Infrastructure as code. vulnerability mgmt, red teams,
+* SDLC
+* SDLC interactions with business - feed into ticketing system
+* case management systems
+* Rules engines
+* Data storage (elastic, RDBMS, hadoop, file system NAS)
+* IAM
+* CRM
+* logging, error capture
+* dashboarding, monitoring, escalation, prioritsation
+* guiderails / controls / monitoring, escalation, golden source data,
+* from golden source build models of company - whole org test rig
+* regulatory and mgmt reporting
+*
+
+
+
+Dashboarding - you need some way of keeping eveerything in check.
+Use RAG.  use RAG on RAG.
+
+Forensics - if you dont act on errors now, you never will
+infrastructure as code
+
+CRM - customer relationship management - everything from notifying of
+upgrades to demo days and feedback, netowrking, blogs and office hours.
+
+IAM
+
+Vulnerability mgmt
+
+
 
 Measuring productivity
 -------
@@ -114,23 +164,6 @@ https://www.nginx.com/blog/microservices-reference-architecture-nginx-twelve-fac
 12 factor app
 
 
-UBI breaks money as allocation of resources - or rather means 
-the people own. their own time and allocate "democratically" or meritco
-- every company will have to foght for persuasion not payment
-
-its dramaticlaly democratic 
-
-its all about allocation of resources
-if you can effectively model a organisation
-you can simulate it and then make allocation simulations
-
-the economist shallow understanding is replaced with derailed simulation
-
-we need ledgers, software that is sinulated and controllaed 
-and testable (!)
-
-
-
 project mgmt
 
 I often find project managers and senior management wanting a “zipper” project - where some big brained architect predicts the future use cases and needs and can plan pulling together the teeth in 15 steps ahead
@@ -138,7 +171,6 @@ I often find project managers and senior management wanting a “zipper” proje
 Which is of course rubbish - mostly it’s amazing if you can predict the next zip.
 
 this is "next step or phase soace" projeft mgmt - what you can do next is defined by your previous choices - so improce optionality - make tools and platforms not topless or low code decisions 
-
 
 
 Things shoukd be as simple as possiblenbutnnonsimpler
