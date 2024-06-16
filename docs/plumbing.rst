@@ -23,3 +23,9 @@ docs
 
 CRM
 https://www.monicahq.com
+
+
+CPus available, run on mulitple cpus
+use mulitporcssing tonget cput count
+ us psutils 
+https://www.pragmaticlinux.com/2020/12/monitor-cpu-and-ram-usage-in-python-with-psutil/
