@@ -25,6 +25,9 @@ CRM
 https://www.monicahq.com
 
 
+CDns
+https://httptoolkit.com/blog/public-cdn-risks/
+
 CPus available, run on mulitple cpus
 use mulitporcssing tonget cput count
  us psutils 
