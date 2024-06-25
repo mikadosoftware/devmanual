@@ -27,6 +27,9 @@ https://www.monicahq.com
 
 CDns
 https://httptoolkit.com/blog/public-cdn-risks/
+https://news.ycombinator.com/item?id=40791829
+
+It seems SRI (hash berification) is ok but in this case the cdn was dynamic
 
 CPus available, run on mulitple cpus
 use mulitporcssing tonget cput count
