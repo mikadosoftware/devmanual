@@ -1,6 +1,14 @@
 What is "the plumbing" in the DevManual?
 ========================================
 
+
+microservices: they are good but not for the reasons people think
+the commonnone is Incan write this service in languag A and thisnother in B - which is basically an excuse for teams who dont agree on strategy to lice in same org
+whats vakuable is spinning up services with lower marginal cost - all the work for IAM and logging etc has alrwsu been done
+and most implrtantly the distributed nature means the naming concention matters - how you structure your code structures your thinking 
+- so solitting customers database into frwqient or geographical this matters 
+
+
 Try to extract all as bullet points here
 
 - logging, event capturing
