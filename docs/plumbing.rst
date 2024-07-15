@@ -34,4 +34,9 @@ It seems SRI (hash berification) is ok but in this case the cdn was dynamic
 CPus available, run on mulitple cpus
 use mulitporcssing tonget cput count
  us psutils 
-https://www.pragmaticlinux.com/2020/12/monitor-cpu-and-ram-usage-in-python-with-psutil/
+
+https://www.pragmaticlinux.com/2020/12/monitor-cpu-and-ram-usage-in-python-with-psutil
+
+
+visuak programming - the real way 
+https://news.ycombinator.com/item?id=40937119
