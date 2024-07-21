@@ -10,6 +10,9 @@ github.com/smallstep
 nitrokey certificate-authority
 
 
+cluster orchestrated 
+https://mrkaran.dev/posts/nomad-networking-explained/
+
 logging
 - logstash?elastic?
 
