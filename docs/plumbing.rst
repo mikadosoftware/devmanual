@@ -45,6 +45,13 @@ visuak programming - the real way
 https://news.ycombinator.com/item?id=40937119
 
 
+Kernel monitoring, 
+---------------------
+application mojitoring, profiling etc
+
+eBPF
+
+
 web dev tricks tips
 -------------------
 unit tear wrapper - stubs
