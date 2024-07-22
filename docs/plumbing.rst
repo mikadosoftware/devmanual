@@ -43,3 +43,13 @@ https://www.pragmaticlinux.com/2020/12/monitor-cpu-and-ram-usage-in-python-with-
 
 visuak programming - the real way 
 https://news.ycombinator.com/item?id=40937119
+
+
+web dev tricks tips
+-------------------
+unit tear wrapper - stubs
+
+
+
+https://news.ycombinator.com/item?id=41030862
+rrweb
