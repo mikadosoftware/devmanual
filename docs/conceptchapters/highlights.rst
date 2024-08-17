@@ -31,6 +31,9 @@ FIDO / client certs etc
 
 
 
+What to moniotr on servers
+https://news.ycombinator.com/item?id=41240379
+
 Queueing Theory
 ---------------
 https://news.ycombinator.com/item?id=29225681
