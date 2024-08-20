@@ -13,6 +13,9 @@ This one is slightly different - it is trying to be a plan, a
 blueprint for how to run a software team, and slowly by extension, a
 software company.  It is in fact my plan for my side-project(s).
 
+
+SRE
+- https://news.ycombinator.com/item?id=41300368#41301147
 Paying off my Mortgage.
 -----------------------
 
