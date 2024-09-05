@@ -9,6 +9,8 @@ shows the bronze, silver and sometimes gold approaches
 and implements the bronze levels into our "out of the box" 
 software team management syatem
 
+oauth 
+https://news.ycombinator.com/item?id=41420783
 
 
 - logging, event capturing
