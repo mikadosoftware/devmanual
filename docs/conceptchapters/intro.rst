@@ -16,6 +16,11 @@ Lots if books on building scaling hiring the best people - because if you are bo
 ising make - even for python
 https://gagor.pro/2024/02/how-i-stopped-worrying-and-loved-makefiles/
 
+also : google researchbinto dwveloper tools
+https://ieeexplore.ieee.org/ielx8/52/10629161/10629169.pdf?tp=&arnumber=10629169&isnumber=10629161&ref=aHR0cHM6Ly9zdWJzdGFjay5jb20v
+https://research.google/teams/software-engineering-and-programming-languages/
+
+
 
 the end goal for texh 
 discussion on enterprises
