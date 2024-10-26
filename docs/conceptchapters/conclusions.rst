@@ -2,6 +2,9 @@
 databae/ https://news.ycombinator.com/item?id=38737585
 
 
+pre-commit hooks, code as a conversation, promoting uowards at different qiality lelves 
+
+
 The economist Robert Solow once quipped that we see the benefits of
 computers everywhere, at home, at work, except in the productivity
 statistics.  It has been argued
