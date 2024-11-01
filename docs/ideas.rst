@@ -20,3 +20,11 @@ https://en.m.wikipedia.org/wiki/System_of_linear_equations
 whihc means linear algebra
 inmean what are the basic must haves in maths hence in software? 
 
+
+
+oo vs finctional
+----------------
+Method calls are just syntax sugar
+inheritence is the realmdifference A ans thats not so great 
+(think MRO and frankly its a bit meh - composition is really what we mean when we 
+think type of ...)
