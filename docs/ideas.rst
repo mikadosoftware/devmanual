@@ -28,3 +28,11 @@ Method calls are just syntax sugar
 inheritence is the realmdifference A ans thats not so great 
 (think MRO and frankly its a bit meh - composition is really what we mean when we 
 think type of ...)
+https://youtu.be/QyJZzq0v7Z4?si=5AsxZWT61L3BbDtH
+
+how to do encapuslationnwothout objects - easentially modularity is more or less encapsualtion 
+
+
+
+
+
