@@ -9,3 +9,10 @@ A wode range of capabilities
 
 - linear programming / optimisation problems 
 https://andrewpwheeler.com/2024/10/28/suits-money-laundering-and-linear-programming/
+
+https://leetcode.com/discuss/interview-question/1455085/easiest-to-code-linear-programming
+https://en.m.wikipedia.org/wiki/System_of_linear_equations
+
+whihc means linear algebra
+inmean what are the basic must haves in maths hence in software? 
+
