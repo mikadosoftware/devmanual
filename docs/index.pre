@@ -3,6 +3,48 @@ The DevManual
 ==================
 
 
+The plumbing list
+-----------------
+
+SMTP - use postmarkapp.com as sending out emails yourself now just gets you
+banned.
+
+LOgging - use centralised logging plus some audit friendly means preventing
+corruption
+
+authentication. I think webauthn, CA approaches. The only thing we can tust is
+the maths
+
+
+oauth 
+https://news.ycombinator.com/item?id=41420783
+
+
+- logging, event capturing
+- production monitoring and QA in production (spectrum)
+- unit tests, mocking and stubbing, 
+- teat rigs emvironemts
+- config handling and environments
+- security authentication authorisation access
+FIDO / client certs etc
+- queues and queueing theory
+- runbooks, prod support 
+- trade off between urgency and robustness (promtiong code and FFS) 
+- use of dashboards
+- business metrics growing out of / related to tech metrics
+- 
+
+
+Operational Support
+
+HolmesGPT - AI that can try to knit together different parts of failing
+errors and provide easier root cause analysis.  sorta LLMs to check error
+codes.https://news.ycombinator.com/item?id=41326039
+
+
+
+
+
 mono repo / multi repo
 
 
