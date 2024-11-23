@@ -2,6 +2,34 @@
 The DevManual
 ==================
 
+top level concerns
+------------------
+
+CI/CD
+Infrastructure as code
+monitoring and observability 
+automate all the things
+SDLC, collaborationnworh MaPS
+security
+compliance and software governance
+comtainers and orchestration
+capacity planning and scaling
+incodent mgmt
+SLAs SLOs SLEs
+testing and QA - a spectrum of testing in productio 
+dosaster recovery and backup
+cost mgmt, budgeting and improvement s
+configuration mgmt etcd, ansible
+secrets mgmt
+perfromance optmisation
+documentation
+
+
+
+
+
+
+
 
 The plumbing list
 -----------------
