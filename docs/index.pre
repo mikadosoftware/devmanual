@@ -5,47 +5,94 @@ The DevManual
 top level concerns
 ------------------
 
-- CI/CD
-- Infrastructure as code
-  comtainers and orchestration
-- monitoring and observability 
-automate all the things
-- SDLC, collaborationnworh MaPS
-- security and IAM
-  secrets mgmt
-- compliance and software governance
-- mamagemet information systems (next level up reprting)
-   capacity planning and scaling
-   cost mgmt, budgeting and improvement s
-- SLAs SLOs SLEs
-   incident mgmt
-
-- testing and QA - a spectrum of testing in productio 
-  performance optmisation
-- disaster recovery and backup
-
-- configuration mgmt etcd, ansible
-
-- documentation
+* CI / CD
+* Infrastructure as code
+  containers and orchestration
+* monitoring and observability
+* SDLC 
+* Security and IAM
+* Software Governance, Compliance, Democracy, Risk and Project Mgmt
+* Management Information Systems
+* SLAs, Operations, Incident Mgmt
+* Testing and QA - a spectrum
+* Disaster recovery and Backup
+* COnfiguration Mgmt, feature toggles and release mgmt
+* documentation
 
 
 
-interesting questions
-Do you need a load balancer?
-- TLS certs and rotation?
-- Horizontal scalability.
-- HA/DR
-- dev/stage/production + being able to test/stage your complete stack on demand.
-- CI/CD integrations, tools like ArgoCD or Spinnaker
-- Monitoring and/or alerting with Prometheus and Grafana
-- Would you benefit from being able to deploy a lot of off the shelf software (lessay Elastic Search, or some random database, or a monitoring stack) via helm quickly/easily.
-- "Ingress"/proxy.
-- DNS integrations.
-If you answer yes to many of tho
+* CI / CD
+** Jenkins
+** githubflow, gitgitflow, gitflow.  Tagging vs labels vs whats in which env
+** unit testing, test at IO boundaries, 
+** coverage
+** whole org test rig
+** linting
+** static analysis
+** artifact mgmt
+** monorepo vs microrepo
+** build testing
 
-kubernetes fevate
-https://news.ycombinator.com/item?id=42226005
+* Infrastructure as code
+** containers and orchestration
+** DNS
+** TLS, CA, Certs, 
+** HA / DR / Horizontal scaling, caches
+** build complete stack from scratch in docker
+** API gateways, loadbalancing, quotas etc
+** dont use kebernetes - or rather. Have your own deplyment process, that knows the names of servers. 
+** chaosmonkey - have failback server names, cattle still have distinct identities, (cattle not pets, not same as virtual abstracts not pets)
 
+
+* monitoring and observability
+** grafana
+** openTelemetry
+** reporting, 
+** pagerduty
+** QA and testing as part of this
+** logging and centralised logging and log monitoring and scanning
+** business event capturing
+
+
+* SDLC 
+** git rebase
+** tickets, JIRAS, tracking and reporting time
+** punchclock
+** discussions around code not ideas - one paragraph is enough to start
+
+* Security and IAM
+** Certs, client certs,
+** TLS is not good enough - chanell is not per request authentication
+** appsec -> shehackspurple 
+** FIDO webauthn
+** 
+
+* Software Governance, Compliance, Democracy, Risk and Project Mgmt
+** Trolley problem
+
+
+* Management Information Systems
+** one level up, 2(O) 100x bigger
+
+* SLAs, Operations, Incident Mgmt
+** SLAs SLOs - the SRE problem
+** runbooks, autoamtion, how 
+
+* Testing and QA - a spectrum
+** unittesting
+** fuzzing
+** at some point everything that can be auotamted out of the way should be done before you think.
+
+* Disaster recovery and Backup
+** see 'build everything from scratch in docker on demand'
+
+* COnfiguration Mgmt, feature toggles and release mgmt
+** etcd, what does "release to production" mean with toggles and config?
+** a given config should be hashable so we have code hash plus config hash as stable 
+
+
+* documentation
+** have osme
 
 
 
@@ -67,13 +114,6 @@ oauth
 https://news.ycombinator.com/item?id=41420783
 
 
-- logging, event capturing
-- production monitoring and QA in production (spectrum)
-- unit tests, mocking and stubbing, 
-- teat rigs emvironemts
-- config handling and environments
-- security authentication authorisation access
-FIDO / client certs etc
 - queues and queueing theory
 - runbooks, prod support 
 - trade off between urgency and robustness (promtiong code and FFS) 
