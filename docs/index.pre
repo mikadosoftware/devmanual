@@ -30,6 +30,21 @@ automate all the things
 
 
 
+interesting questions
+Do you need a load balancer?
+- TLS certs and rotation?
+- Horizontal scalability.
+- HA/DR
+- dev/stage/production + being able to test/stage your complete stack on demand.
+- CI/CD integrations, tools like ArgoCD or Spinnaker
+- Monitoring and/or alerting with Prometheus and Grafana
+- Would you benefit from being able to deploy a lot of off the shelf software (lessay Elastic Search, or some random database, or a monitoring stack) via helm quickly/easily.
+- "Ingress"/proxy.
+- DNS integrations.
+If you answer yes to many of tho
+
+kubernetes fevate
+https://news.ycombinator.com/item?id=42226005
 
 
 
