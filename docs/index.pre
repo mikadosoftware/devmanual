@@ -7,9 +7,8 @@ top level concerns
 
 * CI / CD
 * Infrastructure as code
-  containers and orchestration
 * monitoring and observability
-* SDLC 
+* SDLC, top down and bottom up
 * Security and IAM
 * Software Governance, Compliance, Democracy, Risk and Project Mgmt
 * Management Information Systems
@@ -17,7 +16,7 @@ top level concerns
 * Testing and QA - a spectrum
 * Disaster recovery and Backup
 * COnfiguration Mgmt, feature toggles and release mgmt
-* documentation
+* documentation, usability, 
 
 
 
@@ -32,6 +31,12 @@ top level concerns
 ** artifact mgmt
 ** monorepo vs microrepo
 ** build testing
+** secrets (see vault etc)
+** failfast,
+** share deployment chunks - ie teams share jenkins snippets
+** single server to start ocnceptually - salt or ansible or terraform or whatever.
+** docker / containerisation (leading to Nix)
+** environment consistency
 
 * Infrastructure as code
 ** containers and orchestration

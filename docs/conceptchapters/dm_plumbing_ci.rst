@@ -1,6 +1,56 @@
 What is "the plumbing" in the DevManual?
 ========================================
 
+
+
+Principles
+-----------
+
+Software is literacy
+Software is capital
+"let it fail" - dont test in production, but learn from it quickly.
+"tech is not a cost centre - dont centralise it", depends on literacy
+How can I run this comapny with code and commits
+The CEO should merge to master
+Automate all the things
+Data schemas and ownership
+rewrite and refactor are first class learning, so how do we rely on it if its
+going to change? This is the depreciation cost - as the factory rots, it must be
+maintained, but also improved, the edges smoothed out. The difference between 
+putting back to original state and improving used to be hard to see and was
+hidden in BAU.  Now BAU is a config file.  What is missing in depreciation is 
+we built the (slightly) wrong thing and need to improve it slightly in thousand
+ways.
+
+It is highly unlikely and top down project based appraoch will manage a thousand
+tiny improvements.  UAT testing wont.  So users need to become scounts -
+embedded with developers (and later on developers) and just churn out
+improvements all the time.  Eventually the big wins will be small releases.
+
+But what about the vast huge migration project. Yeash tht fine you go do that
+too.
+
+
+Software as capital, capital depreciation is major business expense,
+EBITDA is a lie (see Warren Buffet). So software that is just built is a
+tech debt but so is not building it.  Software is capital if there is a 
+virtual-real connection.  So a wrench that bluetooth records how much it was tightened on which bolt.
+
+
+devtool
+
+I want a command line tool that gives me
+
+* open a project, and build / open the venv at the project level
+* run various lint and other checks for me - precommit but not on the hook
+* can do `hub` things
+* can reach out to build server
+* have a build server - Jenkins
+
+
+
+
+
 Try to extract all as bullet points here
 
 - logging, event capturing
