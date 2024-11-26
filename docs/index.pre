@@ -37,6 +37,8 @@ top level concerns
 ** single server to start ocnceptually - salt or ansible or terraform or whatever.
 ** docker / containerisation (leading to Nix)
 ** environment consistency
+** metrics and reporting
+
 
 * Infrastructure as code
 ** containers and orchestration
@@ -57,6 +59,11 @@ top level concerns
 ** QA and testing as part of this
 ** logging and centralised logging and log monitoring and scanning
 ** business event capturing
+** combine Nasa OpenMCT and OpenTelemetry
+   Telemetry is everything in moving from IRL to Virtual.
+   Telemetry of security swipes, logins, purcahses etc etc.
+   simple data management - who owns the names under each layer of dots.
+   company.site.greenfieldhouse.5thfloor.lights.powerusage
 
 
 * SDLC 
@@ -64,6 +71,11 @@ top level concerns
 ** tickets, JIRAS, tracking and reporting time
 ** punchclock
 ** discussions around code not ideas - one paragraph is enough to start
+** linting
+** static analysis https://github.com/PyCQA/bandit
+** isort
+** explore vs exploit. Never be in position where the quick docs fix takes less
+time than the tickets and commits etc.  How to include small valuable fixes? 
 
 * Security and IAM
 ** Certs, client certs,
