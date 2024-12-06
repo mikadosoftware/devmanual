@@ -64,7 +64,8 @@ top level concerns
    Telemetry of security swipes, logins, purcahses etc etc.
    simple data management - who owns the names under each layer of dots.
    company.site.greenfieldhouse.5thfloor.lights.powerusage
-
+** see cloudflare use of open telemetry to return logging
+use single otel collector on server instance for all monitoing 
 
 * SDLC 
 ** git rebase
