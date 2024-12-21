@@ -88,6 +88,7 @@ time than the tickets and commits etc.  How to include small valuable fixes?
 https://medium.com/cryptomove/moving-target-defense-recent-trends-253ce784a680
 MovingTargetDefence - this is lessons from WWI and tier one armies
 https://eprint.iacr.org/2016/741.pdf
+https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
 
 Design thoughts
 use CA to generate client cert.
