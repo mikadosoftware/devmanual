@@ -96,7 +96,7 @@ use orchestration deployment tools to gove app instance that client cert
 have app pull into memory (store in protected memory - https://www.rapidinnovation.io/post/rusts-memory-management-and-ownership-model)
 then can use client cert to request other secrets
 
-
+open source vault - https://www.pulumi.com/docs/
 
 
 
