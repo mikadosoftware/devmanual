@@ -89,6 +89,15 @@ https://medium.com/cryptomove/moving-target-defense-recent-trends-253ce784a680
 MovingTargetDefence - this is lessons from WWI and tier one armies
 https://eprint.iacr.org/2016/741.pdf
 
+Design thoughts
+use CA to generate client cert.
+use orchestration deployment tools to gove app instance that client cert
+have app pull into memory (store in protected memory - https://www.rapidinnovation.io/post/rusts-memory-management-and-ownership-model)
+then can use client cert to request other secrets
+
+
+
+
 
 * Software Governance, Compliance, Democracy, Risk and Project Mgmt
 ** Trolley problem
