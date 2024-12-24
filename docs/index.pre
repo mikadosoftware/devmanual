@@ -2,13 +2,45 @@
 The DevManual
 ==================
 
+RoadMap
+=======
 
-*everything* is a feedback loop - build them, review them, live them.
-What feedback loops need - monitoring / obervability - start here.
-Everything in my list -144, should have some metric and loop, some form of
-reporting and tracking it.  From Jenkins to security to governance.
-And those metrics need to bubble up - 
+The goal is to identify a *gross* (144) of concepts that are important to
+software development teams and running a software service, in-house, or
+commerical.
 
+The goal is to start at smallest level, fully controlled, and then expand as
+needed - going from 0 to around 10,000 machines/instances.
+
+My motivation is being fed up over the years that while I *know* this stuff, if
+I am dropped into a new environment, I focus on the most important hair on fire
+stuff, but that looks like I am ignoring the rest.  And someone inevitably comes
+along and says "hey, we should do ticketing like this or containers like that"
+and we lose the map like overview.
+
+So this is my, "trust me, I know what I am doing" book.
+
+Everything is a feedback loop.
+------------------------------
+Everything is a feedback loop.  Everything feeds into something, and at the very
+minimum it feeds into the MIS (the summarisation tool that your "level" reports
+into.).  THis is an important (to me) concept - build an MIS tool that is what
+you think your manager should be seeing (obligatory BOb Dylan quote - everybody
+serves somebody).  That might not be how the actual manager sees or wants to be
+shown but it is something you can control and adjust.
+
+So we need at least 144 feedback loops, and 144 metrics (at least) in our MIS
+dashboard.  Which will be built in chapter X.
+
+Deployment
+-----------
+
+We will be using docker like VMs, cos its simple. NIX will follow on.
+And these dockers will end up being hosted in OpenShift. 
+
+We assume that we are *not* cloud first.  I know I know.
+We are going the homelab route - the core of what we sahll start with will sit
+on a desk next to us - because cloud is not all.
 
 
 top level concerns
