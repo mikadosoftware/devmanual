@@ -2,12 +2,21 @@
 The DevManual
 ==================
 
+
+*everything* is a feedback loop - build them, review them, live them.
+What feedback loops need - monitoring / obervability - start here.
+Everything in my list -144, should have some metric and loop, some form of
+reporting and tracking it.  From Jenkins to security to governance.
+And those metrics need to bubble up - 
+
+
+
 top level concerns
 ------------------
 
 * CI / CD
 * Infrastructure as code
-* monitoring and observability
+* monitoring and observability & management information systems (journalism)
 * SDLC, top down and bottom up
 * Security and IAM
 * Software Governance, Compliance, Democracy, Risk and Project Mgmt
