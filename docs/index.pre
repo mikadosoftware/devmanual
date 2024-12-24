@@ -90,7 +90,7 @@ top level concerns
 ** API gateways, loadbalancing, quotas etc
 ** dont use kebernetes - or rather. Have your own deplyment process, that knows the names of servers. 
 ** chaosmonkey - have failback server names, cattle still have distinct identities, (cattle not pets, not same as virtual abstracts not pets)
-
+** Homelab - https://linuxblog.io/home-lab-beginners-guide-hardware/ - 
 
 * monitoring and observability
 ** grafana
