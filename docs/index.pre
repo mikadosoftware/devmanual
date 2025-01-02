@@ -32,6 +32,8 @@ shown but it is something you can control and adjust.
 So we need at least 144 feedback loops, and 144 metrics (at least) in our MIS
 dashboard.  Which will be built in chapter X.
 
+
+
 Deployment
 -----------
 
@@ -43,6 +45,8 @@ We are going the homelab route - the core of what we sahll start with will sit
 on a desk next to us - because cloud is not all.
 one laptop, one server, then cloud, can be expa nded into more people and
 more offices.
+
+but things like gvisor are sensible
 
 
 top level concerns
