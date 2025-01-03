@@ -99,7 +99,10 @@ top level concerns
 ** Homelab - https://linuxblog.io/home-lab-beginners-guide-hardware/ - 
 ** one laptop, one server, then cloud, can be expa nded into more people and
 more offices.
-
+** SRE work and theory
+theory we need is 1. five whys analysis, blame free
+2. process control theory 3. 
+https://news.ycombinator.com/item?id=42584750
 
 * monitoring and observability
 ** grafana
