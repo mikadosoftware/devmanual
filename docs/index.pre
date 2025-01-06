@@ -5,6 +5,22 @@ The DevManual
 RoadMap
 =======
 
+the devmanual is about everything 
+needed for a software team to operate 
+within a business or organisation,
+everything *before* a line of code 
+is written - the stuff every team 
+needs or will benefit from, from 
+CI/CD setup, review processes, etc
+
+
+This is a book about filling in the missing gaps on how to 
+be part of, setup, maintain, run, "self-manage" a software team / teams.
+Its not about what programming language, its about how to deal with users, 
+auditors, maangers, what is best practise and what is just theatre.
+
+It flows from one point of view - the code is *everything*.
+
 The goal is to identify a *gross* (144) of concepts that are important to
 software development teams and running a software service, in-house, or
 commerical.
@@ -33,6 +49,34 @@ So we need at least 144 feedback loops, and 144 metrics (at least) in our MIS
 dashboard.  Which will be built in chapter X.
 
 
+A friend who was a photographer would explain
+hownhe overcame his "imposter syndrome".
+He has enormous amounts of "kit" (gear might be more photogenic)
+but he just keeps one simple camera withbone lens
+in thebcar - because he is capable of doing the big setup annie leobowotz stuff 
+but he chooses simplicity most of thebtime
+
+The devmanual is about simplicity as choice in being a software developer
+
+this is not the guide to witing small bits of code aa a single developer
+
+its a guide to writing large bodies of code as part of a larger 
+usually corporate team(s)
+
+throughout my career I have started or joined teams of people with a usually xorporate goal inmmind
+
+often we thought we needed lots of kit - downloadongnhadoop and datalake setups
+and this does matter - but its like lenses for my photogroaher friend - you can fo anhellmof anlong way with 
+awk and cat and a but of thinking.
+
+team started talking like a team
+
+when we start talking like a team, when we have operations sorted
+its all part of the same thing
+
+its a devmanual - as simple as we can
+
+
 
 Deployment
 -----------
@@ -51,21 +95,6 @@ but things like gvisor are sensible
 
 top level concerns
 ------------------
-
-* CI / CD
-* Infrastructure as code
-* monitoring and observability & management information systems (journalism)
-* SDLC, top down and bottom up
-* Security and IAM
-* Software Governance, Compliance, Democracy, Risk and Project Mgmt
-* Management Information Systems
-* SLAs, Operations, Incident Mgmt
-* Testing and QA - a spectrum
-* Disaster recovery and Backup
-* COnfiguration Mgmt, feature toggles and release mgmt
-* documentation, usability, 
-
-
 
 * CI / CD
 ** Jenkins
@@ -119,8 +148,41 @@ https://news.ycombinator.com/item?id=42584750
    company.site.greenfieldhouse.5thfloor.lights.powerusage
 ** see cloudflare use of open telemetry to return logging
 use single otel collector on server instance for all monitoing 
+** logging
 
 * SDLC 
+** DORA metrics
+What is difference between software coding and softeware engineering?
+Metrics (Dave Farley)
+Produce Better software Faster.
+DORA has a clear statement "Stability & Speed" which is measureable with 
+My only objection is that it still assumes *tickets drive Development* whereas I think
+most software is really increasing capability aligned to mission, 
+and suddenly discovering a leap forward.
+Keep doing software and use the DORA metrics to show that you are going off track.
+Too much focus is on how can managers control (improve?) the software development process
+whereas they dont have the right levers *as managers*. They can only improve the other things
+that stop people being amazingly productive.  
+We can tell they are amazingly productive with the Dora metrics.
+If those metrics fall, we change things 
+
+Things that are likely to effect it 
+
+Psycholigical safety
+Clear congruent goals
+Strong engineering platforms and good dev leads and good communication
+strong mission and sense of shared responsibity and reward
+psycholiogccal safety
+people management 
+dumb mistakes happen to smart people too
+
+We dont measure *individual developer productivity* (beyond basic competance)
+because thats not the key - the key is increasing the capability of the whole organisation.
+An Army of Rambos pretty soon stops having artillery or airplanes and boats.
+
+How do we measure capability of whole org? WHole org test rigs seems a good idea!
+
+
 ** git rebase
 ** tickets, JIRAS, tracking and reporting time
 ** punchclock
@@ -153,14 +215,39 @@ open source vault - https://www.pulumi.com/docs/
 
 
 
-* Software Governance, Compliance, Democracy, Risk and Project Mgmt
+* Software Governance, Compliance, Democracy
 ** Trolley problem
 
 
-* Management Information Systems
+* Management Information Systems, project mgmt, risk mgmt, planning, budgets
+** MIS is not for managers.
+** Risk mgmt is all, keep a risk log before a gantt chart
+Risk mgmt is like DORA metrics - 
+you probably cannot plan but you can tell if you are getting warmer.
+The planning fallacy
+** Dashboards out of observability
+** Management is the place for statisical process control.
+If we can repalce management with a perl script,
+ are we looking at disaggremation of managemenet.
+
 ** one level up, 2(O) 100x bigger
 ** is there a max number of chnages one can make per day?
 https://news.ycombinator.com/item?id=42487663
+** Twitter - can you really fire 90% of the devs?
+What about all the other things that hurt at scale
+3-4(O)
+
+I often find project managers and senior management wanting a “zipper” project - where some big brained architect predicts the future use cases and needs and can plan pulling together the teeth in 15 steps ahead
+
+Which is of course rubbish - mostly it’s amazing if you can predict the next zip.
+
+this is "next step or phase soace" projeft mgmt - what you can do next is defined by your previous choices - so improce optionality - make tools and platforms not topless or low code decisions 
+
+
+Things shoukd be as simple as possiblenbutnnonsimpler
+	
+
+simplicity as a choice
 
 A business is simply a collection of processes made against inputs usong capital (texhnology)
 Its unlikely that any business on thenplanet has a complete accurate (ie automated)
@@ -173,16 +260,21 @@ teting to allow compmies to find out just wtf they actually do all
 day
 
 
-
-
 * SLAs, Operations, Incident Mgmt
 ** SLAs SLOs - the SRE problem
 ** runbooks, autoamtion, how 
+** Statistical Process Control in Operations
+https://en.wikipedia.org/wiki/Statistical_process_control
+** AI analysis of operations
+HolmesGPT - AI that can try to knit together different parts of failing
+errors and provide easier root cause analysis.  sorta LLMs to check error
+codes.https://news.ycombinator.com/item?id=41326039
 
 * Testing and QA - a spectrum
 ** unittesting
 ** fuzzing
 ** at some point everything that can be auotamted out of the way should be done before you think.
+** Whole Org Test rig
 
 * Disaster recovery and Backup
 ** see 'build everything from scratch in docker on demand'
@@ -198,117 +290,6 @@ day
 https://www.ycombinator.com/documents/
 
 
-
-The plumbing list
------------------
-
-SMTP - use postmarkapp.com as sending out emails yourself now just gets you
-banned.
-
-LOgging - use centralised logging plus some audit friendly means preventing
-corruption
-
-authentication. I think webauthn, CA approaches. The only thing we can tust is
-the maths
-
-
-oauth 
-https://news.ycombinator.com/item?id=41420783
-
-
-- queues and queueing theory
-- runbooks, prod support 
-- trade off between urgency and robustness (promtiong code and FFS) 
-- use of dashboards
-- business metrics growing out of / related to tech metrics
-- 
-
-
-Operational Support
-
-HolmesGPT - AI that can try to knit together different parts of failing
-errors and provide easier root cause analysis.  sorta LLMs to check error
-codes.https://news.ycombinator.com/item?id=41326039
-
-
-
-
-
-mono repo / multi repo
-
-
-
-
-
-Draw the rest of the f***ing Owl 
-
-Twitter - can you really fire 90% of the devs?
-What about all the other things that hurt at scale
-3-4(O)
-
-Scene: newsroom like his gorlmfrodsy
-"write this down"
-"i'm just carving the oencil"
-"sharpening?"
-"no carving, about to melt the metalnfor that little rubber holder in the end"
-
-wait what? 
-
-
-the devmanual is about everything 
-needed for a software team to operate 
-within a business or organisation,
-everything *before* a line of code 
-is written - the stuff every team 
-needs or will benefit from, from 
-CI/CD setup, review processes, etc
-
-
-
-
-This is a book about filling in the missing gaps on how to 
-be part of, setup, maintain, run, "self-manage" a software team / teams.
-Its not about what programming language, its about how to deal with users, 
-auditors, maangers, what is best practise and what is just theatre.
-
-It flows from one point of view - the code is *everything*.
-EaC - Everything As Code
-
-
-What are the areas to work on?
-
-* Infrastructure as code. vulnerability mgmt, red teams,
-* SDLC
-* SDLC interactions with business - feed into ticketing system
-* case management systems
-* Rules engines
-* Data storage (elastic, RDBMS, hadoop, file system NAS)
-* IAM
-* CRM
-* logging, error capture
-* dashboarding, monitoring, escalation, prioritsation
-* guiderails / controls / monitoring, escalation, golden source data,
-* from golden source build models of company - whole org test rig
-* regulatory and mgmt reporting
-*
-
-
-
-Dashboarding - you need some way of keeping eveerything in check.
-Use RAG.  use RAG on RAG.
-
-Forensics - if you dont act on errors now, you never will
-infrastructure as code
-
-CRM - customer relationship management - everything from notifying of
-upgrades to demo days and feedback, netowrking, blogs and office hours.
-
-IAM
-
-Vulnerability mgmt
-
-
-
 Measuring productivity
 -------
 https://news.ycombinator.com/item?id=40272186
@@ -321,188 +302,4 @@ yet software is design a aseembly line everything
 
 
 
-controls
-automated check of state or other desirable situation and ability to
-report and precent progress till actuon taken 
 
-lexicon
-
-servers 
-workstations
-standard builds
-
-compounts
-
-security
-- CA self hosted / lets encrypt?
-- approval system
-- 
-
-test rigging
-- feature files / 
-- teat generation 
-- mitmproxy style teating
-- break at network ans system boundaries
-less at the unit level.
-
-
-management 
-- budgets
-- approval system (purchase orders)
-- future modelling (spreadsheet onwards)
-- record and publish meetings
-- MIS systems - event logging reporting
-- 
-
-
-project planning 
-- whats the user need
-- written press release and essay
-- automated milestone achievement 
-
-feature flag system 
-- whole module hiding
-
-
-
-- CI/CD
-  - Jenkins
-  - various linters
-  - pre commot hooks
-
-- ticketing
-
-- operational support
-  - ticketing 
-  
-- dashboards
-
-- report
-
-- logging and log capture
-- event capture
-
-- mesaging 
-- device management 
-- 
-
-backing services
-----------------
-storage 
-data platform (ETL/ hadoop)
-RDBMS
-
-
-
-
-
-
-web service 
-https://www.nginx.com/blog/microservices-reference-architecture-nginx-twelve-factor-app/
-12 factor app
-
-
-project mgmt
-
-I often find project managers and senior management wanting a “zipper” project - where some big brained architect predicts the future use cases and needs and can plan pulling together the teeth in 15 steps ahead
-
-Which is of course rubbish - mostly it’s amazing if you can predict the next zip.
-
-this is "next step or phase soace" projeft mgmt - what you can do next is defined by your previous choices - so improce optionality - make tools and platforms not topless or low code decisions 
-
-
-Things shoukd be as simple as possiblenbutnnonsimpler
-	
-
-simplicity as a choice
-
-A friend who was a photographer would explain
-hownhe overcame his "imposter syndrome".
-He has enormous amounts of "kit" (gear might be more photogenic)
-but he just keeps one simple camera withbone lens
-in thebcar - because he is capable of doing the big setup annie leobowotz stuff 
-but he chooses simplicity most of thebtime
-
-The devmanual is about simplicity as choice in being a software developer
-
-this is not the guide to witing small bits of code aa a single developer
-
-its a guide to writing large bodies of code as part of a larger 
-usually corporate team(s)
-
-throughout my career I have started or joined teams of people with a usually xorporate goal inmmind
-
-often we thought we needed lots of kit - downloadongnhadoop and datalake setups
-and this does matter - but its like lenses for my photogroaher friend - you can fo anhellmof anlong way with 
-awk and cat and a but of thinking.
-
-team started talking like a team
-
-when we start talking like a team, when we have operations sorted
-its all part of the same thing
-
-its a devmanual - as simple as we can
-
-Introduction
-============
-
-A 'DevManual' is the (usually barely understandable) documentation passed
-to a new coder on thier first day, explaining "how we do things around here".
-
-It *should* be comprehensive, it *should* explain *why* as well as *how.
-
-It so often is not ...
-
-But this is my attempt to provide a set of best practises, and guidelines.
-
-If I could describe the idea in one line it is
-
-
-All the component parts to running a software-literate, programmable company
-with examples.
-
-
-Walkthrough
------------
-
-0. Security
-This is the most basic component. And it informs so much else
-- HSM (phones and ubikeys)
-- identity management on every request
-- zero trust security
-95% of the time security is doing the right thing well.  It's the
-remaining 5% that is the hard costly trade offs.  We will come to
-those later.
-Use CAs for SSH 
-Each docker build needs to trust various ssh clients 
-see smallstep.com/blog/use-ssh-certificates
-
-Use client certificates to handle web access
-Use MFA to handle web access
-
-Don't bother with passwords etc - ???
-
-
-1. code development and deployment pipeline
-deployment on untrusted machines
-
-
-2. plumbing
-
-
-{{ conceptchapters/dm_plumbing_ci.rst }}
-
-{{ conceptchapters/dm_projects_tickets_todoinator.rst }}
-
-{{ conceptchapters/dm_townplanning_governance.rst }}
-
-{{ conceptchapters/dm_fractal_management.rst }}
-
-{{ conceptchapters/dm_team_morale_trust.rst }}
-
-{{ conceptchapters/dm_culture_people_process.rst }}
-
-{{ conceptchapters/dm_data.rst }}
-
-people management 
-dumb mistakes happen to smart people too
