@@ -26,7 +26,7 @@ def show(resultsd):
     for key, vals in resultsd.items():
         print(key)
         for idx, val in enumerate(vals):
-            print(f"  {idx}"+ val)
+            print(f"  {idx}"+ val.replace("**",""))
  
 if __name__ == '__main__':
     foo()

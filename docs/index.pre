@@ -11,42 +11,43 @@ within a business or organisation,
 everything *before* a line of code 
 is written - the stuff every team 
 needs or will benefit from, from 
-CI/CD setup, review processes, etc
+CI/CD setup, review processes, including metrics and *management style*, 
+
+It is *partly* based on real research into the best practises of software development
+but the amount of research in the area is parlous, so eventually this is based on
+my thirty years experiences "in the trenches" of software development as a coder, a manager,
+a failed entreprenuer yet still a coder.
+
+It flows from one point of view - the code is *everything*. 
 
 
-This is a book about filling in the missing gaps on how to 
-be part of, setup, maintain, run, "self-manage" a software team / teams.
-Its not about what programming language, its about how to deal with users, 
-auditors, maangers, what is best practise and what is just theatre.
-
-It flows from one point of view - the code is *everything*.
+Gross Design
+-------------
 
 The goal is to identify a *gross* (144) of concepts that are important to
 software development teams and running a software service, in-house, or
-commerical.
-
-The goal is to start at smallest level, fully controlled, and then expand as
-needed - going from 0 to around 10,000 machines/instances.
+commerical. There are 12 top level concepts, and each 12 then has 12 children 
+(this is a very coder centric book you can guess.  
+I probalby should have aimed for 128 but Gross sounds funnier.)
 
 My motivation is being fed up over the years that while I *know* this stuff, if
 I am dropped into a new environment, I focus on the most important hair on fire
-stuff, but that looks like I am ignoring the rest.  And someone inevitably comes
+stuff, but that looks like I am ignoring the rest of the gross.  And someone inevitably comes
 along and says "hey, we should do ticketing like this or containers like that"
 and we lose the map like overview.
 
 So this is my, "trust me, I know what I am doing" book.
 
-Everything is a feedback loop.
-------------------------------
-Everything is a feedback loop.  Everything feeds into something, and at the very
-minimum it feeds into the MIS (the summarisation tool that your "level" reports
-into.).  THis is an important (to me) concept - build an MIS tool that is what
-you think your manager should be seeing (obligatory BOb Dylan quote - everybody
-serves somebody).  That might not be how the actual manager sees or wants to be
-shown but it is something you can control and adjust.
+I hope it will become yours.
 
-So we need at least 144 feedback loops, and 144 metrics (at least) in our MIS
-dashboard.  Which will be built in chapter X.
+
+Simple first, across the whole platform
+---------------------------------------
+
+In My Opinion, a software team needs to cover all this
+The idea here is a simple wooden floor, but with no gaps to fall thorugh.
+Concrete screeding, under floor heating and marble effects are *fine* but if there are 
+holes next to the marble kitchen one might wonder..
 
 
 A friend who was a photographer would explain
@@ -59,23 +60,14 @@ but he chooses simplicity most of thebtime
 The devmanual is about simplicity as choice in being a software developer
 
 this is not the guide to witing small bits of code aa a single developer
-
 its a guide to writing large bodies of code as part of a larger 
 usually corporate team(s)
+throughout my career I have started or joined teams of people with a usually 
+xorporate goal inmmind
 
-throughout my career I have started or joined teams of people with a usually xorporate goal inmmind
-
-often we thought we needed lots of kit - downloadongnhadoop and datalake setups
-and this does matter - but its like lenses for my photogroaher friend - you can fo anhellmof anlong way with 
-awk and cat and a but of thinking.
-
-team started talking like a team
-
-when we start talking like a team, when we have operations sorted
-its all part of the same thing
-
-its a devmanual - as simple as we can
-
+often we thought we needed lots of kit - downloadong hadoop and datalake setups
+and this does matter - but its like lenses for my photogroaher friend - 
+you can fo a hell of a long way with a simple network and a bit of thinking.
 
 
 Deployment
@@ -96,6 +88,21 @@ but things like gvisor are sensible
 top level concerns
 ------------------
 
+* Infrastructure as code
+** single server to start ocnceptually - salt or ansible or terraform or whatever.
+** docker / containerisation (leading to Nix)
+** containers and orchestration
+** DNS
+** TLS, CA, Certs, 
+** HA / DR / Horizontal scaling, caches
+** build complete stack from scratch in docker
+** API gateways, loadbalancing, quotas etc
+** dont use kebernetes - or rather. Have your own deplyment process, that knows the names of servers. 
+** chaosmonkey - have failback server names, cattle still have distinct identities, (cattle not pets, not same as virtual abstracts not pets)
+** Homelab - https://linuxblog.io/home-lab-beginners-guide-hardware/ - 
+** one laptop, one server, then cloud, can be expa nded into more people and
+more offices.
+
 * CI / CD
 ** Jenkins
 ** githubflow, gitgitflow, gitflow.  Tagging vs labels vs whats in which env
@@ -110,28 +117,10 @@ top level concerns
 ** secrets (see vault etc)
 ** failfast,
 ** share deployment chunks - ie teams share jenkins snippets
-** single server to start ocnceptually - salt or ansible or terraform or whatever.
-** docker / containerisation (leading to Nix)
 ** environment consistency
 ** metrics and reporting
 
 
-* Infrastructure as code
-** containers and orchestration
-** DNS
-** TLS, CA, Certs, 
-** HA / DR / Horizontal scaling, caches
-** build complete stack from scratch in docker
-** API gateways, loadbalancing, quotas etc
-** dont use kebernetes - or rather. Have your own deplyment process, that knows the names of servers. 
-** chaosmonkey - have failback server names, cattle still have distinct identities, (cattle not pets, not same as virtual abstracts not pets)
-** Homelab - https://linuxblog.io/home-lab-beginners-guide-hardware/ - 
-** one laptop, one server, then cloud, can be expa nded into more people and
-more offices.
-** SRE work and theory
-theory we need is 1. five whys analysis, blame free
-2. process control theory 3. 
-https://news.ycombinator.com/item?id=42584750
 
 * monitoring and observability
 ** grafana
@@ -192,6 +181,12 @@ How do we measure capability of whole org? WHole org test rigs seems a good idea
 ** isort
 ** explore vs exploit. Never be in position where the quick docs fix takes less
 time than the tickets and commits etc.  How to include small valuable fixes? 
+** SRE work and theory
+theory we need is 1. five whys analysis, blame free
+2. process control theory 3. 
+https://news.ycombinator.com/item?id=42584750
+
+
 
 * Security and IAM
 ** Certs, client certs,
@@ -217,6 +212,8 @@ open source vault - https://www.pulumi.com/docs/
 
 * Software Governance, Compliance, Democracy
 ** Trolley problem
+** Mission, shareholder mission vs middle management
+** Tactics operations strategy. See google and TPUS, vs Midway and aurcraft carriers. Strategy is politican level.  Operations is being disrupted 
 
 
 * Management Information Systems, project mgmt, risk mgmt, planning, budgets
@@ -246,6 +243,15 @@ this is "next step or phase soace" projeft mgmt - what you can do next is define
 
 Things shoukd be as simple as possiblenbutnnonsimpler
 	
+Everything is a feedback loop.
+------------------------------
+
+Everything is a feedback loop.  Everything feeds into something, and at the very
+minimum it feeds into the MIS (the summarisation tool that your "level" reports
+into.).  THis is an important (to me) concept - build an MIS tool that is what
+you think your manager should be seeing (obligatory BOb Dylan quote - everybody
+serves somebody).  That might not be how the actual manager sees or wants to be
+shown but it is something you can control and adjust.
 
 simplicity as a choice
 
