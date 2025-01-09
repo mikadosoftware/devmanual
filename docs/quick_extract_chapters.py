@@ -23,10 +23,19 @@ def foo():
     show(resultsd)
 
 def show(resultsd):
+    s = ''
+    toplevels = []
     for key, vals in resultsd.items():
-        print(key)
+        key = key.replace("* ","")
+        toplevels.append(key)
+        underline = "="*len(key)
+        s += f"\n{key}\n{underline}\n"
         for idx, val in enumerate(vals):
-            print(f"  {idx}"+ val.replace("**",""))
+            s += f"  {idx}\n"+ val.replace("**","")
+    report = ''
+    report += '\n* ' + '\n* '.join(toplevels)
+    report += s
+    print(report)
  
 if __name__ == '__main__':
     foo()

@@ -2,6 +2,127 @@
 The DevManual
 ==================
 
+Aimed not at google scale (where one in a million errors occur twice a day)
+but aimed inside the 3rd std dev, in fact in 1st most of the time (68%, 95% 99.7%)
+
+The Metaphor of Building Software
+=================================
+
+Discuss "The code is the design", and the DevOps idea of code for
+everything.  Look at building site in City of London
+
+The office building metahpr is a good one because it also includes a
+clear idea of just how much is ocvered in software build chains these
+days - from Steel girders and foundations to Glass UIs and bathroom
+and waste services in conduits no one sees, to building security and
+power outlets.  These things are beasts, and software at even mid size
+enterprise scale is a beast too.  Hence my focus on *governance* as
+well.
+
+Why does this matter - why try to be full stack? why not specialise?
+There are a few, not many, but a few people in companies like Boeing who understand the *entire* airframe - from bernoulli's principle over the wings to the feedback pressure on the pilots control stick - they can reason through the trade offs and keep it all in their heads
+
+A full stack developer is not just a cheaper replacement for hiring 3 specialised ones, (certainly not if I am invoicing you) but is someone who can rationalise the trade offs across the whole stack.
+
+Similarly for a business you need working models for all the interactions - sales, marketing manufacturing etc. And as those models are surfaced and captured in concrete code they can be shared and manipulated - the more the trade offs do not just appear on one person head but are explicitly modelled and tested the closer we get to a programmable company.
+
+So having a full stack is one thing - being able to recreate that stack in a wind tunnel environment and see it respond to new changes is vital for understanding the trade offs across the stack.
+
+
+As an example the trade offs start to matter at those "order of magnitude" barriers - going from 10x lines of code to 100x, or 10x servers to 100x servers or people.
+
+Stuff Metaphors, what do we do?
+===============================
+
+We break almost everything down into services,
+run using code-based *products* that generally are
+kept in a code repository.
+
+In other words, we run services from code. Together those services
+work together to make our offering to the world.
+
+Each repo as a product
+----------------------
+
+The organisation, built from scratch every moment
+-------------------------------------------------
+
+THis involves test-as-a-spectrum
+Pre-prod or no pre-prod?
+Generally if you can rebuild all form scratch, and have awesome in prod monitoring you can get away with no pre-prod.  Just its really really hard to pretend.
+So I think its much much better to have a pre-prod env where a portion
+of prod is fired at the service (replay attacks)
+
+For each *repo* have a product owner
+------------------------------------
+
+Yes you heard. If its a repo, its a service, its something someone cares about.
+It will have tests and builds and it will matter. Maybe the only users are
+three sysadmins - but it still matters that they are customers.
+
+So
+
+* Have a product *vision* (Design the box)
+* Have a product *roadmap* (Milestones, and order. DOnt do deadlines)
+* Track the metrics 
+
+
+Business Metrics
+
+- customer account churn %
+- Monthly mrr revenue churn %
+- net mrr churn 
+(check out startups for rest of us) 
+
+
+
+Principles
+-----------
+
+Software is literacy
+Software is capital
+"let it fail" - dont test in production, but learn from it quickly.
+"tech is not a cost centre - dont centralise it", depends on literacy
+How can I run this comapny with code and commits
+The CEO should merge to master
+Automate all the things
+Data schemas and ownership
+rewrite and refactor are first class learning, so how do we rely on it if its
+going to change? This is the depreciation cost - as the factory rots, it must be
+maintained, but also improved, the edges smoothed out. The difference between 
+putting back to original state and improving used to be hard to see and was
+hidden in BAU.  Now BAU is a config file.  What is missing in depreciation is 
+we built the (slightly) wrong thing and need to improve it slightly in thousand
+ways.
+
+It is highly unlikely and top down project based appraoch will manage a thousand
+tiny improvements.  UAT testing wont.  So users need to become scounts -
+embedded with developers (and later on developers) and just churn out
+improvements all the time.  Eventually the big wins will be small releases.
+
+But what about the vast huge migration project. Yeash tht fine you go do that
+too.
+
+
+Software as capital, capital depreciation is major business expense,
+EBITDA is a lie (see Warren Buffet). So software that is just built is a
+tech debt but so is not building it.  Software is capital if there is a 
+virtual-real connection.  So a wrench that bluetooth records how much it was tightened on which bolt.
+Simplicity (fits in one brain) and coherent (avoids lots of cases)
+
+High reliability (matches and exceeds (80%) needs if business in normal running and extreme scenarios)
+
+psychological safety
+
+Automation for everything
+
+structured and rational decision making
+
+
+
+devtool
+
+
 RoadMap
 =======
 
@@ -88,16 +209,33 @@ but things like gvisor are sensible
 top level concerns
 ------------------
 
+- Infrastructure (as code)
+- SDLC-CI/CD
+- SDLC-Testing/QA
+- SDLC-Config and plumbing
+- SDLC-Operations/SRE/AudienceMgmt
+
+
+
+
+
 * Infrastructure as code
 ** single server to start ocnceptually - salt or ansible or terraform or whatever.
 ** docker / containerisation (leading to Nix)
 ** containers and orchestration
 ** DNS
 ** TLS, CA, Certs, 
+https://snyk.io/blog/implementing-tls-ssl-python/
+Chapter: create our own CA in python, sign for a web server, serve files and view handshake
+https://www.sslmentor.com/help/ssl-certificate-formats
+https://stackoverflow.com/questions/16903528/how-to-get-response-ssl-certificate-from-requests-in-python/47931103#47931103
+** SPIFFE
+Complete SPIRE / SPIFFE service running
+in our own docker "cluster". 
 ** HA / DR / Horizontal scaling, caches
 ** build complete stack from scratch in docker
 ** API gateways, loadbalancing, quotas etc
-** dont use kebernetes - or rather. Have your own deplyment process, that knows the names of servers. 
+dont use kebernetes - or rather. Have your own deplyment process, that knows the names of servers. 
 ** chaosmonkey - have failback server names, cattle still have distinct identities, (cattle not pets, not same as virtual abstracts not pets)
 ** Homelab - https://linuxblog.io/home-lab-beginners-guide-hardware/ - 
 ** one laptop, one server, then cloud, can be expa nded into more people and
@@ -119,7 +257,19 @@ more offices.
 ** share deployment chunks - ie teams share jenkins snippets
 ** environment consistency
 ** metrics and reporting
+** Uber and submitqueue
+Submit Queue and any submit queue
+---------------------------------
 
+http://delivery.acm.org/10.1145/3310000/3303970/a29-ananthanarayanan.pdf
+
+Uber has SubmitQueue to scale queued commits - but you don't need regression analysis in most ca
+ses - you just need to build and test and do so automatically with a queue - a mono repo or a di
+stributed set of repos eventually becomes a mono repo at integration stage
+
+Everything is eventually a monorepo
+At integration testing stage everything is a monorepo - so you need a submit queue to manage the process
+:
 
 
 * monitoring and observability
@@ -145,6 +295,36 @@ What is difference between software coding and softeware engineering?
 Metrics (Dave Farley)
 Produce Better software Faster.
 DORA has a clear statement "Stability & Speed" which is measureable with 
+- Metrics help you keep on the road and there are very few you really need. 
+Speed and Stability (google four keys).
+
+Deployment Frequency
+Lead Time for Changes
+
+Time to Restore Services
+Change Failure Rate
+(https://github.com/GoogleCloudPlatform/fourkeys)
+We can apply similar four key metrics to the business funnel 
+
+- marketing (lead generation)
+- sales (lead conversion)
+- onboarding (lead to early customer)
+- customer lifecycle (early to ex)
+
+Each of these should also have four keys (or maybe just two) in speed stability terms
+
+Speed:
+Percentage loss through funnel (lead quality) - relates heavily to acquisition cost (ie of you s
+pend acquistionnonlymon the exact lead who will convert you can pay almost any acquisition cost)
+
+?ZFeature uptake - how long after release does a feature get used ? 
+Stability:
+
+Churn rate as % of MRR 
+acquisition cost (total customer cost)
+
+usage % ? that's similar to churn ? 
+
 My only objection is that it still assumes *tickets drive Development* whereas I think
 most software is really increasing capability aligned to mission, 
 and suddenly discovering a leap forward.
@@ -230,6 +410,21 @@ If we can repalce management with a perl script,
 ** one level up, 2(O) 100x bigger
 ** is there a max number of chnages one can make per day?
 https://news.ycombinator.com/item?id=42487663
+
+Breach disclosure
+-----------------
+https://www.troyhunt.com/data-breach-disclosure-101-how-to-succeed-after-youve-failed/
+
+Audience comms
+--------------
+- release announcements
+- feature launches
+- breach disclosure
+- password reset (don't use passwords)
+- user manual 
+- 
+
+
 ** Twitter - can you really fire 90% of the devs?
 What about all the other things that hurt at scale
 3-4(O)
@@ -289,6 +484,14 @@ codes.https://news.ycombinator.com/item?id=41326039
 ** etcd, what does "release to production" mean with toggles and config?
 ** a given config should be hashable so we have code hash plus config hash as stable 
 
+* Databases, data structures
+** Use dask
+is dask better than dag - focuses on scheduler over data structure
+http://tomaugspurger.net/posts/modern-8-scaling/
+** Hadoop vs Postgres vs everything else
+** getting a S3-like storage service
+** Other services (RDBMS), HADOOP
+
 
 * documentation
 ** have osme
@@ -306,6 +509,272 @@ front loaded into the factory cost. yet it is the most vital part of a factory
 yet software is design a aseembly line everything
 
 
+* PeopleWare
+** ongoing training
+** 
 
+
+
+
+Discuss "The code is the design", and the DevOps idea of code for
+everything.  Look at building site in City of London
+
+The office building metahpr is a good one because it also includes a
+clear idea of just how much is ocvered in software build chains these
+days - from Steel girders and foundations to Glass UIs and bathroom
+and waste services in conduits no one sees, to building security and
+power outlets.  These things are beasts, and software at even mid size
+enterprise scale is a beast too.  Hence my focus on *governance* as
+well.
+
+Why does this matter - why try to be full stack? why not specialise?
+
+There are a few, not many, but a few people in companies like Boeing who understand the *entire* airframe - from bernoulli's principle over the wings to the feedback pressure on the pilots control stick - they can reason through the trade offs and keep it all in their heads
+
+A full stack developer is not just a cheaper replacement for hiring 3 specialised ones, (certainly not if I am invoicing you) but is someone who can rationalise the trade offs across the whole stack.
+
+Similarly for a business you need working models for all the interactions - sales, marketing manufacturing etc. And as those models are surfaced and captured in concrete code they can be shared and manipulated - the more the trade offs do not just appear on one person head but are explicitly modelled and tested the closer we get to a programmable company.
+
+So having a full stack is one thing - being able to recreate that stack in a wind tunnel environment and see it respond to new changes is vital for understanding the trade offs across the stack.
+
+
+As an example the trade offs start to matter at those "order of magnitude" barriers - going from 10x lines of code to 100x, or 10x servers to 100x servers or people.
+
+
+Stuff Metaphors, what do we do?
+===============================
+
+We break almost everything down into services,
+run using code-based *products* that generally are
+kept in a code repository.
+
+In other words, we run services from code. Together those services
+work together to make our offering to the world.
+
+Each repo as a product
+----------------------
+
+The organisation, built from scratch every moment
+-------------------------------------------------
+
+THis involves test-as-a-spectrum
+Pre-prod or no pre-prod?
+Generally if you can rebuild all form scratch, and have awesome in prod monitoring you can get away with no pre-prod.  Just its really really hard to pretend.
+So I think its much much better to have a pre-prod env where a portion
+of prod is fired at the service (replay attacks)
+
+For each *repo* have a product owner
+------------------------------------
+
+Yes you heard. If its a repo, its a service, its something someone cares about.
+It will have tests and builds and it will matter. Maybe the only users are
+three sysadmins - but it still matters that they are customers.
+
+So
+
+* Have a product *vision* (Design the box)
+* Have a product *roadmap* (Milestones, and order. DOnt do deadlines)
+* Track the metrics 
+
+
+
+Technical Architecture
+----------------------
+
+There are lot of "Technical Architects" around these days.  (One of
+the problems with not having a software profession the same way we do
+in actual architecture is its hard to stop people calling themselves a
+Technical Architect. (I mean, just look at *my* business card ...)
+
+A stereotype of TAs is of isolated geniuses (at least they hope to
+give that impression) announcing the correct way to build software to
+a large team or organisation.
+
+The problem is that if no-one is following yourq architectureal rules,
+then you arent an architect.  Architecture is a human function,
+persuading others that your way is better.  SOmetimes, we *enforce*
+that - through Software Governance (an important idea we will return
+to) In the same way that an Architects design for a building is
+followed by the builders, or a City Planners rules for a City are
+followed by all agents involved.
+
+With a metaphor of building cities, we can see why the idea of Architecture is
+an attractive one, but it is really at the scale of the biggest software houses
+in the world (Major Banks and financial instituions) that you can see the incredilbe
+value of ... City Planning.  We shall call this Software Governance.
+
+
+real technical architecture 
+so, modern functional languages are better because they have better dev friendly features - a good example is pattern matching v if statements- it's just easier to read
+
+but
+
+that's from a standing start - that's sssiminf the code all sits on one place cos if your biz logic is spread out in different suesyens if statements are a unicorn dream
+
+nexus of business logic
+
+in my view technical architecture is about going out and finding the places in the business that need the logic, finding the code, persuading the business of the business case and then right at the end, writing nice code
+
+the inverted pyramid of technical excellent 
+
+opinionated software
+--------------------
+
+It has strong views on how it should be used in its domain. This is seen everywhere and it makes software easier to use once you understand its philosophy.  So have an  opinion on how your users should donthings - some users will agree wildly others not so much - but at least they know what you stand for - it's marketing as well as a philosophy 
+
+Plumbing
+========
+The underlying services a developer assumes will be there or wishes were
+
+    
+    
+Continuous Integration (CI)
+===========================
+
+.. pull-quote::
+   
+   Re-create your company from scratch.
+   And test it End 2 End
+   Every Single day
+   
+   
+Continuous Integration / Delivery is probably the biggest boon to developer produtivity
+since the rise of memory managed languages in the 90's.
+
+Languages like C expected the developer to write code that assigned a
+certain amount of memory for a certain data structure - which meant at
+the point of writing your code, you had to know *how big the data was
+going to be, in say two years time*.
+
+People would get this wrong.  The biggest security risk for many years
+was your program accepting a piece of data larger than expected and
+simply overwriting its own memory.  With luck your program just
+crashed.  Otherwise the hacker was very good, and the piece of data
+sent just put their evil code on top of the stack ready to be run.
+
+Nowadays, the business logic we grind out does not need to worry about
+such things.  Instead we have the fun of not being entirely sure if
+the version of the code we think of is going to run on the server with
+the code we think of, using the password we meant and thats if no one
+else changed anything.
+
+
+  
+
+Configuration management and secrets
+====================================
+
+Use etcd / kubernetes.
+How to build own Docker based co-ordination service - or why kUbernetes is nice.
+My USB Secrets
+
+(also Google Peace Dividend)
+
+
+DataLakes
+=========
+https://techcrunch.com/2019/04/24/databricks-open-sources-delta-lake-to-make-data-lakes-more-reliable/
+
+Or do we want S3?
+
+
+Testing - a heresy
+==================
+
+Rick Hickey on simple vs easy
+  How does a bug get into production? It is written
+  And it passes the tests.  So if you have tests, and you refactor, how
+  do you prevent that bug?
+  Need to be able to *reason* about code. Which is why 900 npm packages worry me.
+
+  Tests are *regression* tests. They are written so that having written some code to
+  do a thing, you dont later on screw it up and it stops doing that thing.  Tests are
+  almost by defintion, backwards looking.
+
+
+
+
+----------
+https://medium.com/deepnote/building-a-design-system-at-a-startup-7b352d9875b3
+
+
+
+the google peace dividend
+https://news.ycombinator.com/reply?id=17996693&goto=item%3Fid%3D17995053%2317996693
+
+
+Soft Skills
+===========
+
+Skills for individual developer
+===============================
+
+Software Governance as a force multiplier implies a number of things
+One is that each individual contributor should have the same minimal
+set of skills, and perform those common skills in a similar fashion.
+
+An obvious example might be making good source code commits, and so there
+would need to be an internal "standard" for commits. 
+
+This of course implies ... training. Training your staff to be better
+at their jobs, something that the commitment-less culture these days
+seems to mitigate against.  Things will change - our "principle" of a
+change to Roald Coase's equilibrium point means smaller companies, and
+greater need to standard interfaces and so more need to train your
+people to do it the right way.
+
+
+You are not a programmer
+product engineers not software engineers 
+https://blog.intercom.com/run-less-software/
+Three circles of leverage
+* :doc:`chapters/careermanagement`
+* :doc:`chapters/interviewQuestions`
+- :doc:`chapters/interviews_algorithms`
+- :doc:`chapters/basic_seo`
+
+Esprit d'corp and Team honesty
+==============================
+
+Hiring practises - be part of the team
+Entry hurdles. 
+start with feedback - sprints and retrospectives
+Be aware of your priviledge
+Begin the difficult conversations publically 
+be aware of the likely problems - metoo is just one.
+
+then aim for the culture you want - 
+
+then hire good people
+
+
+
+
+Visualisation
+-------------
+D3.js is good
+https://github.com/apache/incubator-superset/blob/master/README.md
+
+Typography and Design
+---------------------
+https://practicaltypography.com/font-basics.html
+
+Really most of what I am going to say on this will be in lib-report
+
+
+
+Business Worst Case "Stop Loss"
+-------------------------------
+
+These are the business rules that prevent disaster - that sort of things you would expect a human to say "WTF" about and start calling for help
+
+One thing it is vital to agree with the business is not just what are our SLAs but what are our stop losses - what are the business boundaries that if they are crossed an emergency should be sounded - and what is the emergence safe state to take ?
+
+
+
+Don't use counterfactuals for post mortems
+----------------
+
+What they did not do, what they should have done is not the point - the point is "what did they do" and "why did that make sense to them at the time" - we are trying to work out why the organisations model of reality was at odds with reality, and how to better align the two 
 
 
