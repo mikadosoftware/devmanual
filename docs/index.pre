@@ -2,6 +2,24 @@
 The DevManual
 ==================
 
+
+RoadMap
+=======
+
+the devmanual is about everything needed for a software team to operate within a
+business or organisation, everything *before* a line of code is written - the
+stuff every team needs or will benefit from, from CI/CD setup, review processes,
+including metrics and *management style*, 
+
+It is *partly* based on real research into the best practises of software development
+but the amount of research in the area is parlous, so eventually this is based on
+my thirty years experiences "in the trenches" of software development as a
+coder, a manager, a consultant and just turning up every day.
+
+It flows from one point of view - the code is *everything*. 
+
+
+
 Aimed not at google scale (where one in a million errors occur twice a day)
 but aimed inside the 3rd std dev, in fact in 1st most of the time (68%, 95% 99.7%)
 
@@ -31,18 +49,6 @@ So having a full stack is one thing - being able to recreate that stack in a win
 
 As an example the trade offs start to matter at those "order of magnitude" barriers - going from 10x lines of code to 100x, or 10x servers to 100x servers or people.
 
-Stuff Metaphors, what do we do?
-===============================
-
-We break almost everything down into services,
-run using code-based *products* that generally are
-kept in a code repository.
-
-In other words, we run services from code. Together those services
-work together to make our offering to the world.
-
-Each repo as a product
-----------------------
 
 The organisation, built from scratch every moment
 -------------------------------------------------
@@ -53,21 +59,9 @@ Generally if you can rebuild all form scratch, and have awesome in prod monitori
 So I think its much much better to have a pre-prod env where a portion
 of prod is fired at the service (replay attacks)
 
-For each *repo* have a product owner
-------------------------------------
-
-Yes you heard. If its a repo, its a service, its something someone cares about.
-It will have tests and builds and it will matter. Maybe the only users are
-three sysadmins - but it still matters that they are customers.
-
-So
-
-* Have a product *vision* (Design the box)
-* Have a product *roadmap* (Milestones, and order. DOnt do deadlines)
-* Track the metrics 
-
 
 Business Metrics
+----------------
 
 - customer account churn %
 - Monthly mrr revenue churn %
@@ -121,25 +115,6 @@ structured and rational decision making
 
 
 devtool
-
-
-RoadMap
-=======
-
-the devmanual is about everything 
-needed for a software team to operate 
-within a business or organisation,
-everything *before* a line of code 
-is written - the stuff every team 
-needs or will benefit from, from 
-CI/CD setup, review processes, including metrics and *management style*, 
-
-It is *partly* based on real research into the best practises of software development
-but the amount of research in the area is parlous, so eventually this is based on
-my thirty years experiences "in the trenches" of software development as a coder, a manager,
-a failed entreprenuer yet still a coder.
-
-It flows from one point of view - the code is *everything*. 
 
 
 Gross Design
@@ -209,17 +184,13 @@ but things like gvisor are sensible
 top level concerns
 ------------------
 
-- Infrastructure (as code)
-- SDLC-CI/CD
-- SDLC-Testing/QA
-- SDLC-Config and plumbing
-- SDLC-Operations/SRE/AudienceMgmt
 
 
 
 
 
-* Infrastructure as code
+* Network Infrastructure and Architecture
+
 ** single server to start ocnceptually - salt or ansible or terraform or whatever.
 ** docker / containerisation (leading to Nix)
 ** containers and orchestration
@@ -241,10 +212,17 @@ dont use kebernetes - or rather. Have your own deplyment process, that knows the
 ** one laptop, one server, then cloud, can be expa nded into more people and
 more offices.
 
-* CI / CD
+* SDLC-CI/CD/Infrastructure (as code)
 ** Jenkins
 ** githubflow, gitgitflow, gitflow.  Tagging vs labels vs whats in which env
 ** unit testing, test at IO boundaries, 
+Testing:
+unittesting, IO boundaries, integration testing (selenium cypress)
+perfromacne testing, coverage, sonarqube, hypothesis and fizzing
+
+Profiler and in productin profiling
+Debugging, memory dump debugging
+
 ** coverage
 ** whole org test rig
 ** linting
@@ -269,7 +247,12 @@ stributed set of repos eventually becomes a mono repo at integration stage
 
 Everything is eventually a monorepo
 At integration testing stage everything is a monorepo - so you need a submit queue to manage the process
-:
+
+* SDLC - Testing / QA
+
+
+* SDLC - Plumbing like config
+
 
 
 * monitoring and observability
@@ -461,7 +444,7 @@ teting to allow compmies to find out just wtf they actually do all
 day
 
 
-* SLAs, Operations, Incident Mgmt
+* SDLC - Operations, Incident Mgmt, Audience Mgmt
 ** SLAs SLOs - the SRE problem
 ** runbooks, autoamtion, how 
 ** Statistical Process Control in Operations
