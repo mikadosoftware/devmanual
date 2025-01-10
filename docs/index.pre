@@ -258,6 +258,8 @@ At integration testing stage everything is a monorepo - so you need a submit que
 * monitoring and observability
 ** grafana
 ** openTelemetry
+https://news.ycombinator.com/item?id=42655102
+
 ** reporting, 
 ** pagerduty
 ** QA and testing as part of this
