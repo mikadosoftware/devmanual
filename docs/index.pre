@@ -238,7 +238,15 @@ Debugging, memory dump debugging
 ** share deployment chunks - ie teams share jenkins snippets
 ** environment consistency
 ** metrics and reporting
-** Uber and submitqueue
+** Uber and submitqueu
+** cleaning up afterwarss matters
+https://news.ycombinator.com/item?id=42674455
+We want to have swlf modifiying infrastructure to avoid static defence
+but that means knowing what we used and were it is 
+this again tends towards whole org test rig 
+
+
+
 Submit Queue and any submit queue
 ---------------------------------
 
