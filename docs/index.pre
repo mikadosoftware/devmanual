@@ -244,7 +244,8 @@ https://news.ycombinator.com/item?id=42674455
 We want to have swlf modifiying infrastructure to avoid static defence
 but that means knowing what we used and were it is 
 this again tends towards whole org test rig 
-
+Is there a "silent running" teat we can use - seal off the routers etc 
+and watch for one output - literally watch the lines leving the building 
 
 
 Submit Queue and any submit queue
