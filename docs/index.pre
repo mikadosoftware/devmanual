@@ -6,22 +6,29 @@ The DevManual
 RoadMap
 =======
 
-the devmanual is about everything needed for a software team to operate within a
+The devmanual is everything needed for a software team to operate within a
 business or organisation, everything *before* a line of code is written - the
 stuff every team needs or will benefit from, from CI/CD setup, review processes,
-including metrics and *management style*, 
+including metrics and *management style*, the common denominator that every good
+team leans on, before adding the actual work.
 
 It is *partly* based on real research into the best practises of software development
-but the amount of research in the area is parlous, so eventually this is based on
+but the amount of research in the area is parlous, so evenutally this is based on
 my thirty years experiences "in the trenches" of software development as a
 coder, a manager, a consultant and just turning up every day.
 
-It flows from one point of view - the code is *everything*. 
+If there is one idea at the heart of the DevManual its this - the code is *everything*. 
 
+Surely this is not for me?
+--------------------------
 
-
-Aimed not at google scale (where one in a million errors occur twice a day)
-but aimed inside the 3rd std dev, in fact in 1st most of the time (68%, 95% 99.7%)
+I don't know. THis is for the ... normcore of developers.  Day to day turning up
+and finding and solving problems, using code to do so.  Its not aimed at anyone
+running Google scale data centers, where one in a million errors occur twice a day
+but aimed at the 95% of us who live two standard deviations from the mean, and 
+for the 68% of problems and situations that most of us hit every day.
+(To be fair, 68%, 95% and 99.7% are some very important numbers, and are the
+first *concepts* in the book - please look out for them)
 
 The Metaphor of Building Software
 =================================
@@ -38,35 +45,40 @@ enterprise scale is a beast too.  Hence my focus on *governance* as
 well.
 
 Why does this matter - why try to be full stack? why not specialise?
-There are a few, not many, but a few people in companies like Boeing who understand the *entire* airframe - from bernoulli's principle over the wings to the feedback pressure on the pilots control stick - they can reason through the trade offs and keep it all in their heads
+There are a few, not many, but a few people in companies like Boeing who
+understand the *entire* airframe - from bernoulli's principle over the wings to
+the feedback pressure on the pilots control stick - they can reason through the
+trade offs and keep it all in their heads
 
-A full stack developer is not just a cheaper replacement for hiring 3 specialised ones, (certainly not if I am invoicing you) but is someone who can rationalise the trade offs across the whole stack.
+A full stack developer is not just a cheaper replacement for hiring 3
+specialised ones, (certainly not if I am invoicing you) but is someone who can
+rationalise the trade offs across the whole stack.
 
-Similarly for a business you need working models for all the interactions - sales, marketing manufacturing etc. And as those models are surfaced and captured in concrete code they can be shared and manipulated - the more the trade offs do not just appear on one person head but are explicitly modelled and tested the closer we get to a programmable company.
+Similarly for a business you need working models for all the interactions -
+sales, marketing manufacturing etc. And as those models are surfaced and
+captured in concrete code they can be shared and manipulated - the more the
+trade offs do not just appear on one person head but are explicitly modelled and
+tested the closer we get to a programmable company.
 
-So having a full stack is one thing - being able to recreate that stack in a wind tunnel environment and see it respond to new changes is vital for understanding the trade offs across the stack.
+So having a full stack is one thing - being able to recreate that stack in a
+wind tunnel environment and see it respond to new changes is vital for
+understanding the trade offs across the stack.
 
-
-As an example the trade offs start to matter at those "order of magnitude" barriers - going from 10x lines of code to 100x, or 10x servers to 100x servers or people.
+As an example the trade offs start to matter at those "order of magnitude"
+barriers - going from 10x lines of code to 100x, or 10x servers to 100x servers
+or people.
 
 
 The organisation, built from scratch every moment
 -------------------------------------------------
 
-THis involves test-as-a-spectrum
-Pre-prod or no pre-prod?
-Generally if you can rebuild all form scratch, and have awesome in prod monitoring you can get away with no pre-prod.  Just its really really hard to pretend.
-So I think its much much better to have a pre-prod env where a portion
+THis involves test-as-a-spectrum Pre-prod or no pre-prod?
+Generally if you can rebuild all form scratch, and have awesome in prod
+monitoring you can get away with no pre-prod.  Just its really really hard to
+pretend.  So I think its much much better to have a pre-prod env where a portion
 of prod is fired at the service (replay attacks)
 
 
-Business Metrics
-----------------
-
-- customer account churn %
-- Monthly mrr revenue churn %
-- net mrr churn 
-(check out startups for rest of us) 
 
 
 
@@ -100,11 +112,13 @@ too.
 
 Software as capital, capital depreciation is major business expense,
 EBITDA is a lie (see Warren Buffet). So software that is just built is a
-tech debt but so is not building it.  Software is capital if there is a 
-virtual-real connection.  So a wrench that bluetooth records how much it was tightened on which bolt.
+tech debt but so is not building it.  Software is capital if there is a
+virtual-real connection.  So a wrench that bluetooth records how much it was
+tightened on which bolt.
 Simplicity (fits in one brain) and coherent (avoids lots of cases)
 
-High reliability (matches and exceeds (80%) needs if business in normal running and extreme scenarios)
+High reliability (matches and exceeds (80%) needs if business in normal running
+and extreme scenarios)
 
 psychological safety
 
@@ -394,7 +408,50 @@ open source vault - https://www.pulumi.com/docs/
 
 
 * Management Information Systems, project mgmt, risk mgmt, planning, budgets
+** Metrics is all, unfiltered.
+There are 12 golden metrics every business needs to track - these are probably a
+good starting point.
+
+1. Revenue Growth: This tracks the increase or decrease in a company's sales over a specific period, providing a clear indication of whether the company is expanding or contracting.
+
+2. Profit Margin: Measures the profitability of the company, typically expressed as a percentage of revenue. It's important to track both gross and net profit margins.
+
+3. Customer Acquisition Cost (CAC): The cost associated with acquiring a new customer, including marketing, sales, and any other associated costs. A lower CAC indicates efficient customer acquisition strategies.
+
+4. Customer Lifetime Value (CLV or LTV): The total revenue a business expects to earn from a customer over the entire duration of their relationship. It helps evaluate the long-term value of acquiring customers.
+
+5. Churn Rate: The percentage of customers or clients that stop doing business with a company over a given period. High churn rates can indicate issues with customer satisfaction or product-market fit.
+
+6. ?
+
+7. Cash Flow: 
+
+8. Employee Engagement: .
+
+9. Inventory turnover .
+
+10. Sales Conversion Rate
+11. Operating Efficiency (Operating Margin)
+12. Market Share. Now work out what the outside world looks like
+
+Now manay businesses will have something like this. And dollars to doughnuts
+they are filtered through layers of management before reaching the Board. Lots
+of spreadsheets, and project managers, and people *adjusting* the numbers to
+reflect *reality*.  Sadly, thats not how feedback is supposed to work. And
+please note AI can learn to balance a ball on a stick if the feedback is
+accurate and timely, but if not its impossible.  
+
+So just ask - can we write code that every hour of every day computes those 12
+metrics from raw data and sends it to the board?  If not, what will it take to
+make that happen?  At that point you are starting the process of digitisation.
+
+Its a long road.
+
+
 ** MIS is not for managers.
+If you give the data and tools to workers they will find answers themselves
+(retrospectives)
+
 ** Risk mgmt is all, keep a risk log before a gantt chart
 Risk mgmt is like DORA metrics - 
 you probably cannot plan but you can tell if you are getting warmer.
