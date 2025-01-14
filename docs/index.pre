@@ -12,6 +12,14 @@ stuff every team needs or will benefit from, from CI/CD setup, review processes,
 including metrics and *management style*, the common denominator that every good
 team leans on, before adding the actual work.
 
+we are aiming for the doctine in sun tzus fove elements 
+https://www.scienceofstrategy.org/main/content/sun-tzus-five-elements
+Mission, terrain, weather, doctrine, leadership
+
+only do trine s truly in our control, leadership often least importa t
+
+
+
 It is *partly* based on real research into the best practises of software development
 but the amount of research in the area is parlous, so evenutally this is based on
 my thirty years experiences "in the trenches" of software development as a
@@ -460,6 +468,12 @@ The planning fallacy
 ** Management is the place for statisical process control.
 If we can repalce management with a perl script,
  are we looking at disaggremation of managemenet.
+
+
+** statistics and stuff
+multi armed bandit, AB testing and explore exploit ratios
+https://stevehanov.ca/blog/index.php?id=132
+
 
 ** one level up, 2(O) 100x bigger
 ** is there a max number of chnages one can make per day?
