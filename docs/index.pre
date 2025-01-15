@@ -413,7 +413,9 @@ open source vault - https://www.pulumi.com/docs/
 ** Trolley problem
 ** Mission, shareholder mission vs middle management
 ** Tactics operations strategy. See google and TPUS, vs Midway and aurcraft carriers. Strategy is politican level.  Operations is being disrupted 
-
+** evolving architecture - using fitness function (ie a code metric - SLOcs, cyclometeic complexiry, vulnerability measures, linting, (static) 
+or cpu utilisation or time to prcess end 2 end transaction (dynamic) and holistic (simian army, or whole org test rig)
+(rebecca parsons)  - how do we measure fitness of the system and somget complete view onnits suitability during chnage - ir testing 
 
 * Management Information Systems, project mgmt, risk mgmt, planning, budgets
 ** Metrics is all, unfiltered.
