@@ -2,6 +2,93 @@
 The DevManual
 ==================
 
+Top Level Again
+
+
+* Virtual Network
+** fly.io
+** watch
+
+* Software Network
+** DNS
+** CDN
+** API Gateway
+** HTTP Load Balancing
+** DDOS protection (cloudflare)
+** Firewall
+use mininet to define build networks in Software defined networks
+
+* Security
+** IAM
+** Authentication
+** Authorisation
+** Accounting
+** Zero trust
+** HSM, client certs,
+** WebAuthn, FIDO
+** 
+
+* Storage
+** NAS
+** NFS
+** SMB 
+** Backup
+** Archive
+** Recovery process
+
+* SysAdmin
+** local Logging
+** network back haul logging
+** secure logging
+** log monitoring and analysis (promethues, event mgmt)
+** event capture (logs, app events, business events) Prometheus
+** distibuted config
+** NTP
+** Aime / md5 sum of binaries
+** IDS ?
+** 
+
+* Messaging
+** celery
+** RabbitMQ
+** workers and web services
+** Autosys and distributed job management 
+
+
+* capabilities
+** map services
+** 
+
+* SSO services for SaaS
+** SAML with zero trust?
+
+* marketing 
+
+* sales
+
+* project and risk mgmt
+
+* Financial Accounting
+
+* HR
+** qd personnel records
+
+* SDLC
+** linting
+** coverage
+** security scanning
+** unit testing
+** whole org test rig
+** 
+
+* SRE
+** distributed config
+** prometheus
+*
+
+
+
+
 
 The planning fallacy
 
