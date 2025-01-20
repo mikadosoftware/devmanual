@@ -2,21 +2,51 @@
 The DevManual
 ==================
 
-Top Level Again
+How we do things, what things we do, and why
+144 Concepts, implementations and discussions
 
 
-* Virtual Network
-** fly.io
-** watch
 
-* Software Network
+* Homelab vs cloud
+** Why do this at all - all you need is cloud account
+easy vs simple (see Rich Hickey)
+** Still need a SOHO office. Personal servers help
+** grouchy old man
+** mininet
+use mininet to define build networks in Software defined networks
+** mis-en-place
+IDE
+local docker
+workstation 
+** single server to start ocnceptually - salt or ansible or terraform or whatever.
+** docker / containerisation (leading to Nix)
+** containers and orchestration
+** DNS
+** TLS, CA, Certs, 
+https://snyk.io/blog/implementing-tls-ssl-python/
+Chapter: create our own CA in python, sign for a web server, serve files and view handshake
+https://www.sslmentor.com/help/ssl-certificate-formats
+https://stackoverflow.com/questions/16903528/how-to-get-response-ssl-certificate-from-requests-in-python/47931103#47931103
+** SPIFFE
+Complete SPIRE / SPIFFE service running
+in our own docker "cluster". 
+** HA / DR / Horizontal scaling, caches
+** build complete stack from scratch in docker
+** API gateways, loadbalancing, quotas etc
+dont use kebernetes - or rather. Have your own deplyment process, that knows the names of servers. 
+** chaosmonkey - have failback server names, cattle still have distinct identities, (cattle not pets, not same as virtual abstracts not pets)
+** Homelab - https://linuxblog.io/home-lab-beginners-guide-hardware/ - 
+** one laptop, one server, then cloud, can be expa nded into more people and
+more offices.
+
+
+* Network
 ** DNS
 ** CDN
 ** API Gateway
 ** HTTP Load Balancing
 ** DDOS protection (cloudflare)
 ** Firewall
-use mininet to define build networks in Software defined networks
 
 * Security
 ** IAM
@@ -58,10 +88,7 @@ https://smallstep.com/blog/build-a-tiny-ca-with-raspberry-pi-yubikey/
 
 * capabilities
 ** map services
-** 
-
-* SSO services for SaaS
-** SAML with zero trust?
+** OpenCV, LLM
 
 * marketing 
 
@@ -350,34 +377,9 @@ top level concerns
 
 
 
-* mis-en-place
-IDE
-local docker
-workstation 
 
 
-* Network Infrastructure and Architecture
 
-** single server to start ocnceptually - salt or ansible or terraform or whatever.
-** docker / containerisation (leading to Nix)
-** containers and orchestration
-** DNS
-** TLS, CA, Certs, 
-https://snyk.io/blog/implementing-tls-ssl-python/
-Chapter: create our own CA in python, sign for a web server, serve files and view handshake
-https://www.sslmentor.com/help/ssl-certificate-formats
-https://stackoverflow.com/questions/16903528/how-to-get-response-ssl-certificate-from-requests-in-python/47931103#47931103
-** SPIFFE
-Complete SPIRE / SPIFFE service running
-in our own docker "cluster". 
-** HA / DR / Horizontal scaling, caches
-** build complete stack from scratch in docker
-** API gateways, loadbalancing, quotas etc
-dont use kebernetes - or rather. Have your own deplyment process, that knows the names of servers. 
-** chaosmonkey - have failback server names, cattle still have distinct identities, (cattle not pets, not same as virtual abstracts not pets)
-** Homelab - https://linuxblog.io/home-lab-beginners-guide-hardware/ - 
-** one laptop, one server, then cloud, can be expa nded into more people and
-more offices.
 
 * SDLC-CI/CD/Infrastructure (as code)
 ** Jenkins
@@ -466,6 +468,8 @@ Time to Restore Services
 Change Failure Rate
 (https://github.com/GoogleCloudPlatform/fourkeys)
 We can apply similar four key metrics to the business funnel 
+How regularly do we pull new clients in through the fumnnel.
+How quickly do they go through?
 
 - marketing (lead generation)
 - sales (lead conversion)
@@ -474,9 +478,9 @@ We can apply similar four key metrics to the business funnel
 
 Each of these should also have four keys (or maybe just two) in speed stability terms
 
-Speed:
-Percentage loss through funnel (lead quality) - relates heavily to acquisition cost (ie of you s
-pend acquistionnonlymon the exact lead who will convert you can pay almost any acquisition cost)
+Stability - churn and regularity
+Speed - Time from contact to sale is wrong. Its time from OUR action (advert) to
+respnse (landing page) 
 
 ?ZFeature uptake - how long after release does a feature get used ? 
 Stability:
