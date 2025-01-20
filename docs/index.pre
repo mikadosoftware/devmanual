@@ -26,7 +26,8 @@ use mininet to define build networks in Software defined networks
 ** Zero trust
 ** HSM, client certs,
 ** WebAuthn, FIDO
-** 
+** CA
+https://smallstep.com/blog/build-a-tiny-ca-with-raspberry-pi-yubikey/
 
 * Storage
 ** NAS
