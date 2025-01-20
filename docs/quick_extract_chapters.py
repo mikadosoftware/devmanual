@@ -25,6 +25,7 @@ def foo():
 def show(resultsd):
     s = ''
     toplevels = []
+    nextlevelsd = {}
     for key, vals in resultsd.items():
         key = key.replace("* ","")
         toplevels.append(key)
@@ -32,10 +33,19 @@ def show(resultsd):
         s += f"\n{key}\n{underline}\n"
         for idx, val in enumerate(vals):
             s += f"  {idx}\n"+ val.replace("**","")
+            nextlevelsd.setdefault(key, []).append(val)
+
     report = ''
     report += '\n* ' + '\n* '.join(toplevels)
     report += s
-    print(report)
- 
+    #print(report)
+    i = 0
+    for onestar, twostars in nextlevelsd.items():
+        print(f"\n* {onestar}")
+        for twostar in twostars:
+            print(twostar)
+            i+=1
+    print("Total two stars:", i)
+
 if __name__ == '__main__':
     foo()
