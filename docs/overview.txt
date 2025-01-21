@@ -1,0 +1,190 @@
+* Mis-en-place / Developer environment
+** laptop builds / immutable workstation
+** coding standards - only what is enforced by linter etc.
+
+* Version Control
+** Branching Strategy (git.git)
+** Commit Message Guidelines
+** Pull Request (PR) Process
+** Resolving Merge Conflicts
+
+* Development Workflow
+** Task Management and Ticket Workflow (e.g., Jira, Trello)
+** Writing and Estimating User Stories (analysis)
+** Definition of Done (DoD) and Acceptance Criteria - fully automated or nothing
+
+* Performance and Optimization
+** make it work, make it right, make it fast
+** Profiling and Debugging Tools
+** Monitoring and Observability (APM, Logs, Metrics)
+** Performance Testing, E2E and other, as part of CiCD
+
+* Release management
+** Go/NoGo - automated fail points (security, performance)
+** automated all the way
+** Tools, audience management etc 
+
+* SDLC
+** linting
+** coverage
+** security scanning
+** unit testing
+** whole org test rig
+** No coding standards unless linter does it.
+** DORA metrics
+** git rebase
+** tickets, JIRAS, tracking and reporting time
+** punchclock
+** discussions around code not ideas - one paragraph is enough to start
+** linting
+** static analysis https://github.com/PyCQA/bandit
+** isort
+** explore vs exploit. Never be in position where the quick docs fix takes less
+
+* documentation
+** ReadTheDocs or equivalent
+** 
+
+* SDLC - Operations, Incident Mgmt, Audience Mgmt
+** SLAs SLOs - the SRE problem
+** runbooks, autoamtion, how
+** Statistical Process Control in Operations
+** AI analysis of operations
+
+* Testing and QA - a spectrum
+** unittesting
+** fuzzing
+** at some point everything that can be auotamted out of the way should be done before you think.
+** Whole Org Test rig
+
+* Disaster recovery and Backup
+** see 'build everything from scratch in docker on demand'
+
+* COnfiguration Mgmt, feature toggles and release mgmt
+** etcd, what does "release to production" mean with toggles and config?
+** a given config should be hashable so we have code hash plus config hash as stable
+
+* SDLC-CI/CD/Infrastructure (as code)
+** Jenkins
+** unit testing, test at IO boundaries,
+** whole org test rig
+** linting
+** static analysis
+** artifact mgmt
+** monorepo vs microrepo
+** build testing
+** secrets (see vault etc)
+** failfast,
+** share deployment chunks - ie teams share jenkins snippets
+** environment consistency
+** metrics and reporting
+** Uber and submitqueu
+** cleaning up afterwarss matters
+
+* monitoring and observability
+** grafana
+** openTelemetry
+** reporting,
+** pagerduty
+** QA and testing as part of this
+** logging and centralised logging and log monitoring and scanning
+** business event capturing
+** combine Nasa OpenMCT and OpenTelemetry
+** see cloudflare use of open telemetry to return logging
+** logging
+
+* Homelab vs cloud
+** Why do this at all - all you need is cloud account
+** mininet
+** containers and orchestration
+** DNS
+** TLS, CA, Certs,
+** SPIFFE
+** build complete stack from scratch in docker (docker compose
+
+* Network
+** CDN
+** API Gateway and quotas
+** HTTP Load Balancing
+** DDOS protection (cloudflare)
+** Firewall
+
+* Security
+** IAM
+** Authentication
+** Authorisation
+** Accounting
+** Zero trust
+** HSM, client certs,
+** WebAuthn, FIDO
+
+* Storage
+** NAS
+** NFS
+** SMB
+** Backup
+** Archive
+** Recovery process
+
+* SysAdmin
+** local Logging
+** network back haul logging
+** secure logging
+** log monitoring and analysis (promethues, event mgmt)
+** event capture (logs, app events, business events) Prometheus
+** distibuted config
+** NTP
+** Aime / md5 sum of binaries
+** IDS ?
+
+* Messaging
+** Importance of workers and queues in almost everything
+** RabbitMQ/celery/201
+** workers and web services
+** Autosys and distributed job management
+** dependancy management
+** git analysis tools
+
+
+
+
+* Security and IAM
+** Certs, client certs,
+** TLS is not good enough - chanell is not per request authentication
+** appsec -> shehackspurple
+** FIDO webauthn
+
+* Software Governance, Compliance, Democracy
+** Trolley problem
+** Mission, shareholder mission vs middle management
+** Tactics operations strategy. See google and TPUS, vs Midway and aurcraft carriers. Strategy is politican level.  Operations is being disrupted
+** evolving architecture - using fitness function (ie a code metric - SLOcs, cyclometeic complexiry, vulnerability measures, linting, (static)
+** do not fall for Just-In-Time Agile - we will build the infrastructure when we
+find a story to justify it - thats spedning too much time on waiting for
+tactical stories to appear 
+
+* Management Information Systems, project mgmt, risk mgmt, planning, budgets
+** Metrics is all, unfiltered.
+** MIS is not for managers.
+** Risk mgmt is all, keep a risk log before a gantt chart
+** Dashboards out of observability
+** Management is the place for statisical process control.
+** statistics and stuff
+** one level up, 2(O) 100x bigger
+** is there a max number of chnages one can make per day?
+** Twitter - can you really fire 90% of the devs?
+
+
+* Databases, data structures
+** Use dask
+** Hadoop vs Postgres vs everything else
+** getting a S3-like storage service
+** Other services (RDBMS), HADOOP
+
+* PeopleWare
+** ongoing training
+**
+
+* HR
+** qd personnel records
+
