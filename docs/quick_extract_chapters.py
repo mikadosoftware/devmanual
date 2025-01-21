@@ -7,8 +7,8 @@ SO I have a big file that I am kind of trying to split the work out into 144 par
 so parse it a bit
 '''
 
-def foo():
-    f = 'index.pre'
+def foo(f):
+    
     with open(f) as fo:
         txt = fo.read()
     currenttop=None
@@ -41,11 +41,13 @@ def show(resultsd):
     #print(report)
     i = 0
     for onestar, twostars in nextlevelsd.items():
-        print(f"\n* {onestar}")
+        print(f"* {onestar}")
         for twostar in twostars:
-            print(twostar)
+            #print(twostar)
             i+=1
     print("Total two stars:", i)
 
 if __name__ == '__main__':
-    foo()
+    import sys
+    f = sys.argv[1]
+    foo(f)

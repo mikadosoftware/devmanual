@@ -60,6 +60,10 @@
 * Disaster recovery and Backup
 ** see 'build everything from scratch in docker on demand'
 
+* Architecture, design etc
+** C4 and contract design between C's
+** 
+
 * COnfiguration Mgmt, feature toggles and release mgmt
 ** etcd, what does "release to production" mean with toggles and config?
 ** a given config should be hashable so we have code hash plus config hash as stable
@@ -117,6 +121,10 @@
 ** Zero trust
 ** HSM, client certs,
 ** WebAuthn, FIDO
+** Certs, client certs,
+** TLS is not good enough - chanell is not per request authentication
+** appsec -> shehackspurple
+** FIDO webauthn
 
 * Storage
 ** NAS
@@ -147,13 +155,6 @@
 
 
 
-
-* Security and IAM
-** Certs, client certs,
-** TLS is not good enough - chanell is not per request authentication
-** appsec -> shehackspurple
-** FIDO webauthn
-
 * Software Governance, Compliance, Democracy
 ** Trolley problem
 ** Mission, shareholder mission vs middle management
@@ -176,6 +177,8 @@ tactical stories to appear
 
 
 * Databases, data structures
+** choices - Size 
+** sqllite is *fine*, Postgres should be default, pandas is *fine*
 ** Use dask
 ** Hadoop vs Postgres vs everything else
 ** getting a S3-like storage service
