@@ -1,3 +1,6 @@
+Have the devmanual describe the needs but also link back to how it fixes issues
+in NIST SSDF etc.  Along with C4 mapping this is for me architecture stuff
+
 * Mis-en-place / Developer environment
 ** laptop builds / immutable workstation
 ** coding standards - only what is enforced by linter etc.
@@ -125,6 +128,13 @@
 ** TLS is not good enough - chanell is not per request authentication
 ** appsec -> shehackspurple
 ** FIDO webauthn
+** NIST and SSDF (https://csrc.nist.gov/projects/ssdf) and Executive Order (EO)
+14114
+(https://www.federalregister.gov/documents/2025/01/17/2025-01470/strengthening-and-promoting-innovation-in-the-nations-cybersecurity)
+
+** what does end 2 end mean? if regulator wants to see the message how to do
+that?
+
 
 * Storage
 ** NAS
