@@ -1,7 +1,8 @@
-* Mis-en-place / Developer environment
-  - developer workstations, office requirements, in office etc. etc.
+---
+a: Mis-en-place / Developer environment:
+   - developer workstations, office requirements, in office etc. etc.
 
-** laptop builds / immutable workstation
+a: laptop builds / immutable workstation
   - immutable workstation
 
 ** coding standards - only what is enforced by linter etc.
@@ -11,7 +12,7 @@
 ** Team culture really really matters.
   - but a one year contract does not mean much.
   
-
+---
 * Version Control
 ** Branching Strategy (git.git, githubflow)
 ** Commit Message Guidelines
