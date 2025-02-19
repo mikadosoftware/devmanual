@@ -14,7 +14,7 @@
 
 * Version Control
 ** Branching Strategy (git.git, githubflow)
-** Commit Message Guidelines
+** Commit Message Guidelines - talk to me
 ** Pull Request (PR) Process
 ** Resolving Merge Conflicts
 ** ticket driven or ticket breadcrumbs. (next obvious step)
@@ -30,6 +30,9 @@
 ** Go/NoGo - automated fail points (security, performance)
 ** automated all the way
 ** Tools, audience management etc - a release process and checklist (SOPs)
+** Build from Scratch
+** manage enironemnts, and expectations
+** whole org test rig
  
 
 * SDLC
@@ -46,6 +49,11 @@
 ** static analysis https://github.com/PyCQA/bandit
 ** isort
 ** explore vs exploit. Never be in position where the quick docs fix takes less
+** Jenkins
+** artifact management
+** Fail fast
+** Code defines as much as you possibly can 
+** submit queue / change queue
 
 * documentation
 ** ReadTheDocs or equivalent
