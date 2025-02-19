@@ -1,3 +1,23 @@
+* Principles 
+** Psychological Safety is not Woke.
+** Plan a bit, code a lot, repeat. Just Do It
+** Always runnable - preprod is always up
+** Simplify harder
+** Build Great tools, 
+** Test harder
+** COde Reviews arent blockers, they are promises for the next stage
+** Zero Bug methodology
+** Make strategic bets on good languages
+** abstractions at business level
+** culture of discussion, openly
+** disaggergate managmeent else there is only one person to please. ANd its ntoa
+customer.
+** people first, 
+** no-one gets mad if the computer says no. Code reviews are not for no if you
+trust the fix is coming. If you stop trusting they are for no - its a game
+theory issue
+
+
 * Mis-en-place / Developer environment
 ** laptop builds / immutable workstation
 ** coding standards - only what is enforced by linter etc.
