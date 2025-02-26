@@ -1,4 +1,4 @@
-* Principles 
+* Underlying Principles 
 ** Psychological Safety is not Woke.
 ** Plan a bit, code a lot, repeat. Just Do It
 ** Always runnable - preprod is always up
@@ -18,7 +18,7 @@ trust the fix is coming. If you stop trusting they are for no - its a game
 theory issue
 
 
-* Mis-en-place / Developer environment
+* Mis-en-place
 ** laptop builds / immutable workstation
 ** coding standards - only what is enforced by linter etc.
 ** Team culture really really matters.
@@ -74,7 +74,8 @@ theory issue
 ** ReadTheDocs or equivalent
  
 
-* SDLC - Operations, Incident Mgmt, Audience Mgmt
+* Operations (Not DevOps) 
+** Operations, Incident Mgmt, Audience Mgmt
 ** SLAs SLOs - the SRE problem
 ** runbooks, autoamtion, how
 ** Statistical Process Control in Operations
@@ -83,7 +84,7 @@ theory issue
 ** Five Whys, honest reviews
 
 
-* Testing and QA - a spectrum
+* Testing and QA is a spectrum
 ** unittesting
 ** fuzzing
 ** at some point everything that can be auotamted out of the way should be done before you think.
@@ -92,18 +93,19 @@ theory issue
 * Disaster recovery and Backup
 ** see 'build everything from scratch in docker on demand'
 
-* Architecture, design etc
+* Architecture and Design 
 ** C4 and contract design between C's
-** "enough design upfront".
+** "sufficient design upfront".
  
 
-* COnfiguration Mgmt, feature toggles and release mgmt
+* Configuration Mgmt
+** feature toggles and release mgmt
 ** etcd, what does "release to production" mean with toggles and config?
 ** a given config should be hashable so we have code hash plus config hash as stable
 ** repeatable builds - nix is trying to get there.
 
 
-* SDLC-CI/CD/Infrastructure (as code)
+* Infrastructure (as code)
 ** Jenkins
 ** unit testing, test at IO boundaries,
 ** whole org test rig
@@ -139,7 +141,7 @@ theory issue
 ** build complete stack from scratch in docker (docker compose
 ** Always have confidence and ability to rebuild
 
-* Network
+* Networking 
 ** CDN
 ** API Gateway and quotas
 ** HTTP Load Balancing
@@ -186,7 +188,7 @@ that?. Even politics is restricted by the technology.
 ** Autosys and distributed job management
 ** dependancy management
 ** git analysis tools
-
+** basically 95% of designs are flows, with queues in the middle.
 
 
 * Software Governance, Compliance, Democracy
@@ -198,7 +200,8 @@ that?. Even politics is restricted by the technology.
 find a story to justify it - thats spedning too much time on waiting for
 tactical stories to appear 
 
-* Management Information Systems, project mgmt, risk mgmt, planning, budgets
+* Management Information Systems
+** project mgmt, risk mgmt, planning, budgets
 ** Metrics is all, unfiltered.
 ** MIS is not for managers.
 ** Risk mgmt is all, keep a risk log before a gantt chart
@@ -219,9 +222,18 @@ tactical stories to appear
 ** Other services (RDBMS), HADOOP
 
 * PeopleWare
-** ongoing training
-**
+** The book (TOm DeMarco)
+** The principle - Dancing with Bears / Risk mgmt
+** disaggregation of managemeent
+** training, commitment
 
-* HR
-** qd personnel records
+* Marketing
+** Audience mgmt
+** creativity
+** selling upwards and sideways
+** Just keep people aware
+** openness makes a lot of sense
+
+* Corporate, Startup
+** The difference, and why it matters to DevManual
 

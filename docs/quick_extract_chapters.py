@@ -6,6 +6,7 @@ SO I have a big file that I am kind of trying to split the work out into 144 par
 
 so parse it a bit
 '''
+import os
 
 def foo(f):
     
@@ -38,16 +39,60 @@ def show(resultsd):
     report = ''
     report += '\n* ' + '\n* '.join(toplevels)
     report += s
-    #print(report)
     i = 0
     for onestar, twostars in nextlevelsd.items():
         print(f"* {onestar}")
         for twostar in twostars:
-            #print(twostar)
             i+=1
     print("Total two stars:", i)
+    output_chapters(nextlevelsd)
+
+def safename(txt):
+    import string
+    safeletters = string.ascii_letters+string.digits
+    tmp = ''
+
+    for char in txt:
+        if char in safeletters:
+            tmp += char
+        if char == ' ':
+            tmp += '_'
+    if tmp.startswith("_"):
+        tmp = tmp[1:]
+    tmp = tmp.lower()
+    return tmp
+
+
+root = '/home/pbrian/demo1/docs/book'
+
+def output_chapters(nextlevelsd):
+    for onestar, twostars in nextlevelsd.items():
+        s_onestar = safename(onestar)
+        thissection = os.path.join(root, s_onestar)
+        os.makedirs(thissection)        
+        for twostar in twostars:
+            s_twostar = safename(twostar)
+            path = os.path.join(thissection, s_twostar+".rst")
+            with open(path, 'w') as fo:
+                title = twostar.replace("*","").strip()
+                fo.write(title + "\n" + "="*len(title)+"\n\nTBD\n")
+
+def build_index_rst():
+    print("My Book\n=======\n")
+    for x in os.listdir(root):
+        print(f'''.. toctree::
+   :maxdepth: 1
+   :caption: {x}:
+   :glob: 
+
+   /book/{x}/*
+
+ ''')
 
 if __name__ == '__main__':
+    build_index_rst()
+
     import sys
+    sys.exit()
     f = sys.argv[1]
     foo(f)
