@@ -1,5 +1,7 @@
 * Underlying Principles 
 ** Psychological Safety is not Woke.
+** products not projects (much easier to understand than "chnage management"
+** business metrics, business events, business lexicon, business meaning (domain meaning)
 ** Plan a bit, code a lot, repeat. Just Do It
 ** Always runnable - preprod is always up
 ** Simplify harder
