@@ -1,28 +1,24 @@
 * Underlying Principles 
 ** Psychological Safety is not Woke.
-** products not projects (much easier to understand than "chnage management"
-** business metrics, business events, business lexicon, business meaning (domain meaning)
-** Plan a bit, code a lot, repeat. Just Do It
+** products not projects 
+** Plan a bit, code a lot, repeat.
 ** Always runnable - preprod is always up
 ** Simplify harder
-** Build Great tools, 
+** Build Great tools
 ** Test harder
-** COde Reviews arent blockers, they are promises for the next stage
+** Code Reviews not Code Blockers
 ** Zero Bug methodology
-** Make strategic bets on good languages
-** abstractions at business level
+** Make strategic bets on good tech
+** abstractions at business level (TV Questions)
 ** culture of discussion, openly
-** disaggergate managmeent else there is only one person to please. ANd its ntoa
-customer.
-** people first, 
-** no-one gets mad if the computer says no. Code reviews are not for no if you
-trust the fix is coming. If you stop trusting they are for no - its a game
-theory issue
+** disaggregate management 
+** people first
+** no-one gets mad if the computer says no.
 
 
 * Mis-en-place
 ** laptop builds / immutable workstation
-** coding standards - only what is enforced by linter etc.
+** automated coding standards
 ** Team culture really really matters.
 ** Psychological safety - a one year contract does not mean much 
 ** coaching not directing (disaggregating management)
@@ -48,7 +44,7 @@ theory issue
 ** automated all the way
 ** Tools, audience management etc - a release process and checklist (SOPs)
 ** Build from Scratch
-** manage enironemnts, and expectations
+** manage environments, manage expectations
 ** whole org test rig
  
 
@@ -61,7 +57,7 @@ theory issue
 ** No coding standards unless linter does it.
 ** DORA metrics
 ** punchclock
-** discussions around code not ideas - one paragraph is enough to start
+** discussions around code not projet dreams 
 ** linting
 ** static analysis https://github.com/PyCQA/bandit
 ** isort
@@ -102,7 +98,7 @@ theory issue
 
 * Configuration Mgmt
 ** feature toggles and release mgmt
-** etcd, what does "release to production" mean with toggles and config?
+** what does "release to production" mean with toggles and config?
 ** a given config should be hashable so we have code hash plus config hash as stable
 ** repeatable builds - nix is trying to get there.
 
@@ -135,12 +131,7 @@ theory issue
 
 * Homelab vs cloud
 ** Why do this at all - all you need is cloud account
-** mininet
-** containers and orchestration
-** DNS
-** TLS, CA, Certs,
-** SPIFFE
-** build complete stack from scratch in docker (docker compose
+** build complete stack from scratch in docker
 ** Always have confidence and ability to rebuild
 
 * Networking 
@@ -149,6 +140,7 @@ theory issue
 ** HTTP Load Balancing
 ** DDOS protection (cloudflare)
 ** Firewall
+** mininet, DNS TLS, CA, Certs, SPIFFE
 
 * Security
 ** IAM

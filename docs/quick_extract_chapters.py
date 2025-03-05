@@ -8,7 +8,7 @@ so parse it a bit
 '''
 import os
 
-def foo(f):
+def parse_stars(f):
     
     with open(f) as fo:
         txt = fo.read()
@@ -63,7 +63,7 @@ def safename(txt):
     return tmp
 
 
-root = '/home/pbrian/demo1/docs/book'
+root = '/home/pbrian/projects/devmanual/docs/newchapters'
 
 def output_chapters(nextlevelsd):
     for onestar, twostars in nextlevelsd.items():
@@ -85,14 +85,14 @@ def build_index_rst():
    :caption: {x}:
    :glob: 
 
-   /book/{x}/*
+   /newchapters/{x}/*
 
  ''')
 
 if __name__ == '__main__':
-    build_index_rst()
-
     import sys
-    sys.exit()
     f = sys.argv[1]
-    foo(f)
+    if f == 'build_index':
+        build_index_rst()
+    else:
+        parse_stars(f)
