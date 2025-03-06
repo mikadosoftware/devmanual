@@ -30,5 +30,6 @@ opinions on the domain we are building software for.  Informed opinions work
 best.
 
 
-
+https://martinfowler.com/bliki/UbiquitousLanguage.html
+- a DSL / english language that defines building up a common, rigorous language between developers and users. 
 

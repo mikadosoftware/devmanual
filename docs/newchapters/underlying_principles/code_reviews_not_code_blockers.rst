@@ -9,3 +9,7 @@ Code Reviews not Code Blockers
  * https://news.ycombinator.com/item?id=11190310 intersting but old
    https://www.reddit.com/r/git/comments/16jcho9/how_to_manage_dev_and_main_branch_when_release/
    https://trunkbaseddevelopment.com/
+
+ Generally - fix forwards.
+ Use merging to decide what to fix and how
+ pull back 
