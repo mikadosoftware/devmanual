@@ -1,25 +1,21 @@
 monorepo vs microrepo
 =====================
 
-there is in the "code-o-sphere", 
-an ongoing debate about which
-is best - and as far as I get the discussion,
-its a non-issue.
+there is in the "code-o-sphere", an ongoing debate about which is best - and as
+far as I get the discussion, its a non-issue.
 
-the essence of the problem is "dependancy management"
-Once you are past a certain size if development team 
-probably the Dunbar number, then 
-uou have to atart treating *other people in your firm* 
-as third party developers.
+the essence of the problem is "dependancy management" Once you are past a
+certain size of development team (probably the Dunbar number),
+then you have to start treating *other people in your firm* as third party
+developers.  People who arent aware of your great plans, and who could at any
+moment break your API, or give you a hug-of-death without warning.
 
-Now it is *great* to be able to grep a codebase 
-of millions of lines of code and look for 
-some usage of just the parts you are working on 
-and use someone else as a "how to" 
+Now it is *great* to be able to grep a codebase of millions of lines of code and
+look for some usage of just the parts you are working on and use someone else as
+a "how to" 
 
-but eventually the problem of a mononrepo 
-will surface - how do you freeze the code base 
-long emough that you can develop against it?
+but eventually the problem of a mononrepo will surface - how do you freeze the
+code base long emough that you can develop against it?
 
 imagine you have a master brnach - the general isea is 
 you branch off master, do a few days work 
@@ -73,4 +69,27 @@ research
 
 how does one repo work (it rarely is one repo)
 how dors commit queue work - what happens if get meege conflict in the next queue item?
-you just remve that and ask them to resubmit - with no slowdowwn on everyone else 
+you just remve that and ask them to resubmit - with no slowdowwn on everyone else
+
+Branching Strategies
+--------------------
+
+1. branch off master only. Except...
+2. 
+
+
+At some point we will create a single version of the code we want to "release"
+This might be the single version of one area of the company, a LOB or just a
+department. But as we quickly hit about 100 devs, we find 
+
+So if the time for CI to complete is 20 minutes, you can make 3 commits per
+hour.  This can become a problem at some point so you batch up merges.
+
+However before that, we want to minimse dependancy, 
+so use unrollable merges upwards, clear gates for approvals, process not trust
+
+
+
+
+* Use of merge queues
+
