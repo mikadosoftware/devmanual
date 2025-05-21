@@ -92,4 +92,14 @@ so use unrollable merges upwards, clear gates for approvals, process not trust
 
 
 * Use of merge queues
+GitHubflow
+gitflow
+
+git.git approach
+----------------
+master
+maint
+next
+seen  
+
 

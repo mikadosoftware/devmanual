@@ -20,7 +20,19 @@ so need to model and monitor for each of those - i am special casing backlog of 
 
 Everything else is "friction".
 Some friction is kind of unavoidable - recruitment is an example.  It can be smoothed out but writing job specs, onboaridng etc is spotty at best.
-Other friction is yet another meeting to discuss why the current deadline is unachievable, explain why more exploratory work is needed, find out what is going on ... (ie discover what future directions are being discussed by those who control 80% of the budget for next year) (this is why top down planning is a bad idea in gene ram). We laugh at it in communist planned economies and then go donit with our own organisational economies
+Other friction is yet another meeting to discuss why the current deadline is unachievable, 
+explain why more exploratory work is needed, find out what is going on ... 
+(ie discover what future directions are being discussed by those who control 
+80% of the budget for next year) (this is why top down planning is a bad idea in gene ram). 
+We laugh at it in communist planned economies and then go donit with our own organisational
+ economies
+
+This is a major argument of THe Software Mind - that as software takes over the reporting and control process
+of accounting is less effective - you need softwre to report to you not money.
+And so the questions you can ask change  - dont ask the Project manager, just see if the WHole ORg Test Rig is showing red
+And so we shall see migration towards a pub;ishing model (take PRs from below tou)
+
+
 
 managing upwards - you too shoukd have someone else doing model, mentor, monitor for you.
 
