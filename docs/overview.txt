@@ -14,6 +14,9 @@
 ** disaggregate management 
 ** people first
 ** no-one gets mad if the computer says no.
+thats first part disaggregated mgmt - put rules in automation
+then work product is floor raised all the time
+means work product needs to be introspectabe (hence AI - it has made almost all human onowlwdge work intoeapecatble like code - hence work will go like code with teats and static analysis etx)
 
 
 * Mis-en-place
