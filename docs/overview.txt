@@ -209,6 +209,9 @@ tactical stories to appear
 ** is there a max number of chnages one can make per day?
 ** Twitter - can you really fire 90% of the devs?
 
+* Cron and Task scheduling 
+** roll tour own 
+** https://news.ycombinator.com/item?id=44713716
 
 * Databases, data structures
 ** choices - Size 
