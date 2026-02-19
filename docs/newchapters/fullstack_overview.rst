@@ -1,6 +1,10 @@
 Full Stack - everything needed
 -------------------------------
 
+
+How mucj invisible work software teams carry
+this os because software loteracy 
+
 Firstly we are looking at languages 
 Sticking with Python for almost everything
 fallback to elixir / erlang for reliable 
