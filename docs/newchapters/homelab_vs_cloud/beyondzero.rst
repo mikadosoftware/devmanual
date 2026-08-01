@@ -7,6 +7,8 @@ https://spawn-queue.acm.org/doi/10.1145/3819083
 
 Original series: https://cloud.google.com/beyondcorp
 
+https://www.usenix.org/system/files/login/articles/login_dec14_02_ward.pdf
+
 
 in 2014 Google decided that having a 
 priviledged network called "inside" was still risky
