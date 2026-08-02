@@ -2,6 +2,14 @@ Full Stack - everything needed
 -------------------------------
 
 
+literacy is a technology and a force multiplier of extrmenproportions
+
+https://youtube.com/shorts/7OzA26mqzSQ?si=u2bnC3cjn7-bsl8a
+clay ttbalets 
+
+
+
+
 How mucj invisible work software teams carry
 this os because software loteracy 
 
